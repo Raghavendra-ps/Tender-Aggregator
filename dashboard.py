@@ -129,7 +129,7 @@ DEFAULT_SETTINGS = {
   "global_scraper_settings": {
     "scrape_py_limits": {"max_list_pages": 100, "retries": 3}, "concurrency": {"list_pages": 5, "detail_pages": 2}, "timeouts": {"page_load": 75000, "detail_page": 75000},
     "rot_scrape_limits": {"max_list_pages": 50, "retries": 2}, "rot_concurrency": {"detail_processing": 2}, 
-    "rot_timeouts": {"page_load": 75000, "detail_page": 60000, "download": 180000, "pagination_load_wait": 7000, "element_wait": 20000}
+    "rot_timeouts": {"page_load": 75000, "detail_page": 60000, "download": 180000, "pagination_load_wait": 7000, "element_wait": 20000,"post_submit": 30000}
   }, "retention": {"enabled": False,"days": 30 },
   "scheduler": { "main_enabled": False, "main_frequency": "daily", "main_time": "02:00", "main_day_weekly": "7", "main_day_monthly": "1", 
                  "rot_default_status_value": "5" },
@@ -258,41 +258,30 @@ def cleanup_old_filtered_results():
     except ValueError: logger.error("Invalid 'days' in retention settings.")
     except Exception as e: logger.error(f"Error during retention cleanup: {e}", exc_info=True)
 
-# In dashboard.py
-
 def get_rot_site_config(site_key_to_find: str) -> Optional[Dict[str, str]]:
     settings = load_settings()
     all_site_configs = settings.get("site_configurations", {})
     if site_key_to_find in all_site_configs:
         main_config = all_site_configs[site_key_to_find]
-        domain_from_settings = main_config.get("domain") 
-        
-        if domain_from_settings:
-            # 1. Clean the domain from settings: remove any trailing '?' or '/'
-            cleaned_domain_for_search_url = domain_from_settings.rstrip('/?')
+        domain_from_settings = main_config.get("domain")
 
-            # 2. URL_SUFFIX_ROT already starts with '?', e.g., "?page=WebTenderStatusLists&service=page"
-            #    Simply append it.
-            rot_search_url = f"{cleaned_domain_for_search_url}{URL_SUFFIX_ROT}" # This should now be correct
-            
-            # --- For base_url (used for resolving relative links from scraped pages later) ---
-            parsed_cleaned_domain = urlparse(cleaned_domain_for_search_url) # Use the same cleaned domain
+        if domain_from_settings:
+            cleaned_domain_for_search_url = domain_from_settings.rstrip('/?')
+            # Ensure URL_SUFFIX_ROT is correctly sourced here
+            rot_search_url = f"{cleaned_domain_for_search_url}{URL_SUFFIX_ROT}"
+
+            parsed_cleaned_domain = urlparse(cleaned_domain_for_search_url)
             base_path_for_links = parsed_cleaned_domain.path
-            
-            if not base_path_for_links: 
-                base_path_for_links = "/"
-            elif not base_path_for_links.endswith('/'):
-                base_path_for_links += '/'
-            
+            if not base_path_for_links: base_path_for_links = "/"
+            elif not base_path_for_links.endswith('/'): base_path_for_links += '/'
             base_url_for_resolving_links = f"{parsed_cleaned_domain.scheme}://{parsed_cleaned_domain.netloc}{base_path_for_links}"
 
-            # Heuristic for 'app/' suffix on base_url_for_resolving_links
             if ('nicgep' in base_url_for_resolving_links.lower() or 'eprocure.gov.in' in base_url_for_resolving_links.lower()):
                 if not base_url_for_resolving_links.endswith('app/'):
                     path_segments = [s for s in parsed_cleaned_domain.path.split('/') if s]
                     if not path_segments or path_segments[-1].lower() != 'app':
                          base_url_for_resolving_links = urljoin(base_url_for_resolving_links, 'app/')
-            
+
             logger.debug(f"Derived ROT config for '{site_key_to_find}': Search URL='{rot_search_url}', Base URL for links='{base_url_for_resolving_links}'")
             return {"main_search_url": rot_search_url, "base_url": base_url_for_resolving_links}
         else:
@@ -300,90 +289,6 @@ def get_rot_site_config(site_key_to_find: str) -> Optional[Dict[str, str]]:
     else:
         logger.error(f"Site key '{site_key_to_find}' not found in site_configurations.")
     return None
-
-async def _fetch_rot_captcha_image(site_key: str, tender_status_value: str) -> Optional[str]:
-    logger.info(f"CAPTCHA FETCH: Starting for site '{site_key}', status '{tender_status_value}'.")
-    rot_config = get_rot_site_config(site_key)
-    if not rot_config or not rot_config.get("main_search_url"):
-        logger.error(f"CAPTCHA FETCH: No valid ROT URL for site '{site_key}'. Cannot fetch CAPTCHA.")
-        return None
-    main_search_url = rot_config["main_search_url"]
-    logger.debug(f"CAPTCHA FETCH: Derived main_search_url: {main_search_url}")
-    settings = load_settings() 
-    gs_rot_timeouts = settings.get("global_scraper_settings", {}).get("rot_timeouts", {})
-    page_load_timeout = int(gs_rot_timeouts.get("page_load", PAGE_LOAD_TIMEOUT_DEFAULT))
-    element_wait_timeout = int(gs_rot_timeouts.get("element_wait", ELEMENT_WAIT_TIMEOUT_DEFAULT))
-    async with async_playwright() as p:
-        browser = None
-        page: Optional[Page] = None 
-        try:
-            browser = await p.chromium.launch(headless=True) 
-            context = await browser.new_context( ignore_https_errors=True, user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" )
-            page = await context.new_page()
-            logger.info(f"CAPTCHA FETCH: Navigating to {main_search_url} for site '{site_key}'.")
-            try:
-                await page.goto(main_search_url, timeout=page_load_timeout, wait_until="domcontentloaded")
-                logger.info(f"CAPTCHA FETCH: Successfully navigated to URL: {page.url} (Site: {site_key})")
-            except PlaywrightTimeout as e_goto:
-                logger.error(f"CAPTCHA FETCH: Timeout ({page_load_timeout}ms) during page.goto for '{main_search_url}' (Site: '{site_key}'): {e_goto}")
-                if page: await page.screenshot(path=DEBUG_SCREENSHOT_DIR / f"captcha_goto_timeout_{site_key}.png")
-                return None
-            except Exception as e_goto_other:
-                logger.error(f"CAPTCHA FETCH: Error during page.goto for '{main_search_url}' (Site: '{site_key}'): {e_goto_other}")
-                if page: await page.screenshot(path=DEBUG_SCREENSHOT_DIR / f"captcha_goto_error_{site_key}.png")
-                return None
-            logger.info(f"CAPTCHA FETCH: Selecting tender status '{tender_status_value}' for site '{site_key}'.")
-            try:
-                status_dropdown_locator = page.locator("#tenderStatus")
-                await status_dropdown_locator.wait_for(state="attached", timeout=element_wait_timeout // 2)
-                await status_dropdown_locator.select_option(value=tender_status_value, timeout=element_wait_timeout // 2)
-                selected_value_check = await status_dropdown_locator.evaluate("el => el.value")
-                logger.info(f"CAPTCHA FETCH: Tender status dropdown selected. Value is now: '{selected_value_check}' for site '{site_key}'.")
-            except PlaywrightTimeout:
-                logger.error(f"CAPTCHA FETCH: Timeout selecting/verifying tender status '{tender_status_value}' for site '{site_key}'.")
-                await page.screenshot(path=DEBUG_SCREENSHOT_DIR / f"captcha_status_select_timeout_{site_key}.png")
-                return None
-            except Exception as e_select:
-                logger.error(f"CAPTCHA FETCH: Error selecting tender status '{tender_status_value}' for site '{site_key}': {e_select}")
-                await page.screenshot(path=DEBUG_SCREENSHOT_DIR / f"captcha_status_select_error_{site_key}.png")
-                return None
-            logger.debug(f"CAPTCHA FETCH: Waiting a bit after status selection for site '{site_key}'.")
-            await page.wait_for_timeout(3000) 
-            captcha_img_loc = page.locator("#captchaImage")
-            logger.info(f"CAPTCHA FETCH: Attempting to find CAPTCHA image '#captchaImage' for site '{site_key}'.")
-            try: 
-                await captcha_img_loc.wait_for(state="visible", timeout=element_wait_timeout)
-                logger.info(f"CAPTCHA FETCH: Image selector '#captchaImage' is visible for site '{site_key}'.")
-            except PlaywrightTimeout: 
-                logger.error(f"CAPTCHA FETCH: Image selector '#captchaImage' NOT visible after {element_wait_timeout}ms for site '{site_key}'.")
-                await page.screenshot(path=DEBUG_SCREENSHOT_DIR / f"captcha_image_not_visible_{site_key}.png")
-                page_html_on_fail = await page.content()
-                (DEBUG_SCREENSHOT_DIR / f"captcha_page_html_on_fail_{site_key}.html").write_text(page_html_on_fail, encoding='utf-8')
-                logger.debug(f"CAPTCHA FETCH: Saved HTML of failing page to debug_screenshots for site '{site_key}'.")
-                return None
-            logger.debug(f"CAPTCHA FETCH: Attempting to screenshot the CAPTCHA image element for site '{site_key}'.")
-            img_bytes = await captcha_img_loc.screenshot(type='png')
-            if not img_bytes:
-                logger.error(f"CAPTCHA FETCH: Screenshot of CAPTCHA element resulted in empty bytes for site '{site_key}'.")
-                await page.screenshot(path=DEBUG_SCREENSHOT_DIR / f"captcha_empty_bytes_{site_key}.png")
-                return None
-            img_b64 = base64.b64encode(img_bytes).decode('utf-8')
-            logger.info(f"CAPTCHA FETCH: Successfully captured and Base64 encoded CAPTCHA image for site '{site_key}'.")
-            return f"data:image/png;base64,{img_b64}"
-        except PlaywrightTimeout as e_outer: 
-            logger.error(f"CAPTCHA FETCH: Overall Playwright timeout for site '{site_key}': {e_outer}")
-            if page and not page.is_closed():
-                 await page.screenshot(path=DEBUG_SCREENSHOT_DIR / f"captcha_overall_timeout_{site_key}.png") 
-            return None
-        except Exception as e: 
-            logger.error(f"CAPTCHA FETCH: General error for site '{site_key}': {e}", exc_info=True)
-            if page and not page.is_closed():
-                await page.screenshot(path=DEBUG_SCREENSHOT_DIR / f"captcha_general_error_{site_key}.png") 
-            return None
-        finally:
-            if browser: 
-                await browser.close()
-                logger.debug(f"CAPTCHA FETCH: Playwright browser closed for site '{site_key}'.")
 
 async def _globally_merge_rot_site_files() -> Tuple[int, Optional[Path]]:
     log_prefix = "AI DATA PREP (Global ROT Merge)"
@@ -902,70 +807,79 @@ async def download_rot_summary_file(site_key: str, filename: str):
         return FileResponse(path=file_path, filename=cleaned_filename, media_type=media_type)
     except Exception as e: logger.error(f"Error serving ROT summary file {file_path}: {e}", exc_info=True); raise HTTPException(status_code=500, detail="Error serving file.")
 
-@app.get("/rot/request-captcha/{site_key}", name="rot_request_captcha")
-async def rot_request_captcha_endpoint(request: Request, site_key: str, tender_status_value: Optional[str] = None):
-    settings = load_settings()
-    default_rot_status = settings.get("scheduler", {}).get("rot_default_status_value", "5")
-    actual_tender_status_value = request.query_params.get("tender_status_value", default_rot_status) 
-    if not site_key: raise HTTPException(status_code=400, detail="Site key is required.")
-    if not actual_tender_status_value.isdigit(): 
-        logger.warning(f"Invalid tender_status_value '{actual_tender_status_value}' for CAPTCHA request for site {site_key}. Using default '{default_rot_status}'.")
-        actual_tender_status_value = default_rot_status 
-    captcha_data_uri = await _fetch_rot_captcha_image(site_key, actual_tender_status_value)
-    if captcha_data_uri: return {"site_key": site_key, "tender_status_value": actual_tender_status_value, "captcha_image_uri": captcha_data_uri}
-    else: logger.error(f"Failed to fetch CAPTCHA for {site_key}, status {actual_tender_status_value}."); raise HTTPException(status_code=500, detail=f"Could not fetch CAPTCHA for {site_key}.")
-
-# In dashboard.py
-
-@app.post("/rot/initiate-rot-worker/{site_key}", name="initiate_rot_worker") # Renamed for clarity
+@app.post("/rot/initiate-rot-worker/{site_key}", name="initiate_rot_worker")
 async def initiate_rot_worker_endpoint(request: Request, site_key: str, tender_status_value: str = Form(...)):
-    logger.info(f"Request to INITIATE ROT WORKER: Site='{site_key}', Status='{tender_status_value}'")
+    logger.info(f"Dashboard: Initiating ROT Worker for Site='{site_key}', Status='{tender_status_value}'")
     if not all([site_key, tender_status_value]):
-        raise HTTPException(status_code=400, detail="Site key and tender status are required.")
-    
-    worker_script_name = "headless_rot_worker.py" 
+        logger.error("Dashboard: Missing site_key or tender_status_value for worker initiation.")
+        raise HTTPException(status_code=400, detail="Site key and tender status value are required.")
+
+    worker_script_name = "headless_rot_worker.py" # This should be your scrape_rot.py adapted
     worker_script_path = SCRIPT_DIR / worker_script_name
-    
+
     if not worker_script_path.is_file():
-        logger.error(f"ROT Worker script '{worker_script_name}' not found at {worker_script_path}.")
-        raise HTTPException(status_code=500, detail="ROT worker script component is missing on the server.")
+        logger.error(f"Dashboard: ROT Worker script '{worker_script_name}' not found at {worker_script_path}.")
+        raise HTTPException(status_code=500, detail=f"ROT worker script '{worker_script_name}' component is missing on the server.")
+
+    rot_site_urls = get_rot_site_config(site_key) # Use existing helper
+    if not rot_site_urls or not rot_site_urls.get("main_search_url") or not rot_site_urls.get("base_url"):
+        logger.error(f"Dashboard: Could not derive URLs for ROT site '{site_key}'. Cannot start worker.")
+        raise HTTPException(status_code=500, detail=f"Configuration error for ROT site '{site_key}'.")
 
     try:
         python_exec = sys.executable
-        cleaned_site_key_for_id = re.sub(r'[^\w\-]+', '_', site_key) 
-        # Generate a unique run_id for this worker instance
+        cleaned_site_key_for_id = re.sub(r'[^\w\-]+', '_', site_key)
         run_id = f"rot_worker_{cleaned_site_key_for_id}_{datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')}"
-        
-        # Create the temporary run directory for this worker
+
         run_dir = TEMP_RUN_DATA_DIR_DASHBOARD / run_id
         run_dir.mkdir(parents=True, exist_ok=True)
-        # Initialize status
-        (run_dir / "status.txt").write_text("INITIATED", encoding='utf-8')
+
+        write_dashboard_status(run_dir, "INITIATED_BY_DASHBOARD")
+        logger.info(f"Dashboard: Created run directory '{run_dir}' and status file for Run ID: {run_id}")
+
+        current_settings = load_settings()
+        gs_rot_settings = current_settings.get("global_scraper_settings", {}).get("rot_scrape_limits", {})
+        gs_rot_concurrency = current_settings.get("global_scraper_settings", {}).get("rot_concurrency", {})
+        gs_rot_timeouts = current_settings.get("global_scraper_settings", {}).get("rot_timeouts", {})
+
+        worker_run_params = {
+            "max_list_pages": gs_rot_settings.get("max_list_pages", DEFAULT_SETTINGS["global_scraper_settings"]["rot_scrape_limits"]["max_list_pages"]),
+            "detail_concurrency": gs_rot_concurrency.get("detail_processing", DEFAULT_SETTINGS["global_scraper_settings"]["rot_concurrency"]["detail_processing"]),
+            "pagination_wait": gs_rot_timeouts.get("pagination_load_wait", DEFAULT_SETTINGS["global_scraper_settings"]["rot_timeouts"]["pagination_load_wait"]),
+            "page_load_timeout": gs_rot_timeouts.get("page_load", DEFAULT_SETTINGS["global_scraper_settings"]["rot_timeouts"]["page_load"]),
+            "detail_page_timeout": gs_rot_timeouts.get("detail_page", DEFAULT_SETTINGS["global_scraper_settings"]["rot_timeouts"]["detail_page"]),
+            "popup_page_timeout": gs_rot_timeouts.get("detail_page", DEFAULT_SETTINGS["global_scraper_settings"]["rot_timeouts"]["detail_page"]), # Often same as detail
+            "element_timeout": gs_rot_timeouts.get("element_wait", DEFAULT_SETTINGS["global_scraper_settings"]["rot_timeouts"]["element_wait"]),
+            "post_submit_timeout": gs_rot_timeouts.get("post_submit", DEFAULT_SETTINGS["global_scraper_settings"]["rot_timeouts"]["post_submit"])
+        }
+        worker_settings_json_str = json.dumps(worker_run_params)
 
         command = [
             python_exec, str(worker_script_path),
-            "--site_key", site_key, # Argument name expected by headless_rot_worker.py
+            "--site_key", site_key,
+            "--run_id", run_id,
+            "--site_url", rot_site_urls["main_search_url"],
+            "--base_url", rot_site_urls["base_url"],
             "--tender_status", tender_status_value,
-            "--run_id", run_id 
-            # No --captcha_solution here; worker will save image and wait for answer file
+            "--settings_json", worker_settings_json_str
         ]
 
-        logger.info(f"Launching ROT Worker command: {' '.join(command)}")
-        # Run as a background process. Dashboard does not wait for it to complete.
-        process = subprocess.Popen(command, cwd=SCRIPT_DIR, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding='utf-8')
-        logger.info(f"Launched background ROT Worker for {site_key} (PID: {process.pid}). Run ID: {run_id}")
-        
-        # The client (rot_manual_scrape.html) will now poll /get-captcha-status/{run_id}
-        # and then POST the answer to /submit-captcha-answer/{run_id}
+        logger.info(f"Dashboard: Launching ROT Worker command: {' '.join(command)}")
+        process = subprocess.Popen(command, cwd=SCRIPT_DIR,
+                                   stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                   text=True, encoding='utf-8')
+        logger.info(f"Dashboard: Launched background ROT Worker for {site_key} (PID: {process.pid}). Run ID: {run_id}")
+
         response_content = {
-            "message": f"ROT Worker ({worker_script_name}) initiated for site '{site_key}'. Waiting for CAPTCHA.",
-            "run_id": run_id, 
-            "site_key": site_key,
-            # The UI will use this run_id to poll for the captcha image
+            "message": f"ROT Worker ({worker_script_name}) initiated for site '{site_key}'. Polling for CAPTCHA image will begin.",
+            "run_id": run_id,
+            "site_key": site_key
         }
         return JSONResponse(status_code=status.HTTP_202_ACCEPTED, content=response_content)
-    except Exception as e: 
-        logger.error(f"Failed to launch {worker_script_name} for site {site_key}: {e}", exc_info=True); 
+    except Exception as e:
+        logger.error(f"Dashboard: Failed to launch {worker_script_name} for site {site_key}: {e}", exc_info=True);
+        if 'run_dir' in locals() and run_dir.exists():
+            write_dashboard_status(run_dir, f"ERROR_LAUNCHING_WORKER_{type(e).__name__}")
         raise HTTPException(status_code=500, detail=f"Failed to start ROT worker for {site_key}: {type(e).__name__}")
 
 @app.post("/run-scraper-now", name="run_scraper_now") 
@@ -1123,130 +1037,111 @@ async def solve_captcha_page_route(request: Request, run_id: str):
 
 @app.get("/get-captcha-status/{run_id}", name="get_captcha_status")
 async def get_captcha_status_route(run_id: str):
-    if not re.match(r"^[a-zA-Z0-9_.-]+$", run_id) or ".." in run_id: # Basic security
+    if not re.match(r"^[a-zA-Z0-9_.-]+$", run_id) or ".." in run_id:
         logger.warning(f"Dashboard: Invalid run_id format in get_captcha_status: {run_id}")
         raise HTTPException(status_code=400, detail="Invalid run_id format.")
-    
-    # Sanitize run_id before using it to construct a path to prevent directory traversal
-    safe_run_id_name = Path(run_id).name 
+
+    safe_run_id_name = Path(run_id).name
     run_dir = TEMP_RUN_DATA_DIR_DASHBOARD / safe_run_id_name
 
     status_file = run_dir / "status.txt"
-    captcha_b64_file = run_dir / "captcha.b64" # headless_rot_worker.py saves base64 CAPTCHA data here
+    captcha_b64_file = run_dir / "captcha.b64"
 
     response_data = {
-        "run_id": run_id, 
-        "status": "pending_worker_init", # Default initial status if no status file yet
-        "message": "Waiting for worker to initialize and generate CAPTCHA...", 
+        "run_id": run_id,
+        "status": "pending_worker_init",
+        "message": "Waiting for worker to initialize and generate CAPTCHA...",
         "image_data": None
     }
 
     if not run_dir.is_dir():
         response_data["status"] = "error_run_dir_not_found"
-        response_data["message"] = "Error: Worker run directory not found. The run may have ended, errored before creating its directory, or the run ID is incorrect."
-        logger.warning(f"Dashboard: Run directory '{run_dir}' not found for run_id '{run_id}' in get_captcha_status.")
+        response_data["message"] = "Error: Worker run directory not found."
+        logger.warning(f"Dashboard: Run directory '{run_dir}' not found for run_id '{run_id}'.")
         return JSONResponse(content=response_data, status_code=status.HTTP_404_NOT_FOUND)
 
     if status_file.is_file():
         try:
             current_status_msg = status_file.read_text(encoding='utf-8').strip()
-            response_data["message"] = f"Worker status: {current_status_msg}" # Provide current worker status
-            
+            response_data["message"] = f"Worker status: {current_status_msg}"
+
             if current_status_msg == "WAITING_CAPTCHA":
-                response_data["status"] = "ready_for_captcha" # UI can use this to show input
+                response_data["status"] = "ready_for_captcha"
                 response_data["message"] = "CAPTCHA image ready. Please view and solve."
                 if captcha_b64_file.is_file():
                     try:
                         b64_data = captcha_b64_file.read_text(encoding='utf-8').strip()
-                        if b64_data: # Ensure data is not empty
+                        if b64_data:
                             response_data["image_data"] = f"data:image/png;base64,{b64_data}"
                         else:
-                            logger.warning(f"Dashboard: captcha.b64 file is empty for run_id '{run_id}'. Worker might still be writing.")
-                            response_data["status"] = "processing_captcha_file"; # Keep polling
-                            response_data["message"] = "Worker is generating CAPTCHA image data... please wait."
+                            response_data["status"] = "processing_captcha_file";
+                            response_data["message"] = "Worker is generating CAPTCHA image data..."
                     except Exception as e_read_b64:
-                        logger.error(f"Dashboard: Error reading captcha.b64 for run_id '{run_id}': {e_read_b64}")
-                        response_data["status"] = "error_reading_captcha_file"; 
-                        response_data["message"] = "Error: Could not read CAPTCHA image data from worker."
+                        response_data["status"] = "error_reading_captcha_file";
+                        response_data["message"] = "Error: Could not read CAPTCHA image data."
                 else:
-                    # status.txt says WAITING_CAPTCHA, but .b64 file not yet there
-                    logger.debug(f"Dashboard: Status is WAITING_CAPTCHA but captcha.b64 not found yet for run_id '{run_id}'. Worker might still be saving it.")
-                    response_data["status"] = "processing_captcha_file"; # Keep polling
-                    response_data["message"] = "Worker is preparing CAPTCHA image file... please wait."
-            elif current_status_msg == "TIMEOUT_CAPTCHA_INPUT" or "ERROR" in current_status_msg.upper():
-                response_data["status"] = "worker_error"; 
-                response_data["message"] = f"Worker Error: {current_status_msg}"
-            elif "FINISHED_SUCCESS" in current_status_msg.upper() or "FINISHED_NO_DATA" in current_status_msg.upper():
-                response_data["status"] = "worker_finished"; 
-                response_data["message"] = f"Worker run completed: {current_status_msg}."
-            elif current_status_msg == "INITIATED_BY_DASHBOARD" or current_status_msg == "FETCHING_CAPTCHA" or current_status_msg == "WORKER_STARTED":
-                 response_data["status"] = "pending_worker_action"; # UI can show a generic "processing"
-                 response_data["message"] = f"Worker status: {current_status_msg}... please wait."
-            else: # Other intermediate statuses from worker
-                response_data["status"] = "worker_processing"; 
-                response_data["message"] = f"Worker status: {current_status_msg}"
+                    response_data["status"] = "processing_captcha_file";
+                    response_data["message"] = "Worker is preparing CAPTCHA image file..."
+            elif "ERROR" in current_status_msg.upper() or current_status_msg == "TIMEOUT_CAPTCHA_INPUT":
+                response_data["status"] = "worker_error";
+            elif "FINISHED" in current_status_msg.upper():
+                response_data["status"] = "worker_finished";
+            elif current_status_msg in ["INITIATED_BY_DASHBOARD", "FETCHING_CAPTCHA", "WORKER_STARTED", "PROCESSING_WITH_CAPTCHA"] or current_status_msg.startswith("PROCESSING_LIST_PAGE_"):
+                 response_data["status"] = "worker_processing";
+            # Add other specific statuses if needed
         except Exception as e_read_status:
-            logger.error(f"Dashboard: Error reading status.txt for run_id '{run_id}': {e_read_status}")
-            response_data["status"] = "error_reading_status_file"; 
+            response_data["status"] = "error_reading_status_file";
             response_data["message"] = "Error: Could not read worker status file."
     else:
-        # Status file not yet created by worker, but run_dir exists. Worker is initializing.
-        logger.debug(f"Dashboard: status.txt not yet found for run_id '{run_id}'. Worker process might be starting.")
-        # Keep default response_data status as "pending_worker_init"
-        response_data["message"] = "Worker process is initializing... please wait." 
-    
+        response_data["message"] = "Worker process is initializing (status file not yet created)..."
+
     return JSONResponse(content=response_data)
 
 @app.post("/submit-captcha-answer/{run_id}", name="submit_captcha_answer")
 async def submit_captcha_answer_route(run_id: str, captcha_text: str = Form(...)):
-    # Validate run_id format
     if not re.match(r"^[a-zA-Z0-9_.-]+$", run_id) or ".." in run_id:
         logger.warning(f"Dashboard: Invalid run_id format in submit_captcha_answer: {run_id}")
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid run_id format.")
-    
+
     logger.info(f"Dashboard: Received CAPTCHA answer for run_id '{run_id}': '{captcha_text}'")
-    
+
     safe_run_id_name = Path(run_id).name
     run_dir = TEMP_RUN_DATA_DIR_DASHBOARD / safe_run_id_name
     answer_file = run_dir / "answer.txt"
     status_file = run_dir / "status.txt"
 
     if not run_dir.is_dir():
-        logger.error(f"Dashboard: Cannot submit CAPTCHA answer. Run directory '{run_dir}' not found for run_id '{run_id}'.")
+        logger.error(f"Dashboard: Run directory '{run_dir}' not found for run_id '{run_id}'.")
         return JSONResponse(
             status_code=status.HTTP_404_NOT_FOUND,
-            content={"detail": f"Worker run '{run_id}' not found. It may have already finished or errored early."}
+            content={"detail": f"Worker run '{run_id}' not found."}
         )
-    
+
     try:
         if status_file.is_file():
             current_worker_status = status_file.read_text(encoding='utf-8').strip().upper()
             terminal_states = ["FINISHED", "ERROR", "TIMEOUT_CAPTCHA_INPUT"]
             if any(term_status in current_worker_status for term_status in terminal_states):
-                logger.warning(f"Dashboard: Attempted to submit CAPTCHA for already terminated run '{run_id}'. Current Status: '{current_worker_status}'")
+                logger.warning(f"Dashboard: Attempt to submit CAPTCHA for terminated run '{run_id}'. Status: '{current_worker_status}'")
                 return JSONResponse(
-                    status_code=status.HTTP_409_CONFLICT, 
-                    content={"detail": f"Worker run '{run_id}' is already in a terminal state ({current_worker_status}). Cannot submit new CAPTCHA."}
+                    status_code=status.HTTP_409_CONFLICT,
+                    content={"detail": f"Worker run '{run_id}' is already in a terminal state ({current_worker_status})."}
                 )
-        
+
         answer_file.write_text(captcha_text, encoding='utf-8')
-        
-        # Call the new helper function defined within dashboard.py
-        write_dashboard_status(run_dir, "CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD") 
-        
-        logger.info(f"Dashboard: Successfully wrote answer to '{answer_file}' for run_id '{run_id}' and updated status.")
-        
+        write_dashboard_status(run_dir, "CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD")
+        logger.info(f"Dashboard: Wrote answer to '{answer_file}' for run_id '{run_id}'.")
+
         return JSONResponse(
-            content={"message": f"CAPTCHA answer for run_id '{run_id}' submitted. Worker will attempt to resume scraping.", "run_id": run_id},
-            status_code=status.HTTP_200_OK 
+            content={"message": f"CAPTCHA answer for run_id '{run_id}' submitted.", "run_id": run_id},
+            status_code=status.HTTP_200_OK
         )
     except Exception as e:
-        logger.error(f"Dashboard: Error writing answer file or updating status for run_id '{run_id}': {e}", exc_info=True)
+        logger.error(f"Dashboard: Error writing answer file for run_id '{run_id}': {e}", exc_info=True)
         return JSONResponse(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            content={"detail": "Failed to submit CAPTCHA answer to worker due to a server error."}
+            content={"detail": "Failed to submit CAPTCHA answer to worker."}
         )
-
 
 @app.post("/rot/initiate-rot-worker/{site_key}", name="initiate_rot_worker")
 async def initiate_rot_worker_endpoint(request: Request, site_key: str, tender_status_value: str = Form(...)):
