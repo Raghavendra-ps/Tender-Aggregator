@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - TenFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        
+        :root {
+            --color-primary: #000000;
+            --color-secondary: #1a1a1a;
+            --color-accent: #2563eb;
+            --color-surface: #ffffff;
+            --color-surface-alt: #f8fafc;
+            --color-border: #e2e8f0;
+            --color-text: #0f172a;
+            --color-text-muted: #64748b;
+            --color-success: #059669;
+            --color-error: #dc2626;
+            --color-warning: #d97706;
+        }
+        
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            background: var(--color-surface-alt);
+            color: var(--color-text); 
+            line-height: 1.5; 
+            font-weight: 400;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 48px 32px; 
+            background: var(--color-surface);
+            min-height: 100vh;
+        }
+        
+        h2 { 
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800; 
+            letter-spacing: -0.02em;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            margin-bottom: 48px;
+            text-align: center;
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 24px;
+        }
+        
+        h3 { 
+            font-size: 1.25rem; 
+            font-weight: 700; 
+            color: var(--color-primary); 
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        fieldset { 
+            border: 1px solid var(--color-border);
+            padding: 32px; 
+            margin-bottom: 32px; 
+            background: var(--color-surface);
+            border-radius: 0;
+        }
+        
+        legend { 
+            font-weight: 700; 
+            font-size: 1.125rem; 
+            padding: 0 16px; 
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        .form-group { 
+            margin-bottom: 24px; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        
+        .form-row { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 24px; 
+            margin-bottom: 24px; 
+        }
+        
+        label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-size: 0.875rem; 
+            font-weight: 600; 
+            color: var(--color-text);
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        .input, select {
+            width: 100%; 
+            border: 1px solid var(--color-border);
+            background: var(--color-surface); 
+            padding: 12px 16px; 
+            font-size: 0.875rem; 
+            color: var(--color-text); 
+            transition: all 0.2s ease;
+            border-radius: 0;
+            font-family: inherit;
+        }
+        
+        .input:focus, select:focus { 
+            outline: 2px solid var(--color-accent); 
+            outline-offset: -2px;
+            border-color: var(--color-accent);
+        }
+        
+        .btn { 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center; 
+            border: 1px solid transparent;
+            font-family: inherit;
+            font-size: 0.875rem; 
+            font-weight: 600; 
+            text-decoration: none; 
+            color: var(--color-surface);
+            background: var(--color-primary);
+            border-radius: 0;
+            cursor: pointer; 
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            padding: 12px 24px;
+        }
+        
+        .btn:hover { 
+            background: var(--color-secondary);
+            transform: translateY(-1px);
+        }
+        
+        .btn:focus { 
+            outline: 2px solid var(--color-accent); 
+            outline-offset: 2px; 
+        }
+        
+        .btn:disabled { 
+            opacity: 0.5; 
+            cursor: not-allowed; 
+            transform: none; 
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-primary);
+            border-color: var(--color-border);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--color-surface-alt);
+            border-color: var(--color-primary);
+        }
+        
+        .btn-success { 
+            background: var(--color-success);
+        }
+        
+        .btn-success:hover {
+            background: #047857;
+        }
+        
+        .btn-danger { 
+            background: var(--color-error);
+        }
+        
+        .btn-danger:hover {
+            background: #b91c1c;
+        }
+        
+        .btn-info { 
+            background: var(--color-accent);
+        }
+        
+        .btn-info:hover {
+            background: #1d4ed8;
+        }
+        
+        .form-actions { 
+            margin-top: 32px; 
+            display: flex; 
+            gap: 16px; 
+            justify-content: flex-end; 
+            flex-wrap: wrap; 
+        }
+        
+        .form-actions-left { 
+            margin-top: 32px; 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 16px; 
+        }
+        
+        .checkbox-group { 
+            display: flex; 
+            flex-wrap: wrap; 
+            align-items: flex-start; 
+            gap: 16px; 
+            margin-bottom: 24px; 
+            padding: 24px; 
+            background: var(--color-surface-alt);
+            border: 1px solid var(--color-border);
+        }
+        
+        .checkbox-group input[type="checkbox"] { 
+            width: 18px; 
+            height: 18px; 
+            accent-color: var(--color-accent);
+            margin-top: 2px;
+        }
+        
+        .checkbox-group label { 
+            font-weight: 600; 
+            color: var(--color-text); 
+            cursor: pointer; 
+            text-transform: none;
+            letter-spacing: 0;
+        }
+        
+        .conditional-input { 
+            display: none; 
+            margin-top: 16px; 
+            flex-basis: 100%; 
+            padding-left: 8px; 
+        }
+        
+        .checkbox-group input[type="checkbox"]:checked ~ .conditional-input { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+        }
+        
+        .schedule-options { 
+            transition: all 0.3s ease; 
+            max-height: 0; 
+            overflow: hidden; 
+            opacity: 0; 
+        }
+        
+        .schedule-options.enabled { 
+            max-height: 1000px; 
+            opacity: 1; 
+        }
+        
+        .conditional-schedule { 
+            display: none; 
+        } 
+        
+        .schedule-options.enabled .conditional-schedule.visible { 
+            display: grid; 
+        } 
+        
+        .site-enable-container { 
+            margin-top: 24px; 
+        }
+        
+        .site-enable-list { 
+            columns: 2; 
+            column-gap: 32px; 
+            list-style: none; 
+            padding: 24px; 
+            background: var(--color-surface-alt);
+            border: 1px solid var(--color-border);
+            max-height: 500px; 
+            overflow-y: auto; 
+        }
+        
+        .site-enable-list li { 
+            padding: 12px 0; 
+            break-inside: avoid-column; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            gap: 12px; 
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .site-enable-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .site-name-toggle { 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            flex-grow: 1;
+        }
+        
+        .site-name-toggle input[type="checkbox"] { 
+            width: 16px; 
+            height: 16px; 
+            accent-color: var(--color-accent);
+        }
+        
+        .site-name-toggle label { 
+            font-weight: 500; 
+            color: var(--color-text); 
+            cursor: pointer; 
+            font-size: 0.875rem;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+        
+        .select-all-container { 
+            margin-bottom: 24px; 
+            padding-bottom: 16px; 
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .select-all-container label { 
+            font-weight: 600; 
+            display: inline-flex; 
+            align-items: center; 
+            gap: 8px; 
+            cursor: pointer; 
+            color: var(--color-text);
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        .select-all-container input { 
+            width: 18px; 
+            height: 18px; 
+            accent-color: var(--color-accent);
+        }
+        
+        .status-message { 
+            padding: 20px 24px; 
+            margin-bottom: 32px; 
+            border-left: 4px solid;
+            font-size: 0.875rem; 
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .status-message.success { 
+            color: var(--color-success); 
+            border-color: var(--color-success);
+            background: #ecfdf5;
+        }
+        
+        .status-message.error { 
+            color: var(--color-error); 
+            border-color: var(--color-error);
+            background: #fef2f2;
+        }
+        
+        .status-message.info { 
+            color: var(--color-accent); 
+            border-color: var(--color-accent);
+            background: #eff6ff;
+        }
+        
+        .back-link { 
+            text-align: center; 
+            margin-top: 48px; 
+        }
+        
+        .minor-note { 
+            font-size: 0.75rem; 
+            color: var(--color-text-muted); 
+            margin-top: 8px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .info-note { 
+            background: #eff6ff;
+            border-left: 4px solid var(--color-accent); 
+            padding: 20px 24px; 
+            margin: 24px 0; 
+            font-size: 0.875rem; 
+            color: var(--color-text);
+        }
+        
+        .info-note strong { 
+            color: var(--color-accent); 
+        } 
+        
+        hr.section-divider { 
+            border: 0; 
+            height: 1px; 
+            background: var(--color-border); 
+            margin: 32px 0; 
+        }
+        
+        @media (max-width: 768px) { 
+            .container { 
+                padding: 24px 16px; 
+            }
+            
+            .site-enable-list { 
+                columns: 1; 
+            } 
+            
+            .form-row { 
+                grid-template-columns: 1fr; 
+            } 
+            
+            .form-actions, .form-actions-left { 
+                justify-content: stretch;
+                flex-direction: column; 
+            } 
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Settings</h2>
+    <div id="status-message-area"></div>
+
+    <form id="settings-retention" action="{{ url_for('save_retention_settings') }}" method="post">
+      <fieldset><legend>Data Retention</legend>
+        <div class="checkbox-group">
+           <input type="checkbox" id="enable-retention" name="enable_retention" value="True" {% if settings.retention.enabled %}checked{% endif %} onchange="toggleRetentionInput()">
+           <label for="enable-retention">Auto-delete old filtered result sets (Regular & ROT)</label>
+            <div class="conditional-input form-group">
+                <label for="retention-days">Delete sets older than (days):</label>
+                <input type="number" id="retention-days" name="retention_days" value="{{ settings.retention.days | default(30) }}" min="1" max="3650" {% if not settings.retention.enabled %}disabled{% endif %} class="input">
+            </div>
+        </div>
+         <p class="minor-note">Auto-deletes old filtered tender result folders. Requires scheduler setup or manual "Run Cleanup Now".</p>
+         <div class="form-actions">
+            <button type="button" class="btn btn-danger" onclick="if(confirm('Run cleanup now based on saved settings?')) document.getElementById('run-cleanup-form').submit();">Run Cleanup Now</button>
+            <button type="submit" class="btn btn-success">Save Retention Settings</button>
+         </div>
+      </fieldset>
+    </form>
+    <form id="run-cleanup-form" action="{{ url_for('run_cleanup_task') }}" method="post" style="display: none;"></form>
+
+    <form id="settings-scrape-py-params" action="{{ url_for('save_scraper_parameters') }}" method="post">
+      <fieldset> <legend>Global Scraper Parameters</legend>
+        <h3>Regular Tender Scraper (scrape.py)</h3>
+        <div class="form-row">
+            <div class="form-group"><label for="concurrency-list">List Page Concurrency:</label><input type="number" id="concurrency-list" name="concurrency_list" value="{{ settings.global_scraper_settings.concurrency.list_pages | default(5) }}" min="1" max="50" class="input"><small class="minor-note">Parallel list pages/site.</small></div>
+            <div class="form-group"><label for="concurrency-detail">Detail Page Concurrency:</label><input type="number" id="concurrency-detail" name="concurrency_detail" value="{{ settings.global_scraper_settings.concurrency.detail_pages | default(2) }}" min="1" max="20" class="input"><small class="minor-note">Parallel detail pages/list page.</small></div>
+            <div class="form-group"><label for="max-list-pages">Max List Pages / Site:</label><input type="number" id="max-list-pages" name="max_list_pages" value="{{ settings.global_scraper_settings.scrape_py_limits.max_list_pages | default(100) }}" min="1" class="input"><small class="minor-note">Stops fetching for a site.</small></div>
+            <div class="form-group"><label for="retries">Retries per Page:</label><input type="number" id="retries" name="retries" value="{{ settings.global_scraper_settings.scrape_py_limits.retries | default(3) }}" min="0" max="5" class="input"><small class="minor-note">Network failure retries.</small></div>
+            <div class="form-group"><label for="page-load-timeout">Page Timeout (ms):</label><input type="number" id="page-load-timeout" name="page_load_timeout" value="{{ settings.global_scraper_settings.timeouts.page_load | default(75000) }}" min="10000" step="1000" class="input"><small class="minor-note">Max wait for list pages.</small></div>
+            <div class="form-group"><label for="detail-page-timeout">Detail Timeout (ms):</label><input type="number" id="detail-page-timeout" name="detail_page_timeout" value="{{ settings.global_scraper_settings.timeouts.detail_page | default(75000) }}" min="10000" step="1000" class="input"><small class="minor-note">Max wait for detail pages.</small></div>
+        </div>
+        <hr class="section-divider">
+        <h3>ROT Scraper (scrape_rot.py) Parameters</h3>
+        <p class="minor-note">These parameters apply when ROT scrapes are manually initiated from the "Manual ROT Scrape" page.</p>
+        <div class="form-row">
+            <div class="form-group"><label for="rot-max-list-pages">Max ROT List Pages / Site:</label><input type="number" id="rot-max-list-pages" name="rot_max_list_pages" value="{{ settings.global_scraper_settings.rot_scrape_limits.max_list_pages | default(50) }}" min="1" class="input"><small class="minor-note">Stops ROT fetching.</small></div>
+            <div class="form-group"><label for="rot-retries">ROT Retries per Page:</label><input type="number" id="rot-retries" name="rot_retries" value="{{ settings.global_scraper_settings.rot_scrape_limits.retries | default(2) }}" min="0" max="5" class="input"><small class="minor-note">Network retries for ROT.</small></div>
+            <div class="form-group"><label for="rot-detail-processing">ROT Detail Proc. Concurrency:</label><input type="number" id="rot-detail-processing" name="rot_detail_processing" value="{{ settings.global_scraper_settings.rot_concurrency.detail_processing | default(2) }}" min="1" max="10" class="input"><small class="minor-note">Parallel ROT "View" link processing.</small></div>
+            <div class="form-group"><label for="rot-page-load-timeout">ROT Page Timeout (ms):</label><input type="number" id="rot-page-load-timeout" name="rot_page_load_timeout" value="{{ settings.global_scraper_settings.rot_timeouts.page_load | default(75000) }}" min="10000" step="1000" class="input"><small class="minor-note">Max wait for ROT list pages.</small></div>
+            <div class="form-group"><label for="rot-detail-page-timeout">ROT Detail View Timeout (ms):</label><input type="number" id="rot-detail-page-timeout" name="rot_detail_page_timeout" value="{{ settings.global_scraper_settings.rot_timeouts.detail_page | default(60000) }}" min="10000" step="1000" class="input"><small class="minor-note">Max wait for ROT "View" pages.</small></div>
+            <div class="form-group"><label for="rot-download-timeout">ROT Download Timeout (ms):</label><input type="number" id="rot-download-timeout" name="rot_download_timeout" value="{{ settings.global_scraper_settings.rot_timeouts.download | default(180000) }}" min="30000" step="1000" class="input"><small class="minor-note">Max wait for summary file download.</small></div>
+            <div class="form-group"><label for="rot-pagination-load-wait">ROT Pagination Wait (ms):</label><input type="number" id="rot-pagination-load-wait" name="rot_pagination_load_wait" value="{{ settings.global_scraper_settings.rot_timeouts.pagination_load_wait | default(7000) }}" min="1000" step="500" class="input"><small class="minor-note">Wait after clicking 'Next' on ROT.</small></div>
+        </div>
+         <div class="form-row" style="margin-top: 16px;">
+            <div class="form-group">
+                <label for="rot-default-status-value-setting">ROT Default Tender Status (for manual UI):</label>
+                <input type="text" id="rot-default-status-value-setting" name="rot_default_status_value" 
+                       value="{{ settings.scheduler.rot_default_status_value | default('5') }}" 
+                       class="input" title="Default status selected in CAPTCHA modal on Manual ROT Scrape page.">
+                <small class="minor-note">E.g., "5" for Financial Evaluation.</small>
+            </div>
+        </div>
+        <div class="form-actions"><button type="submit" class="btn btn-success">Save All Scraper Parameters</button></div>
+      </fieldset>
+    </form>
+
+     <form id="settings-enabled-sites" action="{{ url_for('save_enabled_sites') }}" method="post">
+         <fieldset><legend>Site Configuration (for Regular Automated Scrape)</legend>
+             <p>Enable/Disable sites for the regular automated scraping process. Manual ROT scraping is handled on the <a href="{{ url_for('rot_manual_scrape_page') }}">Manual ROT Scrape page</a>.</p>
+             {% if settings.site_configurations %}
+                 <div class="select-all-container">
+                     <label><input type="checkbox" id="select-all-sites" onchange="toggleAllSites(this.checked)"> Select / Deselect All Sites</label>
+                 </div>
+                 <div class="site-enable-container">
+                     <ul class="site-enable-list">
+                         {% for site_key, site_data in settings.site_configurations | dictsort %}
+                         <li>
+                             <div class="site-name-toggle">
+                                 <input type="checkbox" id="site_{{ site_key }}" name="site_{{ site_key }}" value="on" {% if site_data.enabled %}checked{% endif %} class="site-checkbox" onchange="updateSelectAllSitesState();">
+                                 <label for="site_{{ site_key }}">{{ site_key }}</label>
+                             </div>
+                         </li>
+                         {% endfor %}
+                     </ul>
+                 </div>
+                 <div class="form-actions"><button type="submit" class="btn btn-success">Save Site Enable/Disable</button></div>
+             {% else %}<div class="status-message error">Error: No 'site_configurations' in settings.json.</div>{% endif %}
+         </fieldset>
+     </form>
+
+    <form id="settings-schedule" action="{{ url_for('save_main_schedule') }}" method="post">
+      <fieldset><legend>Automated Scheduling (Cron for Regular Scraper & Cleanup)</legend>
+        <div class="info-note">Configure automatic runs for the REGULAR scraper and data cleanup. ROT scraping is manual. <strong>Save settings first, then click "Apply Schedule".</strong></div>
+        <h3>Regular Tender Scraper Schedule</h3>
+        <div class="checkbox-group enable-schedule">
+           <input type="checkbox" id="enable-main-schedule" name="enable_main_schedule" value="True" {% if settings.scheduler.main_enabled %}checked{% endif %} onchange="toggleScheduleOptions('main', this.checked)">
+           <label for="enable-main-schedule">Enable Automatic Regular Scraper Scheduling</label>
+        </div>
+        <div class="schedule-options {% if settings.scheduler.main_enabled %}enabled{% endif %}" id="schedule-options-main">
+            <p class="minor-note">When <code>site_controller.py --type regular</code> should run:</p>
+            <div class="form-row">
+                <div class="form-group"><label for="freq-main">Frequency:</label>
+                    <select id="freq-main" name="freq_main" onchange="toggleConditionalInputs('main')" {% if not settings.scheduler.main_enabled %}disabled{% endif %} class="input">
+                        <option value="daily" {% if settings.scheduler.main_frequency == 'daily' %}selected{% endif %}>Daily</option>
+                        <option value="weekly" {% if settings.scheduler.main_frequency == 'weekly' %}selected{% endif %}>Weekly</option>
+                        <option value="monthly" {% if settings.scheduler.main_frequency == 'monthly' %}selected{% endif %}>Monthly</option>
+                    </select>
+                </div>
+                <div class="form-group"><label for="time-main">Time (approx):</label><input type="time" id="time-main" name="time_main" value="{{ settings.scheduler.main_time | default('02:00') }}" {% if not settings.scheduler.main_enabled %}disabled{% endif %} class="input"></div>
+            </div>
+            <div class="form-row conditional-schedule {% if settings.scheduler.main_frequency == 'weekly' %}visible{% endif %}" id="conditional-main-weekly">
+                <div class="form-group"><label for="day-main-weekly">Day of Week:</label>
+                    <select id="day-main-weekly" name="day_main_weekly" {% if not settings.scheduler.main_enabled or settings.scheduler.main_frequency != 'weekly' %}disabled{% endif %} class="input">
+                        {% for d_val, d_name in [('1','Monday'),('2','Tuesday'),('3','Wednesday'),('4','Thursday'),('5','Friday'),('6','Saturday'),('7','Sunday')] %}
+                        <option value="{{d_val}}" {% if settings.scheduler.main_day_weekly == d_val %}selected{% endif %}>{{d_name}}</option>{% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="form-row conditional-schedule {% if settings.scheduler.main_frequency == 'monthly' %}visible{% endif %}" id="conditional-main-monthly">
+                <div class="form-group"><label for="day-main-monthly">Day of Month:</label>
+                    <select id="day-main-monthly" name="day_main_monthly" {% if not settings.scheduler.main_enabled or settings.scheduler.main_frequency != 'monthly' %}disabled{% endif %} class="input">
+                        {% for i in range(1, 29) %}<option value="{{ i }}" {% if settings.scheduler.main_day_monthly == i|string %}selected{% endif %}>{{ i }}</option>{% endfor %}
+                        <option value="last" {% if settings.scheduler.main_day_monthly == 'last' %}selected{% endif %}>Last Day (approx)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr class="section-divider">
+        <p class="minor-note">Data Retention cleanup (if enabled) is also scheduled daily (~4:05 AM) by "Apply Schedule".</p>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-success">Save Regular Schedule Settings</button>
+            <button type="button" class="btn btn-info" onclick="if(confirm('Apply CURRENTLY SAVED settings to system cron jobs?')) document.getElementById('apply-schedule-form').submit();">Apply Schedule to System (Cron)</button>
+        </div>
+      </fieldset>
+    </form>
+    <form id="apply-schedule-form" action="{{ url_for('apply_schedule') }}" method="post" style="display:none;"></form>
+
+    <fieldset><legend>View Logs</legend>
+        <p>View recent entries from scraper log files (Regular & ROT).</p>
+        <div class="form-actions-left"> <a href="{{ url_for('view_logs_page') }}" class="btn btn-info">View Logs</a> </div>
+    </fieldset>
+    <div class="back-link"> <a href="{{ url_for('homepage') }}" class="btn btn-secondary">← Back to Dashboard</a> </div>
+  </div> 
+
+  <script>
+    function showStatusMessage(message, type = 'info') { 
+        const area = document.getElementById('status-message-area');
+        if (!area) return;
+        area.innerHTML = ''; 
+        const div = document.createElement('div');
+        div.className = `status-message ${type}`;
+        div.textContent = message; 
+        area.appendChild(div);
+         setTimeout(() => { if (area.contains(div)) area.removeChild(div); }, 7000);
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const msg = urlParams.get('msg'); const error = urlParams.get('error');
+        if (msg) {
+            let displayMsg = msg.replace(/_/g, ' ');
+            if (msg.startsWith("manual_scrape_rot_is_manual")) displayMsg = "ROT scraping is manual. Use 'Manual ROT Scrape' page.";
+            else if (msg === 'schedule_applied_successfully') displayMsg = "Schedule applied to system cron jobs.";
+            else if (msg === 'schedule_settings_saved_apply_needed') displayMsg = "Schedule settings saved. Click 'Apply Schedule'.";
+            else if (msg.includes('saved')) displayMsg = displayMsg.charAt(0).toUpperCase() + displayMsg.slice(1) + " successfully.";
+            else displayMsg = displayMsg.charAt(0).toUpperCase() + displayMsg.slice(1);
+            showStatusMessage(displayMsg, 'success');
+        } else if (error) {
+            let displayError = error.replace(/_/g, ' ');
+            if (error.startsWith('schedule_apply_failed')) displayError = "Failed to apply schedule: " + (error.split('_').slice(3).join(' ') || "Details in log.");
+            else if (error.includes('failed') || error.includes('missing')) displayError = displayError.charAt(0).toUpperCase() + displayError.slice(1) + ".";
+            else displayError = "Error: " + displayError;
+            showStatusMessage(displayError, 'error');
+        }
+        ['main'].forEach(prefix => {
+           const checkbox = document.getElementById(`enable-${prefix}-schedule`);
+           if (checkbox) { toggleScheduleOptions(prefix, checkbox.checked); }
+           const freqSelect = document.getElementById(`freq-${prefix}`);
+            if (freqSelect) { toggleConditionalInputs(prefix); }
+        });
+        const retentionCheckbox = document.getElementById('enable-retention');
+        if(retentionCheckbox) { toggleRetentionInput(); }
+        updateSelectAllSitesState();
+    });
+    function toggleScheduleOptions(prefix, isEnabled) { 
+        const optionsDiv = document.getElementById(`schedule-options-${prefix}`);
+        if (!optionsDiv) return;
+        optionsDiv.classList.toggle('enabled', isEnabled);
+        optionsDiv.querySelectorAll('select, input').forEach(el => el.disabled = !isEnabled);
+        if (isEnabled) { toggleConditionalInputs(prefix); } 
+        else {
+            optionsDiv.querySelectorAll('.conditional-schedule').forEach(el => {
+                el.style.display = 'none'; el.classList.remove('visible');
+                el.querySelectorAll('select, input').forEach(input => input.disabled = true);
+            });
+        }
+    }
+    function toggleConditionalInputs(prefix) { 
+        const freqSelect = document.getElementById(`freq-${prefix}`);
+        const scheduleIsEnabled = document.getElementById(`enable-${prefix}-schedule`)?.checked ?? false;
+        if (!freqSelect) return;
+        const selectedFreq = freqSelect.value;
+        document.querySelectorAll(`#schedule-options-${prefix} .conditional-schedule`).forEach(el => {
+            const elId = el.id;
+            const isVisible = scheduleIsEnabled && elId.includes(selectedFreq);
+            el.style.display = isVisible ? 'grid' : 'none'; el.classList.toggle('visible', isVisible);
+            el.querySelectorAll('select, input').forEach(input => input.disabled = !isVisible);
+        });
+    }
+    function toggleRetentionInput() { 
+        const checkbox = document.getElementById('enable-retention'); const inputDiv = document.querySelector('#settings-retention .conditional-input');
+        const numberInput = document.getElementById('retention-days'); if (!checkbox || !inputDiv || !numberInput) return;
+        inputDiv.style.display = checkbox.checked ? 'flex' : 'none'; numberInput.disabled = !checkbox.checked;
+    }
+    function toggleAllSites(checked) { 
+        document.querySelectorAll('.site-enable-list input.site-checkbox').forEach(checkbox => { checkbox.checked = checked; });
+        updateSelectAllSitesState();
+    }
+    function updateSelectAllSitesState() { 
+        const selectAllCheckbox = document.getElementById('select-all-sites'); const siteCheckboxes = document.querySelectorAll('.site-enable-list input.site-checkbox');
+        if (!selectAllCheckbox || siteCheckboxes.length === 0) return;
+        const total = siteCheckboxes.length; const checkedCount = Array.from(siteCheckboxes).filter(cb => cb.checked).length;
+        if (checkedCount === 0) { selectAllCheckbox.checked = false; selectAllCheckbox.indeterminate = false; }
+        else if (checkedCount === total) { selectAllCheckbox.checked = true; selectAllCheckbox.indeterminate = false; }
+        else { selectAllCheckbox.checked = false; selectAllCheckbox.indeterminate = true; }
+    }
+  </script>
+</body>
+</html>

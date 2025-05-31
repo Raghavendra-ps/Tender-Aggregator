@@ -1,0 +1,205 @@
+{
+  "global_scraper_settings": {
+    "scrape_py_limits": {
+      "max_list_pages": 1,
+      "retries": 3
+    },
+    "concurrency": {
+      "list_pages": 10,
+      "detail_pages": 2
+    },
+    "timeouts": {
+      "page_load": 75000,
+      "detail_page": 75000
+    },
+    "rot_scrape_limits": {
+      "max_list_pages": 1,
+      "retries": 2
+    },
+    "rot_concurrency": {
+      "detail_processing": 2
+    },
+    "rot_timeouts": {
+      "page_load": 75000,
+      "detail_page": 60000,
+      "download": 180000,
+      "pagination_load_wait": 7000,
+      "element_wait": 20000,
+      "post_submit": 30000 
+    }
+  },
+  "retention": {
+    "enabled": false,
+    "days": 30
+  },
+  "scheduler": {
+    "main_enabled": true,
+    "main_frequency": "daily",
+    "main_time": "10:52",
+    "main_day_weekly": "7",
+    "main_day_monthly": "1",
+    "rot_default_status_value": "5"
+  },
+  "site_configurations": {
+    "CPPP": {
+      "base_url": "https://eprocure.gov.in/eprocure/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://eprocure.gov.in/eprocure/app",
+      "enabled": false
+    },
+    "Andaman Nicobar": {
+      "base_url": "https://eprocure.andaman.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://eprocure.andaman.gov.in/nicgep/app?",
+      "enabled": false
+    },
+    "Arunachal Pradesh": {
+      "base_url": "https://arunachaltenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://arunachaltenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Assam": {
+      "base_url": "https://assamtenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://assamtenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Chandigarh": {
+      "base_url": "https://etenders.chd.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://etenders.chd.nic.in/nicgep/app",
+      "enabled": false
+    },
+    "Dadra Nagar Haveli": {
+      "base_url": "https://dnhtenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://dnhtenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Daman Diu": {
+      "base_url": "https://ddtenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://ddtenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Delhi": {
+      "base_url": "https://govtprocurement.delhi.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://govtprocurement.delhi.gov.in/nicgep/app?",
+      "enabled": false
+    },
+    "Goa": {
+      "base_url": "https://eprocure.goa.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://eprocure.goa.gov.in/nicgep/app",
+      "enabled": true
+    },
+    "Haryana": {
+      "base_url": "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://etenders.hry.nic.in/nicgep/app",
+      "enabled": false
+    },
+    "Himachal Pradesh": {
+      "base_url": "https://hptenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://hptenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Jammu Kashmir": {
+      "base_url": "https://jktenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://jktenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Jharkhand": {
+      "base_url": "https://jharkhandtenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://jharkhandtenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Kerala": {
+      "base_url": "https://etenders.kerala.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://etenders.kerala.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Lakshadweep": {
+      "base_url": "https://tendersutl.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://tendersutl.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Ladakh": {
+      "base_url": "https://tenders.ladakh.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://tenders.ladakh.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Maharashtra": {
+      "base_url": "https://mahatenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://mahatenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Madhya Pradesh": {
+      "base_url": "https://mptenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://mptenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Manipur": {
+      "base_url": "https://manipurtenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://manipurtenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Meghalaya": {
+      "base_url": "https://meghalayatenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://meghalayatenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Mizoram": {
+      "base_url": "https://mizoramtenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://mizoramtenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Nagaland": {
+      "base_url": "https://nagalandtenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://nagalandtenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Odisha": {
+      "base_url": "https://tendersodisha.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://tendersodisha.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Puducherry": {
+      "base_url": "https://pudutenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://pudutenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Punjab": {
+      "base_url": "https://eproc.punjab.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://eproc.punjab.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Rajasthan": {
+      "base_url": "https://eproc.rajasthan.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://eproc.rajasthan.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Sikkim": {
+      "base_url": "https://sikkimtender.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://sikkimtender.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Tamil Nadu": {
+      "base_url": "https://tntenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://tntenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Tripura": {
+      "base_url": "https://tripuratenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://tripuratenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "Uttar Pradesh": {
+      "base_url": "https://etender.up.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://etender.up.nic.in/nicgep/app",
+      "enabled": false
+    },
+    "Uttarakhand": {
+      "base_url": "https://uktenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://uktenders.gov.in/nicgep/app",
+      "enabled": false
+    },
+    "West Bengal": {
+      "base_url": "https://wbtenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
+      "domain": "https://wbtenders.gov.in/nicgep/app",
+      "enabled": false
+    }
+  }
+}

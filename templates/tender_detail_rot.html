@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROT Tender Details - TenFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        
+        :root {
+            --color-primary: #000000;
+            --color-secondary: #1a1a1a;
+            --color-accent: #2563eb;
+            --color-surface: #ffffff;
+            --color-surface-alt: #f8fafc;
+            --color-border: #e2e8f0;
+            --color-text: #0f172a;
+            --color-text-muted: #64748b;
+            --color-success: #059669;
+            --color-error: #dc2626;
+            --color-warning: #d97706;
+        }
+        
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            background: var(--color-surface-alt);
+            color: var(--color-text); 
+            line-height: 1.5; 
+            font-weight: 400;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 32px 0;
+        }
+        
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 48px 32px; 
+            background: var(--color-surface);
+            border-radius: 0;
+        }
+        
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 48px; 
+            padding-bottom: 24px; 
+            border-bottom: 2px solid var(--color-primary);
+        }
+        
+        .header h1 { 
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 800; 
+            letter-spacing: -0.02em;
+            color: var(--color-primary);
+            text-transform: uppercase;
+        }
+        
+        .btn {
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center;
+            padding: 12px 24px; 
+            border: 1px solid transparent;
+            font-family: inherit;
+            font-size: 0.875rem; 
+            font-weight: 600; 
+            text-decoration: none; 
+            color: var(--color-surface);
+            background: var(--color-primary);
+            border-radius: 0;
+            cursor: pointer; 
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        .btn:hover { 
+            background: var(--color-secondary);
+            transform: translateY(-1px);
+        }
+        
+        .btn:focus { 
+            outline: 2px solid var(--color-accent); 
+            outline-offset: 2px; 
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-primary);
+            border-color: var(--color-border);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--color-surface-alt);
+            border-color: var(--color-primary);
+        }
+        
+        .tender-details { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 24px; 
+            margin-bottom: 32px; 
+        }
+        
+        .detail-item { 
+            line-height: 1.6; 
+            padding: 24px; 
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 0;
+        }
+        
+        .detail-item strong { 
+            display: block; 
+            color: var(--color-text); 
+            font-weight: 700; 
+            font-size: 0.875rem; 
+            margin-bottom: 8px; 
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        .detail-item span, .detail-item a { 
+            font-size: 0.875rem; 
+            word-wrap: break-word; 
+            color: var(--color-text-muted); 
+            font-weight: 500;
+        }
+        
+        .detail-item a { 
+            color: var(--color-accent); 
+            text-decoration: none; 
+        }
+        
+        .detail-item a:hover { 
+            text-decoration: underline; 
+        }
+        
+        .na-text { 
+            color: var(--color-text-muted); 
+            font-style: italic; 
+        }
+        
+        .status-text { 
+            font-weight: 600; 
+        }
+        
+        .status-text.downloaded { 
+            color: var(--color-success); 
+            background: #ecfdf5; 
+            padding: 4px 8px; 
+            border-radius: 0;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .status-text.error { 
+            color: var(--color-error); 
+            background: #fef2f2; 
+            padding: 4px 8px; 
+            border-radius: 0;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .source-note { 
+            font-size: 0.75rem; 
+            color: var(--color-text-muted); 
+            margin-top: 16px; 
+            display: block; 
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .source-site-highlight { 
+            font-weight: 700; 
+            color: var(--color-primary);
+        }
+        
+        @media (max-width: 768px) {
+            .container { 
+                margin: 16px; 
+                padding: 32px 24px; 
+            }
+            
+            .header { 
+                flex-direction: column; 
+                align-items: stretch; 
+                gap: 16px;
+            }
+            
+            .tender-details { 
+                grid-template-columns: 1fr; 
+                gap: 16px; 
+            }
+            
+            .detail-item { 
+                padding: 16px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ROT Tender Details</h1>
+            <a href="{{ url_for('view_tenders_typed', data_type='rot', subdir=subdir) }}" class="btn btn-secondary">← Back to List</a>
+        </div>
+        
+        <div class="tender-details">
+            <div class="detail-item">
+                <strong>Reference Number:</strong>
+                <span>{{ rot_tender.get('rot_reference_number', 'N/A') if rot_tender.get('rot_reference_number') else '<span class="na-text">Not Available</span>' | safe }}</span>
+            </div>
+            
+            <div class="detail-item">
+                <strong>Title:</strong>
+                <span>{{ rot_tender.get('rot_tender_title', 'N/A') if rot_tender.get('rot_tender_title') else '<span class="na-text">Not Available</span>' | safe }}</span>
+            </div>
+            
+            <div class="detail-item">
+                <strong>Organisation:</strong>
+                <span>{{ rot_tender.get('rot_organisation_chain', 'N/A') if rot_tender.get('rot_organisation_chain') else '<span class="na-text">Not Available</span>' | safe }}</span>
+            </div>
+            
+            <div class="detail-item">
+                <strong>Tender Stage:</strong>
+                <span>{{ rot_tender.get('rot_tender_stage', 'N/A') if rot_tender.get('rot_tender_stage') else '<span class="na-text">Not Available</span>' | safe }}</span>
+            </div>
+            
+            <div class="detail-item">
+                <strong>Opening Date:</strong>
+                <span>{{ rot_tender.get('rot_opening_date', 'N/A') if rot_tender.get('rot_opening_date') else '<span class="na-text">Not Available</span>' | safe }}</span>
+            </div>
+            
+            <div class="detail-item">
+                <strong>Closing Date:</strong>
+                <span>{{ rot_tender.get('rot_closing_date', 'N/A') if rot_tender.get('rot_closing_date') else '<span class="na-text">Not Available</span>' | safe }}</span>
+            </div>
+            
+            <div class="detail-item">
+                <strong>Status:</strong>
+                {% if rot_tender.get('rot_download_status') == 'Downloaded' %}
+                    <span class="status-text downloaded">Downloaded</span>
+                {% elif rot_tender.get('rot_download_status') == 'Error' %}
+                    <span class="status-text error">Error</span>
+                {% else %}
+                    <span>{{ rot_tender.get('rot_download_status', 'N/A') if rot_tender.get('rot_download_status') else '<span class="na-text">Not Available</span>' | safe }}</span>
+                {% endif %}
+            </div>
+            
+            {% if rot_tender.get('rot_summary_file_link') %}
+            <div class="detail-item">
+                <strong>Summary File:</strong>
+                <a href="{{ rot_tender.rot_summary_file_link }}" target="_blank" rel="noopener noreferrer">View Summary Document</a>
+            </div>
+            {% endif %}
+        </div>
+        
+        <span class="source-note">Source: <span class="source-site-highlight">{{ rot_tender.get('source_site', 'Unknown') }}</span></span>
+    </div>
+</body>
+</html>

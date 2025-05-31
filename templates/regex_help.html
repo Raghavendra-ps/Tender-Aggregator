@@ -1,0 +1,133 @@
+<!-- START OF FILE TenFin-main/templates/regex_help.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Help for Tender Filtering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; }
+        body {
+          font-family: 'Roboto', sans-serif; background-color: #f1f4f9;
+          color: #333; line-height: 1.7; padding-top: 20px; padding-bottom: 40px;
+        }
+        .container {
+          max-width: 800px; /* Slightly wider for content */
+          margin: 20px auto; padding: 25px 35px;
+          background-color: #ffffff; border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        h2 {
+          text-align: center; margin-bottom: 25px; font-size: 1.8rem;
+          font-weight: 500; color: #1a2a45; border-bottom: 1px solid #eee; padding-bottom: 10px;
+        }
+         h3 {
+            margin-top: 25px; margin-bottom: 10px; font-size: 1.3rem;
+            font-weight: 500; color: #0056b3; border-bottom: 1px solid #e0e0e0; padding-bottom: 5px;
+        }
+         h4 {
+             margin-top: 15px; margin-bottom: 5px; font-size: 1.1rem;
+             font-weight: 500; color: #333;
+        }
+        p { margin-bottom: 15px; }
+        code {
+            background-color: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+        ul { margin-left: 20px; margin-bottom: 15px; padding-left: 15px;}
+        li { margin-bottom: 8px; }
+        table {
+            width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; vertical-align: top; }
+        th { background-color: #f2f2f2; font-weight: 500; }
+        td:first-child { font-family: Consolas, 'Courier New', monospace; text-align: center; font-weight: 500; }
+
+        .note {
+            background-color: #fff3cd; border-left: 4px solid #ffeeba;
+            padding: 10px 15px; margin-top: 15px; font-size: 0.95rem;
+        }
+        .back-link {
+            display: block; margin-top: 30px; text-align: center;
+        }
+        .btn { /* Button style from other pages */
+          display: inline-block; padding: 10px 20px; border-radius: 5px;
+          font-weight: 500; text-decoration: none;
+          transition: background-color 0.2s ease, box-shadow 0.2s ease;
+          border: none; cursor: pointer; font-size: 1rem;
+          background-color: #007bff; color: white; font-family: inherit;
+        }
+        .btn:hover { background-color: #0056b3; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        .btn:focus { outline: 2px solid #a8c7fa; outline-offset: 2px; }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Regular Expression (Regex) Help</h2>
+
+    <p>When you check the "Use Regex" box, the keywords you enter are treated as powerful search patterns, not just plain text. This lets you perform more flexible and specific searches.</p>
+
+    <p class="note"><strong>Note:</strong> All Regex searches performed by this tool are automatically <strong>case-insensitive</strong>.</p>
+
+    <h3>Basic Concepts</h3>
+    <h4>Literal Characters</h4>
+    <p>Most characters match themselves. Searching for <code>road</code> will find the exact word "road".</p>
+
+    <h4>Special Characters (Metacharacters)</h4>
+    <p>Some characters have special meanings in Regex. Here are the most useful ones for filtering:</p>
+
+    <table>
+        <thead>
+            <tr><th>Character(s)</th><th>Meaning</th><th>Example Pattern</th><th>Example Match</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><code>.</code></td><td>Matches any single character (except newline)</td><td><code>S.No</code></td><td>"S.No", "S/No", "S No"</td></tr>
+            <tr><td><code>|</code></td><td>Acts as OR</td><td><code>road|highway</code></td><td>"road" or "highway"</td></tr>
+            <tr><td><code>?</code></td><td>Makes the preceding character optional (0 or 1 time)</td><td><code>colou?r</code></td><td>"color" or "colour"</td></tr>
+            <tr><td><code>*</code></td><td>Matches the preceding character 0 or more times</td><td><code>Ref\.\s*No</code></td><td>"Ref.No", "Ref. No", "Ref.No"</td></tr>
+            <tr><td><code>+</code></td><td>Matches the preceding character 1 or more times</td><td><code>\d+</code></td><td>"1", "23", "999" (one or more digits)</td></tr>
+             <tr><td><code>[]</code></td><td>Character Set: Matches any one character inside brackets</td><td><code>gr[ae]y</code></td><td>"gray" or "grey"</td></tr>
+             <tr><td><code>^</code></td><td>Matches the beginning of the text (or line in multiline mode)</td><td><code>^Construction</code></td><td>Text starting with "Construction"</td></tr>
+             <tr><td><code>$</code></td><td>Matches the end of the text (or line in multiline mode)</td><td><code>Ltd\.?$</code></td><td>Text ending with "Ltd." or "Ltd"</td></tr>
+              <tr><td><code>\</code></td><td>Escape Character: Makes a special character literal</td><td><code>Ref\.No\.</code></td><td>The literal text "Ref.No."</td></tr>
+              <tr><td><code>\d</code></td><td>Matches any digit (0-9)</td><td><code>\d{4}</code></td><td>"2025" (exactly 4 digits)</td></tr>
+              <tr><td><code>\s</code></td><td>Matches any whitespace character (space, tab, newline)</td><td><code>Tender\s+ID</code></td><td>"Tender ID", "Tender    ID"</td></tr>
+              <tr><td><code>\w</code></td><td>Matches any "word" character (alphanumeric + underscore)</td><td><code>\w+</code></td><td>Any sequence of letters/numbers/underscore</td></tr>
+               <tr><td><code>()</code></td><td>Grouping: Groups parts of a pattern together</td><td><code>(Bridge|Road)\s*Repair</code></td><td>"Bridge Repair" or "Road Repair"</td></tr>
+                <tr><td><code>\b</code></td><td>Word Boundary: Matches the position between a word character and a non-word character (like space or start/end of string). Useful for matching whole words.</td><td><code>\bRoad\b</code></td><td>Matches "Road" but not "Roads" or "Abroad"</td></tr>
+        </tbody>
+    </table>
+
+
+    <h3>Combining Patterns</h3>
+    <p>You can combine these special characters to create complex patterns:</p>
+    <ul>
+        <li><code>supply of (pumps?|valves?)</code>: Matches "supply of pump", "supply of pumps", "supply of valve", or "supply of valves".</li>
+        <li><code>\d{2}-[A-Za-z]{3}-\d{4}</code>: Matches a date format like "17-Apr-2025".</li>
+        <li><code>\[\d{4}_\w+_\d+_\d+\]</code>: Matches the specific tender ID format like "[2025_ASI_855677_1]". Note the escaped brackets `\[` and `\]`.</li>
+    </ul>
+
+    <h3>Further Learning</h3>
+    <p>Regex can be very powerful but also complex. For testing your patterns and learning more, check out resources like:</p>
+    <ul>
+        <li><a href="https://regex101.com/" target="_blank" rel="noopener noreferrer">regex101.com</a> (Excellent online tester and reference)</li>
+        <li><a href="https://docs.python.org/3/library/re.html" target="_blank" rel="noopener noreferrer">Python's `re` module documentation</a></li>
+    </ul>
+
+    <div class="back-link">
+        {# Link back to the filter form page #}
+        <a href="{{ url_for('run_filter_form') }}" class="btn">← Back to Filter Form</a>
+    </div>
+
+  </div>
+</body>
+</html>
+<!-- END OF FILE TenFin-main/templates/regex_help.html -->

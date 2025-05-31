@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Filter - TenFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        
+        :root {
+            --color-primary: #000000;
+            --color-secondary: #1a1a1a;
+            --color-accent: #2563eb; /* Blue accent */
+            --color-surface: #ffffff;
+            --color-surface-alt: #f8fafc; /* Light gray background */
+            --color-border: #e2e8f0; /* Light gray border */
+            --color-text: #0f172a; /* Dark slate text */
+            --color-text-muted: #64748b; /* Lighter slate text */
+            --color-success: #059669;
+            --color-error: #dc2626;
+            --color-warning: #d97706;
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            background: var(--color-surface-alt);
+            color: var(--color-text); 
+            line-height: 1.5; 
+            font-weight: 400;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 32px 0; /* Add some padding to body */
+        }
+        
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 48px 32px; 
+            background: var(--color-surface);
+        }
+        
+        h2 { 
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 800; 
+            letter-spacing: -0.02em;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            margin-bottom: 48px;
+            text-align: center;
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 24px;
+        }
+        
+        .form-group { 
+            margin-bottom: 32px; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        
+        label { 
+            display: block; 
+            margin-bottom: 12px; 
+            font-size: 0.875rem; 
+            font-weight: 600; 
+            color: var(--color-text);
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        .input, input[type="text"], input[type="date"], select { 
+            width: 100%; 
+            border: 1px solid var(--color-border);
+            background: var(--color-surface); 
+            padding: 16px 20px; 
+            font-size: 1rem; 
+            color: var(--color-text); 
+            transition: all 0.2s ease;
+            border-radius: 0;
+            font-family: inherit;
+        }
+        
+        .input:focus, input[type="text"]:focus, input[type="date"]:focus, select:focus { 
+            outline: 2px solid var(--color-accent); 
+            outline-offset: -2px; /* For inset-like focus */
+            border-color: var(--color-accent);
+        }
+        
+        select { 
+            appearance: none; 
+            background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" fill="%23000000"><path d="M0 0l6 6 6-6z"/></svg>'); 
+            background-repeat: no-repeat; 
+            background-position: right 20px center; 
+            background-size: 12px 6px; 
+            cursor: pointer; 
+        }
+        
+        .keyword-regex-group { 
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 24px; 
+            align-items: flex-end; /* Align checkbox with bottom of input */
+            background: var(--color-surface-alt);
+            border: 1px solid var(--color-border);
+            padding: 24px;
+            margin-bottom: 16px; /* Space before help text */
+        }
+        
+        .keyword-input-wrapper { 
+            flex-grow: 1; 
+        }
+        
+        .regex-checkbox-wrapper { 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+            padding-bottom: 16px; /* To align with input padding */
+            flex-shrink: 0; 
+        }
+        
+        .regex-checkbox-wrapper input[type="checkbox"] { 
+            width: 18px; 
+            height: 18px; 
+            accent-color: var(--color-accent);
+        }
+        
+        .regex-checkbox-wrapper label { 
+            margin-bottom: 0; 
+            font-weight: 600; 
+            color: var(--color-text); 
+            cursor: pointer; 
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        .regex-help { 
+            font-size: 0.75rem; 
+            color: var(--color-text-muted); 
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .regex-help a { 
+            color: var(--color-accent); 
+            text-decoration: none; 
+            font-weight: 600;
+        }
+        
+        .regex-help a:hover { 
+            text-decoration: underline; 
+        }
+        
+        .btn { /* Standard button style from index.html */
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 12px 24px; border: 1px solid transparent;
+            font-family: inherit; font-size: 0.875rem; font-weight: 500; 
+            text-decoration: none; color: var(--color-surface);
+            background: var(--color-primary); border-radius: 0;
+            cursor: pointer; transition: all 0.2s ease;
+            text-transform: uppercase; letter-spacing: 0.025em;
+        }
+        .btn:hover { background: var(--color-secondary); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+        .btn:focus { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+        .btn-submit-filter { /* Specific for the main submit button */
+            width: 100%;
+            padding: 16px 24px; /* Larger padding */
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 24px;
+        }
+        
+        .form-actions { 
+            margin-top: 48px; 
+            text-align: center; 
+        }
+        
+        .btn-back { 
+            background: transparent;
+            color: var(--color-primary);
+            border-color: var(--color-border);
+        }
+        .btn-back:hover { background: var(--color-surface-alt); border-color: var(--color-primary); }
+        
+        .status-message { 
+            padding: 16px 20px; 
+            margin-bottom: 24px; 
+            border-left: 4px solid;
+            font-size: 0.875rem; 
+            font-weight: 500;
+        }
+        
+        .error-message { 
+            color: var(--color-error); 
+            border-color: var(--color-error);
+            background: #fef2f2; /* Lighter red background */
+        }
+        
+        .info-message { 
+            color: var(--color-text); /* More neutral for info */
+            border-color: var(--color-accent);
+            background: #eff6ff; /* Lighter blue background */
+        }
+        
+        .date-filters-group { 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px; 
+        }
+        
+        .hidden { 
+            display: none !important; 
+        }
+        
+        @media (max-width: 768px) {
+            .container { 
+                margin: 16px; 
+                padding: 32px 24px; 
+            }
+            .keyword-regex-group { 
+                grid-template-columns: 1fr; /* Stack on small screens */
+                gap: 16px;
+            }
+            .regex-checkbox-wrapper {
+                padding-bottom: 0; /* Adjust alignment */
+            }
+            .date-filters-group { 
+                grid-template-columns: 1fr; 
+                gap: 16px; 
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Create New Filter</h2>
+
+    <div id="source-file-info-regular" class="status-message info-message {% if no_source_file_regular %}hidden{% endif %}">
+      Filtering REGULAR tenders using: <strong>{{ latest_source_filename_regular | default('N/A') }}</strong>
+    </div>
+    <div id="source-file-info-rot" class="status-message info-message {% if no_source_file_rot %}hidden{% endif %}">
+      Filtering ROT tenders using: <strong>{{ latest_source_filename_rot | default('N/A') }}</strong>
+    </div>
+
+    {% if no_source_file_regular and no_source_file_rot %}
+      <div class="status-message error-message">
+        <strong>Cannot Run Filter:</strong> No source data files (Regular or ROT) found. Ensure scrapers have run.
+      </div>
+    {% endif %}
+    
+    <form action="{{ url_for('run_filter_submit') }}" method="post" id="filter-form">
+
+      <div class="form-group">
+        <label for="data_type">Select Data Type to Filter:</label>
+        <select id="data_type" name="data_type" class="input" onchange="toggleFilterOptions(this.value)">
+          <option value="regular" {% if no_source_file_regular and not no_source_file_rot %}disabled{% endif %}>Regular Tenders</option>
+          <option value="rot" {% if no_source_file_rot and not no_source_file_regular %}disabled{% elif no_source_file_rot %}disabled{% endif %}>ROT - Results of Tenders</option>
+        </select>
+        <small id="data-type-warning" class="status-message error-message hidden" style="margin-top:8px; padding: 8px 12px; font-size:0.8em;">
+            Source file for selected data type is missing. This filter may not produce results.
+        </small>
+      </div>
+
+      <div class="form-group">
+        <label for="filter_name">Save Filter Results As:</label>
+        <input type="text" id="filter_name" name="filter_name" placeholder="e.g., IT Infrastructure Q2" required class="input">
+      </div>
+
+      <div class="form-group">
+        <label for="site_key">Filter by Source Site (Optional):</label> 
+        <select id="site_key" name="site_key" class="input"> 
+          <option value="">-- Any Site --</option>
+          {% if available_sites %} 
+            {% for site in available_sites %} 
+              <option value="{{ site }}">{{ site }}</option> 
+            {% endfor %}
+          {% else %}
+            <option value="" disabled>Site list unavailable</option>
+          {% endif %} 
+        </select>
+      </div>
+      
+      <div id="date-filters-section" class="date-filters-group">
+          <div class="form-group">
+            <label for="start_date">Opening Date From (Optional):</label>
+            <input type="date" id="start_date" name="start_date" title="Include tenders opening ON or AFTER this date." class="input">
+          </div>
+          <div class="form-group">
+            <label for="end_date">Opening Date To (Optional):</label>
+            <input type="date" id="end_date" name="end_date" title="Include tenders opening ON or BEFORE this date." class="input">
+          </div>
+      </div>
+      <small id="date-filter-note" class="status-message info-message hidden" style="padding: 8px 12px; font-size:0.8em;">Date filters are not applicable for ROT data.</small>
+
+      <div class="keyword-regex-group">
+          <div class="keyword-input-wrapper form-group" style="margin-bottom:0;"> <!-- Adjusted margin for alignment -->
+            <label for="keywords">Keywords (Optional, Comma-Separated):</label>
+            <input type="text" id="keywords" name="keywords" placeholder="e.g., roads, lighting, software" class="input">
+          </div>
+          <div class="regex-checkbox-wrapper">
+            <input type="checkbox" id="regex" name="regex" value="True">
+            <label for="regex">Use Regex</label>
+          </div>
+      </div>
+      <div class="regex-help" style="margin-bottom: 24px;"> <!-- Added margin -->
+          (When 'Use Regex' is checked, keywords are treated as patterns.
+          <a href="{{ url_for('regex_help_page') }}" target="_blank" rel="noopener noreferrer" title="Opens Regex Help in new tab">Need help with Regex?</a>)
+      </div>
+
+      <button type="submit" id="run-filter-button" class="btn btn-submit-filter">Create Filter</button>
+
+      <div class="form-actions">
+        <a href="{{ url_for('homepage') }}" class="btn btn-back">← Cancel and Go Back</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const noSourceRegular = {{ no_source_file_regular | tojson }};
+    const noSourceRot = {{ no_source_file_rot | tojson }};
+
+    function toggleFilterOptions(selectedType) {
+        const dateFiltersSection = document.getElementById('date-filters-section');
+        const dateFilterNote = document.getElementById('date-filter-note');
+        const dataTypeWarning = document.getElementById('data-type-warning');
+        const runFilterButton = document.getElementById('run-filter-button');
+        
+        const sourceInfoRegular = document.getElementById('source-file-info-regular');
+        const sourceInfoRot = document.getElementById('source-file-info-rot');
+
+        let disableFormCompletely = false;
+
+        if (selectedType === 'rot') {
+            dateFiltersSection.classList.add('hidden');
+            dateFilterNote.classList.remove('hidden');
+            if (sourceInfoRegular) sourceInfoRegular.classList.add('hidden');
+            if (sourceInfoRot) sourceInfoRot.classList.remove('hidden');
+            if (noSourceRot) {
+                dataTypeWarning.textContent = "Source file for ROT data is missing. This filter may not produce results.";
+                dataTypeWarning.classList.remove('hidden');
+                if (runFilterButton) runFilterButton.disabled = true;
+                disableFormCompletely = true;
+            } else {
+                dataTypeWarning.classList.add('hidden');
+                 if (runFilterButton) runFilterButton.disabled = false;
+            }
+        } else { // 'regular'
+            dateFiltersSection.classList.remove('hidden');
+            dateFilterNote.classList.add('hidden');
+            if (sourceInfoRot) sourceInfoRot.classList.add('hidden');
+            if (sourceInfoRegular) sourceInfoRegular.classList.remove('hidden');
+
+            if (noSourceRegular) {
+                dataTypeWarning.textContent = "Source file for Regular tender data is missing. This filter may not produce results.";
+                dataTypeWarning.classList.remove('hidden');
+                if (runFilterButton) runFilterButton.disabled = true;
+                disableFormCompletely = true;
+            } else {
+                dataTypeWarning.classList.add('hidden');
+                if (runFilterButton) runFilterButton.disabled = false;
+            }
+        }
+        
+        // Overall disable if no source files at all
+        if (noSourceRegular && noSourceRot) {
+            if (runFilterButton) runFilterButton.disabled = true;
+        } else if (disableFormCompletely) { // If the selected type has no source
+             if (runFilterButton) runFilterButton.disabled = true;
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const dataTypeSelect = document.getElementById('data_type');
+        
+        // Default selection logic
+        if (noSourceRegular && !noSourceRot) { // Only ROT available
+            dataTypeSelect.value = 'rot';
+        } else if (!noSourceRegular && noSourceRot) { // Only Regular available
+             dataTypeSelect.value = 'regular';
+        } else if (noSourceRegular && noSourceRot) { // Both missing
+            dataTypeSelect.value = 'regular'; // Default to regular, but button will be disabled by toggleFilterOptions
+        }
+        // If both are available, the default <option> in HTML will be selected ('regular')
+        
+        toggleFilterOptions(dataTypeSelect.value); // Initial call to set visibility
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+jinja2
+openpyxl
+python-multipart
+playwright
+bs4
+python-crontab
+httpx
+beautifulsoup4
+pydantic
+starlette

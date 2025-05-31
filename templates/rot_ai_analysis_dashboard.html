@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROT AI Analysis Dashboard - TenFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        
+        :root {
+            --color-primary: #000000;
+            --color-secondary: #1a1a1a;
+            --color-accent: #2563eb;
+            --color-surface: #ffffff;
+            --color-surface-alt: #f8fafc;
+            --color-border: #e2e8f0;
+            --color-text: #0f172a;
+            --color-text-muted: #64748b;
+            --color-success: #059669;
+            --color-error: #dc2626;
+            --color-warning: #d97706;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            background: var(--color-surface-alt);
+            color: var(--color-text); 
+            line-height: 1.5; 
+            font-weight: 400;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            padding: 48px 32px; 
+            background: var(--color-surface);
+            min-height: 100vh;
+        }
+        
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            margin-bottom: 64px; 
+            padding-bottom: 32px; 
+            border-bottom: 2px solid var(--color-primary);
+        }
+        
+        .header h1 { 
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800; 
+            letter-spacing: -0.02em;
+            line-height: 0.9;
+            color: var(--color-primary);
+            text-transform: uppercase;
+        }
+        
+        .header-subtitle {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 8px;
+        }
+        
+        .btn {
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center;
+            padding: 12px 24px; 
+            border: 1px solid transparent;
+            font-family: inherit;
+            font-size: 0.875rem; 
+            font-weight: 500; 
+            text-decoration: none; 
+            color: var(--color-surface);
+            background: var(--color-primary);
+            border-radius: 0;
+            cursor: pointer; 
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn:hover { 
+            background: var(--color-secondary);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn:focus { 
+            outline: 2px solid var(--color-accent); 
+            outline-offset: 2px; 
+        }
+        
+        .btn:disabled { 
+            opacity: 0.5; 
+            cursor: not-allowed; 
+            transform: none; 
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-primary);
+            border-color: var(--color-border);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--color-surface-alt);
+            border-color: var(--color-primary);
+        }
+        
+        .btn-accent {
+            background: var(--color-accent);
+        }
+        
+        .btn-accent:hover {
+            background: #1d4ed8;
+        }
+        
+        .btn-success {
+            background: var(--color-success);
+        }
+        
+        .btn-success:hover {
+            background: #047857;
+        }
+        
+        .btn-info {
+            background: var(--color-accent);
+        }
+        
+        .btn-info:hover {
+            background: #1d4ed8;
+        }
+        
+        .section {
+            margin-bottom: 48px;
+        }
+        
+        .section-header {
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            color: var(--color-primary); 
+            margin-bottom: 32px; 
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 16px;
+            display: inline-block;
+        }
+        
+        .form-section {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            padding: 32px;
+            margin-bottom: 32px;
+        }
+        
+        .form-group { 
+            margin-bottom: 24px; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        
+        label { 
+            display: block; 
+            margin-bottom: 8px; 
+            font-size: 0.875rem; 
+            font-weight: 600; 
+            color: var(--color-text);
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        .input, select, textarea { 
+            width: 100%; 
+            border: 1px solid var(--color-border);
+            background: var(--color-surface); 
+            padding: 12px 16px; 
+            font-size: 0.875rem; 
+            color: var(--color-text); 
+            transition: all 0.2s ease;
+            border-radius: 0;
+            font-family: inherit;
+        }
+        
+        .input:focus, select:focus, textarea:focus { 
+            outline: 2px solid var(--color-accent); 
+            outline-offset: -2px;
+            border-color: var(--color-accent);
+        }
+        
+        textarea { 
+            min-height: 120px; 
+            resize: vertical;
+        }
+        
+        .analysis-setup { 
+            display: flex; 
+            gap: 24px; 
+            align-items: flex-end; 
+            flex-wrap: wrap; 
+            margin-bottom: 32px; 
+        }
+        
+        .analysis-setup .form-group { 
+            flex: 1; 
+            min-width: 220px; 
+            margin-bottom: 0;
+        }
+        
+        .analysis-setup .btn { 
+            margin-bottom: 0; 
+        }
+        
+        .status-message { 
+            padding: 20px 24px; 
+            margin-bottom: 32px; 
+            border-left: 4px solid;
+            font-size: 0.875rem; 
+            font-weight: 500;
+            background: var(--color-surface);
+        }
+        
+        .status-message.success { 
+            color: var(--color-success); 
+            border-color: var(--color-success);
+            background: #ecfdf5;
+        }
+        
+        .status-message.error { 
+            color: var(--color-error); 
+            border-color: var(--color-error);
+            background: #fef2f2;
+        }
+        
+        .status-message.info { 
+            color: var(--color-accent); 
+            border-color: var(--color-accent);
+            background: #eff6ff;
+        }
+        
+        .minor-note { 
+            font-size: 0.75rem; 
+            color: var(--color-text-muted); 
+            margin-top: 8px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .chat-area { 
+            margin-top: 48px; 
+        }
+        
+        .chat-message { 
+            border: 1px solid var(--color-border);
+            margin-bottom: 32px; 
+            background: var(--color-surface);
+        }
+        
+        .chat-message-header { 
+            background: var(--color-primary); 
+            color: var(--color-surface);
+            padding: 16px 24px; 
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        .chat-message-body { 
+            padding: 32px; 
+            white-space: pre-wrap; 
+            overflow-x: auto; 
+            max-height: 500px; 
+            overflow-y: auto; 
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+        
+        .chat-message-body.loading { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: var(--color-text-muted); 
+            font-style: italic; 
+            min-height: 120px; 
+            font-weight: 500;
+        }
+        
+        .back-link { 
+            text-align: center; 
+            margin-top: 48px; 
+        }
+        
+        @media (max-width: 768px) {
+            .container { 
+                padding: 24px 16px; 
+            }
+            
+            .header { 
+                flex-direction: column; 
+                align-items: stretch; 
+                gap: 24px;
+            }
+            
+            .analysis-setup { 
+                flex-direction: column; 
+                align-items: stretch;
+            }
+            
+            .analysis-setup .btn { 
+                margin-top: 16px; 
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1>ROT AI Analysis</h1>
+        <div class="header-subtitle">Artificial Intelligence Data Analysis Dashboard</div>
+      </div>
+      <a href="{{ url_for('homepage') }}" class="btn btn-secondary">← Back to Dashboard</a>
+    </div>
+
+    <div id="aiPageStatusMessage" class="status-message" style="display: none;"></div>
+
+    <div class="section">
+        <h2 class="section-header">1. Data Preparation</h2>
+        <div class="form-section">
+            <button type="button" id="prepareDataBtn" class="btn btn-info">Prepare/Refresh ROT Data for AI</button>
+            <p class="minor-note">Click this first if new ROT scrapes have been completed. This will process and save the latest ROT data into a single file for the AI to use.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-header">2. AI Report Generation</h2>
+        <div class="form-section">
+            <div class="analysis-setup">
+                <div class="form-group">
+                    <label for="reportType">Report Type / Focus:</label>
+                    <select id="reportType" class="input">
+                        <option value="general_summary">General ROT Summary</option>
+                        <option value="status_distribution">Tender Status Distribution Analysis</option>
+                        <option value="organisation_activity">Key Organisation Activity</option>
+                        <option value="custom">Custom Prompt Below</option>
+                    </select>
+                </div>
+                <button type="button" id="createReportBtn" class="btn btn-success">Create Report using AI</button>
+            </div>
+            <div class="form-group">
+                <label for="customAIPrompt">Custom Instructions for AI (if 'Custom' selected above, or to add details):</label>
+                <textarea id="customAIPrompt" class="input" placeholder="e.g., Provide a detailed summary of tenders related to 'Road Construction' from 'Punjab' site, focusing on 'Financial Evaluation' stage."></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-area">
+        <h2 class="section-header">Analysis Results</h2>
+        <div id="aiResponseSection" class="chat-message">
+            <div class="chat-message-header">AI Generated Report</div>
+            <div id="aiReportBody" class="chat-message-body">No report generated yet. Select parameters above and click "Create Report using AI".</div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    const prepareDataBtn = document.getElementById('prepareDataBtn');
+    const createReportBtn = document.getElementById('createReportBtn');
+    const reportTypeSelect = document.getElementById('reportType');
+    const customAIPromptTextarea = document.getElementById('customAIPrompt');
+    
+    const aiResponseSection = document.getElementById('aiResponseSection');
+    const aiReportBody = document.getElementById('aiReportBody');
+    const aiPageStatusMessage = document.getElementById('aiPageStatusMessage');
+
+    function showAiPageStatus(message, type = 'info') {
+        if (!aiPageStatusMessage) return;
+        aiPageStatusMessage.textContent = message;
+        aiPageStatusMessage.className = `status-message ${type}`;
+        aiPageStatusMessage.style.display = 'block';
+        setTimeout(() => { if(aiPageStatusMessage) aiPageStatusMessage.style.display = 'none'; }, 7000);
+    }
+
+    if (prepareDataBtn) {
+        prepareDataBtn.addEventListener('click', async () => {
+            prepareDataBtn.disabled = true;
+            prepareDataBtn.textContent = 'Preparing Data...';
+            showAiPageStatus("Initiating ROT data collation for AI...", "info");
+            try {
+                const response = await fetch("{{ url_for('rot_prepare_analysis_data') }}", { method: 'POST' });
+                const result = await response.json(); 
+                if (!response.ok) { throw new Error(result.detail || "Failed to prepare data."); }
+                showAiPageStatus(result.message || "ROT data preparation initiated successfully. You can now create a report.", "success");
+            } catch (error) {
+                console.error("Error preparing data for AI:", error);
+                showAiPageStatus(`Error preparing data: ${error.message}`, "error");
+            } finally {
+                prepareDataBtn.disabled = false;
+                prepareDataBtn.textContent = 'Prepare/Refresh ROT Data for AI';
+            }
+        });
+    }
+
+    if (createReportBtn) {
+        createReportBtn.addEventListener('click', async () => {
+            createReportBtn.disabled = true;
+            createReportBtn.textContent = 'Generating Report...';
+            
+            if (aiReportBody) {
+               aiReportBody.innerHTML = ''; 
+               aiReportBody.textContent = 'Fetching latest ROT data and contacting AI... Please wait.';
+               aiReportBody.classList.add('loading');
+            }
+            showAiPageStatus("Fetching data and sending to AI...", "info");
+
+            let collatedRotData;
+            try {
+                const dataResponse = await fetch("{{ url_for('get_collated_rot_data_json') }}");
+                if (!dataResponse.ok) {
+                    const errData = await dataResponse.json().catch(() => ({detail: "Unknown error loading data."}));
+                    throw new Error(`Failed to load prepared ROT data: ${errData.detail || dataResponse.statusText}. Please run "Prepare/Refresh Data" first.`);
+                }
+                collatedRotData = await dataResponse.json();
+                if (!collatedRotData || !Array.isArray(collatedRotData) || collatedRotData.length === 0) {
+                    throw new Error("No ROT data available to analyze or data is in incorrect format. Please run 'Prepare/Refresh Data'.");
+                }
+                showAiPageStatus("ROT data loaded, preparing prompt for AI...", "info");
+            } catch (err) {
+                 showAiPageStatus(err.message, "error");
+                 if (aiReportBody) {
+                    aiReportBody.textContent = err.message;
+                    aiReportBody.classList.remove('loading');
+                 }
+                 createReportBtn.disabled = false;
+                 createReportBtn.textContent = 'Create Report using AI';
+                 return;
+            }
+
+            const analysisType = reportTypeSelect.value;
+            const userCustomPrompt = customAIPromptTextarea.value.trim();
+            
+            let promptForAI = ""; 
+
+            if (analysisType === "general_summary") {
+                promptForAI = "Provide a concise general summary of the provided ROT data. Highlight total unique tenders, common tender stages observed, and any significant patterns.";
+            } else if (analysisType === "status_distribution") {
+                promptForAI = "Analyze the distribution of tenders across different 'rot_tender_stage' values in the provided data. Provide counts or percentages for each stage. Present this as a simple list or table.";
+            } else if (analysisType === "organisation_activity") {
+                promptForAI = "From the provided data, identify the most active organizations based on 'rot_organisation_chain'. List the top 3-5 organizations and the number of tenders associated with them.";
+            } else if (analysisType === "custom" && userCustomPrompt) {
+                promptForAI = `The user has provided a custom request: "${userCustomPrompt}". Please address this request based on the provided data sample.`;
+            } else if (analysisType === "custom" && !userCustomPrompt) {
+                showAiPageStatus("Please provide custom instructions when 'Custom Prompt' is selected.", "error");
+                if (aiReportBody) {
+                   aiReportBody.textContent = "Custom prompt is empty.";
+                   aiReportBody.classList.remove('loading');
+                }
+                createReportBtn.disabled = false;
+                createReportBtn.textContent = 'Create Report using AI';
+                return;
+            }
+            
+            if (userCustomPrompt && analysisType !== "custom") {
+                 promptForAI += `\nAdditionally, consider this user instruction: "${userCustomPrompt}"`;
+            }
+
+            promptForAI += "\n\nHere is a sample of the Results of Tenders' data:\n" + JSON.stringify(collatedRotData.slice(0, 20), null, 2);
+
+            if (aiReportBody) {
+               aiReportBody.textContent = 'Communicating with AI via server proxy...';
+               aiReportBody.classList.add('loading');
+            }
+
+            try {
+                const proxyPayload = { prompt: promptForAI };
+                const proxyUrl = "{{ url_for('proxy_ai_chat') }}";
+                
+                console.log("Sending to Backend AI Proxy:", proxyUrl, "Payload:", proxyPayload);
+                const response = await fetch(proxyUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(proxyPayload)
+                });
+                const aiResult = await response.json(); 
+
+                if (!response.ok) {
+                    let errorMsg = `AI service error (via proxy) ${response.status}: ${response.statusText}`;
+                    if (aiResult && aiResult.detail) { 
+                        errorMsg = `AI service error: ${aiResult.detail}`;
+                    } else if (aiResult && aiResult.error) { 
+                        errorMsg = `AI service error: ${aiResult.error.message || aiResult.error}`; 
+                    }
+                    throw new Error(errorMsg);
+                }
+                
+                let aiContent = "No specific content found in AI response structure.";
+                if (aiResult.message && typeof aiResult.message.content === 'string') {
+                    aiContent = aiResult.message.content;
+                } else if (aiResult.choices && Array.isArray(aiResult.choices) && aiResult.choices.length > 0 && aiResult.choices[0].message && typeof aiResult.choices[0].message.content === 'string') {
+                    aiContent = aiResult.choices[0].message.content;
+                } else if (typeof aiResult.response === 'string') { 
+                    aiContent = aiResult.response;
+                } else { 
+                    console.warn("Unexpected AI response structure (from proxy):", aiResult);
+                }
+                
+                if (aiReportBody) {
+                   aiReportBody.innerHTML = marked.parse(aiContent); 
+                   aiReportBody.classList.remove('loading');
+                } else {
+                    alert("AI Analysis Complete (display area missing). Response:\n\n" + aiContent);
+                    console.log("AI Response Content:", aiContent);
+                }
+                showAiPageStatus("AI Analysis complete!", "success");
+
+            } catch (error) {
+                console.error("Error during AI analysis request (via proxy):", error);
+                if (aiReportBody) {
+                   aiReportBody.textContent = `Error during AI analysis: ${error.message}`;
+                   aiReportBody.classList.remove('loading');
+                }
+                showAiPageStatus(`Error during AI analysis: ${error.message}`, "error");
+            } finally {
+                createReportBtn.disabled = false;
+                createReportBtn.textContent = 'Create Report using AI';
+            }
+        });
+    }
+    showAiPageStatus("Welcome to ROT AI Analysis. Prepare data first, then create a report.", "info");
+
+  </script>
+</body>
+</html>

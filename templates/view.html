@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewing Tenders: {{ subdir_display_name | default(subdir) }} - TenFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        
+        :root {
+            --color-primary: #000000;
+            --color-secondary: #1a1a1a;
+            --color-accent: #2563eb; 
+            --color-surface: #ffffff;
+            --color-surface-alt: #f8fafc; 
+            --color-border: #e2e8f0; 
+            --color-text: #0f172a; 
+            --color-text-muted: #64748b; 
+            --color-success: #059669; 
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            background: var(--color-surface-alt);
+            color: var(--color-text); 
+            line-height: 1.4; /* Slightly tighter default line height */
+            font-weight: 400;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .page-wrapper { 
+            background: var(--color-surface);
+            padding: 24px; /* Reduced padding */
+            min-height: 100vh;
+        }
+
+        .container { 
+            max-width: none; 
+            width: 100%;
+            margin: 0 auto; 
+        }
+        
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 15px; /* Reduced margin */
+            padding-bottom: 16px; /* Reduced padding */
+            border-bottom: 2px solid var(--color-primary);
+        }
+        
+        .header h1 { 
+            font-size: 5rem; /* Slightly smaller */
+            font-weight: 800; 
+            letter-spacing: -0.02em;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            margin: 0; 
+        }
+        
+        .header-actions { display: flex; gap: 12px; align-items: center; }
+
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 8px 16px; /* Base padding for buttons */
+            border: 1px solid var(--color-primary); /* Default border for primary */
+            font-family: inherit; font-size: 0.8rem; /* Smaller base font */
+            font-weight: 500; 
+            text-decoration: none; color: var(--color-surface);
+            background: var(--color-primary); border-radius: 0;
+            cursor: pointer; transition: all 0.2s ease;
+            text-transform: uppercase; letter-spacing: 0.025em;
+        }
+        .btn:hover { background: var(--color-secondary); border-color: var(--color-secondary); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+        .btn:focus { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+        
+        .btn-secondary { /* For "Back to Dashboard" - white background, black text/border */
+            background: transparent; color: var(--color-primary); border-color: var(--color-primary);
+        }
+        .btn-secondary:hover { background: var(--color-surface-alt); border-color: var(--color-primary); }
+        
+        .btn-success { background-color: var(--color-success); border-color: var(--color-success); }
+        .btn-success:hover { background-color: #047857; border-color: #047857; }
+
+        .btn-details { /* Specific for "Details" button in table */
+            /* It will inherit .btn styles (black bg, white text) */
+            padding: 6px 10px; /* Make it smaller */
+            font-size: 0.7rem; /* Even smaller font */
+            /* border: 1px solid var(--color-primary); /* Ensure border if needed */
+        }
+
+        .table-responsive-wrapper {
+            width: 100%;
+            overflow-x: auto; 
+            border: 1px solid var(--color-border);
+            background: var(--color-surface); 
+        }
+
+        .tender-table { 
+            width: 100%; 
+            min-width: 1100px; /* Adjust as needed */
+            border-collapse: collapse; 
+            border-spacing: 0;
+        }
+        
+        .tender-table th { 
+            background: var(--color-primary);
+            color: var(--color-surface);
+            padding: 10px 12px; /* Further reduced padding */
+            text-align: left; 
+            font-weight: 600; 
+            font-size: 0.7rem; /* Smaller header font */
+            text-transform: uppercase;
+            letter-spacing: 0.05em; 
+            border-bottom: 1px solid var(--color-secondary); 
+            white-space: nowrap; 
+        }
+        
+        .tender-table td { 
+            padding: 10px 12px; /* Further reduced padding */
+            border-bottom: 1px solid var(--color-border);
+            font-size: 0.8rem; /* Smaller cell font */
+            vertical-align: middle; /* Changed from top to middle for button alignment */
+            line-height: 1.3; /* Tighter line height */
+        }
+        
+        .tender-table tbody tr:hover { background: var(--color-surface-alt); }
+        .tender-table tbody tr:last-child td { border-bottom: none; }
+        
+        .date-time-cell .date-part {
+            display: block;
+            font-weight: 500; 
+        }
+        .date-time-cell .time-part {
+            display: block;
+            font-size: 0.7rem; /* Even smaller for time */
+            color: var(--color-text-muted);
+        }
+        
+        .no-tenders { 
+            text-align: center; color: var(--color-text-muted); 
+            padding: 40px 24px; /* Adjusted */
+            font-weight: 500; font-size: 0.9rem; /* Adjusted */
+            background: var(--color-surface);
+            border: 1px solid var(--color-border); 
+            margin-top: 24px; /* Adjusted */
+        }
+        
+        .stats-bar { 
+            background: var(--color-surface-alt);
+            border: 1px solid var(--color-border);
+            padding: 12px 20px; /* Tighter padding */
+            margin-bottom: 20px; /* Reduced margin */
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            flex-wrap: wrap; 
+            gap: 16px;
+        }
+        
+        .stats-item { 
+            font-size: 0.8rem; /* Adjusted */
+            font-weight: 600;
+            color: var(--color-text); text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        .stats-value { 
+            font-size: 1.1rem; /* Adjusted */
+            font-weight: 800; 
+            color: var(--color-primary);
+            font-family: 'JetBrains Mono', monospace;
+            margin-left: 8px;
+        }
+/* Column width hints - adjust percentages for balance */
+         .col-sno       { width: 3%; text-align: center; } 
+         .col-published { width: 8%; } /* Tightened from 9% */
+         .col-closing   { width: 8%; } /* Tightened from 9% */
+         .col-opening   { width: 8%; } /* Tightened from 9% */
+         .col-tenderid  { width: 10%; } /* Tightened from 12% */
+         .col-site      { width: 5%; text-align: center; } /* Kept small */
+         .col-orgchain  { width: 28%; } /* Increased from 25% */
+         .col-title     { width: 26%; } /* Increased from 24% */
+         .col-actions   { width: 4%; text-align: center; } 
+
+        @media (max-width: 768px) {
+            .page-wrapper { padding: 16px; } /* Reduced padding */
+            .header { flex-direction: column; align-items: stretch; gap: 12px;} /* Reduced gap */
+            .stats-bar { flex-direction: column; align-items: stretch; text-align: center;}
+        }
+    </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="container">
+        <div class="header">
+        <h1>{{ subdir_display_name | default(subdir) }}</h1>
+        <div class="header-actions">
+            <a href="{{ url_for('download_tender_excel_typed', data_type='regular', subdir=subdir) }}" class="btn btn-success">Download (Excel)</a>
+            <a href="{{ url_for('homepage') }}" class="btn btn-secondary">← Back to Dashboard</a>
+        </div>
+        </div>
+        
+        {% if tenders %}
+            <div class="stats-bar">
+                <div class="stats-item">
+                    Total Tenders in Set: <span class="stats-value">{{ tenders|length }}</span>
+                </div>
+            </div>
+            
+            <div class="table-responsive-wrapper">
+                <table class="tender-table">
+                    <thead>
+                        <tr>
+                            <th class="col-sno">S.No</th>
+                            <th class="col-published">Published</th>
+                            <th class="col-closing">Closing</th>
+                            <th class="col-opening">Opening</th>
+                            <th class="col-tenderid">Tender ID</th>
+                            <th class="col-site">Source</th>
+                            <th class="col-orgchain">Organisation Chain</th>
+                            <th class="col-title">Title</th>
+                            <th class="col-actions"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for tender in tenders %}
+                        {% set published_full = tender.get('primary_published_date', tender.get('epublished_date_str', 'N/A')) %}
+                        {% set closing_full = tender.get('primary_closing_date', tender.get('closing_date_str', 'N/A')) %}
+                        {% set opening_full = tender.get('primary_opening_date', tender.get('opening_date_str', 'N/A')) %}
+                        
+                        {% set published_parts = published_full.split(' ', 1) %} {# Split only on the first space #}
+                        {% set closing_parts = closing_full.split(' ', 1) %}
+                        {% set opening_parts = opening_full.split(' ', 1) %}
+
+                        <tr>
+                            <td class="col-sno">{{ loop.index }}</td>
+                            <td class="col-published date-time-cell">
+                                <span class="date-part">{{ published_parts[0] if published_parts else 'N/A' }}</span>
+                                {% if published_parts|length > 1 %}
+                                <span class="time-part">{{ published_parts[1] }}</span>
+                                {% endif %}
+                            </td>
+                            <td class="col-closing date-time-cell">
+                                <span class="date-part">{{ closing_parts[0] if closing_parts else 'N/A' }}</span>
+                                {% if closing_parts|length > 1 %}
+                                <span class="time-part">{{ closing_parts[1] }}</span>
+                                {% endif %}
+                            </td>
+                            <td class="col-opening date-time-cell">
+                                <span class="date-part">{{ opening_parts[0] if opening_parts else 'N/A' }}</span>
+                                {% if opening_parts|length > 1 %}
+                                <span class="time-part">{{ opening_parts[1] }}</span>
+                                {% endif %}
+                            </td>
+                            <td class="col-tenderid">{{ tender.get('primary_tender_id', 'N/A') }}</td>
+                            <td class="col-site">{{ tender.get('source_site_key', 'N/A') }}</td>
+                            <td class="col-orgchain">{{ tender.get('organisation_chain', tender.get('list_page_org_chain', 'N/A')) | neat_format }}</td>
+                            <td class="col-title">{{ tender.get('primary_title', 'N/A') | neat_format }}</td>
+                            <td class="col-actions">
+                                <a href="{{ url_for('view_tender_detail_typed', data_type='regular', subdir=subdir, tender_id=tender.get('primary_tender_id', loop.index0)) }}" 
+                                   class="btn btn-details" title="View Full Details">Details</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div class="no-tenders">
+                No tenders found in this filtered set ({{ subdir_display_name | default(subdir) }}).
+            </div>
+        {% endif %}
+    </div>
+  </div>
+</body>
+</html>

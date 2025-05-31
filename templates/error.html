@@ -1,0 +1,89 @@
+<!-- START OF FILE TenFin-main/templates/error.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Occurred</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; }
+        body {
+          font-family: 'Roboto', sans-serif;
+          background-color: #f1f4f9; /* Light background */
+          color: #333;
+          line-height: 1.6;
+          padding-top: 40px; /* Ensure content isn't stuck at the very top */
+        }
+        .container {
+          max-width: 700px; /* Message container size */
+          margin: 40px auto;
+          padding: 30px 40px;
+          background-color: #ffffff;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+          text-align: center;
+          border-left: 5px solid #dc3545; /* Red accent border */
+        }
+        h2 {
+          margin-bottom: 20px;
+          color: #dc3545; /* Danger red color */
+          font-size: 1.6rem;
+          font-weight: 500;
+          display: flex; /* Align icon and text */
+          align-items: center;
+          justify-content: center;
+          gap: 10px; /* Space between icon and text */
+        }
+        h2::before { /* Simple X icon */
+            content: '❌'; /* Unicode cross mark */
+            font-size: 1.5rem; /* Adjust size as needed */
+        }
+        p {
+          font-size: 1rem; /* Standard paragraph size */
+          margin-bottom: 25px; /* Space before button */
+          color: #555; /* Slightly lighter text for message */
+          word-wrap: break-word; /* Wrap long error messages */
+        }
+        .btn { /* Button style consistent with other pages */
+          display: inline-block;
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-weight: 500;
+          text-decoration: none;
+          transition: background-color 0.2s ease, box-shadow 0.2s ease;
+          border: none;
+          cursor: pointer;
+          font-size: 1rem;
+          background-color: #007bff; /* Primary blue for back button */
+          color: white;
+          font-family: inherit; /* Ensure consistent font */
+        }
+        .btn:hover {
+          background-color: #0056b3;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .btn:focus {
+            outline: 2px solid #a8c7fa; /* Blue focus */
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h2>An Error Occurred</h2>
+    {# Display the error message passed from dashboard.py #}
+    {# Using 'safe' filter allows rendering HTML if error message contains it. Be cautious if error messages could come from user input. #}
+    <p>{{ error | safe }}</p>
+
+    {# REMOVED the invalid download link that caused the error #}
+
+    {# Provide a clear way back to the main page #}
+    <a href="{{ url_for('homepage') }}" class="btn">← Back to Dashboard</a>
+  </div>
+</body>
+</html>
+<!-- END OF FILE TenFin-main/templates/error.html -->

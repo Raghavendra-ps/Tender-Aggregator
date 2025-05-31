@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Logs - TenFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        
+        :root {
+            --color-primary: #000000;
+            --color-secondary: #1a1a1a;
+            --color-accent: #2563eb;
+            --color-surface: #ffffff;
+            --color-surface-alt: #f8fafc;
+            --color-border: #e2e8f0;
+            --color-text: #0f172a;
+            --color-text-muted: #64748b;
+            --color-success: #059669;
+            --color-error: #dc2626;
+            --color-warning: #d97706;
+        }
+        
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            background: var(--color-surface-alt);
+            color: var(--color-text); 
+            line-height: 1.5; 
+            font-weight: 400;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 32px 0;
+        }
+        
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            padding: 48px 32px; 
+            background: var(--color-surface);
+            min-height: 100vh;
+        }
+        
+        h2 { 
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 800; 
+            letter-spacing: -0.02em;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            margin-bottom: 48px;
+            text-align: center;
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 24px;
+        }
+        
+        h3, h4 { 
+            margin-top: 32px; 
+            margin-bottom: 16px; 
+            font-size: 1.25rem; 
+            font-weight: 700; 
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        
+        h4 { 
+            font-size: 1.125rem; 
+            color: var(--color-text);
+        }
+        
+        .log-container { 
+            background: var(--color-secondary);
+            color: #d4d4d4; 
+            border: 1px solid var(--color-border);
+            border-radius: 0; 
+            padding: 24px; 
+            margin-bottom: 32px; 
+            overflow-x: auto; 
+            white-space: pre; 
+            font-family: 'JetBrains Mono', monospace; 
+            font-size: 0.75rem; 
+            max-height: 600px; 
+            overflow-y: scroll;
+        }
+        
+        .log-container.error { 
+            color: #fed7d7; 
+            border-color: var(--color-error);
+            background: #4d1b20;
+        }
+        
+        .log-actions { 
+            margin-bottom: 16px; 
+            text-align: right;
+        }
+        
+        .btn { 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center;
+            padding: 8px 16px; 
+            border: 1px solid transparent;
+            font-family: inherit;
+            font-size: 0.875rem; 
+            font-weight: 600; 
+            text-decoration: none; 
+            color: var(--color-surface);
+            background: var(--color-primary);
+            border-radius: 0;
+            cursor: pointer; 
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            margin-left: 8px;
+        }
+        
+        .btn:hover { 
+            background: var(--color-secondary);
+            transform: translateY(-1px);
+        }
+        
+        .btn:focus { 
+            outline: 2px solid var(--color-accent); 
+            outline-offset: 2px; 
+        }
+        
+        .btn-secondary { 
+            background: #6c757d; 
+        }
+        
+        .btn-secondary:hover { 
+            background: #5c636a; 
+        }
+        
+        .btn-download { 
+            background: var(--color-success); 
+        }
+        
+        .btn-download:hover { 
+            background: #047857; 
+        }
+        
+        .back-link { 
+            text-align: center; 
+            margin-top: 48px; 
+        }
+        
+        .log-selection-area { 
+            margin-bottom: 32px; 
+            margin-top: 16px; 
+            padding: 24px; 
+            background: var(--color-surface-alt);
+            border: 1px solid var(--color-border);
+            border-radius: 0;
+        }
+        
+        .log-type-selector { 
+            margin-bottom: 20px; 
+            display: flex; 
+            align-items: center; 
+            gap: 16px;
+        }
+        
+        .log-type-selector label { 
+            font-weight: 600; 
+            color: var(--color-text);
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            font-size: 0.875rem;
+        }
+        
+        .log-type-selector select { 
+            padding: 8px 12px; 
+            border: 1px solid var(--color-border);
+            border-radius: 0; 
+            font-size: 0.875rem; 
+            font-family: inherit;
+            background: var(--color-surface);
+            color: var(--color-text);
+        }
+        
+        .site-log-selector { 
+            display: flex; 
+            align-items: center; 
+            gap: 16px; 
+            flex-wrap: wrap; 
+        }
+        
+        .site-log-selector label { 
+            font-weight: 600; 
+            margin-bottom: 0; 
+            color: var(--color-text);
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            font-size: 0.875rem;
+        }
+        
+        .site-log-selector select { 
+            padding: 8px 12px; 
+            border: 1px solid var(--color-border);
+            border-radius: 0; 
+            min-width: 250px; 
+            font-size: 0.875rem; 
+            font-family: inherit;
+            background: var(--color-surface);
+            color: var(--color-text);
+        }
+        
+        .site-log-selector button { 
+            padding: 8px 16px; 
+            margin-left: 0; 
+        }
+        
+        .log-section { 
+            margin-bottom: 48px; 
+            padding-bottom: 32px; 
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .log-section:last-of-type { 
+            border-bottom: none; 
+            margin-bottom: 0; 
+            padding-bottom: 0;
+        }
+        
+        .placeholder-text { 
+            font-style: italic; 
+            color: var(--color-text-muted); 
+            margin: 24px 0;
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            .container { 
+                padding: 24px 16px; 
+            }
+            
+            .log-type-selector, .site-log-selector { 
+                flex-direction: column; 
+                align-items: stretch; 
+                gap: 12px;
+            }
+            
+            .site-log-selector select { 
+                min-width: auto; 
+            }
+            
+            .log-actions { 
+                text-align: center; 
+            }
+        }
+    </style>
+
+</head>
+<body>
+  <div class="container">
+    <h2>View Scraper Logs</h2>
+
+    <div class="log-section">
+        <h3>Main Controller Log (<code>{{ controller_log_filename }}</code>)</h3>
+        <div class="log-actions">
+            <a href="{{ url_for('download_log_typed', log_type='controller', filename=controller_log_filename) }}" class="btn btn-download" download>Download Controller Log</a>
+        </div>
+        {% if controller_log_content %}
+          <pre class="log-container">{{ controller_log_content }}</pre>
+        {% else %}
+          <pre class="log-container error">Could not read log file: {{ controller_log_filename }}</pre>
+        {% endif %}
+    </div>
+
+    <div class="log-section">
+        <h3>Site Specific Scraper Logs</h3>
+        <div class="log-selection-area">
+            <form method="get" action="{{ url_for('view_logs_page') }}" id="logSelectorForm">
+                <div class="log-type-selector">
+                    <label for="log-type-filter">Log Type:</label>
+                    <select name="log_type" id="log-type-filter" onchange="document.getElementById('logSelectorForm').submit();">
+                        <option value="regular" {% if current_log_type_filter == 'regular' %}selected{% endif %}>Regular Tenders</option>
+                        <option value="rot" {% if current_log_type_filter == 'rot' %}selected{% endif %}>ROT - Results of Tenders</option>
+                    </select>
+                </div>
+
+                {% if current_log_type_filter == 'regular' %}
+                    {% if regular_site_log_files %}
+                        <div class="site-log-selector" id="regular-log-selector">
+                            <label for="site-log-select-regular">Select Regular Site Log:</label>
+                            <select name="site_log" id="site-log-select-regular">
+                                <option value="">-- Select Site --</option>
+                                {% for log_file_name in regular_site_log_files %}
+                                    <option value="{{ log_file_name }}" {% if log_file_name == selected_site_log_filename %}selected{% endif %}>
+                                        {{ log_file_name | replace('scrape_', '') | replace('.log', '') | replace('_', ' ') | title }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                            <button type="submit" class="btn btn-secondary">View Selected Log</button>
+                        </div>
+                    {% else %}
+                        <p class="placeholder-text">No Regular site-specific log files found.</p>
+                    {% endif %}
+                {% elif current_log_type_filter == 'rot' %}
+                     {% if rot_site_log_files %}
+                        <div class="site-log-selector" id="rot-log-selector">
+                            <label for="site-log-select-rot">Select ROT Site Log:</label>
+                            <select name="site_log" id="site-log-select-rot">
+                                <option value="">-- Select Site --</option>
+                                {% for log_file_name in rot_site_log_files %}
+                                    <option value="{{ log_file_name }}" {% if log_file_name == selected_site_log_filename %}selected{% endif %}>
+                                        {{ log_file_name | replace('scrape_rot_', '') | replace('.log', '') | replace('_', ' ') | title }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                            <button type="submit" class="btn btn-secondary">View Selected Log</button>
+                        </div>
+                    {% else %}
+                        <p class="placeholder-text">No ROT site-specific log files found.</p>
+                    {% endif %}
+                {% endif %}
+            </form>
+        </div>
+
+        {% if selected_site_log_filename %}
+            <h4>Log for: <code>{{ selected_site_log_filename }}</code> (Type: {{ current_log_type_filter | upper }})</h4>
+            <div class="log-actions">
+                <a href="{{ url_for('download_log_typed', log_type=current_log_type_filter, filename=selected_site_log_filename) }}" class="btn btn-download" download>Download This Site Log</a>
+            </div>
+            {% if selected_site_log_content %}
+              <pre class="log-container">{{ selected_site_log_content }}</pre>
+            {% else %}
+              <pre class="log-container error">Could not read log file: {{ selected_site_log_filename }}</pre>
+            {% endif %}
+        {% elif request.query_params.get('site_log') and not selected_site_log_filename %} 
+            <p class="placeholder-text">The selected log file '{{ request.query_params.get('site_log') }}' was not found for type '{{ current_log_type_filter }}'. Please select a valid log.</p>
+        {% elif not request.query_params.get('site_log') and ((current_log_type_filter == 'regular' and regular_site_log_files) or (current_log_type_filter == 'rot' and rot_site_log_files)) %}
+             <p class="placeholder-text">Select a site from the dropdown above to view its specific log for the '{{current_log_type_filter | upper}}' type.</p>
+        {% endif %}
+    </div>
+
+    <div class="back-link">
+        <a href="{{ url_for('settings_page') }}" class="btn btn-secondary">← Back to Settings</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tender Details: {{ tender.get('primary_tender_id', 'N/A') }} - TenFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        
+        :root {
+            --color-primary: #000000;
+            --color-secondary: #1a1a1a;
+            --color-accent: #2563eb;
+            --color-surface: #ffffff;
+            --color-surface-alt: #f8fafc;
+            --color-border: #e2e8f0;
+            --color-text: #0f172a;
+            --color-text-muted: #64748b;
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        
+        body { 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+            background: var(--color-surface-alt);
+            color: var(--color-text); 
+            line-height: 1.6; 
+            font-weight: 400;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .page-wrapper {
+            background: var(--color-surface);
+            padding: 32px; 
+            min-height: calc(100vh - 64px); 
+        }
+
+        .container { 
+            max-width: none; 
+            width: 100%;
+            margin: 0 auto; 
+        }
+        
+        .page-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 24px; 
+            padding-bottom: 16px; 
+            border-bottom: 2px solid var(--color-primary);
+        }
+        
+        .page-header h1 { 
+            font-size: 5rem;
+            font-weight: 700; 
+            letter-spacing: -0.01em;
+            color: var(--color-text); 
+            text-transform: none; 
+            overflow-wrap: break-word;
+            word-break: break-all;
+        }
+        
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 10px 20px; border: 1px solid transparent;
+            font-family: inherit; font-size: 0.875rem; font-weight: 500; 
+            text-decoration: none; color: var(--color-surface);
+            background: var(--color-primary); border-radius: 0;
+            cursor: pointer; transition: all 0.2s ease;
+            text-transform: uppercase; letter-spacing: 0.025em;
+        }
+        .btn:hover { background: var(--color-secondary); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+        .btn:focus { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+        .btn-secondary {
+            background: transparent; color: var(--color-primary); border-color: var(--color-border);
+        }
+        .btn-secondary:hover { background: var(--color-surface-alt); border-color: var(--color-primary); }
+
+        .tender-main-title {
+            font-size: 1.5rem; 
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 32px; 
+            padding: 20px; 
+            background-color: var(--color-surface-alt);
+            border: 1px solid var(--color-border);
+            line-height: 1.4;
+            text-align: left; 
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .detail-section {
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            padding: 20px; 
+            display: flex; 
+            flex-direction: column; 
+        }
+
+        .detail-section h3 {
+            font-size: 0.875rem; 
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-top: 0;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--color-border);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .detail-field {
+            margin-bottom: 10px; 
+            display: flex;
+            flex-direction: column; 
+            gap: 2px; 
+        }
+        .detail-field:last-child { margin-bottom: 0; }
+
+        .detail-field strong { 
+            font-size: 0.7rem; 
+            font-weight: 600;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 2px; 
+        }
+
+        .detail-field span, .detail-field .value-text, .detail-field a.value-link { 
+            font-size: 0.875rem;
+            color: var(--color-text);
+            word-wrap: break-word;
+            line-height: 1.3; 
+        }
+        .detail-field a.value-link {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 500; 
+        }
+        .detail-field a.value-link:hover { text-decoration: underline; }
+        
+        .btn-link-style { 
+            margin-top: 8px; 
+            padding: 8px 16px; 
+            font-size: 0.8rem;
+            width: fit-content; 
+        }
+
+        .na-text { color: var(--color-text-muted); font-style: italic; font-size: 0.875rem; }
+
+        .structured-list { list-style: none; padding: 0; margin-top: 8px; }
+        .structured-list li { 
+            font-size: 0.875rem; 
+            padding: 10px 0; /* Adjusted padding */
+            border-bottom: 1px dashed var(--color-border);
+        }
+        .structured-list li:last-child { border-bottom: none; }
+        .structured-list .item-label { font-weight: 600; color: var(--color-text); margin-right: 8px; font-size: 0.8rem; display: block; /* Make labels block for clarity in document list */ }
+        .structured-list .item-value { color: var(--color-text-muted); font-size: 0.8rem; }
+        
+        .full-width-section { grid-column: 1 / -1; }
+        
+        .description-text pre {
+            background: var(--color-surface-alt); padding: 16px;
+            border: 1px solid var(--color-border); font-size: 0.875rem;
+            white-space: pre-wrap; word-wrap: break-word;
+            line-height: 1.6; color: var(--color-text);
+            font-family: inherit; max-height: 300px; overflow-y: auto; 
+        }
+        
+        .source-note { 
+            font-size: 0.75rem; color: var(--color-text-muted); 
+            margin-top: 32px; padding-top: 16px; 
+            border-top: 1px solid var(--color-border);
+            display: block; text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .source-site-highlight { font-weight: 700; color: var(--color-primary); }
+        
+        @media (max-width: 1024px) { 
+            .details-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) { 
+            .page-wrapper { padding: 24px 16px; }
+            .page-header { flex-direction: column; align-items: stretch; gap: 16px; }
+            .page-header h1 { font-size: 1.25rem; }
+            .tender-main-title { font-size: 1.1rem; padding: 16px; }
+            .details-grid { grid-template-columns: 1fr; }
+            .detail-section { padding: 16px; }
+            .detail-section h3 { font-size: 0.8rem; }
+            .detail-field strong { font-size: 0.65rem; }
+            .detail-field span, .detail-field .value-text, .detail-field a.value-link { font-size: 0.8rem; }
+            .structured-list li { flex-direction: column; align-items: flex-start; } /* Stack document details on mobile */
+            .btn-link-style { width: 100%; text-align: center; margin-top: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="page-header">
+                <h1>{{ tender.get('primary_tender_id', 'N/A') }}</h1>
+                <a href="{{ url_for('view_tenders_typed', data_type=data_type, subdir=subdir) }}" class="btn btn-secondary">← Back to List</a>
+            </div>
+
+            <div class="tender-main-title">
+                {% if tender.get('work_title') and tender.get('work_title') != 'N/A' %}
+                    {{ tender.get('work_title') | neat_format }}
+                {% elif tender.get('primary_title') and tender.get('primary_title') != 'N/A' %}
+                     {{ tender.get('primary_title') | neat_format }}
+                {% else %}
+                    <span class="na-text">Title Not Available</span>
+                {% endif %}
+            </div>
+
+            <div class="details-grid">
+                <!-- Sections 1-6: Basic Info, Contract & Type, Critical Dates, Fee Details, Evaluation & Bidding, Work & Bid Details -->
+                <!-- (These sections remain structurally similar to the previous version, just benefiting from the new CSS) -->
+                <!-- Section 1: Basic Info -->
+                <div class="detail-section">
+                    <h3>Basic Information</h3>
+                    <div class="detail-field"><strong>Source Site / State:</strong> <span class="value-text">{{ tender.get('source_site_key', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Tender Reference No:</strong> <span class="value-text">{{ tender.get('tender_reference_number', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Organisation Chain:</strong> <span class="value-text">{{ tender.get('organisation_chain', tender.get('list_page_org_chain', 'N/A')) | neat_format }}</span></div>
+                    <div class="detail-field"><strong>Location / Pincode:</strong> <span class="value-text">{{ tender.get('location', 'N/A') }}{% if tender.get('pincode') and tender.get('pincode') != 'N/A' %} ({{ tender.pincode }}){% endif %}</span></div>
+                    {% if tender.get('detail_page_link') and tender.get('detail_page_link') != 'N/A' %}
+                    <div class="detail-field" style="margin-top: 12px;">
+                        <strong>Original Tender Link:</strong> 
+                        <a href="{{ tender.detail_page_link }}" target="_blank" rel="noopener noreferrer" class="btn btn-link-style">
+                            View on Source Portal
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+
+                <!-- Section 2: Contract & Type -->
+                <div class="detail-section">
+                    <h3>Contract & Type Details</h3>
+                    <div class="detail-field"><strong>Tender Type:</strong> <span class="value-text">{{ tender.get('tender_type', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Tender Category:</strong> <span class="value-text">{{ tender.get('tender_category', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Form of Contract:</strong> <span class="value-text">{{ tender.get('form_of_contract', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Contract Type:</strong> <span class="value-text">{{ tender.get('contract_type', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>No. of Covers:</strong> <span class="value-text">{{ tender.get('no_of_covers', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Product Category:</strong> <span class="value-text">{{ tender.get('product_category', 'N/A') | neat_format }}</span></div>
+                    <div class="detail-field"><strong>Sub-Category:</strong> <span class="value-text">{{ tender.get('sub_category', 'N/A') | neat_format }}</span></div>
+                </div>
+
+                <!-- Section 3: Critical Dates -->
+                <div class="detail-section">
+                    <h3>Critical Dates</h3>
+                    <div class="detail-field"><strong>Published Date:</strong> <span class="value-text">{{ tender.get('primary_published_date', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Document Download Start:</strong> <span class="value-text">{{ tender.get('doc_download_start_date', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Clarification Start:</strong> <span class="value-text">{{ tender.get('clarification_start_date', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Bid Submission Start:</strong> <span class="value-text">{{ tender.get('bid_submission_start_date', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Bid Submission End (Closing):</strong> <span class="value-text">{{ tender.get('primary_closing_date', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Bid Opening Date:</strong> <span class="value-text">{{ tender.get('primary_opening_date', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Document Download End:</strong> <span class="value-text">{{ tender.get('doc_download_end_date', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Clarification End:</strong> <span class="value-text">{{ tender.get('clarification_end_date', 'N/A') }}</span></div>
+                </div>
+
+                <!-- Section 4: Fee Details -->
+                <div class="detail-section">
+                    <h3>Fee Details</h3>
+                    <div class="detail-field"><strong>Tender Value:</strong> <span class="value-text">{{ tender.get('tender_value', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Tender Fee:</strong> <span class="value-text">{{ tender.get('tender_fee', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Processing Fee:</strong> <span class="value-text">{{ tender.get('processing_fee', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Fee Payable To/At:</strong> <span class="value-text">{{ tender.get('fee_payable_to', 'N/A') | neat_format }} / {{ tender.get('fee_payable_at', 'N/A') | neat_format }}</span></div>
+                    <div class="detail-field"><strong>EMD Amount:</strong> <span class="value-text">{{ tender.get('emd_amount', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>EMD Fee Type:</strong> <span class="value-text">{{ tender.get('emd_fee_type', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>EMD Payable To/At:</strong> <span class="value-text">{{ tender.get('emd_payable_to', 'N/A') | neat_format }} / {{ tender.get('emd_payable_at', 'N/A') | neat_format }}</span></div>
+                    <div class="detail-field"><strong>Tender Fee Exemption:</strong> <span class="value-text">{{ tender.get('tender_fee_exemption', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>EMD Exemption:</strong> <span class="value-text">{{ tender.get('emd_exemption', 'N/A') }}</span></div>
+                </div>
+                
+                <!-- Section 5: Evaluation & Bidding Options -->
+                <div class="detail-section">
+                    <h3>Evaluation & Bidding</h3>
+                    <div class="detail-field"><strong>Withdrawal Allowed:</strong> <span class="value-text">{{ tender.get('withdrawal_allowed', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>General Technical Evaluation:</strong> <span class="value-text">{{ tender.get('general_tech_evaluation', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Itemwise Technical Evaluation:</strong> <span class="value-text">{{ tender.get('itemwise_tech_evaluation', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Payment Mode:</strong> <span class="value-text">{{ tender.get('payment_mode', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Multi-Currency (BOQ):</strong> <span class="value-text">{{ tender.get('multi_currency_boq', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Multi-Currency (Fee):</strong> <span class="value-text">{{ tender.get('multi_currency_fee', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Two Stage Bidding:</strong> <span class="value-text">{{ tender.get('two_stage_bidding', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Allow NDA Tender:</strong> <span class="value-text">{{ tender.get('allow_nda_tender', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Allow Preferential Bidder:</strong> <span class="value-text">{{ tender.get('allow_preferential_bidder', 'N/A') }}</span></div>
+                </div>
+
+                <!-- Section 6: Work & Bid Details -->
+                <div class="detail-section">
+                    <h3>Work & Bid Details</h3>
+                    <div class="detail-field"><strong>Bid Validity (Days):</strong> <span class="value-text">{{ tender.get('bid_validity_days', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Period of Work (Days):</strong> <span class="value-text">{{ tender.get('period_of_work_days', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Pre-Bid Meeting Place:</strong> <span class="value-text">{{ tender.get('pre_bid_meeting_place', 'N/A') | neat_format }}</span></div>
+                    <div class="detail-field"><strong>Pre-Bid Meeting Address:</strong> <span class="value-text">{{ tender.get('pre_bid_meeting_address', 'N/A') | neat_format }}</span></div>
+                    <div class="detail-field"><strong>Pre-Bid Meeting Date:</strong> <span class="value-text">{{ tender.get('pre_bid_meeting_date', 'N/A') }}</span></div>
+                    <div class="detail-field"><strong>Bid Opening Place:</strong> <span class="value-text">{{ tender.get('bid_opening_place', 'N/A') | neat_format }}</span></div>
+                </div>
+
+
+                {% if tender.get('payment_instruments') and tender.payment_instruments|length > 0 %}
+                <div class="detail-section full-width-section">
+                    <h3>Payment Instruments</h3>
+                    <ul class="structured-list">
+                        <!-- Optional Header Row for Payment Instruments -->
+                        <li style="display: flex; font-weight: 600; border-bottom: 1px solid var(--color-primary); padding-bottom: 6px; margin-bottom: 6px;">
+                            <span style="flex-basis: 20%; min-width: 60px; font-size: 0.75rem; color: var(--color-text-muted); text-transform: uppercase;">S.No</span>
+                            <span style="flex-basis: 80%; min-width: 180px; font-size: 0.75rem; color: var(--color-text-muted); text-transform: uppercase;">Instrument Type</span>
+                        </li>
+                        {% for pi in tender.payment_instruments %}
+                            <li style="display: flex; align-items: baseline;">
+                                <span class="item-value" style="flex-basis: 20%; min-width: 60px;">{{ pi.get('s_no', 'N/A') }}</span>
+                                <span class="item-value" style="flex-basis: 80%; min-width: 180px;">{{ pi.get('instrument_type', 'N/A') }}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+
+                {% if tender.get('covers_info') and tender.covers_info|length > 0 %}
+                <div class="detail-section full-width-section">
+                    <h3>Covers Information</h3>
+                    <ul class="structured-list">
+                        <li style="display: flex; font-weight: 600; border-bottom: 1px solid var(--color-primary); padding-bottom: 6px; margin-bottom: 6px;">
+                            <span style="flex-basis: 20%; min-width: 80px; font-size: 0.75rem; color: var(--color-text-muted); text-transform: uppercase;">Cover No.</span>
+                            <span style="flex-basis: 80%; min-width: 180px; font-size: 0.75rem; color: var(--color-text-muted); text-transform: uppercase;">Cover Type</span>
+                        </li>
+                        {% for cover in tender.covers_info %}
+                             <li style="display: flex; align-items: baseline;">
+                                <span class="item-value" style="flex-basis: 20%; min-width: 80px;">{{ cover.get('cover_no', '?') }}</span>
+                                <span class="item-value" style="flex-basis: 80%; min-width: 180px;">{{ cover.get('cover_type', 'N/A') }}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                
+                <div class="detail-section full-width-section">
+                    <h3>Work/Item Description</h3>
+                    <div class="description-text">
+                        <pre>{{ tender.get('work_description', tender.get('list_page_title', 'N/A')) if (tender.get('work_description') and tender.get('work_description') != 'N/A') or (tender.get('list_page_title') and tender.get('list_page_title') != 'N/A') else '<span class="na-text">Not Available</span>' | safe }}</pre>
+                    </div>
+                </div>
+
+                {% if tender.get('nda_pre_qualification') and tender.get('nda_pre_qualification') != 'N/A' %}
+                <div class="detail-section full-width-section">
+                    <h3>NDA/Pre Qualification Details</h3>
+                    <div class="description-text"><pre>{{ tender.nda_pre_qualification }}</pre></div>
+                </div>
+                {% endif %}
+
+                {% if tender.get('independent_external_monitor_remarks') and tender.get('independent_external_monitor_remarks') != 'N/A' %}
+                <div class="detail-section full-width-section">
+                    <h3>Independent External Monitor/Remarks</h3>
+                    <div class="description-text"><pre>{{ tender.independent_external_monitor_remarks }}</pre></div>
+                </div>
+                {% endif %}
+
+                <div class="detail-section full-width-section">
+                    <h3>Tender Inviting Authority</h3>
+                    <div class="detail-field"><strong>Name:</strong> <span class="value-text">{{ tender.get('tender_inviting_authority_name', 'N/A') | neat_format }}</span></div>
+                    <div class="detail-field"><strong>Address:</strong> <span class="value-text">{{ tender.get('tender_inviting_authority_address', 'N/A') | neat_format }}</span></div>
+                </div>
+
+                {% if tender.get('tender_documents') and tender.tender_documents|length > 0 %}
+                <div class="detail-section full-width-section">
+                    <h3>Tender Documents</h3>
+                    <ul class="structured-list">
+                        {% for doc in tender.tender_documents %}
+                            <li style="padding-bottom: 12px; margin-bottom: 12px;"> <!-- Increased spacing for document items -->
+                                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                                    <!-- Button on the LEFT -->
+                                    <div style="flex-shrink: 0;">
+                                        {% if doc.get('link') and doc.get('link') != 'N/A' %}
+                                            <a href="{{ doc.link }}" target="_blank" rel="noopener noreferrer" class="btn btn-link-style">Download/View Doc</a>
+                                        {% else %}
+                                            <span class="btn btn-link-style" style="opacity: 0.5; cursor: default; background-color: var(--color-text-muted);">No Link</span>
+                                        {% endif %}
+                                    </div>
+                                    <!-- Details on the RIGHT -->
+                                    <div style="flex-grow: 1; text-align: left;">
+                                        <span class="item-label" style="display: block; font-size: 0.9em; margin-bottom: 4px;">{{ doc.get('name', 'Unnamed Document') | neat_format }}</span>
+                                        {% if doc.get('size') and doc.get('size') != 'N/A' %}
+                                            <span class="item-value" style="font-size: 0.8em;">(Size: {{ doc.size }})</span>
+                                        {% endif %}
+                                        {% if doc.get('description') and doc.get('description') != 'N/A' %}
+                                            <em class="item-value" style="font-size: 0.8em; display: block; color: var(--color-text-muted); margin-top: 4px;">{{ doc.description | neat_format }}</em>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </li>
+                        {% else %}
+                            <li><span class="na-text">No documents listed or available with direct download links.</span></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div> <!-- End .details-grid -->
+
+            <div class="source-note">
+                Data fetched from: <span class="source-site-highlight">{{ tender.get('source_site_key', 'Unknown Portal') }}</span>. 
+                This is processed data. Always refer to the original source for official information.
+            </div>
+        </div> <!-- End .container -->
+    </div> <!-- End .page-wrapper -->
+</body>
+</html>
