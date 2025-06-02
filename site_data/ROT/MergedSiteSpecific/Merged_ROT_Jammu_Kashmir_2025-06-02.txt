@@ -1,0 +1,130 @@
+--- TENDER START ---
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_UDJK_277523_1</RotTenderId>
+<RotTitleRef>[Supply and layinig of new cable in GZSA Complex][short enit 75 dsated 22-05-2025]</RotTitleRef>
+<RotOrganisationChain>University Department||Jammu University</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Jammu Kashmir</SourceSiteKey>
+<RotStatusDetailPageLink>https://jktenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2FLwA2bucV9eOxEUNTsxZ0Q%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Jammu Kashmir/ROT_2025_UDJK_277523_1_20250602_164645_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_UDJK_277523_1_20250602_164645_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_UDJK_275570_1</RotTenderId>
+<RotTitleRef>[Exterior repair and renovation of teachers quarters at University of Jammu][short enit 73]</RotTitleRef>
+<RotOrganisationChain>University Department||Jammu University</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Jammu Kashmir</SourceSiteKey>
+<RotStatusDetailPageLink>https://jktenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwoK5TvLgGquvYW0nFN%2BnmA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Jammu Kashmir/ROT_2025_UDJK_275570_1_20250602_164645_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_UDJK_275570_1_20250602_164645_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_UDJK_274892_1</RotTenderId>
+<RotTitleRef>[Special repair and renovation of DN Wadia Museum][short enit 72 dated 24-03-2025]</RotTitleRef>
+<RotOrganisationChain>University Department||Jammu University</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Jammu Kashmir</SourceSiteKey>
+<RotStatusDetailPageLink>https://jktenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SuUU8jJ1uQAVNhJGW%2FyTV0w%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Jammu Kashmir/ROT_2025_UDJK_274892_1_20250602_164645_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_UDJK_274892_1_20250602_164645_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_UDJK_274883_1</RotTenderId>
+<RotTitleRef>[Interior and exterior finishing of Examination halls in J U][Short enit 71 dated 24-03-2025]</RotTitleRef>
+<RotOrganisationChain>University Department||Jammu University</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Jammu Kashmir</SourceSiteKey>
+<RotStatusDetailPageLink>https://jktenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SMwRB9Kv7Nxe9ARKMzC7xkw%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Jammu Kashmir/ROT_2025_UDJK_274883_1_20250602_164645_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_UDJK_274883_1_20250602_164645_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_UDJK_274873_1</RotTenderId>
+<RotTitleRef>[Special repair and renovation of PG deptt of History ][short enit 70 dated 24-03-25]</RotTitleRef>
+<RotOrganisationChain>University Department||Jammu University</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Jammu Kashmir</SourceSiteKey>
+<RotStatusDetailPageLink>https://jktenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SrvOePhhhbqQ6YGAho8FlgA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Jammu Kashmir/ROT_2025_UDJK_274873_1_20250602_164645_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_UDJK_274873_1_20250602_164645_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_UDJK_274871_1</RotTenderId>
+<RotTitleRef>[Special repair to office room in deptt of Geology department][Short enit 69 dated 24-03-25]</RotTitleRef>
+<RotOrganisationChain>University Department||Jammu University</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Jammu Kashmir</SourceSiteKey>
+<RotStatusDetailPageLink>https://jktenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S22QSwHIVNUuIRqYCyUPMFQ%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Jammu Kashmir/ROT_2025_UDJK_274871_1_20250602_164645_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_UDJK_274871_1_20250602_164645_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_UDJK_274870_1</RotTenderId>
+<RotTitleRef>[Aluminium partation work in SHTM department][enit 68 dated 24-3-25]</RotTitleRef>
+<RotOrganisationChain>University Department||Jammu University</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Jammu Kashmir</SourceSiteKey>
+<RotStatusDetailPageLink>https://jktenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SuDlRNq3zbH6ptdm3uPG6Aw%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Jammu Kashmir/ROT_2025_UDJK_274870_1_20250602_164646_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_UDJK_274870_1_20250602_164646_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_UDJK_274581_1</RotTenderId>
+<RotTitleRef>[Comprehensive AMC of 15 kva servo at DD and Oe building Univeristy of Jammu][enit 67 dated 17-03-2025]</RotTitleRef>
+<RotOrganisationChain>University Department||Jammu University</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Jammu Kashmir</SourceSiteKey>
+<RotStatusDetailPageLink>https://jktenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SI1VL10XNBkZfEKF6YqV%2BaA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Jammu Kashmir/ROT_2025_UDJK_274581_1_20250602_164646_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_UDJK_274581_1_20250602_164646_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_UDJK_274567_2</RotTenderId>
+<RotTitleRef>[Comprehensive AMC 800 kva distribution transformer in electric substation of GZSA complex][enit 66 dated 17-03-2025]</RotTitleRef>
+<RotOrganisationChain>University Department||Jammu University</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Jammu Kashmir</SourceSiteKey>
+<RotStatusDetailPageLink>https://jktenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SWVTh0OaJzg%2Fr9IcwKssQyw%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Jammu Kashmir/ROT_2025_UDJK_274567_2_20250602_164646_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_UDJK_274567_2_20250602_164646_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_UDJK_274567_1</RotTenderId>
+<RotTitleRef>[Comprehensive AMC of 11 kv VCB panel at GZSA complex University of Jammu][enit 66 dated 17-03-2025]</RotTitleRef>
+<RotOrganisationChain>University Department||Jammu University</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Jammu Kashmir</SourceSiteKey>
+<RotStatusDetailPageLink>https://jktenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sal%2Fjg3IPjloFXyk9T8A3bw%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Jammu Kashmir/ROT_2025_UDJK_274567_1_20250602_164646_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_UDJK_274567_1_20250602_164646_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
