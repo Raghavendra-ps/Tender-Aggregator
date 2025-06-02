@@ -262,7 +262,7 @@
     <div class="log-section">
         <h3>Main Controller Log (<code>{{ controller_log_filename }}</code>)</h3>
         <div class="log-actions">
-            <a href="{{ url_for('download_log_typed', log_type='controller', filename=controller_log_filename) }}" class="btn btn-download" download>Download Controller Log</a>
+            <a href="{{ url_for('download_log_typed', log_type='controller', path_param_site_key_or_filename=controller_log_filename) }}" class="btn btn-download" download>Download Controller Log</a>
         </div>
         {% if controller_log_content %}
           <pre class="log-container">{{ controller_log_content }}</pre>
@@ -324,7 +324,7 @@
         {% if selected_site_log_filename %}
             <h4>Log for: <code>{{ selected_site_log_filename }}</code> (Type: {{ current_log_type_filter | upper }})</h4>
             <div class="log-actions">
-                <a href="{{ url_for('download_log_typed', log_type=current_log_type_filter, filename=selected_site_log_filename) }}" class="btn btn-download" download>Download This Site Log</a>
+                <a href="{{ url_for('download_log_typed', log_type=current_log_type_filter, path_param_site_key_or_filename=selected_site_log_filename) }}" class="btn btn-download" download>Download This Site Log</a>
             </div>
             {% if selected_site_log_content %}
               <pre class="log-container">{{ selected_site_log_content }}</pre>

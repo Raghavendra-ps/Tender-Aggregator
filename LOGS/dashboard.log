@@ -1,0 +1,10 @@
+16:19:22 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 188, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+16:19:22 [INFO] (Dashboard) Jinja2 configured.
+16:40:17 [INFO] (Dashboard) Bulk delete request for REGULAR sets: ['GOA_Results', 'Haryana_Results']
+16:40:17 [INFO] (Dashboard) Deleted REGULAR set: /root/TenFin/site_data/REG/FilteredResults/GOA_Results
+16:40:17 [INFO] (Dashboard) Deleted REGULAR set: /root/TenFin/site_data/REG/FilteredResults/Haryana_Results

@@ -4,23 +4,21 @@
 import asyncio
 import base64
 import argparse
-import datetime
+import datetime # Ensure this is imported
 from pathlib import Path
 import re
 import logging
 import json
 from urllib.parse import urljoin, urlparse
-from typing import Tuple, Optional, Dict, Set, List, Any # Ensure Any is imported
+from typing import Tuple, Optional, Dict, Set, List, Any
 
 from playwright.async_api import async_playwright, Page, BrowserContext, TimeoutError as PlaywrightTimeout
 from bs4 import BeautifulSoup, Tag
 
-# --- Worker Configuration ---
-# These will be passed as arguments or derived
-# LIVE_SITE_ROT_SEARCH_URL = "https://eprocure.gov.in/eprocure/app?page=WebTenderStatusLists&service=page" # Now from args
-# LIVE_SITE_BASE_URL = "https://eprocure.gov.in/eprocure/app/" # Now from args
-# DEFAULT_TENDER_STATUS = "5" # Now from args
+# --- URL_SUFFIX_ROT (Define it here if dashboard is to import it) ---
+URL_SUFFIX_ROT = "?page=WebTenderStatusLists&service=page"
 
+# --- Worker Configuration (Selectors - these are fine) ---
 TENDER_STATUS_DROPDOWN_SELECTOR = "#tenderStatus"
 CAPTCHA_IMAGE_SELECTOR = "#captchaImage"
 CAPTCHA_TEXT_INPUT_SELECTOR = "#captchaText"
@@ -31,30 +29,39 @@ SUMMARY_LINK_ON_DETAIL_PAGE = "a#DirectLink_0:has-text('Click link to view the a
 ERROR_MESSAGE_SELECTORS = ".error_message, .errormsg, #msgDiv"
 PAGINATION_LINK_SELECTOR = "a#loadNext"
 
-# --- Default Settings (can be overridden by global settings if worker loads them, but simpler to pass) ---
+# --- Default Settings (Worker's internal fallbacks if not provided by dashboard) ---
 MAX_ROT_LIST_PAGES_TO_FETCH_DEFAULT = 3
 DETAIL_PROCESSING_CONCURRENCY_DEFAULT = 2
 WAIT_AFTER_PAGINATION_CLICK_MS_DEFAULT = 7000
 PAGE_LOAD_TIMEOUT_DEFAULT = 60000
-DETAIL_PAGE_TIMEOUT_DEFAULT = 75000
-POPUP_PAGE_TIMEOUT_DEFAULT = 60000
+DETAIL_PAGE_TIMEOUT_DEFAULT = 75000 # For View Status Link Navigation
+POPUP_PAGE_TIMEOUT_DEFAULT = 60000  # For the final summary popup page
 ELEMENT_TIMEOUT_DEFAULT = 20000
-POST_SUBMIT_TIMEOUT_DEFAULT = 30000
-CAPTCHA_ANSWER_WAIT_TIMEOUT_S = 300 # 5 minutes to solve CAPTCHA
+POST_SUBMIT_TIMEOUT_DEFAULT = 30000 # After CAPTCHA submission
+CAPTCHA_ANSWER_WAIT_TIMEOUT_S = 300
 
-# --- Paths ---
+# --- NEW DIRECTORY STRUCTURE CONSTANTS ---
 try:
-    SCRIPT_DIR_WORKER = Path(__file__).parent.resolve()
+    PROJECT_ROOT = Path(__file__).parent.resolve()
 except NameError:
-    SCRIPT_DIR_WORKER = Path('.').resolve()
+    PROJECT_ROOT = Path('.').resolve()
 
-# Communication directory with the dashboard (must match dashboard's constant)
-TEMP_RUN_DATA_DIR_BASE = SCRIPT_DIR_WORKER / "temp_run_data"
+SITE_DATA_ROOT = PROJECT_ROOT / "site_data"
 
-# Final output directories for scraped data
-FINAL_DATA_ROOT = SCRIPT_DIR_WORKER / "scraped_data_rot"
-FINAL_DOWNLOADS_DIR_BASE = FINAL_DATA_ROOT / "DetailDownloads"
-FINAL_MERGED_DIR_BASE = FINAL_DATA_ROOT / "SiteSpecificMergedROT"
+# ROT Specific Output Paths (Worker writes here)
+ROT_DATA_DIR = SITE_DATA_ROOT / "ROT"
+ROT_MERGED_SITE_SPECIFIC_DIR = ROT_DATA_DIR / "MergedSiteSpecific"
+ROT_DETAIL_HTMLS_DIR = ROT_DATA_DIR / "DetailHtmls" # NEW: For ROT_{TENDER_ID}_{DATETIME}_StageSummary.html
+
+# TEMP Specific Paths (Worker uses these for communication and temporary files)
+TEMP_DATA_DIR = SITE_DATA_ROOT / "TEMP"
+TEMP_WORKER_RUNS_DIR = TEMP_DATA_DIR / "WorkerRuns" # Replaces old TEMP_WORKER_RUNS_DIR
+TEMP_DEBUG_SCREENSHOTS_DIR = TEMP_DATA_DIR / "DebugScreenshots"
+TEMP_CAPTCHA_IMAGES_DIR = TEMP_DATA_DIR / "CaptchaImages" # For any physical CAPTCHA images if saved
+
+# LOGS Path
+LOGS_BASE_DIR_WORKER = PROJECT_ROOT / "LOGS"
+# --- END NEW DIRECTORY STRUCTURE CONSTANTS ---
 
 SCRIPT_NAME_TAG = Path(__file__).stem
 TODAY_STR = datetime.date.today().strftime("%Y-%m-%d")
@@ -62,20 +69,20 @@ TODAY_STR = datetime.date.today().strftime("%Y-%m-%d")
 
 # --- Logging Setup (Worker Specific) ---
 logger = logging.getLogger(f"{SCRIPT_NAME_TAG}_worker") # Default logger name
-# Logging will be configured more specifically in main based on run_id/site_key
 
 def setup_worker_logging(site_key_for_log: str, run_id_for_log: str):
-    global logger
-    logger_name = f"{SCRIPT_NAME_TAG}_{site_key_for_log}_{run_id_for_log}"
+    global logger # Allow modification of the module-level logger
+    logger_name = f"{SCRIPT_NAME_TAG}_worker_{site_key_for_log}_{run_id_for_log[-6:]}" # More unique name
     logger = logging.getLogger(logger_name)
     logger.setLevel(logging.INFO)
     logger.propagate = False
-    if logger.hasHandlers():
+    if logger.hasHandlers(): # Clear existing handlers for this specific logger instance if re-called
         logger.handlers.clear()
 
-    log_dir_rot_worker = SCRIPT_DIR_WORKER / "logs_rot" / site_key_for_log
-    log_dir_rot_worker.mkdir(parents=True, exist_ok=True)
-    log_file_path = log_dir_rot_worker / f"worker_{run_id_for_log}_{TODAY_STR}.log"
+    # New log path
+    log_dir_for_this_worker = LOGS_BASE_DIR_WORKER / "rot_worker" / site_key_for_log
+    log_dir_for_this_worker.mkdir(parents=True, exist_ok=True)
+    log_file_path = log_dir_for_this_worker / f"worker_{run_id_for_log}_{TODAY_STR}.log"
 
     # File Handler
     fh = logging.FileHandler(log_file_path, mode='a', encoding='utf-8')
@@ -87,7 +94,6 @@ def setup_worker_logging(site_key_for_log: str, run_id_for_log: str):
     ch.setFormatter(logging.Formatter(f"[ROTWorker-{site_key_for_log} Run-{run_id_for_log[-6:]}] %(levelname)s: %(message)s"))
     logger.addHandler(ch)
     logger.info(f"Worker logging initialized. Log file: {log_file_path}")
-
 
 # --- Utility Functions (from your stand.py) ---
 def _remove_html_protection(html_content: str) -> str:
@@ -176,6 +182,12 @@ async def _wait_for_captcha_solution(run_dir: Path) -> Optional[str]:
     update_worker_status(run_dir, "TIMEOUT_CAPTCHA_INPUT")
     return None
 
+def clean_text(text: Optional[str]) -> str: # Copied from scrape.py or filter_engine.py
+    """Cleans text by replacing multiple whitespaces and stripping."""
+    if text is None or text == "N/A": return "N/A"
+    # Ensure input is treated as string, replace multiple whitespace with single space
+    return re.sub(r'\s+', ' ', str(text)).strip()
+
 def _format_rot_tags(data_dict: Dict[str, Any], site_key: str) -> str:
     """Formats a dictionary of ROT tender data into a tagged block string."""
     # Based on filter_engine.py TAG_REGEX for ROT
@@ -204,67 +216,82 @@ def _format_rot_tags(data_dict: Dict[str, Any], site_key: str) -> str:
     tags.append("--- TENDER END ---")
     return "\n".join(tag for tag in tags if tag is not None and tag.strip() and "N/A</" not in tag) # Filter out empty or "N/A" only tags
 
-
 async def _handle_final_popup_content(
-    popup_page: Page, site_key: str, tender_file_id: str
+    popup_page: Page, site_key: str, tender_file_id: str, run_id: str # Added run_id for debug path
 ) -> Tuple[str, Optional[str], Optional[str]]: # status, relative_path, filename
     """Processes the final popup, saves HTML, returns status and file info."""
-    
-    tender_output_dir_htmls = FINAL_DOWNLOADS_DIR_BASE / site_key / clean_filename_rot(tender_file_id)
-    tender_output_dir_htmls.mkdir(parents=True, exist_ok=True)
-    
+
+    # NEW PATH: site_data/ROT/DetailHtmls/{SITE_KEY}/
+    # The tender_file_id will now be part of the filename, not a subdirectory.
+    site_specific_html_output_dir = ROT_DETAIL_HTMLS_DIR / site_key
+    site_specific_html_output_dir.mkdir(parents=True, exist_ok=True)
+
+    # New debug screenshot path for this function
+    debug_screenshot_path_base = TEMP_DEBUG_SCREENSHOTS_DIR / "worker" / site_key / run_id / "popup_handling"
+    debug_screenshot_path_base.mkdir(parents=True, exist_ok=True)
+
     log_prefix_popup = f"[{clean_filename_rot(tender_file_id)} Popup]"
     logger.info(f"{log_prefix_popup} Processing final popup page: {popup_page.url}")
-    
+
     try:
         await popup_page.wait_for_load_state("domcontentloaded", timeout=POPUP_PAGE_TIMEOUT_DEFAULT)
         html_content_report = await popup_page.content()
 
         if html_content_report:
             processed_html_content = _remove_html_protection(html_content_report)
-            safe_id_part = clean_filename_rot(tender_file_id) # tender_file_id is usually the tender_id
-            save_filename_html = f"ROT_{safe_id_part}_StageSummary.html"
-            save_path_html_absolute = tender_output_dir_htmls / save_filename_html
+            safe_id_part = clean_filename_rot(tender_file_id)
+            
+            # NEW: Add timestamp to filename
+            timestamp_suffix = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            save_filename_html = f"ROT_{safe_id_part}_{timestamp_suffix}_StageSummary.html" # Filename includes ID and timestamp
+            
+            # NEW: Save directly into the site_specific_html_output_dir
+            save_path_html_absolute = site_specific_html_output_dir / save_filename_html
             
             save_path_html_absolute.write_text(processed_html_content, encoding='utf-8', errors='replace')
             
-            # Make path relative to FINAL_DOWNLOADS_DIR_BASE for storage in merged file
+            # NEW: Make path relative to ROT_DETAIL_HTMLS_DIR for storage in merged file
+            # This will now be like: {SITE_KEY}/{FILENAME_WITH_TIMESTAMP}.html
             try:
-                save_path_html_relative = save_path_html_absolute.relative_to(FINAL_DOWNLOADS_DIR_BASE)
-            except ValueError: # If they are not on the same drive or path structure is unexpected
-                logger.warning(f"{log_prefix_popup} Could not make path relative for {save_path_html_absolute}. Storing absolute.")
+                save_path_html_relative = save_path_html_absolute.relative_to(ROT_DETAIL_HTMLS_DIR)
+            except ValueError:
+                logger.warning(f"{log_prefix_popup} Could not make path relative for {save_path_html_absolute} against {ROT_DETAIL_HTMLS_DIR}. Storing absolute.")
                 save_path_html_relative = save_path_html_absolute
             
-            logger.info(f"{log_prefix_popup} ✅ SAVED HTML: {save_path_html_absolute.name}")
-            return "downloaded", str(save_path_html_relative), save_filename_html
+            logger.info(f"{log_prefix_popup} ✅ SAVED HTML: {save_path_html_absolute.name} to {site_specific_html_output_dir}")
+            return "downloaded", str(save_path_html_relative), save_filename_html # Return new filename
         else:
             logger.warning(f"{log_prefix_popup} No HTML content from final popup page.")
             return "download_no_content", None, None
     except PlaywrightTimeout:
         logger.error(f"{log_prefix_popup} Timeout waiting for popup content.", exc_info=False)
-        await popup_page.screenshot(path=tender_output_dir_htmls / f"DEBUG_POPUP_TIMEOUT_{SCRIPT_NAME_TAG}.png")
+        screenshot_file = debug_screenshot_path_base / f"DEBUG_POPUP_TIMEOUT_{clean_filename_rot(tender_file_id)}_{SCRIPT_NAME_TAG}.png"
+        await popup_page.screenshot(path=screenshot_file)
+        logger.info(f"Debug screenshot saved to {screenshot_file}")
         return "download_timeout", None, None
     except Exception as e:
         logger.error(f"{log_prefix_popup} Error saving popup HTML: {e}", exc_info=True)
-        await popup_page.screenshot(path=tender_output_dir_htmls / f"DEBUG_POPUP_ERROR_{SCRIPT_NAME_TAG}.png")
+        screenshot_file = debug_screenshot_path_base / f"DEBUG_POPUP_ERROR_{clean_filename_rot(tender_file_id)}_{SCRIPT_NAME_TAG}.png"
+        await popup_page.screenshot(path=screenshot_file)
+        logger.info(f"Debug screenshot saved to {screenshot_file}")
         return f"download_error_{type(e).__name__}", None, None
-
 
 async def process_single_tender_detail_page( # Returns status, relative_path, filename
     semaphore: asyncio.Semaphore, main_browser_context: BrowserContext,
     detail_page_url: str, site_key: str,
-    tender_display_id: str, list_page_num: int
+    tender_display_id: str, list_page_num: int,
+    run_id: str # <<<< NEW: Added run_id parameter
 ) -> Tuple[str, Optional[str], Optional[str]]:
-    
+
     log_prefix = f"[ListPage{list_page_num}_{clean_filename_rot(tender_display_id)}]"
     logger.info(f"{log_prefix} Starting detail processing for URL: {detail_page_url}")
-    
+
     detail_page: Optional[Page] = None
     popup_page: Optional[Page] = None
-    
-    # Output directory for debug screenshots related to this specific tender's detail processing
-    debug_output_dir_for_tender = FINAL_DOWNLOADS_DIR_BASE / site_key / clean_filename_rot(tender_display_id) / "debug"
-    debug_output_dir_for_tender.mkdir(parents=True, exist_ok=True)
+
+    # NEW: Updated debug screenshot path for this function's specific errors
+    debug_screenshot_path_base_detail = TEMP_DEBUG_SCREENSHOTS_DIR / "worker" / site_key / run_id / "detail_page_processing" / clean_filename_rot(tender_display_id)
+    debug_screenshot_path_base_detail.mkdir(parents=True, exist_ok=True)
 
     async with semaphore:
         try:
@@ -279,13 +306,12 @@ async def process_single_tender_detail_page( # Returns status, relative_path, fi
             async with detail_page.expect_popup(timeout=POPUP_PAGE_TIMEOUT_DEFAULT) as popup_info:
                 await summary_link_locator.click()
             popup_page = await popup_info.value
-            
-            # _handle_final_popup_content now takes site_key and tender_display_id
-            # and saves to the correct FINAL_DOWNLOADS_DIR_BASE structure
+
             status, rel_path, fname = await _handle_final_popup_content(
-                popup_page, site_key, tender_display_id 
+                popup_page, site_key, tender_display_id,
+                run_id  # <<<< NEW: Pass run_id here
             )
-            
+
             if status == "downloaded":
                 logger.info(f"{log_prefix} Successfully processed detail and popup. File: {fname}")
             else:
@@ -295,26 +321,37 @@ async def process_single_tender_detail_page( # Returns status, relative_path, fi
         except PlaywrightTimeout as pt_err:
             logger.error(f"{log_prefix} Timeout in detail/popup processing for '{detail_page_url}': {pt_err}", exc_info=False)
             if detail_page and not detail_page.is_closed():
-                await detail_page.screenshot(path=debug_output_dir_for_tender / f"DETAIL_PG_TIMEOUT.png")
+                screenshot_file_detail = debug_screenshot_path_base_detail / f"DETAIL_PG_TIMEOUT.png"
+                await detail_page.screenshot(path=screenshot_file_detail)
+                logger.info(f"Debug screenshot (detail page timeout) saved to {screenshot_file_detail}")
             if popup_page and not popup_page.is_closed():
-                await popup_page.screenshot(path=debug_output_dir_for_tender / f"POPUP_PG_TIMEOUT.png")
+                # Popup errors are mostly handled within _handle_final_popup_content,
+                # but this can catch timeouts before _handle_final_popup_content is effectively called.
+                screenshot_file_popup = debug_screenshot_path_base_detail / f"POPUP_PG_TIMEOUT_OUTER.png"
+                await popup_page.screenshot(path=screenshot_file_popup)
+                logger.info(f"Debug screenshot (popup page timeout outer) saved to {screenshot_file_popup}")
             return f"detail_processing_timeout", None, None
         except Exception as e:
             logger.error(f"{log_prefix} Error processing detail link '{detail_page_url}': {e}", exc_info=True)
+            if detail_page and not detail_page.is_closed():
+                screenshot_file_detail_err = debug_screenshot_path_base_detail / f"DETAIL_PG_ERROR.png"
+                await detail_page.screenshot(path=screenshot_file_detail_err)
+                logger.info(f"Debug screenshot (detail page error) saved to {screenshot_file_detail_err}")
             return f"detail_processing_error_{type(e).__name__}", None, None
         finally:
             if popup_page and not popup_page.is_closed(): await popup_page.close()
             if detail_page and not detail_page.is_closed(): await detail_page.close()
 
-async def extract_table_data_from_current_list_page(page: Page, list_page_num: int, site_base_url_for_links: str) -> List[Dict[str, Any]]:
+async def extract_table_data_from_current_list_page(
+    page: Page, list_page_num: int, site_base_url_for_links: str,
+    site_key: str, run_id: str # <<<< NEW: Added site_key and run_id
+) -> List[Dict[str, Any]]:
     extracted_data: list[dict[str, Any]] = []
     logger.info(f"[ListPage{list_page_num}] Extracting table data...")
-    # Debug screenshot directory for table extraction issues
-    debug_table_extract_dir = TEMP_RUN_DATA_DIR_BASE / page.context.browser.contexts[0].pages[0].url.split("run_id=")[-1] / "debug_table_extracts" # Quick hack to get run_id from a page url if possible, needs refinement
-    if "run_id=" not in page.context.browser.contexts[0].pages[0].url : # Fallback if run_id not in URL
-        debug_table_extract_dir = SCRIPT_DIR_WORKER / "debug_table_extracts" # Generic fallback
-    debug_table_extract_dir.mkdir(parents=True, exist_ok=True)
 
+    # NEW: Structured debug screenshot path for table extraction issues
+    debug_table_extract_dir = TEMP_DEBUG_SCREENSHOTS_DIR / "worker" / site_key / run_id / "table_extraction_errors"
+    debug_table_extract_dir.mkdir(parents=True, exist_ok=True)
 
     try:
         results_table_html = await page.locator(RESULTS_TABLE_SELECTOR).inner_html(timeout=ELEMENT_TIMEOUT_DEFAULT)
@@ -343,28 +380,31 @@ async def extract_table_data_from_current_list_page(page: Page, list_page_num: i
                     "list_page_num": str(list_page_num), "s_no_on_page": s_no, "tender_id": tender_id,
                     "title_and_ref_no": title_ref, "organisation_chain": org_chain, "tender_stage": tender_stage,
                     "view_status_link_href_relative": view_link_href_relative,
-                    "view_status_link_full_url": full_detail_url # Added for direct use
+                    "view_status_link_full_url": full_detail_url
                 })
             else: logger.warning(f"[ListPage{list_page_num}] Row {row_idx+1} has {len(cols)} cols, expected 6. Skipping.")
         logger.info(f"[ListPage{list_page_num}] Extracted {len(extracted_data)} items.")
     except PlaywrightTimeout:
         logger.error(f"[ListPage{list_page_num}] Timeout getting HTML of '{RESULTS_TABLE_SELECTOR}'.")
-        await page.screenshot(path=debug_table_extract_dir / f"TABLE_EXTRACT_TIMEOUT_P{list_page_num}_{SCRIPT_NAME_TAG}.png")
+        screenshot_file = debug_table_extract_dir / f"TABLE_EXTRACT_TIMEOUT_P{list_page_num}_{SCRIPT_NAME_TAG}.png"
+        await page.screenshot(path=screenshot_file)
+        logger.info(f"Debug screenshot (table extract timeout) saved to {screenshot_file}")
     except Exception as e:
         logger.error(f"[ListPage{list_page_num}] Error extracting table data: {e}", exc_info=True)
-        await page.screenshot(path=debug_table_extract_dir / f"TABLE_EXTRACT_ERROR_P{list_page_num}_{SCRIPT_NAME_TAG}.png")
+        screenshot_file = debug_table_extract_dir / f"TABLE_EXTRACT_ERROR_P{list_page_num}_{SCRIPT_NAME_TAG}.png"
+        await page.screenshot(path=screenshot_file)
+        logger.info(f"Debug screenshot (table extract error) saved to {screenshot_file}")
     return extracted_data
-
 
 async def run_headless_rot_scrape_orchestration(
     site_key: str, run_id: str,
     target_site_search_url: str, target_site_base_url: str, tender_status_to_select: str,
-    worker_settings: Dict[str, Any] # To pass max_pages, concurrency, timeouts
+    worker_settings: Dict[str, Any]
 ):
-    run_specific_temp_dir = TEMP_RUN_DATA_DIR_BASE / run_id
+    # Use new constant for worker communication directory
+    run_specific_temp_dir = TEMP_WORKER_RUNS_DIR / run_id 
     run_specific_temp_dir.mkdir(parents=True, exist_ok=True)
     
-    # Setup logging for this specific run
     setup_worker_logging(site_key, run_id)
     logger.info(f"--- Starting Headless ROT Worker for Site: {site_key}, Run ID: {run_id} ---")
     logger.info(f"Target Search URL: {target_site_search_url}")
@@ -372,17 +412,23 @@ async def run_headless_rot_scrape_orchestration(
     logger.info(f"Tender Status to Select: {tender_status_to_select}")
     logger.info(f"Worker Settings: {worker_settings}")
 
-    # Prepare final output file path (appended to by worker)
-    FINAL_MERGED_DIR_BASE.mkdir(parents=True, exist_ok=True)
-    final_site_tagged_output_path = FINAL_MERGED_DIR_BASE / f"Merged_ROT_{clean_filename_rot(site_key)}_{TODAY_STR}.txt"
+    # Use new constant for final merged site-specific ROT data
+    ROT_MERGED_SITE_SPECIFIC_DIR.mkdir(parents=True, exist_ok=True) # Ensure base for site-specific merged exists
+    final_site_tagged_output_path = ROT_MERGED_SITE_SPECIFIC_DIR / f"Merged_ROT_{clean_filename_rot(site_key)}_{TODAY_STR}.txt"
 
     update_worker_status(run_specific_temp_dir, "WORKER_STARTED")
+
+    # New base for debug screenshots generated by this orchestration function
+    orchestration_debug_screenshots_dir = TEMP_DEBUG_SCREENSHOTS_DIR / "worker" / site_key / run_id / "orchestration_errors"
+    orchestration_debug_screenshots_dir.mkdir(parents=True, exist_ok=True)
+
 
     async with async_playwright() as playwright:
         browser = None
         context = None
+        page: Optional[Page] = None # Define page here to be accessible in finally block if needed
         try:
-            browser = await playwright.chromium.launch(headless=True) # Consider non-headless for debugging
+            browser = await playwright.chromium.launch(headless=True)
             context = await browser.new_context(ignore_https_errors=True, accept_downloads=True)
             page = await context.new_page()
             
@@ -390,15 +436,14 @@ async def run_headless_rot_scrape_orchestration(
             logger.info(f"Navigating to: {target_site_search_url}")
             await page.goto(target_site_search_url, wait_until="domcontentloaded", timeout=worker_settings.get("page_load_timeout", PAGE_LOAD_TIMEOUT_DEFAULT))
 
+            # _save_captcha_for_dashboard uses run_specific_temp_dir internally for its debug images
             if not await _save_captcha_for_dashboard(page, run_specific_temp_dir, tender_status_to_select):
                 logger.error("Failed to save CAPTCHA for dashboard. Aborting worker.")
-                # Status already set by _save_captcha_for_dashboard on error
                 return
 
             captcha_solution = await _wait_for_captcha_solution(run_specific_temp_dir)
             if not captcha_solution:
                 logger.error("No CAPTCHA solution received or timeout. Aborting worker.")
-                # Status already set by _wait_for_captcha_solution on error/timeout
                 return
             
             update_worker_status(run_specific_temp_dir, "PROCESSING_WITH_CAPTCHA")
@@ -411,18 +456,20 @@ async def run_headless_rot_scrape_orchestration(
                 await page.wait_for_selector(f"{RESULTS_TABLE_SELECTOR}, {ERROR_MESSAGE_SELECTORS}", state="visible", timeout=worker_settings.get("post_submit_timeout", POST_SUBMIT_TIMEOUT_DEFAULT))
             except PlaywrightTimeout:
                 logger.error("Timeout: Neither results table nor error message appeared after CAPTCHA submission.")
-                await page.screenshot(path=run_specific_temp_dir / f"debug_captcha_submit_overall_timeout.png")
+                # Use new orchestration_debug_screenshots_dir
+                await page.screenshot(path=orchestration_debug_screenshots_dir / f"debug_captcha_submit_overall_timeout.png")
                 update_worker_status(run_specific_temp_dir, "ERROR_CAPTCHA_SUBMIT_TIMEOUT")
                 return
 
-            if not await page.locator(RESULTS_TABLE_SELECTOR).is_visible(timeout=2000): # Quick check
+            if not await page.locator(RESULTS_TABLE_SELECTOR).is_visible(timeout=2000):
                 err_text = "Unknown (Results table not found)"
                 err_loc = page.locator(ERROR_MESSAGE_SELECTORS).first
-                if await err_loc.count() > 0 and await err_loc.is_visible(timeout=1000): # Check if error element exists and is visible
+                if await err_loc.count() > 0 and await err_loc.is_visible(timeout=1000):
                     err_text_content = await err_loc.text_content()
                     err_text = err_text_content.strip() if err_text_content else err_text
                 logger.error(f"CAPTCHA submission failed or error on page: {err_text}")
-                await page.screenshot(path=run_specific_temp_dir / f"debug_captcha_submit_error.png")
+                # Use new orchestration_debug_screenshots_dir
+                await page.screenshot(path=orchestration_debug_screenshots_dir / f"debug_captcha_submit_error.png")
                 update_worker_status(run_specific_temp_dir, f"ERROR_CAPTCHA_SUBMIT_{clean_filename_rot(err_text[:50])}")
                 return
             
@@ -435,15 +482,20 @@ async def run_headless_rot_scrape_orchestration(
             max_list_pages = worker_settings.get("max_list_pages", MAX_ROT_LIST_PAGES_TO_FETCH_DEFAULT)
             total_tenders_processed_successfully = 0
 
-            with open(final_site_tagged_output_path, "a", encoding="utf-8") as outfile_merged: # Open in append mode
+            with open(final_site_tagged_output_path, "a", encoding="utf-8") as outfile_merged:
                 while processed_list_pages < max_list_pages:
                     processed_list_pages += 1
                     logger.info(f"--- Processing List Page: {processed_list_pages} ---")
                     update_worker_status(run_specific_temp_dir, f"PROCESSING_LIST_PAGE_{processed_list_pages}")
                     await page.wait_for_selector(RESULTS_TABLE_SELECTOR, state="visible", timeout=worker_settings.get("element_timeout", ELEMENT_TIMEOUT_DEFAULT))
                     
-                    current_page_items_raw = await extract_table_data_from_current_list_page(page, processed_list_pages, target_site_base_url)
-                    
+                    # extract_table_data... uses target_site_base_url for link resolution
+                    # and its debug screenshots go to a sub-path of TEMP_WORKER_RUNS_DIR (or can be changed)
+                    current_page_items_raw = await extract_table_data_from_current_list_page(
+                        page, processed_list_pages, target_site_base_url,
+                        site_key, run_id # <<<< NEW: Pass site_key and run_id
+                    )
+
                     if current_page_items_raw and isinstance(current_page_items_raw[0], dict) and current_page_items_raw[0].get("status_signal") == "NO_RECORDS_FOUND_IN_TABLE":
                         logger.info(f"'No records' signal on page {processed_list_pages}. Ending scrape for this site.")
                         update_worker_status(run_specific_temp_dir, "FINISHED_NO_DATA_ON_PAGE")
@@ -458,10 +510,8 @@ async def run_headless_rot_scrape_orchestration(
                             break
                     else:
                         consecutive_empty_list_pages = 0
-                        
                         detail_tasks = []
                         for item_data_list_page in current_page_items_raw:
-                            # Ensure it's a dict before proceeding (it should be)
                             if not isinstance(item_data_list_page, dict): 
                                 logger.warning(f"Skipping non-dict item from list page: {item_data_list_page}")
                                 continue
@@ -472,10 +522,11 @@ async def run_headless_rot_scrape_orchestration(
                             if detail_url_from_list and detail_url_from_list != "N/A":
                                 task = process_single_tender_detail_page(
                                     detail_semaphore, context, detail_url_from_list,
-                                    site_key, tender_id_from_list, processed_list_pages
+                                    site_key, tender_id_from_list, processed_list_pages,
+                                    run_id  # <<<< NEW: Pass run_id here
                                 )
-                                detail_tasks.append((task, item_data_list_page)) # Pair task with its original list data
-                            else: # No detail link, just format what we have from the list
+                                detail_tasks.append((task, item_data_list_page))
+                            else:
                                 augmented_item = item_data_list_page.copy()
                                 augmented_item['summary_file_status'] = "no_detail_link"
                                 tagged_block = _format_rot_tags(augmented_item, site_key)
@@ -483,28 +534,24 @@ async def run_headless_rot_scrape_orchestration(
                         
                         if detail_tasks:
                             logger.info(f"Gathering {len(detail_tasks)} detail processing tasks for list page {processed_list_pages}...")
-                            # Results will be tuples of (status, rel_path, fname)
                             gathered_detail_results = await asyncio.gather(*(task_tuple[0] for task_tuple in detail_tasks))
                             logger.info(f"All detail tasks for list page {processed_list_pages} finished.")
 
                             for i, detail_result_tuple in enumerate(gathered_detail_results):
-                                original_list_item_data = detail_tasks[i][1] # Get corresponding list item
+                                original_list_item_data = detail_tasks[i][1]
                                 augmented_item_data = original_list_item_data.copy()
-                                
                                 status, rel_path, fname = detail_result_tuple
                                 augmented_item_data['summary_file_status'] = status
                                 augmented_item_data['summary_file_path_relative'] = rel_path if rel_path else "N/A"
                                 augmented_item_data['summary_file_name'] = fname if fname else "N/A"
-                                
                                 if status == "downloaded":
                                     total_tenders_processed_successfully +=1
-
                                 tagged_block = _format_rot_tags(augmented_item_data, site_key)
                                 if tagged_block:
                                     outfile_merged.write(tagged_block + "\n\n")
                     
                     next_page_locator = page.locator(PAGINATION_LINK_SELECTOR)
-                    if await next_page_locator.is_visible(timeout=5000): # Quick check for next link
+                    if await next_page_locator.is_visible(timeout=5000):
                         if processed_list_pages >= max_list_pages:
                             logger.info(f"Reached max list pages ({max_list_pages}). Stopping.")
                             update_worker_status(run_specific_temp_dir, "FINISHED_MAX_PAGES_REACHED")
@@ -518,10 +565,21 @@ async def run_headless_rot_scrape_orchestration(
                         update_worker_status(run_specific_temp_dir, "FINISHED_END_OF_RESULTS")
                         break
             
-            if not (processed_list_pages < max_list_pages and consecutive_empty_list_pages < 2): # If loop exited by break conditions
-                 pass # Status already set
-            else: # Loop finished due to max_list_pages or normal completion
-                update_worker_status(run_specific_temp_dir, "FINISHED_SUCCESS")
+            final_status_msg = "FINISHED_SUCCESS" # Default if loop completes
+            if processed_list_pages < max_list_pages and consecutive_empty_list_pages >=2 :
+                final_status_msg = "FINISHED_EMPTY_PAGES"
+            elif processed_list_pages < max_list_pages and (current_page_items_raw and isinstance(current_page_items_raw[0], dict) and current_page_items_raw[0].get("status_signal") == "NO_RECORDS_FOUND_IN_TABLE"):
+                final_status_msg = "FINISHED_NO_DATA_ON_PAGE"
+            # Other break conditions already set their status
+            
+            # Only set FINISHED_SUCCESS if not already set by a break condition
+            if (run_specific_temp_dir / "status.txt").is_file():
+                current_s = (run_specific_temp_dir / "status.txt").read_text().strip()
+                if not current_s.startswith("FINISHED_") and not current_s.startswith("ERROR_"):
+                     update_worker_status(run_specific_temp_dir, final_status_msg)
+            else: # Should not happen if worker started correctly
+                 update_worker_status(run_specific_temp_dir, final_status_msg)
+
 
             logger.info(f"ROT scrape processing finished for site {site_key}. Successfully processed details for {total_tenders_processed_successfully} tenders.")
             logger.info(f"Final merged ROT data for site {site_key} is in: {final_site_tagged_output_path}")
@@ -529,15 +587,13 @@ async def run_headless_rot_scrape_orchestration(
         except Exception as e:
             logger.critical(f"Major error in ROT worker for site {site_key}: {e}", exc_info=True)
             update_worker_status(run_specific_temp_dir, f"ERROR_UNHANDLED_{type(e).__name__}")
-            # Save debug screenshot of current page if error occurs
             if page and not page.is_closed():
-                await page.screenshot(path=run_specific_temp_dir / "debug_worker_critical_error.png")
-
+                # Use new orchestration_debug_screenshots_dir
+                await page.screenshot(path=orchestration_debug_screenshots_dir / f"debug_worker_critical_error.png")
         finally:
             if context: await context.close()
             if browser: await browser.close()
             logger.info(f"Playwright resources for ROT worker (Site: {site_key}, Run: {run_id}) closed.")
-            # Log final status one last time, could be redundant if already set correctly
             final_status_check = (run_specific_temp_dir / "status.txt").read_text(encoding='utf-8').strip() if (run_specific_temp_dir / "status.txt").is_file() else "UNKNOWN_FINAL"
             logger.info(f"Worker for {site_key} (Run: {run_id}) terminated with status: {final_status_check}")
 
@@ -575,15 +631,15 @@ if __name__ == "__main__":
     print(f"Site Key: {args.site_key}, Run ID: {args.run_id}, Tender Status: {args.tender_status}")
     print(f"Using Search URL: {args.site_url}, Base URL: {args.base_url}")
     print(f"Effective Worker Settings: {worker_run_settings}")
-    print(f"Communication Dir: {TEMP_RUN_DATA_DIR_BASE / args.run_id}")
-    print(f"Final HTML Output Base: {FINAL_DOWNLOADS_DIR_BASE / args.site_key}")
-    print(f"Final Tagged Data Output File (Append Mode): {FINAL_MERGED_DIR_BASE / f'Merged_ROT_{clean_filename_rot(args.site_key)}_{TODAY_STR}.txt'}")
+    print(f"Communication Dir: {TEMP_WORKER_RUNS_DIR / args.run_id}")
+    print(f"Final HTML Output Base: {ROT_DETAIL_HTMLS_DIR / args.site_key}")
+    print(f"Final Tagged Data Output File (Append Mode): {ROT_MERGED_SITE_SPECIFIC_DIR / f'Merged_ROT_{clean_filename_rot(args.site_key)}_{TODAY_STR}.txt'}")
     print("-" * 70)
 
     # Create base directories if they don't exist
-    TEMP_RUN_DATA_DIR_BASE.mkdir(parents=True, exist_ok=True)
-    FINAL_DOWNLOADS_DIR_BASE.mkdir(parents=True, exist_ok=True)
-    FINAL_MERGED_DIR_BASE.mkdir(parents=True, exist_ok=True)
+    TEMP_WORKER_RUNS_DIR.mkdir(parents=True, exist_ok=True)
+    ROT_DETAIL_HTMLS_DIR.mkdir(parents=True, exist_ok=True)
+    ROT_MERGED_SITE_SPECIFIC_DIR.mkdir(parents=True, exist_ok=True)
     
     asyncio.run(run_headless_rot_scrape_orchestration(
         args.site_key,

@@ -8,7 +8,7 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         html { font-size: 16px; scroll-behavior: smooth; }
-        
+
         :root {
             --color-primary: #000000; /* Main black */
             --color-secondary: #1a1a1a; /* Darker gray / off-black */
@@ -26,44 +26,44 @@
             --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
             --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
         }
-        
-        body { 
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--color-surface-alt);
-            color: var(--color-text); 
-            line-height: 1.5; 
+            color: var(--color-text);
+            line-height: 1.5;
             font-weight: 400;
             min-height: 100vh;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        
-        .container { 
-            max-width: 1400px; 
-            margin: 0 auto; 
-            padding: 48px 32px; 
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 48px 32px;
             background: var(--color-surface);
             min-height: 100vh;
         }
-        
-        .header { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: flex-start; 
-            margin-bottom: 64px; 
-            padding-bottom: 32px; 
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 64px;
+            padding-bottom: 32px;
             border-bottom: 2px solid var(--color-primary);
         }
-        
-        .header h1 { 
+
+        .header h1 {
             font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 800; 
+            font-weight: 800;
             letter-spacing: -0.02em;
             line-height: 0.9;
             color: var(--color-primary);
             text-transform: uppercase;
         }
-        
+
         .header-subtitle {
             font-size: 0.875rem;
             font-weight: 500;
@@ -72,247 +72,247 @@
             letter-spacing: 0.05em;
             margin-top: 8px;
         }
-        
+
         .btn {
-            display: inline-flex; 
-            align-items: center; 
+            display: inline-flex;
+            align-items: center;
             justify-content: center;
-            padding: 12px 24px; 
+            padding: 12px 24px;
             border: 1px solid transparent;
             font-family: inherit;
-            font-size: 0.875rem; 
-            font-weight: 500; 
-            text-decoration: none; 
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-decoration: none;
             color: var(--color-surface);
             background: var(--color-primary);
             border-radius: 0;
-            cursor: pointer; 
+            cursor: pointer;
             transition: all 0.2s ease;
             text-transform: uppercase;
             letter-spacing: 0.025em;
             position: relative;
             overflow: hidden;
         }
-        
-        .btn:hover { 
+
+        .btn:hover {
             background: var(--color-secondary);
             transform: translateY(-1px);
             box-shadow: var(--shadow-md);
         }
-        
-        .btn:focus { 
-            outline: 2px solid var(--color-accent); 
-            outline-offset: 2px; 
+
+        .btn:focus {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
         }
-        
-        .btn:disabled { 
-            opacity: 0.5; 
-            cursor: not-allowed; 
-            transform: none; 
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
         }
-        
+
         .btn-secondary {
             background: transparent;
             color: var(--color-primary);
             border-color: var(--color-border);
         }
-        
+
         .btn-secondary:hover {
             background: var(--color-surface-alt);
             border-color: var(--color-primary);
         }
-        
+
         .btn-accent { /* Was btn-info */
             background: var(--color-accent);
         }
-        
+
         .btn-accent:hover {
             background: #1d4ed8; /* Darker blue */
         }
-        
+
         .btn-success {
             background: var(--color-success);
         }
-        
+
         .btn-success:hover {
             background: #047857;
         }
-        
+
         .section {
             margin-bottom: 48px;
         }
-        
+
         .section-header {
-            font-size: 1.5rem; 
-            font-weight: 700; 
-            color: var(--color-primary); 
-            margin-bottom: 32px; 
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 32px;
             text-transform: uppercase;
             letter-spacing: -0.01em;
             border-bottom: 2px solid var(--color-primary);
             padding-bottom: 16px;
             display: inline-block;
         }
-        
+
         .form-section {
-            background: var(--color-surface); 
+            background: var(--color-surface);
             border: 1px solid var(--color-border);
             padding: 32px;
             margin-bottom: 32px;
         }
-        
-        .form-group { 
-            margin-bottom: 24px; 
-            display: flex; 
-            flex-direction: column; 
+
+        .form-group {
+            margin-bottom: 24px;
+            display: flex;
+            flex-direction: column;
         }
-        
-        label { 
-            display: block; 
-            margin-bottom: 8px; 
-            font-size: 0.875rem; 
-            font-weight: 600; 
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.875rem;
+            font-weight: 600;
             color: var(--color-text);
             text-transform: uppercase;
             letter-spacing: 0.025em;
         }
-        
-        .input, select, .captcha-input { 
-            width: 100%; 
+
+        .input, select, .captcha-input {
+            width: 100%;
             border: 1px solid var(--color-border);
-            background: var(--color-surface); 
-            padding: 12px 16px; 
-            font-size: 0.875rem; 
-            color: var(--color-text); 
+            background: var(--color-surface);
+            padding: 12px 16px;
+            font-size: 0.875rem;
+            color: var(--color-text);
             transition: all 0.2s ease;
             border-radius: 0;
             font-family: inherit;
         }
-        
-        .input:focus, select:focus, .captcha-input:focus { 
-            outline: 2px solid var(--color-accent); 
+
+        .input:focus, select:focus, .captcha-input:focus {
+            outline: 2px solid var(--color-accent);
             outline-offset: -2px;
             border-color: var(--color-accent);
         }
-        
-        .site-selection-group { 
-            display: flex; 
-            align-items: flex-end; 
-            gap: 24px; 
-            margin-bottom: 32px; 
-            flex-wrap: wrap; 
+
+        .site-selection-group {
+            display: flex;
+            align-items: flex-end;
+            gap: 24px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
         }
-        
-        .site-selection-group .form-group { 
-            flex: 1; 
-            margin-bottom: 0; 
-            min-width: 220px; 
+
+        .site-selection-group .form-group {
+            flex: 1;
+            margin-bottom: 0;
+            min-width: 220px;
         }
-        
-        .site-selection-group .btn { 
-            white-space: nowrap; 
-            margin-bottom: 0; 
+
+        .site-selection-group .btn {
+            white-space: nowrap;
+            margin-bottom: 0;
         }
-        
-        .status-message { 
-            padding: 20px 24px; 
-            margin-bottom: 32px; 
+
+        .status-message {
+            padding: 20px 24px;
+            margin-bottom: 32px;
             border-left: 4px solid;
-            font-size: 0.875rem; 
+            font-size: 0.875rem;
             font-weight: 500;
-            background: var(--color-surface); 
+            background: var(--color-surface);
         }
-        
-        .status-message.success { 
-            color: var(--color-success); 
+
+        .status-message.success {
+            color: var(--color-success);
             border-color: var(--color-success);
-            background: #ecfdf5; 
+            background: #ecfdf5;
         }
-        
-        .status-message.error { 
-            color: var(--color-error); 
+
+        .status-message.error {
+            color: var(--color-error);
             border-color: var(--color-error);
-            background: #fef2f2; 
+            background: #fef2f2;
         }
-        
-        .status-message.info { 
-            color: var(--color-accent); 
+
+        .status-message.info {
+            color: var(--color-accent);
             border-color: var(--color-accent);
-            background: #eff6ff; 
+            background: #eff6ff;
         }
-        
-        .info-note { 
-            background: #eff6ff; 
-            border-left: 4px solid var(--color-accent); 
-            padding: 20px 24px; 
-            margin: 24px 0; 
-            font-size: 0.875rem; 
+
+        .info-note {
+            background: #eff6ff;
+            border-left: 4px solid var(--color-accent);
+            padding: 20px 24px;
+            margin: 24px 0;
+            font-size: 0.875rem;
             color: var(--color-text);
         }
-        
-        .minor-note { 
-            font-size: 0.75rem; 
-            color: var(--color-text-muted); 
+
+        .minor-note {
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
             margin-top: 8px;
             font-family: 'JetBrains Mono', monospace;
         }
-        
-        .back-link { 
-            text-align: center; 
-            margin-top: 48px; 
+
+        .back-link {
+            text-align: center;
+            margin-top: 48px;
         }
-        
-        .modal { 
-            display: none; position: fixed; z-index: 1000; 
-            left: 0; top: 0; width: 100%; height: 100%; 
-            overflow: auto; background-color: rgba(15, 23, 42, 0.7); 
+
+        .modal {
+            display: none; position: fixed; z-index: 1000;
+            left: 0; top: 0; width: 100%; height: 100%;
+            overflow: auto; background-color: rgba(15, 23, 42, 0.7);
         }
-        
-        .modal-content { 
+
+        .modal-content {
             background: var(--color-surface);
-            margin: 8% auto; padding: 48px; 
+            margin: 8% auto; padding: 48px;
             border: 1px solid var(--color-border);
-            width: 90%; max-width: 600px; 
+            width: 90%; max-width: 600px;
             position: relative; box-shadow: var(--shadow-xl);
         }
-        
-        .modal-header { 
-            padding-bottom: 24px; border-bottom: 2px solid var(--color-primary); 
-            margin-bottom: 32px; 
+
+        .modal-header {
+            padding-bottom: 24px; border-bottom: 2px solid var(--color-primary);
+            margin-bottom: 32px;
         }
-        
-        .modal-header h4 { 
-            margin: 0; font-size: 1.5rem; color: var(--color-primary); 
+
+        .modal-header h4 {
+            margin: 0; font-size: 1.5rem; color: var(--color-primary);
             font-weight: 700; text-transform: uppercase; letter-spacing: -0.01em;
         }
-        
-        .close-button { 
-            color: var(--color-text-muted); float: right; font-size: 32px; 
+
+        .close-button {
+            color: var(--color-text-muted); float: right; font-size: 32px;
             font-weight: bold; line-height: 1; transition: color 0.2s ease;
         }
         .close-button:hover, .close-button:focus { color: var(--color-primary); text-decoration: none; cursor: pointer; }
-        
-        #captcha-image-display { 
-            display: block; margin: 24px auto; border: 1px solid var(--color-border); 
+
+        #captcha-image-display {
+            display: block; margin: 24px auto; border: 1px solid var(--color-border);
             max-width: 250px; height: auto; min-height: 80px; background: var(--color-surface-alt);
         }
-        
-        #captcha-image-display.loading { 
-            display: flex; align-items: center; justify-content: center; 
+
+        #captcha-image-display.loading {
+            display: flex; align-items: center; justify-content: center;
             text-align: center; color: var(--color-text-muted); font-weight: 500;
         }
-        
-        .modal-actions { 
+
+        .modal-actions {
             text-align: right; margin-top: 32px; display: flex;
             gap: 16px; justify-content: flex-end;
         }
-        
-        @media (max-width: 768px) { 
+
+        @media (max-width: 768px) {
             .container { padding: 24px 16px; }
             .header { flex-direction: column; align-items: stretch; gap: 24px;}
-            .modal-content { width: 95%; margin-top: 5%; padding: 32px 24px;} 
-            .site-selection-group { flex-direction: column; align-items: stretch;} 
-            .site-selection-group .btn { margin-top: 16px;} 
+            .modal-content { width: 95%; margin-top: 5%; padding: 32px 24px;}
+            .site-selection-group { flex-direction: column; align-items: stretch;}
+            .site-selection-group .btn { margin-top: 16px;}
         }
     </style>
 </head>
@@ -513,7 +513,10 @@
                 showRotStatusMessage(timeoutMsg, "error");
                 if(captchaErrorDiv) { captchaErrorDiv.textContent = timeoutMsg; captchaErrorDiv.style.display = 'block'; }
                 if(captchaImageDisplay) { captchaImageDisplay.alt = "Timeout"; captchaImageDisplay.classList.remove('loading'); captchaImageDisplay.textContent = "Timeout loading CAPTCHA.";}
-                // Leave initiate button as is, user might want to cancel from modal
+                if(initiateWorkerButton) { // <<<< IMPROVEMENT ADDED HERE
+                    initiateWorkerButton.disabled = false;
+                    initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';
+                }
                 return;
             }
 
@@ -535,11 +538,19 @@
                     showRotStatusMessage(`Worker error: ${errorMsg}`, "error");
                     if(captchaErrorDiv) { captchaErrorDiv.textContent = `Worker Error: ${errorMsg}`; captchaErrorDiv.style.display = 'block'; }
                     if(captchaImageDisplay) { captchaImageDisplay.alt = "Error"; captchaImageDisplay.classList.remove('loading'); captchaImageDisplay.textContent = "Error loading CAPTCHA.";}
+                    if(initiateWorkerButton) { // <<<< IMPROVEMENT ADDED HERE
+                        initiateWorkerButton.disabled = false;
+                        initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';
+                    }
                 } else if (data.status === 'worker_finished' || data.status.startsWith('FINISHED_')) {
                      clearInterval(captchaPollInterval);
                     showRotStatusMessage(`Worker finished: ${data.message}`, "info");
                     if(captchaErrorDiv) { captchaErrorDiv.textContent = `Worker Finished: ${data.message}`; captchaErrorDiv.style.display = 'block'; }
-                    if(submitCaptchaToWorkerButton) submitCaptchaToWorkerButton.disabled = true; // Can't submit if worker finished
+                    if(submitCaptchaToWorkerButton) submitCaptchaToWorkerButton.disabled = true;
+                    if(initiateWorkerButton) { // Re-enable for a new run
+                        initiateWorkerButton.disabled = false;
+                        initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';
+                    }
                 } else if (['pending_worker_init', 'pending_worker_action', 'processing_captcha_file', 'worker_processing', 'INITIATED_BY_DASHBOARD', 'FETCHING_CAPTCHA', 'WORKER_STARTED', 'PROCESSING_WITH_CAPTCHA'].includes(data.status) || data.status.startsWith("PROCESSING_LIST_PAGE_")) {
                     if(captchaImageDisplay && captchaImageDisplay.classList.contains('loading')) {
                         captchaImageDisplay.textContent = data.message || `Worker status: ${data.status}... Polling ${pollCount}/${maxPolls}`;
@@ -550,11 +561,12 @@
                         captchaImageDisplay.textContent = `Status: ${data.status}. Polling ${pollCount}/${maxPolls}`;
                     }
                 }
-            } catch (error) {
+            } catch (error) { // This catch is for network errors during the fetch itself
                 console.warn("Error during CAPTCHA status poll (will retry):", error);
                 if(captchaImageDisplay && captchaImageDisplay.classList.contains('loading')) {
                     captchaImageDisplay.textContent = `Polling error... Retrying ${pollCount}/${maxPolls}`;
                 }
+                // Consider if a certain number of consecutive fetch errors should also re-enable the initiate button
             }
         }, 2000);
     }
@@ -567,15 +579,15 @@
             captchaImageDisplay.classList.add('loading');
             captchaImageDisplay.textContent = loadingText;
             submitCaptchaToWorkerButton.disabled = true;
-        } else {
+        } else { // CAPTCHA image received or ready for input
             captchaImageDisplay.classList.remove('loading');
             captchaImageDisplay.textContent = "";
             submitCaptchaToWorkerButton.disabled = false;
-        }
-        // Keep initiate button enabled on main page unless actively initiating
-        if(initiateWorkerButton && !isLoading && rotCaptchaModal.style.display !== 'block' ) { // only re-enable if modal isn't ALREADY loading from an initiation click
-             initiateWorkerButton.disabled = false;
-             initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';
+            // Re-enable initiate button on main page once modal is ready for solution (or error occurs)
+            if(initiateWorkerButton) {
+                 initiateWorkerButton.disabled = false;
+                 initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';
+            }
         }
         rotCaptchaModal.style.display = 'block';
     }
@@ -583,9 +595,9 @@
     function closeRotCaptchaModal() {
         if(rotCaptchaModal) rotCaptchaModal.style.display = 'none';
         if (captchaPollInterval) clearInterval(captchaPollInterval);
-        // currentRunId = null; // Keep runId if user might retry submitting solution for the same run
+        // currentRunId = null; // Decided to keep runId if user might retry submit for same run
         if(initiateWorkerButton) {initiateWorkerButton.disabled = false; initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';}
-        if(submitCaptchaToWorkerButton) submitCaptchaToWorkerButton.disabled = false; // Re-enable submit if modal closed manually
+        if(submitCaptchaToWorkerButton) submitCaptchaToWorkerButton.disabled = false;
     }
 
     async function submitCaptchaSolutionToDashboard() {
@@ -610,16 +622,21 @@
             if (!response.ok) { throw new Error(resultData.detail || `Error ${response.status}`); }
 
             showRotStatusMessage(resultData.message || `CAPTCHA for run ${currentRunId.slice(-6)} submitted. Worker will now proceed. Check worker logs.`, 'success', statusMessageAreaRot);
-            closeRotCaptchaModal(); // Close modal on successful submission
-            // The UI will now implicitly wait for the worker to finish or show error via logs or other UI updates.
+            closeRotCaptchaModal();
         } catch (error) {
             console.error("Error submitting manual ROT CAPTCHA solution to dashboard:", error);
             if(captchaErrorDiv) {captchaErrorDiv.textContent = `Failed to submit solution: ${error.message}. Try again.`; captchaErrorDiv.style.display = 'block';}
              showRotStatusMessage(`Error submitting CAPTCHA: ${error.message}`, "error", statusMessageAreaRot);
         } finally {
+            // Re-enable submit button in modal if it's still open (e.g., due to error)
             if(submitCaptchaToWorkerButton && rotCaptchaModal.style.display === 'block') {
                 submitCaptchaToWorkerButton.disabled = false;
                 submitCaptchaToWorkerButton.textContent = 'Submit Solution to Worker';
+            }
+            // Also re-enable main initiate button if submission fails and modal is still shown
+            if(initiateWorkerButton && rotCaptchaModal.style.display === 'block') {
+                 initiateWorkerButton.disabled = false;
+                 initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';
             }
         }
     }

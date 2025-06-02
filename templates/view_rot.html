@@ -1,167 +1,287 @@
-<!-- templates/view_rot.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View ROT Tenders - {{ subdir_display_name }}</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Viewing ROT Tenders: {{ subdir_display_name | default(subdir) }} - TenFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        /* Basic Reset */
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { font-size: 16px; }
-        body {
-          font-family: 'Roboto', sans-serif;
-          background-color: #f1f4f9;
-          color: #333;
-          line-height: 1.5;
+        html { font-size: 16px; scroll-behavior: smooth; }
+
+        :root {
+            --color-primary: #000000;
+            --color-secondary: #1a1a1a;
+            --color-accent: #2563eb; /* Blue for accents */
+            --color-surface: #ffffff;
+            --color-surface-alt: #f8fafc;
+            --color-border: #e2e8f0;
+            --color-text: #0f172a;
+            --color-text-muted: #64748b;
+            --color-success: #059669;
+            --color-error: #dc2626; /* For error status text */
+            --color-info: #3b82f6;  /* For info status text */
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
         }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--color-surface-alt);
+            color: var(--color-text);
+            line-height: 1.4;
+            font-weight: 400;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .page-wrapper {
+            background: var(--color-surface);
+            padding: 24px;
+            min-height: 100vh;
+        }
+
         .container {
-          max-width: 1800px; /* Wider container for more columns */
-          margin: 30px auto;
-          padding: 20px 25px;
-          background-color: #ffffff;
-          border-radius: 8px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            max-width: none; /* Allow full width */
+            width: 100%;
+            margin: 0 auto;
         }
 
         .header {
-            display: flex; justify-content: space-between; align-items: center;
-            margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--color-primary);
         }
-        .header h2 {
-          margin: 0; font-size: 1.5rem; font-weight: 500; color: #1a2a45;
-          overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+
+        .header h1 { /* Changed from h2 to h1 for semantic page title */
+            font-size: 5rem; /* Adjusted for ROT context */
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            margin: 0;
+            overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
         }
 
-        /* Navigation buttons */
-        .nav { display: flex; gap: 10px; flex-shrink: 0; }
-        .nav a, .action-btn {
-          display: inline-block; padding: 6px 12px; border-radius: 4px;
-          font-weight: 500; text-decoration: none; transition: background-color 0.2s ease, box-shadow 0.2s ease;
-          border: none; cursor: pointer; font-size: 0.85rem; color: white;
-          white-space: nowrap; text-align: center; line-height: 1.4;
+        .header-actions { display: flex; gap: 12px; align-items: center; }
+
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 8px 16px;
+            border: 1px solid var(--color-primary);
+            font-family: inherit; font-size: 0.8rem;
+            font-weight: 500;
+            text-decoration: none; color: var(--color-surface);
+            background: var(--color-primary); border-radius: 0;
+            cursor: pointer; transition: all 0.2s ease;
+            text-transform: uppercase; letter-spacing: 0.025em;
         }
-        .nav a:focus, .action-btn:focus { outline: 2px solid #a8c7fa; outline-offset: 2px; }
-        .nav a.download-btn { background-color: #28a745; }
-        .nav a.download-btn:hover { background-color: #218838; }
-        .nav a.back-btn { background-color: #007bff; }
-        .nav a.back-btn:hover { background-color: #0056b3; }
+        .btn:hover { background: var(--color-secondary); border-color: var(--color-secondary); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+        .btn:focus { outline: 2px solid var(--color-accent); outline-offset: 2px; }
 
-        .table-container { overflow-x: auto; width: 100%; margin-top: 15px;}
-        table { width: 100%; border-collapse: collapse; table-layout: fixed; }
-        th, td {
-             padding: 8px 10px;
-             text-align: left; vertical-align: top; border-bottom: 1px solid #e7eaf0;
-             font-size: 0.85rem; 
-             overflow-wrap: break-word; hyphens: auto;
-             line-height: 1.4;
-         }
-        th { background-color: #f8f9fa; font-weight: 500; color: #495057; white-space: nowrap; position: sticky; top: 0; z-index: 1; border-top: 1px solid #dee2e6;}
-        thead th { border-bottom-width: 2px; border-color: #dee2e6; }
-        tbody tr:last-child td { border-bottom: 0; }
-        tbody tr:hover { background-color: #f1f4f9; }
+        .btn-secondary {
+            background: transparent; color: var(--color-primary); border-color: var(--color-primary);
+        }
+        .btn-secondary:hover { background: var(--color-surface-alt); border-color: var(--color-primary); }
 
-        /* ROT Column Width Hints (approx. 8 columns) */
-        th:nth-child(1), td:nth-child(1) { width: 4%; text-align: right; padding-right: 10px;} /* S.No */
-        th:nth-child(2), td:nth-child(2) { width: 12%; } /* Tender ID */
-        th:nth-child(3), td:nth-child(3) { width: 20%; } /* Title and Ref.No. */
-        th:nth-child(4), td:nth-child(4) { width: 20%; } /* Organisation Chain */
-        th:nth-child(5), td:nth-child(5) { width: 12%; } /* Tender Stage */
-        th:nth-child(6), td:nth-child(6) { width: 12%; } /* Source Site */
-        th:nth-child(7), td:nth-child(7) { width: 13%; } /* Stage Summary File */
-        th:nth-child(8), td:nth-child(8) { width:  7%; text-align: center; } /* Actions (View Detail) */
+        .btn-success { background-color: var(--color-success); border-color: var(--color-success); }
+        .btn-success:hover { background-color: #047857; border-color: #047857; }
 
-         /* Action Button Styles */
-         td .actions-cell { display: flex; justify-content: center; align-items: center; height: 100%;}
-         .action-btn.details-btn { background-color: #17a2b8; } /* Info color */
-         .action-btn.details-btn:hover { background-color: #117a8b; }
-         .no-action, .file-status { font-style: italic; color: #777; font-size: 0.9em; display: block; text-align: left; }
-         .file-status.downloaded { color: #28a745; font-style: normal; font-weight: 500;}
-         .file-status.error { color: #dc3545; font-style: normal; }
-         .file-status a { color: #007bff; text-decoration: none; }
-         .file-status a:hover { text-decoration: underline; }
+        .btn-view-html { /* Specific for "View HTML" button */
+            background-color: var(--color-accent); /* Using accent color */
+            border-color: var(--color-accent);
+            padding: 6px 10px;
+            font-size: 0.7rem;
+        }
+        .btn-view-html:hover { background-color: #1d4ed8; border-color: #1d4ed8;}
 
-         .no-tenders { text-align: center; padding: 20px; font-style: italic; color: #6c757d; }
+
+        .table-responsive-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            border: 1px solid var(--color-border);
+            background: var(--color-surface);
+        }
+
+        .tender-table {
+            width: 100%;
+            min-width: 1200px; /* Adjusted min-width for ROT columns */
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tender-table th {
+            background: var(--color-primary);
+            color: var(--color-surface);
+            padding: 10px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--color-secondary);
+            white-space: nowrap;
+            position: sticky; top: 0; z-index: 1; /* Keep headers sticky */
+        }
+        .tender-table thead th { border-top: 1px solid var(--color-primary); }
+
+
+        .tender-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--color-border);
+            font-size: 0.8rem;
+            vertical-align: middle;
+            line-height: 1.3;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .tender-table tbody tr:hover { background: var(--color-surface-alt); }
+        .tender-table tbody tr:last-child td { border-bottom: none; }
+
+        .no-tenders {
+            text-align: center; color: var(--color-text-muted);
+            padding: 40px 24px;
+            font-weight: 500; font-size: 0.9rem;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            margin-top: 24px;
+        }
+
+        .stats-bar {
+            background: var(--color-surface-alt);
+            border: 1px solid var(--color-border);
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .stats-item {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--color-text); text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+        .stats-value {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            font-family: 'JetBrains Mono', monospace;
+            margin-left: 8px;
+        }
+
+        .file-status { font-style: italic; font-size: 0.75rem; display: block; }
+        .file-status.downloaded a { color: var(--color-success); font-weight: 500; text-decoration: none; font-style: normal; }
+        .file-status.downloaded a:hover { text-decoration: underline; }
+        .file-status.error { color: var(--color-error); font-style: normal; }
+        .file-status.info { color: var(--color-info); font-style: normal; } /* For statuses like 'no_detail_link' */
+        .no-action { font-style: italic; color: var(--color-text-muted); font-size: 0.8rem; }
+
+
+        /* ROT Column Width Hints */
+        .col-rot-sno       { width: 4%; text-align: right; padding-right: 10px;}
+        .col-rot-tenderid  { width: 13%; }
+        .col-rot-title     { width: 25%; }
+        .col-rot-orgchain  { width: 20%; }
+        .col-rot-stage     { width: 10%; }
+        .col-rot-site      { width: 8%; }
+        .col-rot-summary   { width: 14%; } /* For the filename link */
+        .col-rot-actions   { width: 6%; text-align: center; }
+
+        @media (max-width: 768px) {
+            .page-wrapper { padding: 16px; }
+            .header { flex-direction: column; align-items: stretch; gap: 12px;}
+            .stats-bar { flex-direction: column; align-items: stretch; text-align: center;}
+        }
     </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h2 title="{{ subdir }}">Viewing ROT Tenders: {{ subdir_display_name | default(subdir) }}</h2>
-      <div class="nav">
-        <a href="{{ url_for('download_tender_excel_typed', data_type='rot', subdir=subdir) }}" class="download-btn">Download This Set (Excel)</a>
-        <a href="{{ url_for('homepage') }}" class="back-btn">Back to Dashboard</a>
-      </div>
-    </div>
+  <div class="page-wrapper">
+    <div class="container">
+        <div class="header">
+            <h1>ROT: {{ subdir_display_name | default(subdir) }}</h1>
+            <div class="header-actions">
+                <a href="{{ url_for('download_tender_excel_typed', data_type='rot', subdir=subdir) }}" class="btn btn-success">Download List (Excel)</a>
+                <a href="{{ url_for('homepage') }}" class="btn btn-secondary">← Back to Dashboard</a>
+            </div>
+        </div>
 
-    <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>S.No</th>
-              <th>Tender ID</th>
-              <th>Title and Ref.No.</th>
-              <th>Organisation Chain</th>
-              <th>Tender Stage</th>
-              <th>Source Site</th>
-              <th>Stage Summary File</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% if tenders %}
-                {% for tender in tenders %}
-                <tr>
-                  <td>{{ tender.rot_s_no | default(loop.index) }}</td>
-                  <td>{{ tender.rot_tender_id | default('N/A') }}</td>
-                  <td>{{ tender.rot_title_ref | default('N/A') | neat_format }}</td>
-                  <td>{{ tender.rot_organisation_chain | default('N/A') | neat_format }}</td>
-                  <td>{{ tender.rot_tender_stage | default('N/A') }}</td>
-                  <td>{{ tender.source_site_key | default('N/A') }}</td>
-                  <td>
-                    {% if tender.rot_stage_summary_filename and tender.rot_stage_summary_filename != 'N/A' and tender.rot_stage_summary_file_status == 'downloaded' %}
-                        <span class="file-status downloaded">
-                            {# Assuming files are served relative to a base static path for downloads #}
-                            {# This requires a new endpoint to serve these downloaded files #}
-                            {# For now, just displaying filename. Actual download link needs more setup. #}
-                             <a href="{{ url_for('download_rot_summary_file', site_key=tender.source_site_key, filename=tender.rot_stage_summary_filename) }}" 
-                                title="Download {{ tender.rot_stage_summary_filename }}" target="_blank">
-                                {{ tender.rot_stage_summary_filename }}
-                             </a>
-                        </span>
-                    {% elif tender.rot_stage_summary_file_status %}
-                        <span class="file-status {% if 'error' in tender.rot_stage_summary_file_status or 'timeout' in tender.rot_stage_summary_file_status or 'not_found' in tender.rot_stage_summary_file_status %}error{% endif %}">
-                            {{ tender.rot_stage_summary_file_status | replace('_', ' ') | title }}
-                        </span>
-                    {% else %}
-                        <span class="file-status">N/A</span>
-                    {% endif %}
-                  </td>
-                  <td>
-                    <div class="actions-cell">
-                      {% if tender.rot_tender_id and tender.rot_tender_id != 'N/A' %}
-                        <a href="{{ url_for('view_tender_detail_typed', data_type='rot', subdir=subdir, tender_id=tender.rot_tender_id) }}"
-                           class="action-btn details-btn" title="View ROT tender details">
-                           Details
-                        </a>
-                      {% else %}
-                         <span class="no-action">Details N/A</span>
-                      {% endif %}
-                    </div>
-                  </td>
-                </tr>
-                {% endfor %}
-            {% else %}
-            <tr>
-                <td colspan="8" class="no-tenders">No ROT tenders found in this filtered set.</td>
-            </tr>
-            {% endif %}
-          </tbody>
-        </table>
-    </div>
+        {% if tenders %}
+            <div class="stats-bar">
+                <div class="stats-item">
+                    Total ROT Items in Set: <span class="stats-value">{{ tenders|length }}</span>
+                </div>
+            </div>
 
-  </div> 
+            <div class="table-responsive-wrapper">
+                <table class="tender-table">
+                    <thead>
+                        <tr>
+                            <th class="col-rot-sno">S.No</th>
+                            <th class="col-rot-tenderid">Tender ID</th>
+                            <th class="col-rot-title">Title & Ref.No.</th>
+                            <th class="col-rot-orgchain">Organisation Chain</th>
+                            <th class="col-rot-stage">Tender Stage</th>
+                            <th class="col-rot-site">Source Site</th>
+                            <th class="col-rot-summary">Stage Summary File</th>
+                            <th class="col-rot-actions">View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for tender in tenders %}
+                        <tr>
+                            <td class="col-rot-sno">{{ tender.rot_s_no | default(loop.index) }}</td>
+                            <td class="col-rot-tenderid">{{ tender.rot_tender_id | default('N/A') }}</td>
+                            <td class="col-rot-title">{{ tender.rot_title_ref | default('N/A') | neat_format }}</td>
+                            <td class="col-rot-orgchain">{{ tender.rot_organisation_chain | default('N/A') | neat_format }}</td>
+                            <td class="col-rot-stage">{{ tender.rot_tender_stage | default('N/A') }}</td>
+                            <td class="col-rot-site">{{ tender.source_site_key | default('N/A') }}</td>
+                            <td class="col-rot-summary">
+                                {% if tender.rot_stage_summary_filename and tender.rot_stage_summary_filename != 'N/A' and tender.rot_stage_summary_file_status == 'downloaded' %}
+                                    <span class="file-status downloaded">
+                                        <a href="{{ url_for('download_rot_summary_file', site_key=tender.source_site_key, filename=tender.rot_stage_summary_filename) }}"
+                                           target="_blank" rel="noopener noreferrer"
+                                           title="View downloaded summary: {{ tender.rot_stage_summary_filename }}">
+                                           {{ tender.rot_stage_summary_filename | truncate(30, True) }} {# Truncate long filenames #}
+                                        </a>
+                                    </span>
+                                {% elif tender.rot_stage_summary_file_status and tender.rot_stage_summary_file_status != 'N/A' %}
+                                    <span class="file-status {% if 'error' in tender.rot_stage_summary_file_status.lower() or 'timeout' in tender.rot_stage_summary_file_status.lower() or 'not_found' in tender.rot_stage_summary_file_status.lower() %}error{% elif 'no_detail_link' in tender.rot_stage_summary_file_status.lower() or 'not_processed' in tender.rot_stage_summary_file_status.lower() %}info{% endif %}">
+                                        {{ tender.rot_stage_summary_file_status | replace('_', ' ') | title }}
+                                    </span>
+                                {% else %}
+                                    <span class="file-status">N/A</span>
+                                {% endif %}
+                            </td>
+                            <td class="col-rot-actions">
+                                {% if tender.rot_stage_summary_filename and tender.rot_stage_summary_filename != 'N/A' and tender.rot_stage_summary_file_status == 'downloaded' %}
+                                    <a href="{{ url_for('download_rot_summary_file', site_key=tender.source_site_key, filename=tender.rot_stage_summary_filename) }}"
+                                       class="btn btn-view-html" target="_blank" rel="noopener noreferrer"
+                                       title="View Downloaded HTML Summary">
+                                       HTML
+                                    </a>
+                                {% else %}
+                                     <span class="no-action" title="Summary HTML not available or not downloaded successfully">—</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% else %}
+            <div class="no-tenders">
+                No ROT tenders found in this filtered set ({{ subdir_display_name | default(subdir) }}).
+            </div>
+        {% endif %}
+    </div>
+  </div>
 </body>
 </html>

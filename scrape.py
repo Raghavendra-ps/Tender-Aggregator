@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# File: scrape.py
-# Description: Scrapes tender data for a SINGLE specified government eProcurement site.
-#              Designed to be called by site_controller.py, which iterates through enabled sites.
-
 import asyncio
 import datetime
 import logging
@@ -11,95 +6,97 @@ from pathlib import Path
 from typing import Tuple, Optional, Dict, Set, List, Any
 from urllib.parse import urljoin, urlparse
 
-from bs4 import BeautifulSoup, Tag, NavigableString
+from bs4 import BeautifulSoup, Tag, NavigableString # NavigableString might not be explicitly used, but good to keep if bs4 needs it
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeout, Page, BrowserContext
 
 # === CONFIGURATION (Defaults, overridden by controller via global_settings) ===
 MAX_PAGES_TO_FETCH_DEFAULT = 100
 RETRY_LIMIT_DEFAULT = 3
-CONCURRENCY_DEFAULT = 5 # List pages concurrently for the site being processed
+CONCURRENCY_DEFAULT = 5
 DETAIL_PAGE_CONCURRENCY_LIMIT_DEFAULT = 2
 PAGE_LOAD_TIMEOUT_DEFAULT = 75000
 DETAIL_PAGE_TIMEOUT_DEFAULT = 75000
 
-# --- Determine Project Root Directory ---
+# --- NEW DIRECTORY STRUCTURE CONSTANTS ---
 try:
-    SCRIPT_DIR = Path(__file__).parent.resolve()
+    PROJECT_ROOT = Path(__file__).parent.resolve()
 except NameError: # pragma: no cover
-    # Fallback for environments where __file__ might not be defined
-    SCRIPT_DIR = Path('.').resolve()
+    PROJECT_ROOT = Path('.').resolve()
 
-BASE_DATA_DIR_ROOT = SCRIPT_DIR / "scraped_data" # Root directory for all scraped data
-LOG_DIR_ROOT = SCRIPT_DIR / "logs" # Root directory for all logs
+SITE_DATA_ROOT = PROJECT_ROOT / "site_data" # Overall data directory
+
+# REG Specific Paths (scrape.py primarily deals with these)
+REG_DATA_DIR = SITE_DATA_ROOT / "REG"
+REG_RAW_PAGES_DIR_BASE = REG_DATA_DIR / "RawPages" # Base for site-specific raw page subdirs
+REG_MERGED_SITE_SPECIFIC_DIR = REG_DATA_DIR / "MergedSiteSpecific" # For Merged_{SITE_KEY}_{DATE}.txt
+
+# LOGS Path (Unified)
+LOGS_BASE_DIR = PROJECT_ROOT / "LOGS"
+# --- END NEW DIRECTORY STRUCTURE CONSTANTS ---
+
 
 # === LOG CONFIG (Site-specific logger setup) ===
-scraper_logger: Optional[logging.Logger] = None # Module-level logger instance, set per site run
-TODAY_STR = datetime.datetime.now().strftime("%Y-%m-%d")
+scraper_logger: Optional[logging.Logger] = None
+TODAY_STR = datetime.datetime.now().strftime("%Y-%m-%d") # Using datetime.datetime for consistency if time part was ever needed
 
 def setup_site_specific_logging(site_key: str) -> logging.Logger:
-    """Sets up and returns a logger instance specific to the given site_key."""
-    global scraper_logger # Allow modification of the module-level logger variable
+    """Sets up and returns a logger instance specific to the given site_key for scrape.py."""
+    global scraper_logger
 
-    LOG_DIR_ROOT.mkdir(parents=True, exist_ok=True) # Ensure root log directory exists
-    # Sanitize site_key for filename
+    # MODIFIED: New log path structure
+    regular_scraper_log_dir = LOGS_BASE_DIR / "regular_scraper"
+    regular_scraper_log_dir.mkdir(parents=True, exist_ok=True)
+
     safe_site_key_log = re.sub(r'[^\w\-]+', '_', site_key)
-    log_file_path = LOG_DIR_ROOT / f"scrape_{safe_site_key_log}.log"
+    log_file_path = regular_scraper_log_dir / f"scrape_{safe_site_key_log}.log" # Filename remains scrape_{SITE_KEY}.log
 
-    logger_name = f'scraper_{site_key}' # Unique logger name per site
+    logger_name = f'scraper_regular_{site_key}' # More specific logger name
     logger = logging.getLogger(logger_name)
 
-    # Prevent adding handlers multiple times if this function is called again for the same site
     if logger.hasHandlers():
-        scraper_logger = logger # Ensure module logger is set even if handlers exist
+        # logger.handlers.clear() # Optionally clear if re-configuring the same logger instance.
+                                # For distinct runs via site_controller, this might not be strictly needed
+                                # if site_controller calls this once per site.
+        scraper_logger = logger
         return logger
 
     logger.setLevel(logging.INFO)
-    logger.propagate = False # Prevent logs going to root logger if configured
+    logger.propagate = False
 
-    # File Handler (Site-Specific)
     try:
         fh = logging.FileHandler(log_file_path, encoding='utf-8', mode='a')
-        # Include site_key in the log format
-        fh.setFormatter(logging.Formatter(f"%(asctime)s [%(levelname)s] (Scraper-{site_key}) %(message)s", datefmt="%H:%M:%S"))
+        fh.setFormatter(logging.Formatter(f"%(asctime)s [%(levelname)s] (Scraper-REG-{site_key}) %(message)s", datefmt="%H:%M:%S"))
         logger.addHandler(fh)
     except Exception as e:
-        # Use print as logger might not be fully set up
         print(f"CRITICAL: Failed to initialize file log handler for {log_file_path}: {e}")
 
-    # Stream Handler (Console Output)
-    # Will show interleaved logs if controller runs sites sequentially
     sh = logging.StreamHandler()
-    sh.setFormatter(logging.Formatter(f"[%(levelname)s - Scraper-{site_key}] %(message)s"))
+    sh.setFormatter(logging.Formatter(f"[%(levelname)s - Scraper-REG-{site_key}] %(message)s"))
     logger.addHandler(sh)
 
-    scraper_logger = logger # Set the module-level variable
+    scraper_logger = logger
 
-    # Ensure date header is present in the site-specific log file
-    header_line = f"\n\n======== {TODAY_STR} / Site: {site_key} ========\n"
+    header_line = f"\n\n======== {TODAY_STR} / Site: {site_key} (Regular Scrape) ========\n"
     try:
         header_exists = False
-        if log_file_path.exists():
-             with open(log_file_path, "r", encoding='utf-8') as f_check:
-                 # Check last part of file for efficiency
-                 f_check.seek(0, 2); file_size = f_check.tell()
-                 read_size = min(file_size, 200)
-                 if read_size > 0:
-                     f_check.seek(-read_size, 2)
-                     if header_line.strip() in f_check.read():
-                         header_exists = True
+        if log_file_path.exists() and log_file_path.stat().st_size > 0: # Check size to avoid error on empty file
+             with open(log_file_path, "r", encoding='utf-8', errors='ignore') as f_check: # errors='ignore' for robustness
+                 f_check.seek(max(0, log_file_path.stat().st_size - 256)) # Check last ~256 bytes
+                 if header_line.strip() in f_check.read():
+                     header_exists = True
         if not header_exists:
             with open(log_file_path, "a", encoding='utf-8') as f_append:
                 f_append.write(header_line)
     except Exception as e:
-        # Log warning using the newly configured logger
         logger.warning(f"Could not ensure date header in log file {log_file_path}: {e}")
 
     return logger
 # === END LOG CONFIG ===
 
 # --- Regex Definitions ---
-BRACKET_CONTENT_REGEX = re.compile(r"\[(.*?)\]") # For extracting ID within brackets in title cell
-STRICT_ID_CONTENT_REGEX = re.compile(r"^\d{4}_\w+_\d+_\d+$") # For validating potential tender IDs
+# (Keep these as they are, no path changes)
+BRACKET_CONTENT_REGEX = re.compile(r"\[(.*?)\]")
+STRICT_ID_CONTENT_REGEX = re.compile(r"^\d{4}_\w+_\d+_\d+$")
 
 # --- Helper Functions ---
 def get_safe_text(element: Optional[Tag], default="N/A", strip=True) -> str:
@@ -654,7 +651,6 @@ async def fetch_single_list_page(
         if page_for_list and not page_for_list.is_closed():
             await page_for_list.close()
 
-
 async def fetch_all_pages_for_site(
     playwright_instance: Any,
     site_key: str,
@@ -780,19 +776,37 @@ async def fetch_all_pages_for_site(
     if scraper_logger: scraper_logger.info(f"Fetching complete for site {site_key}. Processed up to list page: {current_list_page_num-1}. Saved {intermediate_files_written} intermediate files.")
     return all_page_statuses
 
-
 async def merge_site_specific_raw_files(
     site_key: str,
-    raw_pages_dir_for_site: Path,
-    final_output_dir_root: Path 
+    raw_pages_dir_for_site: Path, # This path is like site_data/REG/RawPages/{SITE_KEY}
+    # final_output_dir_root argument is now REG_DATA_DIR (site_data/REG/)
+    # The function will create "MergedSiteSpecific" inside this.
+    final_output_dir_root: Path
 ) -> Tuple[int, Optional[Path]]:
     today_filename_part = datetime.datetime.now().strftime("%Y-%m-%d")
     safe_site_key_for_file = re.sub(r'[^\w\-]+', '_', site_key)
-    site_merged_output_dir = final_output_dir_root / "SiteSpecificMerged"
+
+    # MODIFIED: Use the globally defined constant for clarity, though the logic was already correct
+    # Old: site_merged_output_dir = final_output_dir_root / "SiteSpecificMerged"
+    # New: Directly use the constant that should resolve to the same path
+    site_merged_output_dir = REG_MERGED_SITE_SPECIFIC_DIR
+    # Ensure it matches the expectation based on how final_output_dir_root is passed
+    if site_merged_output_dir != (final_output_dir_root / "MergedSiteSpecific"):
+        if scraper_logger: # Check if logger is initialized
+            scraper_logger.warning(f"Path mismatch for site_merged_output_dir. Expected based on constant: {REG_MERGED_SITE_SPECIFIC_DIR}, Derived from arg: {final_output_dir_root / 'SiteSpecificMerged'}")
+        # Fallback to using the argument-derived path if there's a mismatch, but log it.
+        # This situation implies a configuration inconsistency between constants.
+        site_merged_output_dir = final_output_dir_root / "MergedSiteSpecific"
+
+
     site_merged_output_dir.mkdir(parents=True, exist_ok=True)
     final_site_output_path = site_merged_output_dir / f"Merged_{safe_site_key_for_file}_{today_filename_part}.txt"
-    merged_tender_blocks_for_site = 0; seen_tender_block_hashes_for_site: Set[int] = set()
+
+    merged_tender_blocks_for_site = 0
+    seen_tender_block_hashes_for_site: Set[int] = set()
+
     if scraper_logger: scraper_logger.info(f"Merging raw files for site '{site_key}' into: {final_site_output_path}, from: {raw_pages_dir_for_site}")
+
     if not raw_pages_dir_for_site.is_dir():
         if scraper_logger: scraper_logger.warning(f"Raw pages directory for site '{site_key}' not found: {raw_pages_dir_for_site}")
         return 0, None
@@ -803,11 +817,20 @@ async def merge_site_specific_raw_files(
     except OSError as e_list_site_files:
         if scraper_logger: scraper_logger.error(f"Error listing raw page files for site '{site_key}' in {raw_pages_dir_for_site}: {e_list_site_files}")
         return 0, None
+
     if not site_page_files:
         if scraper_logger: scraper_logger.warning(f"No raw page files found for site '{site_key}' to merge.")
-        try: raw_pages_dir_for_site.rmdir(); scraper_logger.info(f"Removed empty raw directory for site '{site_key}': {raw_pages_dir_for_site}")
-        except OSError: pass 
+        try:
+            # Only remove if it's truly empty
+            if not any(raw_pages_dir_for_site.iterdir()):
+                 raw_pages_dir_for_site.rmdir()
+                 if scraper_logger: scraper_logger.info(f"Removed empty raw directory for site '{site_key}': {raw_pages_dir_for_site}")
+            else:
+                 if scraper_logger: scraper_logger.info(f"Raw directory for site '{site_key}' not empty, not removed: {raw_pages_dir_for_site}")
+        except OSError: # pass if rmdir fails (e.g. hidden files)
+            if scraper_logger: scraper_logger.warning(f"Could not remove raw directory {raw_pages_dir_for_site}, it might not be empty or permission issue.")
         return 0, None
+
     try:
         with open(final_site_output_path, "w", encoding="utf-8") as outfile_site:
             for site_page_path in site_page_files:
@@ -819,41 +842,58 @@ async def merge_site_specific_raw_files(
                         except OSError as del_empty_e:
                              if scraper_logger: scraper_logger.warning(f"Could not delete empty file {site_page_path.name}: {del_empty_e}")
                         continue
-                    individual_tender_blocks = re.split(r"--- TENDER END ---", page_file_content)
+
+                    # Using the same improved block splitting as in _globally_merge_rot_site_files
+                    raw_blocks_with_delimiter = page_file_content.split("--- TENDER END ---")
+                    individual_tender_blocks = []
+                    for block_segment in raw_blocks_with_delimiter:
+                        if "--- TENDER START ---" in block_segment:
+                            start_index = block_segment.find("--- TENDER START ---")
+                            if start_index != -1:
+                                reconstructed_block = block_segment[start_index:].strip() + "\n--- TENDER END ---"
+                                individual_tender_blocks.append(reconstructed_block.strip())
+
                     for tender_block_text in individual_tender_blocks:
-                        if "--- TENDER START ---" not in tender_block_text: continue
-                        clean_tender_block = tender_block_text.strip()
-                        if not clean_tender_block: continue
+                        if not tender_block_text: continue # Skip if somehow an empty block was formed
+                        # No need to check for "--- TENDER START ---" again as reconstruction ensures it
+                        clean_tender_block = tender_block_text # Already stripped during reconstruction
+                        
                         tender_block_hash = hash(clean_tender_block)
                         if tender_block_hash not in seen_tender_block_hashes_for_site:
-                            outfile_site.write(clean_tender_block + "\n--- TENDER END ---\n\n")
+                            outfile_site.write(clean_tender_block + "\n\n") # Add double newline
                             seen_tender_block_hashes_for_site.add(tender_block_hash)
                             merged_tender_blocks_for_site += 1
-                    try: site_page_path.unlink()
+                    try:
+                        site_page_path.unlink() # Delete the raw page file after processing
                     except OSError as del_raw_e:
                         if scraper_logger: scraper_logger.warning(f"Could not delete raw file {site_page_path.name} for site '{site_key}': {del_raw_e}")
                 except Exception as e_proc_file:
                     if scraper_logger: scraper_logger.error(f"Error processing/deleting raw file {site_page_path.name} for site '{site_key}': {e_proc_file}")
+        
         if scraper_logger: scraper_logger.info(f"✅ Merged {merged_tender_blocks_for_site} unique tender blocks for site '{site_key}' into: {final_site_output_path}")
-        try:
-            if not any(raw_pages_dir_for_site.iterdir()): 
+        
+        try: # Attempt to remove the site-specific raw page directory if it's empty
+            if not any(raw_pages_dir_for_site.iterdir()):
                 raw_pages_dir_for_site.rmdir()
-                if scraper_logger: scraper_logger.info(f"Removed empty raw directory for site '{site_key}': {raw_pages_dir_for_site}")
+                if scraper_logger: scraper_logger.info(f"Successfully removed empty raw directory for site '{site_key}': {raw_pages_dir_for_site}")
+            else:
+                if scraper_logger: scraper_logger.info(f"Raw directory for site '{site_key}' is not empty, not removed: {raw_pages_dir_for_site}")
         except OSError as rmdir_site_e:
-            if scraper_logger: scraper_logger.warning(f"Could not remove raw directory {raw_pages_dir_for_site} for site '{site_key}': {rmdir_site_e}")
+            if scraper_logger: scraper_logger.warning(f"Could not remove raw directory {raw_pages_dir_for_site} for site '{site_key}' (it might not be empty or permission issue): {rmdir_site_e}")
+            
         return merged_tender_blocks_for_site, final_site_output_path
     except Exception as e_merge_site:
         if scraper_logger: scraper_logger.error(f"Failed during merge/write for site '{site_key}': {e_merge_site}", exc_info=True)
-        return merged_tender_blocks_for_site, None
-
+        return merged_tender_blocks_for_site, None # Return current count and None for path
 
 # --- Main Execution Function ---
+
 async def run_scrape_for_one_site(
     site_key: str,
     site_config: Dict[str, str],
     global_settings: Dict[str, Any]
 ):
-    current_site_logger = setup_site_specific_logging(site_key)
+    current_site_logger = setup_site_specific_logging(site_key) # This now uses new LOGS path
     current_site_logger.info(f"🚀 Starting scrape run for site: {site_key}...")
     start_time_site = datetime.datetime.now()
 
@@ -872,28 +912,31 @@ async def run_scrape_for_one_site(
 
     current_site_logger.info(f"Using settings: MaxPages={max_pages}, Retries={retry_limit}, ListConc={list_concurrency}, DetailConc={detail_concurrency}, PageTimeout={page_timeout}, DetailTimeout={detail_timeout}")
 
-    safe_site_key_dir = re.sub(r'[^\w\-]+', '_', site_key) 
-    raw_pages_dir_current_site = BASE_DATA_DIR_ROOT / "RawPages" / safe_site_key_dir
-    raw_pages_dir_current_site.mkdir(parents=True, exist_ok=True) 
+    safe_site_key_dir = re.sub(r'[^\w\-]+', '_', site_key)
+    # MODIFIED: Use new base path for raw pages
+    raw_pages_dir_current_site = REG_RAW_PAGES_DIR_BASE / safe_site_key_dir
+    raw_pages_dir_current_site.mkdir(parents=True, exist_ok=True)
 
     merged_blocks_count_site = 0
     final_merged_file_path_site: Optional[Path] = None
 
     try:
         async with async_playwright() as p:
+            # fetch_all_pages_for_site saves to raw_pages_dir_current_site
             await fetch_all_pages_for_site(
                 p, site_key, site_base_url, site_domain,
                 max_pages, list_concurrency, detail_concurrency,
                 page_timeout, detail_timeout, retry_limit,
-                raw_pages_dir_current_site 
+                raw_pages_dir_current_site
             )
 
         current_site_logger.info(f"Merge and cleanup phase for site {site_key}...")
+        # MODIFIED: Pass REG_DATA_DIR as the root for where MergedSiteSpecific will be created by the merge function
         merged_blocks_count_site, final_merged_file_path_site = await merge_site_specific_raw_files(
-            site_key, raw_pages_dir_current_site, BASE_DATA_DIR_ROOT
+            site_key, raw_pages_dir_current_site, REG_DATA_DIR # Changed from BASE_DATA_DIR_ROOT
         )
 
-    except Exception as e_run_site: 
+    except Exception as e_run_site:
         current_site_logger.critical(f"💥 CRITICAL ERROR during scrape run for site {site_key}: {type(e_run_site).__name__} - {e_run_site}", exc_info=True)
     finally:
         end_time_site = datetime.datetime.now()
@@ -902,12 +945,11 @@ async def run_scrape_for_one_site(
 
         current_site_logger.info(f"🏁 Scrape run for site {site_key} {log_status_site}. Duration: {duration_site}. Merged unique tender blocks: {merged_blocks_count_site}.")
         if final_merged_file_path_site:
-            current_site_logger.info(f"   Final merged file for {site_key}: {final_merged_file_path_site}")
-        elif merged_blocks_count_site > 0 : 
-             current_site_logger.error(f"   Error: Tender blocks merged for {site_key}, but final file path not returned.")
+            current_site_logger.info(f"   Final site-specific merged file for {site_key}: {final_merged_file_path_site}")
+        elif merged_blocks_count_site > 0 :
+             current_site_logger.error(f"   Error: Tender blocks merged for {site_key}, but final file path not returned by merge function.")
         else:
-            current_site_logger.warning(f"   No final merged file created for site {site_key}.")
-
+            current_site_logger.warning(f"   No final site-specific merged file created for site {site_key}.")
 
 # --- Standalone Execution Block (for testing scrape.py directly) ---
 if __name__ == "__main__":

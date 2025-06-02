@@ -25,7 +25,7 @@
       "download": 180000,
       "pagination_load_wait": 7000,
       "element_wait": 20000,
-      "post_submit": 30000 
+      "post_submit": 30000
     }
   },
   "retention": {
@@ -84,12 +84,12 @@
     "Goa": {
       "base_url": "https://eprocure.goa.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://eprocure.goa.gov.in/nicgep/app",
-      "enabled": true
+      "enabled": false
     },
     "Haryana": {
       "base_url": "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://etenders.hry.nic.in/nicgep/app",
-      "enabled": false
+      "enabled": true
     },
     "Himachal Pradesh": {
       "base_url": "https://hptenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
