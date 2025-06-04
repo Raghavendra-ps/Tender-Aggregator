@@ -11,6 +11,7 @@ import subprocess
 import sys
 import time
 from urllib.parse import urlparse, urljoin
+from bs4 import BeautifulSoup
 
 from fastapi import FastAPI, Request, Form, HTTPException, status
 from fastapi.responses import HTMLResponse, RedirectResponse, StreamingResponse, JSONResponse, FileResponse, PlainTextResponse
@@ -233,6 +234,96 @@ def load_settings() -> Dict:
     except json.JSONDecodeError as e: logger.error(f"Error decoding {SETTINGS_FILE}: {e}. Defaults returned."); return DEFAULT_SETTINGS.copy()
     except Exception as e: logger.error(f"Error reading {SETTINGS_FILE}: {e}. Defaults returned.", exc_info=True); return DEFAULT_SETTINGS.copy()
 
+def parse_rot_summary_html(html_file_path: Path) -> Dict[str, Any]:
+    """
+    Parses a downloaded ROT summary HTML file to extract key information
+    or sections. This will be highly dependent on the HTML structure.
+    Returns a dictionary of extracted data.
+    """
+    extracted_data = {
+        "title": "ROT Summary", # Default title
+        "raw_html_sections": [], # To store chunks of HTML
+        "key_details": {} # For any specific key-value pairs we can reliably extract
+    }
+    if not html_file_path.is_file():
+        logger.error(f"ROT HTML summary file not found for parsing: {html_file_path}")
+        extracted_data["error"] = "Summary HTML file not found."
+        return extracted_data
+
+    try:
+        with open(html_file_path, 'r', encoding='utf-8', errors='replace') as f:
+            content = f.read()
+        
+        soup = BeautifulSoup(content, 'html.parser')
+
+        # Attempt to find a main title if available
+        title_tag = soup.find('title')
+        if title_tag and title_tag.string:
+            extracted_data["title"] = title_tag.string.strip()
+        else: # Fallback: look for a prominent h1 or h2
+            h1 = soup.find('h1')
+            if h1: extracted_data["title"] = h1.get_text(strip=True)
+            else:
+                h2 = soup.find('h2')
+                if h2: extracted_data["title"] = h2.get_text(strip=True)
+
+
+        # --- THIS IS THE PART THAT NEEDS CUSTOMIZATION BASED ON YOUR HTMLs ---
+        # Example: Try to find all tables within the body, or specific divs
+        # This is a very generic example; you'll need to inspect your downloaded HTMLs
+        # to find reliable selectors for sections.
+
+        body_content = soup.body
+        if body_content:
+            # Example 1: Extract all top-level tables as sections
+            # for table in body_content.find_all('table', recursive=False): # Only top-level tables
+            #     extracted_data["raw_html_sections"].append(str(table))
+
+            # Example 2: More likely, the content is within a main container div or table
+            main_container = body_content.find('div', id='printDisplayArea') # Common ID in NIC popups
+            if not main_container:
+                 # Common class on NIC eprocure pages for the content area of popups
+                main_container = body_content.find('div', class_='border')
+            if not main_container:
+                main_container = body_content # Fallback to whole body if no specific container found
+
+            if main_container:
+                # Attempt to extract some key-value pairs if possible (VERY specific to HTML)
+                # This is highly speculative and needs to be based on actual HTML.
+                # For instance, if there's a table with "Tender ID:" and then the value:
+                tender_id_label = main_container.find(lambda tag: tag.name in ['td', 'th', 'span', 'strong'] and "Tender ID" in tag.get_text())
+                if tender_id_label:
+                    value_cell = tender_id_label.find_next_sibling(['td', 'span'])
+                    if value_cell:
+                        extracted_data["key_details"]["Tender ID"] = value_cell.get_text(strip=True)
+                
+                org_name_label = main_container.find(lambda tag: tag.name in ['td', 'th', 'span', 'strong'] and ("Organisation Name" in tag.get_text() or "Organization Name" in tag.get_text()) )
+                if org_name_label:
+                    value_cell = org_name_label.find_next_sibling(['td', 'span'])
+                    if value_cell:
+                         extracted_data["key_details"]["Organisation Name"] = value_cell.get_text(strip=True)
+
+                # For now, let's just take the whole main_container HTML as one section
+                # You might want to split it into multiple sections if there are clear H2/H3 headers
+                # or distinct tables for different parts of the summary.
+                # The _remove_html_protection might have already been applied by the worker.
+                # If not, you might apply it here before str(main_container)
+                extracted_data["raw_html_sections"].append(str(main_container))
+
+
+            if not extracted_data["raw_html_sections"] and not extracted_data["key_details"]:
+                 extracted_data["raw_html_sections"].append(str(body_content)) # Fallback to whole body if nothing specific found
+        
+        if not extracted_data["raw_html_sections"] and not extracted_data["key_details"]:
+             extracted_data["error"] = "Could not parse meaningful content from the summary HTML."
+
+
+    except Exception as e:
+        logger.error(f"Error parsing ROT summary HTML {html_file_path}: {e}", exc_info=True)
+        extracted_data["error"] = f"An error occurred while parsing the summary: {e}"
+    
+    return extracted_data
+
 def save_settings(settings_data: Dict) -> bool:
     try:
         if "scheduler" in settings_data and isinstance(settings_data["scheduler"], dict):
@@ -289,6 +380,23 @@ def write_dashboard_status(run_dir: Path, status_message: str): # Renamed to avo
         log.info(f"Dashboard: Status updated to '{status_message}' in {status_file}")
     except Exception as e: 
         log.error(f"Dashboard: Error writing status '{status_message}' to {run_dir}: {e}")
+
+def _clean_path_component(component: str) -> str: # <<<< DEFINITION HERE
+    """
+    Removes potentially unsafe characters from a path component.
+    Allows alphanumeric, underscore, hyphen, period.
+    Prevents components from being just "." or "..".
+    """
+    if not isinstance(component, str):
+        if 'logger' in globals() and isinstance(globals()['logger'], logging.Logger):
+            logger.warning(f"Attempted to clean non-string path component: {type(component)}")
+        return ""
+    cleaned = re.sub(r'[^\w\-._]', '', component)
+    if cleaned == "." or cleaned == "..":
+        if 'logger' in globals() and isinstance(globals()['logger'], logging.Logger):
+            logger.warning(f"Path component cleaned to unsafe value '{cleaned}', returning empty string.")
+        return ""
+    return cleaned
 
 def cleanup_old_filtered_results():
     logger.info("Running cleanup for old filtered results (REGULAR and ROT)...")
@@ -379,77 +487,105 @@ def get_rot_site_config(site_key_to_find: str) -> Optional[Dict[str, str]]:
         logger.error(f"Site key '{site_key_to_find}' not found in site_configurations.")
     return None
 
-async def _globally_merge_rot_site_files() -> Tuple[int, Optional[Path]]:
-    log_prefix = "AI DATA PREP (Global ROT Merge)"
-    logger.info(f"--- {log_prefix}: Starting Merge of All Site-Specific ROT Files ---")
+async def _globally_merge_rot_site_files(
+    input_site_specific_merged_dir: Path, # e.g., ROT_MERGED_SITE_SPECIFIC_DIR
+    output_final_global_dir: Path,        # e.g., ROT_FINAL_GLOBAL_MERGED_DIR
+    data_type: str = "rot"                # Primarily for "rot" in this context
+) -> Tuple[int, Optional[Path]]:
+    """
+    Merges site-specific tagged data files into a single global file.
+    Called by dashboard endpoints.
+    """
+    log_prefix = f"DASHBOARD GLOBAL MERGE ({data_type.upper()})" # Differentiate from site_controller's merge
+    logger.info(f"--- {log_prefix}: Starting Merge of All Site-Specific Files ---")
+    logger.info(f"{log_prefix}: Input directory: {input_site_specific_merged_dir}")
+    logger.info(f"{log_prefix}: Output directory: {output_final_global_dir}")
 
-    # Use new path for site-specific merged ROT files (INPUT for this function)
-    # Was: site_specific_rot_merged_dir = REG_FINAL_GLOBAL_MERGED_DIR_ROT / "SiteSpecificMergedROT"
-    site_specific_rot_merged_dir = ROT_MERGED_SITE_SPECIFIC_DIR # MODIFIED
-
-    # Use new path for the final globally merged ROT file (OUTPUT of this function)
-    # Was: final_global_rot_output_dir = REG_FINAL_GLOBAL_MERGED_DIR_ROT
-    final_global_rot_output_dir = ROT_FINAL_GLOBAL_MERGED_DIR # MODIFIED
-
-    if not site_specific_rot_merged_dir.is_dir():
-        logger.warning(f"{log_prefix}: Site-specific ROT merged directory not found: {site_specific_rot_merged_dir}. No global ROT merge will occur.")
+    if not input_site_specific_merged_dir.is_dir():
+        logger.warning(f"{log_prefix}: Input directory for site-specific merged files not found: {input_site_specific_merged_dir}. No global merge will occur.")
         return 0, None
 
-    file_pattern = "Merged_ROT_*.txt" # This pattern is fine, used by headless_rot_worker
-    site_merged_files = list(site_specific_rot_merged_dir.glob(file_pattern))
+    file_pattern: str
+    output_filename_prefix: str
 
+    if data_type == "rot":
+        file_pattern = "Merged_ROT_*.txt"
+        output_filename_prefix = "Final_ROT_Tender_List_"
+    elif data_type == "regular": # If you ever use this for regular data via dashboard
+        file_pattern = "Merged_*.txt" # Assumes regular files are Merged_SITEKEY_DATE.txt
+        output_filename_prefix = "Final_Tender_List_"
+    else:
+        logger.error(f"{log_prefix}: Invalid data_type '{data_type}' specified for global merge.")
+        return 0, None
+
+    site_merged_files = list(input_site_specific_merged_dir.glob(file_pattern))
     if not site_merged_files:
-        logger.info(f"{log_prefix}: No '{file_pattern}' files found in {site_specific_rot_merged_dir} for global ROT merge.")
+        logger.info(f"{log_prefix}: No '{file_pattern}' files found in {input_site_specific_merged_dir} for global merge.")
         return 0, None
 
-    logger.info(f"{log_prefix}: Found {len(site_merged_files)} site-specific ROT files for consolidation.")
+    logger.info(f"{log_prefix}: Found {len(site_merged_files)} site-specific {data_type.upper()} files for consolidation.")
     global_timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S")
-    output_filename_prefix = "Final_ROT_Tender_List_"
-    
-    # Ensure the output directory exists (it should have been created at dashboard startup)
-    final_global_rot_output_dir.mkdir(parents=True, exist_ok=True)
-    global_final_output_path = final_global_rot_output_dir / f"{output_filename_prefix}{global_timestamp}.txt"
-    
+
+    # Ensure the output directory exists
+    output_final_global_dir.mkdir(parents=True, exist_ok=True)
+    global_final_output_path = output_final_global_dir / f"{output_filename_prefix}{global_timestamp}.txt"
+
     total_globally_unique_tender_blocks = 0
-    seen_global_tender_hashes: Set[int] = set()
+    seen_global_tender_hashes: Set[int] = set() # To store hashes of unique blocks
+
     try:
         with open(global_final_output_path, "w", encoding="utf-8") as global_outfile:
             for site_file_path in site_merged_files:
-                logger.info(f"{log_prefix}: Processing: {site_file_path.name}")
+                logger.info(f"{log_prefix}: Processing site-specific file: {site_file_path.name}")
                 try:
                     site_file_content = site_file_path.read_text(encoding="utf-8", errors="replace").strip()
                     if not site_file_content:
                         logger.debug(f"{log_prefix}: File {site_file_path.name} is empty. Skipping.")
                         continue
-                    
-                    # Improved block splitting and reconstruction to preserve exact format
+
+                    # Split into blocks based on "--- TENDER END ---"
+                    # Then reconstruct each block to ensure consistent formatting and include the end marker.
                     raw_blocks_with_delimiter = site_file_content.split("--- TENDER END ---")
-                    tender_blocks_from_site_file = []
+                    tender_blocks_from_site_file: List[str] = []
+
                     for block_segment in raw_blocks_with_delimiter:
+                        # A block must contain "--- TENDER START ---"
                         if "--- TENDER START ---" in block_segment:
-                            # Reconstruct the full block including the end marker
-                            # Ensure to handle cases where block_segment might just be "--- TENDER START ---..."
-                            # or if there's content before "--- TENDER START ---" due to splitting
+                            # Find the actual start of the "--- TENDER START ---" marker
                             start_index = block_segment.find("--- TENDER START ---")
                             if start_index != -1:
+                                # Reconstruct block: from "--- TENDER START ---" to end of segment, then add delimiter
                                 reconstructed_block = block_segment[start_index:].strip() + "\n--- TENDER END ---"
-                                tender_blocks_from_site_file.append(reconstructed_block.strip())
-                    
+                                tender_blocks_from_site_file.append(reconstructed_block.strip()) # Strip again to be sure
+
                     for full_block_text in tender_blocks_from_site_file:
-                        if not full_block_text: continue # Skip if somehow an empty block was formed
+                        if not full_block_text: # Should not happen if reconstruction is correct
+                            continue
                         block_hash_global = hash(full_block_text)
                         if block_hash_global not in seen_global_tender_hashes:
-                            global_outfile.write(full_block_text + "\n\n") # Add double newline between blocks
+                            global_outfile.write(full_block_text + "\n\n") # Two newlines between blocks
                             seen_global_tender_hashes.add(block_hash_global)
                             total_globally_unique_tender_blocks += 1
                 except Exception as e_proc_site_file:
-                    logger.error(f"{log_prefix}: Error processing site-specific ROT file {site_file_path.name}: {e_proc_site_file}")
-        
-        logger.info(f"{log_prefix}: ✅ Merged {total_globally_unique_tender_blocks} unique ROT tender blocks to: {global_final_output_path}")
+                    logger.error(f"{log_prefix}: Error processing content of site-specific file {site_file_path.name}: {e_proc_site_file}", exc_info=True) # Added exc_info
+
+        if total_globally_unique_tender_blocks > 0:
+            logger.info(f"{log_prefix}: ✅ Merged {total_globally_unique_tender_blocks} unique {data_type.upper()} tender blocks to: {global_final_output_path}")
+        else:
+            logger.info(f"{log_prefix}: No unique tender blocks found to merge into {global_final_output_path}. Output file may be empty or not created if no source blocks.")
+            # Optionally delete the empty global file if no blocks were written
+            if total_globally_unique_tender_blocks == 0 and global_final_output_path.exists():
+                try:
+                    global_final_output_path.unlink()
+                    logger.info(f"{log_prefix}: Removed empty global output file: {global_final_output_path}")
+                except OSError as e_del_empty:
+                    logger.warning(f"{log_prefix}: Could not remove empty global output file {global_final_output_path}: {e_del_empty}")
+                return 0, None # Indicate no file was effectively created
+
         return total_globally_unique_tender_blocks, global_final_output_path
     except Exception as e_global_merge:
-        logger.error(f"{log_prefix}: Fatal error during global ROT merge: {e_global_merge}", exc_info=True)
-        # Return 0 and None or current count and None if error happens during write
+        logger.error(f"{log_prefix}: Fatal error during global merge of {data_type.upper()} tenders: {e_global_merge}", exc_info=True)
+        # Return current count (might be >0 if error happened mid-write) and None for path
         return total_globally_unique_tender_blocks, None
 
 # === ROUTE HANDLERS ===
@@ -1100,108 +1236,123 @@ async def bulk_download_tender_excel_typed(request: Request, data_type: str = Fo
 
 @app.post("/delete/{data_type}/{subdir}", name="delete_tender_set_typed")
 async def delete_tender_set_typed(request: Request, data_type: str, subdir: str):
-    base_data_dir_single_del: Path # Define type
+    base_data_dir_single_del: Path
 
     if data_type == "rot":
-        base_data_dir_single_del = ROT_FILTERED_RESULTS_DIR # MODIFIED
+        base_data_dir_single_del = ROT_FILTERED_RESULTS_DIR
     elif data_type == "regular":
-        base_data_dir_single_del = REG_FILTERED_RESULTS_DIR # MODIFIED
+        base_data_dir_single_del = REG_FILTERED_RESULTS_DIR
     else:
-        # Ensure status_code for HTTPException
         raise HTTPException(status_code=400, detail="Invalid data type for delete operation.")
 
+    subdir_path_single_del: Optional[Path] = None # Initialize for use in except block
     try:
         subdir_path_single_del = _validate_subdir(subdir, base_dir=base_data_dir_single_del)
         if subdir_path_single_del.is_dir():
             shutil.rmtree(subdir_path_single_del)
             logger.info(f"Deleted {data_type.upper()} filter set: {subdir_path_single_del}")
-            # Construct redirect URL with query parameters properly
+            
+            # MODIFIED: Use _clean_path_component for the message
+            cleaned_subdir_for_msg = _clean_path_component(subdir)
             redirect_url = URL(app.url_path_for('homepage')).include_query_params(
-                msg=f"filter_set_{data_type}_{clean_filename_rot(subdir)}_deleted_successfully" # Sanitize subdir for msg
+                msg=f"filter_set_{data_type}_{cleaned_subdir_for_msg}_deleted_successfully"
             )
             return RedirectResponse(url=str(redirect_url), status_code=status.HTTP_303_SEE_OTHER)
         else:
             logger.warning(f"{data_type.upper()} filter set directory not found for deletion: {subdir_path_single_del}")
             raise HTTPException(status_code=404, detail=f"{data_type.upper()} filter set '{subdir}' not found.")
-    except HTTPException as e_single_del_http: # If _validate_subdir or the 404 above raises HTTPException
-        # Log it if not already logged by _validate_subdir or the specific 404 check.
-        # This might be redundant if _validate_subdir already logs.
+    except HTTPException as e_single_del_http:
         logger.warning(f"HTTPException during delete of '{subdir}' (Type: {data_type}): {e_single_del_http.detail}")
         raise e_single_del_http
-    except Exception as e_single_del: # Catch other errors like permission issues during rmtree
-        logger.error(f"Error deleting {data_type.upper()} set '{subdir}' at path '{subdir_path_single_del if 'subdir_path_single_del' in locals() else 'unknown'}': {e_single_del}", exc_info=True)
+    except Exception as e_single_del:
+        path_info = str(subdir_path_single_del) if subdir_path_single_del else "unknown_path (validation may have failed)"
+        logger.error(f"Error deleting {data_type.upper()} set '{subdir}' at path '{path_info}': {e_single_del}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Could not delete {data_type.upper()} filter set '{subdir}'.")
 
 @app.get("/run-filter", name="run_filter_form", response_class=HTMLResponse)
 async def run_filter_form(request: Request):
     if not templates:
-        raise HTTPException(status_code=503, detail="Template engine error.") # Added status_code
+        raise HTTPException(status_code=503, detail="Template engine error.")
     if not filter_engine_available:
-        # Ensure error template is rendered with context
         return templates.TemplateResponse("error.html", {"request": request, "error": "Filter engine components are not available. Cannot create new filters."}, status_code=503)
 
     settings = load_settings()
-    site_configs = settings.get('site_configurations', {})
-    # Ensure available_sites_for_filter is a list even if site_configs is None or empty
-    available_sites_for_filter = sorted(list(site_configs.keys())) if site_configs and isinstance(site_configs, dict) else []
+    site_configs_dict = settings.get('site_configurations', {})
+    # This 'available_sites' is for the "Filter by Source Site (In-Data Filter)" dropdown
+    available_sites_for_in_data_filter = sorted(list(site_configs_dict.keys())) if site_configs_dict and isinstance(site_configs_dict, dict) else []
 
+    # --- Regular Tender Source File Check ---
     no_source_file_regular = True
     latest_source_filename_regular = None
-    # Use new path for regular global merged files
-    regular_source_dir = REG_FINAL_GLOBAL_MERGED_DIR # MODIFIED
-    if regular_source_dir.is_dir():
+    if REG_FINAL_GLOBAL_MERGED_DIR.is_dir(): # Checks site_data/REG/FinalGlobalMerged/
         try:
             source_files_reg = sorted(
-                [p for p in regular_source_dir.glob("Final_Tender_List_*.txt") if p.is_file()],
-                key=lambda p: p.stat().st_mtime,
-                reverse=True
+                [p for p in REG_FINAL_GLOBAL_MERGED_DIR.glob("Final_Tender_List_*.txt") if p.is_file()],
+                key=lambda p: p.stat().st_mtime, reverse=True
             )
             if source_files_reg:
                 latest_source_filename_regular = source_files_reg[0].name
                 no_source_file_regular = False
-        except OSError as e:
-            logger.error(f"Error listing regular source files from {regular_source_dir}: {e}")
-    else:
-        logger.warning(f"Regular source data directory for filters not found: '{regular_source_dir}'")
+        except OSError as e: logger.error(f"Error listing regular source files from {REG_FINAL_GLOBAL_MERGED_DIR}: {e}")
+    else: logger.warning(f"Regular global merged directory not found: '{REG_FINAL_GLOBAL_MERGED_DIR}'")
 
+    # --- ROT Tender Source File Check (ONLY Global File) ---
     no_source_file_rot = True
     latest_source_filename_rot = None
-    # Use new path for ROT global merged files
-    rot_source_dir = ROT_FINAL_GLOBAL_MERGED_DIR # MODIFIED
-    if rot_source_dir.is_dir():
+    if ROT_FINAL_GLOBAL_MERGED_DIR.is_dir(): # Checks site_data/ROT/FinalGlobalMerged/
         try:
-            source_files_r = sorted(
-                [p for p in rot_source_dir.glob("Final_ROT_Tender_List_*.txt") if p.is_file()],
-                key=lambda p: p.stat().st_mtime,
-                reverse=True
+            global_rot_files = sorted(
+                [p for p in ROT_FINAL_GLOBAL_MERGED_DIR.glob("Final_ROT_Tender_List_*.txt") if p.is_file()],
+                key=lambda p: p.stat().st_mtime, reverse=True
             )
-            if source_files_r:
-                latest_source_filename_rot = source_files_r[0].name
+            if global_rot_files:
+                latest_source_filename_rot = global_rot_files[0].name
                 no_source_file_rot = False
-        except OSError as e:
-            logger.error(f"Error listing ROT source files from {rot_source_dir}: {e}")
-    else:
-        logger.warning(f"ROT source data directory for filters not found: '{rot_source_dir}'")
+        except OSError as e: logger.error(f"Error listing global ROT source files from {ROT_FINAL_GLOBAL_MERGED_DIR}: {e}")
+    else: logger.warning(f"Global ROT merged directory not found: '{ROT_FINAL_GLOBAL_MERGED_DIR}'")
+    
+    return templates.TemplateResponse(
+        "run_filter.html",
+        {
+            "request": request,
+            "available_sites": available_sites_for_in_data_filter, # For the "Filter by Source Site" dropdown
+            "no_source_file_regular": no_source_file_regular,
+            "latest_source_filename_regular": latest_source_filename_regular,
+            "no_source_file_rot": no_source_file_rot, 
+            "latest_source_filename_rot": latest_source_filename_rot
+        }
+    )
+    
+    # This flag is true if NO site-specific ROT files are available for filtering
+    no_source_file_rot = not available_site_specific_rot_files
 
     return templates.TemplateResponse(
         "run_filter.html",
         {
             "request": request,
-            "available_sites": available_sites_for_filter,
+            "available_sites_for_site_filter_dropdown": available_sites_for_site_filter_dropdown,
             "no_source_file_regular": no_source_file_regular,
             "latest_source_filename_regular": latest_source_filename_regular,
-            "no_source_file_rot": no_source_file_rot,
-            "latest_source_filename_rot": latest_source_filename_rot
+            "available_site_specific_rot_files": available_site_specific_rot_files, # List of {display_name, filename}
+            "no_source_file_rot": no_source_file_rot # True if available_site_specific_rot_files is empty
         }
     )
 
 @app.post("/run-filter", name="run_filter_submit", response_class=HTMLResponse)
-async def run_filter_submit(request: Request, data_type: str = Form(...), keywords: str = Form(""),
-                            regex: bool = Form(False), filter_name: str = Form(...),
-                            site_key: str = Form(""), start_date: str = Form(""), end_date: str = Form("")):
+async def run_filter_submit(
+    request: Request,
+    data_type: str = Form(...),
+    # Note: rot_source_file or rot_source_file_site_specific parameter is REMOVED
+    keywords: str = Form(""),
+    regex: bool = Form(False),
+    filter_name: str = Form(...),
+    site_key: Optional[str] = Form(None), # This is for the in-data <SourceSiteKey> filter
+    start_date: Optional[str] = Form(None),
+    end_date: Optional[str] = Form(None)
+):
     if not templates:
         raise HTTPException(status_code=503, detail="Template engine error.")
-    if not filter_engine_available:
+    if not filter_engine_available: # filter_engine_available should be defined globally
         return templates.TemplateResponse("error.html", {"request": request, "error": "Filter engine components are not available. Cannot run filter."}, status_code=503)
 
     # Validate filter_name (this existing validation is good)
@@ -1213,31 +1364,34 @@ async def run_filter_submit(request: Request, data_type: str = Form(...), keywor
         logger.warning(f"Invalid data_type submitted for filter: '{data_type}'")
         return templates.TemplateResponse("error.html", {"request": request, "error": "Invalid data type specified for filter."}, status_code=400)
 
-    base_folder_for_filter_input: Path # Define type
-    source_file_pattern: str # Define type
-
+    base_folder_for_filter_input: Path
+    source_file_pattern: str
+    
     if data_type == "rot":
-        base_folder_for_filter_input = ROT_FINAL_GLOBAL_MERGED_DIR # MODIFIED
+        base_folder_for_filter_input = ROT_FINAL_GLOBAL_MERGED_DIR # Always use global merged for ROT
         source_file_pattern = "Final_ROT_Tender_List_*.txt"
     else: # regular
-        base_folder_for_filter_input = REG_FINAL_GLOBAL_MERGED_DIR # MODIFIED
+        base_folder_for_filter_input = REG_FINAL_GLOBAL_MERGED_DIR # Always use global merged for Regular
         source_file_pattern = "Final_Tender_List_*.txt"
 
-    latest_source_file_name: Optional[str] = None # Store only the name for logging
+    latest_source_file_path_actual: Optional[Path] = None
 
     if base_folder_for_filter_input.is_dir():
         try:
             source_files_list = sorted(
                 [p for p in base_folder_for_filter_input.glob(source_file_pattern) if p.is_file()],
-                key=lambda p: p.stat().st_mtime,
-                reverse=True
+                key=lambda p: p.stat().st_mtime, reverse=True
             )
             if source_files_list:
-                latest_source_file_name = source_files_list[0].name # Get the name of the latest file
+                latest_source_file_path_actual = source_files_list[0]
             else:
-                # This error should ideally be caught by the form page, but good to have a server-side check
-                logger.error(f"No source files matching '{source_file_pattern}' found in {base_folder_for_filter_input} for {data_type} filter.")
-                return templates.TemplateResponse("error.html", {"request": request, "error": f"No source data file found for {data_type} tenders. Please ensure scrapers have run and data is merged."}, status_code=404)
+                error_message = f"No consolidated source file ('{source_file_pattern}') found in {base_folder_for_filter_input} for {data_type} tenders. "
+                if data_type == "rot":
+                    error_message += "Please run 'Prepare/Refresh ROT Data for AI' on the AI Analysis page first to create this file."
+                else: # regular
+                    error_message += "Please ensure regular scrapers have run and data has been globally merged by the site controller."
+                logger.error(error_message)
+                return templates.TemplateResponse("error.html", {"request": request, "error": error_message}, status_code=404)
         except Exception as e_find_source:
             logger.error(f"Error finding {data_type} source file in {base_folder_for_filter_input}: {e_find_source}", exc_info=True)
             return templates.TemplateResponse("error.html", {"request": request, "error": f"Error accessing {data_type} source data."}, status_code=500)
@@ -1245,15 +1399,18 @@ async def run_filter_submit(request: Request, data_type: str = Form(...), keywor
         logger.error(f"{data_type.capitalize()} source data directory for filters not found: {base_folder_for_filter_input}")
         return templates.TemplateResponse("error.html", {"request": request, "error": f"{data_type.capitalize()} source data directory for filters is missing."}, status_code=500)
 
-    # If latest_source_file_name is still None here, it means no file was found. (Already handled above)
+    # This check ensures that latest_source_file_path_actual was successfully found
+    if not latest_source_file_path_actual or not latest_source_file_path_actual.is_file():
+        logger.error(f"Source file for filtering (Type: {data_type}) could not be determined or does not exist. Path checked: {latest_source_file_path_actual}")
+        return templates.TemplateResponse("error.html", {"request": request, "error": "Selected source data file for filtering is missing or invalid."}, status_code=404)
 
     try:
         keyword_list_cleaned = [kw.strip() for kw in keywords.split(",") if kw.strip()]
         
-        # filter_engine.run_filter will now receive the correct input base_folder.
-        # It will also need to be modified internally to save to the new output structure.
+        # Call filter_engine.run_filter with the direct path to the source file
+        # filter_engine.run_filter was already modified to accept tender_file_to_filter
         result_path_str_actual = run_filter(
-            base_folder=base_folder_for_filter_input, # This is the directory containing the Final_..._List.txt
+            tender_file_to_filter=latest_source_file_path_actual,
             keywords=keyword_list_cleaned,
             use_regex=regex,
             filter_name=filter_name,
@@ -1267,13 +1424,17 @@ async def run_filter_submit(request: Request, data_type: str = Form(...), keywor
             logger.error(f"Filter engine run for '{filter_name}' ({data_type.upper()}) did not produce a valid output file path. Received: {result_path_str_actual}")
             raise RuntimeError(f"Filter engine failed for {data_type} data or did not return a valid file path.")
 
-        logger.info(f"Filter '{filter_name}' ({data_type.upper()}) using source '{latest_source_file_name}' completed. Output: {result_path_str_actual}")
+        logger.info(f"Filter '{filter_name}' ({data_type.upper()}) using source '{latest_source_file_path_actual.name}' completed. Output: {result_path_str_actual}")
         
         created_subdir_name = Path(result_path_str_actual).parent.name
         return templates.TemplateResponse("success.html", {"request": request, "subdir": created_subdir_name, "data_type": data_type})
 
+    except FileNotFoundError as e_fnf:
+        logger.error(f"Filter run error for '{filter_name}': Source file specified for filter_engine not found. Detail: {e_fnf}", exc_info=True)
+        return templates.TemplateResponse("error.html", {"request": request, "error": f"Filter source file error: {e_fnf}. This may indicate an issue with how the source file path was determined."}, status_code=404)
     except Exception as e_run_filt:
-        logger.error(f"Filter run error for '{filter_name}' ({data_type.upper()}) using source '{latest_source_file_name}': {e_run_filt}", exc_info=True)
+        source_filename_for_log = latest_source_file_path_actual.name if latest_source_file_path_actual else "unknown_source_file"
+        logger.error(f"Filter run error for '{filter_name}' ({data_type.upper()}) using source '{source_filename_for_log}': {e_run_filt}", exc_info=True)
         return templates.TemplateResponse("error.html", {"request": request, "error": f"Filter run failed: {type(e_run_filt).__name__}. Check server logs for details."}, status_code=500)
 
 @app.get("/regex-help", name="regex_help_page", response_class=HTMLResponse) 
@@ -1608,28 +1769,28 @@ async def download_rot_summary_file(site_key: str, filename: str):
         logger.warning("Download ROT summary: Missing site_key or filename.")
         raise HTTPException(status_code=400, detail="Site key and filename are required.")
 
-    # Path component cleaning (remains important)
-    def _clean_path_component(component: str) -> str:
-        return re.sub(r'[^\w\-._]', '', component) # Allow underscore, period, hyphen
+    # REMOVE the local definition of _clean_path_component if it was here.
+    # It should now be a global helper function.
+    # def _clean_path_component(component: str) -> str: ... (This line should be deleted from inside this function)
 
+    # Use the global helper function
     cleaned_site_key = _clean_path_component(site_key)
-    cleaned_filename = _clean_path_component(filename) # Filename now includes ID and timestamp
+    cleaned_filename = _clean_path_component(filename)
 
-    if not cleaned_site_key or not cleaned_filename:
-        logger.warning(f"Download ROT summary: Invalid chars in SK/FN. Original: SK='{site_key}', FN='{filename}'")
-        raise HTTPException(status_code=400, detail="Invalid site key or filename format.")
+    if not cleaned_site_key: # _clean_path_component returns "" for invalid/unsafe input
+        logger.warning(f"Download ROT summary: Invalid site_key after cleaning. Original: '{site_key}'")
+        raise HTTPException(status_code=400, detail="Invalid site key format.")
+    if not cleaned_filename: # _clean_path_component returns "" for invalid/unsafe input
+        logger.warning(f"Download ROT summary: Invalid filename after cleaning. Original: '{filename}'")
+        raise HTTPException(status_code=400, detail="Invalid filename format.")
 
-    # Use new constant for the base directory of ROT detail HTMLs
-    # The worker saves HTMLs like: site_data/ROT/DetailHtmls/{SITE_KEY}/ROT_{TENDER_ID}_{TIMESTAMP}_StageSummary.html
-    # So the path components from the URL {site_key} and {filename} should directly map.
-    file_path = (ROT_DETAIL_HTMLS_DIR / cleaned_site_key / cleaned_filename).resolve() # MODIFIED
+    # Uses the global constant ROT_DETAIL_HTMLS_DIR
+    file_path = (ROT_DETAIL_HTMLS_DIR / cleaned_site_key / cleaned_filename).resolve()
+    intended_base_for_site_files = (ROT_DETAIL_HTMLS_DIR / cleaned_site_key).resolve()
 
-    # Validate against the base directory for this specific site's HTMLs
-    intended_base_for_site_files = (ROT_DETAIL_HTMLS_DIR / cleaned_site_key).resolve() # MODIFIED
-
-    # Path traversal check (remains important)
+    # Path traversal check
     if not str(file_path).startswith(str(intended_base_for_site_files)) or \
-       intended_base_for_site_files not in file_path.parents: # More robust check
+       intended_base_for_site_files not in file_path.parents:
         logger.error(f"Download ROT summary: Path traversal attempt. "
                      f"Req Filename: '{filename}', Cleaned FN: '{cleaned_filename}', Site: '{cleaned_site_key}', "
                      f"Resolved Path: '{file_path}', Expected Base: '{intended_base_for_site_files}'")
@@ -2054,5 +2215,100 @@ async def initiate_rot_worker_endpoint(request: Request, site_key: str, tender_s
         logger.error(f"Dashboard: Failed to launch/prepare worker '{worker_script_name}' for site '{site_key}'. Error: {error_type_name} - {e}", exc_info=True)
         write_dashboard_status(run_dir, f"ERROR_LAUNCHING_WORKER_{error_type_name}")
         raise HTTPException(status_code=500, detail=f"Failed to start ROT worker for {site_key}: {error_type_name}")
+
+@app.get("/rot-summary-detail/{site_key}/{filename}", name="view_rot_summary_detail", response_class=HTMLResponse)
+async def view_rot_summary_detail_route(request: Request, site_key: str, filename: str):
+    if not templates:
+        logger.error("Templates not initialized in view_rot_summary_detail_route.")
+        raise HTTPException(status_code=503, detail="Template engine error: Templates not initialized.")
+
+    logger.info(f"Request for parsed ROT summary: SiteKey='{site_key}', Filename='{filename}'")
+
+    # Use the global helper function
+    cleaned_site_key = _clean_path_component(site_key)
+    cleaned_filename = _clean_path_component(filename)
+
+    if not cleaned_site_key: # _clean_path_component returns "" for invalid/unsafe input
+        logger.warning(f"Invalid site_key after cleaning: original='{site_key}'")
+        raise HTTPException(status_code=400, detail="Invalid site key format provided.")
+    if not cleaned_filename: # _clean_path_component returns "" for invalid/unsafe input
+        logger.warning(f"Invalid filename after cleaning: original='{filename}'")
+        raise HTTPException(status_code=400, detail="Invalid filename format provided.")
+
+    # Construct the path to the downloaded HTML file
+    html_file_path = ROT_DETAIL_HTMLS_DIR / cleaned_site_key / cleaned_filename
+
+    if not html_file_path.is_file():
+        logger.warning(f"Requested ROT summary HTML not found at: {html_file_path}")
+        return templates.TemplateResponse("error.html", {
+            "request": request,
+            "error": f"The ROT summary file '{cleaned_filename}' for site '{cleaned_site_key}' was not found. It might not have been downloaded or was moved/deleted."
+        }, status_code=404)
+
+    # Parse the HTML file using your parser function
+    # Ensure parse_rot_summary_html is defined in dashboard.py or imported
+    try:
+        parsed_content = parse_rot_summary_html(html_file_path)
+    except Exception as e_parse: # Catch any error during parsing
+        logger.error(f"Error during parse_rot_summary_html for {html_file_path}: {e_parse}", exc_info=True)
+        return templates.TemplateResponse("error.html", {
+            "request": request,
+            "error": f"An error occurred while trying to parse the content of '{cleaned_filename}'. Please check server logs."
+        }, status_code=500)
+
+
+    # Basic information to pass to the template for context
+    # You might want to enhance this by looking up more details from a master JSON if needed,
+    # but for now, we derive what we can from the filename and parsed content.
+    tender_id_from_filename = "UnknownTenderID"
+    # Attempt to extract Tender ID from filename like "ROT_SITE_TENDERID_TIMESTAMP_StageSummary.html"
+    fn_match = re.match(r"ROT_.*?_(.+?)_\d{8}_\d{6}_StageSummary\.html", cleaned_filename)
+    if fn_match:
+        tender_id_from_filename = fn_match.group(1)
+    
+    tender_list_info = {
+        "rot_tender_id": parsed_content.get("key_details", {}).get("Tender ID", tender_id_from_filename),
+        "rot_title_ref": parsed_content.get("title", "Summary Details") # Title from HTML <title> or a default
+    }
+
+    logger.info(f"Rendering parsed ROT summary for: {html_file_path}")
+    return templates.TemplateResponse(
+        "rot_summary_detail.html", # The new template to display parsed content
+        {
+            "request": request,
+            "site_key": cleaned_site_key,
+            "filename": cleaned_filename, # The original (cleaned) filename for display
+            "parsed_data": parsed_content, # The dictionary from your parser
+            "tender_list_info": tender_list_info, # Contextual info
+            # "original_subdir": subdir, # You might pass this if coming from a specific filter view
+                                         # but this route is generic, so subdir isn't directly known here.
+        }
+    )
+
+@app.post("/trigger-rot-consolidation-from-worker", name="trigger_rot_consolidation_from_worker")
+async def trigger_rot_consolidation_from_worker_route():
+    logger.info("Dashboard: Received request from a worker to trigger ROT data consolidation.")
+    try:
+        # _globally_merge_rot_site_files is already defined and uses new ROT paths
+        merged_count, merged_file_path = await _globally_merge_rot_site_files(
+            input_site_specific_merged_dir=ROT_MERGED_SITE_SPECIFIC_DIR,
+            output_final_global_dir=ROT_FINAL_GLOBAL_MERGED_DIR,
+            data_type="rot"
+        )
+        if merged_file_path and merged_file_path.is_file():
+            msg = f"ROT data consolidation triggered by worker completed. {merged_count} blocks merged to {merged_file_path.name}."
+            logger.info(msg)
+            return {"message": msg, "file": str(merged_file_path)}
+        elif merged_count == 0 and merged_file_path is None:
+             msg = "ROT data consolidation triggered by worker found no new site-specific files to merge."
+             logger.info(msg)
+             return {"message": msg, "file": None}
+        else:
+            msg = "ROT data consolidation triggered by worker ran but did not produce an output file or reported an issue."
+            logger.warning(msg)
+            raise HTTPException(status_code=500, detail=msg)
+    except Exception as e:
+        logger.error(f"Error during worker-triggered ROT consolidation: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Error during ROT consolidation: {str(e)}")
 
 # --- END OF dashboard.py ---

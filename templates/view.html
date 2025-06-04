@@ -8,188 +8,185 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         html { font-size: 16px; scroll-behavior: smooth; }
-        
+
         :root {
             --color-primary: #000000;
             --color-secondary: #1a1a1a;
-            --color-accent: #2563eb; 
+            --color-accent: #2563eb;
             --color-surface: #ffffff;
-            --color-surface-alt: #f8fafc; 
-            --color-border: #e2e8f0; 
-            --color-text: #0f172a; 
-            --color-text-muted: #64748b; 
-            --color-success: #059669; 
+            --color-surface-alt: #f8fafc;
+            --color-border: #e2e8f0;
+            --color-text: #0f172a;
+            --color-text-muted: #64748b;
+            --color-success: #059669;
             --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
         }
-        
-        body { 
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--color-surface-alt);
-            color: var(--color-text); 
-            line-height: 1.4; /* Slightly tighter default line height */
+            color: var(--color-text);
+            line-height: 1.4;
             font-weight: 400;
             min-height: 100vh;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        
-        .page-wrapper { 
+
+        .page-wrapper {
             background: var(--color-surface);
-            padding: 24px; /* Reduced padding */
+            padding: 24px;
             min-height: 100vh;
         }
 
-        .container { 
-            max-width: none; 
+        .container {
+            max-width: none; /* Allow full width */
             width: 100%;
-            margin: 0 auto; 
+            margin: 0 auto;
         }
-        
-        .header { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            margin-bottom: 15px; /* Reduced margin */
-            padding-bottom: 16px; /* Reduced padding */
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 16px;
             border-bottom: 2px solid var(--color-primary);
         }
-        
-        .header h1 { 
-            font-size: 5rem; /* Slightly smaller */
-            font-weight: 800; 
-            letter-spacing: -0.02em;
+
+        .header h1 {
+            font-size: 5rem; /* Adjusted for Regular Tenders view title */
+            font-weight: 700;
+            letter-spacing: -0.01em;
             color: var(--color-primary);
             text-transform: uppercase;
-            margin: 0; 
+            margin: 0;
+            overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
         }
-        
+
         .header-actions { display: flex; gap: 12px; align-items: center; }
 
-        .btn {
+        .btn { /* Base button style */
             display: inline-flex; align-items: center; justify-content: center;
-            padding: 8px 16px; /* Base padding for buttons */
-            border: 1px solid var(--color-primary); /* Default border for primary */
-            font-family: inherit; font-size: 0.8rem; /* Smaller base font */
-            font-weight: 500; 
-            text-decoration: none; color: var(--color-surface);
-            background: var(--color-primary); border-radius: 0;
+            padding: 8px 16px; /* Default padding */
+            border: 1px solid var(--color-primary); /* Default to black border */
+            font-family: inherit; font-size: 0.8rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 0;
             cursor: pointer; transition: all 0.2s ease;
             text-transform: uppercase; letter-spacing: 0.025em;
+            line-height: 1.4;
         }
-        .btn:hover { background: var(--color-secondary); border-color: var(--color-secondary); transform: translateY(-1px); box-shadow: var(--shadow-md); }
         .btn:focus { outline: 2px solid var(--color-accent); outline-offset: 2px; }
-        
-        .btn-secondary { /* For "Back to Dashboard" - white background, black text/border */
-            background: transparent; color: var(--color-primary); border-color: var(--color-primary);
-        }
-        .btn-secondary:hover { background: var(--color-surface-alt); border-color: var(--color-primary); }
-        
-        .btn-success { background-color: var(--color-success); border-color: var(--color-success); }
-        .btn-success:hover { background-color: #047857; border-color: #047857; }
 
-        .btn-details { /* Specific for "Details" button in table */
-            /* It will inherit .btn styles (black bg, white text) */
-            padding: 6px 10px; /* Make it smaller */
-            font-size: 0.7rem; /* Even smaller font */
-            /* border: 1px solid var(--color-primary); /* Ensure border if needed */
+        /* Standard primary button (black bg, white text) */
+        .btn-primary-std {
+            background: var(--color-primary);
+            color: var(--color-surface);
+            border-color: var(--color-primary);
+        }
+        .btn-primary-std:hover {
+            background: var(--color-secondary);
+            border-color: var(--color-secondary);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        /* Secondary button (white bg, black text/border) */
+        .btn-secondary-std {
+            background: var(--color-surface); /* White background */
+            color: var(--color-primary);    /* Black text */
+            border: 1px solid var(--color-primary); /* Thin black border */
+        }
+        .btn-secondary-std:hover {
+            background: var(--color-surface-alt); /* Light grey on hover */
+            border-color: var(--color-primary);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-success { /* For Download Excel button */
+            background-color: var(--color-success);
+            border-color: var(--color-success);
+            color: var(--color-surface);
+        }
+        .btn-success:hover {
+            background-color: #047857; /* Darker green */
+            border-color: #047857;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Class for small detail buttons in tables */
+        .btn-details-small {
+            padding: 6px 10px;
+            font-size: 0.7rem;
         }
 
         .table-responsive-wrapper {
             width: 100%;
-            overflow-x: auto; 
+            overflow-x: auto;
             border: 1px solid var(--color-border);
-            background: var(--color-surface); 
+            background: var(--color-surface);
         }
 
-        .tender-table { 
-            width: 100%; 
-            min-width: 1100px; /* Adjust as needed */
-            border-collapse: collapse; 
+        .tender-table {
+            width: 100%;
+            min-width: 1100px; /* Original min-width for regular tenders */
+            border-collapse: collapse;
             border-spacing: 0;
         }
-        
-        .tender-table th { 
+
+        .tender-table th {
             background: var(--color-primary);
             color: var(--color-surface);
-            padding: 10px 12px; /* Further reduced padding */
-            text-align: left; 
-            font-weight: 600; 
-            font-size: 0.7rem; /* Smaller header font */
+            padding: 10px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.7rem;
             text-transform: uppercase;
-            letter-spacing: 0.05em; 
-            border-bottom: 1px solid var(--color-secondary); 
-            white-space: nowrap; 
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--color-secondary);
+            white-space: nowrap;
+            position: sticky; top: 0; z-index: 1;
         }
-        
-        .tender-table td { 
-            padding: 10px 12px; /* Further reduced padding */
+        .tender-table thead th { border-top: 1px solid var(--color-primary); }
+
+
+        .tender-table td {
+            padding: 10px 12px;
             border-bottom: 1px solid var(--color-border);
-            font-size: 0.8rem; /* Smaller cell font */
-            vertical-align: middle; /* Changed from top to middle for button alignment */
-            line-height: 1.3; /* Tighter line height */
+            font-size: 0.8rem;
+            vertical-align: middle;
+            line-height: 1.3;
         }
-        
+
         .tender-table tbody tr:hover { background: var(--color-surface-alt); }
         .tender-table tbody tr:last-child td { border-bottom: none; }
-        
-        .date-time-cell .date-part {
-            display: block;
-            font-weight: 500; 
-        }
-        .date-time-cell .time-part {
-            display: block;
-            font-size: 0.7rem; /* Even smaller for time */
-            color: var(--color-text-muted);
-        }
-        
-        .no-tenders { 
-            text-align: center; color: var(--color-text-muted); 
-            padding: 40px 24px; /* Adjusted */
-            font-weight: 500; font-size: 0.9rem; /* Adjusted */
-            background: var(--color-surface);
-            border: 1px solid var(--color-border); 
-            margin-top: 24px; /* Adjusted */
-        }
-        
-        .stats-bar { 
-            background: var(--color-surface-alt);
-            border: 1px solid var(--color-border);
-            padding: 12px 20px; /* Tighter padding */
-            margin-bottom: 20px; /* Reduced margin */
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            flex-wrap: wrap; 
-            gap: 16px;
-        }
-        
-        .stats-item { 
-            font-size: 0.8rem; /* Adjusted */
-            font-weight: 600;
-            color: var(--color-text); text-transform: uppercase;
-            letter-spacing: 0.025em;
-        }
-        .stats-value { 
-            font-size: 1.1rem; /* Adjusted */
-            font-weight: 800; 
-            color: var(--color-primary);
-            font-family: 'JetBrains Mono', monospace;
-            margin-left: 8px;
-        }
-/* Column width hints - adjust percentages for balance */
-         .col-sno       { width: 3%; text-align: center; } 
-         .col-published { width: 8%; } /* Tightened from 9% */
-         .col-closing   { width: 8%; } /* Tightened from 9% */
-         .col-opening   { width: 8%; } /* Tightened from 9% */
-         .col-tenderid  { width: 10%; } /* Tightened from 12% */
-         .col-site      { width: 5%; text-align: center; } /* Kept small */
-         .col-orgchain  { width: 28%; } /* Increased from 25% */
-         .col-title     { width: 26%; } /* Increased from 24% */
-         .col-actions   { width: 4%; text-align: center; } 
+
+        .date-time-cell .date-part { display: block; font-weight: 500; }
+        .date-time-cell .time-part { display: block; font-size: 0.7rem; color: var(--color-text-muted); }
+
+        .no-tenders { text-align: center; color: var(--color-text-muted); padding: 40px 24px; font-weight: 500; font-size: 0.9rem; background: var(--color-surface); border: 1px solid var(--color-border); margin-top: 24px; }
+        .stats-bar { background: var(--color-surface-alt); border: 1px solid var(--color-border); padding: 12px 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+        .stats-item { font-size: 0.8rem; font-weight: 600; color: var(--color-text); text-transform: uppercase; letter-spacing: 0.025em; }
+        .stats-value { font-size: 1.1rem; font-weight: 800; color: var(--color-primary); font-family: 'JetBrains Mono', monospace; margin-left: 8px; }
+
+        /* Column width hints for REGULAR tenders table */
+         .col-sno       { width: 3%; text-align: center; }
+         .col-published { width: 8%; }
+         .col-closing   { width: 8%; }
+         .col-opening   { width: 8%; }
+         .col-tenderid  { width: 10%; }
+         .col-site      { width: 5%; text-align: center; }
+         .col-orgchain  { width: 28%; }
+         .col-title     { width: 26%; }
+         .col-actions   { width: 4%; text-align: center; }
 
         @media (max-width: 768px) {
-            .page-wrapper { padding: 16px; } /* Reduced padding */
-            .header { flex-direction: column; align-items: stretch; gap: 12px;} /* Reduced gap */
+            .page-wrapper { padding: 16px; }
+            .header { flex-direction: column; align-items: stretch; gap: 12px;}
             .stats-bar { flex-direction: column; align-items: stretch; text-align: center;}
         }
     </style>
@@ -198,20 +195,20 @@
   <div class="page-wrapper">
     <div class="container">
         <div class="header">
-        <h1>{{ subdir_display_name | default(subdir) }}</h1>
-        <div class="header-actions">
-            <a href="{{ url_for('download_tender_excel_typed', data_type='regular', subdir=subdir) }}" class="btn btn-success">Download (Excel)</a>
-            <a href="{{ url_for('homepage') }}" class="btn btn-secondary">← Back to Dashboard</a>
+            <h1>{{ subdir_display_name | default(subdir) }}</h1> {# Title for regular tenders page #}
+            <div class="header-actions">
+                <a href="{{ url_for('download_tender_excel_typed', data_type='regular', subdir=subdir) }}" class="btn btn-success">Download (Excel)</a>
+                <a href="{{ url_for('homepage') }}" class="btn btn-secondary-std">← Back to Dashboard</a> {# Use new class #}
+            </div>
         </div>
-        </div>
-        
+
         {% if tenders %}
             <div class="stats-bar">
                 <div class="stats-item">
                     Total Tenders in Set: <span class="stats-value">{{ tenders|length }}</span>
                 </div>
             </div>
-            
+
             <div class="table-responsive-wrapper">
                 <table class="tender-table">
                     <thead>
@@ -224,7 +221,7 @@
                             <th class="col-site">Source</th>
                             <th class="col-orgchain">Organisation Chain</th>
                             <th class="col-title">Title</th>
-                            <th class="col-actions"></th>
+                            <th class="col-actions">Details</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -232,8 +229,8 @@
                         {% set published_full = tender.get('primary_published_date', tender.get('epublished_date_str', 'N/A')) %}
                         {% set closing_full = tender.get('primary_closing_date', tender.get('closing_date_str', 'N/A')) %}
                         {% set opening_full = tender.get('primary_opening_date', tender.get('opening_date_str', 'N/A')) %}
-                        
-                        {% set published_parts = published_full.split(' ', 1) %} {# Split only on the first space #}
+
+                        {% set published_parts = published_full.split(' ', 1) %}
                         {% set closing_parts = closing_full.split(' ', 1) %}
                         {% set opening_parts = opening_full.split(' ', 1) %}
 
@@ -262,8 +259,9 @@
                             <td class="col-orgchain">{{ tender.get('organisation_chain', tender.get('list_page_org_chain', 'N/A')) | neat_format }}</td>
                             <td class="col-title">{{ tender.get('primary_title', 'N/A') | neat_format }}</td>
                             <td class="col-actions">
-                                <a href="{{ url_for('view_tender_detail_typed', data_type='regular', subdir=subdir, tender_id=tender.get('primary_tender_id', loop.index0)) }}" 
-                                   class="btn btn-details" title="View Full Details">Details</a>
+                                <a href="{{ url_for('view_tender_detail_typed', data_type='regular', subdir=subdir, tender_id=tender.get('primary_tender_id', loop.index0)) }}"
+                                   class="btn btn-secondary-std btn-details-small" {# MODIFIED: Apply new button style #}
+                                   title="View Full Details">View</a>
                             </td>
                         </tr>
                         {% endfor %}

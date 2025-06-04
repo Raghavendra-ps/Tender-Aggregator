@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROT Summary: {{ parsed_data.get("key_details", {}).get("Tender ID", filename) }} - TenFin</title>
+    <!-- Link to your existing CSS or copy styles from tender_detail.html -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Copy relevant styles from tender_detail.html, adjust as needed */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        :root {
+            --color-primary: #000000; --color-secondary: #1a1a1a; --color-accent: #2563eb;
+            --color-surface: #ffffff; --color-surface-alt: #f8fafc; --color-border: #e2e8f0;
+            --color-text: #0f172a; --color-text-muted: #64748b; --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--color-surface-alt); color: var(--color-text); line-height: 1.6; padding: 32px 0;}
+        .page-wrapper { background: var(--color-surface); padding: 32px; min-height: calc(100vh - 64px); }
+        .container { max-width: 1200px; width: 100%; margin: 0 auto; }
+        .page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 2px solid var(--color-primary); }
+        .page-header h1 { font-size: 1.5rem; font-weight: 700; color: var(--color-text); text-transform: uppercase; overflow-wrap: break-word; word-break: break-all; }
+        .btn { display: inline-flex; padding: 10px 20px; font-size: 0.875rem; font-weight: 500; text-decoration: none; color: var(--color-surface); background: var(--color-primary); cursor: pointer; transition: all 0.2s ease; text-transform: uppercase; }
+        .btn:hover { background: var(--color-secondary); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+        .btn-secondary { background: transparent; color: var(--color-primary); border: 1px solid var(--color-border); }
+        .btn-secondary:hover { background: var(--color-surface-alt); border-color: var(--color-primary); }
+        .tender-main-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 24px; padding: 16px; background-color: var(--color-surface-alt); border: 1px solid var(--color-border); }
+        .detail-section { background-color: var(--color-surface); border: 1px solid var(--color-border); padding: 20px; margin-bottom: 24px; }
+        .detail-section h3 { font-size: 0.875rem; font-weight: 700; color: var(--color-primary); margin-top: 0; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--color-border); text-transform: uppercase; }
+        .detail-field { margin-bottom: 10px; }
+        .detail-field strong { font-size: 0.7rem; font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; display: block; margin-bottom: 2px; }
+        .detail-field span, .detail-field .value-text { font-size: 0.875rem; word-wrap: break-word; }
+        .html-content-section { margin-top: 16px; padding: 16px; border: 1px dashed var(--color-border); background-color: #f9f9f9; }
+        .html-content-section h4 { font-size: 1rem; color: var(--color-primary); margin-bottom: 10px; }
+        .error-message { color: var(--color-error); background-color: #fddede; padding: 15px; border: 1px solid var(--color-error); margin-bottom: 20px;}
+        /* You'll need to ensure the styles for tables, etc., from the ROT HTML look okay here */
+        .html-content-section table { width: 100%; border-collapse: collapse; margin-bottom:1em; }
+        .html-content_section th, .html-content-section td { border: 1px solid #ddd; padding: 8px; text-align:left; font-size:0.85em; }
+        .html-content_section th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="page-header">
+                <h1>ROT Summary: {{ tender_list_info.get('rot_tender_id', filename) }}</h1>
+                {# Consider adding a link back to the specific filtered list if 'original_subdir' is passed #}
+                <a href="{{ url_for('homepage') }}" class="btn btn-secondary">← Back to Dashboard</a>
+            </div>
+
+            <div class="tender-main-title">
+                {{ parsed_data.get('title') | default(tender_list_info.get('rot_title_ref', 'Tender Summary')) | neat_format }}
+                <div style="font-size:0.8em; color: var(--color-text-muted); margin-top:5px;">
+                    Site: {{ site_key }} | File: {{ filename }}
+                </div>
+            </div>
+
+            {% if parsed_data.get("error") %}
+                <div class="detail-section error-message">
+                    <h3>Error Parsing Summary</h3>
+                    <p>{{ parsed_data.get("error") }}</p>
+                </div>
+            {% endif %}
+
+            {% if parsed_data.get("key_details") %}
+            <div class="detail-section">
+                <h3>Key Extracted Details</h3>
+                {% for key, value in parsed_data.get("key_details").items() %}
+                <div class="detail-field">
+                    <strong>{{ key }}:</strong>
+                    <span>{{ value | neat_format }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+
+            {% if parsed_data.get("raw_html_sections") %}
+                {% for section_html in parsed_data.get("raw_html_sections") %}
+                <div class="detail-section">
+                    {# You might want to add a generic title or try to find one from the section_html #}
+                    <h3>Summary Section</h3>
+                    <div class="html-content-section">
+                        {{ section_html | safe }} {# Render the HTML chunk #}
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                {% if not parsed_data.get("error") and not parsed_data.get("key_details") %}
+                <div class="detail-section">
+                    <p>No specific sections could be parsed from the HTML summary. The raw content might have been too complex or not in an expected format.</p>
+                </div>
+                {% endif %}
+            {% endif %}
+
+        </div>
+    </div>
+</body>
+</html>

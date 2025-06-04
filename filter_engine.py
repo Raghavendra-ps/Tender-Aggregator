@@ -439,16 +439,16 @@ def matches_filters(
             pass # Treat as no match on error, or simply pass if other criteria must still hold true
     return True
 
+
 def run_filter(
-    base_folder: Path, # This is the INPUT folder for Final_..._List.txt files
-                       # e.g., site_data/REG/FinalGlobalMerged/ or site_data/ROT/FinalGlobalMerged/
+    tender_file_to_filter: Path, # MODIFIED: Now expects the direct path to the source file
     keywords: list,
     use_regex: bool,
     filter_name: str,
     site_key: Optional[str],
     start_date: Optional[str],
     end_date: Optional[str],
-    data_type: str = "regular"
+    data_type: str = "regular" # This parameter is still useful for logging and context
 ) -> str:
     filter_logger.info(f"--- Running Filter (Type: {data_type.upper()}) ---")
     filter_logger.info(f"  Filter Name : {filter_name}")
@@ -456,82 +456,75 @@ def run_filter(
     filter_logger.info(f"  Site Key    : {site_key or 'Any'}")
     if data_type == "regular":
         filter_logger.info(f"  Date Range (Opening Date): {start_date or 'N/A'} to {end_date or 'N/A'}")
-    else:
+    else: # ROT
         filter_logger.info(f"  Date Range: Not applicable for ROT data type.")
-    filter_logger.info(f"  Input Base  : {base_folder}") # Log the input base folder
+    filter_logger.info(f"  Source File : {tender_file_to_filter}") # MODIFIED: Log direct file
     filter_logger.info("-----------------------------------------------------------------")
 
-    source_file_pattern: str
-    output_base_dir_for_this_filter_type: Path # MODIFIED: Renamed for clarity
+    output_base_dir_for_this_filter_type: Path
 
     if data_type == "rot":
-        source_file_pattern = "Final_ROT_Tender_List_*.txt" # Should match output of _globally_merge_rot_site_files
-        output_base_dir_for_this_filter_type = ROT_FILTERED_RESULTS_DIR_FE # MODIFIED
+        output_base_dir_for_this_filter_type = ROT_FILTERED_RESULTS_DIR_FE
     else: # Default to regular
-        source_file_pattern = "Final_Tender_List_*.txt" # Should match output of site_controller's global merge
-        output_base_dir_for_this_filter_type = REG_FILTERED_RESULTS_DIR_FE # MODIFIED
+        output_base_dir_for_this_filter_type = REG_FILTERED_RESULTS_DIR_FE
 
-    # Find the latest source file matching the pattern in the input 'base_folder'
-    source_files = sorted(
-        [p for p in base_folder.glob(source_file_pattern) if p.is_file()],
-        key=lambda p: p.stat().st_mtime,
-        reverse=True
-    )
-    if not source_files:
-        filter_logger.error(f"No source files matching pattern '{source_file_pattern}' found in input base folder: {base_folder}. Cannot run filter.")
-        raise FileNotFoundError(f"No source data file found for type '{data_type}' in {base_folder}.")
+    # MODIFIED: tender_path is now directly tender_file_to_filter
+    # The calling function in dashboard.py is responsible for ensuring this file exists.
+    if not tender_file_to_filter.is_file():
+        filter_logger.error(f"Source file for filtering not found: {tender_file_to_filter}. Cannot run filter.")
+        # This exception should ideally be caught by the calling function in dashboard.py
+        raise FileNotFoundError(f"Source data file '{tender_file_to_filter.name}' not found for type '{data_type}'.")
 
-    latest_source_filename = source_files[0].name
-    filter_logger.info(f"  Source File : {latest_source_filename} (Type: {data_type}) from {base_folder}")
-    tender_path = base_folder / latest_source_filename
+    tender_path = tender_file_to_filter
+    tagged_blocks = parse_tender_blocks_from_tagged_file(tender_path) # Assumes this function exists
 
-    tagged_blocks = parse_tender_blocks_from_tagged_file(tender_path)
-
-    # ... (rest of the processing logic for tagged_blocks, all_matching_tenders, unique_tender_dictionaries - THIS PART REMAINS THE SAME AS YOUR ORIGINAL)
     if not tagged_blocks:
-        filter_logger.warning("No tender blocks parsed from source file. Result will be empty.")
+        filter_logger.warning(f"No tender blocks parsed from source file '{tender_path.name}'. Result will be empty.")
         all_matching_tenders = []
     else:
         all_matching_tenders: List[Dict[str, Any]] = []
-        processed_count = 0; match_count = 0
-        filter_logger.info(f"Processing {len(tagged_blocks)} tender blocks...")
+        processed_count = 0
+        match_count = 0
+        filter_logger.info(f"Processing {len(tagged_blocks)} tender blocks from '{tender_path.name}'...")
         for block_text in tagged_blocks:
             processed_count += 1
             try:
-                tender_info = extract_tender_info_from_tagged_block(block_text)
+                tender_info = extract_tender_info_from_tagged_block(block_text) # Assumes this function exists
+                # Ensure the extracted block's data_type matches the filter's data_type
+                # This is a safeguard if the source file itself contains mixed types (unlikely but possible)
                 if tender_info.get("data_type") != data_type:
                     filter_logger.debug(f"Skipping block {processed_count}: data_type mismatch (expected {data_type}, got {tender_info.get('data_type')}). Tender ID: {tender_info.get('primary_tender_id','N/A')}")
                     continue
-                if matches_filters(tender_info, keywords, use_regex, site_key, start_date, end_date):
+
+                if matches_filters(tender_info, keywords, use_regex, site_key, start_date, end_date): # Assumes this function exists
                     all_matching_tenders.append(tender_info)
                     match_count += 1
             except Exception as e:
-                 filter_logger.error(f"Error processing block #{processed_count}: {e}", exc_info=True)
-        filter_logger.info(f"Initial processing complete. Found {match_count} matching tenders (before deduplication).")
+                 filter_logger.error(f"Error processing block #{processed_count} from '{tender_path.name}': {e}", exc_info=True)
+        filter_logger.info(f"Initial processing complete. Found {match_count} matching tenders from '{tender_path.name}' (before deduplication).")
 
     unique_tender_dictionaries: List[Dict[str, Any]] = []
     seen_tender_ids: Set[str] = set()
     duplicates_removed = 0
     for tender in all_matching_tenders:
-        tender_id_val = tender.get("primary_tender_id")
+        tender_id_val = tender.get("primary_tender_id") # This is now standardized
         if tender_id_val and tender_id_val != "N/A":
             if tender_id_val not in seen_tender_ids:
                 unique_tender_dictionaries.append(tender)
                 seen_tender_ids.add(tender_id_val)
-            else: duplicates_removed += 1
-        else:
+            else:
+                duplicates_removed += 1
+        else: # Tender with no valid ID - include it but log a warning
             unique_tender_dictionaries.append(tender)
             filter_logger.warning(f"Tender included with missing/invalid primary_tender_id: Title '{tender.get('primary_title', 'N/A')}' (Type: {tender.get('data_type', 'unknown')})")
 
     filter_logger.info(f"Removed {duplicates_removed} duplicate tenders based on primary_tender_id.")
     filter_logger.info(f"Total unique tenders to save: {len(unique_tender_dictionaries)}")
-    # --- End of unchanged processing logic ---
 
     safe_filter_name = re.sub(r'[^\w\s-]', '', filter_name).strip()
     safe_filter_name = re.sub(r'[-\s]+', '_', safe_filter_name) if safe_filter_name else "UnnamedFilter"
 
-    # MODIFIED: Construct output_folder using the new specific base directory for filtered results
-    # The old output_folder_base_name logic is removed as the new constants already specify the "Filtered Tenders" or "Filtered Tenders ROT" part.
+    # Construct output_folder using the new specific base directory for filtered results
     output_folder = output_base_dir_for_this_filter_type / f"{safe_filter_name}_Results"
     output_folder.mkdir(parents=True, exist_ok=True)
 
@@ -541,10 +534,9 @@ def run_filter(
         filter_logger.info(f"Saving {len(unique_tender_dictionaries)} unique tender dictionaries to: {output_path}")
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(unique_tender_dictionaries, f, indent=2, ensure_ascii=False, default=str)
-        filter_logger.info(f"Save successful to: {output_path}") # Added path to success message
+        filter_logger.info(f"Save successful to: {output_path}")
     except Exception as e:
         filter_logger.error(f"Failed to write output JSON to {output_path}: {e}")
         raise IOError(f"Failed to write output JSON: {e}") from e
 
     return str(output_path.resolve())
-# --- END OF FILE TenFin-main/filter_engine.py ---

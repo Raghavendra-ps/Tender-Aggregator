@@ -94,7 +94,7 @@
     "Himachal Pradesh": {
       "base_url": "https://hptenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://hptenders.gov.in/nicgep/app",
-      "enabled": false
+      "enabled": true
     },
     "Jammu Kashmir": {
       "base_url": "https://jktenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
