@@ -1,0 +1,44 @@
+11:42:43 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+11:42:43 [INFO] (Dashboard) Jinja2 configured.
+11:42:45 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html'
+11:42:45 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Starting parsing of: ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+11:42:45 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+11:42:45 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+11:42:45 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+11:43:42 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html'
+11:43:42 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Starting parsing of: ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+11:43:42 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+11:43:42 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+11:43:42 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+11:45:04 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html'
+11:45:04 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Starting parsing of: ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+11:45:04 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+11:45:04 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+11:45:04 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+12:18:36 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html'
+12:18:36 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Starting parsing of: ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+12:18:36 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+12:18:36 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+12:18:36 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+12:18:58 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_277523_1_20250605_112933_StageSummary.html'
+12:18:58 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_277523_1_20250605_112933_StageSummary] Starting parsing of: ROT_2025_UDJK_277523_1_20250605_112933_StageSummary.html
+12:18:58 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_277523_1_20250605_112933_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+12:18:58 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_277523_1_20250605_112933_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+12:18:58 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_277523_1_20250605_112933_StageSummary.html
+12:23:56 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+12:23:56 [INFO] (Dashboard) Jinja2 configured.
+12:25:08 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_275570_1_20250605_112933_StageSummary.html'
+12:25:08 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_275570_1_20250605_112933_StageSummary] Starting parsing of: ROT_2025_UDJK_275570_1_20250605_112933_StageSummary.html
+12:25:08 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_275570_1_20250605_112933_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+12:25:08 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_275570_1_20250605_112933_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+12:25:08 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_275570_1_20250605_112933_StageSummary.html

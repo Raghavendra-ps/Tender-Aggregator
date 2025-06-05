@@ -234,16 +234,15 @@ def load_settings() -> Dict:
     except json.JSONDecodeError as e: logger.error(f"Error decoding {SETTINGS_FILE}: {e}. Defaults returned."); return DEFAULT_SETTINGS.copy()
     except Exception as e: logger.error(f"Error reading {SETTINGS_FILE}: {e}. Defaults returned.", exc_info=True); return DEFAULT_SETTINGS.copy()
 
-# In dashboard.py
-# Ensure BeautifulSoup, re, Path, logger, urlparse, urljoin are available
-
-def parse_rot_summary_html(html_file_path: Path, site_key_original: str) -> Dict[str, Any]: # Added site_key_original
+# Replace the existing parse_rot_summary_html function in dashboard.py with this:
+def parse_rot_summary_html(html_file_path: Path, site_key_original: str) -> Dict[str, Any]:
     log_prefix_parser = f"[ROTParse-{html_file_path.stem}]"
     logger.info(f"{log_prefix_parser} Starting parsing of: {html_file_path.name}")
     extracted_data = {
         "original_filename": html_file_path.name,
-        "page_title": site_key_original, # MODIFIED: Default to original site_key
-        # "key_details": {}, # REMOVED: No longer extracting general info into key_details for display
+        "page_title": site_key_original, # Default to original site_key for the H1 title
+        "main_info": {}, # For Organisation Chain, Tender ID, Ref No, Title
+        "document_header_info": {}, # For eProcurement System, Date, etc.
         "sections": [],
         "error_message": None
     }
@@ -256,122 +255,232 @@ def parse_rot_summary_html(html_file_path: Path, site_key_original: str) -> Dict
     try:
         with open(html_file_path, 'r', encoding='utf-8', errors='replace') as f:
             content = f.read()
+        
         soup = BeautifulSoup(content, 'html.parser')
 
-        # Page Title: Use the passed site_key_original as the primary title.
-        # The full title from the HTML (like "eProcurement System...") can be a sub-heading if needed.
-        # For now, we set page_title directly to site_key_original.
-
-        main_content_wrapper = soup.find('form', id='bidSummaryForm')
-        if not main_content_wrapper: main_content_wrapper = soup.find('div', class_='border')
-        if not main_content_wrapper: main_content_wrapper = soup # Fallback
-
-        # REMOVED: Logic for extracting the first info table into "key_details"
-        # That information is already on the view_rot.html list page.
-
-        # --- Extract Sections based on <td class="section_head"> or other cues ---
-        section_headers_to_find = [
-            "Bids List",
-            "Technical Bid Opening Summary",
-            "Technical Evaluation Summary Details",
-            "Finance Bid Opening Summary",
-            "Financial Evaluation Bid List",
-            "Finance Evaluation Summary Details"
-        ]
+        # --- Try to extract top-level document header info (System, Report Title, Date) ---
+        page_head_td = soup.find('td', class_='page_head')
+        if page_head_td:
+            extracted_data["document_header_info"]["system_name"] = page_head_td.get_text(strip=True)
         
-        if main_content_wrapper:
-            all_tables_in_content = main_content_wrapper.find_all('table', recursive=True)
-            processed_tables_for_sections = set()
+        page_title_td = soup.find('td', class_='page_title')
+        if page_title_td:
+             extracted_data["document_header_info"]["report_title"] = page_title_td.get_text(strip=True)
 
-            # First, try to find tables by their explicit section head class
-            section_head_tds = main_content_wrapper.find_all('td', class_='section_head')
+        date_td_space = soup.find('td', class_='td_space', text=re.compile(r'Date\s*:'))
+        if date_td_space:
+            extracted_data["document_header_info"]["report_date"] = date_td_space.get_text(strip=True)
+        
+        # --- Attempt to find the main content form or a primary div ---
+        # This form often wraps all the relevant tender summary content.
+        main_content_container = soup.find('form', id='bidSummaryForm')
+        if not main_content_container:
+            # Fallback to a common wrapper if the form isn't there or if content is outside
+            main_content_container = soup.find('div', class_='border') # Common in some structures
+            if not main_content_container:
+                 main_content_container = soup.find('body') if soup.body else soup # Last resort
+
+        if not main_content_container: # Should not happen if soup is valid
+            extracted_data["error_message"] = "Could not find main content container in HTML."
+            logger.error(f"{log_prefix_parser} {extracted_data['error_message']}")
+            return extracted_data
             
-            for header_td in section_head_tds:
-                section_title = header_td.get_text(strip=True)
-                
-                # Find the table this header_td belongs to or the one immediately following its row.
-                current_search_element = header_td.find_parent('tr')
-                if not current_search_element: current_search_element = header_td # If header is not in a TR
-                
-                associated_table = None
-                # Try to find the table as a sibling of the row containing the header, or parent table
-                limit_scan = 0
-                temp_element = current_search_element
-                while temp_element and limit_scan < 5:
-                    candidate_table = temp_element.find_next_sibling('table', class_=re.compile(r'(table_list|list_table|tablebg)', re.I))
-                    if candidate_table:
-                        associated_table = candidate_table
-                        break
-                    # Check if current_search_element's parent IS the table we want (header is first row)
-                    if temp_element.parent and temp_element.parent.name == 'table' and \
-                       'table_list' in temp_element.parent.get('class',[]):
-                        associated_table = temp_element.parent
-                        break
-                    temp_element = temp_element.parent
-                    limit_scan +=1
-                
-                if not associated_table and header_td: # Last resort if structure is flatter
-                    associated_table = header_td.find_next('table', class_=re.compile(r'(table_list|list_table|tablebg)', re.I))
-
-
-                if associated_table and associated_table not in processed_tables_for_sections:
-                    # MODIFICATION: Remove duplicate header row if present
-                    first_tr = associated_table.find('tr')
-                    if first_tr:
-                        first_td_or_th = first_tr.find(['td', 'th'])
-                        if first_td_or_th and section_title.lower() in first_td_or_th.get_text(strip=True).lower() and \
-                           ('section_head' in first_td_or_th.get('class', []) or len(first_tr.find_all(['td','th'])) == 1) :
-                            logger.debug(f"{log_prefix_parser} Decomposing duplicate header row for section: '{section_title}'")
-                            first_tr.decompose() # Remove the row containing the duplicate header
-
-                    # MODIFICATION: Remove "Document : None" rows
-                    rows_to_remove = []
-                    for row in associated_table.find_all('tr'):
-                        cells = row.find_all('td')
-                        if len(cells) >= 2: # Assuming Key-Value structure
-                            key_text = cells[0].get_text(strip=True)
-                            value_text = cells[1].get_text(strip=True)
-                            if "document" in key_text.lower() and value_text.lower() == "none":
-                                rows_to_remove.append(row)
-                                logger.debug(f"{log_prefix_parser} Marking 'Document : None' row for removal in section '{section_title}'.")
-                    for row_to_remove in rows_to_remove:
-                        row_to_remove.decompose()
-                    
-                    # Basic cleanup
-                    for s_tag in associated_table.find_all(['script', 'style', 'link']): s_tag.decompose()
-                    for a_tag in associated_table.find_all('a'): a_tag.replace_with(a_tag.get_text(strip=True))
-
-
-                    extracted_data["sections"].append({
-                        "title": section_title,
-                        "html_content": str(associated_table)
-                    })
-                    processed_tables_for_sections.add(associated_table)
-                    logger.debug(f"{log_prefix_parser} Extracted section by table header: '{section_title}'")
-                elif not associated_table:
-                     logger.warning(f"{log_prefix_parser} Could not find associated table for section header: '{section_title}'")
-
-
-        # Fallback if no specific sections were found
-        if not extracted_data["sections"]:
-            logger.warning(f"{log_prefix_parser} No specific sections extracted. Falling back to full content.")
-            body_content = soup.body if soup.body else soup
-            if body_content:
-                 for s_tag in body_content.find_all(['script', 'style', 'link']): s_tag.decompose()
-                 for a_tag in body_content.find_all('a'): a_tag.replace_with(a_tag.get_text(strip=True))
-                 extracted_data["sections"].append({
-                        "title": "Full Cleaned Summary Content", # Changed title
-                        "html_content": str(body_content)
-                    })
+        # --- Extract Main Tender Info (Org Chain, ID, Ref, Title) ---
+        # This is usually the first `table.table_list` inside the main_content_container.
+        # We need to be more specific than just the first table_list on the whole page.
+        first_info_table_candidate = main_content_container.find('table', class_='table_list')
+        
+        if first_info_table_candidate:
+            # Check for characteristic labels to confirm it's the main info table
+            expected_labels = ["Organisation Chain", "Tender ID", "Tender Ref No", "Tender Title"]
+            found_labels_count = 0
+            temp_main_info = {}
+            
+            for row in first_info_table_candidate.find_all('tr', class_='td_caption'):
+                cols = row.find_all('td')
+                if len(cols) == 2:
+                    key = cols[0].get_text(strip=True).replace(':', '').strip()
+                    value = cols[1].get_text(strip=True)
+                    if key and value and key != "Document": # Skip "Document" rows here if they appear
+                        temp_main_info[key] = value
+                        if key in expected_labels:
+                            found_labels_count += 1
+            
+            # If we found at least two of the expected labels, assume it's the main info table.
+            if found_labels_count >= 2:
+                extracted_data["main_info"] = temp_main_info
+                # Decompose this table so it's not processed again as a section
+                first_info_table_candidate.decompose()
+                logger.debug(f"{log_prefix_parser} Extracted Main Info block.")
             else:
-                extracted_data["error_message"] = "Could not extract any content sections from the summary HTML."
-                logger.warning(f"{log_prefix_parser} No sections or body content found to extract.")
+                logger.debug(f"{log_prefix_parser} First table_list did not seem to be the main info block. Found {found_labels_count} characteristic labels.")
+
+
+        # --- Extract Sections based on <td class="section_head"> ---
+        section_head_tds = main_content_container.find_all('td', class_='section_head')
+        
+        for header_td in section_head_tds:
+            section_title = header_td.get_text(strip=True)
+            
+            # The data table is usually the parent table of the section_head itself,
+            # OR the next sibling table of the section_head's parent table.
+            # Let's try to find the table that this header_td is a part of *first*.
+            current_table = header_td.find_parent('table', class_=re.compile(r'(table_list|tablebg)', re.I))
+
+            if not current_table:
+                logger.warning(f"{log_prefix_parser} Could not find parent table for section_head: '{section_title}'. Skipping section.")
+                continue
+
+            # If the header_td is the *only* content in its row (colspan),
+            # then the actual data is in subsequent rows of `current_table`.
+            # If `current_table` has multiple rows beyond the header, then `current_table` is the data table.
+            
+            # Heuristic to decide if current_table is the data_table or just a header wrapper
+            header_row = header_td.find_parent('tr')
+            is_header_only_table = True
+            if header_row:
+                 # If the header_row has siblings, or current_table has more rows than just the header_row and its direct parents
+                 if header_row.find_next_sibling('tr') or len(current_table.find_all('tr', recursive=False)) > 1:
+                     is_header_only_table = False
+            
+            data_table_candidate = current_table # Assume current_table is the data table
+            
+            if is_header_only_table:
+                # If current_table seems to only contain the header, look for the next table sibling
+                # This handles structures like: <table><tr><td class="section_head">...</td></tr></table> <table>...data...</table>
+                potential_next_data_table = current_table.find_next_sibling('table', class_=re.compile(r'(table_list|tablebg)', re.I))
+                if potential_next_data_table:
+                    data_table_candidate = potential_next_data_table
+                else:
+                    logger.warning(f"{log_prefix_parser} Section_head '{section_title}' was in a table alone, but no subsequent data table found. Using its own table.")
+                    # data_table_candidate remains current_table, but it might just be the header
+            
+            # Cleanup (remove duplicate header row if section_title is first cell of data_table_candidate)
+            first_tr_candidate = data_table_candidate.find('tr')
+            if first_tr_candidate:
+                first_cell = first_tr_candidate.find(['td', 'th'])
+                # If the first cell of the data table contains the section title and it's a section_head or a single cell row
+                if first_cell and section_title.lower() in first_cell.get_text(strip=True).lower() and \
+                   (first_cell == header_td or 'section_head' in first_cell.get('class', []) or len(first_tr_candidate.find_all(['td','th'])) == 1):
+                    logger.debug(f"{log_prefix_parser} Decomposing duplicate header row for section: '{section_title}'")
+                    first_tr_candidate.decompose()
+
+
+            # Determine if it's a key-value table or general HTML table
+            is_key_value_table = False
+            kv_details = []
+            
+            rows_in_data_table = data_table_candidate.find_all('tr')
+            
+            # Check if it's the "Bids List" or "Financial Evaluation Bid List" which are always tables
+            if section_title.lower() in ["bids list", "financial evaluation bid list"]:
+                is_key_value_table = False
+            elif rows_in_data_table:
+                num_kv_style_rows = 0
+                num_data_rows_for_kv_check = 0
+
+                for r_idx, row_dt in enumerate(rows_in_data_table):
+                    if row_dt.find('td', class_='section_head'): continue # Skip nested section heads
+
+                    cols_dt = row_dt.find_all('td', recursive=False) # Only direct children td
+                    
+                    if not cols_dt: continue # Skip rows without direct td children (e.g. only th)
+                    num_data_rows_for_kv_check +=1
+
+                    if len(cols_dt) == 2:
+                        key_text_dt = cols_dt[0].get_text(strip=True).replace(':', '').strip()
+                        # For value, handle cases where it might contain nested tables (e.g. document links)
+                        # by getting text, but if it's a complex structure, it might be better as table.
+                        value_text_dt = cols_dt[1].get_text(strip=True) 
+                        
+                        if 0 < len(key_text_dt) < 100 and key_text_dt.lower() != "document" and "document :" not in key_text_dt.lower():
+                            num_kv_style_rows += 1
+                            kv_details.append({"key": key_text_dt, "value": value_text_dt})
+                        elif key_text_dt.lower() == "document" or "document :" in key_text_dt.lower() : # Special handling for document rows
+                             doc_link_tag = cols_dt[1].find('a')
+                             if doc_link_tag:
+                                 doc_name = doc_link_tag.get_text(strip=True)
+                                 doc_href = doc_link_tag.get('href')
+                                 # Try to find size if present
+                                 doc_size_match = re.search(r'\(([\d\.]+\s*(KB|MB|GB))\)', cols_dt[1].get_text())
+                                 doc_size = doc_size_match.group(1) if doc_size_match else "N/A"
+                                 kv_details.append({"key": "Document", "value": doc_name, "link": doc_href, "size": doc_size, "is_document": True})
+                             else:
+                                 kv_details.append({"key": "Document", "value": value_text_dt, "is_document": True}) # Fallback
+                             num_kv_style_rows +=1 # Count document rows as KV style for this purpose
+                        else: # Not a clear KV
+                            is_key_value_table = False; break
+                    elif len(cols_dt) == 1 and (cols_dt[0].find('table') or cols_dt[0].find('div')): # Single cell with nested table/div
+                        is_key_value_table = False; break;
+                    elif len(cols_dt) > 2 : # Definitely not a simple key-value table
+                        is_key_value_table = False; break
+                
+                if num_data_rows_for_kv_check > 0 and num_kv_style_rows >= num_data_rows_for_kv_check * 0.8: # 80% threshold
+                    is_key_value_table = True
+                else:
+                    is_key_value_table = False
+                    kv_details = [] # Clear if not meeting threshold
+            
+            # Basic cleanup for the identified data_table_candidate
+            for s_tag in data_table_candidate.find_all(['script', 'style', 'link', 'form', 'input']): s_tag.decompose()
+            
+            # Convert links to text for KV, but keep for tables if they look like file downloads
+            for a_tag in data_table_candidate.find_all('a'):
+                href_val = a_tag.get('href', '').lower()
+                is_download_link = any(ext in href_val for ext in ['.pdf', '.doc', '.zip', '.xls', 'boq']) or 'download' in href_val
+                
+                if is_key_value_table and not (a_tag.parent.get_text(strip=True).lower().startswith("document") and is_download_link):
+                    # For KV pairs, generally convert links to text, unless it's clearly a document download link
+                    a_tag.replace_with(a_tag.get_text(strip=True))
+                elif not is_key_value_table and ('javascript:' in href_val or href_val == '#'):
+                    # For tables, remove javascript links
+                     a_tag.replace_with(a_tag.get_text(strip=True))
+                # Else (it's a table and a valid-looking link), keep the link as is.
+
+            if is_key_value_table and kv_details:
+                extracted_data["sections"].append({
+                    "title": section_title,
+                    "type": "key_value",
+                    "details": kv_details
+                })
+            else:
+                extracted_data["sections"].append({
+                    "title": section_title,
+                    "type": "table",
+                    "html_content": str(data_table_candidate)
+                })
+            
+            # Decompose the processed table to avoid re-processing if it's nested or found again
+            data_table_candidate.decompose()
+            if current_table and current_table != data_table_candidate: # If header was in a separate table
+                current_table.decompose()
+
+        # Final check if no specific sections were found but main_content_container has something
+        if not extracted_data["sections"] and not extracted_data["main_info"]:
+            # At this point, main_content_container has had main_info_table and section_head tables decomposed
+            # If there's still significant content, add it as a fallback.
+            remaining_content_str = main_content_container.get_text(strip=True)
+            if len(remaining_content_str) > 100: # Arbitrary length to consider it "significant"
+                logger.warning(f"{log_prefix_parser} No specific main info or sections extracted. Using remaining content as fallback.")
+                # Clean remaining main_content_container
+                for s_tag in main_content_container.find_all(['script', 'style', 'link', 'form', 'input']): s_tag.decompose()
+                for a_tag in main_content_container.find_all('a'): a_tag.replace_with(a_tag.get_text(strip=True))
+
+                extracted_data["sections"].append({
+                    "title": "Other Summary Content",
+                    "type": "table", # Treat as general HTML
+                    "html_content": str(main_content_container)
+                })
+            else:
+                extracted_data["error_message"] = "Could not extract structured details or sections from the summary HTML."
+                logger.warning(f"{log_prefix_parser} No sections or significant remaining content found to extract.")
+
 
     except Exception as e:
         logger.error(f"{log_prefix_parser} Error during BeautifulSoup parsing of {html_file_path.name}: {e}", exc_info=True)
         extracted_data["error_message"] = f"An error occurred while parsing the summary content: {str(e)}"
     
-    logger.info(f"{log_prefix_parser} Parsing complete. Page Title: '{extracted_data['page_title']}', Sections: {len(extracted_data['sections'])}")
+    logger.info(f"{log_prefix_parser} Parsing complete. Page Title: '{extracted_data['page_title']}', Sections: {len(extracted_data['sections'])}, MainInfo Keys: {len(extracted_data['main_info'])}")
     return extracted_data
 
 def save_settings(settings_data: Dict) -> bool:
@@ -855,55 +964,117 @@ async def view_tender_detail_typed(request: Request, data_type: str, subdir: str
 
     return templates.TemplateResponse(template_name, context)
 
-
-
-
 @app.get("/download/{data_type}/{subdir}", name="download_tender_excel_typed", response_class=StreamingResponse)
 async def download_tender_excel_typed(data_type: str, subdir: str):
     tenders: List[Dict[str, Any]] = []
-    if data_type == "rot": base_data_dir_for_download = REG_FILTERED_RESULTS_DIR_ROT
-    elif data_type == "regular": base_data_dir_for_download = REG_FILTERED_RESULTS_DIR
-    else: raise HTTPException(400, "Invalid data type.")
-    try: subdir_path = _validate_subdir(subdir, base_dir=base_data_dir_for_download); file_path = subdir_path / FILTERED_TENDERS_FILENAME
-    except HTTPException as e: raise e
-    except Exception as e: logger.error(f"Path err download {subdir} type {data_type}: {e}"); raise HTTPException(500,"Path error")
-    if not subdir_path.is_dir() or not file_path.is_file(): raise HTTPException(404, "Data not found.")
-    try:
-        with open(file_path, "r", encoding="utf-8") as f: tenders_data = json.load(f)
-        if not isinstance(tenders_data, list): raise ValueError("Invalid data format.")
-        tenders = tenders_data
-    except (json.JSONDecodeError, ValueError) as e: logger.error(f"Err reading {file_path} for download: {e}"); raise HTTPException(500, "Err reading data.")
-    except Exception as e: logger.error(f"Err download prep {subdir} type {data_type}: {e}", exc_info=True); raise HTTPException(500, "Err prep download.")
-    wb = Workbook(); ws = wb.active; safe_sheet_title = re.sub(r'[\\/*?:\[\]]+', '_', subdir.replace('_Results','').replace('_Tenders', ''))[:31]; ws.title = safe_sheet_title if safe_sheet_title else "Tenders"
+    base_data_dir_for_download: Path # Define type
+
     if data_type == "rot":
-        headers = ["rot_s_no", "rot_tender_id", "rot_title_ref", "rot_organisation_chain", "rot_tender_stage", "source_site_key", "rot_status_detail_page_link", "rot_stage_summary_file_status", "rot_stage_summary_file_path", "rot_stage_summary_filename"]
-    else: 
-        headers = ["primary_tender_id", "tender_reference_number", "primary_title", "work_description", "organisation_chain", "source_site_key", "tender_type", "tender_category", "form_of_contract", "contract_type", "tender_value", "emd_amount", "tender_fee", "processing_fee", "primary_published_date", "primary_closing_date", "primary_opening_date", "bid_validity_days", "period_of_work_days", "location", "pincode", "nda_pre_qualification", "independent_external_monitor_remarks", "payment_instruments", "covers_info", "tender_documents", "tender_inviting_authority_name", "tender_inviting_authority_address", "detail_page_link"]
+        base_data_dir_for_download = ROT_FILTERED_RESULTS_DIR # MODIFIED & CORRECTED
+    elif data_type == "regular":
+        base_data_dir_for_download = REG_FILTERED_RESULTS_DIR # MODIFIED
+    else:
+        raise HTTPException(status_code=400, detail="Invalid data type for download.") # Added status_code
+
+    try:
+        subdir_path = _validate_subdir(subdir, base_dir=base_data_dir_for_download)
+        file_path = subdir_path / FILTERED_TENDERS_FILENAME
+    except HTTPException as e_val: # Catch validation specific errors
+        logger.warning(f"Validation error for excel download '{subdir}' type '{data_type}': {e_val.detail}")
+        raise e_val
+    except Exception as e_path:
+        logger.error(f"Path error for excel download '{subdir}' type '{data_type}': {e_path}", exc_info=True)
+        raise HTTPException(status_code=500,detail="Path error for excel download.")
+
+    if not subdir_path.is_dir() or not file_path.is_file():
+        logger.warning(f"Data not found for excel download: {file_path}")
+        raise HTTPException(status_code=404, detail="Data not found for excel generation.")
+
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            tenders_data = json.load(f)
+        if not isinstance(tenders_data, list):
+            logger.error(f"Invalid data format (not list) in {file_path} for excel download.")
+            raise ValueError("Invalid data format.")
+        tenders = tenders_data
+    except (json.JSONDecodeError, ValueError) as e_parse:
+        logger.error(f"Error reading/parsing {file_path} for excel download: {e_parse}")
+        raise HTTPException(status_code=500, detail="Error reading data for excel generation.")
+    except Exception as e_load:
+        logger.error(f"Error during excel download prep for '{subdir}' (Type: {data_type}) from {file_path}: {e_load}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Error preparing download.")
+
+    wb = Workbook()
+    ws = wb.active
+    safe_sheet_title = re.sub(r'[\\/*?:\[\]]+', '_', subdir.replace('_Results','').replace('_Tenders', ''))[:31]
+    ws.title = safe_sheet_title if safe_sheet_title else "Tenders"
+
+    headers: List[str] # Define type
+    if data_type == "rot":
+        headers = [
+            "rot_s_no", "rot_tender_id", "rot_title_ref", "rot_organisation_chain",
+            "rot_tender_stage", "source_site_key", "rot_status_detail_page_link",
+            "rot_stage_summary_file_status", "rot_stage_summary_file_path", "rot_stage_summary_filename"
+        ]
+    else: # regular
+        headers = [
+            "primary_tender_id", "tender_reference_number", "primary_title", "work_description",
+            "organisation_chain", "source_site_key", "tender_type", "tender_category",
+            "form_of_contract", "contract_type", "tender_value", "emd_amount", "tender_fee",
+            "processing_fee", "primary_published_date", "primary_closing_date", "primary_opening_date",
+            "bid_validity_days", "period_of_work_days", "location", "pincode",
+            "nda_pre_qualification", "independent_external_monitor_remarks",
+            "payment_instruments", "covers_info", "tender_documents",
+            "tender_inviting_authority_name", "tender_inviting_authority_address", "detail_page_link"
+        ]
     ws.append(headers)
+
     for tender in tenders:
-        row_data = [];
+        row_data = []
         if not isinstance(tender, dict): continue
         for header in headers:
             value = tender.get(header, "N/A")
-            if data_type == "regular" and isinstance(value, list):
-                try:
-                    if header == "payment_instruments" and value: value = "; ".join([f"{i.get('s_no', '?')}:{i.get('instrument_type', 'N/A')}" for i in value if isinstance(i,dict)])
-                    elif header == "covers_info" and value: value = "; ".join([f"{i.get('cover_no','?')}:{i.get('cover_type','N/A')}" for i in value if isinstance(i,dict)])
-                    elif header == "tender_documents" and value: value = "; ".join([f"{d.get('name',d.get('link','Doc'))}({d.get('size','?')})" for d in value if isinstance(d, dict)])
-                    else: value = ", ".join(map(str, value))
-                    if not value: value = "N/A"
-                except Exception: value = "[Error Formatting List]"
-            elif data_type == "regular" and isinstance(value, dict):
-                try: value = json.dumps(value, ensure_ascii=False)
-                except Exception: value = "[Error Formatting Dict]"
+            if data_type == "regular": 
+                if isinstance(value, list):
+                    try:
+                        if header == "payment_instruments" and value:
+                            value = "; ".join([f"{i.get('s_no', '?')}:{i.get('instrument_type', 'N/A')}" for i in value if isinstance(i,dict)])
+                        elif header == "covers_info" and value:
+                            value = "; ".join([f"{i.get('cover_no','?')}:{i.get('cover_type','N/A')}" for i in value if isinstance(i,dict)])
+                        elif header == "tender_documents" and value:
+                            value = "; ".join([f"{d.get('name',d.get('link','Doc'))}({d.get('size','?')})" for d in value if isinstance(d, dict)])
+                        else: 
+                            value = ", ".join(map(str, value))
+                        if not value: value = "N/A"
+                    except Exception: value = "[Error Formatting List]"
+                elif isinstance(value, dict):
+                    try: value = json.dumps(value, ensure_ascii=False)
+                    except Exception: value = "[Error Formatting Dict]"
+            
             if value is None: value = "N/A"
-            elif not isinstance(value, (str, int, float, datetime.datetime, datetime.date)): value = str(value)
+            elif not isinstance(value, (str, int, float, datetime.datetime, datetime.date)): 
+                value = str(value)
             row_data.append(value)
-        if len(row_data)==len(headers): ws.append(row_data)
-        else: logger.warning(f"Col count mismatch ID {tender.get('primary_tender_id' if data_type=='regular' else 'rot_tender_id','??')} in {subdir} (Type: {data_type}).")
-    excel_buffer = io.BytesIO(); wb.save(excel_buffer); excel_buffer.seek(0); 
-    safe_subdir_name = re.sub(r'[^\w\-]+', '_', subdir); filename_prefix = "ROT_" if data_type == "rot" else ""; filename = f"{filename_prefix}{safe_subdir_name}_Tenders_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}.xlsx"
-    return StreamingResponse(excel_buffer, media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", headers={"Content-Disposition": f"attachment; filename=\"{filename}\""})
+
+        if len(row_data) == len(headers):
+            ws.append(row_data)
+        else:
+            tender_id_for_log = tender.get('primary_tender_id' if data_type=='regular' else 'rot_tender_id', 'UnknownID')
+            logger.warning(f"Column count mismatch for tender ID '{tender_id_for_log}' in excel export for '{subdir}' (Type: {data_type}). Expected {len(headers)}, got {len(row_data)}.")
+
+    excel_buffer = io.BytesIO()
+    wb.save(excel_buffer)
+    excel_buffer.seek(0)
+    
+    safe_subdir_name = re.sub(r'[^\w\-]+', '_', subdir)
+    filename_prefix = "ROT_" if data_type == "rot" else ""
+    filename = f"{filename_prefix}{safe_subdir_name}_Tenders_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}.xlsx"
+    
+    return StreamingResponse(
+        excel_buffer,
+        media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        headers={"Content-Disposition": f"attachment; filename=\"{filename}\""}
+    )
 
 @app.get("/download/{data_type}/{subdir}", name="download_tender_excel_typed", response_class=StreamingResponse)
 async def download_tender_excel_typed(data_type: str, subdir: str):
@@ -1156,9 +1327,9 @@ async def bulk_download_tender_excel_typed(request: Request, data_type: str = Fo
     base_data_dir_for_bulk: Path # Define type
 
     if data_type == "rot":
-        base_data_dir_for_bulk = ROT_FILTERED_RESULTS_DIR # MODIFIED
+        base_data_dir_for_bulk = ROT_FILTERED_RESULTS_DIR # THIS IS ALREADY CORRECT
     elif data_type == "regular":
-        base_data_dir_for_bulk = REG_FILTERED_RESULTS_DIR # MODIFIED
+        base_data_dir_for_bulk = REG_FILTERED_RESULTS_DIR # THIS IS CORRECT
     else:
         # Ensure status_code for HTTPException
         raise HTTPException(status_code=400, detail="Invalid data type for bulk download.")
