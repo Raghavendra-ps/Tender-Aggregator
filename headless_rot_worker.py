@@ -240,62 +240,206 @@ def _format_rot_tags(data_dict: Dict[str, Any], site_key: str) -> str:
 async def _handle_final_popup_content(
     popup_page: Page, site_key: str, tender_file_id: str, run_id: str
 ) -> Tuple[str, Optional[str], Optional[str]]:
-    """Processes the final popup, saves HTML, returns status and file info."""
-
-    # Use the new cleaner for the site_key part of the directory path
-    cleaned_site_key_for_dir = _clean_path_component_worker(site_key) # e.g., "JammuKashmir"
-
-    # Path for HTML summaries: site_data/ROT/DetailHtmls/{CleanedSiteKey}/
+    cleaned_site_key_for_dir = _clean_path_component_worker(site_key)
     site_specific_html_output_dir = ROT_DETAIL_HTMLS_DIR / cleaned_site_key_for_dir
     site_specific_html_output_dir.mkdir(parents=True, exist_ok=True)
 
-    # Path for debug screenshots from this function
     debug_screenshot_path_base = TEMP_DEBUG_SCREENSHOTS_DIR / "worker" / cleaned_site_key_for_dir / run_id / "popup_handling"
     debug_screenshot_path_base.mkdir(parents=True, exist_ok=True)
 
-    log_prefix_popup = f"[{clean_filename_rot(tender_file_id)} Popup]" # clean_filename_rot is fine for log prefix
+    log_prefix_popup = f"[{clean_filename_rot(tender_file_id)} Popup]"
     logger.info(f"{log_prefix_popup} Processing final popup page: {popup_page.url}")
 
     try:
         await popup_page.wait_for_load_state("domcontentloaded", timeout=POPUP_PAGE_TIMEOUT_DEFAULT)
-        html_content_report = await popup_page.content()
+        html_content_report_raw = await popup_page.content()
 
-        if html_content_report:
-            processed_html_content = _remove_html_protection(html_content_report)
-            safe_id_part = clean_filename_rot(tender_file_id) # For the filename part
+        if html_content_report_raw:
+            logger.debug(f"{log_prefix_popup} Starting HTML cleanup.")
+            soup = BeautifulSoup(html_content_report_raw, 'html.parser')
+
+            # 1. Perform all cleanups on the full soup object first
+            for tag_type in ['script', 'style', 'link']: # Remove script, style, and external link tags
+                for tag in soup.find_all(tag_type):
+                    tag.decompose()
+            logger.debug(f"{log_prefix_popup} Removed script, style, and link tags.")
+
+            # Remove common "Print" buttons/links more carefully
+            print_elements_found = 0
+            # Try by ID first (case-insensitive search for 'print' in id)
+            for print_el_id in soup.find_all(id=re.compile(r'print', re.I)):
+                print_el_id.decompose()
+                print_elements_found += 1
+            # Then by typical print href
+            for print_el_href in soup.find_all('a', href=re.compile(r'javascript:window.print\(\)', re.I)):
+                # Attempt to remove a simple parent container if it seems to only hold the print link
+                parent = print_el_href.find_parent()
+                if parent and parent.name in ['td', 'p', 'span', 'div'] and \
+                   len(parent.get_text(strip=True)) == len(print_el_href.get_text(strip=True)) and \
+                   len(parent.find_all(True, recursive=False)) == 1: # Parent has only this link as child element
+                    parent.decompose()
+                else:
+                    print_el_href.decompose()
+                print_elements_found += 1
+            if print_elements_found > 0:
+                logger.debug(f"{log_prefix_popup} Removed {print_elements_found} potential print-related element(s).")
+
+            # Remove body attributes like onload, onpageshow if body exists
+            if soup.body:
+                if 'onload' in soup.body.attrs:
+                    del soup.body['onload']
+                    logger.debug(f"{log_prefix_popup} Removed onload attribute from body.")
+                if 'onpageshow' in soup.body.attrs:
+                    del soup.body['onpageshow']
+                    logger.debug(f"{log_prefix_popup} Removed onpageshow attribute from body.")
             
+            # 2. Decide which part of the cleaned soup to save
+            html_to_save_str: str
+            main_content_div = soup.find('div', id='printDisplayArea')
+            if not main_content_div: main_content_div = soup.find('div', class_='Table')
+            if not main_content_div: main_content_div = soup.find('div', class_='table')
+            if not main_content_div: main_content_div = soup.find('div', class_='border')
+
+            if main_content_div:
+                html_to_save_str = str(main_content_div)
+                logger.debug(f"{log_prefix_popup} Extracted content from a main container div for saving.")
+            elif soup.body:
+                # If we save the body, we take its inner HTML to avoid nested <body> tags
+                # when dashboard's parser re-parses this fragment.
+                html_to_save_str = "".join(str(c) for c in soup.body.contents)
+                logger.debug(f"{log_prefix_popup} Saving inner HTML of body content.")
+            else:
+                html_to_save_str = str(soup) # Fallback to full cleaned soup
+                logger.debug(f"{log_prefix_popup} Saving full cleaned soup as no specific body/main div found.")
+            
+            # 3. Apply script protection removal (which operates on strings)
+            processed_html_content = _remove_html_protection(html_to_save_str)
+            
+            safe_id_part = clean_filename_rot(tender_file_id)
             timestamp_suffix = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
             save_filename_html = f"ROT_{safe_id_part}_{timestamp_suffix}_StageSummary.html"
-            
             save_path_html_absolute = site_specific_html_output_dir / save_filename_html
             
             save_path_html_absolute.write_text(processed_html_content, encoding='utf-8', errors='replace')
             
-            # Relative path for storage in merged file, relative to ROT_DETAIL_HTMLS_DIR
-            # This will be like: JammuKashmir/ROT_XYZ_20230101_100000_StageSummary.html
             try:
                 save_path_html_relative = save_path_html_absolute.relative_to(ROT_DETAIL_HTMLS_DIR)
             except ValueError:
                 logger.warning(f"{log_prefix_popup} Could not make path relative for {save_path_html_absolute} against {ROT_DETAIL_HTMLS_DIR}. Storing absolute path: {save_path_html_absolute}")
-                save_path_html_relative = save_path_html_absolute # Fallback, though less ideal
+                save_path_html_relative = save_path_html_absolute
             
-            logger.info(f"{log_prefix_popup} ✅ SAVED HTML: {save_filename_html} to {site_specific_html_output_dir}")
+            logger.info(f"{log_prefix_popup} ✅ CLEANED & SAVED HTML: {save_filename_html} to {site_specific_html_output_dir}")
             return "downloaded", str(save_path_html_relative), save_filename_html
         else:
-            logger.warning(f"{log_prefix_popup} No HTML content from final popup page.")
+            logger.warning(f"{log_prefix_popup} No HTML content received from popup page.")
             return "download_no_content", None, None
-    except PlaywrightTimeout:
+    except PlaywrightTimeout: # ... (rest of except blocks are fine) ...
         logger.error(f"{log_prefix_popup} Timeout waiting for popup content.", exc_info=False)
         screenshot_file = debug_screenshot_path_base / f"DEBUG_POPUP_TIMEOUT_{clean_filename_rot(tender_file_id)}_{SCRIPT_NAME_TAG}.png"
-        await popup_page.screenshot(path=screenshot_file)
+        if popup_page and not popup_page.is_closed(): await popup_page.screenshot(path=screenshot_file)
         logger.info(f"Debug screenshot saved to {screenshot_file}")
         return "download_timeout", None, None
     except Exception as e:
-        logger.error(f"{log_prefix_popup} Error saving popup HTML: {e}", exc_info=True)
+        logger.error(f"{log_prefix_popup} Error during HTML cleanup or saving for popup: {e}", exc_info=True)
         screenshot_file = debug_screenshot_path_base / f"DEBUG_POPUP_ERROR_{clean_filename_rot(tender_file_id)}_{SCRIPT_NAME_TAG}.png"
-        await popup_page.screenshot(path=screenshot_file)
+        if popup_page and not popup_page.is_closed(): await popup_page.screenshot(path=screenshot_file)
         logger.info(f"Debug screenshot saved to {screenshot_file}")
         return f"download_error_{type(e).__name__}", None, None
+
+def parse_rot_summary_html(html_file_path: Path) -> Dict[str, Any]:
+    extracted_data = {
+        "original_filename": html_file_path.name, # Store for reference
+        "page_title": "ROT Summary", # Default title
+        "key_details": {}, # For specific key-value pairs
+        "sections": []     # For larger blocks of content (e.g., tables)
+                           # Each item can be a dict: {"title": "Section Title", "html_content": "..."}
+    }
+    if not html_file_path.is_file():
+        logger.error(f"ROT HTML summary file not found for parsing: {html_file_path}")
+        extracted_data["error_message"] = "Summary HTML file not found on server."
+        return extracted_data
+
+    try:
+        with open(html_file_path, 'r', encoding='utf-8', errors='replace') as f:
+            content = f.read()
+        
+        # If the saved content was just a fragment (e.g., a div's content),
+        # BeautifulSoup can parse it directly. If it was saved as a full HTML doc string,
+        # it will also work.
+        soup = BeautifulSoup(content, 'html.parser')
+
+        # Attempt to find a main title (if the saved HTML fragment doesn't have <title>)
+        # Look for prominent headers within the content.
+        h1 = soup.find(['h1', 'h2', 'h3', 'div'], class_=re.compile(r'(title|header|heading)', re.I))
+        if h1:
+            extracted_data["page_title"] = h1.get_text(strip=True)
+        elif soup.title and soup.title.string: # If full HTML was saved
+             extracted_data["page_title"] = soup.title.string.strip()
+
+
+        # --- CUSTOM PARSING LOGIC STARTS HERE ---
+        # This needs to be tailored to the structure of YOUR cleaned ROT summary HTMLs.
+        # Inspect your saved HTML files from site_data/ROT/DetailHtmls/{SITE_KEY}/...
+
+        # Example 1: Extracting key-value pairs from a definition list or simple table structure
+        # Suppose your HTML has: <td><strong>Tender ID:</strong></td><td>12345</td>
+        
+        # Find all potential label cells (strong, th, or td with specific class)
+        label_tags = soup.find_all(['strong', 'th', 'td'], class_=lambda x: x and 'label' in x.lower())
+        if not label_tags: # Fallback to any strong or th
+            label_tags = soup.find_all(['strong', 'th'])
+
+        for label_tag in label_tags:
+            key_text = label_tag.get_text(strip=True).replace(':', '').strip()
+            value_tag = label_tag.find_next_sibling(['td', 'dd']) # Common next tags
+            if not value_tag: # If label and value are in same tag, e.g. <strong>Label:</strong> Value
+                parent_text = label_tag.parent.get_text(separator='|', strip=True)
+                if '|' in parent_text: # Heuristic
+                    parts = parent_text.split('|', 1)
+                    if key_text.lower() in parts[0].lower() and len(parts) > 1:
+                        value_text = parts[1].strip()
+                        if key_text and value_text: extracted_data["key_details"][key_text] = value_text
+                        continue # Move to next label
+            
+            if value_tag:
+                value_text = value_tag.get_text(strip=True)
+                if key_text and value_text: # Only add if both key and value are found
+                    # Avoid overly generic keys or very long values for key_details
+                    if len(key_text) < 50 and len(value_text) < 200:
+                         extracted_data["key_details"][key_text] = value_text
+
+        # Example 2: Extracting all tables as separate sections
+        tables = soup.find_all('table')
+        if tables:
+            for i, table in enumerate(tables):
+                # Try to find a preceding header for the table to use as a title
+                table_title = f"Data Table {i+1}"
+                prev_sibling = table.find_previous_sibling(['h1', 'h2', 'h3', 'h4', 'p'])
+                if prev_sibling and len(prev_sibling.get_text(strip=True)) < 100: # Heuristic for a title
+                    table_title = prev_sibling.get_text(strip=True)
+                
+                # Basic table cleanup (remove nested scripts/styles if any survived worker cleanup)
+                for s in table.find_all(['script', 'style']): s.decompose()
+                
+                extracted_data["sections"].append({
+                    "title": table_title,
+                    "html_content": str(table) # Convert table back to HTML string
+                })
+        elif not extracted_data["key_details"]: # If no tables and no key details, add the whole soup
+             extracted_data["sections"].append({
+                    "title": "Full Summary Content",
+                    "html_content": str(soup) # The entire cleaned HTML fragment
+                })
+
+
+        if not extracted_data["key_details"] and not extracted_data["sections"]:
+             extracted_data["error_message"] = "Could not extract structured details or sections from the summary HTML."
+
+    except Exception as e:
+        logger.error(f"Error parsing ROT summary HTML content from {html_file_path}: {e}", exc_info=True)
+        extracted_data["error_message"] = f"An error occurred while parsing the summary content: {e}"
+    
+    return extracted_data
 
 async def process_single_tender_detail_page(
     semaphore: asyncio.Semaphore, main_browser_context: BrowserContext,

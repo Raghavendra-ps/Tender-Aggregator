@@ -1,0 +1,93 @@
+16:44:41 [INFO] (ROTWorker-Jharkhand Run-831689) Worker logging initialized. Log file: /root/TenFin/LOGS/rot_worker/Jharkhand/worker_rot_worker_Jharkhand_20250604164441831689_2025-06-04.log
+16:44:41 [INFO] (ROTWorker-Jharkhand Run-831689) --- Starting Headless ROT Worker for Site: Jharkhand, Run ID: rot_worker_Jharkhand_20250604164441831689 ---
+16:44:41 [INFO] (ROTWorker-Jharkhand Run-831689) Target Search URL: https://jharkhandtenders.gov.in/nicgep/app?page=WebTenderStatusLists&service=page
+16:44:41 [INFO] (ROTWorker-Jharkhand Run-831689) Target Base URL for links: https://jharkhandtenders.gov.in/nicgep/app/
+16:44:41 [INFO] (ROTWorker-Jharkhand Run-831689) Tender Status to Select: 5
+16:44:41 [INFO] (ROTWorker-Jharkhand Run-831689) Worker Settings: {'max_list_pages': 1, 'detail_concurrency': 2, 'pagination_wait': 7000, 'page_load_timeout': 75000, 'detail_page_timeout': 60000, 'popup_page_timeout': 60000, 'element_timeout': 20000, 'post_submit_timeout': 30000}
+16:44:41 [INFO] (ROTWorker-Jharkhand Run-831689) Worker status updated to: WORKER_STARTED
+16:44:42 [INFO] (ROTWorker-Jharkhand Run-831689) Worker status updated to: FETCHING_CAPTCHA
+16:44:42 [INFO] (ROTWorker-Jharkhand Run-831689) Navigating to: https://jharkhandtenders.gov.in/nicgep/app?page=WebTenderStatusLists&service=page
+16:44:42 [INFO] (ROTWorker-Jharkhand Run-831689) Selecting tender status '5'.
+16:44:45 [INFO] (ROTWorker-Jharkhand Run-831689) CAPTCHA base64 data saved to: /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Jharkhand_20250604164441831689/captcha.b64
+16:44:45 [INFO] (ROTWorker-Jharkhand Run-831689) Worker status updated to: WAITING_CAPTCHA
+16:44:45 [INFO] (ROTWorker-Jharkhand Run-831689) Waiting for CAPTCHA solution in /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Jharkhand_20250604164441831689/answer.txt (max 300s)...
+16:44:51 [INFO] (ROTWorker-Jharkhand Run-831689) CAPTCHA solution received.
+16:44:51 [INFO] (ROTWorker-Jharkhand Run-831689) Worker status updated to: PROCESSING_WITH_CAPTCHA
+16:44:51 [INFO] (ROTWorker-Jharkhand Run-831689) CAPTCHA solution received (Site: Jharkhand, Run: rot_worker_Jharkhand_20250604164441831689). Submitting form...
+16:44:51 [INFO] (ROTWorker-Jharkhand Run-831689) Waiting for initial results ('#tabList') OR error (Site: Jharkhand, Run: rot_worker_Jharkhand_20250604164441831689).
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) ✅ Initial results table detected after CAPTCHA (Site: Jharkhand, Run: rot_worker_Jharkhand_20250604164441831689). Proceeding with scrape.
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) Worker status updated to: SCRAPING_RESULTS
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) --- Processing List Page: 1 (Site: Jharkhand, Run: rot_worker_Jharkhand_20250604164441831689) ---
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) Worker status updated to: PROCESSING_LIST_PAGE_1
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1] Extracting table data...
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1] Extracted 10 items.
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) Gathering 10 detail tasks for list page 1 (Site: Jharkhand, Run: rot_worker_Jharkhand_20250604164441831689)...
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPST_98012_1] Starting detail processing for URL: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SLw97CKSpR62Yl0Afiq8owQ%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPST_98009_1] Starting detail processing for URL: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SMfpWl%2FMDzRPRvthBPs60mA%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_99945_1] Starting detail processing for URL: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sq6xGWtu67a11JRLoTBMbQQ%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_97270_1] Starting detail processing for URL: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SRwb7FB5NkQp78vzdlx6%2BRA%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100352_1] Starting detail processing for URL: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1BdLWX41yjxD%2B0HasqeOvw%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100351_1] Starting detail processing for URL: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SxlwMKmY%2Bpt8oP0GOQO8a1g%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100350_1] Starting detail processing for URL: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SmstvXFawF8EwARj0x0oHxg%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_5] Starting detail processing for URL: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SzkLLO2ULD5qhNIdTh0TTwA%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_4] Starting detail processing for URL: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SLaLjPnZzOEK77bky6fY5Hg%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_3] Starting detail processing for URL: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Skt00%2FPiaOI2rRFooXVd1vg%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPST_98012_1] Navigated to detail page: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SLw97CKSpR62Yl0Afiq8owQ%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPST_98012_1] Final summary link found. Clicking...
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPST_98009_1] Navigated to detail page: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SMfpWl%2FMDzRPRvthBPs60mA%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPST_98009_1] Final summary link found. Clicking...
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPST_98012_1 Popup] Processing final popup page: https://jharkhandtenders.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPST_98012_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZPST_98012_1_20250604_164452_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Jharkhand
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPST_98012_1] Successfully processed detail and popup. File: ROT_2025_ZPST_98012_1_20250604_164452_StageSummary.html
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPST_98009_1 Popup] Processing final popup page: https://jharkhandtenders.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPST_98009_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZPST_98009_1_20250604_164452_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Jharkhand
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPST_98009_1] Successfully processed detail and popup. File: ROT_2025_ZPST_98009_1_20250604_164452_StageSummary.html
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_99945_1] Navigated to detail page: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sq6xGWtu67a11JRLoTBMbQQ%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_99945_1] Final summary link found. Clicking...
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_97270_1] Navigated to detail page: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SRwb7FB5NkQp78vzdlx6%2BRA%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_97270_1] Final summary link found. Clicking...
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPLOH_99945_1 Popup] Processing final popup page: https://jharkhandtenders.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPLOH_99945_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZPLOH_99945_1_20250604_164452_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Jharkhand
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_99945_1] Successfully processed detail and popup. File: ROT_2025_ZPLOH_99945_1_20250604_164452_StageSummary.html
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPLOH_97270_1 Popup] Processing final popup page: https://jharkhandtenders.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPLOH_97270_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZPLOH_97270_1_20250604_164452_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Jharkhand
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_97270_1] Successfully processed detail and popup. File: ROT_2025_ZPLOH_97270_1_20250604_164452_StageSummary.html
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100352_1] Navigated to detail page: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1BdLWX41yjxD%2B0HasqeOvw%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100351_1] Navigated to detail page: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SxlwMKmY%2Bpt8oP0GOQO8a1g%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100352_1] Final summary link found. Clicking...
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100351_1] Final summary link found. Clicking...
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPLOH_100352_1 Popup] Processing final popup page: https://jharkhandtenders.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPLOH_100352_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZPLOH_100352_1_20250604_164452_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Jharkhand
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100352_1] Successfully processed detail and popup. File: ROT_2025_ZPLOH_100352_1_20250604_164452_StageSummary.html
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPLOH_100351_1 Popup] Processing final popup page: https://jharkhandtenders.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPLOH_100351_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZPLOH_100351_1_20250604_164452_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Jharkhand
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100351_1] Successfully processed detail and popup. File: ROT_2025_ZPLOH_100351_1_20250604_164452_StageSummary.html
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100350_1] Navigated to detail page: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SmstvXFawF8EwARj0x0oHxg%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100350_1] Final summary link found. Clicking...
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_5] Navigated to detail page: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SzkLLO2ULD5qhNIdTh0TTwA%3D%3D
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_5] Final summary link found. Clicking...
+16:44:52 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPLOH_100350_1 Popup] Processing final popup page: https://jharkhandtenders.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPLOH_100350_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZPLOH_100350_1_20250604_164453_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Jharkhand
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPLOH_100350_1] Successfully processed detail and popup. File: ROT_2025_ZPLOH_100350_1_20250604_164453_StageSummary.html
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPDH_99676_5 Popup] Processing final popup page: https://jharkhandtenders.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPDH_99676_5 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZPDH_99676_5_20250604_164453_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Jharkhand
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_5] Successfully processed detail and popup. File: ROT_2025_ZPDH_99676_5_20250604_164453_StageSummary.html
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_4] Navigated to detail page: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SLaLjPnZzOEK77bky6fY5Hg%3D%3D
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_4] Final summary link found. Clicking...
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_3] Navigated to detail page: https://jharkhandtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Skt00%2FPiaOI2rRFooXVd1vg%3D%3D
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPDH_99676_4 Popup] Processing final popup page: https://jharkhandtenders.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_3] Final summary link found. Clicking...
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPDH_99676_4 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZPDH_99676_4_20250604_164453_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Jharkhand
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_4] Successfully processed detail and popup. File: ROT_2025_ZPDH_99676_4_20250604_164453_StageSummary.html
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPDH_99676_3 Popup] Processing final popup page: https://jharkhandtenders.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [2025_ZPDH_99676_3 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZPDH_99676_3_20250604_164453_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Jharkhand
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) [ListPage1_2025_ZPDH_99676_3] Successfully processed detail and popup. File: ROT_2025_ZPDH_99676_3_20250604_164453_StageSummary.html
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) All detail tasks for list page 1 finished (Site: Jharkhand, Run: rot_worker_Jharkhand_20250604164441831689).
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) Reached max list pages (1) (Site: Jharkhand, Run: rot_worker_Jharkhand_20250604164441831689). Stopping.
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) Worker status updated to: FINISHED_MAX_PAGES_REACHED
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) ROT scrape processing finished for site Jharkhand, Run ID rot_worker_Jharkhand_20250604164441831689. Successfully processed HTML summaries for 10 tenders.
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) Final site-specific merged ROT data for Jharkhand is in: /root/TenFin/site_data/ROT/MergedSiteSpecific/Merged_ROT_Jharkhand_2025-06-04.txt
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) Playwright resources for ROT worker (Site: Jharkhand, Run: rot_worker_Jharkhand_20250604164441831689) closed.
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) Worker for Jharkhand (Run: rot_worker_Jharkhand_20250604164441831689) terminated with status: FINISHED_MAX_PAGES_REACHED
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) Attempting to trigger ROT consolidation at dashboard: http://localhost:8081/trigger-rot-consolidation-from-worker (Site: Jharkhand, Run: rot_worker_Jharkhand_20250604164441831689)
+16:44:53 [INFO] (ROTWorker-Jharkhand Run-831689) Successfully triggered ROT consolidation via dashboard: {"message":"ROT data consolidation triggered by worker completed. 30 blocks merged to Final_ROT_Tender_List_2025-06-04_164453.txt.","file":"/root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-04_164453.txt"} (Site: Jharkhand, Run: rot_worker_Jharkhand_20250604164441831689)

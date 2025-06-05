@@ -1,0 +1,340 @@
+15:35:08 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+15:35:08 [INFO] (Dashboard) Jinja2 configured.
+15:35:11 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+15:35:11 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+15:35:37 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html'
+15:35:37 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html
+15:44:07 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+15:44:07 [INFO] (Dashboard) Jinja2 configured.
+15:44:10 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+15:44:10 [ERROR] (Dashboard) Error during BeautifulSoup parsing of ROT summary HTML /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html: name 'log_prefix_popup' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 371, in parse_rot_summary_html
+    logger.debug(f"{log_prefix_popup} Extracted section: {header_text}")
+                    ^^^^^^^^^^^^^^^^
+NameError: name 'log_prefix_popup' is not defined
+15:44:10 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+15:47:09 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+15:47:09 [INFO] (Dashboard) Jinja2 configured.
+15:47:11 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+15:47:11 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+15:47:38 [INFO] (Dashboard) Filter 'Example' (ROT) using source 'Final_ROT_Tender_List_2025-06-04_131103.txt' completed. Output: /root/TenFin/site_data/ROT/FilteredResults/Example_Results/Filtered_Tenders.json
+15:47:41 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+15:47:41 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+15:47:53 [INFO] (Dashboard) Manual 'Run Scraper Now' (regular) triggered via dashboard.
+15:47:53 [INFO] (Dashboard) Executing command in background: /root/TenFin/venv/bin/python /root/TenFin/site_controller.py --type regular
+15:47:53 [INFO] (Dashboard) Launched site_controller.py (Type: regular) BG (PID: 19688). Check logs.
+15:48:00 [INFO] (Dashboard) Deleted ROT filter set: /root/TenFin/site_data/ROT/FilteredResults/Example_Results
+15:48:03 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html'
+15:48:03 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html
+15:49:18 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+15:49:18 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+15:50:36 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+15:50:36 [INFO] (Dashboard) Jinja2 configured.
+15:50:39 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+15:50:39 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+15:50:39 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+15:56:28 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+15:56:28 [INFO] (Dashboard) Jinja2 configured.
+15:56:30 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+15:56:30 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+15:56:30 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Title: 'eProcurement System Union Territory of Ladakh', Keys: 0, Sections: 7, Links: 15
+15:56:30 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+15:58:26 [INFO] (Dashboard) Filter 'Example' (REGULAR) using source 'Final_Tender_List_2025-06-04_154814.txt' completed. Output: /root/TenFin/site_data/REG/FilteredResults/Example_Results/Filtered_Tenders.json
+15:59:52 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+15:59:52 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+15:59:52 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Title: 'eProcurement System Union Territory of Ladakh', Keys: 0, Sections: 7, Links: 15
+15:59:52 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:13:07 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+16:13:07 [INFO] (Dashboard) Jinja2 configured.
+16:13:11 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:13:11 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:13:11 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Bids List
+16:13:11 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Technical Bid Opening Summary
+16:13:11 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Technical Evaluation Summary Details
+16:13:11 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Finance Bid Opening Summary
+16:13:11 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Financial Evaluation Bid List
+16:13:11 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Title: 'eProcurement System Union Territory of Ladakh', Keys: 0, Sections: 2
+16:13:11 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:31:22 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+16:31:22 [INFO] (Dashboard) Jinja2 configured.
+16:31:26 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:31:26 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:31:26 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Bids List
+16:31:26 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Technical Bid Opening Summary
+16:31:26 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Technical Evaluation Summary Details
+16:31:26 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Finance Bid Opening Summary
+16:31:26 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Financial Evaluation Bid List
+16:31:26 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Title: 'eProcurement System Union Territory of Ladakh', Keys: 0, Sections: 2
+16:31:26 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:31:48 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:31:48 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:31:48 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Bids List
+16:31:48 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Technical Bid Opening Summary
+16:31:48 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Technical Evaluation Summary Details
+16:31:48 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Finance Bid Opening Summary
+16:31:48 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Could not find specific table for section: Financial Evaluation Bid List
+16:31:48 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Title: 'eProcurement System Union Territory of Ladakh', Keys: 0, Sections: 2
+16:31:48 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:35:46 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html'
+16:35:46 [INFO] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Starting parsing of: ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html
+16:35:46 [WARNING] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Could not find specific table for section: Bids List
+16:35:46 [WARNING] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Could not find specific table for section: Technical Bid Opening Summary
+16:35:46 [WARNING] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Could not find specific table for section: Technical Evaluation Summary Details
+16:35:46 [WARNING] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Could not find specific table for section: Finance Bid Opening Summary
+16:35:46 [WARNING] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Could not find specific table for section: Financial Evaluation Bid List
+16:35:46 [INFO] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Parsing complete. Title: 'eProcurement System Union Territory of Ladakh', Keys: 0, Sections: 2
+16:35:46 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html
+16:35:46 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html'
+16:35:46 [INFO] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Starting parsing of: ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html
+16:35:46 [WARNING] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Could not find specific table for section: Bids List
+16:35:46 [WARNING] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Could not find specific table for section: Technical Bid Opening Summary
+16:35:46 [WARNING] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Could not find specific table for section: Technical Evaluation Summary Details
+16:35:46 [WARNING] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Could not find specific table for section: Finance Bid Opening Summary
+16:35:46 [WARNING] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Could not find specific table for section: Financial Evaluation Bid List
+16:35:46 [INFO] (Dashboard) [ROTParse-ROT_2025_RDD_16212_3_20250604_131102_StageSummary] Parsing complete. Title: 'eProcurement System Union Territory of Ladakh', Keys: 0, Sections: 2
+16:35:46 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html
+16:37:04 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+16:37:04 [INFO] (Dashboard) Jinja2 configured.
+16:37:07 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:37:07 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:37:07 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Title: 'eProcurement System Union Territory of Ladakh', Keys: 0, Sections: 6
+16:37:07 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:37:26 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:37:26 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:37:26 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Title: 'eProcurement System Union Territory of Ladakh', Keys: 0, Sections: 6
+16:37:26 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:37:32 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:37:32 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:37:32 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Title: 'eProcurement System Union Territory of Ladakh', Keys: 0, Sections: 6
+16:37:32 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:37:59 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Jharkhand', Status='5'
+16:37:59 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Jharkhand_20250604163759113793/status.txt
+16:37:59 [INFO] (Dashboard) Dashboard: Created run directory '/root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Jharkhand_20250604163759113793' and status file for Run ID: rot_worker_Jharkhand_20250604163759113793
+16:37:59 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /root/TenFin/venv/bin/python /root/TenFin/headless_rot_worker.py --site_key Jharkhand --run_id rot_worker_Jharkhand_20250604163759113793 --site_url https://jharkhandtenders.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://jharkhandtenders.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 1, "detail_concurrency": 2, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+16:37:59 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Jharkhand (PID: 22174). Run ID: rot_worker_Jharkhand_20250604163759113793
+16:38:10 [INFO] (Dashboard) Dashboard: Received CAPTCHA answer for run_id 'rot_worker_Jharkhand_20250604163759113793': 'ZcLbS2'
+16:38:10 [INFO] (Dashboard) Dashboard: Status updated to 'CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD' in /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Jharkhand_20250604163759113793/status.txt
+16:38:10 [INFO] (Dashboard) Dashboard: Wrote answer to '/root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Jharkhand_20250604163759113793/answer.txt' for run_id 'rot_worker_Jharkhand_20250604163759113793'.
+16:38:13 [INFO] (Dashboard) Dashboard: Received request from a worker to trigger ROT data consolidation.
+16:38:13 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+16:38:13 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/TenFin/site_data/ROT/MergedSiteSpecific
+16:38:13 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/TenFin/site_data/ROT/FinalGlobalMerged
+16:38:13 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 2 site-specific ROT files for consolidation.
+16:38:13 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Ladakh_2025-06-04.txt
+16:38:13 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Jharkhand_2025-06-04.txt
+16:38:13 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 20 unique ROT tender blocks to: /root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-04_163813.txt
+16:38:13 [INFO] (Dashboard) ROT data consolidation triggered by worker completed. 20 blocks merged to Final_ROT_Tender_List_2025-06-04_163813.txt.
+16:39:21 [INFO] (Dashboard) Bulk delete request for REGULAR sets: ['Example_Results']
+16:39:21 [INFO] (Dashboard) Deleted REGULAR set: /root/TenFin/site_data/REG/FilteredResults/Example_Results
+16:39:24 [INFO] (Dashboard) Deleted ROT filter set: /root/TenFin/site_data/ROT/FilteredResults/Ladakh_Results
+16:39:32 [INFO] (Dashboard) Filter 'Example' (ROT) using source 'Final_ROT_Tender_List_2025-06-04_163813.txt' completed. Output: /root/TenFin/site_data/ROT/FilteredResults/Example_Results/Filtered_Tenders.json
+16:44:13 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+16:44:13 [INFO] (Dashboard) Jinja2 configured.
+16:44:24 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_RDD_16114_3_20250604_131103_StageSummary.html'
+16:44:24 [INFO] (Dashboard) [ROTParse-ROT_2025_RDD_16114_3_20250604_131103_StageSummary] Starting parsing of: ROT_2025_RDD_16114_3_20250604_131103_StageSummary.html
+16:44:24 [INFO] (Dashboard) [ROTParse-ROT_2025_RDD_16114_3_20250604_131103_StageSummary] Parsing complete. Title: 'eProcurement System Union Territory of Ladakh', Keys: 0, Sections: 6
+16:44:24 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16114_3_20250604_131103_StageSummary.html
+16:44:41 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Jharkhand', Status='5'
+16:44:41 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Jharkhand_20250604164441831689/status.txt
+16:44:41 [INFO] (Dashboard) Dashboard: Created run directory '/root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Jharkhand_20250604164441831689' and status file for Run ID: rot_worker_Jharkhand_20250604164441831689
+16:44:41 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /root/TenFin/venv/bin/python /root/TenFin/headless_rot_worker.py --site_key Jharkhand --run_id rot_worker_Jharkhand_20250604164441831689 --site_url https://jharkhandtenders.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://jharkhandtenders.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 1, "detail_concurrency": 2, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+16:44:41 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Jharkhand (PID: 22647). Run ID: rot_worker_Jharkhand_20250604164441831689
+16:44:51 [INFO] (Dashboard) Dashboard: Received CAPTCHA answer for run_id 'rot_worker_Jharkhand_20250604164441831689': 'ZaPNnU'
+16:44:51 [INFO] (Dashboard) Dashboard: Status updated to 'CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD' in /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Jharkhand_20250604164441831689/status.txt
+16:44:51 [INFO] (Dashboard) Dashboard: Wrote answer to '/root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Jharkhand_20250604164441831689/answer.txt' for run_id 'rot_worker_Jharkhand_20250604164441831689'.
+16:44:53 [INFO] (Dashboard) Dashboard: Received request from a worker to trigger ROT data consolidation.
+16:44:53 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+16:44:53 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/TenFin/site_data/ROT/MergedSiteSpecific
+16:44:53 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/TenFin/site_data/ROT/FinalGlobalMerged
+16:44:53 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 2 site-specific ROT files for consolidation.
+16:44:53 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Ladakh_2025-06-04.txt
+16:44:53 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Jharkhand_2025-06-04.txt
+16:44:53 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 30 unique ROT tender blocks to: /root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-04_164453.txt
+16:44:53 [INFO] (Dashboard) ROT data consolidation triggered by worker completed. 30 blocks merged to Final_ROT_Tender_List_2025-06-04_164453.txt.
+16:45:40 [INFO] (Dashboard) Filter 'Example' (ROT) using source 'Final_ROT_Tender_List_2025-06-04_164453.txt' completed. Output: /root/TenFin/site_data/ROT/FilteredResults/Example_Results/Filtered_Tenders.json
+16:46:01 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Sikkim', Status='5'
+16:46:01 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Sikkim_20250604164601582706/status.txt
+16:46:01 [INFO] (Dashboard) Dashboard: Created run directory '/root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Sikkim_20250604164601582706' and status file for Run ID: rot_worker_Sikkim_20250604164601582706
+16:46:01 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /root/TenFin/venv/bin/python /root/TenFin/headless_rot_worker.py --site_key Sikkim --run_id rot_worker_Sikkim_20250604164601582706 --site_url https://sikkimtender.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://sikkimtender.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 1, "detail_concurrency": 2, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+16:46:01 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Sikkim (PID: 22912). Run ID: rot_worker_Sikkim_20250604164601582706
+16:46:13 [INFO] (Dashboard) Dashboard: Received CAPTCHA answer for run_id 'rot_worker_Sikkim_20250604164601582706': '1SyTdd'
+16:46:13 [INFO] (Dashboard) Dashboard: Status updated to 'CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD' in /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Sikkim_20250604164601582706/status.txt
+16:46:13 [INFO] (Dashboard) Dashboard: Wrote answer to '/root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Sikkim_20250604164601582706/answer.txt' for run_id 'rot_worker_Sikkim_20250604164601582706'.
+16:46:15 [INFO] (Dashboard) Dashboard: Received request from a worker to trigger ROT data consolidation.
+16:46:15 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+16:46:15 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/TenFin/site_data/ROT/MergedSiteSpecific
+16:46:15 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/TenFin/site_data/ROT/FinalGlobalMerged
+16:46:15 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 3 site-specific ROT files for consolidation.
+16:46:15 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Ladakh_2025-06-04.txt
+16:46:15 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Sikkim_2025-06-04.txt
+16:46:15 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Jharkhand_2025-06-04.txt
+16:46:15 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 40 unique ROT tender blocks to: /root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-04_164615.txt
+16:46:15 [INFO] (Dashboard) ROT data consolidation triggered by worker completed. 40 blocks merged to Final_ROT_Tender_List_2025-06-04_164615.txt.
+16:46:58 [INFO] (Dashboard) Filter 'uhhh' (ROT) using source 'Final_ROT_Tender_List_2025-06-04_164615.txt' completed. Output: /root/TenFin/site_data/ROT/FilteredResults/uhhh_Results/Filtered_Tenders.json
+16:47:04 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Sikkim', Filename='ROT_2024_BHD_745_1_20250604_164615_StageSummary.html'
+16:47:04 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Starting parsing of: ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:47:04 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Parsing complete. Title: 'eProcurement System Government of Sikkim', Keys: 0, Sections: 5
+16:47:04 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Sikkim/ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:48:03 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Sikkim', Filename='ROT_2024_BHD_745_1_20250604_164615_StageSummary.html'
+16:48:03 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Starting parsing of: ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:48:03 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Parsing complete. Title: 'eProcurement System Government of Sikkim', Keys: 0, Sections: 5
+16:48:03 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Sikkim/ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:48:26 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Sikkim', Filename='ROT_2024_BHD_745_1_20250604_164615_StageSummary.html'
+16:48:26 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Starting parsing of: ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:48:26 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Parsing complete. Title: 'eProcurement System Government of Sikkim', Keys: 0, Sections: 5
+16:48:26 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Sikkim/ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:48:44 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Sikkim', Filename='ROT_2024_BHD_745_1_20250604_164615_StageSummary.html'
+16:48:44 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Starting parsing of: ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:48:44 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Parsing complete. Title: 'eProcurement System Government of Sikkim', Keys: 0, Sections: 5
+16:48:44 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Sikkim/ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:49:45 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Sikkim', Filename='ROT_2024_BHD_745_1_20250604_164615_StageSummary.html'
+16:49:45 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Starting parsing of: ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:49:45 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Parsing complete. Title: 'eProcurement System Government of Sikkim', Keys: 0, Sections: 5
+16:49:45 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Sikkim/ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:49:52 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Sikkim', Filename='ROT_2024_BHD_745_1_20250604_164615_StageSummary.html'
+16:49:52 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Starting parsing of: ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:49:52 [INFO] (Dashboard) [ROTParse-ROT_2024_BHD_745_1_20250604_164615_StageSummary] Parsing complete. Title: 'eProcurement System Government of Sikkim', Keys: 0, Sections: 5
+16:49:52 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Sikkim/ROT_2024_BHD_745_1_20250604_164615_StageSummary.html
+16:56:03 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+16:56:03 [INFO] (Dashboard) Jinja2 configured.
+16:56:14 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:56:14 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:56:14 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Page Title: 'Ladakh', Sections: 5
+16:56:14 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:56:24 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:56:24 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:56:24 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Page Title: 'Ladakh', Sections: 5
+16:56:24 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:57:12 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:57:12 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:57:12 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Page Title: 'Ladakh', Sections: 5
+16:57:12 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:57:42 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:57:42 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:57:42 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Page Title: 'Ladakh', Sections: 5
+16:57:42 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:58:07 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:58:07 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:58:07 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Page Title: 'Ladakh', Sections: 5
+16:58:07 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:58:34 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+16:58:34 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:58:34 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Page Title: 'Ladakh', Sections: 5
+16:58:34 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+16:59:48 [WARNING] (Dashboard) Filter set directory not found for detail: /root/TenFin/site_data/REG/FilteredResults/Example_Results
+16:59:51 [WARNING] (Dashboard) Filter set directory not found: /root/TenFin/site_data/REG/FilteredResults/Example_Results
+17:05:32 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+17:05:32 [INFO] (Dashboard) Jinja2 configured.
+17:05:35 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+17:05:35 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+17:05:35 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Found header text 'Bids List' but could not isolate its associated table content.
+17:05:35 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Found header text 'Technical Bid Opening Summary' but could not isolate its associated table content.
+17:05:35 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Found header text 'Technical Evaluation Summary Details' but could not isolate its associated table content.
+17:05:35 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Found header text 'Finance Bid Opening Summary' but could not isolate its associated table content.
+17:05:35 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Found header text 'Financial Evaluation Bid List' but could not isolate its associated table content.
+17:05:35 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Found header text 'Finance Evaluation Summary Details' but could not isolate its associated table content.
+17:05:35 [WARNING] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] No specific sections or key details extracted. Falling back to full cleaned content.
+17:05:35 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Page Title: 'eProcurement System Union Territory of Ladakh', KeyDetails: 0, Sections: 1
+17:05:35 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+17:05:38 [WARNING] (Dashboard) Filter set directory not found for detail: /root/TenFin/site_data/REG/FilteredResults/Example_Results
+17:05:41 [WARNING] (Dashboard) Filter set directory not found: /root/TenFin/site_data/REG/FilteredResults/Example_Results
+17:06:58 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+17:06:58 [INFO] (Dashboard) Jinja2 configured.
+17:07:00 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+17:07:00 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+17:07:00 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Page Title: 'Ladakh', Sections: 5
+17:07:00 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+17:47:03 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+17:47:03 [INFO] (Dashboard) Jinja2 configured.
+18:05:19 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+18:05:19 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+18:05:19 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Page Title: 'Ladakh', Sections: 5
+18:05:19 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+22:43:49 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+22:43:49 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+22:43:50 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Page Title: 'Ladakh', Sections: 5
+22:43:50 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+10:21:09 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+10:21:09 [INFO] (Dashboard) Jinja2 configured.
+10:23:16 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_STE_15956_1_20250604_131102_StageSummary.html'
+10:23:16 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Starting parsing of: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+10:23:16 [INFO] (Dashboard) [ROTParse-ROT_2025_STE_15956_1_20250604_131102_StageSummary] Parsing complete. Page Title: 'Ladakh', Sections: 5
+10:23:16 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+10:23:36 [INFO] (Dashboard) Manual cleanup task triggered.
+10:23:36 [INFO] (Dashboard) Running cleanup for old filtered results (REGULAR and ROT)...
+10:23:36 [INFO] (Dashboard) Retention cleanup disabled in settings.
+10:23:36 [INFO] (Dashboard) Manual cleanup task finished.
+10:23:43 [INFO] (Dashboard) Bulk delete request for ROT sets: ['Example_Results', 'uhhh_Results']
+10:23:43 [INFO] (Dashboard) Deleted ROT set: /root/TenFin/site_data/ROT/FilteredResults/Example_Results
+10:23:43 [INFO] (Dashboard) Deleted ROT set: /root/TenFin/site_data/ROT/FilteredResults/uhhh_Results

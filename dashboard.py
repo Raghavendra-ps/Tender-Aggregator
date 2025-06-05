@@ -234,94 +234,144 @@ def load_settings() -> Dict:
     except json.JSONDecodeError as e: logger.error(f"Error decoding {SETTINGS_FILE}: {e}. Defaults returned."); return DEFAULT_SETTINGS.copy()
     except Exception as e: logger.error(f"Error reading {SETTINGS_FILE}: {e}. Defaults returned.", exc_info=True); return DEFAULT_SETTINGS.copy()
 
-def parse_rot_summary_html(html_file_path: Path) -> Dict[str, Any]:
-    """
-    Parses a downloaded ROT summary HTML file to extract key information
-    or sections. This will be highly dependent on the HTML structure.
-    Returns a dictionary of extracted data.
-    """
+# In dashboard.py
+# Ensure BeautifulSoup, re, Path, logger, urlparse, urljoin are available
+
+def parse_rot_summary_html(html_file_path: Path, site_key_original: str) -> Dict[str, Any]: # Added site_key_original
+    log_prefix_parser = f"[ROTParse-{html_file_path.stem}]"
+    logger.info(f"{log_prefix_parser} Starting parsing of: {html_file_path.name}")
     extracted_data = {
-        "title": "ROT Summary", # Default title
-        "raw_html_sections": [], # To store chunks of HTML
-        "key_details": {} # For any specific key-value pairs we can reliably extract
+        "original_filename": html_file_path.name,
+        "page_title": site_key_original, # MODIFIED: Default to original site_key
+        # "key_details": {}, # REMOVED: No longer extracting general info into key_details for display
+        "sections": [],
+        "error_message": None
     }
+
     if not html_file_path.is_file():
-        logger.error(f"ROT HTML summary file not found for parsing: {html_file_path}")
-        extracted_data["error"] = "Summary HTML file not found."
+        extracted_data["error_message"] = "Summary HTML file not found on server."
+        logger.error(f"{log_prefix_parser} {extracted_data['error_message']}")
         return extracted_data
 
     try:
         with open(html_file_path, 'r', encoding='utf-8', errors='replace') as f:
             content = f.read()
-        
         soup = BeautifulSoup(content, 'html.parser')
 
-        # Attempt to find a main title if available
-        title_tag = soup.find('title')
-        if title_tag and title_tag.string:
-            extracted_data["title"] = title_tag.string.strip()
-        else: # Fallback: look for a prominent h1 or h2
-            h1 = soup.find('h1')
-            if h1: extracted_data["title"] = h1.get_text(strip=True)
-            else:
-                h2 = soup.find('h2')
-                if h2: extracted_data["title"] = h2.get_text(strip=True)
+        # Page Title: Use the passed site_key_original as the primary title.
+        # The full title from the HTML (like "eProcurement System...") can be a sub-heading if needed.
+        # For now, we set page_title directly to site_key_original.
 
+        main_content_wrapper = soup.find('form', id='bidSummaryForm')
+        if not main_content_wrapper: main_content_wrapper = soup.find('div', class_='border')
+        if not main_content_wrapper: main_content_wrapper = soup # Fallback
 
-        # --- THIS IS THE PART THAT NEEDS CUSTOMIZATION BASED ON YOUR HTMLs ---
-        # Example: Try to find all tables within the body, or specific divs
-        # This is a very generic example; you'll need to inspect your downloaded HTMLs
-        # to find reliable selectors for sections.
+        # REMOVED: Logic for extracting the first info table into "key_details"
+        # That information is already on the view_rot.html list page.
 
-        body_content = soup.body
-        if body_content:
-            # Example 1: Extract all top-level tables as sections
-            # for table in body_content.find_all('table', recursive=False): # Only top-level tables
-            #     extracted_data["raw_html_sections"].append(str(table))
-
-            # Example 2: More likely, the content is within a main container div or table
-            main_container = body_content.find('div', id='printDisplayArea') # Common ID in NIC popups
-            if not main_container:
-                 # Common class on NIC eprocure pages for the content area of popups
-                main_container = body_content.find('div', class_='border')
-            if not main_container:
-                main_container = body_content # Fallback to whole body if no specific container found
-
-            if main_container:
-                # Attempt to extract some key-value pairs if possible (VERY specific to HTML)
-                # This is highly speculative and needs to be based on actual HTML.
-                # For instance, if there's a table with "Tender ID:" and then the value:
-                tender_id_label = main_container.find(lambda tag: tag.name in ['td', 'th', 'span', 'strong'] and "Tender ID" in tag.get_text())
-                if tender_id_label:
-                    value_cell = tender_id_label.find_next_sibling(['td', 'span'])
-                    if value_cell:
-                        extracted_data["key_details"]["Tender ID"] = value_cell.get_text(strip=True)
-                
-                org_name_label = main_container.find(lambda tag: tag.name in ['td', 'th', 'span', 'strong'] and ("Organisation Name" in tag.get_text() or "Organization Name" in tag.get_text()) )
-                if org_name_label:
-                    value_cell = org_name_label.find_next_sibling(['td', 'span'])
-                    if value_cell:
-                         extracted_data["key_details"]["Organisation Name"] = value_cell.get_text(strip=True)
-
-                # For now, let's just take the whole main_container HTML as one section
-                # You might want to split it into multiple sections if there are clear H2/H3 headers
-                # or distinct tables for different parts of the summary.
-                # The _remove_html_protection might have already been applied by the worker.
-                # If not, you might apply it here before str(main_container)
-                extracted_data["raw_html_sections"].append(str(main_container))
-
-
-            if not extracted_data["raw_html_sections"] and not extracted_data["key_details"]:
-                 extracted_data["raw_html_sections"].append(str(body_content)) # Fallback to whole body if nothing specific found
+        # --- Extract Sections based on <td class="section_head"> or other cues ---
+        section_headers_to_find = [
+            "Bids List",
+            "Technical Bid Opening Summary",
+            "Technical Evaluation Summary Details",
+            "Finance Bid Opening Summary",
+            "Financial Evaluation Bid List",
+            "Finance Evaluation Summary Details"
+        ]
         
-        if not extracted_data["raw_html_sections"] and not extracted_data["key_details"]:
-             extracted_data["error"] = "Could not parse meaningful content from the summary HTML."
+        if main_content_wrapper:
+            all_tables_in_content = main_content_wrapper.find_all('table', recursive=True)
+            processed_tables_for_sections = set()
 
+            # First, try to find tables by their explicit section head class
+            section_head_tds = main_content_wrapper.find_all('td', class_='section_head')
+            
+            for header_td in section_head_tds:
+                section_title = header_td.get_text(strip=True)
+                
+                # Find the table this header_td belongs to or the one immediately following its row.
+                current_search_element = header_td.find_parent('tr')
+                if not current_search_element: current_search_element = header_td # If header is not in a TR
+                
+                associated_table = None
+                # Try to find the table as a sibling of the row containing the header, or parent table
+                limit_scan = 0
+                temp_element = current_search_element
+                while temp_element and limit_scan < 5:
+                    candidate_table = temp_element.find_next_sibling('table', class_=re.compile(r'(table_list|list_table|tablebg)', re.I))
+                    if candidate_table:
+                        associated_table = candidate_table
+                        break
+                    # Check if current_search_element's parent IS the table we want (header is first row)
+                    if temp_element.parent and temp_element.parent.name == 'table' and \
+                       'table_list' in temp_element.parent.get('class',[]):
+                        associated_table = temp_element.parent
+                        break
+                    temp_element = temp_element.parent
+                    limit_scan +=1
+                
+                if not associated_table and header_td: # Last resort if structure is flatter
+                    associated_table = header_td.find_next('table', class_=re.compile(r'(table_list|list_table|tablebg)', re.I))
+
+
+                if associated_table and associated_table not in processed_tables_for_sections:
+                    # MODIFICATION: Remove duplicate header row if present
+                    first_tr = associated_table.find('tr')
+                    if first_tr:
+                        first_td_or_th = first_tr.find(['td', 'th'])
+                        if first_td_or_th and section_title.lower() in first_td_or_th.get_text(strip=True).lower() and \
+                           ('section_head' in first_td_or_th.get('class', []) or len(first_tr.find_all(['td','th'])) == 1) :
+                            logger.debug(f"{log_prefix_parser} Decomposing duplicate header row for section: '{section_title}'")
+                            first_tr.decompose() # Remove the row containing the duplicate header
+
+                    # MODIFICATION: Remove "Document : None" rows
+                    rows_to_remove = []
+                    for row in associated_table.find_all('tr'):
+                        cells = row.find_all('td')
+                        if len(cells) >= 2: # Assuming Key-Value structure
+                            key_text = cells[0].get_text(strip=True)
+                            value_text = cells[1].get_text(strip=True)
+                            if "document" in key_text.lower() and value_text.lower() == "none":
+                                rows_to_remove.append(row)
+                                logger.debug(f"{log_prefix_parser} Marking 'Document : None' row for removal in section '{section_title}'.")
+                    for row_to_remove in rows_to_remove:
+                        row_to_remove.decompose()
+                    
+                    # Basic cleanup
+                    for s_tag in associated_table.find_all(['script', 'style', 'link']): s_tag.decompose()
+                    for a_tag in associated_table.find_all('a'): a_tag.replace_with(a_tag.get_text(strip=True))
+
+
+                    extracted_data["sections"].append({
+                        "title": section_title,
+                        "html_content": str(associated_table)
+                    })
+                    processed_tables_for_sections.add(associated_table)
+                    logger.debug(f"{log_prefix_parser} Extracted section by table header: '{section_title}'")
+                elif not associated_table:
+                     logger.warning(f"{log_prefix_parser} Could not find associated table for section header: '{section_title}'")
+
+
+        # Fallback if no specific sections were found
+        if not extracted_data["sections"]:
+            logger.warning(f"{log_prefix_parser} No specific sections extracted. Falling back to full content.")
+            body_content = soup.body if soup.body else soup
+            if body_content:
+                 for s_tag in body_content.find_all(['script', 'style', 'link']): s_tag.decompose()
+                 for a_tag in body_content.find_all('a'): a_tag.replace_with(a_tag.get_text(strip=True))
+                 extracted_data["sections"].append({
+                        "title": "Full Cleaned Summary Content", # Changed title
+                        "html_content": str(body_content)
+                    })
+            else:
+                extracted_data["error_message"] = "Could not extract any content sections from the summary HTML."
+                logger.warning(f"{log_prefix_parser} No sections or body content found to extract.")
 
     except Exception as e:
-        logger.error(f"Error parsing ROT summary HTML {html_file_path}: {e}", exc_info=True)
-        extracted_data["error"] = f"An error occurred while parsing the summary: {e}"
+        logger.error(f"{log_prefix_parser} Error during BeautifulSoup parsing of {html_file_path.name}: {e}", exc_info=True)
+        extracted_data["error_message"] = f"An error occurred while parsing the summary content: {str(e)}"
     
+    logger.info(f"{log_prefix_parser} Parsing complete. Page Title: '{extracted_data['page_title']}', Sections: {len(extracted_data['sections'])}")
     return extracted_data
 
 def save_settings(settings_data: Dict) -> bool:
@@ -2219,69 +2269,53 @@ async def initiate_rot_worker_endpoint(request: Request, site_key: str, tender_s
 @app.get("/rot-summary-detail/{site_key}/{filename}", name="view_rot_summary_detail", response_class=HTMLResponse)
 async def view_rot_summary_detail_route(request: Request, site_key: str, filename: str):
     if not templates:
-        logger.error("Templates not initialized in view_rot_summary_detail_route.")
         raise HTTPException(status_code=503, detail="Template engine error: Templates not initialized.")
 
     logger.info(f"Request for parsed ROT summary: SiteKey='{site_key}', Filename='{filename}'")
-
-    # Use the global helper function
-    cleaned_site_key = _clean_path_component(site_key)
+    cleaned_site_key = _clean_path_component(site_key) # For path construction
     cleaned_filename = _clean_path_component(filename)
 
-    if not cleaned_site_key: # _clean_path_component returns "" for invalid/unsafe input
-        logger.warning(f"Invalid site_key after cleaning: original='{site_key}'")
-        raise HTTPException(status_code=400, detail="Invalid site key format provided.")
-    if not cleaned_filename: # _clean_path_component returns "" for invalid/unsafe input
-        logger.warning(f"Invalid filename after cleaning: original='{filename}'")
-        raise HTTPException(status_code=400, detail="Invalid filename format provided.")
+    if not cleaned_site_key: raise HTTPException(status_code=400, detail="Invalid site key format provided.")
+    if not cleaned_filename: raise HTTPException(status_code=400, detail="Invalid filename format provided.")
 
-    # Construct the path to the downloaded HTML file
     html_file_path = ROT_DETAIL_HTMLS_DIR / cleaned_site_key / cleaned_filename
 
     if not html_file_path.is_file():
         logger.warning(f"Requested ROT summary HTML not found at: {html_file_path}")
         return templates.TemplateResponse("error.html", {
             "request": request,
-            "error": f"The ROT summary file '{cleaned_filename}' for site '{cleaned_site_key}' was not found. It might not have been downloaded or was moved/deleted."
+            "error": f"The ROT summary file '{cleaned_filename}' for site '{cleaned_site_key}' was not found."
         }, status_code=404)
 
-    # Parse the HTML file using your parser function
-    # Ensure parse_rot_summary_html is defined in dashboard.py or imported
     try:
-        parsed_content = parse_rot_summary_html(html_file_path)
-    except Exception as e_parse: # Catch any error during parsing
+        # Pass the original site_key (with spaces if any) for potential use in title setting
+        parsed_content = parse_rot_summary_html(html_file_path, site_key_original=site_key)
+    except Exception as e_parse:
         logger.error(f"Error during parse_rot_summary_html for {html_file_path}: {e_parse}", exc_info=True)
         return templates.TemplateResponse("error.html", {
             "request": request,
-            "error": f"An error occurred while trying to parse the content of '{cleaned_filename}'. Please check server logs."
+            "error": f"Error parsing '{cleaned_filename}'. Check server logs."
         }, status_code=500)
 
-
-    # Basic information to pass to the template for context
-    # You might want to enhance this by looking up more details from a master JSON if needed,
-    # but for now, we derive what we can from the filename and parsed content.
     tender_id_from_filename = "UnknownTenderID"
-    # Attempt to extract Tender ID from filename like "ROT_SITE_TENDERID_TIMESTAMP_StageSummary.html"
     fn_match = re.match(r"ROT_.*?_(.+?)_\d{8}_\d{6}_StageSummary\.html", cleaned_filename)
-    if fn_match:
-        tender_id_from_filename = fn_match.group(1)
+    if fn_match: tender_id_from_filename = fn_match.group(1)
     
+    # tender_list_info is now less critical as key_details are not separately displayed as primary
     tender_list_info = {
-        "rot_tender_id": parsed_content.get("key_details", {}).get("Tender ID", tender_id_from_filename),
-        "rot_title_ref": parsed_content.get("title", "Summary Details") # Title from HTML <title> or a default
+        "rot_tender_id": tender_id_from_filename, # Primarily use ID from filename
+        "rot_title_ref": parsed_content.get("page_title", "Summary Details")
     }
 
     logger.info(f"Rendering parsed ROT summary for: {html_file_path}")
     return templates.TemplateResponse(
-        "rot_summary_detail.html", # The new template to display parsed content
+        "rot_summary_detail.html",
         {
             "request": request,
-            "site_key": cleaned_site_key,
-            "filename": cleaned_filename, # The original (cleaned) filename for display
-            "parsed_data": parsed_content, # The dictionary from your parser
-            "tender_list_info": tender_list_info, # Contextual info
-            # "original_subdir": subdir, # You might pass this if coming from a specific filter view
-                                         # but this route is generic, so subdir isn't directly known here.
+            "site_key": site_key, # Pass original site key for display
+            "filename": cleaned_filename,
+            "parsed_data": parsed_content,
+            "tender_list_info": tender_list_info,
         }
     )
 

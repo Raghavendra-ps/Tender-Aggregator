@@ -1,0 +1,22 @@
+13:08:29 [INFO] (ROTWorker-Delhi Run-229225) Worker logging initialized. Log file: /root/TenFin/LOGS/rot_worker/Delhi/worker_rot_worker_Delhi_20250604130829229225_2025-06-04.log
+13:08:29 [INFO] (ROTWorker-Delhi Run-229225) --- Starting Headless ROT Worker for Site: Delhi, Run ID: rot_worker_Delhi_20250604130829229225 ---
+13:08:29 [INFO] (ROTWorker-Delhi Run-229225) Target Search URL: https://govtprocurement.delhi.gov.in/nicgep/app?page=WebTenderStatusLists&service=page
+13:08:29 [INFO] (ROTWorker-Delhi Run-229225) Target Base URL for links: https://govtprocurement.delhi.gov.in/nicgep/app/
+13:08:29 [INFO] (ROTWorker-Delhi Run-229225) Tender Status to Select: 5
+13:08:29 [INFO] (ROTWorker-Delhi Run-229225) Worker Settings: {'max_list_pages': 1, 'detail_concurrency': 2, 'pagination_wait': 7000, 'page_load_timeout': 75000, 'detail_page_timeout': 60000, 'popup_page_timeout': 60000, 'element_timeout': 20000, 'post_submit_timeout': 30000}
+13:08:29 [INFO] (ROTWorker-Delhi Run-229225) Worker status updated to: WORKER_STARTED
+13:08:29 [INFO] (ROTWorker-Delhi Run-229225) Worker status updated to: FETCHING_CAPTCHA
+13:08:29 [INFO] (ROTWorker-Delhi Run-229225) Navigating to: https://govtprocurement.delhi.gov.in/nicgep/app?page=WebTenderStatusLists&service=page
+13:08:29 [INFO] (ROTWorker-Delhi Run-229225) Selecting tender status '5'.
+13:08:32 [INFO] (ROTWorker-Delhi Run-229225) CAPTCHA base64 data saved to: /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Delhi_20250604130829229225/captcha.b64
+13:08:32 [INFO] (ROTWorker-Delhi Run-229225) Worker status updated to: WAITING_CAPTCHA
+13:08:32 [INFO] (ROTWorker-Delhi Run-229225) Waiting for CAPTCHA solution in /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Delhi_20250604130829229225/answer.txt (max 300s)...
+13:08:39 [INFO] (ROTWorker-Delhi Run-229225) CAPTCHA solution received.
+13:08:39 [INFO] (ROTWorker-Delhi Run-229225) Worker status updated to: PROCESSING_WITH_CAPTCHA
+13:08:39 [INFO] (ROTWorker-Delhi Run-229225) CAPTCHA solution received (Site: Delhi, Run: rot_worker_Delhi_20250604130829229225). Submitting form...
+13:08:39 [INFO] (ROTWorker-Delhi Run-229225) Waiting for initial results ('#tabList') OR error (Site: Delhi, Run: rot_worker_Delhi_20250604130829229225).
+13:09:09 [ERROR] (ROTWorker-Delhi Run-229225) Timeout: Neither results table nor error message appeared after CAPTCHA submission (Site: Delhi, Run: rot_worker_Delhi_20250604130829229225).
+13:09:09 [INFO] (ROTWorker-Delhi Run-229225) Worker status updated to: ERROR_CAPTCHA_SUBMIT_TIMEOUT
+13:09:09 [INFO] (ROTWorker-Delhi Run-229225) Playwright resources for ROT worker (Site: Delhi, Run: rot_worker_Delhi_20250604130829229225) closed.
+13:09:09 [INFO] (ROTWorker-Delhi Run-229225) Worker for Delhi (Run: rot_worker_Delhi_20250604130829229225) terminated with status: ERROR_CAPTCHA_SUBMIT_TIMEOUT
+13:09:09 [INFO] (ROTWorker-Delhi Run-229225) Skipping ROT consolidation trigger for site Delhi, Run ID rot_worker_Delhi_20250604130829229225, as the run was not marked successful (Final Status: ERROR_CAPTCHA_SUBMIT_TIMEOUT).

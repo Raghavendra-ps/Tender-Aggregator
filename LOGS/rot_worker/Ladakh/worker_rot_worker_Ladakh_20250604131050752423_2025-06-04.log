@@ -1,0 +1,103 @@
+13:10:50 [INFO] (ROTWorker-Ladakh Run-752423) Worker logging initialized. Log file: /root/TenFin/LOGS/rot_worker/Ladakh/worker_rot_worker_Ladakh_20250604131050752423_2025-06-04.log
+13:10:50 [INFO] (ROTWorker-Ladakh Run-752423) --- Starting Headless ROT Worker for Site: Ladakh, Run ID: rot_worker_Ladakh_20250604131050752423 ---
+13:10:50 [INFO] (ROTWorker-Ladakh Run-752423) Target Search URL: https://tenders.ladakh.gov.in/nicgep/app?page=WebTenderStatusLists&service=page
+13:10:50 [INFO] (ROTWorker-Ladakh Run-752423) Target Base URL for links: https://tenders.ladakh.gov.in/nicgep/app/
+13:10:50 [INFO] (ROTWorker-Ladakh Run-752423) Tender Status to Select: 5
+13:10:50 [INFO] (ROTWorker-Ladakh Run-752423) Worker Settings: {'max_list_pages': 1, 'detail_concurrency': 2, 'pagination_wait': 7000, 'page_load_timeout': 75000, 'detail_page_timeout': 60000, 'popup_page_timeout': 60000, 'element_timeout': 20000, 'post_submit_timeout': 30000}
+13:10:50 [INFO] (ROTWorker-Ladakh Run-752423) Worker status updated to: WORKER_STARTED
+13:10:51 [INFO] (ROTWorker-Ladakh Run-752423) Worker status updated to: FETCHING_CAPTCHA
+13:10:51 [INFO] (ROTWorker-Ladakh Run-752423) Navigating to: https://tenders.ladakh.gov.in/nicgep/app?page=WebTenderStatusLists&service=page
+13:10:51 [INFO] (ROTWorker-Ladakh Run-752423) Selecting tender status '5'.
+13:10:54 [INFO] (ROTWorker-Ladakh Run-752423) CAPTCHA base64 data saved to: /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Ladakh_20250604131050752423/captcha.b64
+13:10:54 [INFO] (ROTWorker-Ladakh Run-752423) Worker status updated to: WAITING_CAPTCHA
+13:10:54 [INFO] (ROTWorker-Ladakh Run-752423) Waiting for CAPTCHA solution in /root/TenFin/site_data/TEMP/WorkerRuns/rot_worker_Ladakh_20250604131050752423/answer.txt (max 300s)...
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) CAPTCHA solution received.
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) Worker status updated to: PROCESSING_WITH_CAPTCHA
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) CAPTCHA solution received (Site: Ladakh, Run: rot_worker_Ladakh_20250604131050752423). Submitting form...
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) Waiting for initial results ('#tabList') OR error (Site: Ladakh, Run: rot_worker_Ladakh_20250604131050752423).
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) ✅ Initial results table detected after CAPTCHA (Site: Ladakh, Run: rot_worker_Ladakh_20250604131050752423). Proceeding with scrape.
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) Worker status updated to: SCRAPING_RESULTS
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) --- Processing List Page: 1 (Site: Ladakh, Run: rot_worker_Ladakh_20250604131050752423) ---
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) Worker status updated to: PROCESSING_LIST_PAGE_1
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1] Extracting table data...
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1] Extracted 10 items.
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) Gathering 10 detail tasks for list page 1 (Site: Ladakh, Run: rot_worker_Ladakh_20250604131050752423)...
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_STE_15956_1] Starting detail processing for URL: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=STajqhIbWgeYpB23wkkJ8dg%3D%3D
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16212_3] Starting detail processing for URL: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SqUm06s7fDdZUWg0G%2BU4Kuw%3D%3D
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16155_1] Starting detail processing for URL: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sq7F88UdFzGcTmEbJ%2BzVRVg%3D%3D
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_6] Starting detail processing for URL: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SJ64sPkwVe0XzL8WSMZrzRQ%3D%3D
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_4] Starting detail processing for URL: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2FVrNX5zNHdh6hLubJqtN1Q%3D%3D
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_2] Starting detail processing for URL: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SdcR8MOJ0YDuUm4JHMwfbtg%3D%3D
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_1] Starting detail processing for URL: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwFL1HIR1%2FvUiBnHF70pdIA%3D%3D
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16123_2] Starting detail processing for URL: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SWDCdQVgL%2BqphoDiFehq2LA%3D%3D
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16114_4] Starting detail processing for URL: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SuwEgpdUCOqPQDVhstqGfhw%3D%3D
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16114_3] Starting detail processing for URL: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ScYP0%2BMoi9b%2BcC4e0Kmgi1w%3D%3D
+13:11:01 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_STE_15956_1] Navigated to detail page: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=STajqhIbWgeYpB23wkkJ8dg%3D%3D
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16212_3] Navigated to detail page: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SqUm06s7fDdZUWg0G%2BU4Kuw%3D%3D
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16212_3] Final summary link found. Clicking...
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_STE_15956_1] Final summary link found. Clicking...
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_STE_15956_1 Popup] Processing final popup page: https://tenders.ladakh.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) Applied HTML protection removal.
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_STE_15956_1 Popup] ✅ SAVED HTML: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Ladakh
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_STE_15956_1] Successfully processed detail and popup. File: ROT_2025_STE_15956_1_20250604_131102_StageSummary.html
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16212_3 Popup] Processing final popup page: https://tenders.ladakh.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) Applied HTML protection removal.
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16212_3 Popup] ✅ SAVED HTML: ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Ladakh
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16212_3] Successfully processed detail and popup. File: ROT_2025_RDD_16212_3_20250604_131102_StageSummary.html
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16155_1] Navigated to detail page: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sq7F88UdFzGcTmEbJ%2BzVRVg%3D%3D
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16155_1] Final summary link found. Clicking...
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_6] Navigated to detail page: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SJ64sPkwVe0XzL8WSMZrzRQ%3D%3D
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_6] Final summary link found. Clicking...
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16155_1 Popup] Processing final popup page: https://tenders.ladakh.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) Applied HTML protection removal.
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16155_1 Popup] ✅ SAVED HTML: ROT_2025_RDD_16155_1_20250604_131102_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Ladakh
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16155_1] Successfully processed detail and popup. File: ROT_2025_RDD_16155_1_20250604_131102_StageSummary.html
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16134_6 Popup] Processing final popup page: https://tenders.ladakh.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) Applied HTML protection removal.
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16134_6 Popup] ✅ SAVED HTML: ROT_2025_RDD_16134_6_20250604_131102_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Ladakh
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_6] Successfully processed detail and popup. File: ROT_2025_RDD_16134_6_20250604_131102_StageSummary.html
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_4] Navigated to detail page: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2FVrNX5zNHdh6hLubJqtN1Q%3D%3D
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_4] Final summary link found. Clicking...
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_2] Navigated to detail page: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SdcR8MOJ0YDuUm4JHMwfbtg%3D%3D
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_2] Final summary link found. Clicking...
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16134_4 Popup] Processing final popup page: https://tenders.ladakh.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) Applied HTML protection removal.
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16134_4 Popup] ✅ SAVED HTML: ROT_2025_RDD_16134_4_20250604_131102_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Ladakh
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_4] Successfully processed detail and popup. File: ROT_2025_RDD_16134_4_20250604_131102_StageSummary.html
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16134_2 Popup] Processing final popup page: https://tenders.ladakh.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) Applied HTML protection removal.
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16134_2 Popup] ✅ SAVED HTML: ROT_2025_RDD_16134_2_20250604_131102_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Ladakh
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_2] Successfully processed detail and popup. File: ROT_2025_RDD_16134_2_20250604_131102_StageSummary.html
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_1] Navigated to detail page: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwFL1HIR1%2FvUiBnHF70pdIA%3D%3D
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_1] Final summary link found. Clicking...
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16123_2] Navigated to detail page: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SWDCdQVgL%2BqphoDiFehq2LA%3D%3D
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16123_2] Final summary link found. Clicking...
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16134_1 Popup] Processing final popup page: https://tenders.ladakh.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) Applied HTML protection removal.
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16134_1 Popup] ✅ SAVED HTML: ROT_2025_RDD_16134_1_20250604_131102_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Ladakh
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16134_1] Successfully processed detail and popup. File: ROT_2025_RDD_16134_1_20250604_131102_StageSummary.html
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16123_2 Popup] Processing final popup page: https://tenders.ladakh.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) Applied HTML protection removal.
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16123_2 Popup] ✅ SAVED HTML: ROT_2025_RDD_16123_2_20250604_131102_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Ladakh
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16123_2] Successfully processed detail and popup. File: ROT_2025_RDD_16123_2_20250604_131102_StageSummary.html
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16114_4] Navigated to detail page: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SuwEgpdUCOqPQDVhstqGfhw%3D%3D
+13:11:02 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16114_4] Final summary link found. Clicking...
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16114_3] Navigated to detail page: https://tenders.ladakh.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ScYP0%2BMoi9b%2BcC4e0Kmgi1w%3D%3D
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16114_3] Final summary link found. Clicking...
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16114_4 Popup] Processing final popup page: https://tenders.ladakh.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) Applied HTML protection removal.
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16114_4 Popup] ✅ SAVED HTML: ROT_2025_RDD_16114_4_20250604_131103_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Ladakh
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16114_4] Successfully processed detail and popup. File: ROT_2025_RDD_16114_4_20250604_131103_StageSummary.html
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16114_3 Popup] Processing final popup page: https://tenders.ladakh.gov.in/nicgep/app?component=%24DirectLink_0&page=WebTenderStatus&service=direct&session=T
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) Applied HTML protection removal.
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) [2025_RDD_16114_3 Popup] ✅ SAVED HTML: ROT_2025_RDD_16114_3_20250604_131103_StageSummary.html to /root/TenFin/site_data/ROT/DetailHtmls/Ladakh
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) [ListPage1_2025_RDD_16114_3] Successfully processed detail and popup. File: ROT_2025_RDD_16114_3_20250604_131103_StageSummary.html
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) All detail tasks for list page 1 finished (Site: Ladakh, Run: rot_worker_Ladakh_20250604131050752423).
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) Reached max list pages (1) (Site: Ladakh, Run: rot_worker_Ladakh_20250604131050752423). Stopping.
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) Worker status updated to: FINISHED_MAX_PAGES_REACHED
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) ROT scrape processing finished for site Ladakh, Run ID rot_worker_Ladakh_20250604131050752423. Successfully processed HTML summaries for 10 tenders.
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) Final site-specific merged ROT data for Ladakh is in: /root/TenFin/site_data/ROT/MergedSiteSpecific/Merged_ROT_Ladakh_2025-06-04.txt
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) Playwright resources for ROT worker (Site: Ladakh, Run: rot_worker_Ladakh_20250604131050752423) closed.
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) Worker for Ladakh (Run: rot_worker_Ladakh_20250604131050752423) terminated with status: FINISHED_MAX_PAGES_REACHED
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) Attempting to trigger ROT consolidation at dashboard: http://localhost:8081/trigger-rot-consolidation-from-worker (Site: Ladakh, Run: rot_worker_Ladakh_20250604131050752423)
+13:11:03 [INFO] (ROTWorker-Ladakh Run-752423) Successfully triggered ROT consolidation via dashboard: {"message":"ROT data consolidation triggered by worker completed. 10 blocks merged to Final_ROT_Tender_List_2025-06-04_131103.txt.","file":"/root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-04_131103.txt"} (Site: Ladakh, Run: rot_worker_Ladakh_20250604131050752423)
