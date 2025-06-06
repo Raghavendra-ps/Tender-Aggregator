@@ -42,3 +42,207 @@ NameError: name 'format_text_neatly' is not defined
 12:25:08 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_275570_1_20250605_112933_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
 12:25:08 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_275570_1_20250605_112933_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
 12:25:08 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_275570_1_20250605_112933_StageSummary.html
+12:30:01 [WARNING] (Dashboard) Log file not found: /root/TenFin/LOGS/site_controller.log
+12:30:01 [WARNING] (Dashboard) Log file not found: /root/TenFin/LOGS/site_controller.log
+12:30:05 [WARNING] (Dashboard) Log file not found: /root/TenFin/LOGS/site_controller.log
+12:30:05 [WARNING] (Dashboard) Log file not found: /root/TenFin/LOGS/site_controller.log
+12:30:08 [WARNING] (Dashboard) Log file not found: /root/TenFin/LOGS/site_controller.log
+12:30:08 [WARNING] (Dashboard) Log file not found: /root/TenFin/LOGS/site_controller.log
+12:30:11 [WARNING] (Dashboard) Log file not found: /root/TenFin/LOGS/site_controller.log
+12:30:11 [WARNING] (Dashboard) Log file not found: /root/TenFin/LOGS/site_controller.log
+12:32:10 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_277523_1_20250605_112933_StageSummary.html'
+12:32:10 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_277523_1_20250605_112933_StageSummary] Starting parsing of: ROT_2025_UDJK_277523_1_20250605_112933_StageSummary.html
+12:32:10 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_277523_1_20250605_112933_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+12:32:10 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_277523_1_20250605_112933_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+12:32:10 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_277523_1_20250605_112933_StageSummary.html
+12:32:10 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_277523_1_20250605_112933_StageSummary.html'
+12:32:10 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_277523_1_20250605_112933_StageSummary] Starting parsing of: ROT_2025_UDJK_277523_1_20250605_112933_StageSummary.html
+12:32:10 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_277523_1_20250605_112933_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+12:32:10 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_277523_1_20250605_112933_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+12:32:10 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_277523_1_20250605_112933_StageSummary.html
+12:37:02 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html'
+12:37:02 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Starting parsing of: ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+12:37:02 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+12:37:02 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+12:37:02 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+12:37:02 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html'
+12:37:02 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Starting parsing of: ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+12:37:02 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+12:37:02 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_274567_1_20250605_112934_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+12:37:02 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274567_1_20250605_112934_StageSummary.html
+13:29:09 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_275570_1_20250605_112933_StageSummary.html'
+13:29:09 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_275570_1_20250605_112933_StageSummary] Starting parsing of: ROT_2025_UDJK_275570_1_20250605_112933_StageSummary.html
+13:29:09 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_275570_1_20250605_112933_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+13:29:09 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_275570_1_20250605_112933_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+13:29:09 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_275570_1_20250605_112933_StageSummary.html
+13:29:09 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Jammu Kashmir', Filename='ROT_2025_UDJK_275570_1_20250605_112933_StageSummary.html'
+13:29:09 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_275570_1_20250605_112933_StageSummary] Starting parsing of: ROT_2025_UDJK_275570_1_20250605_112933_StageSummary.html
+13:29:09 [WARNING] (Dashboard) [ROTParse-ROT_2025_UDJK_275570_1_20250605_112933_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+13:29:09 [INFO] (Dashboard) [ROTParse-ROT_2025_UDJK_275570_1_20250605_112933_StageSummary] Parsing complete. Page Title: 'Jammu Kashmir', Sections: 5, MainInfo Keys: 4
+13:29:09 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/TenFin/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_275570_1_20250605_112933_StageSummary.html
+13:30:04 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+13:30:04 [ERROR] (Dashboard) AI Data Preparation Error: _globally_merge_rot_site_files() missing 2 required positional arguments: 'input_site_specific_merged_dir' and 'output_final_global_dir'
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 2087, in rot_prepare_analysis_data_route
+    merged_count, latest_final_rot_file_path = await _globally_merge_rot_site_files() # This now uses new paths internally
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: _globally_merge_rot_site_files() missing 2 required positional arguments: 'input_site_specific_merged_dir' and 'output_final_global_dir'
+13:30:11 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+13:30:11 [ERROR] (Dashboard) AI Data Preparation Error: _globally_merge_rot_site_files() missing 2 required positional arguments: 'input_site_specific_merged_dir' and 'output_final_global_dir'
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 2087, in rot_prepare_analysis_data_route
+    merged_count, latest_final_rot_file_path = await _globally_merge_rot_site_files() # This now uses new paths internally
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: _globally_merge_rot_site_files() missing 2 required positional arguments: 'input_site_specific_merged_dir' and 'output_final_global_dir'
+15:40:25 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+15:40:25 [ERROR] (Dashboard) AI Data Preparation Error: _globally_merge_rot_site_files() missing 2 required positional arguments: 'input_site_specific_merged_dir' and 'output_final_global_dir'
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 2087, in rot_prepare_analysis_data_route
+    merged_count, latest_final_rot_file_path = await _globally_merge_rot_site_files() # This now uses new paths internally
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: _globally_merge_rot_site_files() missing 2 required positional arguments: 'input_site_specific_merged_dir' and 'output_final_global_dir'
+15:45:02 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 189, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+15:45:02 [INFO] (Dashboard) Jinja2 configured.
+15:45:07 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+15:45:07 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+15:45:07 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/TenFin/site_data/ROT/MergedSiteSpecific
+15:45:07 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:45:07 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 1 site-specific ROT files for consolidation.
+15:45:07 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Jammu_Kashmir_2025-06-05.txt
+15:45:07 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 10 unique ROT tender blocks to: /root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-05_154507.txt
+15:45:07 [INFO] (Dashboard) AI Data Preparation: Using globally merged source file: Final_ROT_Tender_List_2025-06-05_154507.txt from /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:45:07 [INFO] (Dashboard) AI Data Preparation: Collated 10 ROT items from 'Final_ROT_Tender_List_2025-06-05_154507.txt' into /root/TenFin/site_data/ROT/AI_Analysis/ai_analysis_data.json
+15:45:13 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+15:45:13 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+15:45:13 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/TenFin/site_data/ROT/MergedSiteSpecific
+15:45:13 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:45:13 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 1 site-specific ROT files for consolidation.
+15:45:13 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Jammu_Kashmir_2025-06-05.txt
+15:45:13 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 10 unique ROT tender blocks to: /root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-05_154513.txt
+15:45:13 [INFO] (Dashboard) AI Data Preparation: Using globally merged source file: Final_ROT_Tender_List_2025-06-05_154513.txt from /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:45:13 [INFO] (Dashboard) AI Data Preparation: Collated 10 ROT items from 'Final_ROT_Tender_List_2025-06-05_154513.txt' into /root/TenFin/site_data/ROT/AI_Analysis/ai_analysis_data.json
+15:45:19 [INFO] (Dashboard) AI Data Request: Serving collated ROT data.
+15:45:19 [INFO] (Dashboard) AI Proxy: Chat request. Model: gemma3:12b
+15:45:19 [ERROR] (Dashboard) AI Proxy: HTTP Error from OpenWebUI: 401 - Detail: Your session has expired or the token is invalid. Please sign in again.
+15:46:21 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+15:46:21 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+15:46:21 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/TenFin/site_data/ROT/MergedSiteSpecific
+15:46:21 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:46:21 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 1 site-specific ROT files for consolidation.
+15:46:21 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Jammu_Kashmir_2025-06-05.txt
+15:46:21 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 10 unique ROT tender blocks to: /root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-05_154621.txt
+15:46:21 [INFO] (Dashboard) AI Data Preparation: Using globally merged source file: Final_ROT_Tender_List_2025-06-05_154621.txt from /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:46:21 [INFO] (Dashboard) AI Data Preparation: Collated 10 ROT items from 'Final_ROT_Tender_List_2025-06-05_154621.txt' into /root/TenFin/site_data/ROT/AI_Analysis/ai_analysis_data.json
+15:46:29 [INFO] (Dashboard) AI Data Request: Serving collated ROT data.
+15:46:29 [INFO] (Dashboard) AI Proxy: Chat request. Model: gemma3:12b
+15:46:29 [ERROR] (Dashboard) AI Proxy: HTTP Error from OpenWebUI: 401 - Detail: Your session has expired or the token is invalid. Please sign in again.
+15:48:40 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 196, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+15:48:40 [INFO] (Dashboard) Jinja2 configured.
+15:48:43 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+15:48:43 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+15:48:43 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/TenFin/site_data/ROT/MergedSiteSpecific
+15:48:43 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:48:43 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 1 site-specific ROT files for consolidation.
+15:48:43 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Jammu_Kashmir_2025-06-05.txt
+15:48:43 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 10 unique ROT tender blocks to: /root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-05_154843.txt
+15:48:43 [INFO] (Dashboard) AI Data Preparation: Using globally merged source file: Final_ROT_Tender_List_2025-06-05_154843.txt from /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:48:43 [INFO] (Dashboard) AI Data Preparation: Collated 10 ROT items from 'Final_ROT_Tender_List_2025-06-05_154843.txt' into /root/TenFin/site_data/ROT/AI_Analysis/ai_analysis_data.json
+15:48:54 [INFO] (Dashboard) AI Data Request: Serving collated ROT data.
+15:48:54 [INFO] (Dashboard) AI Proxy: Chat request. Model: gemma3:12b
+15:48:54 [ERROR] (Dashboard) AI Proxy: HTTP Error from OpenWebUI: 401 - Detail: Your session has expired or the token is invalid. Please sign in again.
+15:51:52 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+15:51:52 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+15:51:52 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/TenFin/site_data/ROT/MergedSiteSpecific
+15:51:52 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:51:52 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 1 site-specific ROT files for consolidation.
+15:51:52 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Jammu_Kashmir_2025-06-05.txt
+15:51:52 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 10 unique ROT tender blocks to: /root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-05_155152.txt
+15:51:52 [INFO] (Dashboard) AI Data Preparation: Using globally merged source file: Final_ROT_Tender_List_2025-06-05_155152.txt from /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:51:52 [INFO] (Dashboard) AI Data Preparation: Collated 10 ROT items from 'Final_ROT_Tender_List_2025-06-05_155152.txt' into /root/TenFin/site_data/ROT/AI_Analysis/ai_analysis_data.json
+15:51:54 [INFO] (Dashboard) AI Data Request: Serving collated ROT data.
+15:51:54 [INFO] (Dashboard) AI Proxy: Chat request. Model: gemma3:12b
+15:51:54 [ERROR] (Dashboard) AI Proxy: HTTP Error from OpenWebUI: 401 - Detail: Your session has expired or the token is invalid. Please sign in again.
+15:52:00 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 196, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+15:52:00 [INFO] (Dashboard) Jinja2 configured.
+15:52:02 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+15:52:02 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+15:52:02 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/TenFin/site_data/ROT/MergedSiteSpecific
+15:52:02 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:52:02 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 1 site-specific ROT files for consolidation.
+15:52:02 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Jammu_Kashmir_2025-06-05.txt
+15:52:02 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 10 unique ROT tender blocks to: /root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-05_155202.txt
+15:52:02 [INFO] (Dashboard) AI Data Preparation: Using globally merged source file: Final_ROT_Tender_List_2025-06-05_155202.txt from /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:52:02 [INFO] (Dashboard) AI Data Preparation: Collated 10 ROT items from 'Final_ROT_Tender_List_2025-06-05_155202.txt' into /root/TenFin/site_data/ROT/AI_Analysis/ai_analysis_data.json
+15:52:04 [INFO] (Dashboard) AI Data Request: Serving collated ROT data.
+15:52:04 [INFO] (Dashboard) AI Proxy: Chat request. Model: gemma3:12b
+15:55:04 [ERROR] (Dashboard) AI Proxy: Request Error to OpenWebUI: 
+15:56:19 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 196, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+15:56:19 [INFO] (Dashboard) Jinja2 configured.
+15:56:25 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+15:56:25 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+15:56:25 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/TenFin/site_data/ROT/MergedSiteSpecific
+15:56:25 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:56:25 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 1 site-specific ROT files for consolidation.
+15:56:25 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Jammu_Kashmir_2025-06-05.txt
+15:56:25 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 10 unique ROT tender blocks to: /root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-05_155625.txt
+15:56:25 [INFO] (Dashboard) AI Data Preparation: Using globally merged source file: Final_ROT_Tender_List_2025-06-05_155625.txt from /root/TenFin/site_data/ROT/FinalGlobalMerged
+15:56:25 [INFO] (Dashboard) AI Data Preparation: Collated 10 ROT items from 'Final_ROT_Tender_List_2025-06-05_155625.txt' into /root/TenFin/site_data/ROT/AI_Analysis/ai_analysis_data.json
+15:56:29 [INFO] (Dashboard) AI Data Request: Serving collated ROT data.
+15:56:29 [INFO] (Dashboard) AI Proxy: Chat request. Model: gemma3:12b
+15:58:55 [INFO] (Dashboard) AI Proxy: Received response from OpenWebUI (Status: 200).
+16:58:14 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 196, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+16:58:14 [INFO] (Dashboard) Jinja2 configured.
+17:23:50 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 196, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+17:23:50 [INFO] (Dashboard) Jinja2 configured.
+17:39:19 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+17:39:19 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+17:39:19 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/TenFin/site_data/ROT/MergedSiteSpecific
+17:39:19 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/TenFin/site_data/ROT/FinalGlobalMerged
+17:39:19 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 1 site-specific ROT files for consolidation.
+17:39:19 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Jammu_Kashmir_2025-06-05.txt
+17:39:19 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 10 unique ROT tender blocks to: /root/TenFin/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-05_173919.txt
+17:39:19 [INFO] (Dashboard) AI Data Preparation: Using globally merged source file: Final_ROT_Tender_List_2025-06-05_173919.txt from /root/TenFin/site_data/ROT/FinalGlobalMerged
+17:39:19 [INFO] (Dashboard) AI Data Preparation: Collated 10 ROT items from 'Final_ROT_Tender_List_2025-06-05_173919.txt' into /root/TenFin/site_data/ROT/AI_Analysis/ai_analysis_data.json
+17:39:21 [INFO] (Dashboard) AI Data Request: Serving collated ROT data.
+17:39:21 [INFO] (Dashboard) AI Proxy: Chat request. Model: gemma3:12b
+17:41:55 [INFO] (Dashboard) AI Proxy: Received response from OpenWebUI (Status: 200).
+17:46:03 [INFO] (Dashboard) AI Data Request: Serving collated ROT data.
+17:46:03 [INFO] (Dashboard) AI Proxy: Chat request. Model: gemma3:12b
+17:48:20 [INFO] (Dashboard) AI Proxy: Received response from OpenWebUI (Status: 200).
+11:38:28 [ERROR] (Dashboard) Jinja2 init failed with new templates path: name 'format_text_neatly' is not defined
+Traceback (most recent call last):
+  File "/root/TenFin/dashboard.py", line 196, in <module>
+    jinja_env.filters['neat_format'] = format_text_neatly # Assuming format_text_neatly is defined
+                                       ^^^^^^^^^^^^^^^^^^
+NameError: name 'format_text_neatly' is not defined
+11:38:28 [INFO] (Dashboard) Jinja2 configured.

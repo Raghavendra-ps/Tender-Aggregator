@@ -21,6 +21,13 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from starlette.datastructures import URL
 from pydantic import BaseModel
 
+
+
+
+OPENWEBUI_API_KEY_CONFIG = os.environ.get("OPENWEBUI_API_KEY", "sk-your-key-here") # Your existing line
+print(f"DASHBOARD STARTUP: Using OpenWebUI API Key: '{OPENWEBUI_API_KEY_CONFIG}'") # Temporary debug line
+
+
 # Playwright import is NOT needed here by dashboard for the new worker flow
 # import base64 # NOT needed here by dashboard for the new worker flow
 import httpx # For AI proxy
@@ -122,7 +129,7 @@ FILTERED_TENDERS_FILENAME = "Filtered_Tenders.json"
 AI_ANALYSIS_DATA_FILE = ROT_AI_ANALYSIS_DIR / "ai_analysis_data.json"
 
 OPENWEBUI_API_BASE_URL_CONFIG = os.environ.get("OPENWEBUI_API_BASE_URL", "http://192.168.1.104:8080")
-OPENWEBUI_API_KEY_CONFIG = os.environ.get("OPENWEBUI_API_KEY", "sk-your-key-here")
+OPENWEBUI_API_KEY_CONFIG = os.environ.get("OPENWEBUI_API_KEY", "sk-69930a705a334f66b3169980850e197e")
 DEFAULT_OLLAMA_MODEL_ID_CONFIG = os.environ.get("DEFAULT_OLLAMA_MODEL_ID", "gemma3:12b")
 
 # --- Create Directories ---
@@ -2084,7 +2091,12 @@ async def rot_prepare_analysis_data_route():
         logger.error("AI Data Preparation: Filter engine components are not available.")
         raise HTTPException(status_code=500, detail="Core data processing components (filter_engine) are missing.")
     try:
-        merged_count, latest_final_rot_file_path = await _globally_merge_rot_site_files() # This now uses new paths internally
+        # CORRECTED CALL: Pass the required arguments
+        merged_count, latest_final_rot_file_path = await _globally_merge_rot_site_files(
+            input_site_specific_merged_dir=ROT_MERGED_SITE_SPECIFIC_DIR,
+            output_final_global_dir=ROT_FINAL_GLOBAL_MERGED_DIR,
+            data_type="rot"
+        )
 
         if latest_final_rot_file_path is None or not latest_final_rot_file_path.is_file():
             message_detail = "No site-specific ROT data found to merge globally."
@@ -2093,7 +2105,6 @@ async def rot_prepare_analysis_data_route():
             else:
                  message_detail = "Global ROT data merge failed or produced no output file."
                  logger.error(f"AI Data Preparation: {message_detail}")
-            # MODIFIED: Update error message to reflect new input directory for _globally_merge_rot_site_files
             raise HTTPException(status_code=404, detail=f"{message_detail} Ensure 'Merged_ROT_SITEKEY_DATE.txt' files exist in '{ROT_MERGED_SITE_SPECIFIC_DIR}'.")
 
         logger.info(f"AI Data Preparation: Using globally merged source file: {latest_final_rot_file_path.name} from {latest_final_rot_file_path.parent}")
@@ -2103,40 +2114,30 @@ async def rot_prepare_analysis_data_route():
             for block_text in tagged_blocks:
                 try:
                     tender_info = extract_tender_info_from_tagged_block(block_text)
-                    if tender_info.get("data_type") == "rot": # Ensure only ROT data is collated
+                    if tender_info.get("data_type") == "rot": 
                         collated_rot_tenders.append(tender_info)
                 except Exception as e_parse_block:
                     logger.error(f"AI Data Preparation: Error processing a tender block: {e_parse_block}", exc_info=False)
         
-        # AI_ANALYSIS_DATA_FILE should now be using ROT_AI_ANALYSIS_DIR from the top config
-        AI_ANALYSIS_DATA_FILE.parent.mkdir(parents=True, exist_ok=True) # Ensure parent dir exists
+        AI_ANALYSIS_DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
         with open(AI_ANALYSIS_DATA_FILE, "w", encoding="utf-8") as f:
             json.dump(collated_rot_tenders, f, indent=2, ensure_ascii=False, default=str)
         
         logger.info(f"AI Data Preparation: Collated {len(collated_rot_tenders)} ROT items from '{latest_final_rot_file_path.name}' into {AI_ANALYSIS_DATA_FILE}")
         
-        # Make file_path relative to PROJECT_ROOT for the response
-        # SCRIPT_DIR should have been replaced by PROJECT_ROOT in the global constants section
-        relative_ai_file_path = str(AI_ANALYSIS_DATA_FILE.relative_to(PROJECT_ROOT)) # MODIFIED
+        relative_ai_file_path = str(AI_ANALYSIS_DATA_FILE.relative_to(PROJECT_ROOT))
 
         return JSONResponse(
             content={
                 "message": f"ROT data collated from '{latest_final_rot_file_path.name}'. {len(collated_rot_tenders)} items processed.",
-                "file_path": relative_ai_file_path # MODIFIED
+                "file_path": relative_ai_file_path
             }, status_code=status.HTTP_200_OK )
     except HTTPException as http_exc:
-        # Log the specific HTTP exception details if needed, then re-raise
         logger.error(f"AI Data Preparation HTTP Error from within route: {http_exc.status_code} - {http_exc.detail}")
         raise http_exc
     except Exception as e:
         logger.error(f"AI Data Preparation Error: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Failed to prepare ROT data: {type(e).__name__}")
-
-# AI_ANALYSIS_DATA_FILE should be defined globally as:
-# AI_ANALYSIS_DATA_FILE = ROT_AI_ANALYSIS_DIR / "ai_analysis_data.json"
-# And ROT_AI_ANALYSIS_DIR should be:
-# ROT_AI_ANALYSIS_DIR = SITE_DATA_ROOT / "ROT" / "AI_Analysis"
-# (These definitions were part of the Step 3 CONFIGURATION block update)
 
 @app.get("/get-collated-rot-data-json", name="get_collated_rot_data_json")
 async def get_collated_rot_data_json_route():
@@ -2170,7 +2171,7 @@ async def proxy_ai_chat_route(ai_request: AIPromptRequest):
         headers['Authorization'] = f'Bearer {OPENWEBUI_API_KEY_CONFIG}'
     logger.debug(f"AI Proxy: Sending to OpenWebUI. Endpoint: {openwebui_chat_endpoint}, Model: {target_model}")
     try:
-        async with httpx.AsyncClient(timeout=180.0) as client:
+        async with httpx.AsyncClient(timeout=1800.0) as client:
             response = await client.post(openwebui_chat_endpoint, json=payload, headers=headers)
             response.raise_for_status() 
             ai_response_data = response.json()
