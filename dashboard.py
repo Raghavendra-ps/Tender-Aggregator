@@ -20,17 +20,10 @@ from openpyxl import Workbook
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from starlette.datastructures import URL
 from pydantic import BaseModel
-
-
-
+import httpx
 
 OPENWEBUI_API_KEY_CONFIG = os.environ.get("OPENWEBUI_API_KEY", "sk-your-key-here") # Your existing line
 print(f"DASHBOARD STARTUP: Using OpenWebUI API Key: '{OPENWEBUI_API_KEY_CONFIG}'") # Temporary debug line
-
-
-# Playwright import is NOT needed here by dashboard for the new worker flow
-# import base64 # NOT needed here by dashboard for the new worker flow
-import httpx # For AI proxy
 
 # --- Filter Engine Imports (Robust) ---
 try:
@@ -38,12 +31,6 @@ try:
     filter_engine_available = True
 except ImportError: 
     print("ERROR: Could not import 'filter_engine' components. Filter and AI data prep functionality may be affected.")
-    # INDIAN_STATES = ["Error: State List Unavailable"] # This fallback is no longer needed here as we are not importing it.
-    # If any part of dashboard.py *was* trying to use this imported INDIAN_STATES directly,
-    # that part will now fail with a NameError, and you'd need to fix it
-    # by using available_sites_main or loading from settings.json instead.
-    # However, it's unlikely dashboard.py was using it for much, given the settings.json source.
-
     # Keep the dummy function definitions for filter_engine components if import fails:
     filter_engine_available = False
     def _log_filter_engine_error(message):
@@ -97,6 +84,9 @@ except NameError:
 
 SITE_DATA_ROOT = PROJECT_ROOT / "site_data"
 
+# Dashboard Port Setting
+
+DASHBOARD_PORT_FALLBACK:8082
 # ROT Specific Paths
 ROT_DATA_DIR = SITE_DATA_ROOT / "ROT"
 ROT_MERGED_SITE_SPECIFIC_DIR = ROT_DATA_DIR / "MergedSiteSpecific"
@@ -149,7 +139,6 @@ TEMP_DEBUG_SCREENSHOTS_DIR_DASHBOARD.mkdir(parents=True, exist_ok=True)
 LOGS_BASE_DIR.mkdir(parents=True, exist_ok=True)
 (LOGS_BASE_DIR / "regular_scraper").mkdir(parents=True, exist_ok=True)
 (LOGS_BASE_DIR / "rot_worker").mkdir(parents=True, exist_ok=True)
-# --- END Create Directories ---
 
 # --- Logging Setup for Dashboard ---
 log_formatter = logging.Formatter("%(asctime)s [%(levelname)s] (Dashboard) %(message)s", datefmt="%H:%M:%S")
@@ -165,7 +154,6 @@ if not logger.hasHandlers():
     logger.addHandler(log_handler_stream)
     logger.addHandler(log_file_handler_dashboard)
     logger.propagate = False
-# --- END Logging Setup for Dashboard ---
 
 # --- DEFAULT_SETTINGS dictionary definition (ensure it's the one with post_submit) ---
 DEFAULT_SETTINGS = {
@@ -183,9 +171,14 @@ DEFAULT_SETTINGS = {
   "site_configurations": {}
 }
 
-# These might not be needed globally anymore if worker_settings are constructed specifically
-# PAGE_LOAD_TIMEOUT_DEFAULT = DEFAULT_SETTINGS["global_scraper_settings"]["timeouts"]["page_load"]
-# ELEMENT_WAIT_TIMEOUT_DEFAULT = DEFAULT_SETTINGS["global_scraper_settings"]["rot_timeouts"].get("element_wait", 20000)
+def format_text_neatly(text: Optional[str], min_len_for_titlecase=8) -> str:
+    if not text or not isinstance(text, str): return ""
+    cleaned_text = re.sub(r'[^\w\s.,()/\-]', ' ', text); cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
+    if not cleaned_text: return ""
+    if len(cleaned_text) >= min_len_for_titlecase and cleaned_text.isupper() and ' ' not in cleaned_text and cleaned_text.isalnum(): return cleaned_text
+    if ' ' in cleaned_text and cleaned_text.isupper(): return cleaned_text.title()
+    formatted_text = cleaned_text[0].upper() + cleaned_text[1:].lower(); formatted_text = re.sub(r'(?<=[.!?]\s)([a-z])', lambda m: m.group(1).upper(), formatted_text)
+    return formatted_text
 
 # --- App and Jinja Setup ---
 app = FastAPI(title="TenFin Tender Dashboard")
@@ -241,7 +234,6 @@ def load_settings() -> Dict:
     except json.JSONDecodeError as e: logger.error(f"Error decoding {SETTINGS_FILE}: {e}. Defaults returned."); return DEFAULT_SETTINGS.copy()
     except Exception as e: logger.error(f"Error reading {SETTINGS_FILE}: {e}. Defaults returned.", exc_info=True); return DEFAULT_SETTINGS.copy()
 
-# Replace the existing parse_rot_summary_html function in dashboard.py with this:
 def parse_rot_summary_html(html_file_path: Path, site_key_original: str) -> Dict[str, Any]:
     log_prefix_parser = f"[ROTParse-{html_file_path.stem}]"
     logger.info(f"{log_prefix_parser} Starting parsing of: {html_file_path.name}")
@@ -503,15 +495,6 @@ def save_settings(settings_data: Dict) -> bool:
         with open(SETTINGS_FILE, 'w', encoding='utf-8') as f: json.dump(settings_data, f, indent=2, ensure_ascii=False)
         logger.info(f"Settings saved successfully to {SETTINGS_FILE}"); return True
     except Exception as e: logger.error(f"Error saving settings to {SETTINGS_FILE}: {e}"); return False
-
-def format_text_neatly(text: Optional[str], min_len_for_titlecase=8) -> str:
-    if not text or not isinstance(text, str): return ""
-    cleaned_text = re.sub(r'[^\w\s.,()/\-]', ' ', text); cleaned_text = re.sub(r'\s+', ' ', cleaned_text).strip()
-    if not cleaned_text: return ""
-    if len(cleaned_text) >= min_len_for_titlecase and cleaned_text.isupper() and ' ' not in cleaned_text and cleaned_text.isalnum(): return cleaned_text
-    if ' ' in cleaned_text and cleaned_text.isupper(): return cleaned_text.title()
-    formatted_text = cleaned_text[0].upper() + cleaned_text[1:].lower(); formatted_text = re.sub(r'(?<=[.!?]\s)([a-z])', lambda m: m.group(1).upper(), formatted_text)
-    return formatted_text
 
 app = FastAPI(title="TenFin Tender Dashboard")
 templates: Optional[Jinja2Templates] = None
@@ -1129,8 +1112,6 @@ async def download_tender_excel_typed(data_type: str, subdir: str):
     excel_buffer = io.BytesIO(); wb.save(excel_buffer); excel_buffer.seek(0); 
     safe_subdir_name = re.sub(r'[^\w\-]+', '_', subdir); filename_prefix = "ROT_" if data_type == "rot" else ""; filename = f"{filename_prefix}{safe_subdir_name}_Tenders_{datetime.datetime.now().strftime('%Y%m%d_%H%M')}.xlsx"
     return StreamingResponse(excel_buffer, media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", headers={"Content-Disposition": f"attachment; filename=\"{filename}\""})
-
-# In dashboard.py
 
 @app.post("/bulk-delete-typed", name="bulk_delete_tender_sets_typed")
 async def bulk_delete_tender_sets_typed(request: Request, data_type: str = Form(...), selected_subdirs: List[str] = Form(...)):
@@ -2345,8 +2326,6 @@ async def submit_captcha_answer_route(run_id: str, captcha_text: str = Form(...)
             content={"detail": "Failed to submit CAPTCHA answer to worker."}
         )
 
-# In dashboard.py
-
 @app.post("/rot/initiate-rot-worker/{site_key}", name="initiate_rot_worker")
 async def initiate_rot_worker_endpoint(request: Request, site_key: str, tender_status_value: str = Form(...)):
     logger.info(f"Dashboard: Initiating ROT Worker for Site='{site_key}', Status='{tender_status_value}'")
@@ -2355,73 +2334,97 @@ async def initiate_rot_worker_endpoint(request: Request, site_key: str, tender_s
         raise HTTPException(status_code=400, detail="Site key and tender status value are required.")
 
     worker_script_name = "headless_rot_worker.py"
+    # PROJECT_ROOT should be defined globally in dashboard.py
     worker_script_path = PROJECT_ROOT / worker_script_name
 
     if not worker_script_path.is_file():
         logger.error(f"Dashboard: ROT Worker script '{worker_script_name}' not found at {worker_script_path}.")
         raise HTTPException(status_code=500, detail=f"ROT worker script '{worker_script_name}' component is missing on the server.")
 
-    # --- Create run_id and run_dir FIRST ---
-    # This is so we can write error status to it if subsequent steps fail
+    # Ensure _clean_path_component is defined and callable, or use a simpler re.sub
+    # For now, assuming a basic cleaning for run_id part derived from site_key
     cleaned_site_key_for_id = re.sub(r'[^\w\-]+', '_', site_key)
     run_id = f"rot_worker_{cleaned_site_key_for_id}_{datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')}"
+    # TEMP_WORKER_RUNS_DIR should be defined globally
     run_dir = TEMP_WORKER_RUNS_DIR / run_id
-    run_dir.mkdir(parents=True, exist_ok=True) # Create dir before trying to write status
+    run_dir.mkdir(parents=True, exist_ok=True)
 
     try:
-        python_exec = sys.executable
+        # python_exec should be the Python interpreter running the current dashboard process
+        python_exec = sys.executable 
 
-        # --- Get site-specific URLs ---
-        rot_site_urls = get_rot_site_config(site_key) # Must be defined and working
+        # get_rot_site_config should be defined and working
+        rot_site_urls = get_rot_site_config(site_key) 
         if not rot_site_urls or not rot_site_urls.get("main_search_url") or not rot_site_urls.get("base_url"):
             err_msg_no_url = f"Configuration error: Could not get URLs for ROT site '{site_key}'."
             logger.error(f"Dashboard: {err_msg_no_url}")
-            write_dashboard_status(run_dir, f"ERROR_CONFIG_NO_URLS_FOR_SITE_{site_key}") # Write error to run_dir
+            if callable(write_dashboard_status): write_dashboard_status(run_dir, f"ERROR_CONFIG_NO_URLS_FOR_SITE_{site_key}")
             raise HTTPException(status_code=500, detail=err_msg_no_url)
 
-        # --- Prepare worker settings JSON ---
-        current_settings = load_settings() # Must be defined and working
+        # load_settings and DEFAULT_SETTINGS should be defined
+        current_settings = load_settings() 
         gs_global_settings = current_settings.get("global_scraper_settings", {})
-        gs_rot_settings = gs_global_settings.get("rot_scrape_limits", {})
-        gs_rot_concurrency = gs_global_settings.get("rot_concurrency", {})
-        gs_rot_timeouts = gs_global_settings.get("rot_timeouts", {})
+        
+        # Provide fallbacks more carefully, ensuring keys exist in DEFAULT_SETTINGS
+        default_rot_limits = DEFAULT_SETTINGS.get("global_scraper_settings", {}).get("rot_scrape_limits", {})
+        default_rot_concurrency = DEFAULT_SETTINGS.get("global_scraper_settings", {}).get("rot_concurrency", {})
+        default_rot_timeouts = DEFAULT_SETTINGS.get("global_scraper_settings", {}).get("rot_timeouts", {})
 
-        # Fallback to DEFAULT_SETTINGS (defined globally in dashboard.py)
-        default_rot_limits = DEFAULT_SETTINGS["global_scraper_settings"]["rot_scrape_limits"]
-        default_rot_concurrency = DEFAULT_SETTINGS["global_scraper_settings"]["rot_concurrency"]
-        default_rot_timeouts = DEFAULT_SETTINGS["global_scraper_settings"]["rot_timeouts"]
+        gs_rot_limits = gs_global_settings.get("rot_scrape_limits", default_rot_limits)
+        gs_rot_concurrency = gs_global_settings.get("rot_concurrency", default_rot_concurrency)
+        gs_rot_timeouts = gs_global_settings.get("rot_timeouts", default_rot_timeouts)
 
         worker_run_params = {
-            "max_list_pages": gs_rot_settings.get("max_list_pages", default_rot_limits["max_list_pages"]),
-            "detail_concurrency": gs_rot_concurrency.get("detail_processing", default_rot_concurrency["detail_processing"]),
-            "pagination_wait": gs_rot_timeouts.get("pagination_load_wait", default_rot_timeouts["pagination_load_wait"]),
-            "page_load_timeout": gs_rot_timeouts.get("page_load", default_rot_timeouts["page_load"]),
-            "detail_page_timeout": gs_rot_timeouts.get("detail_page", default_rot_timeouts["detail_page"]),
-            "popup_page_timeout": gs_rot_timeouts.get("detail_page", default_rot_timeouts["detail_page"]), # Using detail_page as fallback
-            "element_timeout": gs_rot_timeouts.get("element_wait", default_rot_timeouts["element_wait"]),
-            "post_submit_timeout": gs_rot_timeouts.get("post_submit", default_rot_timeouts["post_submit"])
+            "max_list_pages": gs_rot_limits.get("max_list_pages", default_rot_limits.get("max_list_pages", 50)),
+            "detail_concurrency": gs_rot_concurrency.get("detail_processing", default_rot_concurrency.get("detail_processing", 2)),
+            "pagination_wait": gs_rot_timeouts.get("pagination_load_wait", default_rot_timeouts.get("pagination_load_wait", 7000)),
+            "page_load_timeout": gs_rot_timeouts.get("page_load", default_rot_timeouts.get("page_load", 75000)),
+            "detail_page_timeout": gs_rot_timeouts.get("detail_page", default_rot_timeouts.get("detail_page", 60000)),
+            "popup_page_timeout": gs_rot_timeouts.get("popup_page_timeout", default_rot_timeouts.get("popup_page_timeout", default_rot_timeouts.get("detail_page", 60000))),
+            "element_timeout": gs_rot_timeouts.get("element_wait", default_rot_timeouts.get("element_wait", 20000)),
+            "post_submit_timeout": gs_rot_timeouts.get("post_submit", default_rot_timeouts.get("post_submit", 30000))
         }
         worker_settings_json_str = json.dumps(worker_run_params)
-        # --- End Prepare worker settings ---
 
-        # Initialize status file (now that we have run_id and run_dir)
-        write_dashboard_status(run_dir, "INITIATED_BY_DASHBOARD") # Initial status
+        if callable(write_dashboard_status): write_dashboard_status(run_dir, "INITIATED_BY_DASHBOARD")
         logger.info(f"Dashboard: Created run directory '{run_dir}' and status file for Run ID: {run_id}")
 
         command = [
             python_exec, str(worker_script_path),
             "--site_key", site_key,
             "--run_id", run_id,
-            "--site_url", rot_site_urls["main_search_url"],   # CORRECTED
-            "--base_url", rot_site_urls["base_url"],         # CORRECTED
+            "--site_url", rot_site_urls["main_search_url"],
+            "--base_url", rot_site_urls["base_url"],
             "--tender_status", tender_status_value,
-            "--settings_json", worker_settings_json_str    # CORRECTED
+            "--settings_json", worker_settings_json_str
         ]
 
+        # --- Prepare environment for the worker subprocess ---
+        worker_env = os.environ.copy() 
+
+        dashboard_service_host_and_port = os.environ.get("TENFIN_DASHBOARD_HOST_PORT")
+        if not dashboard_service_host_and_port:
+            # This fallback means the environment variable wasn't set for the dashboard service.
+            # This indicates an issue with the systemd service file or how it's launched.
+            # The port used here MUST match the actual port Uvicorn is listening on for the dashboard.
+            logger.warning(
+                f"TENFIN_DASHBOARD_HOST_PORT environment variable not found for dashboard process. "
+                f"Worker will use default callback: localhost:{DASHBOARD_PORT_FALLBACK}. "
+                f"Ensure this matches the actual running dashboard port and is set in the service environment."
+            )
+            dashboard_service_host_and_port = f"localhost:{DASHBOARD_PORT_FALLBACK}"
+            
+        worker_env["TENFIN_DASHBOARD_HOST_PORT"] = dashboard_service_host_and_port
+        logger.info(f"Dashboard: Passing TENFIN_DASHBOARD_HOST_PORT='{dashboard_service_host_and_port}' to ROT worker environment.")
+        # --- End environment preparation ---
+
         logger.info(f"Dashboard: Launching ROT Worker command: {' '.join(command)}")
+        # For security and robustness, avoid shell=True if possible.
+        # Popen is non-blocking.
         process = subprocess.Popen(command, cwd=PROJECT_ROOT,
-                                   stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                   text=True, encoding='utf-8')
+                                   stdout=subprocess.PIPE, stderr=subprocess.PIPE, # Capture output for potential logging
+                                   text=True, encoding='utf-8',
+                                   env=worker_env) # Pass the modified environment
         logger.info(f"Dashboard: Launched background ROT Worker for {site_key} (PID: {process.pid}). Run ID: {run_id}")
 
         response_content = {
@@ -2430,12 +2433,12 @@ async def initiate_rot_worker_endpoint(request: Request, site_key: str, tender_s
             "site_key": site_key
         }
         return JSONResponse(status_code=status.HTTP_202_ACCEPTED, content=response_content)
+
     except Exception as e:
-        # This generic except block catches errors after run_dir is created
-        # (e.g., during Popen, or if get_rot_site_config/load_settings raised something unexpected)
         error_type_name = type(e).__name__
         logger.error(f"Dashboard: Failed to launch/prepare worker '{worker_script_name}' for site '{site_key}'. Error: {error_type_name} - {e}", exc_info=True)
-        write_dashboard_status(run_dir, f"ERROR_LAUNCHING_WORKER_{error_type_name}")
+        if 'run_dir' in locals() and run_dir.is_dir() and callable(write_dashboard_status):
+            write_dashboard_status(run_dir, f"ERROR_LAUNCHING_WORKER_{error_type_name}")
         raise HTTPException(status_code=500, detail=f"Failed to start ROT worker for {site_key}: {error_type_name}")
 
 @app.get("/rot-summary-detail/{site_key}/{filename}", name="view_rot_summary_detail", response_class=HTMLResponse)

@@ -166,8 +166,13 @@ def set_cleanup_schedule(settings: dict, cron_instance: CronTab):
         job = cron_instance.new(command=command, comment=CLEANUP_CRON_COMMENT); job.setall('5 4 * * *')
         is_valid_schedule = job.is_valid()
         if is_valid_schedule: log_message(f"Cleanup cron job valid (Daily at 04:05)."); return True
-        else: log_message("Cleanup cron job invalid.", "ERROR"); try: cron_instance.remove(job)
-        except: pass; return False
+        else:
+            log_message("Cleanup cron job invalid.", "ERROR"); 
+            try: 
+               cron_instance.remove(job)
+            except:
+                pass; 
+            return False
     except Exception as e_new_job:
         log_message(f"Error creating/setting cleanup cron job: {e_new_job}", "ERROR"); return False
 

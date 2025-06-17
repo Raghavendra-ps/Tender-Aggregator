@@ -89,12 +89,12 @@
     "Haryana": {
       "base_url": "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://etenders.hry.nic.in/nicgep/app",
-      "enabled": true
+      "enabled": false
     },
     "Himachal Pradesh": {
       "base_url": "https://hptenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://hptenders.gov.in/nicgep/app",
-      "enabled": true
+      "enabled": false
     },
     "Jammu Kashmir": {
       "base_url": "https://jktenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
@@ -164,7 +164,7 @@
     "Punjab": {
       "base_url": "https://eproc.punjab.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://eproc.punjab.gov.in/nicgep/app",
-      "enabled": false
+      "enabled": true
     },
     "Rajasthan": {
       "base_url": "https://eproc.rajasthan.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
