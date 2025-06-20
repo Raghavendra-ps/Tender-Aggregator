@@ -1,0 +1,72 @@
+16:36:03 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:36:03 [INFO] (Dashboard) Jinja2 configured.
+16:36:39 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Punjab', Status='5'
+16:36:39 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250618163639322120/status.txt
+16:36:39 [INFO] (Dashboard) Dashboard: Created run directory '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250618163639322120' and status file for Run ID: rot_worker_Punjab_20250618163639322120
+16:36:39 [INFO] (Dashboard) Dashboard: Passing TENFIN_DASHBOARD_HOST_PORT='localhost:8082' to ROT worker environment.
+16:36:39 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /usr/bin/python3 /root/Tender-Aggregator/headless_rot_worker.py --site_key Punjab --run_id rot_worker_Punjab_20250618163639322120 --site_url https://eproc.punjab.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://eproc.punjab.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 100, "detail_concurrency": 2, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+16:36:39 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Punjab (PID: 64278). Run ID: rot_worker_Punjab_20250618163639322120
+16:36:49 [INFO] (Dashboard) Dashboard: Received CAPTCHA answer for run_id 'rot_worker_Punjab_20250618163639322120': '5vC637'
+16:36:49 [INFO] (Dashboard) Dashboard: Status updated to 'CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250618163639322120/status.txt
+16:36:49 [INFO] (Dashboard) Dashboard: Wrote answer to '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250618163639322120/answer.txt' for run_id 'rot_worker_Punjab_20250618163639322120'.
+16:37:25 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+16:37:25 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+16:37:25 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/Tender-Aggregator/site_data/ROT/MergedSiteSpecific
+16:37:25 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/Tender-Aggregator/site_data/ROT/FinalGlobalMerged
+16:37:25 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 1 site-specific ROT files for consolidation.
+16:37:25 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Punjab_2025-06-18.txt
+16:37:25 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 26 unique ROT tender blocks to: /root/Tender-Aggregator/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-18_163725.txt
+16:37:25 [INFO] (Dashboard) AI Data Preparation: Using globally merged source file: Final_ROT_Tender_List_2025-06-18_163725.txt from /root/Tender-Aggregator/site_data/ROT/FinalGlobalMerged
+16:37:25 [INFO] (Dashboard) AI Data Preparation: Collated 26 ROT items from 'Final_ROT_Tender_List_2025-06-18_163725.txt' into /root/Tender-Aggregator/site_data/ROT/AI_Analysis/ai_analysis_data.json
+16:37:38 [INFO] (Dashboard) Filter 'k' (ROT) using source 'Final_ROT_Tender_List_2025-06-18_163725.txt' completed. Output: /root/Tender-Aggregator/site_data/ROT/FilteredResults/k_Results/Filtered_Tenders.json
+16:37:44 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Punjab', Filename='ROT_2025_WR_139373_1_20250618_163709_StageSummary.html'
+16:37:45 [INFO] (Dashboard) [ROTParse-ROT_2025_WR_139373_1_20250618_163709_StageSummary] Starting parsing of: ROT_2025_WR_139373_1_20250618_163709_StageSummary.html
+16:37:45 [WARNING] (Dashboard) [ROTParse-ROT_2025_WR_139373_1_20250618_163709_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+16:37:45 [INFO] (Dashboard) [ROTParse-ROT_2025_WR_139373_1_20250618_163709_StageSummary] Parsing complete. Page Title: 'Punjab', Sections: 5, MainInfo Keys: 4
+16:37:45 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Punjab/ROT_2025_WR_139373_1_20250618_163709_StageSummary.html
+16:44:28 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:44:28 [INFO] (Dashboard) Jinja2 configured.
+16:44:34 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Ladakh', Status='5'
+16:44:34 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Ladakh_20250618164434960945/status.txt
+16:44:34 [INFO] (Dashboard) Dashboard: Created run directory '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Ladakh_20250618164434960945' and status file for Run ID: rot_worker_Ladakh_20250618164434960945
+16:44:34 [INFO] (Dashboard) Dashboard: Passing TENFIN_DASHBOARD_HOST_PORT='localhost:8082' to ROT worker environment.
+16:44:34 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /usr/bin/python3 /root/Tender-Aggregator/headless_rot_worker.py --site_key Ladakh --run_id rot_worker_Ladakh_20250618164434960945 --site_url https://tenders.ladakh.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://tenders.ladakh.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 100, "detail_concurrency": 2, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+16:44:34 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Ladakh (PID: 65165). Run ID: rot_worker_Ladakh_20250618164434960945
+16:44:47 [INFO] (Dashboard) Dashboard: Received CAPTCHA answer for run_id 'rot_worker_Ladakh_20250618164434960945': 't3BrKn'
+16:44:47 [INFO] (Dashboard) Dashboard: Status updated to 'CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Ladakh_20250618164434960945/status.txt
+16:44:47 [INFO] (Dashboard) Dashboard: Wrote answer to '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Ladakh_20250618164434960945/answer.txt' for run_id 'rot_worker_Ladakh_20250618164434960945'.
+16:48:10 [INFO] (Dashboard) Filter 'sf' (ROT) using source 'Final_ROT_Tender_List_2025-06-18_163725.txt' completed. Output: /root/Tender-Aggregator/site_data/ROT/FilteredResults/sf_Results/Filtered_Tenders.json
+16:48:18 [INFO] (Dashboard) Deleted ROT filter set: /root/Tender-Aggregator/site_data/ROT/FilteredResults/k_Results
+16:48:20 [INFO] (Dashboard) Deleted ROT filter set: /root/Tender-Aggregator/site_data/ROT/FilteredResults/sf_Results
+16:48:39 [WARNING] (Dashboard) Requested site_log 'scrape_Punjab.log' of type 'rot' not found in expected location.
+16:49:02 [INFO] (Dashboard) AI Data Preparation: Received request to collate ROT data.
+16:49:02 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+16:49:02 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/Tender-Aggregator/site_data/ROT/MergedSiteSpecific
+16:49:02 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/Tender-Aggregator/site_data/ROT/FinalGlobalMerged
+16:49:02 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 2 site-specific ROT files for consolidation.
+16:49:02 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Punjab_2025-06-18.txt
+16:49:02 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Ladakh_2025-06-18.txt
+16:49:02 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 53 unique ROT tender blocks to: /root/Tender-Aggregator/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-18_164902.txt
+16:49:02 [INFO] (Dashboard) AI Data Preparation: Using globally merged source file: Final_ROT_Tender_List_2025-06-18_164902.txt from /root/Tender-Aggregator/site_data/ROT/FinalGlobalMerged
+16:49:02 [INFO] (Dashboard) AI Data Preparation: Collated 53 ROT items from 'Final_ROT_Tender_List_2025-06-18_164902.txt' into /root/Tender-Aggregator/site_data/ROT/AI_Analysis/ai_analysis_data.json
+16:49:23 [INFO] (Dashboard) Filter 'New Tenders' (REGULAR) using source 'Final_Tender_List_2025-06-18_110132.txt' completed. Output: /root/Tender-Aggregator/site_data/REG/FilteredResults/New_Tenders_Results/Filtered_Tenders.json
+16:49:39 [INFO] (Dashboard) Filter 'New Tenders' (ROT) using source 'Final_ROT_Tender_List_2025-06-18_164902.txt' completed. Output: /root/Tender-Aggregator/site_data/ROT/FilteredResults/New_Tenders_Results/Filtered_Tenders.json
+16:49:46 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Ladakh', Filename='ROT_2025_RDD_16155_1_20250618_164449_StageSummary.html'
+16:49:46 [INFO] (Dashboard) [ROTParse-ROT_2025_RDD_16155_1_20250618_164449_StageSummary] Starting parsing of: ROT_2025_RDD_16155_1_20250618_164449_StageSummary.html
+16:49:46 [WARNING] (Dashboard) [ROTParse-ROT_2025_RDD_16155_1_20250618_164449_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+16:49:46 [INFO] (Dashboard) [ROTParse-ROT_2025_RDD_16155_1_20250618_164449_StageSummary] Parsing complete. Page Title: 'Ladakh', Sections: 5, MainInfo Keys: 4
+16:49:46 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16155_1_20250618_164449_StageSummary.html
+10:36:31 [WARNING] (Dashboard) Filter set directory not found: /root/Tender-Aggregator/site_data/ROT/FilteredResults/k_Results
+10:59:37 [INFO] (Dashboard) Jinja2 configured with new templates path.
+10:59:37 [INFO] (Dashboard) Jinja2 configured.
+13:44:48 [INFO] (Dashboard) Jinja2 configured with new templates path.
+13:44:48 [INFO] (Dashboard) Jinja2 configured.
+13:48:37 [INFO] (Dashboard) Jinja2 configured with new templates path.
+13:48:37 [INFO] (Dashboard) Jinja2 configured.
+13:50:11 [INFO] (Dashboard) Jinja2 configured with new templates path.
+13:50:11 [INFO] (Dashboard) Jinja2 configured.
+09:50:32 [INFO] (Dashboard) Deleted ROT filter set: /root/Tender-Aggregator/site_data/ROT/FilteredResults/New_Tenders_Results
+09:52:44 [INFO] (Dashboard) Jinja2 configured with new templates path.
+09:52:44 [INFO] (Dashboard) Jinja2 configured.
+10:02:43 [INFO] (Dashboard) Jinja2 configured with new templates path.
+10:02:43 [INFO] (Dashboard) Jinja2 configured.

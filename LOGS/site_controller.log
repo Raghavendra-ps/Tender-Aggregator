@@ -1,0 +1,57 @@
+2025-06-17 17:11:35 [INFO] (SiteController) Playwright check OK for Site Controller (needed for regular scraping).
+2025-06-17 17:11:35 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-17 17:11:35 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-17 17:11:35 [INFO] (SiteController) Loaded 1 enabled sites for REGULAR scraping.
+2025-06-17 17:11:35 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape =====
+2025-06-17 17:11:35 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Punjab <<<
+2025-06-18 10:52:00 [INFO] (SiteController) Playwright check OK for Site Controller (needed for regular scraping).
+2025-06-18 10:52:00 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-18 10:52:00 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-18 10:52:00 [INFO] (SiteController) Loaded 1 enabled sites for REGULAR scraping.
+2025-06-18 10:52:00 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape =====
+2025-06-18 10:52:00 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Punjab <<<
+2025-06-18 11:01:32 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Punjab <<<
+2025-06-18 11:01:32 [INFO] (SiteController) 
+--- REGULAR: Injecting SourceSiteKey into Site-Specific Merged Files ---
+2025-06-18 11:01:32 [INFO] (SiteController) INJECT (REGULAR): Injecting SourceSiteKey 'Punjab' into Merged_Punjab_2025-06-18.txt
+2025-06-18 11:01:32 [INFO] (SiteController) INJECT (REGULAR): Successfully processed SourceSiteKey for Merged_Punjab_2025-06-18.txt
+2025-06-18 11:01:32 [INFO] (SiteController) 
+===== REGULAR: Global Merge Phase =====
+2025-06-18 11:01:32 [INFO] (SiteController) --- GLOBAL MERGE (REGULAR): Starting Merge of All Site-Specific Files ---
+2025-06-18 11:01:32 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Found 1 site-specific REGULAR files for consolidation.
+2025-06-18 11:01:32 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-18.txt
+2025-06-18 11:01:32 [INFO] (SiteController) GLOBAL MERGE (REGULAR): ✅ Merged 1758 unique blocks to: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-18_110132.txt
+2025-06-18 11:01:32 [INFO] (SiteController) REGULAR SCRAPE & CONSOLIDATION SUMMARY: Sites Succeeded: 1, Sites Failed: 0, Globally Merged Tenders: 1758
+2025-06-18 11:01:32 [INFO] (SiteController) REGULAR Global Output File: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-18_110132.txt
+2025-06-18 11:01:32 [INFO] (SiteController) 
+Total Site Controller Duration: 0:09:31.621974
+2025-06-18 11:01:32 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-19 10:52:00 [INFO] (SiteController) Playwright check OK for Site Controller (needed for regular scraping).
+2025-06-19 10:52:00 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-19 10:52:00 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-19 10:52:00 [INFO] (SiteController) Loaded 1 enabled sites for REGULAR scraping.
+2025-06-19 10:52:00 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape =====
+2025-06-19 10:52:00 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Punjab <<<
+2025-06-19 11:01:15 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Punjab <<<
+2025-06-19 11:01:15 [INFO] (SiteController) 
+--- REGULAR: Injecting SourceSiteKey into Site-Specific Merged Files ---
+2025-06-19 11:01:15 [INFO] (SiteController) INJECT (REGULAR): Injecting SourceSiteKey 'Punjab' into Merged_Punjab_2025-06-19.txt
+2025-06-19 11:01:15 [INFO] (SiteController) INJECT (REGULAR): Successfully processed SourceSiteKey for Merged_Punjab_2025-06-19.txt
+2025-06-19 11:01:15 [INFO] (SiteController) 
+===== REGULAR: Global Merge Phase =====
+2025-06-19 11:01:15 [INFO] (SiteController) --- GLOBAL MERGE (REGULAR): Starting Merge of All Site-Specific Files ---
+2025-06-19 11:01:15 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Found 2 site-specific REGULAR files for consolidation.
+2025-06-19 11:01:15 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-18.txt
+2025-06-19 11:01:15 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-19.txt
+2025-06-19 11:01:15 [INFO] (SiteController) GLOBAL MERGE (REGULAR): ✅ Merged 2405 unique blocks to: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-19_110115.txt
+2025-06-19 11:01:15 [INFO] (SiteController) REGULAR SCRAPE & CONSOLIDATION SUMMARY: Sites Succeeded: 1, Sites Failed: 0, Globally Merged Tenders: 2405
+2025-06-19 11:01:15 [INFO] (SiteController) REGULAR Global Output File: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-19_110115.txt
+2025-06-19 11:01:15 [INFO] (SiteController) 
+Total Site Controller Duration: 0:09:15.156662
+2025-06-19 11:01:15 [INFO] (SiteController) ===== Site Controller Finished =====

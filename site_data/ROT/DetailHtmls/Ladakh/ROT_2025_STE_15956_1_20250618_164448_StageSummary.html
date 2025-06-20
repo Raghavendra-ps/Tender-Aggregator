@@ -1,0 +1,597 @@
+<form action="/nicgep/app" id="bidSummaryForm" method="post">
+<div id="bidSummaryFormhidden" style="display:none;"><input name="formids" type="hidden" value="If_0,If_1_0,iterRows_0,If_2_0,If_3_0,If_4_0,If_5_0,If_6_0,If_7_0,If_8_0,If_9_0,If_10_0,If_11_0,If_12_0,If_14_0,If_15_0,If_16_0,If_18_0,If_19_0,If_28_0,If_29_0,iterRows_17,If_30_0,If_31_0,If_32_0,If_33_0,If_36_0,If_39_0"/>
+<input name="seedids" type="hidden" value="ZH4sIAAAAAAAAAFvzloG1vIAhT6c4tagsMzlVxUCnIDEdRCXn5xbk56XmlYDZeSWJmXmpRUB2cWpxcWZ+HohVACQ884A6QWoc8yrh3HgDBNMQyEzKTAkuzc1NLKp0yy/KVTEAAOBbcNx2AAAA"/>
+<input name="component" type="hidden" value="bidSummaryForm"/>
+<input name="page" type="hidden" value="FrontEndViewBidSummaryDetailsPrint"/>
+<input name="service" type="hidden" value="direct"/>
+<input name="session" type="hidden" value="T"/>
+<input name="submitmode" type="hidden" value=""/>
+<input name="submitname" type="hidden" value=""/>
+<input name="If_0" type="hidden" value="F"/>
+<input name="If_1_0" type="hidden" value="T"/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRP2zTQBTGXxyFlgai0DLAgBQJCSHROE5KlbSISi0VShonlUhAytaLfUmvss+O7zl/GEBdYOgAQysGFgbGrszNSCVWZhBihJmVs5M06U2nd7/3fe99d/oXYsKDB22nq3JmqG3qqk1mqpQjw4G6xUyTejXftok32KZImCU+np8px68HGwpc1yEm4ZKJkNQPSJdkLMLbGd3h7Uc6XJVPzygRDkdYnHmuoccugBoS9EUHXoGiQzIo+E2bIVJzmyC90PWRWZmgItsSknrummTMBL1RHRaa4ahVYtOxWrzFPIEjt3HpWsvxPdy/VFOYGdwiOsxZTpvxkjmBBTUcbl6Co4I7CEsz25Q40jb15Fxx3GfeLN53ZbKJAFUDVA1zOfr9/tu7uz8UiOxArEssn/Y9SE6hqm83qffm9ORO/PjnkQLQdyE8y1WE+U3DoK5cXAYzuaafMk64QaXXYigjOpZaZzYVSGz33q3vXyO1Myr9ShCToCP6k6GCUNUgwv2Dw0i5gbejgVtvHiDyYSOfKPbvfxkOw7+Jj4rF85O9/kJvaYgQr+wWt1MNIgST33tTW03v+Dyd03KrKW1tPZdNbVbcsPVKOLzi/EFY3nLXyp36gFex8uJlIV9/sqsVs8KzjdYKRXzYyKyyQqNnaaWy9jgQzU9Fs9r6Sl6Kyi1vTMMah7/469Pnf4dvC6MlR6EG3nPSOeL+B3Y4p4TjAgAA"/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWSvU8UQRjG55acoCcE0EILk01MNBFud0GBE6Jx8UAO9uDgsMBu7nbYHbI7s8y8e+41GhotKLTAWNhYWFjwP9BqYmVirSG21iZWzu4dcEw1eef3fj3PHP5BeSnQmMdbBqNNwyOR0aCuQRhQaBvz1HWJqMdhiEW7TADTQH74eqQdvGw/1NCgg/IKrriAhp0d3MJmgJlnOpx5cw66qJ42CJacARrtea6DoKdAHTDEche9QJqDhtNA3AgpAHHLGMhp3RhoYKYRlTakqKeRi7tMmtvnoEuNbNRVHJJutcI2FRI63bqhy9s8FuCfi2nUTW85B/UH3KOs4p7AkjQ5c8/BfZJxQFd6tqkwIB4Raq4C+FT04kmklB1KUSNFjUyX/d9vv725+VNDuWWUb+EgJolAw2fQahw2iHh1+O5G4eDXvoZQEqHsjA8Aur0GPhGy+Li8odcC4npEB67bCws6ZRIIdnW+rS8kSvA7qxx02+1IWVwkxKwJsh7jwNwkTV85rW6LlGHWJGrI0ay/3A2MTRoSCTiMbl378SVXPyJq0ArKK5DL5GSb1A0j1d7f2cutbMH1vnTM5wMI5d7PDX4vJXPmv0eZqYVOcOlzIUqmw+MSoMGqWdftRhzoVe6rj3PVuldcjllx0pqc0q3p2bszeq0aZckXsr01fgRovLpVKou6ZTtTY0vz7aBlPfNb7fXS/ZVGeW1CLkZCRk+gZrfkjP0gLTpzVnTCmrUmdLuq9hw507nr2+jxx09/916XOmt2/Eh796edo//G+9AkHgMAAA=="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRv2/TQBTHXxyF/kipQtoBBqRISCwhjpsUUgWBFBRK0jgFYSK1nbjYV+dS++yez6mzAJUqGDrA0IqBAQbG/g9lpBIDCzMIsTKzcnaSJr3p9O7z3vd9v3fyFxIeg6zp9GRKdNnErtwmhowpJ7wvPyCGgZnm2zZi/SrmiFjeh7NT6ehl/74El1VICLhucEipXdRDeQtRM6861Lyrwox4eoqR51AO6YlnjTNyDmgccd/bhRcgqZAKC37bJpxjo4o4Pp/rc2Llw4pomxdUyzXQkAl74yrMtqNV15GNh9OS24R5fKA2LM1tOz7jnQs1iRjhLabClOWYhNaNEexh3aHGBTjuUYfDwoSbOuXYxEzsleQdwibxwBXJzoeoHKJylMvhn3ff3t74KUFsDRI9ZPk4YJAaQ+u+3cbs9cnx9eTRr0MJIHAhOrk+h+mKrmNXGBfBjK65VUIR1bHQSkdjvF1LfkZs7HFkuzev/vga006x0KtDQoCOF4yWCkOVwwg73f1YY5Nfi4dqe9MAsfflg63vwdzBxqvob5KDYu3s+Hkwu7fwRcg381rmUa2lVpqZSq1ZqXJYVJZzaz7NFZTC7YyyXFZKmSdNN+q/FDmQnI8cbnH6sHCHNVZrGvM3+23X2Xnc6Zn+Rrel6aq/s0WzrWyjWCwqzsq9cGhpPHRJKRdLmUpTWL0yTmz4A+nfnz7/23+zMnA6SDbUnhLKcfc/0TehT+gCAAA="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRP2zTQBTGX5yGlAaqkCIEA1IkJJYQJyktgSIqnIaoLk4qklIEUy/xxbngf7WfE2cBdYGhAwytGFgYGDuztiOVWJlBiJUZRs5O0qY3nd773fe9993BH4i5DmQ0qyearCVq1BabTBWpiQwHYompKnUanmEQZ1CmSJjufjw+FPZeD5YFuKhAjMOyipBUuqRHcjoxtZximdp9Bc7zVp0S1zIRUhPtBjrsBGggQc/dhlcgKJAMCl7TYIhULROkJ7oeMj0XVPizWU49tVUyYoK3UQVmmuGoNWLQkVqizRwXh26j0oW25TnYOVMTmBrcIgrEdUtjpqyOYZe2LFM9A0dd00KYm9hGNpFq1OFzJbDDnEnct3myswEqBqgY5rL7+/23dzd+CBBZg1iP6B71HUieQjXPaFLnzcH+9cTez10BwLchPKKHMC21WtTmi/NgxtdshZnEbFHulQpl3G1d3GAGdZEY9s2r379GGoeU+8kQ46Dl+uOhglDFIMJOdyfy+DleiwZu/WmAyIflL/+2/IWj+MPwbxLD4urx/pY/0587QrhSzTXS1fVVqVp9VE7XpYqcfibVZITL+cXsmmdm5/Pzi+lCYWmhkJaqdqhyLtxDsKcQbnno2y9fFDJlbfNJqVgrZ/qlQU5dudfXnIorb0obdwYFpb2yXu9qDwLR4oRoful2kYvyhS+d5jb6h9SvT5//7ry9O9x3mG/gHefOU/Z/rEhBo+4CAAA="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRz08TQRTHp0sqapUAaqImJpOYaKJ2u9RUCURNtSUUt6W2EJDbdOexO7C/2H0L24vKBQ4c9IDx4MWDBw/8D1w18WriTUO8evbq7Lb8mtPkzWe+773vd+8vyYYBuWt666orDNUEX+0IroKLArvqU8E5BO3IcVjQrQAyYYcfv+0ru6+7jxVyUSdZCdc4kmF9ha2zgs1cs6B7rjmpk3PyqQUs9Fwkoyee2xiII6CNDKNwjbwiik6Gk0LUcQQi8ApDONKNUNiFpCK/DUlq3ueszyR/B3RyvpOO2mAO9NVyyyIIsdetX7qw7EUBWqdqiuDJLaOTQdszhVvjh3AIhufyU/BA6HpILp3YpuYimBDIuXJoieAkHvvS2aEEVRNUTX3Z+fPu+9ubvxSSmSHZdWZHEAdk+BhqRE4Hgq299zdyu793FEJin6Rn8ADJ7Vm0IAjzzyot2rSBm0DRo+VqlQo3RGCcesu0GkvD7zQ8pGXeszI/BVBoBvAiYnZhDgxLJi1vU8JlrgFyyNG0f7hmq3PCgRCZ49+6+uNrpr0PctAayUrQC+PDbZI01MR7a2Uz8/wlXhtIxtw4S0jmwxM++TMe2bryJg011ytOf8n58QPnYBzJ9XqhTeuexWm5wyPbZhYtrxqWcJiN5LJWys9Ebr6oFUtUK06UNNqs+6nSmdQExd9Gcm9+2qhrWmW2amxYS6X2wlJTL5UXm8XWTHdh1dZhPGxAvHYfnO78o0T04bHomDahjdFyXS49cmx6P8TRg0+f/21uj/d27oWT9B6UnbP+fw0W9EIrAwAA"/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRP2zTQBTGXxzSlgaqkCIBA5IlJIRU4rhBoVFRAYcImtRxIG5UwcQ5vjpX/C/2OXEWUBcYOsDQioGFgbEDG2MZqcTKDEKszKycnaRJbzq997vve++7w7+Q8j1YMpyeYJO2YGBX0IguYJsSOhDKRNexpwaWhbxBBVNETP/D8RG3/2pwl4PzMqQYXNUpZOQd1EN5E9lGXnZs444MZ1mriZHv2BSyU22VeuQEUCmigd+Fl8DJkIkKgWYRSrFeQRSf6AaUmPmowp4tMKrl6mjERG+TMsxr8agKsvBILb1NPJ8O3Ualc9tO4NHOqRpH9OiWkGHWdAxiV/Ux7OO2Y+un4KRvOxQWp7ap2hQb2GNzpWmHeNN46LJkFyJUiFAhzmXvz7vvb6/95CBRg1QPmQEOPchMICWwNOy9Pjy4mt7/tccBhC7ERzhDYU5qt7HLFmfBjK+5h8RGdhszr2ws43dNYZNY2KfIcq9f/vEtoR5h5leFFAMdPxwPFYUqRBF2dnYTG0/plWTk1p8DSLy/V137HCZvfLkf/016WFw/PngezvcXv1K4VM+rfL2lSFtSk29KaqMh81uSUqVwUSzmaoGdK4iFIi8WVgsi/7juxjIz8SKca1K4OQgH5Rrtuk+KLXH9dt9a8stGs+EyPeXRsqJVnj1QjdKG5iqlF2uR6MpEdFlcvbXCS3W28YVJcKOPyP7++Onf7pvScOFhwJH3LHOecf8DOJ8q0u8CAAA="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRv2/TQBTHXxyFlgaqkCIEA1IkJJYQ5xdtShEgVy0hxbGgTgVsXOyLc5F9duxz4nQAdYGhAwytGFgYGPsHsLULEpVY2ZBAiJWZEc5O0qQ3nd597vt97/sO/kDCcyFr2D2REk00sCM2iS5iyggbiKtE17Gr+paF3MEaZoiY3vvjQ2Hv5eCuAOdlSHC4pjNIyR3UQ3kTUSMv29S4LcNZ/rSJkWdTBumpZ5W55ARQGWK+14UXIMiQCgt+0yKMYX0NMXyi6zNi5sMK/zbPqS1HRyMm/BuXYa4ZtaogC4/Uki3iemzoNiqda9m+y9qnagLRw1tMhhnTNgit6WPYw5pN9VNw3KM2g4WpaWqUYQO7vK8kaxN3Gg8cnux8iIohKka57P5++/XNtR8CxDYg0UOmjwMXUhNI8a0mdl8d7F9N7v3cFQACB6KT+MdgVtI07PDBeTDja+4+oYhqmHulIxmva4oNYmGPIcu5fvnbl5h6iLlfDRIctL1g3FQYqhhG2O7sxB4+Y1fioVt/FiD27t7j75+C4udLR9FuksPig+P958Fcf+GIL7SeVzOK9ERSqpmGur5ZU6oMLhYWcxs+zZUKpcVMobRSLmQe1Z1I4Uw0g+C4DG5UynlvdfupUt7uLLduZqWuWq0sBUtSI+t4ZstGBpbWb5WcYl+z74SilYlosbBSrmSkOh/2wiSz0Q7Svz58/Lvzenk46zDb0HuGO884/wFWD6my6gIAAA=="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRv2/TQBTHX1yFFgIltCABEpIlJIZC7KSUNlCB5DSt6tZJSx1UGC/xJb7iX7XfpSkDqAsMHWAoYmBhYGDo/9AVJDbECqhiYWBm5eykbXLT6d3nvu9933f/L6SjEG62/LbisYbSooFSZ5ZCPWS4rZSYZdHQ5K5Lwu0yRcKc6P2XA2nvxfYDCc4ZkBawbiFkjQ3SJqpDvJZq+F5r1oDT4mmNksj3EMb6nk0M2TFgIkEebcJzkAzIxgVedxkitcoE6bEuR+aocUV8GxXUo8AiPSb+O2TAmXoyapW4tKeWabIwwm63Xuls0+ch2gM1iVnxLWXAsOO3mKdbR3BEG75nDcBDkecjjPe50T2kLRqKuTJos7Af7wRis6MxqsSokuxl9/ebr6+v/5QgtQTpNnE47YSQPYGq3K3T8OX+22uZvV+7EkAngOSM/0C4uoI2DaOcyx1kgUNlHlHZb8pz5TWEiaqPsmZ1t5dboFRdDelDThy1Rhu2CFfcFphHvAYVc40lLaNNR6kxl0ZI3ODG5e+fU+YBFbPpkBagH3WODMQBKPG67Y2d1PITvDIUT7Y1ApB6N/vnfLEzEZQgyTHTLS5+ygSdafewiHCpoppyVTdNbU3WFitaWV7XqjrCxfxUbol7ucn85B25kL93e1perQSJyKnEsuR/Q7hlq3dr7ery3LN6uzBfWV9pNPNcXSkZ+ce1rVWXP52f1wszS4XyVHPqfiw6MyCaL8haRfi9cLLiXmRjhx8+/tt5Veza7UYR9x4WnUeC/1ZWp78ZAwAA"/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRvW/TQBjGXzsK/QiEkDLAgBSExAJxPprQqhVICQGaxEmhTlSFiUt8dS7YZ8c+52MBdYGhAx1aMbAwMPZ/aBekVmJlBiEmJGZWzk7SpDed3vu97/M+zx39haBjwz3N7EmUtCQNW1KTqBKmjLChlCeqim3FNQxkDwuYIaI7n86OxYO3w0ciXJEhyOGiyiAid1APJXREtYRsUm1dhgX+tIWRY1IG0ZlnhdnkHFAYYq7ThTcgyhDxCm7TIIxhtYAYPp/rMqInvApvC3OqbqlozHi9ARkWm/6qVWTg8bTQDrEdNlIbly7vmK7N2hdqIlG9myDDnG5qhBbVCezglknVC3DAoSaDpRk3Rcqwhm2+V4i1iT2LDyyebNhDJQ+V/Fz2fu9/+3DnhwhCCYI9pLt4YENkClVdo4ntd0eHt0IHP/dEgIEF/gkLDOZzrRa2uHEezOQaf0oooi3MtaL+GKerSzViYIchw7p74/upoBxjrleEIAdNZzBZygtV8iJsd3aFcoPdDHhq/XkA4eO69nV/INz+c+L/TWhU3Dg7fDVY7C+dMLhaSSixrbpSq1di5Y1clcH1ZCZecmk8nUxnY8nVtVQ29rxi+e2XfAOiecrgfidVoA+M1EuGn2Xyjwvl/PaTRnY5ny5tZvr1Ru1Fp7dJu7Lbl1/3H3pDV6ZDU8m15ZVYrsKdXpsGNv6A6K/PX/7tvl8dGR0F62nPceUF6z8DEESR5wIAAA=="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRP2zTQBTGXxyFlgSqNGWAAZEKiQXihJSkFARS+i+4OHGapEXZuMRX5yL77NjnxFlAXUCoAwytGFgYGLszlpFKrMwgxIoYWTk7SZPedHrvd9/33nfHfyDi2HBbM3siJS1Rw5bYJKqIKSNsIK4SVcV2zTUMZA/WMUNEdz6cngiHLwePBbgsQ4TDksogLndQD6V1RLW0bFLtoQwXeauKkWNSBompdo3Z5AyoMcRcpwsvQJAh7hfcpkEYw+o6YvhM12VET/sV/myOUzuWikaM/zYsQ7QZjFpGBh6pxfaI7bCh26h0ac90bdY+VxOI6t9CMszopkaopI5hB7dMqp6Dww41GSxMbSNRhjVs87lirE3sadyzeLJzPir6qBjkcvD73be3N38IENqCSA/pLvZsiE+gsms0sf3q+Oh67PDngQDgWRCcGzzG2UKrhS2+OA9mfE1tEopoC3OvRCDjdHWxTgzsMGRYt65+/xqqnWDuJ0GEg6bjjYfyQxX9CNud/dDTBrsW9t36swCh97nYX/BSbz5D8DexYfHJ6dFzL9pf+MJgsZSuJWtKuVBKPiuUi42CnCwqu/XkmlKuVwtrdaXK4EpmKbXl0lQ2k80lM9kHS8vJSskKBC8EKwnmIoM7Zk/yVqTt/L3G7orrKJ3K6k6ule+mUUXpu5q+mSlm5fzGoL/d33jkiy5PRO9mfNFCie8+P4lw9CWJXx8//dt/fX+4+jBq33uGO0et/2+EdJX5AgAA"/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRsW/TQBTGXxyFlhqqkjDAgBQJiaXESVxFQUGAEkUlSZ2AmkRVmHqxr85F9tmxz4nDQNUFhg4wtGJgYWDs/9COVGJlQ6JCrMyIjbOTNOlNp/d+933vfXfyB2KuA+u6NZQoUSUd21KXaBKmjLCxVCKahp2mZ5rIGZcxQ8RwP52fCkf746cC3FQgxuGqxmBN6aMhShuI6mnFovpjBa7z1jZGrkUZxBfaTeaQS6DJEPPcAbwBQYG1oOB1TcIY1sqI4UtdjxEjHVT4s1VOtW0NTZngbVSBlW44agOZeKom7hHHZRO3aenGnuU5rHelJhAtuEUUWDIsndCqNoNdrFpUuwJHXWoxSCxsU6UM69jhc4msR5xF3Ld5sqsBKgWoFOZy+PvDt/f3fwoQqUFsiAwP+w6szaGGZ3ax8/bk+J54dHEoAPg2hCf2j8FyUVWxzRfnwcyuqU1CEVUx94qHMu7AkFrExC5Dpv3gzvevkeYp5n5ViHHQcv3ZUEGoUhBhr38Q2eqwu9HAbbQMEPn4LCFc+OKP/bPwb8RJsXJ+vOuvjBJnPIJ6uplsVdpbtWInqbwovSo2njO4ncmlah5NyRk5l8xkC3I2+bJuhxLXwiUEu8Dgobax3WpmapWeQhuUZcpmaUfu5Ab5Ta3TXpd3+qPB2JLr6e5rR30SiObnotlMYSOfLNb5trfmoU0/If7r85e/B+8eTZadhBt4L3Fn0f4PqIfkNOsCAAA="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRv2/TQBTHXxyFlqZUIWWAARQJxFLipImiRkWAXAKpixNC3JYfExf74lxqn137nDoMoC4wdIChFQNLB8b+D+1IJVZmEGJlZuXsJE160+nd577f977v6C8kPBcWDLsnUqKJBnbEFtFFTBlhfXGF6Dp2Vd+ykNuvYIaI6X05PRb23/XvC3BJgQSHZZ1BSumiHsqZiBo5xabGXQUu8qcmRp5NGaQnnlXmkjNAZYj53ja8BUGBVFjwWxZhDOsVxPCZrs+ImQsr/NscpzYcHQ2Z8G9cgZlW1GodWXiolmwT12MDt2Fptm37LuucqwlED28xBaZM2yBU1kewhzWb6ufguEdtBvMT08iUYQO7vK8k6xB3Eg8cnuxciIohKka57P359P3jzZ8CxNYg0UOmjwMXUmOo7lst7L4/Orie3P+1JwAEDkRHMBlMS5qGHT44D2Z0zT4mFFENc690JONtm+I6sbDHkOXcvvrjW0w9xtxPhgQHbS8YNRWGKoYRdrq7sScv2bV46LYzDRD7/KBx2Ahubd04iXaTHBRXTw9eBzM78yd8obWcmllXHz2X6tVMU66+kusMruRL2TWfZgv5QimTLywXyplGzYkULgxmcHwGd1YWuu2iXe4XX2z261UiLVZWS2XpTbGmN7a0h9XG001pYzVnNvPP5Huh6NJYdDG/XFzKSDU+7OVxZsMdpH8ffv23+6E8mHWQbeg9xZ1nnf/FzYn06gIAAA=="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRsW/TQBTGXxyFhqatSsoAA1IkJIQU4qSJolZFgByltClORBtC1Y2LfXEuss+ufU6cDkAXGDrA0IqBpQNj/4cyUomFAdYixIrExsqdkzTpTad3v/e+73138gdingtpw+7KlGiygR25SXQZU0ZYXy4RXcdu3bcs5PbLmCFieh/PTqXDV/2HEsyqEONwRWcwr3ZQF2VNRI2salPjvgpX+dMWRp5NGSQnnuvMJRdAnSHme7vwEiQV5kXBb1qEMayXEcMXc31GzKyo8LY5TjUcHQ0Z0RtVYboZWq0hCw+nJVrE9dhAbViaadm+y9qXahLRxS2iwpRpG4RW9BHsYc2m+iU46lGbwcLENhXKsIFd7ivB2sSdxAOHJzsnUFmgcpjLwe/3X9/dPpcgsgGxLjJ9HLgwP4ZqvtXE7puTo1uJw58HEkDgQHjurjOIK5qGHb44D2Z0zTwmFFENc61kOMbbNeVnxMIeQ5Zz58b3L5H6KeZ6FYhx0PaCkSkRqiwibHf2I0922M2oUOvFASIfHrXOj4P432+vw79JDIrrZ0cvgunewmcGM1WfYuymlLaFuJvruWJmw6eZfC5fTOXyK8VC6mnVCXuvhO4l+weDe+XtbUXZ2tQWK3uKuqbauVa6ke08VzcLq43a2upe2nEKpRJdpp3eAzF0aTx0MbdSWEopVb7mtXFaw/STv44//dt/uzzYcpCq0J7iyrPOfwYiIrfkAgAA"/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRP2zTQBTGXxzSf4EopAwwIEVCYmnjBJPSqIg/jkohrZNUSRm6cYmvzlX22bGfE4cB1AWGDjC0YmBhYOzOWEYqsTKDECszK2cnadKbTu9+733v++7kLyQ8F5YMuydz1pYN6sgtpsuUI8OBXGa6Tt2mb1nEHaxTJMz0Pp6dSkevBw8luKJBQsAVHSGt7ZMeyZuEG3nN5sZ9DebFU4MSz+YImannJrrsHGgiQd/rwiuQNEiHBb9lMUSqrxOk53N9ZGY+rIi2lKCeOzoZMWFvXIOFVrRqjVh0NC25x1wPh2qj0uU923exc6EmMT28xTSYNW2D8Yo+hj3atrl+AY573EZYnHJT4UgN6oq9kthh7jQeOCLZVIjKISpHuRz+ef/93a2fEsQ2IdEjpk8DF9ITqOZbLeq+OTm+mTz6dSgBBA5EZ/4LwpzablNHGBfBjK+5DcYJb1OhlYnGeF1T3mEW9ZBYzu3rP77FmqdU6FUgIUDbC8ZLhaHKYYSd/YPY1i7eiIdq/TmA2IdH25fSwUx5+XH0N8lh8dnZ8Ytgob/4FSHZUMuVXTVbVmt1hGuFldymz3NKQVnJFpQ1pZTdrjpR60y0vORYCMv5Yqnv1rvdfLlR2qgLp/cUq5hXUenuvOTFJ2rgVut1/enWEvEehENXJ0PvFNburmbVqnB5dRLWKPzM70+f/x28LQ1NDkMNtWeFcsr5D8dvKunjAgAA"/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRvXMSQRjGX47BxKCIxMIUzjDjjI1yEBgmEsc4fCRy8YDIxzikcuEW2ITbO+724NAZnTRaUGiRjIWNhWX+h6Q0MxY2VhY6jq21rXsHBLLV7ru/fZ73ffb4L/hMA+62tb5ISVNsY11sEEXElBE2FDNEUbBRsVQVGcMcZoh0zY9nJ8Lh6+GGAFdl8HFYUhgE5T3UR9Euou2orNH2Axku86syRqZGGYTmrivMIOdAhSFmmT14BYIMQadgNVTCGFZyiOFzXYuRbtSp8GcBTtV0BU0Y561XhqWG22oRqXii5m8Rw2Rjt0npSkuzDNa5UBOI4uw8Mix0tTahkjKFTdzUqHIB9ppUY7A8N41EGW5jg/flZx1izOO2zpMNOKjooKKby+jP+6/vbv8UwLMNvj7qWtg2IDiDipbawMab46Nb/sNfIwHA1sFd4g8Gi+lmE+t8cB7MdBvZIhTRJuZeIVfG7HXFKlGxyZCq37n5/YuncoK5nwQ+DmqmPW3KCVV0IuzsHXie1NmK13EbLAJ4Pjx6uWHbAc+3U/dv/ONi/uzoub00WD5lsFKRcvlwtlSsVMu1bFUqFfmhsJMu1hnciCUj2xaNxGPxZDiWWF9NhncKuit0yR1F0EcM7pWMTC/6LKc3t0oJKxVP7T6OP60PMnQznUntb9byCn1hlFq7uJzdf+iIrs1EV2PribVwusBnvj6LbvIVod+fPv87eHt/PPI4Ysd7gTtf0/8Dr1/vAvECAAA="/>
+<input name="If_2_0" type="hidden" value="F"/>
+<input name="If_3_0" type="hidden" value="T"/>
+<input name="If_4_0" type="hidden" value="T"/>
+<input name="If_5_0" type="hidden" value="T"/>
+<input name="If_6_0" type="hidden" value="T"/>
+<input name="If_7_0" type="hidden" value="T"/>
+<input name="If_8_0" type="hidden" value="F"/>
+<input name="If_9_0" type="hidden" value="F"/>
+<input name="If_10_0" type="hidden" value="T"/>
+<input name="If_11_0" type="hidden" value="F"/>
+<input name="If_12_0" type="hidden" value="F"/>
+<input name="If_14_0" type="hidden" value="T"/>
+<input name="If_15_0" type="hidden" value="T"/>
+<input name="If_16_0" type="hidden" value="F"/>
+<input name="If_18_0" type="hidden" value="F"/>
+<input name="If_19_0" type="hidden" value="F"/>
+<input name="If_28_0" type="hidden" value="T"/>
+<input name="If_29_0" type="hidden" value="T"/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1RMW/TQBR+cUmaplUJpRITwlUZG8eJqYJgcgpUqRynxFGA8WK/uAfO2diXNCxILCDRAQbYGViQ+lP4BSxUFSszK2eTa1IJL7573/e+7333Tn9DPonhth9ONEZdzcdIG1BPQ8Ypf6U9HpOADil6Teolu3r/29mPp+8V2LQgL1gtj0PZek4mpBoQ5letkPn3LVgWUJewFxw2FkCHxzSDCwL2MH4Jr0GxoIQTEjic8HHC4foCv8U4+hiLhvWUMiY8jPvij7PG4pAGaJORvK8MKesiSUI2KyjUS085C27Q5CEjgwAPYzoRXT42sxEuGzbDMEDChGEpjJCh94BwKV7IKnLmlSggLi7A5UgKe82LcFcsuDqvt0bEl/SlhIXpcUkIJ1l0+Rgc3aNLIUSFCT2MWzLMmqwsZC8eU37kxeQ4U51GYqPraTAtDaZlazn59fH7h+2fCuQOIJ++J05jKM9J9ng0wPjt6eebq5/OThSAaQTpp4RbXFgYHLbaVUd1OrbZVp+Y9v4z01L3O/2eutexe11zr9fpCttrc8XZAjfOv3z98+bdXeHcks7pmMtCPMdhrX5nx6jtGI2apusRh6Lpuhhx9LI3KcgZBLKpNyoHY1ap6/VdtabfMxqq2eZQcsiIMqKaAU05xpyj11POYTuKMq3Vf4ZlaVB5JNqYi//3hFvZCkoXrfAX2dmSKysDAAA="/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1Rv2/TQBR+cUmaplUJpRITkiUYG8f5paAyOSrQVHZVGlGxXuwX94pzNudzmi5ILCDRAQaYYWBB6p/CX8BChViZWbmzck0q4cV37/ve973v3sUfKKYc7ofxxGLUt0JMrCENLGSCijPraUYiOqIY9GiQduyjb5c/nr8zYNOFomT1AwFV94RMSD0iLKy7MQsfurAsoUPCXgjYWAAHgtMcLkk4QP4SXoHhQgUnJBoIIrJUwO0Ffp8JDJHLhnVFyYiI+ZH846yxPKIR7pOxvq+MKDtEksZsVjBooE4FF+7Q9BEjwwgPOJ3IrhB7+QjXDXtxHCFh0rASJ8gw2CFCi5fyip55JYmIjwtwNdHCQe8q3A0Xbs7r/TEJNX0pZbE6LknhNI+uH0Ogf3wthKwwqYe8r8Os6cpC9vIpFccBJ6e56jSRG11XwSwVzMrXcv77w/f3934aUNiDonpPnHKozkn72XiI/M3Fp7urHy/PDYBpAuoz4s9CWjTkpr36wHyy+8x1PNPZ9Zwd6XJrLjDb18avL1//vn77QBr1tZGaallqFQSsNVtbrcZWu9O0bDsRUHZ8HxOBQf4EJW0pkU27W9vLWK1pNztmw95udU3HE1AZkDFlxHQiqjjtOcdub9td88BLklxrVSnJqbVB7bFsYz7+3xNqZ+pSuWqFf9VpchMaAwAA"/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1SMW/TQBR+cUiaplUaSiUmJEswNo6TNGpVpkSAcHGiktCK9eJ7cQ+c82Gf07AgsYBEBxhgZ2BB6g9h4BewUCFWZlbOVq5JJbzc3Xvf+773vefzP1CII7jjh1OLM8/yUVgjRi3kksmX1uOEBGzMkHYZjdv28deLH0/fGbDlQkGhHCqh6j4jU1IPCPfrbsj9uy6sqNSA8OcSNpeSQxmxLF1UaYrRC3gFhgtlnJJgKIlMYgk3lvAOl+hjpAoqKSQhMoyO1YnzwtKYBdgnE/1eHTM+QBKHfB4wGE1vORdusvg+J6MADyM2VVU+drMWrgp2wzBAwpVgORTIkd4jUpMXs4jueVUExMOldFVoYtq9NHfNhY1F3JkQX8PzMQ/Ta14Rx5l1PQyJ3skVEyrCFR9GjjazriNL3kunTJ7QiJxmrDOhNlpJjVmpMStby9nvD9/f3/5pQO4ACuk8cRZBdQHqJ5MRRm/OP91a+3hxZgDMBKSfEX6TSqIhYaNXH5qDo+GTo5756GGnr0SuL+rn69r89fnL39dv95SOo3XSplYUVU7CerO13Wps77Sblm0LCaWO56GQSLMJFLWiymzZu7WDhNeadrNtNuz91q7Z6UkoD8mEcWJ2ApZidhYYe2+/0TYPe0JkXGuKKa9+Ty1Qe6DKuIf/14RKLn2UL0vhH3OlB5EZAwAA"/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1Sv2/TQBR+cZs0TasSSiUmJEswMDSu42AVlSkRIFw5VWmkivXie3Gu2GdzPqdhQWIBiQ4wwM7AgtQ/hZmBhQqxMrNytnJNKuHl7t77frzvzud/oJoJuBMmE4uzwAoxtYaMWsglky+tpzmJ2Igh7TGaufbx14sfz94ZsOVDVaE8KqHpn5AJ2YkID3f8hIcPfFhRrSPCn0vYXGgOpGBlu6baFMULeAWGDw2ckGggicwzCTcW8B6XGKJQhI0CkhOZiGO14oxYH7EID0isz6sjxo+QZAmfFQxGi13Fh5sse8TJMMJDwSaKFWKvHOGqYS9JIiRcGTaSFDnSh0Rq8VpZ0TOvphEJcKHdTLUw7V2GW/bh2rzuxSTU8KWMJ8V2SQlnZXR9GRKD8ZUQqsKVHgpPh1nXlYXs9VMmx1SQ01J1mqoX3SiCWUUwq3yWs98fvr2//dOAyj5Ui/vEqYDmHHSQx0MUb84/3Vr7eHFmAExTKD4j+S6VRVvCej/niMLsjmNClcP1OXn2Vpu/Pn/5+/rtfWXiaZNiohWlU1ECTme7096+5zqWbacS6t0gwFQiLePXtJ3qbNm7rf2ctxzbcc22vdfZNbt9CY0BiRknZjdiBcadY2xnz+2Yh/00LbXWlNKy+je1QeuxovEA/+8Jd58Uh8YlFf4BlHUr0BYDAAA="/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1Sv2/TQBR+cUmaJlUJpRITUiQYE9dxiFrKlKggXLkBGqmC8eJ7ca8458M+p2FBYgGJDjDAzsCC1D+Fv4CFCjHCzMqdlWtSCS9399734313PvsDxTSB22E8sTkL7BCFPWTURi6ZfGk/yUjERgxpj9G04xx+Pf/+9J0FGz4UFcqjEmr+MZmQzYjwcNOPeXjPh2XVOiD8uYT1heZAJixvl1SbYvICXoHlQwUnJBpIIrNUwvUFvMclhpgowpqGZETGyaFacUYsj1iEfTI255UR4wdI0pjPChajelfw4QZL73MyjPBxwiaKFWIvH+GyYS+OIyRcGVZigRzpLpFGvJRXzMwrIiIBLrRrwgjT3kW4Kz5cnde9MQkNfCnlsd4uKeE0j24uQ2JwdCmEqnClh4lnwqyaykL28gmTRzQhJ7nqVKgXXdPBbB3Mzp/l9NeHb+9v/bCgsAdFfZ84TaA2B/Wz8RCTN2efblY/np9aAFMB+rPi31JZuBKq+48e7tafkTRlXBlcm3NnT7X+8/OXv6/fbisPz3jogZaVTEHCqttutFuNO9sd23GEhHI3CFBIpHn6knFTnQ1nq7mX8abruJ16y9lpb9W7+xIqAzJmnNS7EdOYzhzj3N1xWwojRK5VVUpF9Wsag+YDReMB/t8TGn19qFxQ4R9VGUI3FQMAAA=="/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1SMW/TQBR+cZs0TasSSgUTkiUYG8dOGhWVyVFb4coOkEiF9WK/uFec82Gf07AgsYBEBxhgZ2BB6k/hF7BQIVZmVs5WrkklvNzde9/7vve954s/UE4TuB/GE4NR3wiRG0MaGMgEFa+MpxmJ6Ihi0KVB2jGPv13+eP5egy0XyhLlBALq7imZkGZEWNh0YxY+dGFFpvqEvRCwuZAciIQW6YpMB5i8hNeguVDDCYkGgogsFXBrAe8wgSEmsmAjh2RExMmxPHFWWB3RCHtkrN6rI8r6SNKYzQIaDfJbyYU7ND1gZBjhk4ROZFWI3aKF64LdOI6QMClYizkyDPaJUOSVIqJ6XuUR8XEhXeeKOOhemVt24cY87oxJqOBLKYvz65IkTgvrahgC/ZNrJmSEST5MHGVmXUUWvFfPqDgJEnJWsE653OhGbszIjRnFWs5/f/z+4d5PDUpHUM7nidME6nNQLxsPMXl78fnu2qfLcw1gyiH/NL4spIQl4LbXHOje40e25x3s63370NGf2T1Hat2c08y2tvnry9e/b949kHKOkst7W5GMJQHrrfZ229re6bQM0+QCqrbvIxcYFIOoKGGZ2TJ3G0cZa7TMVke3zL32rm57AmoDMqaM6HZEc0xnAWPt7VgSw3nBtSaZKvIvVQKNQ1nGfPy/JhhZ/qhdlcI/TfO9jCADAAA="/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1STW/TQBCduOSjaVVCqcQJyRIcG8dOiIrCyRFfDk4oDVTAbWNP3AVnvdjrNFyQuIBED3CAOwcuSP0p/AIuVIgrZ8SNtZVtUglfdnfmzXvzZnz8G4pJDFeDaGow6hkBcmNEfQOZoOKl8SAlIR1T9LvUT9rm/teT74/fabDlQlGiHF9AzX1GpqQREhY03IgFN1woy9QeYc8FbC4lhyKmebok0z7GL+AVaC5UcUrCoSAiTQRcXMI7TGCAsSzYyCApEVG8L0+cF1bGNMQBmaj36piyPSRJxOYBjfrZreDCJZrcYmQU4m5Mp7IqwG7ewlnBbhSFSJgUrEYcGfo3iVDkpTyiel7lIfFwKV3jitjvnpo758L5RdyZkEDBVxIWZdcVSZzk1tUwBHoHZ0zICJN8GDvKzLqKLHmvHFJx4MfkMGedcbnRjcyYkRkz8rUc/frw7f2VHxoUelDM5omzGGoL0CCdjDB+c/zp8trHkyMNYMYh+zTeEVLCkrPqN4b6w7uP7vXsJ7p7v/vUHtyRQhcWHPOVbf78/OXP67fXpZajtLLGypKuIGC92dpuWdvX2k3DNLmAiu15yAX6+RRKSlVmtsydei9l9abZbOuW2Wnt6HZfQHVIJpQR3Q5phmkvMKbVaVr6bp/znGtNMpXlL6oE6rdlGfPw/5pQ/Js9qqel8A9l4QyqHQMAAA=="/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1SMW/TQBR+cZs0TasS2kqdkCzB2DiOQ1TUTo4AyZWTlli0rBf7xT1wzod9TsOCxAISHWCAnYEFqT+FX8BChViZWTlbuSaV8HJ3733v+973ni//QDlN4F4YTwxGfSNEbgxpYCATVLwynmQkoiOKQZcGacc8+Xb149l7DbZdKEuUEwiou8/JhDQjwsKmG7PwwIUVmRoQ9kLA5kLSEwkt0hWZDjB5Ca9Bc6GGExJ5gogsFbC1gHeYwBATWbCRQzIi4uREnjgrrI5ohH0yVu/VEWUDJGnMZgGNBvmt5MIOTR8xMozwOKETWRVit2jhpmA3jiMkTArWYo4Mg4dEKPJKEVE9r/KI+LiQrnNFHHSvzS27cGsed8YkVPCllMX5dUkSp4V1NQyB/tkNEzLCJB8mjjKzriIL3qvnVJwFCTkvWKdcbnQjN2bkxoxiLRe/P37/cPenBqVDKOfzxGkC9Tmon42HmLy9/Hxn7dPVhQYw5ZB/Go+ElGgJ2Ok1Pb33tG+f2gN9YHtHR65+avcdKXZ7zjNb2+avL1//vnn3QOo5Si9vbkVSlgSsW+3ddmv3fscyTJMLqNq+j1xgUEyiopRlZtvcaxxmrGGZVkdvmfvtPd3uCah5ZEwZ0e2I5pjOHGNa+5apH/c4L7jWJFNV/qZKoPFYljEf/68JxnL+qF2Xwj9EFOVuIQMAAA=="/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1SvW/TQBR/cUmaj6qEUokJyRKMjes4RK3KZAuQXLmhJFIF48V+ca/Y58M+p2FBYgGJDjDAzsCC1J1/gr+AhQqxMrNytnJNKuHl7t77fbzfnc//QDVL4W6YTA1GfSNEboxpYCATVLw0nuQkohOKgUODrG8efb348fSdBpseVCXKDQS0vRMyJdsRYeG2l7DwvgersjUk7LmAjaXmSKS0bNdkO8D0BbwCzYMmTkk0EkTkmYCbS3iXCQwxlYT1ApITkaRHcsU5sT6hEQ5IrM6NCWVDJFnC5gWNBsWu4sEtmj1kZBzhYUqnkhWiU45w1dBJkggJk4bNhCPD4AERSrxWVtTMDR4RH5faba6EA+cy3DUPri/qbkxCBV/JWFJsV6RwVkZXlyHQP74SQlaY1MPUVWHWVGUpe/2UiuMgJael6ozLF10vghlFMKN8lrPfH76/v/NTg8o+VIv7xFkK7QVokMdjTN+cf7rd+nhxpgHMOBSfxmMhLboCWkPbcZ/ZumMPHkuDGwvu/Kk2fn3+8vf1213p4SqPYqBVKVMRsGb1tnrdrXt9yzBNLqBu+z5ygUGZvqbcZGfT3Ons56xjmVZf75p7vR3dPhDQHJGYMqLbES0w/QXGtPasXf3wgPNSqyWVGvLXVAadR5LGfPy/JzS+FYfmJRX+AfZ7zDsVAwAA"/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1SMW/TQBR+cUmaulUJpRITkiUYG8dJiFq1kyNK5cqJSowK68V+ca8458M+p2FBYgGJDjDAzsCC1J/CL2ChQqzMjHC2ck0q4eXu3vve973vPV/8hnKawP0wnpiM+maI3BzSwEQmqHhpPs5IREcUgy4N0o51/PXy+7N3Gmy6UJYoJxBQc0/JhDQiwsKGG7Nwz4VlmRoQ9lzAxkLSEwkt0hWZDjB5Aa9Ac0HHCYk8QUSWCri9gHeYwBATWbCeQzIi4uRYnjgrrI5ohH0yVu+VEWUDJGnMZgGNBvmt5MIdmu4zMozwKKETWRVit2jhumA3jiMkTArqMUeGwUMiFHmliKieV3hEfFxI17giDrpX5m64cHMed8YkVPCllMX5dUkSp4V1NQyB/sk1EzLCJB8mjjKzpiIL3qtnVJwECTkrWKdcbnQ9N2bmxsxiLee/Pnx7f++HBqVDKOfzxGkCtTmon42HmLy5+HR39ePluQYw5ZB/Gpdj0tymXGav4Rl9+6ndPzCeePsDp38gdW7NKWYb2/j5+cuf1293pJSjpPK+liVbScBaq73Vbm496LRMy+ICqrbvIxcYFEOoKFGZ2bS264cZq7esVsdoWrvtbcPuCdA9MqaMGHZEc0xnjrFau23LOOpxXnCtSiZd/qFKoP5IljEf/68J5b/5Q78qhX9sjr82HAMAAA=="/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1SMW/TQBR+cUmaJlUJpRITkiUYG8eYRm7LlIhSuXKiEqOC2C72i3vgnK/2OQ0LEgtIdIABdgYWpP4UfgELFWJlZuVs5ZpUwsvdvfe973vfez7/A+U0gbthPDEY9Y0QuTGkgYFMUPHKeJyRiI4oBl0apG3z6NvFj2fvNdhwoSxRTiCg4b4gE9KKCAtbbszCBy4sy9SAsJcC1heSnkhoka7IdIDJCbwGzYUaTkjkCSKyVMDNBbzDBIaYyIK1HJIRESdH8sRZYXVEI+yTsXqvjCgbIEljNgtoNMhvJRdu0XSPkWGEhwmdyKoQu0ULVwW7cRwhYVKwFnNkGDwkQpFXiojqeYVHxMeFdIMr4qB7ae6aC9fncWdMQgVfSlmcX5ckcVpYV8MQ6B9fMSEjTPJh4igzqyqy4L16SsVxkJDTgnXK5UbXcmNGbswo1nL2++P3D3d+alA6gHI+T5wm0JiD+tl4iMnb88+3658uzjSAKYf803gmpMSWXGav5elPvL2nnf6+PnD2nzt9qXNjTjHb2PqvL1//vnm3LaUcJZX3tSzZSgJWLXtzx960tyzDNLmAasf3kQsMiiFUlKjMbJh28yBjTcu02vo9c/e+rXd6AmoeGVNG9E5Ec0x7jjGtXWtbP+xxXnDVJVNd/qFKoPlIljEf/68JWpQ/apel8A/I1qcUHAMAAA=="/>
+<input name="iterRows_17" type="hidden" value="VZH4sIAAAAAAAAAG1SMW/TQBR+cUmaplEJpRJiQIoEY+O6KSZQpqQF4cpxQ1IqOl7sF/fAOR/2OQ0LEgtIZIABdgYWpP4UfgEMVIiVmZWzlWtSCS93773vfd/73vn0D+TjCG754Uhn1NV95HqfejoyQcVL/XFCAjqg6LWoF5vG4dez70/fabBmQ16iLE9AxX5GRmQjIMzfsEPm37dhUZa6hD0XsDpX7ImIZuWCLHsYvYBXoNlQwhEJeoKIJBZwdQ5vMYE+RrJhJYUkRITRoTxx2lgc0AAdMlTx0oCyLpI4ZNOERr30lrPhGo0fMNIPsBPRkezysZWNcFGwFYYBEiYFSyFHht4uEYq8kGXUzEs8IC7OlStcEXutc3OXbLg8y1tD4iv4QszC9LogiePMulqGQPf4ggmZYZIPI0uZKavMnPfiCRXHXkROMtYxly+6khrTU2N69iyT3x++vb/5U4PcHuTTfeI4gsoM5CTDPkZvTj/dWP54NtEAxhzST+MTISVMAdd71u6j6s6+0zvoPtk5sPYdGbQ7TedIyl2ZMU0fbvXX5y9/X7+9KxUtpZiOtyhJcwLK9Xvrd26v1xumbhhcQLHpusgFetkuCkpbVtaMRm0vYbW6UTerm8b2VqPabAso9ciQMlJtBjTFmDOMsbW9aVY7bc4zrmXJVJY/qhKoPZRtzMX/a4L+Iw1K563wD0Wqxy0jAwAA"/>
+<input name="If_30_0" type="hidden" value="T"/>
+<input name="If_31_0" type="hidden" value="T"/>
+<input name="If_32_0" type="hidden" value="T"/>
+<input name="If_33_0" type="hidden" value="F"/>
+<input name="If_36_0" type="hidden" value="F"/>
+<input name="If_39_0" type="hidden" value="F"/>
+</div>
+<span id="If_30_0">
+</span><table align="center" border="0" cellpadding="0" cellspacing="0" width="92%">
+<tbody><tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td align="right" class="td_space"><a class="brown_link" href="javascript:void(0)" onclick="javascript:window.print();" title="Print"><img align="absmiddle" border="0" src="images/print.png"/> <b>Print</b></a></td>
+</tr>
+<tr>
+<td class="td_space">
+<span id="If_3_0">
+</span><span id="If_10_0">
+</span><span id="If_28_0">
+<span id="If_29_0">
+</span></span><table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td>
+<!-- Information Box -->
+<table align="center" border="1" cellpadding="0" cellspacing="0" class="table_list" width="100%">
+<tbody><tr class="td_caption" valign="middle">
+<td align="right" width="40%"><b>Organisation Chain :</b></td>
+<td height="60%">Rural Development and Panchayati Raj||Directorate of RDD||Rural Engineering Wing Kargil</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%"><b>Tender ID : </b></td>
+<td height="60%">2025_RDD_16436_2</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right"><b>Tender Ref No : </b></td>
+<td>E-tender 03 REW Zanskar</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right"><b>Tender Title : </b></td>
+<td>Construction of Community Shelter shed at Karsha</td>
+</tr>
+</tbody></table>
+<!-- Information Box -->
+</td>
+</tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td>
+<!-- List -->
+<!-- End : List -->
+</td>
+</tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td>
+<!-- List -->
+<span id="If_1_0">
+<table border="1" cellpadding="0" cellspacing="0" class="table_list" id="bidValidTableView" width="100%">
+<tbody><tr>
+<td class="section_head" colspan="8">Bids List</td>
+</tr>
+<tr class="td_caption">
+<td align="left" width="5%"><b>S.No</b></td>
+<td align="left" width="10%"><b>Bid Number</b></td>
+<td align="left" width="20%"><b>Bidder Name</b></td>
+<td align="left" width="20%"><b>Submitted Date</b></td>
+<td align="left" width="25%"><b>Status</b></td>
+<td align="left" width="25%"><b>Remarks</b></td>
+<td align="left" width="20%"><b>Status Updated On</b></td>
+</tr>
+<tr class="td_field" id="informal">
+<td align="left">1</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SBp9KqTynNtMVz87TCO0H1srmcf3ett4Y%2F5i8Ywl0IK0%3D" id="DirectLink_1" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159724
+                																									</a>
+</td>
+<td align="left">MOHD Yassin</td>
+<td align="left">05-Jun-2025 09:21 AM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+<tr class="td_field" id="informal_0">
+<td align="left">2</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SMY8DrS0AL5%2BHBylv0ZhvyQ89KbDO1sFprspGtPAvs7A%3D" id="DirectLink_1_0" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159679
+                																									</a>
+</td>
+<td align="left">M/S Abul Mohd</td>
+<td align="left">04-Jun-2025 06:37 PM</td>
+<td align="left">Not Admitted-Fee/PreQual/Technical/Finance</td>
+<td align="left">Others-CDR Pledge to AEE instead of Exn</td>
+<td align="left">07-Jun-2025 10:01 AM</td>
+</tr>
+<tr class="td_field" id="informal_1">
+<td align="left">3</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=StnE26rKFHSruYybpokOhvguXjUScLukZn%2BU%2BK3330o8%3D" id="DirectLink_1_1" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159647
+                																									</a>
+</td>
+<td align="left">M/S GHULAM AHMAD</td>
+<td align="left">04-Jun-2025 04:07 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+<tr class="td_field" id="informal_2">
+<td align="left">4</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SutxpkZ1%2BDgVQB7ND%2BwBy%2FdC9wgrFsIVAT6y1LfCORjg%3D" id="DirectLink_1_2" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159748
+                																									</a>
+</td>
+<td align="left">M/S MOHAMMED RAFI WANI</td>
+<td align="left">05-Jun-2025 11:41 AM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+<tr class="td_field" id="informal_3">
+<td align="left">5</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SUHcM00DOEcwhZ5SWZPL5AXP2RJyWklLe8sNexq3emyU%3D" id="DirectLink_1_3" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159879
+                																									</a>
+</td>
+<td align="left">M/S Mohd Abdullah Akchimal</td>
+<td align="left">05-Jun-2025 02:50 PM</td>
+<td align="left">Not Admitted-Fee/PreQual/Technical/Finance</td>
+<td align="left">Others-CDR Pledge to AEE instead of Exn</td>
+<td align="left">07-Jun-2025 10:01 AM</td>
+</tr>
+<tr class="td_field" id="informal_4">
+<td align="left">6</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SyxyBJtqpQ5U0H6wm%2BsBgROpAWANG1NbDZCSg8KbpN8k%3D" id="DirectLink_1_4" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159852
+                																									</a>
+</td>
+<td align="left">M/S MUNAWAR RASOOL WANI</td>
+<td align="left">05-Jun-2025 02:20 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+<tr class="td_field" id="informal_5">
+<td align="left">7</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=S73%2FsBzXN3zj8f4%2BAqSG76x6AT%2BpslfoageAE92p1wco%3D" id="DirectLink_1_5" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159858
+                																									</a>
+</td>
+<td align="left">M/S NAWANG TSERING</td>
+<td align="left">05-Jun-2025 02:30 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+<tr class="td_field" id="informal_6">
+<td align="left">8</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=Sh%2F9TvNKCzbv1EMWOcf0u%2FOBL0XTwPmukEEI17J1D4f4%3D" id="DirectLink_1_6" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159699
+                																									</a>
+</td>
+<td align="left">M/S NISSAR AHMAD WANI</td>
+<td align="left">04-Jun-2025 10:36 PM</td>
+<td align="left">Not Admitted-Fee/PreQual/Technical/Finance</td>
+<td align="left">Others-multiple use of CDR</td>
+<td align="left">07-Jun-2025 10:01 AM</td>
+</tr>
+<tr class="td_field" id="informal_7">
+<td align="left">9</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=Sj1Dn6m1ZteG4BCDKBWEY53B2JO4wUYTQjvOnqLuwLkw%3D" id="DirectLink_1_7" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159688
+                																									</a>
+</td>
+<td align="left">M/S RUSTUM KHAN</td>
+<td align="left">04-Jun-2025 08:15 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+<tr class="td_field" id="informal_8">
+<td align="left">10</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SovIx9IQ64YV9usOjPBU5c6q%2FaPOwuglF0G2L6EywQwE%3D" id="DirectLink_1_8" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159521
+                																									</a>
+</td>
+<td align="left">M/S SONAM WANGYAL GOVT CONTRACTOR</td>
+<td align="left">03-Jun-2025 02:37 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+<tr class="td_field" id="informal_9">
+<td align="left">11</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=Sd3RTS0JHhLnNnt0DmBW2Y5q7FdYU%2B2Wjwqyo2M%2Fbzrc%3D" id="DirectLink_1_9" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159802
+                																									</a>
+</td>
+<td align="left">M/S THUKJAY LOBZANG</td>
+<td align="left">05-Jun-2025 01:21 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+<tr class="td_field" id="informal_10">
+<td align="left">12</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SB%2Bjf3o8y3XVyNGiA1DH58Az3MdPkcCGPOVAUH%2FlR0QI%3D" id="DirectLink_1_10" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159861
+                																									</a>
+</td>
+<td align="left">M/S TSEWANG RIGZIN</td>
+<td align="left">05-Jun-2025 02:28 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+<tr class="td_field" id="informal_11">
+<td align="left">13</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SDWWAARQc1IzALGLo0f%2BU%2FjVLQ3EUNGEz%2Bpp3BBn8njw%3D" id="DirectLink_1_11" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159702
+                																									</a>
+</td>
+<td align="left">Muneer Ahmad</td>
+<td align="left">05-Jun-2025 02:53 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+<tr class="td_field" id="informal_12">
+<td align="left">14</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=S%2F48wrOqq%2FBR8FONum62m4%2FAt2qTzn4EAxrMOOdGK%2Bas%3D" id="DirectLink_1_12" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159853
+                																									</a>
+</td>
+<td align="left">RABIYA BANO</td>
+<td align="left">05-Jun-2025 02:28 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+<tr class="td_field" id="informal_13">
+<td align="left">15</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SOrBq%2FWDpcFO3u929ZG2QYwBnEAB9kEUHdnzrOfZeRCk%3D" id="DirectLink_1_13" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										159883
+                																									</a>
+</td>
+<td align="left">SIDH CONSTRUCTION COMPANY</td>
+<td align="left">05-Jun-2025 03:15 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">Accepted</td>
+<td align="left">07-Jun-2025 10:37 AM</td>
+</tr>
+</tbody></table>
+</span>
+<!-- End : List -->
+</td>
+</tr>
+<tr><td>
+</td></tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+<tr><td>
+<span id="If_4_0">
+</span><span id="If_5_0">
+</span><span id="If_6_0">
+<span id="If_7_0">
+</span>
+</span><table border="1" cellpadding="0" cellspacing="0" class="table_list" width="100%">
+<tbody><tr>
+<td class="section_head" colspan="5">Bid Opening Summary</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Type : </td>
+<td height="60%"><b>Finance</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Summary : </td>
+<td height="60%"><b>thirteen valid responses found and admitted to techinal evaluation</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated By : </td>
+<td height="60%"><b>Samina Ali</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated On : </td>
+<td height="60%"><b>07-Jun-2025 10:01 AM</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Document : </td>
+<td height="60%" nowrap=""><a href="/nicgep/app?component=%24DirectLink_2&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SHi0kYrrHXhm3TH3luCAn1TD5Y%2FmkvfWmZ2CpL3GmtGk%3D" id="DirectLink_2"><b>finance_40410.pdf</b></a>
+<!--  <span jwcid="@DirectLink" listener="listener:showDocumentSign" parameters="ognl:summaryId" onClick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')" class="blue_link">
+																									<img src="images/certificate.png" border="0" alt="Digital Signature"/>
+																							 </span>-->
+<a class="blue_link" href="/nicgep/app?component=%24DirectLink_3&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=ZH4sIAAAAAAAAAE2PP08CQRDFh4tIAolBY2uyiZUFx0EwGq0gxARyahStzXK7HKvc7ro3h1xjaUOhhZb2FHwUP4GNFrbWtt7xJ7rJbjK%2F2TfvzfQbsqGBHV8NbSk82%2Bfa7gpmc4kCY7sh2KnmshMFATWxK0L82Z%2B4Z5P40oKcC5ZgCEX3mg5peUClX3aV9A9dWFWJiBuEjX%2B9Dhox6%2BbC%2BbhbuAfLhfyibCpvQQoLchFrvkSRZhQ5aybPUnenzE0LedBiKcmMdLLIWupnp372LMv46%2BntcfvDgkwbskM6iPjIQPHv00kUdLl5mL5sFZ4%2FxxbASMPsiHOEfIcGQlJSHwiEBvaFQc4lScYIRgwPtZIhD0lPRZIRml4WCExSElQEuddPxAPCU1uKQkmE9V6CpMevak6t4tia9RByR3OGsOnsldqRLFWd6i6pOAdOhdSPw3S5lXmo1%2Fdfc%2B3Av7ABAAA%3D" id="DirectLink_3" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')">
+<img alt="Digital Signature" border="0" src="images/certificate.png"/>
+</a>
+</td>
+</tr>
+</tbody></table>
+</td></tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td>
+<!-- Information Box -->
+<span id="If_14_0">
+</span><table align="center" border="1" cellpadding="2" cellspacing="0" class="table_list" width="100%">
+<tbody><tr>
+<td class="section_head" colspan="5">Technical Evaluation Summary Details</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Chairperson/Co-ordinator Name : </td>
+<td height="60%"><b>Samina<b></b></b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Chairperson/Co-ordinator Type : </td>
+<td height="60%"><b>Internal<b></b></b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Members : </td>
+<td height="60%"><b>Samina</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated By : </td>
+<td height="60%"><b>Samina Ali</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated On : </td>
+<td height="60%"><b>07-Jun-2025 10:14 AM</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Document : </td>
+<td height="60%" nowrap=""><a href="/nicgep/app?component=%24DirectLink_4&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SNH6ue%2B9fhfZ9%2BRXrHru2mQ%3D%3D" id="DirectLink_4"><b>techsummary_40410.pdf</b></a> (<b>68.19 KB</b>)
+																						  <span id="If_15_0">
+<!--<span jwcid="@DirectLink" listener="listener:showDocumentSignEval" parameters="ognl:tenderEvalTechId" onClick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')" class="blue_link">
+																									<img src="images/certificate.png" border="0" alt="Digital Signature"/>
+																							 </span>-->
+<a class="blue_link" href="/nicgep/app?component=%24DirectLink_5&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=ZH4sIAAAAAAAAAF2TPWwTMRTHnYSg0IY0LQofAxISEuJDuhQRpi4lCaIpaSkkSxFS5eReL27v7KvPl1wYoCwsHcoAYoGVqRvsSJ0YYEJdWGBgYCkDEgssPF%2B%2BLtzmv9%2Fv7%2Ff%2B9u0dkqQnyWVLtA3OmoYFrqGAmyAN4IqprlEPVzfb1PapYoJfpz%2BunTr8lYuTXJVkGsy84wJn3CpTBYpkqxu0TfO%2BYnZeK3NVMo01Nb9RsoXXL9sij0hsuBHh%2BxtTzRZl0gXpCb5MHbSd6dnalFv5mpJYPjdeVu%2B6IR2vknRTOA5TCuCGafa1k0OtpJmVkKmYw35D46oIbTMwnDXiOgUB5uKheA8owoPD1pkNSwx7HJWmtKb7jq5r7OF%2Fc5SF37B1QHEWtpnARJhX74iaohYUmWnimIqciCBFIWygXDdpC0qbyqe2kNaId6UGlwDUeKKTLp7FvFZEOu4xS%2BdeAqkqA4MJ30VjE8xit6%2BkB0oEnegIuVlR4PS5wMVPkaM16jBOFUlVuALJqT3UcPdYHZotfGLUxkXCNdcVySmUPN9xqOyuFWYLV2cN1PE5ZvXIhh7Z6KW0%2FXZ%2F8dLm3yNxEiuTpL4fCMbKln2nAfLp3ouzk8%2B%2F7cQJCdz5u%2BmLv%2Fd3H6BfZlQYXvLO92cfd89%2FRbfFgZseJEPCb%2FUzItMjpJ%2F6p3Ny%2B%2BDVn59I3R9QLsHJPc1me2xhPrq6cgudZkInb8s26vhOPEUd98Lpgw%2Bx2ntAqwpJcsqFFwy61L%2BOocNubTyJ3V5VZxJ6mE6KkNjLhXdvSJBbebwQPeT1l38q76ZuxQMAAA%3D%3D" id="DirectLink_5" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')">
+<img alt="Digital Signature" border="0" src="images/certificate.png"/>
+</a>
+</span>
+</td>
+</tr>
+<!-- <tr class="td_caption" valign="middle"> 
+																					<td width="40%"  align="right">Bid Opening Date & Time for Financial : </td>
+																				 	<td height="60%" ><b><span jwcid="@Insert" value="ognl:financeDateTime" /></b></td>
+																					</tr> -->
+</tbody></table>
+<!-- Information Box -->
+</td>
+</tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+</tbody></table><table border="1" cellpadding="0" cellspacing="0" id="table_list" width="100%">
+<tbody><tr>
+<td class="section_head" colspan="9">Financial Evaluation Bid List</td>
+</tr>
+<tr class="td_caption">
+<!-- <span jwcid="@If" condition="ognl:evaluationType">
+																											<td  width="10%"><b>S.No</b></td>
+                																							<td  width="25%"><b>Bid Number</b></td>
+               																								<td  width="30%"><b>Bidder Name</b></td>
+               																								<td  width="25%"><b>Value</b></td>
+	           																								<td  width="10%"><b>Rank</b></td>
+	           																								
+	           																							</span> -->
+<td width="10%"><b>S.No</b></td>
+<td width="25%"><b>Bid Number</b></td>
+<td width="30%"><b>Bidder Name</b></td>
+<td width="25%"><b>Value</b></td>
+<td width="10%"><b>Rank</b></td>
+</tr>
+<tr id="informal_14">
+<td>1</td>
+<td>159521</td>
+<td>M/S SONAM WANGYAL GOVT CONTRACTOR</td>
+<td align="right">24,31,371.00</td>
+<td align="center">L3</td>
+</tr>
+<tr id="informal_15">
+<td>2</td>
+<td>159647</td>
+<td>M/S GHULAM AHMAD</td>
+<td align="right">23,31,452.00</td>
+<td align="center">L1</td>
+</tr>
+<tr id="informal_16">
+<td>3</td>
+<td>159688</td>
+<td>M/S RUSTUM KHAN</td>
+<td align="right">23,31,452.00</td>
+<td align="center">L1</td>
+</tr>
+<tr id="informal_17">
+<td>4</td>
+<td>159702</td>
+<td>Muneer Ahmad</td>
+<td align="right">23,31,452.00</td>
+<td align="center">L1</td>
+</tr>
+<tr id="informal_18">
+<td>5</td>
+<td>159724</td>
+<td>MOHD Yassin</td>
+<td align="right">23,31,485.00</td>
+<td align="center">L2</td>
+</tr>
+<tr id="informal_19">
+<td>6</td>
+<td>159748</td>
+<td>M/S MOHAMMED RAFI WANI</td>
+<td align="right">23,31,452.00</td>
+<td align="center">L1</td>
+</tr>
+<tr id="informal_20">
+<td>7</td>
+<td>159802</td>
+<td>M/S THUKJAY LOBZANG</td>
+<td align="right">23,31,452.00</td>
+<td align="center">L1</td>
+</tr>
+<tr id="informal_21">
+<td>8</td>
+<td>159852</td>
+<td>M/S MUNAWAR RASOOL WANI</td>
+<td align="right">23,31,452.00</td>
+<td align="center">L1</td>
+</tr>
+<tr id="informal_22">
+<td>9</td>
+<td>159853</td>
+<td>RABIYA BANO</td>
+<td align="right">23,31,452.00</td>
+<td align="center">L1</td>
+</tr>
+<tr id="informal_23">
+<td>10</td>
+<td>159858</td>
+<td>M/S NAWANG TSERING</td>
+<td align="right">23,31,452.00</td>
+<td align="center">L1</td>
+</tr>
+<tr id="informal_24">
+<td>11</td>
+<td>159861</td>
+<td>M/S TSEWANG RIGZIN</td>
+<td align="right">27,97,742.00</td>
+<td align="center">L4</td>
+</tr>
+<tr id="informal_25">
+<td>12</td>
+<td>159883</td>
+<td>SIDH CONSTRUCTION COMPANY</td>
+<td align="right">29,64,275.00</td>
+<td align="center">L5</td>
+</tr>
+<!-- <tr jwcid="bidEvalFinRow">
+																											<td jwcid="bidEvalFinValues"  />	 -->
+<!-- <span jwcid="FinWithdrawColumnValue@Block">
+																													<span jwcid="@If" condition="ognl:bidRow.withdraw == 2">None</span>
+																													<span jwcid="@Else">
+																														<span jwcid="@DirectLink" listener="listener:doViewBidderDocs" parameters="ognl:bidEvalFinRow" onClick="return popup(this,'window');">View Doc</span>
+																													</span>
+																												</span>	 -->
+<!-- </tr> -->
+</tbody></table>
+</td></tr><tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td>
+<!-- Information Box -->
+<span id="If_31_0">
+</span><table align="center" border="1" cellpadding="2" cellspacing="0" class="table_list" width="100%">
+<tbody><tr>
+<td class="section_head" colspan="5">Finance Evaluation Summary Details </td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Chairperson/Co-ordinator Name : </td>
+<td height="60%"><b>Samina<b></b></b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Chairperson/Co-ordinator Type : </td>
+<td height="60%"><b>Internal<b></b></b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Members : </td>
+<td height="60%"><b>Samina</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated By : </td>
+<td height="60%"><b>Samina Ali</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated on : </td>
+<td height="60%"><b>07-Jun-2025 10:37 AM</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Document : </td>
+<td height="60%" nowrap=""><a href="/nicgep/app?component=%24DirectLink_10&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SsSZVwUq7USx1XXB3RTv%2FDA%3D%3D" id="DirectLink_10"><b>finsummary_40410.pdf</b></a> (<b>68.19 KB</b>)
+																							   <span id="If_32_0">
+<a class="blue_link" href="/nicgep/app?component=%24DirectLink_11&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=ZH4sIAAAAAAAAAF2TO28TQRSFxzZGxjGOkxAeBRISEuIhrYMwVZpgm4eDEx7rJggJxt7xepLdmcnsrL2mQKGhSREKIhr4B%2Bn4AaBUIEFHGhooKGhCgUQTGu6sX2u2se6Z%2B5259%2Bx6Zx8lPYku2rxtMNowbCIMRZhFpEGYoqpr1MLqehs7PlaUs6v455UT%2B79n42i2irJ1at0RhFFml7EiCuWqq7iN876iTl4r81U0BT2mXy853Ou3raOnKDY8iPD9g8lGC1MpiPQ4W8Yu2E73bB3M7LypJLTPj7fVuiKk41WUaXDXpUoRcs2y%2BtrxoVbSzN2QqVjDeUPjKg9ts2S4a8R1kgSQiwfifYIBHlzWpA5ZojDjqDWlNT13tDbpk%2F%2F2KHO%2F7uiA4jQcMwGJUK%2FW4abCNilSy4I1FZqJIEXOHYKZHtLhGDeUjx0u7REvpAaXCFHjiU4IuIt6rYh01KO2zr1EpKoMDNK%2BAGOLWMVuX8kMlAia7nC5VlHE7XOBgEehwyZ2KcMKpSpMEcmwM9Tg9MgN%2BGUNih0oEsJqKnSsSZnnuy6W3UeFucLlOQNk%2BBpzemNDb2z0Qtp4u7t4Ye3voTiKlVFSvx4SjLUt%2B26dyOc726cnXn7fjCMUiIV7mfN%2Fdrcegl921Bi%2B480fLz5tnf0GbosDN71HFoXPyhdApkZIP%2FTPZ%2BTG3uuDX0A9GFACeRrM9UB0IES0LixEq0s3wXY6tPXWHaMG34ynsCvOndz7EDPfEfCtoCRExL1gMLL%2BGxk6%2BNbqs9jtFXUqoTfrpBCKvbr1cftxkO7MvI9e8ubrP1Z2yFLRAwAA" id="DirectLink_11" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')">
+<img alt="Digital Signature" border="0" src="images/certificate.png"/>
+</a>
+</span>
+</td>
+</tr>
+</tbody></table>
+<!-- Information Box -->
+</td>
+</tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+</tbody></table>
+</form>

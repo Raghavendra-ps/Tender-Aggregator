@@ -1,7 +1,7 @@
 {
   "global_scraper_settings": {
     "scrape_py_limits": {
-      "max_list_pages": 1,
+      "max_list_pages": 100,
       "retries": 3
     },
     "concurrency": {
@@ -13,7 +13,7 @@
       "detail_page": 75000
     },
     "rot_scrape_limits": {
-      "max_list_pages": 1,
+      "max_list_pages": 100,
       "retries": 2
     },
     "rot_concurrency": {

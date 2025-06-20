@@ -1,0 +1,537 @@
+<form action="/nicgep/app" id="bidSummaryForm" method="post">
+<div id="bidSummaryFormhidden" style="display:none;"><input name="formids" type="hidden" value="If_0,If_1_0,iterRows_0,If_2_0,If_3_0,If_4_0,If_5_0,If_6_0,If_10_0,If_11_0,If_12_0,If_14_0,If_15_0,If_16_0,If_18_0,If_19_0,If_20_0,If_21_0,If_23_0,If_24_0,If_25_0,If_26_0,If_28_0,If_29_0,iterRows_10,If_30_0,If_31_0,If_32_0,If_33_0,If_36_0,If_39_0"/>
+<input name="seedids" type="hidden" value="ZH4sIAAAAAAAAAFvzloG1vIAhT6c4tagsMzlVxUCnIDEdRCXn5xbk56XmlYDZeSWJmXmpRUB2cWpxcWZ+HohVACQ884A6QWoc8yrh3HgDBNMQyEzKTAkuzc1NLKp0yy/KVTEAAOBbcNx2AAAA"/>
+<input name="component" type="hidden" value="bidSummaryForm"/>
+<input name="page" type="hidden" value="FrontEndViewBidSummaryDetailsPrint"/>
+<input name="service" type="hidden" value="direct"/>
+<input name="session" type="hidden" value="T"/>
+<input name="submitmode" type="hidden" value=""/>
+<input name="submitname" type="hidden" value=""/>
+<input name="If_0" type="hidden" value="F"/>
+<input name="If_1_0" type="hidden" value="T"/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRvW/TQBjGL45CgZQqBIRgQLKExBLifNAADeLDoSq4dZIWh1aMF/tqX2SfnbtzcDqAusDQAYYWBhaEGBg68B90BYmVmQqxsrCwcnbSNr3p9NzvfZ/3fW73D8gwCgq2P1AINhUbBUoXWwoiHPOh0sCWhagReh6kw3nEIXbZ+2970vaL4V0JnNFBRsCaxUFO78EBLLmQ2CXdJ/ZtHZwST48RZD7hID/xbHCKDwGDQx6yPngOJB3kYiHsephzZM1Djg77hhy7pVgRZTOCehJYcMzEtWkdnO4mo7agh8bdsuuYMj5yG0vT635IuXNMk7AV31I6mHJ9GxPNOoAZMn1iHYPTjPgcnJvYRiMc2YiKubLcwXQSjwKR7EyMKjGqJLls/X7z/fWVnxJILYLMALohiijIHUGt0Osi+nJ353J2e39LAiAKQHJSdZFGP/TF2rKDbUemo4BU00SBEIsLmEBiIuGZT9qxvqt0sIcYh15w9eKPryljDwlfDWQE6LPoYLg4XCWO0ultppae8kvp2PXZSeH5diezsh9d+PvxfvJH2UR8N+s7X6LsPe0zB9NNdU1tPpT1dqdtcHC+fL3YhMNitVytyZVqvVaRl5tBUnsi2UKCLQ6ubawGtSFipercWqGjauZcuRU0osDstQsrxvIDurHaf6TeXIoWGuqdUdPFkIybVuqzN2S1KdY8e5Ta+Bfyvz58+rf56tZoy1G6sfdUnF/wH4O1Oh7sAgAA"/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRv2/TUBDHL45CC6FVCAwwIFlCYiDE+VFVLUUgBUUqSZ0o1GkoGy/xi/0i+9mxz6nDAHSBoQNIFBYWBhiQ+j90BYmVmYIQGxsSAwu2kzTpm57uPnf3ve8d/IaE60BGswYSZx1Jo7bUZqpEOTIcSneYqlJH8UyTOMMyRcIM9+3nQ2H/yfC2AAsyJAK4oiKk5B4ZkJxBuJaTLa7dlOF0kNqkxLU4QnomraDDjgEFCXpuHx6DIEMqDHhtkyFStUyQHvf1kBm5MBKULQbUlq2SMRPWxmU4046k1olJx92SXea4OJo2Dp3tWp6D+omYwNTwF5NhzrA0xivqBHZpx+LqCTjucgvh/Mw2FY5Uo06gK4k6c2Zx3w6cXQxRKUSlyJe9ny+/vLjyTYBYFRIDYnjUdyA1heqe2abOs4PXl5P7R3sCgG9D9NL/EK7VLRQ7lmlTw6CquMNQF5F29OByxBBdm3ZYN/giizzfpD3aCVzKNidIoCcdjXL7htRkJnWRmPbVi18/xZRDGmiqQIITbrn+RHhovBTarPd2YxsP8FI8VLQzDxB78+q7K/o3Wn+eRvdLjoIfhx+O/OLq+jzCQi2niEqpXGqKJbmCcCG/lK2RYbaYLy6L+ZW1paJYqtlR8aloReHhL4TrvX7N5t7d7UajwJDfL1XXFYNvG/daG5lMkVWXt5oZX+9Ro/XIuhU2XZk2LRTXCnmxUQv2PDe1dHyi9I937//uPl8drTmyPpw9F062/wMkFlnSCQMAAA=="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRvW/TUBTFbxyFAoEqBAY6UFlCYoE4H00BFQEKDRAXJ0Gxi4AB6SV+cV4Sf+T5OjgLqAsMHWAoMLAwMDB04D/oCoKVGYRYmVl5dtIvT9Z5v3fOvedt/4WUz+Gi5Y4Vh3UUi3pKm5kKdZDhRLnFTJNyPbBtwidVioQN/fdfd6St55MbEpzUICVg1UTIaH0yJvkhcay85jrWNQ2OiaMWJb7rIGQPHOvI2R6gI8HAH8EzkDTIRELQthkiNasE6Z5vgGyYjxRxbV5Q655JZkx0N6nB8XY8aoPYdOaW7jLu4zRtJp3ougHH3iFNYmb0l9BgbuhazFHNXdinHdcxD8FJ33ERTh/YRnWQWpSLudLYY/wgHnqi2fkIVSJUiXvZ/PP6+6vzPyVIrEFqTIYBDTlk9qFGYLcpf7H95lx669emBBB6EH+LnmhjFLhibbnHrJ7MpwVVOh3qCTF3hznE6VCRmY3t/NFQMZhNfSS2d+Hsjy8JfYeKXBVSAnT9cHe4qFwlqrLX30jce4QLySj16VGAxNvBNxvC5EIA8RulY/Fd2e19DtM31U8Ii/W8Luu1Sk2tyhVNle82HxjyarNhtCqrRrOFcKa0nKt4PFcqlJblYmmlvCTfr3ux25F4L+nJAOFSf1zFMhr+Y08f1Lqs2b0dltFz69qEGlcst9iqD/wCf0jsoHxdmBaWcmuBMzMtrpQvy5W6WPzUfo+zd8n+/vDx38bLq9O9p31H2XMiOen9B3surD/+AgAA"/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRv2/TQBzFv3EIBQJVWhhgAFkCwVDipCUNpQiQ06pRUjtB+YFItkt8tS+Kz875HJIFVAYYOsDQwsDCwMDQgf+gAwtIrMwgxMoMUhfOTtqmnqx3n3vv+323+wdiHoM50+krlLQVE7tKixgKppzwoZIjhoFZ1bdtxIarmCPS9d593ZO2nw3vS3BOg5iACwaHhNZBfZTqImqmNIeadzU4LY4qGHkO5TA7cVzljBwCVY647/XgKUgaJALBb9mEc2ysIo4PfX1OuqlAEdemBVV3DTRmgrtRDc60wlFLyMZjt/gGYR4fpY2lsxuOz7h1TJOIEfxFNJjqOiahBeMA9nDbocYxOOpRh8P5iW0KlGMTMzFXnFuETeIDVzQ7HaBKgCphL1u/X397dfWHBJEixPqo6+MBg8QRVPLtFmYvdncux7d/bkkAAxfC78Zn0UbPd8TaskVMS2ajgtR2G7tCTK4Rimgbi8zZ0M7rdZUasbHHke1ev/j9S6S6h0VuAWICdLzBwXBBuUpQpdXZjKw3+KVokPrkFEDkzc7M83+D7JV9CN8oHopvM471aRB/UPjI4ZqeqsrVdVVrqqW8XFL1vFrQ5Hz5UU1eKZdqFXWlVq5wuJC+ldTRMLmQXliU0/PL6Yz8UHdDz5PhdhIS1M3m7SEz7Ttzaw2z4uYcvJFrUDYsLfa8nKXrxfrjjlvv1BaWss36vZFp0acj0/n55UxWVnWx/sxRm+PXmf31/sPfzZdLo+1HrQfZUyL5hPsf69No7AQDAAA="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRP2zTQBjFvzgKBQJVCAwwIFlCggHi/KGkVRGgVIE2wQkQp0Vl4hJf7Cv22T6fU4cByAJDB0AqMLAwMHQoEgtzV5BYmUGIlZmVs5O2qSfr3e/e+753238h5TO4aDh9hZKuYmBX6RBdwZQTPlAWiK5jpgW2jdigijkilv/+2460+XRwXYLjKqQEXNM5ZNQ11Ed5C1EjrzrUuKrCEXHUwsh3KIfsxLHGGdkDNI544HvwBCQVMpEQdGzCOdariOM934ATKx8p4tq0oJZdHY2Z6G5ShaOdeNQmsvHYLd0jzOejtLF0rOcEjJsHNIno0V9ChSnLMQit6buwj7sO1Q/ASZ86HE5ObFOjHBuYibnS3CRsEg9d0ex0hCoRqsS9bPx59f3luZ8SJOqQ6iMrwCGDzD7UDOwOZs+335xNb/7akABCF+IvMxRteIEj1pZNYpgyGxVU6XaxK8TcLUIR7WKRmY3tfM9S2sTGPke2e/70j68JbQeL3BqkBOj44e5wUblKVKW5NkzcXuVnklHq+mGAxNvX8GUrvDC39Cx+o3QsvptxzM9h+kZti8OpRl6TtXalqbWWm4ty9U6rXlkVcqGUa6BBrlQoXZEL5fnCrHy34cYeh+JtpIefOFxabK4Qb3W9t8KI59d1lF8w7s2qQYHeJ17lQVDkj9q8Xl56rJZuXotML+fqAR2ZFovzM2W50hDrnthvb/wa2d8fPv4bvpgbbTtqOcqeEskp9z/8xD6D9AIAAA=="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRvW/TQBjG3zhKCwSqNjCAEMgSEksS57NRU76UqlRy4yRQp1LLdokv9lX+in0OdgcgCwwdYGhhYGFgYOjAf9AVJFZmEGKFlZWznbapJ+u53z3P+z53+AdSrgNZ1RoJJukLKraFHlEEbFJCA2GFKAp2ZM8wkBOsYoqI7r7/esTtPw/uc3BJghSDRYXCvLSDRqigI1MtSJap3pHgPDvawMi1TAqZqWOZOuQEkCminjuEZ8BJMB8KXs8glGJlFVF84utRohdChV2bY9SmraAJE95NSnChF43aRgaeuKUHxHFpnDaRLg4sz6HaGY0jSviXkGBWt1Riisox7OK+ZSpn4KRrWhQuT20jmhSr2GFzpalGnGnct1mzcyEqhKgQ9bL3+82317d+cJBYh9QI6R72HZg/hdqe0cPOy8ODG+n9n3scgG9D9N28y9oYehZbm9eIqvFOXFCj38c2E/NrxERmH7PMTGTnDnWhSwzsUmTYt69+/5KQjzDLFSHFQMv1j4cLyxXCKrWdcaK5Ta8lw9Sn5wASbw9yf1/4uetjiN4oHYnvqpb22U8/ED9RWGgVZL4rP+w22nx7c2Ol06FwpVjJt1CQLxfLi3yxtFyp8o9admQwE63CoQGFnLPbUIfibq1ZKbpb2XKn/riu0KBYaaqjelcO2nTpid4ZLmZra9v3YtN1z4xNS6Xlao1vtNiuC6fVTZ4i8+vDx3/jV0vxqnHFYfYsS56x/wN0WbLE8QIAAA=="/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRv2/TQBTHXxyFAKFVCAwwIFlC6lLiJCZUSRGglqqVixPamPCjE2f7al+xz459ThMGUBcYOsAQyoCEGBgYOvAflLFIrMwgxMDCzMrZSdv0ptP3Pu993/ve7l/IhAFMW15XosSQLOxLOjElTBlhfWmemCYOtMh1UdBfwAwRJ3z3dU8YPO/fFGBChQyHFZNBXt1AXVRyELVKqket6yqc4k8tjEKPMiiMPWssIIeAxhCLwg48A0GFfCxEuksYw+YCYviwb8SIU4oVXjbJqbZvohET16ZVOK0nozaRi0fdcuskCNnQbSSdWfeigNnHNIGY8S2lQtbxLEIV8wAOseFR8xicDqnH4NzYNgpl2MIBnyvHbBKM4z2fJzsZo1KMSkku279ff3t1+YcAqWXIdJET4V4A+SOoGbk6Dl7svrmUG/zcFgB6PiRn6gtPoxN5fG3RJpYtBsOA5gwD+1wsLhKKqIG5ZyFpF3Yc6R5xcciQ609d+L6f0vYw91Ugw0Ev7B0MF4crxVHaG1upO4/YxXTsunkSILUz+LNj90RnH5I/yiXi26pnf+7lbimfGEy0lKU1pSk22635cpnB+fLVYgP1i3JZviZW5NlKXVxp+EnxiWQN4fF7Ble02oOlevnuqlJzZEt/Itebm5Wqpuryw9WV22vt6QaimnF/0Zh52r4xbLoc0VHTymx1Rpxr8D3PHsU2+obCrw8f/229rA3XHMYbe2e5c9b/D5GxnTXtAgAA"/>
+<input name="iterRows_0" type="hidden" value="VZH4sIAAAAAAAAAFWRMWzTQBSGXxyFFlJKCAwwICwhsZQ4bmhCVQSoJKpwcKJSp0XduMQX51r77PjOSbyAusDQgQ4FBpYKMTB0YGXqCoiVEYEQKzMrZydt05tO/33vvf/9t/8XUsyHGcvtKZS0FAt7SpOYCqac8FC5T0wT+0bgOMgPK5gjYrO3Xw6k3WfhXQnO6pASsGZyyOgbqIfyNqJWXnepdVuH0+JpBSPmUg7ZsWeD++QIMDjiAevCU5B0yERC0HQI59isII6P+gac2PlIEWXTglr1TDRiotqkDmeasdU6cvCoW7pNfMaH00bSVNsNfN45oUnEjG4JHSZs1yJUMw9hhlsuNU/ASUZdDhfGttEoxxb2ha807xB/HB94ItnpCFUiVIlz2f6z8+3ltZ8SJKqQ6iE7wAMfMsdQPXCa2H++/+pKevfXtgQw8CA+8icOV1nQamHG2oFth3I3cEUGsu32MeOyP8xrUQCekHNLhCIqYB+ycXfWtZUGcQSKHO/6pe+fE8YBFjY0SAnQZYNDr1HWSpRsZ2Mr8XCdX05GJvqTAInXO1/VvcHUux8Qf1k6Ft/MuZ2Pg/Q97QOHcw2G+2INudEh1EaMw0W1kKuhMFdQC0VZLS6o8/JyzYvLT8V7SU8CDjdWyYyulSpY3XRWql59Te03b9HNplEsrxvkMSm7y+GSxcsPWqVHd6KmN3PVgA6bzs4uzJXkxZrY9PxxjqN/yf7ee/9v68X8cNFh3tHsCTF50vsPWrhAzf4CAAA="/>
+<input name="If_2_0" type="hidden" value="F"/>
+<input name="If_3_0" type="hidden" value="T"/>
+<input name="If_4_0" type="hidden" value="F"/>
+<input name="If_5_0" type="hidden" value="T"/>
+<input name="If_6_0" type="hidden" value="F"/>
+<input name="If_10_0" type="hidden" value="T"/>
+<input name="If_11_0" type="hidden" value="T"/>
+<input name="If_12_0" type="hidden" value="F"/>
+<input name="If_14_0" type="hidden" value="T"/>
+<input name="If_15_0" type="hidden" value="T"/>
+<input name="If_16_0" type="hidden" value="F"/>
+<input name="If_18_0" type="hidden" value="F"/>
+<input name="If_19_0" type="hidden" value="T"/>
+<input name="If_20_0" type="hidden" value="T"/>
+<input name="If_21_0" type="hidden" value="F"/>
+<input name="If_23_0" type="hidden" value="T"/>
+<input name="If_24_0" type="hidden" value="T"/>
+<input name="If_25_0" type="hidden" value="F"/>
+<input name="If_26_0" type="hidden" value="F"/>
+<input name="If_28_0" type="hidden" value="T"/>
+<input name="If_29_0" type="hidden" value="T"/>
+<input name="iterRows_10" type="hidden" value="VZH4sIAAAAAAAAAH1Sv2/TQBR+cUnapqWEUomJyhKMjZM4PwRlchqgLk5SkijqhHSxL86Bc76ez2lgQGIBiQ4wwM7AgtQ/hb+AhQqxMrNyNnGTLni5u/e+933ve89nvyEdcLjj+hONEltzMdMGxNEwFUS80J6EyCNDgp06cYJqsf/1/PvROwW2LEhLlOkIyFnP0AQVPETdguVT974FyzLVQfS5gM2FZFdwEqczMu1gfgyvQLEgiyfI6wokwkDAjQW8SQV2MZcFGxEkRMLnfXniWeHKkHi4hcbJe3VIaAejwKezgEKc6Jay4CYJHlA08PAhJxNZ5eJ63MJlwbrvexhRKZj1GabYaSCRkGfiSNLzKvOQjRfSOZYQO/ULc1csuDaPm2PkJvClgPrRdUkSB7H1ZBgC26NLJmSESj7MzcTMehJZ8L5yQsTI4egkZp0yudGNyJgWGdPitZz++vDt/e0fCqQOIB3NE0855OagVjgeYP7m7NOttY/npwrAlEH0KU/lHhWrKmC7Weiq3X1j32yohmWqj9r9nrrXbvU6xl6v3ZGa1+d0s+1t/vz85c/rt3elrJnIRj0uS+aUgPVScadW2dHL9zS9xuTPdBz6AjvqiLgjlcv5xoPJJI1IxFaxnD8IaV4v6lW1VNqt1FSjKeDq45C+lLpqw/fGSML0at5gfAbTdytl9bDJWEy39k87Z9g2ZlIt/5BQRG38f3nYZtEje0EBfwFV3vFFOwMAAA=="/>
+<input name="iterRows_10" type="hidden" value="VZH4sIAAAAAAAAAJVSPW8TQRAdX7CT2JCYEIkKcRKU8eVs4yiEKlZAcjhHIYkiSjZ34/OG9e7lds8fFEg0IJECCugpaJDyB/gP/AIaIkRLTcvu4Yudkmt2d+bNe/Nm7uw35GUMd0PRdzj1nRAj54gGDnJF1ch5khBGOxSDJg1kwz38cv796VsLlj3Ia1QrUFD2jkmfrDLCw1VP8PCBB7M6tUf4cwVLU8l9FdM0XdDpAOMTeAmWB0XsE7aviEqkghtT+BZXGGKsCxYMJCFKxIf6xHHhXIcy3CG97D3foXwPiRR8HLBoYG45D25S+ZCTI4a7Me3rqhCbaQuXBZtCMCRcCxZFhByDLaIy8kIayXqejxjxcSpdjjLioHlh7ooHi5N4q0fCDD4juTDXGU0sU+vZMBT63UsmdIRrPoxbmZmrWWTK+9yAqm4Qk0HKOoz0RheMMccYc9K1nP56/+3dnR8W5LYhb+aJwxjKE9BO0jvC+PXZx1ulD+enFsAwAvNZzxKlJaoKFg8kDjTUPuhSzojUItcn9eN1Lf389PnPqzfrWqeV6ZimZjVVTkHp/krDXalV685aPVJwWya+j1J2EsZG9kkiFAY2EwOUyo71eNO5FLI+dMGyW69sJ7xSc2sNu1rduLdmb7YVXHuc8BemtS3BesTAapU2Gf2DuY0Nd93ebUdRSlcyZPq/3dTKkdarPKKccB//qxuwv5pH8YIR/gJsgt2uSQMAAA=="/>
+<input name="iterRows_10" type="hidden" value="VZH4sIAAAAAAAAAH1SMW/TUBC+OCRtE2hDqcSEZAnE1LhOaKO2TI0KyMWJSioqxMSLfXEeOM/u83OaMiCxgEQHGGBFDCxI/RH8AH4BCxViZWblbOImXfDy3rv77vvuu/PJbyhEEm54wdAQ3DE8DI0udw0Uiqsj40HMfN7j6Da5G62Z+19Ovz96o8GSDQVCWa6Civ2UDdmKz4S3YgfCu23DDKU6TDxTsDiV3FOSp+kipV2UB/ACNBtKOGT+nmIqjhRcmcJbQqGHkgrmE0jMVCD36cRx4WyP+9hmg+w91+OigywKxDigcTe55Wy4yqM7gnV93JV8SFUeNtMWzgs2g8BHJkiwFIQo0N1mKiMvppGs57nQZw5OpSthRuw2z8xdsGFhErcGzMvg+UgEyTVPxFFqPRuGQqd/zgRFBPGhtDIzF7PIlPfZQ676rmSHKesopI3OJ8aMxJiRruX417tvb6//0CC3A4VknjiSUJmA2vGgi/LVyYdr5fenxxrAKITk0558VCRRV3CpY917bLX19sNO0zRJ4vKkerysxZ+fPv95+XqdVKxMJWlphohyCsoby+vmcqNuGquNkH6dgzhQ6Op97vV1SdNMx1DMZAmxZN6q7sSiWjfra3qttrna0Lda1Mn9WDwnWX078AfsH6zFjsaw+mZtQ99thWFKVyayPGltOQ6GpFa9ywUTDv5fHm5+TR6lMwr4C8t2RLgpAwAA"/>
+<input name="iterRows_10" type="hidden" value="VZH4sIAAAAAAAAAH1SMW/TUBC+uE3apqWEEokJyRKMjeOENi1lShRACU4oCVSw8WJfnEedZ9d+TlMGpC4g0QEG2BlYkMo/4RewUCFWZlbOJm7SBS/vvbvvvu++O5/+hnTgw03bHWmCm5qNntbjloZCcnmkPQqZw/scrRq3gk1978vZ96dvFcgbkCZUw5KQM16wESs6TNhFwxX2HQMWKNVhYl/C2kyyK30epzOUttA/gFegGJDFEXO6kskwkHB1Bt8QEm30qWA1goRMuv4enTgpXOxzB9tsmLyX+lx0kAWumAQUbkW3lAHXeHBXsJ6Duz4fUZWNtbiFi4I113WQCRLMuh4KtOpMJuSZOJL0vOQ5zMSZdM5LiK3aubl5Ay5P440hsxP4XCDc6DpHxEFsPRmGRHNwwQRFBPGh30jMrCSRGe+Lh1wOLJ8dxqxjjza6GhnTImNavJaTX++/vbvxQ4FUE9LRPHHsQ24KaofDHvqvTz9eX/5wdqIAjD2IPuX5V0kSGxLyrWJX7T6utrudJ+37av1hp1l9RkpXpiSTna39/PT5z/GbbRJrJGJRZwvEl5KwUtLXS9vrlfJtTS959AsdhK5ESx1we6D6NNV4HJlEnhB5/VahGYpCWS9vqqXSzkZFrbYkXHoQipekq9ZdZ8giWLnQYkf/YHplR99Sd1ueF9MtE9k8aVVNEz1SK9zjggkT/y8PuePokT2ngL+MY5WZMQMAAA=="/>
+<input name="iterRows_10" type="hidden" value="VZH4sIAAAAAAAAAH1SMW/TUBC+uCRt09KGUokJyRKMjRunJECYEhVQip2WBhXWF/viPHCe3efnNGVAYgGJDjDAzsCC1J/CL2ChQqzMrJxN3KQLXt57d9993313Pv0N+UjCTS8YGYI7hoeh0eOugUJxdWw8jpnP+xzdFnejWuXg69n3Z+80WLcgT6i2q6BkPWcjtukz4W1agfDuWTBPqX0mXihYm0l2leRpukBpF+UhvALNgiKOmN9VTMWRgqsz+LZQ6KGkgpUEEjMVyAM6cVK40Oc+dtgwey/2udhHFgViEtC4m9xyFlzj0X3Bej7uST6iKg9baQsXBVtB4CMTJFgMQhTobjOVkRfSSNbzYugzB2fSpTAjdlvn5i5ZsDqNt4fMy+BzkQiS6xwRR6n1bBgKncEFExQRxIeynZlZziIz3heOuBq4kh2lrOOQNrqSGDMSY0a6lpNfH769v/FDg9wO5JN54lhCaQrqxMMeyjenn64vfTw70QDGISSfxjqKJOoKlu3m06b9ULd2n+x2SeHKtHiyq7Wfn7/8ef32Dom0M5Gko3niyRGBaW7crmzU61uGeTekX+cwDhS6+oB7A13SNNMxFDJZQqxXtso7sShXK9WabpqNW3W9aSu4/CgWL0lX3w78IfsHs9nxBFZt1Ex9zw7DlG6JyPKk1XQcDEmt/IALJhz8vzzkGsmjeE4BfwFNbFsxKQMAAA=="/>
+<input name="iterRows_10" type="hidden" value="VZH4sIAAAAAAAAAH1SMW/TQBR+cUnaJlBCqcSEZIlKLI3jtAlKy+S0ELl1kpJEEWK72C/OgXN27XOaMiCxgEQHGGBnYEHqv2DlF7BQIVZmVs5u3KQLXu7uve993/ve89kfSAc+rNvuWGHUVGz0lD61FGSc8hPlSUgcOqBo1agVVNTe1/MfT99JsGZAWqB0i0PeeE7GpOgQZhcNl9kPDVgUqTZhLzisziU73KdxOiPSFvpH8AokA7I4Jk6HEx4GHG7P4XXG0UZfFKxEkJBw1++JE6eFSwPqYJOMkvfygLI2ksBl04BEreiWMuAODR4x0nfw0KdjUWVjLW7hqmDNdR0kTAhmXQ8ZWnuEJ+SZOJL0vOw5xMS5dN5LiK3apblrBtycxfURsRP4QsDc6LogiIPYejIMjubwigkRYYIPfT0xcz2JzHlfOqZ8aPnkOGadeGKjK5ExJTKmxGs5/f3h+/t7PyVI7UM6midOfMjPQM1w1Ef/zdmnu7mP56cSwMSD6JNImwuJLQ7rjWJH7hxoxjOtWZebWqOu6YZcb/W68m6r2W1ru91WWyjfmpFOd7j66/OXv6/fVoW4nohHnS4K/hSH3PZGtbJRqpaU8rYn/qij0OVoyUNqD2VfDDmeTibpRiDW1K3CfsgKm+pmRS6VdsoPZK3B4cZByF4KWXnPdUbkAtYgJxcwtbSjluXDhufFdDlBlhFammmiJ9QKjykjzMT/y8P9b9Eje0kB/wCvesahQAMAAA=="/>
+<input name="iterRows_10" type="hidden" value="VZH4sIAAAAAAAAAH1SMW/TUBC+uKRp01LSUokJZAnGxkmaJkBhSdQipThpSUrV9cW+OA+cZ/f5OU0ZkFhAogMMsDOwIPWn8AtYqBArMytnN27SBS/vvbvvvu++O5/9gXQg4Z7jDQ3BLcNB3+hy20ChuDoxnoXM5T2Odp3bQaV48O38x+F7DVZNSBOqYSvImS/YkBVcJpyC6QnnkQkZSrWZeKlgZSrZUZLH6VlK2yiP4DVoJmRxyNyOYioMFNycwjeEQgclFSxFkJApTx7QiePCuR53scUGyXu+x0UbWeCJcUDjdnRLmXCLB9uCdV3ck3xIVQ7W4xauCtY9z0UmSDDr+SjQ3mIqIZ+NI0nP877LLJxK5/yE2K5fmrtmwo1JvDFgTgKfCYQXXWeIOIitJ8NQaPWvmKCIID6UjcTMYhKZ8j53zFXfluw4Zh35tNGlyJgRGTPitZz+/vj9w92fGqR2IB3NE0cSchNQKxx0Ub49+3x74dP5qQYw8iH6NNZTJHFfwXKz0NH3O9v7tZbeet6u7+6SzPKEYbywlV9fvv598+4BKTUSpaitDJGlFCyWymulylrxYcWoVn36f45CT6Gt97nT1yWNNJ7FbKJNiNViOb8Tivx6cb2il0qbG1W91lRw/WkoXpGuvuW5A3YBa7KTC1ixtFne0Peavh/TLRBZhrRqloU+qeWfcMGEhf+XhzuPo0f2kgL+AQujoXcuAwAA"/>
+<input name="If_30_0" type="hidden" value="T"/>
+<input name="If_31_0" type="hidden" value="T"/>
+<input name="If_32_0" type="hidden" value="T"/>
+<input name="If_33_0" type="hidden" value="F"/>
+<input name="If_36_0" type="hidden" value="F"/>
+<input name="If_39_0" type="hidden" value="F"/>
+</div>
+<span id="If_30_0">
+</span><table align="center" border="0" cellpadding="0" cellspacing="0" width="92%">
+<tbody><tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td align="right" class="td_space"><a class="brown_link" href="javascript:void(0)" onclick="javascript:window.print();" title="Print"><img align="absmiddle" border="0" src="images/print.png"/> <b>Print</b></a></td>
+</tr>
+<tr>
+<td class="td_space">
+<span id="If_3_0">
+</span><span id="If_10_0">
+</span><span id="If_28_0">
+<span id="If_29_0">
+</span></span><table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr>
+<td>
+<!-- Information Box -->
+<table align="center" border="1" cellpadding="0" cellspacing="0" class="table_list" width="100%">
+<tbody><tr class="td_caption" valign="middle">
+<td align="right" width="40%"><b>Organisation Chain :</b></td>
+<td height="60%">Rural Development and Panchayati Raj||Directorate of RDD||Rural Development Department - Leh</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%"><b>Tender ID : </b></td>
+<td height="60%">2025_RDD_16040_1</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right"><b>Tender Ref No : </b></td>
+<td>10- UTL REW Leh of 2025-26</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right"><b>Tender Title : </b></td>
+<td>Construction Of M/S Shey Yoknes At New Site</td>
+</tr>
+</tbody></table>
+<!-- Information Box -->
+</td>
+</tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td>
+<!-- List -->
+<!-- End : List -->
+</td>
+</tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td>
+<!-- List -->
+<span id="If_1_0">
+<table border="1" cellpadding="0" cellspacing="0" class="table_list" id="bidValidTableView" width="100%">
+<tbody><tr>
+<td class="section_head" colspan="8">Bids List</td>
+</tr>
+<tr class="td_caption">
+<td align="left" width="5%"><b>S.No</b></td>
+<td align="left" width="10%"><b>Bid Number</b></td>
+<td align="left" width="20%"><b>Bidder Name</b></td>
+<td align="left" width="20%"><b>Submitted Date</b></td>
+<td align="left" width="25%"><b>Status</b></td>
+<td align="left" width="25%"><b>Remarks</b></td>
+<td align="left" width="20%"><b>Status Updated On</b></td>
+</tr>
+<tr class="td_field" id="informal">
+<td align="left">1</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SzVp5yes%2F29W%2BTAIc90NpBxpcjO%2BQSPCrzVqHA7KxFBA%3D" id="DirectLink_1" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										155982
+                																									</a>
+</td>
+<td align="left">MAWAMG LOTOS</td>
+<td align="left">03-May-2025 12:51 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">quoted high rate</td>
+<td align="left">03-Jun-2025 11:46 AM</td>
+</tr>
+<tr class="td_field" id="informal_0">
+<td align="left">2</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SjqMpnuHXPP1itnWAJGSlnXlQVK%2B%2B2iJ5UT%2BxhjelVzo%3D" id="DirectLink_1_0" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										155878
+                																									</a>
+</td>
+<td align="left">M/S SADAT ALI</td>
+<td align="left">03-May-2025 07:32 AM</td>
+<td align="left">Rejected-Technical</td>
+<td align="left">Not compelled with technical specification</td>
+<td align="left">07-May-2025 12:10 PM</td>
+</tr>
+<tr class="td_field" id="informal_1">
+<td align="left">3</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SjvDt4tTsZpSkHfiOfEx4tpoMLyeT7go1RMks0rXamu4%3D" id="DirectLink_1_1" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										155243
+                																									</a>
+</td>
+<td align="left">M/S SHAHID ALI GOVT CONTRACTOR</td>
+<td align="left">25-Apr-2025 12:43 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">quoted high rate</td>
+<td align="left">03-Jun-2025 11:46 AM</td>
+</tr>
+<tr class="td_field" id="informal_2">
+<td align="left">4</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SZ7yrgm9%2BFYgRpBoefBYnryN5qsBhMMJUXjpUjT286ZU%3D" id="DirectLink_1_2" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										155986
+                																									</a>
+</td>
+<td align="left">M/S SKALZANG NAMGAIL GOVT CONTRACTOR</td>
+<td align="left">03-May-2025 01:04 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">quoted high rate</td>
+<td align="left">03-Jun-2025 11:46 AM</td>
+</tr>
+<tr class="td_field" id="informal_3">
+<td align="left">5</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SGNViqYwfVriqsJda%2FBgQ7Lu0nWiqAZu1tkTtJ6HzL2E%3D" id="DirectLink_1_3" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										155821
+                																									</a>
+</td>
+<td align="left">M/S STANSRUNG DORJAY</td>
+<td align="left">02-May-2025 06:07 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">quoted high rate</td>
+<td align="left">03-Jun-2025 11:46 AM</td>
+</tr>
+<tr class="td_field" id="informal_4">
+<td align="left">6</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SrzAgqIz6K30sX%2B2O9Q9dty03Kgv9TSyNt8ZlOq5%2B6FY%3D" id="DirectLink_1_4" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										156006
+                																									</a>
+</td>
+<td align="left">M/S TSETAN NURBOO</td>
+<td align="left">03-May-2025 01:34 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">quoted high rate</td>
+<td align="left">03-Jun-2025 11:46 AM</td>
+</tr>
+<tr class="td_field" id="informal_5">
+<td align="left">7</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SS8WG90OQI8l2gbk29Nw14SLb2XQPCZU%2BManScVFc6zU%3D" id="DirectLink_1_5" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										155806
+                																									</a>
+</td>
+<td align="left">RIGZIN NURB00</td>
+<td align="left">03-May-2025 12:19 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">quoted high rate</td>
+<td align="left">03-Jun-2025 11:46 AM</td>
+</tr>
+<tr class="td_field" id="informal_6">
+<td align="left">8</td>
+<td align="left">
+<a href="/nicgep/app?component=%24DirectLink_1&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SUi%2BLI6De0kmRJpNV0wb7nkbS5CYSiWiCoPyFgtCHc6Q%3D" id="DirectLink_1_6" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=700, height=550, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes');">
+                																										155765
+                																									</a>
+</td>
+<td align="left">Tsewang Thinlas</td>
+<td align="left">02-May-2025 05:08 PM</td>
+<td align="left">Accepted-Finance</td>
+<td align="left">successfully quoted lowest rate</td>
+<td align="left">03-Jun-2025 11:46 AM</td>
+</tr>
+</tbody></table>
+</span>
+<!-- End : List -->
+</td>
+</tr>
+<tr><td>
+</td></tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+<tr><td>
+<span>
+</span><span id="If_5_0">
+</span><table border="1" cellpadding="0" cellspacing="0" class="table_list" width="100%">
+<tbody><tr>
+<td class="section_head" colspan="5">Technical Bid Opening Summary</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Type : </td>
+<td height="60%"><b>Technical</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Summary : </td>
+<td height="60%"><b>Technical bids open in the office of exen,REW,Leh</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated By : </td>
+<td height="60%"><b>Kunzang Dolma</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated On : </td>
+<td height="60%"><b>07-May-2025 12:07 PM</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Document : </td>
+<td height="60%" nowrap=""><a href="/nicgep/app?component=%24DirectLink_2&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SWmPG8%2FcTjiWApZpNmWZSNVhDG9jvle%2BFo%2BTplBKpwAg%3D" id="DirectLink_2"><b>technical_39515.pdf</b></a>
+<!--  <span jwcid="@DirectLink" listener="listener:showDocumentSign" parameters="ognl:summaryId" onClick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')" class="blue_link">
+																									<img src="images/certificate.png" border="0" alt="Digital Signature"/>
+																							 </span>-->
+<a class="blue_link" href="/nicgep/app?component=%24DirectLink_3&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=ZH4sIAAAAAAAAAE1QO0%2FDQAx2IwqCClQBK9JJTEjt9YGq8thQGQpXXi1iYEDX5JIeJJdwuZSEgZGlAwyw8As69KfwH2BgYWBmJekD8GDLn%2F3Z%2Fjz4grQvYc1yu1hwHVvMw21uYCYUVxHe4cahx0QzcBwqI8J99b3RJ8f96FSDGQIaNxRkySXt0oJNhVUgrrC2CUy7MYlJBYv%2Fak0l%2BbA644%2FGXcMdaATmxmnN1cdIZoy0Io9NoMAzqGJGLXYT3o0rr%2BqKOXUjQVKhFwtZSPbhZB8e3tL7eHx9WH3TILUH6S61AxZKyP41HQROm8n7wfNK5um9pwGEHgzN%2FFQwvx%2BI27gL1VzboQpKLaZ34i9RG8U%2F8lGiEnGBVIch1zS5ngTEQiZyJ7tnOcI6CpbUhHOxvlkpVbBnmApmfycpWC5W8w0a5cvFcgWVylvFKjpq%2BImkqdEpL%2Bc%2FRYR6t6YBAAA%3D" id="DirectLink_3" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')">
+<img alt="Digital Signature" border="0" src="images/certificate.png"/>
+</a>
+</td>
+</tr>
+</tbody></table>
+</td></tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td>
+<!-- Information Box -->
+<span id="If_11_0">
+</span><span id="If_14_0">
+</span><table align="center" border="1" cellpadding="2" cellspacing="0" class="table_list" width="100%">
+<tbody><tr>
+<td class="section_head" colspan="5">Technical Evaluation Summary Details</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Chairperson/Co-ordinator Name : </td>
+<td height="60%"><b>Executive Engineer<b></b></b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Chairperson/Co-ordinator Type : </td>
+<td height="60%"><b>Internal<b></b></b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Members : </td>
+<td height="60%"><b>Three</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated By : </td>
+<td height="60%"><b>Kunzang Dolma</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated On : </td>
+<td height="60%"><b>07-May-2025 12:10 PM</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Financial Bid Opening Date: </td>
+<td height="60%"><b>07-May-2025 02:00 PM</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Document : </td>
+<td height="60%" nowrap=""><a href="/nicgep/app?component=%24DirectLink_4&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=S%2FkC%2Fh49XM0EHTmIjSIReag%3D%3D" id="DirectLink_4"><b>techsummary_39515.pdf</b></a> (<b>682.13 KB</b>)
+																						  <span id="If_15_0">
+<!--<span jwcid="@DirectLink" listener="listener:showDocumentSignEval" parameters="ognl:tenderEvalTechId" onClick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')" class="blue_link">
+																									<img src="images/certificate.png" border="0" alt="Digital Signature"/>
+																							 </span>-->
+<a class="blue_link" href="/nicgep/app?component=%24DirectLink_5&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=ZH4sIAAAAAAAAAF1SO28TQRhc21iEJOQp8yiQIiGhQHERCilQhBTyKByc8LALHgWsfV%2FOm9ztbnb3nDMFCgU0KaAAJBAdokCKRMEPAFFRQBlRASkoaEJBSRq%2BPZ%2BdC9t9czNzs7Pf5g7Ja0XOeKLhcFZzPJCOAe6CcoAbZppOJZ7mGtQPqWGCT9Bf40d3%2FhSypFAifVXmXpbAGfdmqQFDBkrLtEHHQsP8MYtMlsggcsphdcYXOqGtknsk0%2FmQ0icf%2Bmt1ypQEpQVfpAHaDrVsfcq9sbJRSJ%2FcT6s0ZazOlkhvTQQBMwbgousm2JEONmM1V2JN0e3kjY1LIrbtg85dU679EGEvGsFrQFHc%2FtkS82GBYcY9apfFbO70XGZ3%2F7vHrAirvi0oy%2BKYOWyE6cqaKBvqwTRzXbymIcMpybQQPlBuQ%2FqC0poJqS%2BUt6eXygoXAMz%2BRnsk%2Fovpego6rJlne58BZYptg%2B5QorEL7nQzQXrbSEravSbUStFAkOgiiSs0ZGM6etV3KliHNjSQp45tfcqU30OWZIokzykXOlKkLybaDXGsZ335fubSDXM8R0gk17oIyTx78%2B3tVETwSImVzUVQQ3YDRua4xzhgXtJV5AYUp74h%2BUpdASDxUAVqddxh6uOQk%2B6SIQWDkA6DgKrm7fHzE2cnHMQx7ECcwXbqtJ5h%2Fd3H%2BdMruwcw6izJ2wWAaB9tMQyqoB5uPj3R82R7I2vDTj242n1Bvvqq23eKifEWbfx8%2FPnRyR%2FoNt92s00NkvhcH0XJ4J4kedYvI2p96%2BXf36i62VZJ7EBqqx1uaUefpydyJ54OJr01X29H575vfEhTXtz6B92K%2FUfkAwAA" id="DirectLink_5" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')">
+<img alt="Digital Signature" border="0" src="images/certificate.png"/>
+</a>
+</span>
+</td>
+</tr>
+<!-- <tr class="td_caption" valign="middle"> 
+																					<td width="40%"  align="right">Bid Opening Date & Time for Financial : </td>
+																				 	<td height="60%" ><b><span jwcid="@Insert" value="ognl:financeDateTime" /></b></td>
+																					</tr> -->
+</tbody></table>
+<!-- Information Box -->
+</td>
+</tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td>
+<span id="If_19_0">
+<!-- <tr>
+  																				<td>
+																				<table jwcid="summaryFinanceView" border="1" width="100%" cellspacing="0" cellpadding="0" class="table_list">
+																					<tr>
+																						<td colspan="5" class="section_head">Finance Bid Opening Summary</td>
+																					</tr>
+																					<tr class="td_caption">
+																						<td width="10%"><b>Type</b></td>
+																						<td width="35%"><b>Summary</b></td>
+																						<td width="20%"><b>Updated By</b></td>
+																						<td width="20%"><b>Updated On</b></td>
+																						<td width="15%" valign="top"><b>Document</b></td>																					
+																					</tr>			
+																					<tr class="td_field" jwcid="summaryFinanceRow">
+																						<td jwcid="summaryFinanceValues" ></td>
+																						<span jwcid="SummaryDocFinanceColumnValue@Block">
+																							<span jwcid="@If" condition="ognl:docAvailFinBid">
+																								<span jwcid="@DirectLink" listener="listener:doOpenDocument" title="Click here to Download Document" parameters="ognl:summaryRow"><span jwcid="@Insert" value="ognl:summaryRow.summaryDoc" /></span>
+																									<span jwcid="@DirectLink" listener="listener:showDocumentSign" title="View Certificate Details" parameters="ognl:summaryRow.id" onClick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')" class="blue_link">
+																										<img src="images/certificate.png" border="0" alt="Digital Signature"/>
+																								</span>
+																							</span>
+																							<span jwcid="@Else">None</span>
+																						</span>
+																					</tr>
+																				</table>
+																				</td>
+																				</tr> -->
+</span></td></tr><tr><td>
+<span id="If_20_0">
+</span><span id="If_23_0">
+<span id="If_24_0">
+</span></span><table border="1" cellpadding="0" cellspacing="0" class="table_list" width="100%">
+<tbody><tr>
+<td class="section_head" colspan="5">Finance Bid Opening Summary</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Type : </td>
+<td height="60%"><b>Finance</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Summary : </td>
+<td height="60%"><b>The bid for the e-tender was opened in the office of the Executive Engineer REW Leh</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated By : </td>
+<td height="60%"><b>Kunzang Dolma</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated On : </td>
+<td height="60%"><b>03-Jun-2025 11:05 AM</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Document : </td>
+<td height="60%" nowrap=""><a href="/nicgep/app?component=%24DirectLink_8&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=Sc4ridp%2B%2Fe3uJR3SMHl3Yj8TKyCDZ8gOquUVnVvYGG%2FY%3D" id="DirectLink_8"><b>finance_39515.pdf</b></a>
+<!--  <span jwcid="@DirectLink" listener="listener:showDocumentSign" parameters="ognl:finSummaryId" onClick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')" class="blue_link">
+																									<img src="images/certificate.png" border="0" alt="Digital Signature"/>
+																							 </span> -->
+<a class="blue_link" href="/nicgep/app?component=%24DirectLink_9&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=ZH4sIAAAAAAAAAE1QPU8CQRAdLiKJRIPG1mQTKwsOkJD4UWnABDw1CsbCwiy3c8cqt3fu7R1gYWlDoYU2%2FgIKfor%2FQQs7Y23r3QHRLXZn3ps3M2%2FH35D2JWzYbqgLbuo2enqbMx2F4mqg73N24qFoBo5D5cDgvvrZGhmno8G5BhkDNM4U5IxrGtJClwq7YLjC3jVg3o1EKBWs%2FOOaSvKEzfiTdrdwD5oBC9O06ppTJDtFWgMPZ1DgMaqQVaNrpuu58qau0KmzGEn1vcjIUjxPj%2BfpyS7Dz6e3x%2FV3DVINSIe0G2BfQu6v6Dhw2igfxi9r2eePoQbQ9yA5nS8Fi4eBuIuqSNXtOlRBs9VBEv0OsVxJVBRjXqFgKEmP%2BiTxzAgXCeVaFjfjJ8lqfTQDxcMoEjYXGEnOahfEwI6CZYsLKky8Km9XShXdY5aCzMEEU7BaLOcbgchvFjcrpFTaKVbI3pEfG56bLPp6%2BQu4vwoPxAEAAA%3D%3D" id="DirectLink_9" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')">
+<img alt="Digital Signature" border="0" src="images/certificate.png"/>
+</a>
+</td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right"><b>BOQ Comparative Chart :</b> </td>
+<td>
+<a href="/nicgep/app?component=BOQ&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=SId43NT%2BJODjJeCtGJ5AV8Q%3D%3D" id="BOQ" title="Click here to Download Document">BOQ Comparative Chart</a>
+</td>
+</tr>
+</tbody></table>
+</td></tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+</tbody></table><table border="1" cellpadding="0" cellspacing="0" id="table_list" width="100%">
+<tbody><tr>
+<td class="section_head" colspan="9">Financial Evaluation Bid List</td>
+</tr>
+<tr class="td_caption">
+<!-- <span jwcid="@If" condition="ognl:evaluationType">
+																											<td  width="10%"><b>S.No</b></td>
+                																							<td  width="25%"><b>Bid Number</b></td>
+               																								<td  width="30%"><b>Bidder Name</b></td>
+               																								<td  width="25%"><b>Value</b></td>
+	           																								<td  width="10%"><b>Rank</b></td>
+	           																								
+	           																							</span> -->
+<td width="10%"><b>S.No</b></td>
+<td width="25%"><b>Bid Number</b></td>
+<td width="30%"><b>Bidder Name</b></td>
+<td width="25%"><b>Value</b></td>
+<td width="10%"><b>Rank</b></td>
+</tr>
+<tr id="informal_7">
+<td>1</td>
+<td>155243</td>
+<td>M/S SHAHID ALI GOVT CONTRACTOR</td>
+<td align="right">10,64,239.26</td>
+<td align="center">L5</td>
+</tr>
+<tr id="informal_8">
+<td>2</td>
+<td>155765</td>
+<td>Tsewang Thinlas</td>
+<td align="right">9,50,213.63</td>
+<td align="center">L1</td>
+</tr>
+<tr id="informal_9">
+<td>3</td>
+<td>155806</td>
+<td>RIGZIN NURB00</td>
+<td align="right">9,80,620.46</td>
+<td align="center">L2</td>
+</tr>
+<tr id="informal_10">
+<td>4</td>
+<td>155821</td>
+<td>M/S STANSRUNG DORJAY</td>
+<td align="right">10,18,629.01</td>
+<td align="center">L4</td>
+</tr>
+<tr id="informal_11">
+<td>5</td>
+<td>155982</td>
+<td>MAWAMG LOTOS</td>
+<td align="right">11,70,663.19</td>
+<td align="center">L6</td>
+</tr>
+<tr id="informal_12">
+<td>6</td>
+<td>155986</td>
+<td>M/S SKALZANG NAMGAIL GOVT CONTRACTOR</td>
+<td align="right">9,85,181.49</td>
+<td align="center">L3</td>
+</tr>
+<tr id="informal_13">
+<td>7</td>
+<td>156006</td>
+<td>M/S TSETAN NURBOO</td>
+<td align="right">13,15,095.66</td>
+<td align="center">L7</td>
+</tr>
+<!-- <tr jwcid="bidEvalFinRow">
+																											<td jwcid="bidEvalFinValues"  />	 -->
+<!-- <span jwcid="FinWithdrawColumnValue@Block">
+																													<span jwcid="@If" condition="ognl:bidRow.withdraw == 2">None</span>
+																													<span jwcid="@Else">
+																														<span jwcid="@DirectLink" listener="listener:doViewBidderDocs" parameters="ognl:bidEvalFinRow" onClick="return popup(this,'window');">View Doc</span>
+																													</span>
+																												</span>	 -->
+<!-- </tr> -->
+</tbody></table>
+</td></tr><tr>
+<td class="td_space"> </td>
+</tr>
+<tr>
+<td>
+<!-- Information Box -->
+<span id="If_31_0">
+</span><table align="center" border="1" cellpadding="2" cellspacing="0" class="table_list" width="100%">
+<tbody><tr>
+<td class="section_head" colspan="5">Finance Evaluation Summary Details </td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Chairperson/Co-ordinator Name : </td>
+<td height="60%"><b>Executive Engineer REW Leh<b></b></b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Chairperson/Co-ordinator Type : </td>
+<td height="60%"><b>Internal<b></b></b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Committee Members : </td>
+<td height="60%"><b>2SA 1HD</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated By : </td>
+<td height="60%"><b>Kunzang Dolma</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Updated on : </td>
+<td height="60%"><b>03-Jun-2025 11:46 AM</b></td>
+</tr>
+<tr class="td_caption" valign="middle">
+<td align="right" width="40%">Document : </td>
+<td height="60%" nowrap=""><a href="/nicgep/app?component=%24DirectLink_10&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=S9U3%2BPUtap%2BKgcA%2FQFIVGuA%3D%3D" id="DirectLink_10"><b>finsummary_39515.pdf</b></a> (<b>709.50 KB</b>)
+																							   <span id="If_32_0">
+<a class="blue_link" href="/nicgep/app?component=%24DirectLink_11&amp;page=FrontEndViewBidSummaryDetailsPrint&amp;service=direct&amp;session=T&amp;sp=ZH4sIAAAAAAAAAF1TPW8TQRBd20SYJDgfEL4kJEtICBC6KAQXKAUksREOTkCxpShQwNo3OW9yt7vZ23POFCg0aVJAAUJE%2FACKFEj8ACQqCihTQ0FBEwpKaJg9f525bt6%2B93bmzd7%2BIRnwFbniiIbFWc1yQFoauA3KAq6ZblqVqCo0qBtQzQTP0Z%2FTpw9%2FTyTJRIlkqsy%2BJ4Ez7uSpBk1GS%2Bu0QScDzdxJg8yUyBhyykF13hV%2Bm7ZJnpJE9yCmbx%2BM1OqUKQnKF3yJemg73rJ1KXcmy1ohfaafVmnKSJ0skeGa8DymNcCsbbexU11s3mjuR5qi3e03Mi6JyDYD3VljriMQYi4%2BgstAUdy5bI25sMiwxx41bTDTd7wusyf%2FzZEXQdU1ASVZ1GYKE2F%2BZUuUNXVgjtk2jqnJiZhkTggXKDdNuoLSmg6oK5TT00tlhIsAuj%2FRIYl3Mb8eg477zDG5z4PSxY7BYCDR2AZ7rtlGhjtITDq4JdRGUYPX1oUSP03OFUKo4eYbkC1wh3EAlV0urGRLUNckXeQaFKeuJkevlWezU3fyKDl2m3HKa4y6WKSkvabJyTXG%2FcDzqGo%2Bmr6Rm8pZCOMTHTUxWCYGq5Xc9odPC5c3%2Fh5JkkSeDJidQdhHWwq8Kqid%2FVfnh15%2B300SEspbO1eJ%2BdAv0yNGi9%2F98eLL8wvf0G2h42aGy0R8srqHkrGepL2Jr1m1ffD2zy9UPeioJPGNcLQlJGkp4%2FWlN32nj9F2PLL1N12rgg%2FJ19STF88cfE6UPwL6FskARiT8sNOy%2Bbcss436%2BrPE3VV9NmUm20oTknh9XdTfh0M3i%2B%2Fil%2Bw9%2FAcTZaim5gMAAA%3D%3D" id="DirectLink_11" onclick="return popUp1(this, 'location=no, scrollbars=yes, toolbar=no, width=400, height=250, directories=no, menubar=no, resizable=yes, status=no, titlebar=yes')">
+<img alt="Digital Signature" border="0" src="images/certificate.png"/>
+</a>
+</span>
+</td>
+</tr>
+</tbody></table>
+<!-- Information Box -->
+</td>
+</tr>
+<tr>
+<td class="td_space"> </td>
+</tr>
+</tbody></table>
+</form>
