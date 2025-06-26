@@ -25,6 +25,8 @@ except Exception as e:
 PROJECT_ROOT = Path(__file__).parent.resolve()
 LOGS_BASE_DIR = PROJECT_ROOT / "LOGS"
 SETTINGS_FILE_PATH = PROJECT_ROOT / "settings.json"
+# --- NEW: Lock file for status checking ---
+SCRAPE_LOCK_FILE = PROJECT_ROOT / "scrape_in_progress.lock"
 
 # --- Logger Setup ---
 controller_logger = logging.getLogger('SiteController')
@@ -83,7 +85,6 @@ async def run_regular_scrape_orchestration(global_scraper_settings: Dict, enable
     sites_processed_count = 0
     sites_failed_count = 0
     
-    # Process sites one-by-one for robustness and easier debugging
     for site_key, site_config_data in enabled_sites_dict.items():
         try:
             controller_logger.info(f"\n>>> Starting scrape for site: {site_key} <<<")
@@ -100,28 +101,44 @@ async def main_controller():
     controller_logger.info("===== Site Controller Initializing =====")
     overall_start_time = datetime.datetime.now()
 
-    global_scraper_settings, enabled_sites = load_orchestrator_settings()
-    if global_scraper_settings is None or enabled_sites is None:
-        controller_logger.critical("Exiting: Critical error loading settings.")
+    # --- NEW: Manage lock file ---
+    if SCRAPE_LOCK_FILE.exists():
+        controller_logger.warning("Scrape lock file already exists. Another scrape may be running. Aborting.")
         return
-
-    s_succ, s_fail = await run_regular_scrape_orchestration(global_scraper_settings, enabled_sites)
     
-    controller_logger.info("\n--------------------------------------------------")
-    controller_logger.info(f"REGULAR SCRAPE SUMMARY: Sites Succeeded: {s_succ}, Sites Failed: {s_fail}")
-    controller_logger.info(f"Total Site Controller Duration: {datetime.datetime.now() - overall_start_time}")
-    controller_logger.info("===== Site Controller Finished =====")
+    try:
+        SCRAPE_LOCK_FILE.touch() # Create the lock file
+        controller_logger.info("Scrape lock file created.")
+
+        global_scraper_settings, enabled_sites = load_orchestrator_settings()
+        if global_scraper_settings is None or enabled_sites is None:
+            controller_logger.critical("Exiting: Critical error loading settings.")
+            return
+
+        s_succ, s_fail = await run_regular_scrape_orchestration(global_scraper_settings, enabled_sites)
+        
+        controller_logger.info("\n--------------------------------------------------")
+        controller_logger.info(f"REGULAR SCRAPE SUMMARY: Sites Succeeded: {s_succ}, Sites Failed: {s_fail}")
+    
+    finally:
+        # --- NEW: Ensure lock file is removed ---
+        if SCRAPE_LOCK_FILE.exists():
+            SCRAPE_LOCK_FILE.unlink()
+            controller_logger.info("Scrape lock file removed.")
+        
+        controller_logger.info(f"Total Site Controller Duration: {datetime.datetime.now() - overall_start_time}")
+        controller_logger.info("===== Site Controller Finished =====")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="TenFin Site Controller: Handles regular tender scraping.")
     parser.add_argument("--type",type=str,choices=["regular"],default="regular",help="Type of operation.")
     args = parser.parse_args()
 
-    # Ensure the database is ready before starting
     try:
         from database import init_db
         if not init_db():
             controller_logger.critical("Database initialization failed. Aborting scrape.")
+            if SCRAPE_LOCK_FILE.exists(): SCRAPE_LOCK_FILE.unlink() # Cleanup on early exit
             sys.exit(1)
     except ImportError:
         print("FATAL (SiteController): Could not import 'init_db' from database.py.")

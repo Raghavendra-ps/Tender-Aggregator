@@ -65,19 +65,26 @@ logger = logging.getLogger(f"{SCRIPT_NAME_TAG}_placeholder")
 
 def setup_worker_logging(site_key_for_log: str, run_id_for_log: str):
     global logger 
-    logger_name = f"{SCRIPT_NAME_TAG}_worker_{site_key_for_log}_{run_id_for_log[-6:]}"
+    # Sanitize site_key for directory creation
+    safe_site_key_for_dir = _clean_path_component_worker(site_key_for_log)
+    
+    logger_name = f"{SCRIPT_NAME_TAG}_worker_{safe_site_key_for_dir}_{run_id_for_log[-6:]}"
     logger = logging.getLogger(logger_name)
     if logger.hasHandlers(): logger.handlers.clear(); logger.propagate = False 
     logger.setLevel(logging.INFO); logger.propagate = False 
-    log_dir_for_this_worker = LOGS_BASE_DIR_WORKER / "rot_worker" / site_key_for_log
+    
+    log_dir_for_this_worker = LOGS_BASE_DIR_WORKER / "rot_worker" / safe_site_key_for_dir
     log_dir_for_this_worker.mkdir(parents=True, exist_ok=True)
     log_file_path = log_dir_for_this_worker / f"worker_{run_id_for_log}_{TODAY_STR}.log"
+    
     fh = logging.FileHandler(log_file_path, mode='a', encoding='utf-8')
     fh.setFormatter(logging.Formatter(f"%(asctime)s [%(levelname)s] (ROTWorker-{site_key_for_log} Run-{run_id_for_log[-6:]}) %(message)s", datefmt="%H:%M:%S"))
     logger.addHandler(fh)
+    
     ch = logging.StreamHandler(sys.stdout)
     ch.setFormatter(logging.Formatter(f"[ROTWorker-{site_key_for_log} Run-{run_id_for_log[-6:]}] %(levelname)s: %(message)s"))
     logger.addHandler(ch)
+    
     logger.info(f"Worker logging initialized. Log file: {log_file_path}")
 
 # --- Utility Functions ---
@@ -87,7 +94,9 @@ def _remove_html_protection(html_content: str) -> str:
     return re.sub(r'<body[^>]*>', lambda m: re.sub(r'\s*onpageshow\s*=\s*".*?"', '', m.group(0), flags=re.IGNORECASE), modified_content, count=1, flags=re.IGNORECASE)
 
 def clean_filename_rot(filename: str) -> str:
-    return re.sub(r'[\\/*?:"<>|\r\n\t]+', '_', filename)[:150]
+    cleaned = re.sub(r'[\\/*?:"<>|\r\n\t]+', '_', filename)
+    return re.sub(r'[\s_]+', '_', cleaned).strip('_')[:150]
+
 
 def update_worker_status(run_dir: Path, status_message: str):
     try:
@@ -163,7 +172,6 @@ async def _handle_final_popup_content(popup_page: Page, site_key: str, tender_fi
             
             logger.info(f"{log_prefix_popup} ✅ CLEANED & SAVED HTML: {save_filename_html}")
 
-            # --- MODIFIED: Call script to parse and save to DB ---
             path_to_extraction_script = PROJECT_ROOT / "utils" / "extract_structured_rot.py"
             if path_to_extraction_script.is_file():
                 cmd = [
@@ -237,17 +245,21 @@ async def extract_table_data_from_current_list_page(page: Page, list_page_num: i
         logger.error(f"[ListPage{list_page_num}] Error extracting table data: {e}", exc_info=True)
     return extracted_data
 
-async def run_headless_rot_scrape_orchestration(site_key: str, run_id: str, target_site_search_url: str, target_site_base_url: str, tender_status_to_select: str, worker_settings: Dict[str, Any]):
+async def run_headless_rot_scrape_orchestration(
+    site_key: str, run_id: str, 
+    target_site_search_url: str, target_site_base_url: str, 
+    tender_status_to_select: str, worker_settings: Dict[str, Any],
+    from_date: Optional[str], to_date: Optional[str]
+):
     run_specific_temp_dir = TEMP_WORKER_RUNS_DIR / run_id
     run_specific_temp_dir.mkdir(parents=True, exist_ok=True)
     setup_worker_logging(site_key, run_id) 
     logger.info(f"--- Starting Headless ROT Worker for Site: {site_key}, Run ID: {run_id} ---")
+    logger.info(f"--- Dates: From={from_date}, To={to_date} ---")
     
-    # This tagged file is now for legacy/backup purposes
     final_site_tagged_output_path = ROT_MERGED_SITE_SPECIFIC_DIR / f"Merged_ROT_{clean_filename_rot(site_key)}_{TODAY_STR}.txt"
     update_worker_status(run_specific_temp_dir, "WORKER_STARTED")
     
-    # Get settings from dashboard with defaults
     page_load_timeout_ws = worker_settings.get("page_load_timeout", PAGE_LOAD_TIMEOUT_DEFAULT)
     detail_page_timeout_ws = worker_settings.get("detail_page_timeout", DETAIL_PAGE_TIMEOUT_DEFAULT)
     popup_page_timeout_ws = worker_settings.get("popup_page_timeout", POPUP_PAGE_TIMEOUT_DEFAULT)
@@ -271,8 +283,20 @@ async def run_headless_rot_scrape_orchestration(site_key: str, run_id: str, targ
             if not captcha_solution: return
 
             update_worker_status(run_specific_temp_dir, "PROCESSING_WITH_CAPTCHA")
+
+            if from_date:
+                formatted_from_date = datetime.datetime.strptime(from_date, '%Y-%m-%d').strftime('%d/%m/%Y')
+                logger.info(f"Setting From Date to: {formatted_from_date} using JavaScript evaluation.")
+                await page.evaluate(f"document.querySelector('#fromDate').value = '{formatted_from_date}';")
+
+            if to_date:
+                formatted_to_date = datetime.datetime.strptime(to_date, '%Y-%m-%d').strftime('%d/%m/%Y')
+                logger.info(f"Setting To Date to: {formatted_to_date} using JavaScript evaluation.")
+                await page.evaluate(f"document.querySelector('#toDate').value = '{formatted_to_date}';")
+
             await page.locator(CAPTCHA_TEXT_INPUT_SELECTOR).fill(captcha_solution)
             await page.locator(SEARCH_BUTTON_SELECTOR).click()
+            
             await page.wait_for_selector(f"{RESULTS_TABLE_SELECTOR}, {ERROR_MESSAGE_SELECTORS}", state="visible", timeout=post_submit_timeout_ws)
             if not await page.locator(RESULTS_TABLE_SELECTOR).is_visible(timeout=2000):
                 err_loc = page.locator(ERROR_MESSAGE_SELECTORS).first
@@ -291,7 +315,7 @@ async def run_headless_rot_scrape_orchestration(site_key: str, run_id: str, targ
                     
                     detail_tasks = []
                     for item_data in current_page_items_raw:
-                        outfile_merged.write(_format_rot_tags(item_data, site_key) + "\n\n") # Write basic info first
+                        outfile_merged.write(_format_rot_tags(item_data, site_key) + "\n\n")
                         if item_data.get("rot_status_detail_page_link", "N/A") != "N/A":
                             detail_tasks.append(process_single_tender_detail_page(detail_semaphore, context, item_data["rot_status_detail_page_link"], site_key, item_data["rot_tender_id"], processed_list_pages, run_id, detail_page_timeout_ws, element_timeout_ws, popup_page_timeout_ws))
                     if detail_tasks: await asyncio.gather(*detail_tasks)
@@ -311,8 +335,7 @@ async def run_headless_rot_scrape_orchestration(site_key: str, run_id: str, targ
             logger.info("Playwright resources closed.")
             final_status = (run_specific_temp_dir / "status.txt").read_text().strip() if (run_specific_temp_dir / "status.txt").exists() else "UNKNOWN"
             logger.info(f"Worker for {site_key} terminated with status: {final_status}")
-            # --- REMOVED HTTP consolidation call ---
-
+            
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Headless ROT Worker with CAPTCHA & DB integration.")
     parser.add_argument("--site_key", required=True)
@@ -321,6 +344,8 @@ if __name__ == "__main__":
     parser.add_argument("--base_url", required=True)
     parser.add_argument("--tender_status", required=True)
     parser.add_argument("--settings_json", type=str)
+    parser.add_argument("--from_date", type=str, help="From Date for search (YYYY-MM-DD)")
+    parser.add_argument("--to_date", type=str, help="To Date for search (YYYY-MM-DD)")
     args = parser.parse_args()
     
     worker_run_settings = {}
@@ -332,5 +357,6 @@ if __name__ == "__main__":
         d.mkdir(parents=True, exist_ok=True)
     
     asyncio.run(run_headless_rot_scrape_orchestration(
-        args.site_key, args.run_id, args.site_url, args.base_url, args.tender_status, worker_run_settings
+        args.site_key, args.run_id, args.site_url, args.base_url, args.tender_status, 
+        worker_run_settings, args.from_date, args.to_date
     ))

@@ -1,11 +1,11 @@
 {
   "global_scraper_settings": {
     "scrape_py_limits": {
-      "max_list_pages": 1,
+      "max_list_pages": 10,
       "retries": 3
     },
     "concurrency": {
-      "list_pages": 5,
+      "list_pages": 1,
       "detail_pages": 2
     },
     "timeouts": {
@@ -59,12 +59,12 @@
     "Assam": {
       "base_url": "https://assamtenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://assamtenders.gov.in/nicgep/app",
-      "enabled": false
+      "enabled": true
     },
     "Chandigarh": {
       "base_url": "https://etenders.chd.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://etenders.chd.nic.in/nicgep/app",
-      "enabled": true
+      "enabled": false
     },
     "Dadra Nagar Haveli": {
       "base_url": "https://dnhtenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
@@ -109,7 +109,7 @@
     "Kerala": {
       "base_url": "https://etenders.kerala.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://etenders.kerala.gov.in/nicgep/app",
-      "enabled": true
+      "enabled": false
     },
     "Lakshadweep": {
       "base_url": "https://tendersutl.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
@@ -164,7 +164,7 @@
     "Punjab": {
       "base_url": "https://eproc.punjab.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://eproc.punjab.gov.in/nicgep/app",
-      "enabled": true
+      "enabled": false
     },
     "Rajasthan": {
       "base_url": "https://eproc.rajasthan.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",

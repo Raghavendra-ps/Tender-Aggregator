@@ -6,3 +6,7 @@
 10:33:37 [INFO] (ROTWorker-Himachal Pradesh Run-213918) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_HimachalPradesh_20250626103333213918/captcha.b64
 10:33:37 [INFO] (ROTWorker-Himachal Pradesh Run-213918) Worker status updated to: WAITING_CAPTCHA
 10:33:37 [INFO] (ROTWorker-Himachal Pradesh Run-213918) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_HimachalPradesh_20250626103333213918/answer.txt (max 300s)...
+10:38:37 [WARNING] (ROTWorker-Himachal Pradesh Run-213918) Timeout waiting for CAPTCHA solution.
+10:38:37 [INFO] (ROTWorker-Himachal Pradesh Run-213918) Worker status updated to: TIMEOUT_CAPTCHA_INPUT
+10:38:37 [INFO] (ROTWorker-Himachal Pradesh Run-213918) Playwright resources closed.
+10:38:37 [INFO] (ROTWorker-Himachal Pradesh Run-213918) Worker for Himachal Pradesh terminated with status: TIMEOUT_CAPTCHA_INPUT

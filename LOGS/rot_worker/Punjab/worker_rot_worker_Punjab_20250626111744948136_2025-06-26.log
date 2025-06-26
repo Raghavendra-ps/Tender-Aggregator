@@ -1,0 +1,71 @@
+11:17:45 [INFO] (ROTWorker-Punjab Run-948136) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Punjab/worker_rot_worker_Punjab_20250626111744948136_2025-06-26.log
+11:17:45 [INFO] (ROTWorker-Punjab Run-948136) --- Starting Headless ROT Worker for Site: Punjab, Run ID: rot_worker_Punjab_20250626111744948136 ---
+11:17:45 [INFO] (ROTWorker-Punjab Run-948136) --- Dates: From=2000-09-28, To=2000-09-30 ---
+11:17:45 [INFO] (ROTWorker-Punjab Run-948136) Worker status updated to: WORKER_STARTED
+11:17:45 [INFO] (ROTWorker-Punjab Run-948136) Worker status updated to: FETCHING_CAPTCHA
+11:17:45 [INFO] (ROTWorker-Punjab Run-948136) Selecting tender status '5'.
+11:17:48 [INFO] (ROTWorker-Punjab Run-948136) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250626111744948136/captcha.b64
+11:17:48 [INFO] (ROTWorker-Punjab Run-948136) Worker status updated to: WAITING_CAPTCHA
+11:17:48 [INFO] (ROTWorker-Punjab Run-948136) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250626111744948136/answer.txt (max 300s)...
+11:17:57 [INFO] (ROTWorker-Punjab Run-948136) CAPTCHA solution received.
+11:17:57 [INFO] (ROTWorker-Punjab Run-948136) Worker status updated to: PROCESSING_WITH_CAPTCHA
+11:18:27 [CRITICAL] (ROTWorker-Punjab Run-948136) Major error in ROT worker: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#fromDate")
+    - locator resolved to <input value="" type="text" id="fromDate" name="fromDate" title="dd/MM/yyyy" autocomplete="off" readonly="readonly"/>
+    - fill("28/09/2000")
+  - attempting fill action
+    2 × waiting for element to be visible, enabled and editable
+      - element is not editable
+    - retrying fill action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and editable
+      - element is not editable
+    - retrying fill action
+      - waiting 100ms
+    60 × waiting for element to be visible, enabled and editable
+       - element is not editable
+     - retrying fill action
+       - waiting 500ms
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/headless_rot_worker.py", line 327, in run_headless_rot_scrape_orchestration
+    await page.locator("#fromDate").fill(formatted_from_date)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/async_api/_generated.py", line 15787, in fill
+    await self._impl_obj.fill(
+        value=value, timeout=timeout, noWaitAfter=no_wait_after, force=force
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_locator.py", line 212, in fill
+    return await self._frame.fill(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_frame.py", line 527, in fill
+    await self._channel.send("fill", locals_to_params(locals()))
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#fromDate")
+    - locator resolved to <input value="" type="text" id="fromDate" name="fromDate" title="dd/MM/yyyy" autocomplete="off" readonly="readonly"/>
+    - fill("28/09/2000")
+  - attempting fill action
+    2 × waiting for element to be visible, enabled and editable
+      - element is not editable
+    - retrying fill action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and editable
+      - element is not editable
+    - retrying fill action
+      - waiting 100ms
+    60 × waiting for element to be visible, enabled and editable
+       - element is not editable
+     - retrying fill action
+       - waiting 500ms
+
+11:18:27 [INFO] (ROTWorker-Punjab Run-948136) Worker status updated to: ERROR_UNHANDLED_TimeoutError
+11:18:27 [INFO] (ROTWorker-Punjab Run-948136) Playwright resources closed.
+11:18:27 [INFO] (ROTWorker-Punjab Run-948136) Worker for Punjab terminated with status: ERROR_UNHANDLED_TimeoutError

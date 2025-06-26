@@ -73,26 +73,49 @@ def get_safe_text(element: Optional[Tag], default="N/A", strip=True) -> str:
 def clean_text(text: Optional[str]) -> str:
     if text is None or text == "N/A": return "N/A"
     return re.sub(r'\s+', ' ', str(text)).strip()
+
 def _find_detail_field_value(container: Optional[Tag], *caption_texts: str) -> str:
-    if not container: return "N/A"
+    """
+    More robustly finds a field's value in a table, given the field's label.
+    It first tries to find a specific 'td_field' but falls back to the next sibling `td`
+    if 'td_field' is not present.
+    """
+    if not container: 
+        return "N/A"
     for caption_text in caption_texts:
         try:
-            core_caption = re.sub(r'\s*\(.*?\)\s*', '', caption_text).strip()
-            core_caption_pattern = re.compile(r'\s*' + re.escape(core_caption) + r'\s*:?\s*', re.IGNORECASE)
-            caption_td = container.find(lambda tag: tag.name == 'td' and 'td_caption' in tag.get('class', []) and core_caption_pattern.search(re.sub(r'\s*\(.*?\)\s*', '', tag.get_text(strip=True)).strip()))
+            # Create a case-insensitive regex for the label text
+            # This makes the search more reliable against minor text variations
+            caption_pattern = re.compile(r'^\s*' + re.escape(caption_text) + r'\s*:?\s*$', re.IGNORECASE)
+            
+            # Find the <td> that contains the label text
+            caption_td = container.find(
+                lambda tag: tag.name == 'td' and 'td_caption' in tag.get('class', []) and caption_pattern.search(tag.get_text(strip=True))
+            )
+            
             if caption_td:
-                next_td = caption_td.find_next_sibling('td', class_='td_field')
-                if next_td: return clean_text(next_td.get_text())
+                # First, try the ideal case: find the next sibling with class 'td_field'
+                value_td = caption_td.find_next_sibling('td', class_='td_field')
+                
+                # --- THIS IS THE FIX ---
+                # If that fails, find the *immediate* next <td> sibling, whatever its class
+                if not value_td:
+                    value_td = caption_td.find_next_sibling('td')
+                # --- END FIX ---
+                
+                if value_td:
+                    return clean_text(value_td.get_text())
+
+                # Fallback for complex layouts: search within the parent row
                 parent_row = caption_td.find_parent('tr')
                 if parent_row:
                     field_td = parent_row.find('td', class_='td_field')
-                    if field_td and field_td != caption_td: return clean_text(field_td.get_text())
-                all_tds_after = caption_td.find_all_next('td')
-                for td_field_candidate in all_tds_after:
-                    if 'td_field' in td_field_candidate.get('class', []) and 'td_caption' not in td_field_candidate.get('class', []):
-                        return clean_text(td_field_candidate.get_text())
+                    if field_td and field_td != caption_td:
+                        return clean_text(field_td.get_text())
         except Exception as e:
-            if scraper_logger: scraper_logger.debug(f"  [Detail Scrape] Minor error finding field for caption '{caption_text}': {type(e).__name__}", exc_info=False)
+            if scraper_logger:
+                scraper_logger.debug(f"  [Detail Scrape] Minor error finding field for caption '{caption_text}': {type(e).__name__}", exc_info=False)
+                
     return "N/A"
 
 def parse_date_reg(date_str: Optional[str]) -> Optional[datetime.datetime]:
@@ -366,6 +389,9 @@ async def fetch_single_list_page(context: BrowserContext, page_number: int, site
     return page_number, []
 
 # --- MODIFIED: Main orchestration logic for a site ---
+
+# From Tender-Aggregator/scrape.py
+
 async def fetch_all_pages_for_site_and_save_to_db(playwright_instance: Any, site_key: str, site_base_url: str, site_domain: str, max_pages: int, concurrency_val: int, detail_concurrency_val: int, page_timeout: int, detail_timeout: int, retry_max: int):
     browser: Optional[BrowserContext.browser] = None; context: Optional[BrowserContext] = None
     tenders_saved_count = 0; tenders_failed_count = 0
@@ -381,34 +407,44 @@ async def fetch_all_pages_for_site_and_save_to_db(playwright_instance: Any, site
             
             page_results = await asyncio.gather(*batch_tasks)
             
-            all_tenders_from_batch = []
+            # --- FIX: De-duplicate tenders before saving ---
+            # Use a dictionary with tender_id as the key to automatically handle duplicates.
+            unique_tenders_in_batch: Dict[str, Dict[str, Any]] = {}
+
             for _, tender_list in page_results:
-                if not tender_list: # Total failure for this page
+                if not tender_list: 
                     consecutive_empty_pages += 1
                 elif tender_list[0].get("status_signal") == "NO_RECORDS":
                     stop_fetching = True; break
                 else:
                     consecutive_empty_pages = 0
-                    all_tenders_from_batch.extend(tender_list)
+                    for tender_data in tender_list:
+                        # Use the primary tender ID as the key for de-duplication
+                        primary_id = tender_data.get("detail_tender_id") or tender_data.get("list_page_tender_id")
+                        if primary_id and primary_id != "N/A":
+                            if primary_id not in unique_tenders_in_batch:
+                                unique_tenders_in_batch[primary_id] = tender_data
             
             if stop_fetching or consecutive_empty_pages >= concurrency_val:
                 if scraper_logger and consecutive_empty_pages >= concurrency_val: scraper_logger.warning(f"Stopping site {site_key}: {consecutive_empty_pages} consecutive empty/failed pages.")
                 break
             
-            # Batch save to DB
-            if all_tenders_from_batch:
+            # Batch save the de-duplicated tenders to the DB
+            if unique_tenders_in_batch:
                 db: Session = SessionLocal()
                 try:
-                    for tender_data in all_tenders_from_batch:
+                    for tender_data in unique_tenders_in_batch.values():
                         if save_tender_to_db(db, tender_data, site_key):
                             tenders_saved_count += 1
                         else:
                             tenders_failed_count += 1
                     db.commit()
-                    db_logger.info(f"Committed batch of {len(all_tenders_from_batch)} tenders for site '{site_key}'.")
+                    db_logger.info(f"Committed batch of {len(unique_tenders_in_batch)} unique tenders for site '{site_key}'.")
                 except Exception as e:
                     db.rollback()
-                    db_logger.error(f"Batch DB commit failed for site '{site_key}': {e}")
+                    db_logger.error(f"Batch DB commit failed for site '{site_key}': {e}", exc_info=True)
+                    # Increment failed count for the whole batch on commit failure
+                    tenders_failed_count += len(unique_tenders_in_batch)
                 finally:
                     db.close()
 
@@ -419,8 +455,6 @@ async def fetch_all_pages_for_site_and_save_to_db(playwright_instance: Any, site
         if browser: await browser.close()
         if scraper_logger: scraper_logger.info(f"Scrape run for site {site_key} finished. Saved: {tenders_saved_count}, Failed to save: {tenders_failed_count}.")
 
-
-# --- MODIFIED: Main site entry point ---
 async def run_scrape_for_one_site(site_key: str, site_config: Dict[str, str], global_settings: Dict[str, Any]):
     current_site_logger = setup_site_specific_logging(site_key)
     current_site_logger.info(f"🚀 Starting DB-integrated scrape run for site: {site_key}...")

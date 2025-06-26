@@ -196,7 +196,8 @@
         }
 
         .site-selection-group {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             align-items: flex-end;
             gap: 24px;
             margin-bottom: 32px;
@@ -206,13 +207,19 @@
         .site-selection-group .form-group {
             flex: 1;
             margin-bottom: 0;
-            min-width: 220px;
         }
 
         .site-selection-group .btn {
             white-space: nowrap;
             margin-bottom: 0;
+            grid-column: 1 / -1; /* Make button span full width on grid */
+            justify-self: start;
         }
+        @media (min-width: 992px) { /* On larger screens, don't span full width */
+             .site-selection-group { grid-template-columns: 1fr 1fr 1fr auto; }
+             .site-selection-group .btn { grid-column: auto; }
+        }
+
 
         .status-message {
             padding: 20px 24px;
@@ -321,7 +328,7 @@
     <div class="header">
       <div>
         <h1>Manual ROT Scrape</h1>
-        <div class="header-subtitle">Results of Tenders Data Collection</div>
+        <div class="header-subtitle">Results of Tenders (Financial Evaluation)</div>
       </div>
       <a href="{{ url_for('homepage') }}" class="btn btn-secondary">← Back to Dashboard</a>
     </div>
@@ -333,8 +340,8 @@
         <div class="form-section">
             <div class="info-note">
                 <strong>Instructions:</strong>
-                1. Select a site and tender status.
-                2. Click "Initiate Worker & Wait for CAPTCHA". This will start the headless worker.
+                1. Select a site. Dates are optional.
+                2. Click "Initiate Worker". This will start the headless worker.
                 3. The CAPTCHA image will appear in the popup below once fetched by the worker.
                 4. Enter the solution and click "Submit Solution to Worker".
             </div>
@@ -357,20 +364,16 @@
                         {% endif %}
                     </select>
                 </div>
+                <!-- Tender Status Dropdown REMOVED -->
                 <div class="form-group">
-                     <label for="rotTenderStatusPage">2. Select Tender Status:</label>
-                    <select id="rotTenderStatusPage" class="input">
-                        <option value="1">To Be Opened Tenders</option>
-                        <option value="2">Technical Bid Opening</option>
-                        <option value="3">Technical Evaluation</option>
-                        <option value="4">Financial Bid Opening</option>
-                        <option value="5">Financial Evaluation</option> <!-- Default will be set by JS -->
-                        <option value="6">AOC</option>
-                        <option value="7">Retender</option>
-                        <option value="8">Cancelled</option>
-                        <option value="9">Concluded</option>
-                    </select>
+                    <label for="rotFromDate">2. From Date (Optional):</label>
+                    <input type="date" id="rotFromDate" class="input">
                 </div>
+                <div class="form-group">
+                    <label for="rotToDate">3. To Date (Optional):</label>
+                    <input type="date" id="rotToDate" class="input">
+                </div>
+
                 <button type="button" id="initiateWorkerBtn" class="btn btn-accent">Initiate Worker & Wait for CAPTCHA</button>
             </div>
 
@@ -394,12 +397,9 @@
         <label>Site:</label>
         <input type="text" id="rotSiteModalDisplay" class="input" readonly>
       </div>
-      <div class="form-group">
-        <label>Tender Status (selected):</label>
-        <input type="text" id="rotTenderStatusModalDisplay" class="input" readonly>
-      </div>
+      <!-- Tender Status Display in Modal REMOVED -->
       <img id="captcha-image-display" src="" alt="CAPTCHA Image">
-      <p class="minor-note" style="text-align: center;">If CAPTCHA image is unclear or takes too long, close this, check server logs, and try initiating again.</p>
+      <p class="minor-note" style="text-align: center;">If CAPTCHA image is unclear or takes too long, close this, check worker logs, and try initiating again.</p>
       <div class="form-group">
         <label for="captcha-solution">Enter CAPTCHA Solution:</label>
         <input type="text" id="captcha-solution" class="input captcha-input" placeholder="Enter text from image">
@@ -421,15 +421,14 @@
     const statusMessageAreaRot = document.getElementById('status-message-area-rot');
 
     const rotSiteKeySelectPage = document.getElementById('rotSiteKeySelect');
-    const rotTenderStatusSelectPage = document.getElementById('rotTenderStatusPage');
+    const fromDateInput = document.getElementById('rotFromDate');
+    const toDateInput = document.getElementById('rotToDate');
     const initiateWorkerButton = document.getElementById('initiateWorkerBtn');
     const rotSiteModalDisplay = document.getElementById('rotSiteModalDisplay');
-    const rotTenderStatusModalDisplay = document.getElementById('rotTenderStatusModalDisplay');
 
     let currentRunId = null;
     let captchaPollInterval = null;
     let currentManualRotSiteKey = null;
-    let currentManualRotTenderStatus = null;
 
     function showRotStatusMessage(message, type = 'info', area = statusMessageAreaRot) {
         if (!area) return;
@@ -444,19 +443,14 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-        const defaultRotStatusFromSettings = "{{ settings.scheduler.rot_default_status_value | default('5') }}";
-        if (rotTenderStatusSelectPage && defaultRotStatusFromSettings) {
-            rotTenderStatusSelectPage.value = defaultRotStatusFromSettings;
-        }
-
         if(initiateWorkerButton) {
             initiateWorkerButton.addEventListener('click', async function() {
                 currentManualRotSiteKey = rotSiteKeySelectPage.value;
-                currentManualRotTenderStatus = rotTenderStatusSelectPage.value;
+                const fromDateValue = fromDateInput.value;
+                const toDateValue = toDateInput.value;
 
                 if (!currentManualRotSiteKey) { showRotStatusMessage("Please select a site.", "error"); return; }
-                if (!currentManualRotTenderStatus) { showRotStatusMessage("Please select tender status.", "error"); return; }
-
+                
                 initiateWorkerButton.disabled = true;
                 initiateWorkerButton.textContent = 'Initiating Worker...';
                 showRotCaptchaModal(true, "Initiating worker, please wait...");
@@ -465,7 +459,9 @@
                 try {
                     const initiateUrl = `{{ url_for('initiate_rot_worker', site_key='SITE_KEY_PLACEHOLDER') }}`.replace('SITE_KEY_PLACEHOLDER', encodeURIComponent(currentManualRotSiteKey));
                     const formData = new FormData();
-                    formData.append('tender_status_value', currentManualRotTenderStatus);
+                    formData.append('tender_status_value', '5'); // Hardcoded value
+                    if (fromDateValue) formData.append('from_date', fromDateValue);
+                    if (toDateValue) formData.append('to_date', toDateValue);
 
                     const initiateResponse = await fetch(initiateUrl, { method: 'POST', body: formData });
                     const initiateData = await initiateResponse.json();
@@ -477,7 +473,6 @@
 
                     captchaModalTitle.textContent = `CAPTCHA for: ${currentManualRotSiteKey} (Run: ${currentRunId.slice(-6)})`;
                     if(rotSiteModalDisplay) rotSiteModalDisplay.value = currentManualRotSiteKey;
-                    if(rotTenderStatusModalDisplay) rotTenderStatusModalDisplay.value = rotTenderStatusSelectPage.options[rotTenderStatusSelectPage.selectedIndex].text;
                     if(captchaSolutionInput) captchaSolutionInput.value = '';
 
                     pollForCaptchaImage();
@@ -485,7 +480,7 @@
                     console.error("Error initiating ROT worker:", error);
                     showRotStatusMessage(`Error initiating worker: ${error.message}`, "error");
                     if (captchaErrorDiv) {captchaErrorDiv.textContent = `Failed to start worker: ${error.message}`; captchaErrorDiv.style.display = 'block';}
-                    closeRotCaptchaModal(); // Also re-enables the initiate button
+                    closeRotCaptchaModal();
                 }
             });
         }
@@ -503,17 +498,17 @@
         showRotCaptchaModal(true, "Polling for CAPTCHA from worker...");
 
         let pollCount = 0;
-        const maxPolls = 120; // Poll for 120 * 2s = 240 seconds max
+        const maxPolls = 120;
 
         captchaPollInterval = setInterval(async () => {
             pollCount++;
             if (pollCount > maxPolls) {
                 clearInterval(captchaPollInterval);
-                const timeoutMsg = "Timeout: Worker did not provide CAPTCHA image in time. Check worker logs (logs_rot directory). You may need to close this modal and retry initiation.";
+                const timeoutMsg = "Timeout: Worker did not provide CAPTCHA image in time. Check worker logs (View Logs page). You may need to close this modal and retry initiation.";
                 showRotStatusMessage(timeoutMsg, "error");
                 if(captchaErrorDiv) { captchaErrorDiv.textContent = timeoutMsg; captchaErrorDiv.style.display = 'block'; }
                 if(captchaImageDisplay) { captchaImageDisplay.alt = "Timeout"; captchaImageDisplay.classList.remove('loading'); captchaImageDisplay.textContent = "Timeout loading CAPTCHA.";}
-                if(initiateWorkerButton) { // <<<< IMPROVEMENT ADDED HERE
+                if(initiateWorkerButton) {
                     initiateWorkerButton.disabled = false;
                     initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';
                 }
@@ -523,50 +518,49 @@
             try {
                 const statusUrl = `{{ url_for('get_captcha_status', run_id='RUN_ID_PLACEHOLDER') }}`.replace('RUN_ID_PLACEHOLDER', currentRunId);
                 const response = await fetch(statusUrl);
+
+                if (!response.ok) {
+                    console.warn(`Polling for ${currentRunId} failed with status ${response.status}. Retrying...`);
+                    return;
+                }
                 const data = await response.json();
 
-                if (data.status === 'ready_for_captcha' && data.image_data) {
+                if (data.status === 'WAITING_CAPTCHA' && data.image_data) {
                     clearInterval(captchaPollInterval);
                     captchaImageDisplay.src = data.image_data;
                     captchaImageDisplay.alt = "CAPTCHA Image";
-                    showRotCaptchaModal(false); // Image loaded, enable submit in modal
+                    showRotCaptchaModal(false);
                     if(captchaSolutionInput) captchaSolutionInput.focus();
                     if(captchaErrorDiv) captchaErrorDiv.style.display = 'none';
-                } else if (data.status === 'worker_error' || data.status.startsWith('ERROR_') || data.status === 'error_run_dir_not_found') {
+                } else if (data.status.startsWith('ERROR_') || response.status === 404) {
                     clearInterval(captchaPollInterval);
-                    const errorMsg = data.message || "Worker encountered an error.";
+                    const errorMsg = data.detail || data.status || "Worker encountered an error or was not found.";
                     showRotStatusMessage(`Worker error: ${errorMsg}`, "error");
                     if(captchaErrorDiv) { captchaErrorDiv.textContent = `Worker Error: ${errorMsg}`; captchaErrorDiv.style.display = 'block'; }
                     if(captchaImageDisplay) { captchaImageDisplay.alt = "Error"; captchaImageDisplay.classList.remove('loading'); captchaImageDisplay.textContent = "Error loading CAPTCHA.";}
-                    if(initiateWorkerButton) { // <<<< IMPROVEMENT ADDED HERE
+                    if(initiateWorkerButton) {
                         initiateWorkerButton.disabled = false;
                         initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';
                     }
-                } else if (data.status === 'worker_finished' || data.status.startsWith('FINISHED_')) {
+                } else if (data.status.startsWith('FINISHED_')) {
                      clearInterval(captchaPollInterval);
-                    showRotStatusMessage(`Worker finished: ${data.message}`, "info");
-                    if(captchaErrorDiv) { captchaErrorDiv.textContent = `Worker Finished: ${data.message}`; captchaErrorDiv.style.display = 'block'; }
+                    showRotStatusMessage(`Worker finished with status: ${data.status}`, "info");
+                    if(captchaErrorDiv) { captchaErrorDiv.textContent = `Worker Finished: ${data.status}`; captchaErrorDiv.style.display = 'block'; }
                     if(submitCaptchaToWorkerButton) submitCaptchaToWorkerButton.disabled = true;
-                    if(initiateWorkerButton) { // Re-enable for a new run
+                    if(initiateWorkerButton) {
                         initiateWorkerButton.disabled = false;
                         initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';
-                    }
-                } else if (['pending_worker_init', 'pending_worker_action', 'processing_captcha_file', 'worker_processing', 'INITIATED_BY_DASHBOARD', 'FETCHING_CAPTCHA', 'WORKER_STARTED', 'PROCESSING_WITH_CAPTCHA'].includes(data.status) || data.status.startsWith("PROCESSING_LIST_PAGE_")) {
-                    if(captchaImageDisplay && captchaImageDisplay.classList.contains('loading')) {
-                        captchaImageDisplay.textContent = data.message || `Worker status: ${data.status}... Polling ${pollCount}/${maxPolls}`;
                     }
                 } else {
-                    console.warn(`Unexpected poll status for ${currentRunId}: ${data.status} - ${data.message}`);
-                     if(captchaImageDisplay && captchaImageDisplay.classList.contains('loading')) {
-                        captchaImageDisplay.textContent = `Status: ${data.status}. Polling ${pollCount}/${maxPolls}`;
+                    if(captchaImageDisplay && captchaImageDisplay.classList.contains('loading')) {
+                        captchaImageDisplay.textContent = `Worker status: ${data.status}... Polling ${pollCount}/${maxPolls}`;
                     }
                 }
-            } catch (error) { // This catch is for network errors during the fetch itself
+            } catch (error) {
                 console.warn("Error during CAPTCHA status poll (will retry):", error);
                 if(captchaImageDisplay && captchaImageDisplay.classList.contains('loading')) {
                     captchaImageDisplay.textContent = `Polling error... Retrying ${pollCount}/${maxPolls}`;
                 }
-                // Consider if a certain number of consecutive fetch errors should also re-enable the initiate button
             }
         }, 2000);
     }
@@ -579,11 +573,10 @@
             captchaImageDisplay.classList.add('loading');
             captchaImageDisplay.textContent = loadingText;
             submitCaptchaToWorkerButton.disabled = true;
-        } else { // CAPTCHA image received or ready for input
+        } else {
             captchaImageDisplay.classList.remove('loading');
             captchaImageDisplay.textContent = "";
             submitCaptchaToWorkerButton.disabled = false;
-            // Re-enable initiate button on main page once modal is ready for solution (or error occurs)
             if(initiateWorkerButton) {
                  initiateWorkerButton.disabled = false;
                  initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';
@@ -595,7 +588,6 @@
     function closeRotCaptchaModal() {
         if(rotCaptchaModal) rotCaptchaModal.style.display = 'none';
         if (captchaPollInterval) clearInterval(captchaPollInterval);
-        // currentRunId = null; // Decided to keep runId if user might retry submit for same run
         if(initiateWorkerButton) {initiateWorkerButton.disabled = false; initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';}
         if(submitCaptchaToWorkerButton) submitCaptchaToWorkerButton.disabled = false;
     }
@@ -628,12 +620,10 @@
             if(captchaErrorDiv) {captchaErrorDiv.textContent = `Failed to submit solution: ${error.message}. Try again.`; captchaErrorDiv.style.display = 'block';}
              showRotStatusMessage(`Error submitting CAPTCHA: ${error.message}`, "error", statusMessageAreaRot);
         } finally {
-            // Re-enable submit button in modal if it's still open (e.g., due to error)
             if(submitCaptchaToWorkerButton && rotCaptchaModal.style.display === 'block') {
                 submitCaptchaToWorkerButton.disabled = false;
                 submitCaptchaToWorkerButton.textContent = 'Submit Solution to Worker';
             }
-            // Also re-enable main initiate button if submission fails and modal is still shown
             if(initiateWorkerButton && rotCaptchaModal.style.display === 'block') {
                  initiateWorkerButton.disabled = false;
                  initiateWorkerButton.textContent = 'Initiate Worker & Wait for CAPTCHA';

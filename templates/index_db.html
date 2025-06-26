@@ -19,9 +19,10 @@
         .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid var(--color-border); }
         .header h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: -0.02em; line-height: 0.9; color: var(--color-primary); text-transform: uppercase; }
         .header-subtitle { font-size: 0.875rem; font-weight: 500; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 8px; }
-        .header-actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; }
+        .header-actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
         .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border: 1px solid var(--color-primary); font-family: inherit; font-size: 0.875rem; font-weight: 500; text-decoration: none; color: var(--color-surface); background: var(--color-primary); border-radius: 0; cursor: pointer; transition: all 0.2s ease; text-transform: uppercase; }
         .btn:hover { background: var(--color-secondary); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; box-shadow: none; }
         .btn-secondary { background: transparent; color: var(--color-primary); border-color: var(--color-border); }
         .btn-secondary:hover { background: var(--color-surface-alt); border-color: var(--color-primary); }
         .btn-accent { background: var(--color-accent); border-color: var(--color-accent); }
@@ -46,6 +47,8 @@
         .stats-item { font-size: 0.8rem; font-weight: 600; color: var(--color-text); text-transform: uppercase; }
         .stats-value { font-family: 'JetBrains Mono', monospace; margin-left: 8px; }
         .actions-cell { display: flex; gap: 8px; }
+        #scrape-status { font-weight: 600; color: var(--color-accent); animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
     </style>
 </head>
 <body>
@@ -56,11 +59,11 @@
         <div class="header-subtitle">Tender Management System</div>
       </div>
       <div class="header-actions">
+        <!-- NEW: Status display area -->
+        <span id="scrape-status" style="display: none;">Scraping in progress...</span>
         <a href="{{ url_for('settings_page') }}" class="btn btn-secondary">Settings</a>
         <a href="{{ url_for('rot_manual_scrape_page') }}" class="btn btn-secondary">ROT Scrape</a>
-        <form action="{{ url_for('run_scraper_now') }}" method="post" onsubmit="return confirm('Trigger REGULAR tender scrape?');" style="display: inline;">
-            <button type="submit" class="btn">Fetch Tenders Now</button>
-        </form>
+        <button type="button" id="fetch-tenders-btn" class="btn">Fetch Tenders Now</button>
       </div>
     </header>
 
@@ -120,5 +123,74 @@
       </section>
     </main>
   </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const fetchBtn = document.getElementById('fetch-tenders-btn');
+    const statusDisplay = document.getElementById('scrape-status');
+    let pollInterval;
+
+    async function checkScrapeStatus() {
+        try {
+            const response = await fetch("{{ url_for('get_scrape_status') }}");
+            const data = await response.json();
+
+            if (data.status === 'running') {
+                statusDisplay.style.display = 'inline';
+                fetchBtn.disabled = true;
+                if (!pollInterval) {
+                    // Start polling if not already
+                    pollInterval = setInterval(checkScrapeStatus, 5000); // Poll every 5 seconds
+                }
+            } else { // status is 'idle'
+                statusDisplay.style.display = 'none';
+                fetchBtn.disabled = false;
+                if (pollInterval) {
+                    clearInterval(pollInterval);
+                    pollInterval = null;
+                    // Scrape finished, reload the page to show new data
+                    window.location.reload();
+                }
+            }
+        } catch (error) {
+            console.error('Error polling for scrape status:', error);
+            statusDisplay.textContent = 'Status check failed.';
+            statusDisplay.style.color = 'red';
+            fetchBtn.disabled = false;
+            if (pollInterval) {
+                clearInterval(pollInterval);
+                pollInterval = null;
+            }
+        }
+    }
+
+    fetchBtn.addEventListener('click', async function() {
+        if (!confirm('Trigger REGULAR tender scrape? This may take several minutes.')) {
+            return;
+        }
+        
+        try {
+            const response = await fetch("{{ url_for('run_scraper_now') }}", { method: 'POST' });
+            if (response.status === 409) { // Conflict - already running
+                alert('A scrape is already in progress.');
+                checkScrapeStatus(); // Start polling to get updates
+                return;
+            }
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Failed to start scrape.');
+            }
+            // Scrape initiated successfully
+            checkScrapeStatus(); 
+        } catch (error) {
+            alert('Error initiating scrape: ' + error.message);
+            console.error('Error initiating scrape:', error);
+        }
+    });
+
+    // Initial check when the page loads
+    checkScrapeStatus();
+});
+</script>
 </body>
 </html>

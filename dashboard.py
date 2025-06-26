@@ -42,8 +42,12 @@ SITE_DATA_ROOT = PROJECT_ROOT / "site_data"
 ROT_DETAIL_HTMLS_DIR = SITE_DATA_ROOT / "ROT" / "DetailHtmls"
 TEMP_DATA_DIR = SITE_DATA_ROOT / "TEMP"
 TEMP_WORKER_RUNS_DIR = TEMP_DATA_DIR / "WorkerRuns"
+# --- NEW: Path to the lock file ---
+SCRAPE_LOCK_FILE = PROJECT_ROOT / "scrape_in_progress.lock"
+
 
 # --- Logging Setup ---
+# (No changes needed in logging setup)
 log_formatter = logging.Formatter("%(asctime)s [%(levelname)s] (Dashboard) %(message)s", datefmt="%H:%M:%S")
 logger = logging.getLogger("dashboard")
 logger.setLevel(logging.INFO)
@@ -60,6 +64,7 @@ if not logger.hasHandlers():
 DEFAULT_SETTINGS = { "global_scraper_settings": {"scrape_py_limits": {}, "concurrency": {}, "timeouts": {}, "rot_scrape_limits": {}, "rot_concurrency": {}, "rot_timeouts": {}}, "retention": {}, "scheduler": {}, "site_configurations": {} }
 
 # --- FastAPI App & Templates ---
+# (No changes needed in FastAPI setup)
 app = FastAPI(title="TenFin Tender Dashboard")
 templates: Optional[Jinja2Templates] = None
 try:
@@ -84,8 +89,13 @@ def get_db():
 @app.on_event("startup")
 def on_startup():
     init_db()
+    # --- NEW: Cleanup lock file on startup, just in case ---
+    if SCRAPE_LOCK_FILE.exists():
+        logger.warning("Stale scrape lock file found on startup. Removing it.")
+        SCRAPE_LOCK_FILE.unlink()
 
 # --- Helper Functions ---
+# (No changes needed in helper functions)
 def load_settings() -> Dict:
     if not SETTINGS_FILE.is_file(): return DEFAULT_SETTINGS
     try:
@@ -118,6 +128,7 @@ def get_rot_site_config(site_key: str) -> Optional[Dict[str, str]]:
         return {"main_search_url": search_url, "base_url": base_url}
     return None
 
+
 # === MAIN UI & DATA ROUTES ===
 
 @app.get("/", response_class=HTMLResponse, name="homepage")
@@ -128,32 +139,51 @@ async def homepage(request: Request, db: Session = Depends(get_db), keywords: Op
         is_search = any([keywords, site_key, start_date, end_date])
         if is_search:
             if keywords:
-                search_clauses = [or_(Tender.tender_title.ilike(f"%{kw}%"), Tender.organisation_chain.ilike(f"%{kw}%"), Tender.full_details_json.op('->>')('$').ilike(f"%{kw}%")) for kw in [k.strip() for k in keywords.split(',') if k.strip()]]
-                if search_clauses: query = query.filter(or_(*search_clauses))
-            if site_key: query = query.filter(Tender.source_site == site_key)
-            if start_date: query = query.filter(Tender.opening_date >= start_date)
-            if end_date: query = query.filter(Tender.opening_date < (datetime.datetime.strptime(end_date, "%Y-%m-%d") + datetime.timedelta(days=1)))
+                search_pattern = f"%{keywords}%"
+                search_clauses = [
+                    Tender.tender_title.ilike(search_pattern),
+                    Tender.organisation_chain.ilike(search_pattern),
+                    Tender.tender_id.ilike(search_pattern),
+                    Tender.full_details_json.op('->>')('$.work_description').ilike(search_pattern),
+                    Tender.full_details_json.op('->>')('$.tender_reference_number').ilike(search_pattern)
+                ]
+                query = query.filter(or_(*search_clauses))
+            if site_key: 
+                query = query.filter(Tender.source_site == site_key)
+            if start_date: 
+                query = query.filter(Tender.opening_date >= start_date)
+            if end_date: 
+                query = query.filter(Tender.opening_date < (datetime.datetime.strptime(end_date, "%Y-%m-%d") + datetime.timedelta(days=1)))
+        
         tenders = query.order_by(desc(Tender.published_date)).limit(200).all()
         total_tenders = db.query(func.count(Tender.id)).scalar()
         sites_in_db = [s[0] for s in db.query(Tender.source_site).distinct().order_by(Tender.source_site).all() if s[0]]
     except Exception as e:
         logger.error(f"DB Error on homepage: {e}", exc_info=True)
         return templates.TemplateResponse("error.html", {"request": request, "error": "Database query failed."})
-    return templates.TemplateResponse("index_db.html", {"request": request, "tenders": tenders, "total_tenders": total_tenders, "tenders_shown": len(tenders), "available_sites": sites_in_db, "is_search": is_search, "query_keywords": keywords, "query_site": site_key, "query_start_date": start_date, "query_end_date": end_date})
+    
+    return templates.TemplateResponse("index_db.html", {
+        "request": request, "tenders": tenders, 
+        "total_tenders": total_tenders, "tenders_shown": len(tenders), 
+        "available_sites": sites_in_db, "is_search": is_search, 
+        "query_keywords": keywords, "query_site": site_key, 
+        "query_start_date": start_date, "query_end_date": end_date
+    })
 
 @app.get("/tender/{tender_pk_id}", name="view_tender_detail", response_class=HTMLResponse)
 async def view_tender_detail(request: Request, tender_pk_id: int, db: Session = Depends(get_db)):
-    if not templates: raise HTTPException(503)
+    if not templates: raise HTTPException(503, "Template engine error")
     tender = db.query(Tender).filter(Tender.id == tender_pk_id).first()
-    if not tender: raise HTTPException(404)
+    if not tender: raise HTTPException(404, "Tender not found in database.")
     return templates.TemplateResponse("tender_detail.html", {"request": request, "tender": tender.full_details_json or {}})
 
 @app.get("/result/{tender_pk_id}", name="view_tender_result", response_class=HTMLResponse)
 async def view_tender_result(request: Request, tender_pk_id: int, db: Session = Depends(get_db)):
-    if not templates: raise HTTPException(503)
+    if not templates: raise HTTPException(503, "Template engine error")
     result = db.query(TenderResult).filter(TenderResult.tender_id_fk == tender_pk_id).first()
-    if not result: raise HTTPException(404)
+    if not result: raise HTTPException(404, "Tender result not found for this tender.")
     return templates.TemplateResponse("rot_summary_detail_db.html", {"request": request, "tender": result.tender, "parsed_data": result.full_summary_json or {}})
+
 
 @app.get("/settings", name="settings_page", response_class=HTMLResponse)
 async def settings_page(request: Request):
@@ -184,45 +214,38 @@ async def view_logs_page(request: Request, site_log: Optional[str] = None, log_t
     content = get_lines((rot_dir / site_log) if log_type == "rot" else (regular_dir / site_log)) if site_log else None
     return templates.TemplateResponse("view_logs.html", {"request":request, "controller_log_filename":"site_controller.log", "controller_log_content":get_lines(controller_log_path), "regular_site_log_files":reg_logs, "rot_site_log_files":rot_logs, "selected_site_log_filename":site_log, "selected_site_log_content":content, "current_log_type_filter":log_type})
 
-#@app.get("/download-log/{log_type}/{path_param:path}", name="download_log_typed")
-#async def download_log_typed(log_type: str, path_param: str):
-    #log_dir_map = {"controller": LOGS_BASE_DIR, "regular": LOGS_BASE_DIR/"regular_scraper", "rot": LOGS_BASE_DIR/"rot_worker"}
-    #base_dir = log_dir_map.get(log_type)
-   # if not base_dir: raise HTTPException(400)
-  #  log_path = (base_dir/path_param).resolve()
- #   if not str(log_path).startswith(str(base_dir.resolve())) or not log_path.is_file(): raise HTTPException(404)
-#    return FileResponse(path=log_path, filename=log_path.name)
-
 @app.get("/download-log/{log_type}/{path_param:path}", name="download_log_typed")
 async def download_log_typed(log_type: str, path_param: str):
-    log_dir_map = {
-        "controller": LOGS_BASE_DIR,
-        "regular": LOGS_BASE_DIR / "regular_scraper",
-        "rot": LOGS_BASE_DIR / "rot_worker"
-    }
+    log_dir_map = { "controller": LOGS_BASE_DIR, "regular": LOGS_BASE_DIR / "regular_scraper", "rot": LOGS_BASE_DIR / "rot_worker" }
     base_dir = log_dir_map.get(log_type)
-
-    if not base_dir:
-        raise HTTPException(status_code=400, detail="Invalid log type specified.")
-
+    if not base_dir: raise HTTPException(status_code=400, detail="Invalid log type specified.")
     log_path = (base_dir / path_param).resolve()
-
-    # Security check to prevent path traversal
-    if not str(log_path).startswith(str(base_dir.resolve())):
-        raise HTTPException(status_code=403, detail="Access to this path is forbidden.")
-    
-    if not log_path.is_file():
-        raise HTTPException(status_code=404, detail=f"Log file not found: {path_param}")
-
+    if not str(log_path).startswith(str(base_dir.resolve())): raise HTTPException(status_code=403, detail="Access to this path is forbidden.")
+    if not log_path.is_file(): raise HTTPException(status_code=404, detail=f"Log file not found: {path_param}")
     return FileResponse(path=log_path, filename=log_path.name, media_type='text/plain')
 
 # --- ACTION & POST ROUTES ---
 @app.post("/run-scraper-now", name="run_scraper_now")
-async def run_scraper_now(request: Request):
-    if not SITE_CONTROLLER_SCRIPT_PATH.is_file(): return RedirectResponse(app.url_path_for('homepage') + "?error=controller_script_missing", status_code=303)
-    subprocess.Popen([sys.executable, str(SITE_CONTROLLER_SCRIPT_PATH), "--type", "regular"], cwd=PROJECT_ROOT)
-    return RedirectResponse(url=app.url_path_for('homepage') + "?msg=manual_scrape_triggered", status_code=303)
+async def run_scraper_now():
+    if not SITE_CONTROLLER_SCRIPT_PATH.is_file():
+        return JSONResponse(status_code=500, content={"status": "error", "message": "Controller script missing."})
+    if SCRAPE_LOCK_FILE.exists():
+        return JSONResponse(status_code=409, content={"status": "error", "message": "A scrape is already in progress."})
 
+    # No need to create the lock file here; the controller does it.
+    subprocess.Popen([sys.executable, str(SITE_CONTROLLER_SCRIPT_PATH), "--type", "regular"], cwd=PROJECT_ROOT)
+    return JSONResponse(status_code=202, content={"status": "ok", "message": "Scrape initiated."})
+
+# --- NEW: Status checking endpoint ---
+@app.get("/get-scrape-status", name="get_scrape_status")
+async def get_scrape_status():
+    if SCRAPE_LOCK_FILE.exists():
+        return {"status": "running"}
+    else:
+        return {"status": "idle"}
+
+
+# (The rest of the file remains the same...)
 @app.post("/save-retention-settings", name="save_retention_settings")
 async def save_retention_settings(enable_retention: bool = Form(False), retention_days: int = Form(30)):
     settings = load_settings(); settings.setdefault("retention", {})["enabled"] = enable_retention; settings["retention"]["days"] = retention_days
@@ -280,10 +303,14 @@ async def run_cleanup_task(db: Session = Depends(get_db)):
         return RedirectResponse(url=app.url_path_for('settings_page') + f"?msg=cleanup_finished_deleted_{deleted}", status_code=303)
     except Exception: db.rollback(); return RedirectResponse(app.url_path_for('settings_page') + "?error=cleanup_failed", status_code=303)
 
-# === ROT WORKER & CAPTCHA ROUTES ===
-
 @app.post("/rot/initiate-rot-worker/{site_key}", name="initiate_rot_worker")
-async def initiate_rot_worker_endpoint(request: Request, site_key: str, tender_status_value: str = Form(...)):
+async def initiate_rot_worker_endpoint(
+    request: Request, 
+    site_key: str, 
+    tender_status_value: str = Form(...),
+    from_date: Optional[str] = Form(None),
+    to_date: Optional[str] = Form(None)
+):
     worker_script_path=PROJECT_ROOT/"headless_rot_worker.py"
     if not worker_script_path.is_file(): raise HTTPException(500, "ROT worker script missing.")
     run_id=f"rot_worker_{_clean_path_component(site_key)}_{datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')}"
@@ -293,7 +320,20 @@ async def initiate_rot_worker_endpoint(request: Request, site_key: str, tender_s
         if not rot_urls: raise HTTPException(500, f"Config error for ROT site '{site_key}'.")
         settings=load_settings(); gss=settings.get("global_scraper_settings",{}); worker_settings={**gss.get("rot_timeouts",{}), **gss.get("rot_scrape_limits",{}), **gss.get("rot_concurrency",{})}
         (run_dir/"status.txt").write_text("INITIATED_BY_DASHBOARD", encoding="utf-8")
-        command=[sys.executable, str(worker_script_path), "--site_key", site_key, "--run_id", run_id, "--site_url", rot_urls["main_search_url"], "--base_url", rot_urls["base_url"], "--tender_status", tender_status_value, "--settings_json", json.dumps(worker_settings)]
+        
+        command=[
+            sys.executable, str(worker_script_path), 
+            "--site_key", site_key, 
+            "--run_id", run_id, 
+            "--site_url", rot_urls["main_search_url"], 
+            "--base_url", rot_urls["base_url"], 
+            "--tender_status", tender_status_value, 
+            "--settings_json", json.dumps(worker_settings)
+        ]
+        
+        if from_date: command.extend(["--from_date", from_date])
+        if to_date: command.extend(["--to_date", to_date])
+            
         env=os.environ.copy(); env["TENFIN_DASHBOARD_HOST_PORT"]=f"{request.url.hostname}:{request.url.port}"
         subprocess.Popen(command, cwd=PROJECT_ROOT, env=env)
         logger.info(f"Launched ROT Worker for {site_key}. Run ID: {run_id}")
@@ -307,7 +347,7 @@ async def get_captcha_status_route(run_id: str):
     run_dir = TEMP_WORKER_RUNS_DIR / _clean_path_component(run_id)
     if not run_dir.is_dir():
         logger.warning(f"[CAPTCHA STATUS] Run directory not found for run_id: {run_id}")
-        return JSONResponse(status_code=404)
+        return JSONResponse(status_code=404, content={"status": "ERROR_RUN_DIR_NOT_FOUND"})
 
     status_file = run_dir / "status.txt"
     status_msg = status_file.read_text().strip() if status_file.is_file() else "pending"
