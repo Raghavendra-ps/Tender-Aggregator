@@ -1,0 +1,8 @@
+10:33:33 [INFO] (ROTWorker-Himachal Pradesh Run-213918) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Himachal Pradesh/worker_rot_worker_HimachalPradesh_20250626103333213918_2025-06-26.log
+10:33:33 [INFO] (ROTWorker-Himachal Pradesh Run-213918) --- Starting Headless ROT Worker for Site: Himachal Pradesh, Run ID: rot_worker_HimachalPradesh_20250626103333213918 ---
+10:33:33 [INFO] (ROTWorker-Himachal Pradesh Run-213918) Worker status updated to: WORKER_STARTED
+10:33:33 [INFO] (ROTWorker-Himachal Pradesh Run-213918) Worker status updated to: FETCHING_CAPTCHA
+10:33:33 [INFO] (ROTWorker-Himachal Pradesh Run-213918) Selecting tender status '5'.
+10:33:37 [INFO] (ROTWorker-Himachal Pradesh Run-213918) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_HimachalPradesh_20250626103333213918/captcha.b64
+10:33:37 [INFO] (ROTWorker-Himachal Pradesh Run-213918) Worker status updated to: WAITING_CAPTCHA
+10:33:37 [INFO] (ROTWorker-Himachal Pradesh Run-213918) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_HimachalPradesh_20250626103333213918/answer.txt (max 300s)...

@@ -1,0 +1,124 @@
+15:12:19 [INFO] (Scraper-REG-CPPP_Test) 🚀 Starting DB-integrated scrape run for site: CPPP_Test...
+15:12:20 [INFO] (Scraper-REG-CPPP_Test) 📄 Fetching List Page 1 (Attempt 1/1)
+15:12:20 [WARNING] (Scraper-REG-CPPP_Test)   ⚠️ No table found on list page 1. Retrying.
+15:12:20 [ERROR] (Scraper-REG-CPPP_Test)   ❌ Failed to process List Page 1 after all attempts.
+15:12:20 [WARNING] (Scraper-REG-CPPP_Test) Stopping site CPPP_Test: 1 consecutive empty/failed pages.
+15:12:20 [INFO] (Scraper-REG-CPPP_Test) Scrape run for site CPPP_Test finished. Saved: 0, Failed to save: 0.
+15:12:20 [INFO] (Scraper-REG-CPPP_Test) 🏁 Scrape run for site CPPP_Test completed. Duration: 0:00:01.129548.
+15:14:09 [INFO] (Scraper-REG-CPPP_Test) 🚀 Starting DB-integrated scrape run for site: CPPP_Test...
+15:14:10 [INFO] (Scraper-REG-CPPP_Test) 📄 Fetching List Page 1 (Attempt 1/1)
+15:14:11 [ERROR] (Scraper-REG-CPPP_Test)   ❌ Unhandled Error on List Page 1, attempt 1/1: Page.wait_for_selector: Unexpected token "=" while parsing css selector "table#table, text=/no records found/i". Did you mean to CSS.escape it?
+Call log:
+  - waiting for table#table, text=/no records found/i to be visible
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/scrape.py", line 256, in fetch_single_list_page
+    await page_for_list.wait_for_selector(f"{results_table_selector}, {no_records_selector}", timeout=30000)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/async_api/_generated.py", line 8180, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_page.py", line 425, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_frame.py", line 323, in wait_for_selector
+    await self._channel.send("waitForSelector", locals_to_params(locals()))
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Page.wait_for_selector: Unexpected token "=" while parsing css selector "table#table, text=/no records found/i". Did you mean to CSS.escape it?
+Call log:
+  - waiting for table#table, text=/no records found/i to be visible
+
+15:14:11 [ERROR] (Scraper-REG-CPPP_Test)   ❌ Failed to process List Page 1 after all attempts.
+15:14:11 [WARNING] (Scraper-REG-CPPP_Test) Stopping site CPPP_Test: 1 consecutive empty/failed pages.
+15:14:11 [INFO] (Scraper-REG-CPPP_Test) Scrape run for site CPPP_Test finished. Saved: 0, Failed to save: 0.
+15:14:11 [INFO] (Scraper-REG-CPPP_Test) 🏁 Scrape run for site CPPP_Test completed. Duration: 0:00:01.437342.
+15:16:51 [INFO] (Scraper-REG-CPPP_Test) 🚀 Starting DB-integrated scrape run for site: CPPP_Test...
+15:16:51 [INFO] (Scraper-REG-CPPP_Test) 📄 Fetching List Page 1 (Attempt 1/1)
+15:16:52 [ERROR] (Scraper-REG-CPPP_Test)   ❌ Unhandled Error on List Page 1, attempt 1/1: Locator.wait_for: Unexpected token "|" while parsing css selector "table#table | text=/no records found/i". Did you mean to CSS.escape it?
+Call log:
+  - waiting for table#table | text=/no records found/i >> nth=0 to be visible
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/scrape.py", line 254, in fetch_single_list_page
+    await results_locator.first.wait_for(timeout=30000)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/async_api/_generated.py", line 17815, in wait_for
+    await self._impl_obj.wait_for(timeout=timeout, state=state)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_locator.py", line 685, in wait_for
+    await self._frame.wait_for_selector(
+        self._selector, strict=True, timeout=timeout, state=state
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_frame.py", line 323, in wait_for_selector
+    await self._channel.send("waitForSelector", locals_to_params(locals()))
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: Locator.wait_for: Unexpected token "|" while parsing css selector "table#table | text=/no records found/i". Did you mean to CSS.escape it?
+Call log:
+  - waiting for table#table | text=/no records found/i >> nth=0 to be visible
+
+15:16:52 [ERROR] (Scraper-REG-CPPP_Test)   ❌ Failed to process List Page 1 after all attempts.
+15:16:52 [WARNING] (Scraper-REG-CPPP_Test) Stopping site CPPP_Test: 1 consecutive empty/failed pages.
+15:16:52 [INFO] (Scraper-REG-CPPP_Test) Scrape run for site CPPP_Test finished. Saved: 0, Failed to save: 0.
+15:16:52 [INFO] (Scraper-REG-CPPP_Test) 🏁 Scrape run for site CPPP_Test completed. Duration: 0:00:01.524201.
+15:17:59 [INFO] (Scraper-REG-CPPP_Test) 🚀 Starting DB-integrated scrape run for site: CPPP_Test...
+15:17:59 [INFO] (Scraper-REG-CPPP_Test) 📄 Fetching List Page 1 (Attempt 1/1)
+15:18:00 [INFO] (Scraper-REG-CPPP_Test)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+15:18:01 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sub025RPq17WuXqKbPLKVdA%3D%3D
+15:18:01 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SnyacTyjMFvElf%2B%2FlssU1sQ%3D%3D
+15:18:02 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SuR6sSCTlJzu8O2lYiAHj8g%3D%3D
+15:18:02 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S6mXKcKxZX1MfnS4%2FdNBbpA%3D%3D
+15:18:03 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SK%2FAThANvPkBQ3lWKlzzn1A%3D%3D
+15:18:04 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SENo850ielP4dMcpD0JWD7g%3D%3D
+15:18:04 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SvHXd6UA%2FaB7pgzvBeHt%2FNA%3D%3D
+15:18:05 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sfd4hq9dhJLHi1SYPK6zorA%3D%3D
+15:18:05 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S16YiQ4j1BQpZbjxNiZ0w5A%3D%3D
+15:18:06 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S%2FFTC1YBRWGiXT96YUHUZsw%3D%3D
+15:18:06 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SB4YWEBwb2L5%2BpcLgEVoGEg%3D%3D
+15:18:07 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SstfE3fkUhJ1yKQP%2B%2F%2FPqcA%3D%3D
+15:18:07 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SQDkHeZGCLdoItqIUNriq3g%3D%3D
+15:18:08 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SpV4IgJMrTzVRdtEabPDYsA%3D%3D
+15:18:08 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sh2hO2I%2BeyfHYzcmEKUZoJQ%3D%3D
+15:18:09 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SSkoZ0284CdbeK0Pps%2BRDfw%3D%3D
+15:18:10 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRoXYER2vHy6mCwqa59SKxQ%3D%3D
+15:18:10 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S5vfuA06ySMGwsUIqiDC9Rg%3D%3D
+15:18:11 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SyndjG11cGdhxVB3JKAXBXg%3D%3D
+15:18:11 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SGjYgZR4ncfsc%2FJUhoxCAvg%3D%3D
+15:18:11 [INFO] (Scraper-REG-CPPP_Test)   ✅ List Page 1 processed successfully (20 items).
+15:18:11 [INFO] (Scraper-REG-CPPP_Test) Scrape run for site CPPP_Test finished. Saved: 0, Failed to save: 20.
+15:18:11 [INFO] (Scraper-REG-CPPP_Test) 🏁 Scrape run for site CPPP_Test completed. Duration: 0:00:12.559636.
+15:20:19 [INFO] (Scraper-REG-CPPP_Test) 🚀 Starting DB-integrated scrape run for site: CPPP_Test...
+15:20:20 [INFO] (Scraper-REG-CPPP_Test) 📄 Fetching List Page 1 (Attempt 1/1)
+15:20:21 [INFO] (Scraper-REG-CPPP_Test)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+15:20:21 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sub025RPq17WuXqKbPLKVdA%3D%3D
+15:20:22 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S6mXKcKxZX1MfnS4%2FdNBbpA%3D%3D
+15:20:22 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SuR6sSCTlJzu8O2lYiAHj8g%3D%3D
+15:20:23 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SENo850ielP4dMcpD0JWD7g%3D%3D
+15:20:23 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SvHXd6UA%2FaB7pgzvBeHt%2FNA%3D%3D
+15:20:24 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sfd4hq9dhJLHi1SYPK6zorA%3D%3D
+15:20:24 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SK%2FAThANvPkBQ3lWKlzzn1A%3D%3D
+15:20:25 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SyndjG11cGdhxVB3JKAXBXg%3D%3D
+15:20:25 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRoXYER2vHy6mCwqa59SKxQ%3D%3D
+15:20:26 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SnyacTyjMFvElf%2B%2FlssU1sQ%3D%3D
+15:20:27 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sh2hO2I%2BeyfHYzcmEKUZoJQ%3D%3D
+15:20:27 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SSkoZ0284CdbeK0Pps%2BRDfw%3D%3D
+15:20:28 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SB4YWEBwb2L5%2BpcLgEVoGEg%3D%3D
+15:20:28 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SstfE3fkUhJ1yKQP%2B%2F%2FPqcA%3D%3D
+15:20:29 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S%2FFTC1YBRWGiXT96YUHUZsw%3D%3D
+15:20:29 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SpV4IgJMrTzVRdtEabPDYsA%3D%3D
+15:20:30 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SQDkHeZGCLdoItqIUNriq3g%3D%3D
+15:20:31 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S16YiQ4j1BQpZbjxNiZ0w5A%3D%3D
+15:20:31 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S5vfuA06ySMGwsUIqiDC9Rg%3D%3D
+15:20:32 [INFO] (Scraper-REG-CPPP_Test)     ➡️  Scraping Detail Page: https://eprocure.gov.in/eprocure/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SGjYgZR4ncfsc%2FJUhoxCAvg%3D%3D
+15:20:32 [INFO] (Scraper-REG-CPPP_Test)   ✅ List Page 1 processed successfully (20 items).
+15:20:32 [INFO] (Scraper-REG-CPPP_Test) Scrape run for site CPPP_Test finished. Saved: 20, Failed to save: 0.
+15:20:32 [INFO] (Scraper-REG-CPPP_Test) 🏁 Scrape run for site CPPP_Test completed. Duration: 0:00:12.522874.

@@ -1,0 +1,130 @@
+--- TENDER START ---
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_PU_84485_1</RotTenderId>
+<RotTitleRef>[Providing and fixing chain link fencing around cricket ground complex in P.U. Campus, Sector-14, Chandigarh.][01/ST]</RotTitleRef>
+<RotOrganisationChain>Panjab University||Construction/Maintenance</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SQWeOef9BBl2bEHErfSXwrw%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Chandigarh/ROT_2025_PU_84485_1_20250624_152938_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_PU_84485_1_20250624_152938_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_PEC_85308_1</RotTenderId>
+<RotTitleRef>[Purchase of TURNITIN software services for 1Year subscription AS PER SCHEDULE OF REQUIREMENT Section III][PEC/CPC/03/2025]</RotTitleRef>
+<RotOrganisationChain>PEC University of Technology</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SS4UKpU3dtBXB4L5EMfq6lw%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Chandigarh/ROT_2025_PEC_85308_1_20250624_152938_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_PEC_85308_1_20250624_152938_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_PEC_84144_1</RotTenderId>
+<RotTitleRef>[Outsourcing of Mess Services at Shivalik Hostel - 2025][PEC/DSA/MESSTENDER/25/1]</RotTitleRef>
+<RotOrganisationChain>PEC University of Technology</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=So8PlJyUGMmI%2BSy4VWyo8Hw%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Chandigarh/ROT_2025_PEC_84144_1_20250624_152938_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_PEC_84144_1_20250624_152938_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_MCC_86839_1</RotTenderId>
+<RotTitleRef>[ANNUAL MAINTENANCE CONTRACT OF CCTV and UPS INSTALLED AT MC BUILDING, SEC-17, CHANDIGARH FOR THE YEAR 2025-26][24/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SG7mnQX%2BeskywTVqFQqGu%2BQ%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Chandigarh/ROT_2025_MCC_86839_1_20250624_152938_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_MCC_86839_1_20250624_152938_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_MCC_86619_2</RotTenderId>
+<RotTitleRef>[PROVIDING LIGHTS IN SPORTS GROUND AT MILK COLONY DHANAS, CHANDIGARH, UNDER MPLADS. (WORK NO. 138 17th LS).][22/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIkD%2FuJfRSofU3lFsKQIb3g%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Chandigarh/ROT_2025_MCC_86619_2_20250624_152938_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_MCC_86619_2_20250624_152938_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_MCC_86526_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Cameras in Ward No. 16, Sector-25, Chandigarh. (Work No. 42 18th LS).][21/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SiAH0RqacT0uBdzyka0Jxww%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Chandigarh/ROT_2025_MCC_86526_1_20250624_152938_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_MCC_86526_1_20250624_152938_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_MCC_86298_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Cameras in Ward No. 35, Sector 49D, Chandigarh (Work No. 45 18th L.S)][20/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SaUUXAMmrZTH71ZnnaPoTsA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Chandigarh/ROT_2025_MCC_86298_1_20250624_152938_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_MCC_86298_1_20250624_152938_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_MCC_86243_1</RotTenderId>
+<RotTitleRef>[Providing and Applying Wall Painting/Mural Painting at Various Locations Under Road Division No.3, M.C., Chandigarh.][2025_MCC_R3_008]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Road Division - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SHT3DLolOsueMjeK0aXi35A%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Chandigarh/ROT_2025_MCC_86243_1_20250624_152938_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_MCC_86243_1_20250624_152938_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_MCC_86036_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Cameras in Village Khuda Alisher, Ward No.1, Chandigarh (Work No. 25 18th LS).][19/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SxqP1GKNtDbNQ1fm8RLQc0A%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Chandigarh/ROT_2025_MCC_86036_1_20250624_152938_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_MCC_86036_1_20250624_152938_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_MCC_86034_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Cameras in Village Kaimbwala, Ward No.1, Chandigarh (Work No. 16 18th LS).][18/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S7jn4U0q3hBqt30ZNmHs0OQ%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Chandigarh/ROT_2025_MCC_86034_1_20250624_152938_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_MCC_86034_1_20250624_152938_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+

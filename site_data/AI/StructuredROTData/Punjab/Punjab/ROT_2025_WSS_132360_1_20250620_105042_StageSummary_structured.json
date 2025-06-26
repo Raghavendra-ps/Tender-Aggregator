@@ -1,0 +1,107 @@
+{
+  "original_filename": "ROT_2025_WSS_132360_1_20250620_105042_StageSummary.html",
+  "source_site_key": "Punjab",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "Water Supply and sanitation||Department of Water Supply and Sanitation||Division Fatehgarh Sahib",
+    "Tender ID": "2025_WSS_132360_1",
+    "Tender Ref No": "Plastic Waste",
+    "Tender Title": "Construction of Plastic Waster Management Unit at village Rurki, Block Sirhind, District Fatehgarh Sahib",
+    "Work Category (Raw Text)": "Construction of Plastic Waster Management Unit at village Rurki, Block Sirhind, District Fatehgarh Sahib",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {
+    "financial_bid_opening_date_actual": "22-Feb-2025 09:00 AM"
+  },
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "612720",
+      "Bidder_Name": "Simar Enterprises",
+      "Submitted_Date": "27-Jan-2025 11:54 AM",
+      "Status": "Rejected-Finance",
+      "Remarks": "L2",
+      "Status_Updated_On": "22-Feb-2025 12:12 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "612732",
+      "Bidder_Name": "Sudhir Singh",
+      "Submitted_Date": "27-Jan-2025 12:09 PM",
+      "Status": "Rejected-Finance",
+      "Remarks": "L1",
+      "Status_Updated_On": "22-Feb-2025 12:12 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "612720",
+      "Bidder_Name": "Simar Enterprises",
+      "Value": "12,55,223.00",
+      "Value_Numeric": 1255223.0,
+      "Rank": "2"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "612732",
+      "Bidder_Name": "Sudhir Singh",
+      "Value": "12,50,197.00",
+      "Value_Numeric": 1250197.0,
+      "Rank": "1"
+    }
+  ],
+  "other_sections_kv": {
+    "Technical Bid Opening Summary": {
+      "Summary": "accepted",
+      "Updated By": "Tarsem Singh",
+      "Updated On": "21-Feb-2025 09:03 PM",
+      "Document": {
+        "text": "technical_268626.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_2&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SWHWqh%2BA0QAY6be5W8IzeuuLLeTBwiR6xp0gPzOAgUaY%3D",
+        "size": null
+      }
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Tarsem Singh",
+      "Updated On": "21-Feb-2025 09:07 PM",
+      "Financial Bid Opening Date": "22-Feb-2025 09:00 AM",
+      "Document": {
+        "text": "techsummary_268626.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=S2QCntsCDx9tNO2bkCEh2QA%3D%3D",
+        "size": "6914.24 KB"
+      }
+    },
+    "Finance Bid Opening Summary": {
+      "Summary": "attached",
+      "Updated By": "Khushwinder Singh",
+      "Updated On": "22-Feb-2025 12:03 PM",
+      "Document": {
+        "text": "finance_268626.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_8&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SSCeEUihg2GuFi5zAcIRLEIflE%2FwoD2QJcCMzgxTzV3g%3D",
+        "size": null
+      },
+      "BOQ Comparative Chart": {
+        "text": "BOQ Comparative Chart",
+        "link": "/nicgep/app?component=BOQ&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=Sd6VdcbajhWJv%2Ft2oW7%2Bv3Q%3D%3D",
+        "size": null
+      }
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Khushwinder Singh",
+      "Updated on": "22-Feb-2025 12:12 PM",
+      "Document": {
+        "text": "finsummary_268626.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SFjAgxnqy%2B2E%2FCVrOLrMj%2Fg%3D%3D",
+        "size": "5431.50 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

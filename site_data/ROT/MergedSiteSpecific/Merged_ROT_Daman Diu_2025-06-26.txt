@@ -1,0 +1,110 @@
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_DIUDT_4285_1</RotTenderId>
+<RotTitleRef>[Supplying of labours for various roads and cleaning work of various road for VVIP visit and routing maintenance proposed in Diu Municipal Council area for the year 2025-26. (2nd Call)][DMC/DIU/CONST/2025-2026/206]</RotTitleRef>
+<RotOrganisationChain>Diu District||Municipal Council- Diu</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://ddtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ScZX9m4omP9nKlYOI6MskXQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Daman Diu</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_DIUDT_4284_1</RotTenderId>
+<RotTitleRef>[Hire charges for hydraulic Excavator (JCB), Hydraulic Crane machine, Truck/Dumper and Tractor with trolley for maintenance of  DMC Roads  and other allied works in Diu Municipal Council area for the year 2025-2026.(2nd Call)][DMC/DIU/CONST/2025-2026/206]</RotTitleRef>
+<RotOrganisationChain>Diu District||Municipal Council- Diu</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://ddtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ScG8jo4uDs%2FdcK9psCVWxFw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Daman Diu</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_DIUDT_4242_1</RotTenderId>
+<RotTitleRef>[Hire Charges of Tower Air Conditioner for Beach Game at Ghoghla-Diu (2nd Call)][e-Tender Notice No. 10/2025-26]</RotTitleRef>
+<RotOrganisationChain>Diu District||Public Works Department - Diu||Executive Engineer-PWD - Diu</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://ddtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SWsKTXLxKqefANl9jgn50og%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Daman Diu</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_DIUDT_4241_1</RotTenderId>
+<RotTitleRef>[Providing of labours, JCB, Trucks/Tractors and Supplying of Road Equipments with other allied works for operational maintenance to District Roads in Diu District for the year 2025-26 (2nd Call)][e-Tender Notice No. 10/2025-26]</RotTitleRef>
+<RotOrganisationChain>Diu District||Public Works Department - Diu||Executive Engineer-PWD - Diu</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://ddtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SZBieXWYEO7k4MMO2VQoB3A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Daman Diu</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_DIUDT_4223_1</RotTenderId>
+<RotTitleRef>[Providing Road patchwork on existing Road surface from Ghoghla Entry Gate to Ghoghla Bridge (On Khelo India Beach Games-2025) at Diu District ][e-Tender Notice No. 07/2025-26]</RotTitleRef>
+<RotOrganisationChain>Diu District||Public Works Department - Diu||Executive Engineer-PWD - Diu</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://ddtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SHX9%2F%2FcNwnTyKzOJ0zFpPdw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Daman Diu</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_DIUDT_4218_1</RotTenderId>
+<RotTitleRef>[Deployment of Manpower for Maintenance and Repair of Water Supply in Diu District][e-Tender Notice No. 06/2025-26]</RotTitleRef>
+<RotOrganisationChain>Diu District||Public Works Department - Diu||Executive Engineer-PWD - Diu</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://ddtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SgHpW9zcpgqH35hHdPuEttA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Daman Diu</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_DIUDT_4217_1</RotTenderId>
+<RotTitleRef>[Levelling of Ghoghla Blue Flag Beach Ground including machineries, equipments and other allied works at Ghoghla, Diu][e-Tender Notice No. 06/2025-26]</RotTitleRef>
+<RotOrganisationChain>Diu District||Public Works Department - Diu||Executive Engineer-PWD - Diu</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://ddtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SpoSRTIRiIR0h6LsXp9yJDQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Daman Diu</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_DIUDT_4216_1</RotTenderId>
+<RotTitleRef>[Maintenance and Repair of various Non-Residential Building/Structure in Diu District][e-Tender Notice No. 06/2025-26]</RotTitleRef>
+<RotOrganisationChain>Diu District||Public Works Department - Diu||Executive Engineer-PWD - Diu</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://ddtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S2KgaAFN75d6r9I453FOENg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Daman Diu</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_DIUDT_4185_1</RotTenderId>
+<RotTitleRef>[Annual Operation Contract for 8 MLD Water Treatment Plant at Kevdi-Diu][e-Tender Notice No. 05/2025-26]</RotTitleRef>
+<RotOrganisationChain>Diu District||Public Works Department - Diu||Executive Engineer-PWD - Diu</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://ddtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXNM2a9Ok3NZcZM6vdVjFYA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Daman Diu</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_DIUDT_4183_1</RotTenderId>
+<RotTitleRef>[Providing and Arranging tractor driven water tankers for Rural and Urban areas in Diu District. (as and when required)][e-Tender Notice No. 05/2025-26]</RotTitleRef>
+<RotOrganisationChain>Diu District||Public Works Department - Diu||Executive Engineer-PWD - Diu</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://ddtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sk1XCL97VyYpGV0AHipsgvA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Daman Diu</SourceSiteKey>
+--- TENDER END ---
+

@@ -1,0 +1,98 @@
+{
+  "original_filename": "ROT_2025_WR_139881_3_20250620_105050_StageSummary.html",
+  "source_site_key": "Punjab",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "Department of Water Resources||Department of Water Resources||Drainage - Jalandhar Drg Div - Jalandhar",
+    "Tender ID": "2025_WR_139881_3",
+    "Tender Ref No": "E-Tender/PWRD/2025-26/03",
+    "Tender Title": "Clearing obstructions created by sarkanda, weed, jala, booti etc. in various drains/bein falling in Distt. Kapurthala and Jalandhar under jurisdiction of Drainage Sub Division no.3,Kapurthala , Bist Doab Drainage Sub Division, Jalandhar and Head Quar",
+    "Work Category (Raw Text)": "Clearing obstructions created by sarkanda, weed, jala, booti etc. in various drains/bein falling in Distt. Kapurthala and Jalandhar under jurisdiction of Drainage Sub Division no.3,Kapurthala , Bist Doab Drainage Sub Division, Jalandhar and Head Quar",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {
+    "financial_bid_opening_date_actual": "16-May-2025 01:35 PM"
+  },
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "641493",
+      "Bidder_Name": "Surjit Singh",
+      "Submitted_Date": "11-May-2025 06:48 PM",
+      "Status": "Accepted-Finance",
+      "Remarks": "Accepted",
+      "Status_Updated_On": "19-May-2025 12:03 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "641495",
+      "Bidder_Name": "The Simble Mazara Co op L and C Ltd",
+      "Submitted_Date": "11-May-2025 07:18 PM",
+      "Status": "Accepted-Finance",
+      "Remarks": "Accepted",
+      "Status_Updated_On": "19-May-2025 12:03 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "641493",
+      "Bidder_Name": "Surjit Singh",
+      "Value": "4,09,740.00",
+      "Value_Numeric": 409740.0,
+      "Rank": "1"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "641495",
+      "Bidder_Name": "The Simble Mazara Co op L and C Ltd",
+      "Value": "4,10,490.00",
+      "Value_Numeric": 410490.0,
+      "Rank": "2"
+    }
+  ],
+  "other_sections_kv": {
+    "Technical Bid Opening Summary": {
+      "Summary": "Tender has been opened and sent to committee for technical evaluation",
+      "Updated By": "Manohar Lal",
+      "Updated On": "15-May-2025 04:54 PM",
+      "Document": {
+        "text": "technical_283070.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_2&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SLvK9OMjunwrMaqIm6dkVrlM5eNsAuXdnLqm5IXS1FGo%3D",
+        "size": null
+      }
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Manohar Lal",
+      "Updated On": "16-May-2025 01:29 PM",
+      "Financial Bid Opening Date": "16-May-2025 01:35 PM",
+      "Document": {
+        "text": "techsummary_283070.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SaYjTGdOAfp%2BHhhF%2FhLaJ8A%3D%3D",
+        "size": "289.13 KB"
+      }
+    },
+    "Finance Bid Opening Summary": {
+      "Summary": "Financial bid opened and sent to committee for financial evaluation",
+      "Updated By": "Khushminder S",
+      "Updated On": "19-May-2025 10:43 AM",
+      "Document": "None"
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Khushminder S",
+      "Updated on": "19-May-2025 12:03 PM",
+      "Document": {
+        "text": "finsummary_283070.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=S5qvwGBtbBhmeZFeJjpL07g%3D%3D",
+        "size": "315.02 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

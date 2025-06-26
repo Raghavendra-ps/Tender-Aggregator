@@ -1,0 +1,102 @@
+{
+  "original_filename": "ROT_2025_WR_139109_2_20250620_105100_StageSummary.html",
+  "source_site_key": "Punjab",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "Department of Water Resources||Department of Water Resources||Drainage - Amritsar Drg Div - Amritsar",
+    "Tender ID": "2025_WR_139109_2",
+    "Tender Ref No": "DNIT NO.04 dt.23-04-2025 Boharwali Link Drain RD 0-13500 out falling in Wadala Viram Drain at RD 450",
+    "Tender Title": "Internal clearance of Boharwali Link Drain RD 0-13500 out falling in Wadala Viram Drain at RD 45000",
+    "Work Category (Raw Text)": "Internal clearance of Boharwali Link Drain RD 0-13500 out falling in Wadala Viram Drain at RD 45000",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {
+    "financial_bid_opening_date_actual": "19-May-2025 01:10 PM"
+  },
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "642618",
+      "Bidder_Name": "P.D. CONSTRUCTION",
+      "Submitted_Date": "17-May-2025 10:40 AM",
+      "Status": "Accepted-Finance",
+      "Remarks": "LOWEST RATE",
+      "Status_Updated_On": "04-Jun-2025 08:45 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "642999",
+      "Bidder_Name": "THE NEW LUCKY COOP LC SOCIETY LTD",
+      "Submitted_Date": "17-May-2025 10:47 AM",
+      "Status": "Rejected-Finance",
+      "Remarks": "HIGEST RATE",
+      "Status_Updated_On": "04-Jun-2025 08:45 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "642618",
+      "Bidder_Name": "P.D. CONSTRUCTION",
+      "Value": "4,19,404.00",
+      "Value_Numeric": 419404.0,
+      "Rank": "L-1"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "642999",
+      "Bidder_Name": "THE NEW LUCKY COOP LC SOCIETY LTD",
+      "Value": "4,32,383.00",
+      "Value_Numeric": 432383.0,
+      "Rank": "L-2"
+    }
+  ],
+  "other_sections_kv": {
+    "Technical Bid Opening Summary": {
+      "Summary": "sumboharwali",
+      "Updated By": "Vishal Mehta",
+      "Updated On": "19-May-2025 01:03 PM",
+      "Document": {
+        "text": "technical_283120.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_2&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=StYf7HMPuiyi9EqJnCU%2Bbz%2FNdX6Z6iEdmVCf32W3lCvM%3D",
+        "size": null
+      }
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "SARABJIT SINGH SDO, ABHISHEK KUMAR SDO SANDEEP SDO, PUSHPINDER SINGH SUPDTT, DAMENDRA DAO-2",
+      "Updated By": "Vishal Mehta",
+      "Updated On": "19-May-2025 01:07 PM",
+      "Financial Bid Opening Date": "19-May-2025 01:10 PM",
+      "Document": {
+        "text": "techsummary_283120.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SWzuemCcJ42tv1WNCLzYdNA%3D%3D",
+        "size": "667.70 KB"
+      }
+    },
+    "Finance Bid Opening Summary": {
+      "Summary": "sum",
+      "Updated By": "Abhishek Kumar",
+      "Updated On": "04-Jun-2025 07:50 PM",
+      "Document": {
+        "text": "finance_283120.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_8&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SGmV680lOyidrAegDQeqm%2F5OTYKMCkyLipQjMOWrOoG4%3D",
+        "size": null
+      }
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "ABHISHEK KUMAR SDO SANDEEP SDO SARABJIT SINGH SDO",
+      "Updated By": "Abhishek Kumar",
+      "Updated on": "04-Jun-2025 08:45 PM",
+      "Document": {
+        "text": "finsummary_283120.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SISh3gAta9R5TB2SPKOrvkA%3D%3D",
+        "size": "668.48 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

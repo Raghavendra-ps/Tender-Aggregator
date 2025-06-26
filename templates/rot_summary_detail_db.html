@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tender Result: {{ tender.tender_id }} - TenFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        :root {
+            --color-primary: #000000; --color-secondary: #1a1a1a; --color-accent: #2563eb;
+            --color-surface: #ffffff; --color-surface-alt: #f8fafc; --color-border: #e2e8f0;
+            --color-text: #0f172a; --color-text-muted: #64748b;
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--color-surface-alt); color: var(--color-text); line-height: 1.6; padding: 32px; }
+        .container { max-width: 1200px; margin: 0 auto; background: var(--color-surface); padding: 48px; }
+        .page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 2px solid var(--color-primary); }
+        .page-header h1 { font-size: 1.75rem; font-weight: 700; color: var(--color-text); text-transform: uppercase; margin:0; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 10px 20px; border: 1px solid var(--color-border); font-family: inherit; font-size: 0.875rem; font-weight: 500; text-decoration: none; color: var(--color-primary); background: var(--color-surface); border-radius: 0; cursor: pointer; transition: all 0.2s ease; }
+        .btn:hover { background: var(--color-surface-alt); border-color: var(--color-primary); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+        .document-header { background-color: var(--color-surface-alt); border: 1px solid var(--color-border); padding: 16px; margin-bottom: 24px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: var(--color-text-muted); }
+        .detail-section { border: 1px solid var(--color-border); padding: 20px; margin-bottom: 24px; }
+        h3 { font-size: 1rem; font-weight: 700; color: var(--color-primary); margin-top: 0; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--color-border); text-transform: uppercase; }
+        .detail-field { margin-bottom: 10px; display: grid; grid-template-columns: minmax(180px, 25%) 1fr; gap: 8px; align-items: flex-start; font-size: 0.85em; padding: 5px 0; border-bottom: 1px dotted #eee; }
+        .detail-field strong { font-weight: 500; color: var(--color-text-muted); }
+        .detail-field span, .detail-field a { color: var(--color-text); word-wrap: break-word; word-break: break-all; }
+        .detail-field a { color: var(--color-accent); text-decoration: none; }
+        .detail-field a:hover { text-decoration: underline; }
+        .na-text { color: var(--color-text-muted); font-style: italic; }
+        .table-wrapper { width: 100%; overflow-x: auto; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.9em; }
+        .data-table th, .data-table td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; vertical-align: top; }
+        .data-table th { background-color: #f9f9f9; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Tender Result: {{ tender.tender_id }}</h1>
+            <a href="{{ url_for('homepage') }}" class="btn">← Back to Dashboard</a>
+        </div>
+
+        <div class="detail-section">
+            <h3>Tender Details</h3>
+            <div class="detail-field"><strong>Title:</strong><span>{{ tender.tender_title | neat_format }}</span></div>
+            <div class="detail-field"><strong>Organisation:</strong><span>{{ tender.organisation_chain | neat_format }}</span></div>
+            <div class="detail-field"><strong>Source Site:</strong><span>{{ tender.source_site }}</span></div>
+        </div>
+
+        {% set bids_list = parsed_data.get("bids_list_data", []) %}
+        {% if bids_list %}
+        <div class="detail-section">
+            <h3>Bids List (All Bidders)</h3>
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead><tr>{% for key in bids_list[0].keys() %}<th>{{ key | neat_format }}</th>{% endfor %}</tr></thead>
+                    <tbody>{% for row in bids_list %}<tr>{% for value in row.values() %}<td>{{ value | default('N/A') }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+
+        {% set fin_eval_list = parsed_data.get("financial_evaluation_bid_list_data", []) %}
+        {% if fin_eval_list %}
+        <div class="detail-section">
+            <h3>Financial Evaluation</h3>
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead><tr>{% for key in fin_eval_list[0].keys() if '_Numeric' not in key %}<th>{{ key | neat_format }}</th>{% endfor %}</tr></thead>
+                    <tbody>{% for row in fin_eval_list %}<tr>{% for key, value in row.items() if '_Numeric' not in key %}<td>{{ value | default('N/A') }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+
+        {% set other_kv = parsed_data.get("other_sections_kv", {}) %}
+        {% if other_kv %}
+            {% for section_title, section_data in other_kv.items() %}
+            <div class="detail-section">
+                <h3>{{ section_title | neat_format }}</h3>
+                {% for key, value in section_data.items() %}
+                <div class="detail-field">
+                    <strong>{{ key }}:</strong>
+                    <span>
+                        {% if value is mapping and value.text %}
+                            {% if value.link and 'javascript' not in value.link %}
+                                <a href="{{ value.link }}" target="_blank" rel="noopener noreferrer">{{ value.text }}</a>
+                                {% if value.size %}({{ value.size }}){% endif %}
+                            {% else %}
+                                {{ value.text }} {% if value.size %}({{ value.size }}){% endif %}
+                            {% endif %}
+                        {% else %}
+                            {{ value if value else '<span class="na-text">Not Available</span>' | safe }}
+                        {% endif %}
+                    </span>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        {% endif %}
+
+    </div>
+</body>
+</html>

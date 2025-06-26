@@ -55,3 +55,261 @@ Total Site Controller Duration: 0:09:31.621974
 2025-06-19 11:01:15 [INFO] (SiteController) 
 Total Site Controller Duration: 0:09:15.156662
 2025-06-19 11:01:15 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-20 10:52:00 [INFO] (SiteController) Playwright check OK for Site Controller (needed for regular scraping).
+2025-06-20 10:52:00 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-20 10:52:00 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-20 10:52:00 [INFO] (SiteController) Loaded 1 enabled sites for REGULAR scraping.
+2025-06-20 10:52:00 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape =====
+2025-06-20 10:52:00 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Punjab <<<
+2025-06-20 11:01:16 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Punjab <<<
+2025-06-20 11:01:16 [INFO] (SiteController) 
+--- REGULAR: Injecting SourceSiteKey into Site-Specific Merged Files ---
+2025-06-20 11:01:16 [INFO] (SiteController) INJECT (REGULAR): Injecting SourceSiteKey 'Punjab' into Merged_Punjab_2025-06-20.txt
+2025-06-20 11:01:16 [INFO] (SiteController) INJECT (REGULAR): Successfully processed SourceSiteKey for Merged_Punjab_2025-06-20.txt
+2025-06-20 11:01:16 [INFO] (SiteController) 
+===== REGULAR: Global Merge Phase =====
+2025-06-20 11:01:16 [INFO] (SiteController) --- GLOBAL MERGE (REGULAR): Starting Merge of All Site-Specific Files ---
+2025-06-20 11:01:16 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Found 3 site-specific REGULAR files for consolidation.
+2025-06-20 11:01:16 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-18.txt
+2025-06-20 11:01:16 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-19.txt
+2025-06-20 11:01:16 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-20.txt
+2025-06-20 11:01:16 [INFO] (SiteController) GLOBAL MERGE (REGULAR): ✅ Merged 2744 unique blocks to: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-20_110116.txt
+2025-06-20 11:01:16 [INFO] (SiteController) REGULAR SCRAPE & CONSOLIDATION SUMMARY: Sites Succeeded: 1, Sites Failed: 0, Globally Merged Tenders: 2744
+2025-06-20 11:01:16 [INFO] (SiteController) REGULAR Global Output File: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-20_110116.txt
+2025-06-20 11:01:16 [INFO] (SiteController) 
+Total Site Controller Duration: 0:09:15.741923
+2025-06-20 11:01:16 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-20 16:02:48 [INFO] (SiteController) Playwright check OK for Site Controller (needed for regular scraping).
+2025-06-20 16:02:48 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-20 16:02:48 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-20 16:02:48 [INFO] (SiteController) Loaded 1 enabled sites for REGULAR scraping.
+2025-06-20 16:02:48 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape =====
+2025-06-20 16:02:48 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Punjab <<<
+2025-06-20 16:02:56 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Punjab <<<
+2025-06-20 16:02:56 [INFO] (SiteController) 
+--- REGULAR: Injecting SourceSiteKey into Site-Specific Merged Files ---
+2025-06-20 16:02:56 [INFO] (SiteController) INJECT (REGULAR): Injecting SourceSiteKey 'Punjab' into Merged_Punjab_2025-06-20.txt
+2025-06-20 16:02:56 [INFO] (SiteController) INJECT (REGULAR): Successfully processed SourceSiteKey for Merged_Punjab_2025-06-20.txt
+2025-06-20 16:02:56 [INFO] (SiteController) 
+===== REGULAR: Global Merge Phase =====
+2025-06-20 16:02:56 [INFO] (SiteController) --- GLOBAL MERGE (REGULAR): Starting Merge of All Site-Specific Files ---
+2025-06-20 16:02:56 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Found 3 site-specific REGULAR files for consolidation.
+2025-06-20 16:02:56 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-18.txt
+2025-06-20 16:02:56 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-19.txt
+2025-06-20 16:02:56 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-20.txt
+2025-06-20 16:02:56 [INFO] (SiteController) GLOBAL MERGE (REGULAR): ✅ Merged 2744 unique blocks to: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-20_160256.txt
+2025-06-20 16:02:56 [INFO] (SiteController) REGULAR SCRAPE & CONSOLIDATION SUMMARY: Sites Succeeded: 1, Sites Failed: 0, Globally Merged Tenders: 2744
+2025-06-20 16:02:56 [INFO] (SiteController) REGULAR Global Output File: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-20_160256.txt
+2025-06-20 16:02:56 [INFO] (SiteController) 
+Total Site Controller Duration: 0:00:07.956198
+2025-06-20 16:02:56 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-20 16:18:37 [INFO] (SiteController) Playwright check OK for Site Controller (needed for regular scraping).
+2025-06-20 16:18:37 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-20 16:18:37 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-20 16:18:37 [INFO] (SiteController) Loaded 2 enabled sites for REGULAR scraping.
+2025-06-20 16:18:37 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape =====
+2025-06-20 16:18:37 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Chandigarh <<<
+2025-06-20 16:18:44 [WARNING] (SiteController) REGULAR: Site-specific merged file for Chandigarh not found at /root/Tender-Aggregator/site_data/REG/MergedSiteSpecific/Merged_Chandigarh_2025-06-20.txt after scrape run.
+2025-06-20 16:18:44 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Chandigarh <<<
+2025-06-20 16:18:44 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Punjab <<<
+2025-06-20 16:18:53 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Punjab <<<
+2025-06-20 16:18:53 [INFO] (SiteController) 
+--- REGULAR: Injecting SourceSiteKey into Site-Specific Merged Files ---
+2025-06-20 16:18:53 [INFO] (SiteController) INJECT (REGULAR): Injecting SourceSiteKey 'Punjab' into Merged_Punjab_2025-06-20.txt
+2025-06-20 16:18:53 [INFO] (SiteController) INJECT (REGULAR): Successfully processed SourceSiteKey for Merged_Punjab_2025-06-20.txt
+2025-06-20 16:18:53 [INFO] (SiteController) 
+===== REGULAR: Global Merge Phase =====
+2025-06-20 16:18:53 [INFO] (SiteController) --- GLOBAL MERGE (REGULAR): Starting Merge of All Site-Specific Files ---
+2025-06-20 16:18:53 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Found 3 site-specific REGULAR files for consolidation.
+2025-06-20 16:18:53 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-18.txt
+2025-06-20 16:18:53 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-19.txt
+2025-06-20 16:18:53 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-20.txt
+2025-06-20 16:18:53 [INFO] (SiteController) GLOBAL MERGE (REGULAR): ✅ Merged 2744 unique blocks to: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-20_161853.txt
+2025-06-20 16:18:53 [INFO] (SiteController) REGULAR SCRAPE & CONSOLIDATION SUMMARY: Sites Succeeded: 2, Sites Failed: 0, Globally Merged Tenders: 2744
+2025-06-20 16:18:53 [INFO] (SiteController) REGULAR Global Output File: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-20_161853.txt
+2025-06-20 16:18:53 [INFO] (SiteController) 
+Total Site Controller Duration: 0:00:16.079900
+2025-06-20 16:18:53 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-24 15:35:17 [INFO] (SiteController) Playwright check OK for Site Controller (needed for regular scraping).
+2025-06-24 15:35:17 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-24 15:35:17 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-24 15:35:17 [INFO] (SiteController) Loaded 2 enabled sites for REGULAR scraping.
+2025-06-24 15:35:17 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape =====
+2025-06-24 15:35:17 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Chandigarh <<<
+2025-06-24 15:35:24 [WARNING] (SiteController) REGULAR: Site-specific merged file for Chandigarh not found at /root/Tender-Aggregator/site_data/REG/MergedSiteSpecific/Merged_Chandigarh_2025-06-24.txt after scrape run.
+2025-06-24 15:35:24 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Chandigarh <<<
+2025-06-24 15:35:24 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Punjab <<<
+2025-06-24 16:16:54 [INFO] (SiteController) Playwright check OK for Site Controller (needed for regular scraping).
+2025-06-24 16:16:54 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-24 16:16:54 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-24 16:16:54 [INFO] (SiteController) Loaded 3 enabled sites for REGULAR scraping.
+2025-06-24 16:16:54 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape =====
+2025-06-24 16:16:54 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Chandigarh <<<
+2025-06-24 16:17:14 [INFO] (SiteController) Playwright check OK for Site Controller (needed for regular scraping).
+2025-06-24 16:17:14 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-24 16:17:14 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-24 16:17:14 [INFO] (SiteController) Loaded 3 enabled sites for REGULAR scraping.
+2025-06-24 16:17:14 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape =====
+2025-06-24 16:17:14 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Chandigarh <<<
+2025-06-24 16:17:20 [WARNING] (SiteController) REGULAR: Site-specific merged file for Chandigarh not found at /root/Tender-Aggregator/site_data/REG/MergedSiteSpecific/Merged_Chandigarh_2025-06-24.txt after scrape run.
+2025-06-24 16:17:20 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Chandigarh <<<
+2025-06-24 16:17:20 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Kerala <<<
+2025-06-24 16:17:28 [WARNING] (SiteController) REGULAR: Site-specific merged file for Kerala not found at /root/Tender-Aggregator/site_data/REG/MergedSiteSpecific/Merged_Kerala_2025-06-24.txt after scrape run.
+2025-06-24 16:17:28 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Kerala <<<
+2025-06-24 16:17:28 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Punjab <<<
+2025-06-24 16:17:35 [WARNING] (SiteController) REGULAR: Site-specific merged file for Punjab not found at /root/Tender-Aggregator/site_data/REG/MergedSiteSpecific/Merged_Punjab_2025-06-24.txt after scrape run.
+2025-06-24 16:17:35 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Punjab <<<
+2025-06-24 16:17:35 [INFO] (SiteController) REGULAR: No site-specific merged files found to inject SourceSiteKey.
+2025-06-24 16:17:35 [INFO] (SiteController) 
+===== REGULAR: Global Merge Phase =====
+2025-06-24 16:17:35 [INFO] (SiteController) --- GLOBAL MERGE (REGULAR): Starting Merge of All Site-Specific Files ---
+2025-06-24 16:17:35 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Found 3 site-specific REGULAR files for consolidation.
+2025-06-24 16:17:35 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-18.txt
+2025-06-24 16:17:35 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-19.txt
+2025-06-24 16:17:35 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-20.txt
+2025-06-24 16:17:35 [INFO] (SiteController) GLOBAL MERGE (REGULAR): ✅ Merged 2744 unique blocks to: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-24_161735.txt
+2025-06-24 16:17:35 [INFO] (SiteController) REGULAR SCRAPE & CONSOLIDATION SUMMARY: Sites Succeeded: 3, Sites Failed: 0, Globally Merged Tenders: 2744
+2025-06-24 16:17:35 [INFO] (SiteController) REGULAR Global Output File: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-24_161735.txt
+2025-06-24 16:17:35 [INFO] (SiteController) 
+Total Site Controller Duration: 0:00:21.402928
+2025-06-24 16:17:35 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-24 16:20:58 [INFO] (SiteController) Playwright check OK for Site Controller (needed for regular scraping).
+2025-06-24 16:20:58 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-24 16:20:58 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-24 16:20:58 [INFO] (SiteController) Loaded 3 enabled sites for REGULAR scraping.
+2025-06-24 16:20:58 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape =====
+2025-06-24 16:20:58 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Chandigarh <<<
+2025-06-24 16:21:04 [WARNING] (SiteController) REGULAR: Site-specific merged file for Chandigarh not found at /root/Tender-Aggregator/site_data/REG/MergedSiteSpecific/Merged_Chandigarh_2025-06-24.txt after scrape run.
+2025-06-24 16:21:04 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Chandigarh <<<
+2025-06-24 16:21:04 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Kerala <<<
+2025-06-24 16:21:12 [WARNING] (SiteController) REGULAR: Site-specific merged file for Kerala not found at /root/Tender-Aggregator/site_data/REG/MergedSiteSpecific/Merged_Kerala_2025-06-24.txt after scrape run.
+2025-06-24 16:21:12 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Kerala <<<
+2025-06-24 16:21:12 [INFO] (SiteController) 
+>>> REGULAR: Orchestrating site: Punjab <<<
+2025-06-24 16:21:19 [WARNING] (SiteController) REGULAR: Site-specific merged file for Punjab not found at /root/Tender-Aggregator/site_data/REG/MergedSiteSpecific/Merged_Punjab_2025-06-24.txt after scrape run.
+2025-06-24 16:21:19 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Punjab <<<
+2025-06-24 16:21:19 [INFO] (SiteController) REGULAR: No site-specific merged files found to inject SourceSiteKey.
+2025-06-24 16:21:19 [INFO] (SiteController) 
+===== REGULAR: Global Merge Phase =====
+2025-06-24 16:21:19 [INFO] (SiteController) --- GLOBAL MERGE (REGULAR): Starting Merge of All Site-Specific Files ---
+2025-06-24 16:21:19 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Found 3 site-specific REGULAR files for consolidation.
+2025-06-24 16:21:19 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-18.txt
+2025-06-24 16:21:19 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-19.txt
+2025-06-24 16:21:19 [INFO] (SiteController) GLOBAL MERGE (REGULAR): Processing: Merged_Punjab_2025-06-20.txt
+2025-06-24 16:21:19 [INFO] (SiteController) GLOBAL MERGE (REGULAR): ✅ Merged 2744 unique blocks to: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-24_162119.txt
+2025-06-24 16:21:19 [INFO] (SiteController) REGULAR SCRAPE & CONSOLIDATION SUMMARY: Sites Succeeded: 3, Sites Failed: 0, Globally Merged Tenders: 2744
+2025-06-24 16:21:19 [INFO] (SiteController) REGULAR Global Output File: /root/Tender-Aggregator/site_data/REG/FinalGlobalMerged/Final_Tender_List_2025-06-24_162119.txt
+2025-06-24 16:21:19 [INFO] (SiteController) 
+Total Site Controller Duration: 0:00:21.612920
+2025-06-24 16:21:19 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-24 16:26:02 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-24 16:26:02 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-24 16:26:02 [INFO] (SiteController) Loaded 3 enabled sites for scraping.
+2025-06-24 16:26:02 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-24 16:26:02 [INFO] (SiteController) 
+>>> Waiting for site: Chandigarh to complete... <<<
+2025-06-24 16:26:09 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Chandigarh successfully. <<<
+2025-06-24 16:26:09 [INFO] (SiteController) 
+>>> Waiting for site: Kerala to complete... <<<
+2025-06-24 16:26:09 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Kerala successfully. <<<
+2025-06-24 16:26:09 [INFO] (SiteController) 
+>>> Waiting for site: Punjab to complete... <<<
+2025-06-24 16:26:10 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Punjab successfully. <<<
+2025-06-24 16:26:10 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 3, Sites Failed: 0
+2025-06-24 16:26:10 [INFO] (SiteController) 
+Total Site Controller Duration: 0:00:07.642923
+2025-06-24 16:26:10 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-24 16:26:48 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-24 16:26:48 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-24 16:26:48 [INFO] (SiteController) Loaded 3 enabled sites for scraping.
+2025-06-24 16:26:48 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-24 16:26:48 [INFO] (SiteController) 
+>>> Waiting for site: Chandigarh to complete... <<<
+2025-06-24 16:26:55 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Chandigarh successfully. <<<
+2025-06-24 16:26:55 [INFO] (SiteController) 
+>>> Waiting for site: Kerala to complete... <<<
+2025-06-24 16:26:55 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Kerala successfully. <<<
+2025-06-24 16:26:55 [INFO] (SiteController) 
+>>> Waiting for site: Punjab to complete... <<<
+2025-06-24 16:26:56 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Punjab successfully. <<<
+2025-06-24 16:26:56 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 3, Sites Failed: 0
+2025-06-24 16:26:56 [INFO] (SiteController) 
+Total Site Controller Duration: 0:00:08.016668
+2025-06-24 16:26:56 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-24 16:28:05 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-24 16:28:05 [INFO] (SiteController) Operation Type Requested: REGULAR
+2025-06-24 16:28:05 [INFO] (SiteController) Loaded 3 enabled sites for scraping.
+2025-06-24 16:28:05 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-24 16:28:05 [INFO] (SiteController) 
+>>> Waiting for site: Chandigarh to complete... <<<
+2025-06-24 16:28:12 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Chandigarh successfully. <<<
+2025-06-24 16:28:12 [INFO] (SiteController) 
+>>> Waiting for site: Kerala to complete... <<<
+2025-06-24 16:28:13 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Kerala successfully. <<<
+2025-06-24 16:28:13 [INFO] (SiteController) 
+>>> Waiting for site: Punjab to complete... <<<
+2025-06-24 16:28:13 [INFO] (SiteController) >>> REGULAR: Finished orchestration for Punjab successfully. <<<
+2025-06-24 16:28:13 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 3, Sites Failed: 0
+2025-06-24 16:28:13 [INFO] (SiteController) 
+Total Site Controller Duration: 0:00:07.759759
+2025-06-24 16:28:13 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-24 16:29:26 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-24 16:29:26 [INFO] (SiteController) Loaded 3 enabled sites for scraping.
+2025-06-24 16:29:26 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-24 16:29:26 [INFO] (SiteController) Sites to be processed: ['Chandigarh', 'Kerala', 'Punjab']
+2025-06-24 16:29:26 [INFO] (SiteController) 
+>>> Starting scrape for site: Chandigarh <<<
+2025-06-24 16:29:33 [INFO] (SiteController) >>> Finished scrape for site: Chandigarh successfully. <<<
+2025-06-24 16:29:33 [INFO] (SiteController) 
+>>> Starting scrape for site: Kerala <<<
+2025-06-24 16:29:40 [INFO] (SiteController) >>> Finished scrape for site: Kerala successfully. <<<
+2025-06-24 16:29:40 [INFO] (SiteController) 
+>>> Starting scrape for site: Punjab <<<
+2025-06-24 16:29:48 [INFO] (SiteController) >>> Finished scrape for site: Punjab successfully. <<<
+2025-06-24 16:29:48 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-24 16:29:48 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 3, Sites Failed: 0
+2025-06-24 16:29:48 [INFO] (SiteController) Total Site Controller Duration: 0:00:21.872392
+2025-06-24 16:29:48 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-24 16:37:24 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-24 16:37:24 [INFO] (SiteController) Loaded 3 enabled sites for scraping.
+2025-06-24 16:37:24 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-24 16:37:24 [INFO] (SiteController) Sites to be processed: ['Chandigarh', 'Kerala', 'Punjab']
+2025-06-24 16:37:24 [INFO] (SiteController) 
+>>> Starting scrape for site: Chandigarh <<<
+2025-06-24 16:37:31 [INFO] (SiteController) >>> Finished scrape for site: Chandigarh successfully. <<<
+2025-06-24 16:37:31 [INFO] (SiteController) 
+>>> Starting scrape for site: Kerala <<<
+2025-06-24 16:37:39 [INFO] (SiteController) >>> Finished scrape for site: Kerala successfully. <<<
+2025-06-24 16:37:39 [INFO] (SiteController) 
+>>> Starting scrape for site: Punjab <<<
+2025-06-24 16:37:47 [INFO] (SiteController) >>> Finished scrape for site: Punjab successfully. <<<
+2025-06-24 16:37:47 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-24 16:37:47 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 3, Sites Failed: 0
+2025-06-24 16:37:47 [INFO] (SiteController) Total Site Controller Duration: 0:00:22.394856
+2025-06-24 16:37:47 [INFO] (SiteController) ===== Site Controller Finished =====

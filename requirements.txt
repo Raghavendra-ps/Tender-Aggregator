@@ -10,3 +10,5 @@ httpx
 beautifulsoup4
 pydantic
 starlette
+SQLAlchemy
+greenlet

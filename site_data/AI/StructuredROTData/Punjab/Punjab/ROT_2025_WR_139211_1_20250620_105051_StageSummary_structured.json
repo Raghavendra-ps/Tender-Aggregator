@@ -1,0 +1,94 @@
+{
+  "original_filename": "ROT_2025_WR_139211_1_20250620_105051_StageSummary.html",
+  "source_site_key": "Punjab",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "Department of Water Resources||Department of Water Resources||Drainage - Drg Construction Div - Sangrur",
+    "Tender ID": "2025_WR_139198_7",
+    "Tender Ref No": "6/2025-26",
+    "Tender Title": "Estimate for clearance of sarkanda, weed, jala, booty etc. form wet drain by machenary from bed of Kurar Drain in between RD 67000-121000 (Partial) before the flood season of 2025 to save nearby abadies and agricultural land of village Mehal Kalan, M",
+    "Work Category (Raw Text)": "Estimate for clearance of sarkanda, weed, jala, booty etc. form wet drain by machenary from bed of Kurar Drain in between RD 67000-121000 (Partial) before the flood season of 2025 to save nearby abadies and agricultural land of village Mehal Kalan, M",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {
+    "financial_bid_opening_date_actual": "14-May-2025 11:00 AM"
+  },
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "641824",
+      "Bidder_Name": "BABLA CONSTRUCTION CO",
+      "Submitted_Date": "13-May-2025 09:49 AM",
+      "Status": "Accepted-Finance",
+      "Remarks": "L2",
+      "Status_Updated_On": "22-May-2025 01:08 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "641062",
+      "Bidder_Name": "The Mahavir Co Op L and C Society Ltd.",
+      "Submitted_Date": "09-May-2025 01:47 PM",
+      "Status": "Accepted-Finance",
+      "Remarks": "L1",
+      "Status_Updated_On": "22-May-2025 01:08 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "641062",
+      "Bidder_Name": "The Mahavir Co Op L and C Society Ltd.",
+      "Value": "8,59,987.80",
+      "Value_Numeric": 859987.8,
+      "Rank": "L1"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "641824",
+      "Bidder_Name": "BABLA CONSTRUCTION CO",
+      "Value": "8,79,610.54",
+      "Value_Numeric": 879610.54,
+      "Rank": "L2"
+    }
+  ],
+  "other_sections_kv": {
+    "Technical Bid Opening Summary": {
+      "Summary": "Send to Technical Evaluation",
+      "Updated By": "Gundeep Bansal",
+      "Updated On": "14-May-2025 09:30 AM",
+      "Document": "None"
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Gundeep Bansal",
+      "Updated On": "14-May-2025 09:33 AM",
+      "Financial Bid Opening Date": "14-May-2025 11:00 AM",
+      "Document": {
+        "text": "techsummary_281581.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=S7bMXAlNt3ILHh0w16Htjvw%3D%3D",
+        "size": "99.94 KB"
+      }
+    },
+    "Finance Bid Opening Summary": {
+      "Summary": "Send to Financial Evaluation",
+      "Updated By": "Gundeep Bansal",
+      "Updated On": "22-May-2025 10:47 AM",
+      "Document": "None"
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Gundeep Bansal",
+      "Updated on": "22-May-2025 01:08 PM",
+      "Document": {
+        "text": "finsummary_281581.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SgLsbCYqBZPb10JXb6tVzeA%3D%3D",
+        "size": "440.71 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

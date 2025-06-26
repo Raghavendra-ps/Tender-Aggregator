@@ -1,0 +1,90 @@
+{
+  "original_filename": "ROT_2025_WR_140043_1_20250620_105043_StageSummary.html",
+  "source_site_key": "Punjab",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "Department of Water Resources||Punjab Water Resources Management and Development Corporation||DE - Tubewell Division - Pathankot",
+    "Tender ID": "2025_WR_140043_1",
+    "Tender Ref No": "NIT15/2025",
+    "Tender Title": "Material required for Running and Maintenance of Twells of various blocks under Gurdaspur and Madhopur  PWRMDC Division Pathankot",
+    "Work Category (Raw Text)": "Material required for Running and Maintenance of Twells of various blocks under Gurdaspur and Madhopur  PWRMDC Division Pathankot",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {},
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "648301",
+      "Bidder_Name": "supreme trader",
+      "Submitted_Date": "31-May-2025 03:02 PM",
+      "Status": "Rejected-Finance",
+      "Remarks": "L2",
+      "Status_Updated_On": "02-Jun-2025 12:31 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "648996",
+      "Bidder_Name": "VOHRA CONSTRUCTION COMPANY",
+      "Submitted_Date": "02-Jun-2025 10:35 AM",
+      "Status": "Accepted-Finance",
+      "Remarks": "L1",
+      "Status_Updated_On": "02-Jun-2025 12:31 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "648301",
+      "Bidder_Name": "supreme trader",
+      "Value": "97,200.00",
+      "Value_Numeric": 97200.0,
+      "Rank": "2"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "648996",
+      "Bidder_Name": "VOHRA CONSTRUCTION COMPANY",
+      "Value": "91,680.00",
+      "Value_Numeric": 91680.0,
+      "Rank": "1"
+    }
+  ],
+  "other_sections_kv": {
+    "Bid Opening Summary": {
+      "Summary": "ADMITTED",
+      "Updated By": "RAJINDER PAL SINGH KAHLON",
+      "Updated On": "02-Jun-2025 12:24 PM",
+      "Document": "None",
+      "BOQ Comparative Chart": {
+        "text": "BOQ Comparative Chart",
+        "link": "/nicgep/app?component=CHART&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SdXkFfpjYMiJcWVrQWibJ2g%3D%3D",
+        "size": null
+      }
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "RAJINDER PAL SINGH KAHLON",
+      "Updated On": "02-Jun-2025 12:27 PM",
+      "Document": {
+        "text": "techsummary_285659.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SHJqxF9PEs3CniIjMO2Su2Q%3D%3D",
+        "size": "27.67 KB"
+      }
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "RAJINDER PAL SINGH KAHLON",
+      "Updated on": "02-Jun-2025 12:31 PM",
+      "Document": {
+        "text": "finsummary_285659.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SDr1yUYG5hX39K0BmXchWIA%3D%3D",
+        "size": "27.67 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

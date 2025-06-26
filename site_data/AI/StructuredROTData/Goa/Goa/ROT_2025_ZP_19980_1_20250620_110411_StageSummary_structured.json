@@ -1,0 +1,99 @@
+{
+  "original_filename": "ROT_2025_ZP_19980_1_20250620_110411_StageSummary.html",
+  "source_site_key": "Goa",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "ZILLA PANCHAYATS||SOUTH GOA ZILLA PANCHAYAT||Technical Section",
+    "Tender ID": "2025_ZP_19950_1",
+    "Tender Ref No": "3/6/SGZP/2024-25/TN-167/L7",
+    "Tender Title": "Construction of road from main road to Prasad Naik house at Roidor in ward no. III in V.P. Quelossim in Cortalim Constituency",
+    "Work Category (Raw Text)": "Construction of road from main road to Prasad Naik house at Roidor in ward no. III in V.P. Quelossim in Cortalim Constituency",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {
+    "financial_bid_opening_date_actual": "26-Feb-2025 12:35 PM"
+  },
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "44338",
+      "Bidder_Name": "GOUTAM S KATKAR",
+      "Submitted_Date": "21-Feb-2025 02:32 PM",
+      "Status": "Rejected-Finance",
+      "Remarks": "Rejected",
+      "Status_Updated_On": "17-Mar-2025 12:47 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "44285",
+      "Bidder_Name": "R P SOUZA AND COMPANY",
+      "Submitted_Date": "21-Feb-2025 11:54 AM",
+      "Status": "Accepted-Finance",
+      "Remarks": "Accepted for AOC",
+      "Status_Updated_On": "17-Mar-2025 12:47 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "44285",
+      "Bidder_Name": "R P SOUZA AND COMPANY",
+      "Value": "278784.672",
+      "Value_Numeric": 278784.672,
+      "Rank": "L1"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "44338",
+      "Bidder_Name": "GOUTAM S KATKAR",
+      "Value": "292087.950",
+      "Value_Numeric": 292087.95,
+      "Rank": "L2"
+    }
+  ],
+  "other_sections_kv": {
+    "Technical Bid Opening Summary": {
+      "Summary": "Bid Received Admitted for Technical Evaluation",
+      "Updated By": "FLORINA COLLASSO",
+      "Updated On": "24-Feb-2025 11:00 AM",
+      "Document": "None"
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "MARIA DAS FLORES GRACIAS",
+      "Updated On": "26-Feb-2025 12:34 PM",
+      "Financial Bid Opening Date": "26-Feb-2025 12:35 PM",
+      "Document": {
+        "text": "techsummary_20386.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=S2rOow%2BeiEk7dUFL4yr6qTg%3D%3D",
+        "size": "31.30 KB"
+      }
+    },
+    "Finance Bid Opening Summary": {
+      "Summary": "Financial bid has been opened and documents are to be verified at Financial Evaluation",
+      "Updated By": "FLORINA COLLASSO",
+      "Updated On": "26-Feb-2025 02:12 PM",
+      "Document": "None",
+      "BOQ Comparative Chart": {
+        "text": "BOQ Comparative Chart",
+        "link": "/nicgep/app?component=BOQ&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SokPYQFHFl3gK62qzKPqR2g%3D%3D",
+        "size": null
+      }
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "MARIA DAS FLORES GRACIAS",
+      "Updated on": "17-Mar-2025 12:47 PM",
+      "Document": {
+        "text": "finsummary_20386.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=Sq04u3E%2BH97ZHWxYsKoWA6A%3D%3D",
+        "size": "31.30 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

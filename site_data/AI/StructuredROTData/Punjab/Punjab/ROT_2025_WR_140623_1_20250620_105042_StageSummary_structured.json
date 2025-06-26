@@ -1,0 +1,107 @@
+{
+  "original_filename": "ROT_2025_WR_140623_1_20250620_105042_StageSummary.html",
+  "source_site_key": "Punjab",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "Department of Water Resources||Punjab Water Resources Management and Development Corporation||DE - T/W Construction Division - Ropar",
+    "Tender ID": "2025_WR_140623_1",
+    "Tender Ref No": "23/2025/BDC-1/Ropar",
+    "Tender Title": "Advance E-tenders are invited for the Repair and Rewinding of Submersible Motor pump of T/wells under 37 No twell scheme of Tubewell Construction Sub Division No. 4,Shri Anandpur Sahib of Block of Distt. Ropar",
+    "Work Category (Raw Text)": "Advance E-tenders are invited for the Repair and Rewinding of Submersible Motor pump of T/wells under 37 No twell scheme of Tubewell Construction Sub Division No. 4,Shri Anandpur Sahib of Block of Distt. Ropar",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {
+    "financial_bid_opening_date_actual": "28-May-2025 04:30 PM"
+  },
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "646204",
+      "Bidder_Name": "JAY ESS HYDRO AND SOLAR ELECTRIC WORKS",
+      "Submitted_Date": "26-May-2025 02:25 PM",
+      "Status": "Accepted-Finance",
+      "Remarks": "Being Lowest",
+      "Status_Updated_On": "03-Jun-2025 04:25 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "646320",
+      "Bidder_Name": "Sharma Engineering Works Ropar",
+      "Submitted_Date": "26-May-2025 06:20 PM",
+      "Status": "Accepted-Finance",
+      "Remarks": "Being Highest",
+      "Status_Updated_On": "03-Jun-2025 04:25 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "646204",
+      "Bidder_Name": "JAY ESS HYDRO AND SOLAR ELECTRIC WORKS",
+      "Value": "1,58,185.00",
+      "Value_Numeric": 158185.0,
+      "Rank": "L1"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "646320",
+      "Bidder_Name": "Sharma Engineering Works Ropar",
+      "Value": "1,67,972.00",
+      "Value_Numeric": 167972.0,
+      "Rank": "L2"
+    }
+  ],
+  "other_sections_kv": {
+    "Technical Bid Opening Summary": {
+      "Summary": "Two Number Participated",
+      "Updated By": "Gaurav .",
+      "Updated On": "28-May-2025 10:35 AM",
+      "Document": {
+        "text": "technical_285061.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_2&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SK0VPOumx4namkEprwVnqejocVb60Ri8cFw4hl4WPyRw%3D",
+        "size": null
+      }
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Gaurav .",
+      "Updated On": "28-May-2025 04:25 PM",
+      "Financial Bid Opening Date": "28-May-2025 04:30 PM",
+      "Document": {
+        "text": "techsummary_285061.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=STZwwHP%2FfDcRns%2BDu55DW%2Fw%3D%3D",
+        "size": "214.35 KB"
+      }
+    },
+    "Finance Bid Opening Summary": {
+      "Summary": "Two Number Participated",
+      "Updated By": "Gaurav .",
+      "Updated On": "29-May-2025 04:02 PM",
+      "Document": {
+        "text": "finance_285061.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_8&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=Sc8XIELTn8uKoBVZ91gAi5Sr%2BbNMVnFsgvdT6xFR8Y0A%3D",
+        "size": null
+      },
+      "BOQ Comparative Chart": {
+        "text": "BOQ Comparative Chart",
+        "link": "/nicgep/app?component=BOQ&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SbL4d5TFC%2BzXLtnykg8dXFA%3D%3D",
+        "size": null
+      }
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Gaurav .",
+      "Updated on": "03-Jun-2025 04:25 PM",
+      "Document": {
+        "text": "finsummary_285061.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SRNtNQ%2BTxCcrO0pvhmHFuAw%3D%3D",
+        "size": "140.41 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

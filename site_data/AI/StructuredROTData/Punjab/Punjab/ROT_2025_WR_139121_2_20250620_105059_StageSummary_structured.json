@@ -1,0 +1,153 @@
+{
+  "original_filename": "ROT_2025_WR_139121_2_20250620_105059_StageSummary.html",
+  "source_site_key": "Punjab",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "Department of Water Resources||Department of Water Resources||Drainage - Amritsar Drg Div - Amritsar",
+    "Tender ID": "2025_WR_139121_2",
+    "Tender Ref No": "DNIT NO.05 dt.23-04-2025 Wadala Viram Drain RD 0-89000",
+    "Tender Title": "Estimate for clearance of sarkanda, weed, jala, booti and deela etc. from Tung Dhab Drain RD 0-48800 outfalling in Hudiara Nalllah for the year 2025-26.",
+    "Work Category (Raw Text)": "Estimate for clearance of sarkanda, weed, jala, booti and deela etc. from Tung Dhab Drain RD 0-48800 outfalling in Hudiara Nalllah for the year 2025-26.",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {
+    "financial_bid_opening_date_actual": "16-May-2025 04:40 PM"
+  },
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "642576",
+      "Bidder_Name": "MAJHA EARTHMOVERS",
+      "Submitted_Date": "15-May-2025 10:57 AM",
+      "Status": "Rejected-Finance",
+      "Remarks": "HIGHEST RATE",
+      "Status_Updated_On": "04-Jun-2025 08:28 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "642575",
+      "Bidder_Name": "M/s Brother Buildcon",
+      "Submitted_Date": "15-May-2025 11:12 AM",
+      "Status": "Rejected-Finance",
+      "Remarks": "HIGHEST RATE",
+      "Status_Updated_On": "04-Jun-2025 08:28 PM"
+    },
+    {
+      "SNo": "3",
+      "Bid_Number": "642582",
+      "Bidder_Name": "M/S CHERRY CONSTRUCTION CO",
+      "Submitted_Date": "15-May-2025 11:30 AM",
+      "Status": "Rejected-Finance",
+      "Remarks": "HIGHEST RATE",
+      "Status_Updated_On": "04-Jun-2025 08:28 PM"
+    },
+    {
+      "SNo": "4",
+      "Bid_Number": "642448",
+      "Bidder_Name": "P.D. CONSTRUCTION",
+      "Submitted_Date": "15-May-2025 11:57 AM",
+      "Status": "Accepted-Finance",
+      "Remarks": "LOWEST ARET",
+      "Status_Updated_On": "04-Jun-2025 08:28 PM"
+    },
+    {
+      "SNo": "5",
+      "Bid_Number": "642467",
+      "Bidder_Name": "THE MEHMA COOP L & C SOCIET LTD.",
+      "Submitted_Date": "15-May-2025 11:57 AM",
+      "Status": "Rejected-Finance",
+      "Remarks": "HIGHEST RATE",
+      "Status_Updated_On": "04-Jun-2025 08:28 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "642448",
+      "Bidder_Name": "P.D. CONSTRUCTION",
+      "Value": "23,52,849.00",
+      "Value_Numeric": 2352849.0,
+      "Rank": "L-1"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "642467",
+      "Bidder_Name": "THE MEHMA COOP L & C SOCIET LTD.",
+      "Value": "27,39,640.00",
+      "Value_Numeric": 2739640.0,
+      "Rank": "L-2"
+    },
+    {
+      "SNo": "3",
+      "Bid_Number": "642575",
+      "Bidder_Name": "M/s Brother Buildcon",
+      "Value": "32,64,698.00",
+      "Value_Numeric": 3264698.0,
+      "Rank": "L-5"
+    },
+    {
+      "SNo": "4",
+      "Bid_Number": "642576",
+      "Bidder_Name": "MAJHA EARTHMOVERS",
+      "Value": "28,43,913.00",
+      "Value_Numeric": 2843913.0,
+      "Rank": "L-4"
+    },
+    {
+      "SNo": "5",
+      "Bid_Number": "642582",
+      "Bidder_Name": "M/S CHERRY CONSTRUCTION CO",
+      "Value": "27,94,149.00",
+      "Value_Numeric": 2794149.0,
+      "Rank": "L-3"
+    }
+  ],
+  "other_sections_kv": {
+    "Technical Bid Opening Summary": {
+      "Summary": "sumwadaldrain",
+      "Updated By": "Vishal Mehta",
+      "Updated On": "16-May-2025 04:27 PM",
+      "Document": {
+        "text": "technical_283132.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_2&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SabTZbKoqokXnbzkRyeqjqgEuHVa00fzFzoj6Q0Dz0fQ%3D",
+        "size": null
+      }
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "SARBJIT SINGH SDO, SANDEEP SDO, ABHISHEK KUMAR SDO, PUSHPINDER SINGH SUPDT, DAMENDER DAO",
+      "Updated By": "Vishal Mehta",
+      "Updated On": "16-May-2025 04:38 PM",
+      "Financial Bid Opening Date": "16-May-2025 04:40 PM",
+      "Document": {
+        "text": "techsummary_283132.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=Sjw9U9ENaJKTyhodVWg9Oug%3D%3D",
+        "size": "682.26 KB"
+      }
+    },
+    "Finance Bid Opening Summary": {
+      "Summary": "SUM",
+      "Updated By": "Abhishek Kumar",
+      "Updated On": "04-Jun-2025 08:02 PM",
+      "Document": {
+        "text": "finance_283132.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_8&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=Sx%2BiAg9db2My5svsZ6nXtkPfJx4f2rsABKsBqu2ijD8I%3D",
+        "size": null
+      }
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "ABHISHEK KUMAR SDO SANDEEP SDO SARABJIT SINGH SDO",
+      "Updated By": "Abhishek Kumar",
+      "Updated on": "04-Jun-2025 08:28 PM",
+      "Document": {
+        "text": "finsummary_283132.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=S9duj%2Fc2XfJyBln6xacpIBg%3D%3D",
+        "size": "683.05 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

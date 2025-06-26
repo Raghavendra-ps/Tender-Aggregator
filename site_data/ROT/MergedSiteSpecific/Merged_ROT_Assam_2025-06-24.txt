@@ -1,0 +1,924 @@
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_WPTBC_43280_1</RotTenderId>
+<RotTitleRef>[Submission for Administrative approval of Rs. 27.71826 lakhs for Construction of Drainage system and Paver Block Parking at Directorate of  Women and Child Development, Assam under SOPD-G][PTDC/Engg/2024-25/293]</RotTitleRef>
+<RotOrganisationChain>Welfare of Plain Tribes and Backward Classes||Director - WPT and BC</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SJhCLRVC3oykjAu4Hk%2BHbgg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_WPTBC_42805_1</RotTenderId>
+<RotTitleRef>[Administrative Approval for an amount of Rs. 1, 16,03,400.00 only for Construction of Grade III Quarters at Dhemaji Polytechnic under SOPD-G during the year 2024-25][PTDC/Engg/2024-25/283]</RotTitleRef>
+<RotOrganisationChain>Welfare of Plain Tribes and Backward Classes||Director - WPT and BC</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SS5NmHwHo90yeOZ9%2FNczMrA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_UDD_42680_1</RotTenderId>
+<RotTitleRef>[Construction of Vehicle Shed in the plot of Lumding Municipal Board  at Pub Lumding Veterinary Hospital road in Ward no-11,under 15th FC untied 1st installment for the year 2020-21][LMB.81/15th Fc(1st instl)/2020-21/NIT/2024-25/861  dated -13/02/2025]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Directorate of Municipality Administration - UDD||Lumding Municipal Board</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sm8lznyd%2FU26Lmo0sWbYhVA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_UDD_42678_1</RotTenderId>
+<RotTitleRef>[Construction of Market Complex 1st Floor Phase-II in the plot of Lumding Municipal Board at Veterinary Hospital road in Ward no-11,under 14th FC 1st installment for the year 2018-19][LMB.79/14th Fc(1st instl)/2018-19/NIT/2024-25/860]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Directorate of Municipality Administration - UDD||Lumding Municipal Board</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SNNeVZ1xSX75LpY9EMPKLxg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_UDD_42626_1</RotTenderId>
+<RotTitleRef>[6 MLD STP cum FSTP at Dibrugarh under AMRUT 2][AS/AMRUT-2.0/23/2023/1152/D]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Mission Directorate AMRUT Assam||City Mission Office Guwahati</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SEvbRLVhnw5z6R%2FeolnJQ7Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_UDD_42621_1</RotTenderId>
+<RotTitleRef>[2 MLD STP cum FSTP  MBBR Technology at Silchar Meherpur under AMRUT 2][AS/AMRUT-2.0/23/2023/1152/S]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Mission Directorate AMRUT Assam||City Mission Office Guwahati</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SS3GcVD0DSv4IG67v5VFvcA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_UDD_42404_1</RotTenderId>
+<RotTitleRef>[Supply of Truck mounted road sweeping machine (Including Registration, Insurance and others charges for running on road.)][BRMB/PW/C/15FCT/48/24-25/2529]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Directorate of Municipality Administration - UDD||Barpeta Road Municipal Board</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Szg2OtSVTeLvdjuTVyBjyVw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_UDD_41986_1</RotTenderId>
+<RotTitleRef>[REPARING OF DRAIN COVER SLAB ,CONSTRUCTION OF RCC CULVERT AND RCC DRAIN  ALONG GNB ROAD (FROM SARBAJANIN SCHOOL TO BISHNU RABHA PATH) WARD NO. 10, TINSUKIA][TMB/TECH/15th FC (2nd INSTL)/Untied Grant/2020-21/2289 ]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Directorate of Municipality Administration - UDD||Tinsukia Municipal Board</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SamgjGNIa0VRlQakaHtVQRg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_SNT_42564_1</RotTenderId>
+<RotTitleRef>[Design, Supply, Installation, Testing, Commissioning and 5 years Comprehensive Maintenance Contract (CMC) of a 2 kWp Off-Grid SPV Power Plant at Tahpat Medical Sub-Centre, West Karbi Anglong, Assam][AEDA/551/2018/286]</RotTitleRef>
+<RotOrganisationChain>Department of Science and Technology||Assam Energy Development Agency</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SnNF81X%2FWVK1J%2FJf%2F46ELZA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_SEEDE_42618_1</RotTenderId>
+<RotTitleRef>[Equipment for Food Analysis Lab 2][GS02/ASU/AFT/087]</RotTitleRef>
+<RotOrganisationChain>Skill Employment and Entrepreneurship Department- Externally Aided Project||Assam Skill University Project- ADB Funded Tenders</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SgVgYfbD8Pj98ds1ruglNVQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>11.</RotSNo>
+<RotTenderId>2025_SEEDE_42481_1</RotTenderId>
+<RotTitleRef>[Supply, Installation Testing and Commissioning of Furniture for Hostel Buildings, Canteens, Seminar Hall and Cafeteria/ Food court in Admin Building of Assam Skill University][GS01c/2024-25]</RotTitleRef>
+<RotOrganisationChain>Skill Employment and Entrepreneurship Department- Externally Aided Project||Assam Skill University Project- ADB Funded Tenders</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sq4jXVD%2Ba6jg%2Fx1lyHtubFg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>12.</RotSNo>
+<RotTenderId>2025_SEEDE_42473_1</RotTenderId>
+<RotTitleRef>[Furniture for ASU (Supply, Installation Testing and Commissioning of Furniture for Admin and Multipurpose Hall, Academic Building and Library at Assam Skill University) ][GS01b/2024-25]</RotTitleRef>
+<RotOrganisationChain>Skill Employment and Entrepreneurship Department- Externally Aided Project||Assam Skill University Project- ADB Funded Tenders</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SbjZX0EedB1OwMVtHplZHZA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>13.</RotSNo>
+<RotTenderId>2025_SCD_43729_1</RotTenderId>
+<RotTitleRef>[Construction of Staff Quarter (Phase-1) at Odalbakra, Soil Conservation Centre, Guwahati-05][Tender/NIT/Pt/2024-25/6338]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=St%2F3JL98Ixi1oZFMItIgr0Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>14.</RotSNo>
+<RotTenderId>2025_SCD_43725_2</RotTenderId>
+<RotTitleRef>[Re-Direction of stream to its original course by excavating channel cutting at Golighat Pather of Depi river under SDMF for the year 2023-24][Tender/NIT/Pt/2024-25/6300]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SgoqQSQCz1cta0DSaFALTWQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>15.</RotSNo>
+<RotTenderId>2025_SCD_43725_1</RotTenderId>
+<RotTitleRef>[Re-Direction of Stream to its original course by Excavating Channel at Tengani River by Vegetative and Engineering Method under SDMF during 2023-24][Tender/NIT/Pt/2024-25/6300]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SlpH2syrTR5%2BrdqPZj1Zu1A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>16.</RotSNo>
+<RotTenderId>2025_SCD_43617_4</RotTenderId>
+<RotTitleRef>[Kohiora River Bank Anti Erosion Project near Sankardev Sishu Niketan under SDMF][Tender/NIT/Pt/2024-25/6188]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SYhdbPd53B4fihmn7M5oW8w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>17.</RotSNo>
+<RotTenderId>2025_SCD_43617_3</RotTenderId>
+<RotTitleRef>[Dhansiri River Bank Anti Erosion Project at Dhansiripar Koiborta No.1 village in Golaghat under SDMF][Tender/NIT/Pt/2024-25/6188]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Snevv1cCzEJQ6qWN4E02WaA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>18.</RotSNo>
+<RotTenderId>2025_SCD_43617_2</RotTenderId>
+<RotTitleRef>[Doigurung River Bank Anti Erosion Project at Ponkiel under SDMF][Tender/NIT/Pt/2024-25/6188]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwK%2Fbs711rTM%2BsM4cemqkOA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>19.</RotSNo>
+<RotTenderId>2025_SCD_43617_1</RotTenderId>
+<RotTitleRef>[Gelabill River Bank Anti Erosion Project at Kanfola Bhokot under SDMF][Tender/NIT/Pt/2024-25/6188]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SjpNnyVFUeFccFdZvcgiVFg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>20.</RotSNo>
+<RotTenderId>2025_SCD_43610_1</RotTenderId>
+<RotTitleRef>[Soil and Water Conservation Related Knowledge Centre at Gotanagar under RIDF-XXX][Tender/NIT/Pt/2024-25/6188]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2FtKHrJ9krvDq9KX%2Bkx27bw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>21.</RotSNo>
+<RotTenderId>2025_SCD_43259_1</RotTenderId>
+<RotTitleRef>[Prevention at Mallnipur GP from Flash Flood by boulder revetment with hexagonal wire net using mitigation measures under SDMF for the year 2023- 24][No Tender/NIT/Pt/2024-25/4976]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SZ2TRp367icYYzbXfP1aV%2BA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>22.</RotSNo>
+<RotTenderId>2025_SCD_43247_9</RotTenderId>
+<RotTitleRef>[Water Harvesting and Water Distribution Project at Balunala Jaan under RIDF-XXX][NoTender/ NIT/Pt/2024-25/4970]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SyAyf8NZMFuglbwvF%2B56JCw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>23.</RotSNo>
+<RotTenderId>2025_SCD_43247_8</RotTenderId>
+<RotTitleRef>[Bantijhora Water Harvesting Project at Bantijhora under RIDF-XXX][NoTender/ NIT/Pt/2024-25/4970]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SB95FWDLMNXSFAE6IsxARbA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>24.</RotSNo>
+<RotTenderId>2025_SCD_43247_3</RotTenderId>
+<RotTitleRef>[Water Harvesting and Distribution Channel at Sam Bey, Borkok under RIDF-XXX][NoTender/ NIT/Pt/2024-25/4970]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SHwZ%2F4G39sJI%2BCLvzhs1krA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>25.</RotSNo>
+<RotTenderId>2025_SCD_43247_1</RotTenderId>
+<RotTitleRef>[EARTHEN PERIPHERY BUND ( 3 NOS.) AT GANDHINAGAR AREA (LAND DEV.) PROJECTUNDER R.K NAGAR DEV.BLOCK UNDER RIDF-XXX][NoTender/ NIT/Pt/2024-25/4970]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SILuRq0jbyQ06yqsvMlZpaQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>26.</RotSNo>
+<RotTenderId>2025_SCD_42571_9</RotTenderId>
+<RotTitleRef>[Water Harvesting and Water Distribution Project at Hayangthal under RIDF-XXX][No. Tender/NIT/Pt/2024-25/4162]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S0Ks%2BUeeWmi8OeBOU3pGn9A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>27.</RotSNo>
+<RotTenderId>2025_SCD_42571_7</RotTenderId>
+<RotTitleRef>[Construction of Boulder Sausage at Sambudhanpur Village proposed under RIDF-XXX, 2024-25][No. Tender/NIT/Pt/2024-25/4162]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SpgRb%2BVw0p9Vt6UPFYT4AsA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>28.</RotSNo>
+<RotTenderId>2025_SCD_42571_6</RotTenderId>
+<RotTitleRef>[Modarkhat River Training Project under RIDF-XXX][No. Tender/NIT/Pt/2024-25/4162]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S6yNJOF32%2B7BCqTbjB2prSQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>29.</RotSNo>
+<RotTenderId>2025_SCD_42571_11</RotTenderId>
+<RotTitleRef>[Boulder Pitching and Agri Bund at Mohjuli Basti under RIDF-XXX during 2024-25][No. Tender/NIT/Pt/2024-25/4162]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sesig50fgtqROT8MbXinEqg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>30.</RotSNo>
+<RotTenderId>2025_SCD_42571_10</RotTenderId>
+<RotTitleRef>[Water Harvesting and Water Distribution Project at Khamkhuwa Beel, Bharidhuwa under RIDF-XXX][No. Tender/NIT/Pt/2024-25/4162]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sis8GBWj1X1FqTdgDuRDoWg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>31.</RotSNo>
+<RotTenderId>2025_SCD_42262_3</RotTenderId>
+<RotTitleRef>[Nature Conservation and Infrastructure Development with Boundary Wall at Charabari Satra under SOPD-G during 2024- 25][Tender/NIT/Pt/2024-25/4059]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SfJqJ%2BdKCNvGUFofWgi47sw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>32.</RotSNo>
+<RotTenderId>2025_SCD_42262_2</RotTenderId>
+<RotTitleRef>[Construction of Erosion Protection with Boulder Pitching at Bathou Ashram High School, Dhamdama under SOPD-G during 2024- 25][Tender/NIT/Pt/2024-25/4059]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S6c3sTRYo1KQ%2FM1S0fg8IlQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>33.</RotSNo>
+<RotTenderId>2025_SCD_42252_8</RotTenderId>
+<RotTitleRef>[Bishnupur Gully Control Project under RIDF-XXX][Tender/NIT/Pt/2024-25/4052]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S3m6w5eUdeYlxIztzcwlcWw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>34.</RotSNo>
+<RotTenderId>2025_SCD_42252_13</RotTenderId>
+<RotTitleRef>[Bahir Sile Riverine Land Protection Scheme, 2024-25 under RIDF-XXX][Tender/NIT/Pt/2024-25/4052]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SHwcNjWMRcHrEcoYFW%2BGZlQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>35.</RotSNo>
+<RotTenderId>2025_SCD_42252_11</RotTenderId>
+<RotTitleRef>[Earthen Guide Bund along Burisuti River at Nalapara Village under RIDF - XXX][Tender/NIT/Pt/2024-25/4052]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SVyV9SEfJilCKkLgOqzX7yw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>36.</RotSNo>
+<RotTenderId>2025_SCD_42252_1</RotTenderId>
+<RotTitleRef>[RCC Check Dam at Mainajan in village Hathinapur under RIDF-XXX ][Tender/NIT/Pt/2024-25/4052]</RotTitleRef>
+<RotOrganisationChain>Soil Conservation Department||Director - SCD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SsS5tMBvWkMl8yATCJ%2FRmCw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>37.</RotSNo>
+<RotTenderId>2025_PWD_44517_1</RotTenderId>
+<RotTitleRef>[Defect  correction work of L026- Nowgaon Ushapur Ali, in Sivasagar District, Package No AS21243][NIT/2024-25/Pt-IV/A-39/457]</RotTitleRef>
+<RotOrganisationChain>Public Works Roads Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S0ZvrAuvgQomwmVcssgI54w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>38.</RotSNo>
+<RotTenderId>2025_PWD_44473_1</RotTenderId>
+<RotTitleRef>[Reconstruction of Hafaluting Bor Namghar (Approach road) (from Noga Ali to Hafaluting Bornamghar) (Ch. 0.00 m to Ch.2100.00 m) under SOPD-G for the year 2024-25 in Sivasagar District (Sivasagar LAC).PKG NO. SE/CSRC/2025-26/SDTRD /AMGURI/01][SE/CSRC/NIT and DNIT/6B/1667]</RotTitleRef>
+<RotOrganisationChain>Public Works Roads Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SG0os2jYcJ%2FcBmeW2%2BS19xQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>39.</RotSNo>
+<RotTenderId>2025_PWD_43895_1</RotTenderId>
+<RotTitleRef>[Construction of Road cum Drain connecting Out let Drain from][LMRC/TENDER/2024-25/1411]</RotTitleRef>
+<RotOrganisationChain>Public Works Roads Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SaGXSx25UyV98RDkmxFmIgg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>40.</RotSNo>
+<RotTenderId>2025_PWD_43813_1</RotTenderId>
+<RotTitleRef>[Defect  correction work of L026- Nowgaon Ushapur Ali, in Sivasagar District, Package No AS21243][NIT/2024-25/Pt-IV/A-39/3794]</RotTitleRef>
+<RotOrganisationChain>Public Works Roads Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SFlP3BJmcNEM5R%2Bfh5cnbnQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>41.</RotSNo>
+<RotTenderId>2025_PWD_43618_1</RotTenderId>
+<RotTitleRef>[Shifting Re-Costruction of 11kV and LT Line at Pacharia Napara Road in favour of The Executive  Engineer PWD Jalukbari and Hajo Territorial Road Division  Amingaon, Guwahati-31 under  deposit work  scheme of Amingaon Electrical Sub- Division][EE/HSTRD/TB-09/2023-24/203 dated 17/03/2024]</RotTitleRef>
+<RotOrganisationChain>Public Works Roads Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SbM%2BT6CGLTXT80T2iTOupvw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>42.</RotSNo>
+<RotTenderId>2025_PWD_43611_1</RotTenderId>
+<RotTitleRef>[Connection of new 11 kV and LT line for shifting of existing line due to road widening at Pacharia, Hathitol, Kamrup under Amingaon ESD][EE/HSTRD/TB-09/2023-24/201 dated 17/03/2024]</RotTitleRef>
+<RotOrganisationChain>Public Works Roads Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SUal9ngXH1Jb%2Fzh%2B30slGag%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>43.</RotSNo>
+<RotTenderId>2025_PWD_43605_1</RotTenderId>
+<RotTitleRef>[Construction of Temporary Immersion Ghat  Approach Road  Bamboo Foot Bridge Temporary Pandel etc near Sankat Mochan Sewa Ashram at Amingaon in view of Durga Puja 2024 as emergent nature of work under state priority under SOPD-G for the year 2024-25][EE/HSTRD/TB-09/2023-24/204 dated 17/03/2024]</RotTitleRef>
+<RotOrganisationChain>Public Works Roads Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SLWQo1lfi8qE6%2BQ%2FMY6tCMg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>44.</RotSNo>
+<RotTenderId>2025_PWD_43542_1</RotTenderId>
+<RotTitleRef>[Improvement of road from NH-37 at Numaligarh Tiniali to RoRo Jetty, Jahaj Ghat under PWRD, Bokakhat and Dergaon TRD, Bokakhat][BDTRD/BKT/CSR/01/2024-25/4418]</RotTitleRef>
+<RotOrganisationChain>Public Works Roads Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SD1Jh%2F15sXMfoO6RrUeNesA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>45.</RotSNo>
+<RotTenderId>2025_PWD_43044_1</RotTenderId>
+<RotTitleRef>[Package No. Nalbari_SOPD-G_2024_25_65][DNIT No. T/NDTRD/NIT/2022/5214 dated 17.02.2025]</RotTitleRef>
+<RotOrganisationChain>Public Works Roads Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=So1gWWYLZWQhtRpyvFWvn1A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>46.</RotSNo>
+<RotTenderId>2025_PWD_43013_1</RotTenderId>
+<RotTitleRef>[Improvement and strengthening of Approach to Water Resource Deptt. Premises at Lalmati , Basistha Chariali near NH 37 under SOPD G for the year 2024-25.][DTRD/TB/15/2022-23/Pt/4173]</RotTitleRef>
+<RotOrganisationChain>Public Works Roads Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SUUxCZvLF6n0oAgST5Btoug%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>47.</RotSNo>
+<RotTenderId>2025_PWD_42351_3</RotTenderId>
+<RotTitleRef>[PKG NO. SOPD(G)/TMTRD/Mariani/ 2024-25/14/RE][III/14/4180]</RotTitleRef>
+<RotOrganisationChain>Public Works Roads Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S9RdwlwQsBNH2J6WU9R1qBg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>48.</RotSNo>
+<RotTenderId>2025_PWBNH_44491_1</RotTenderId>
+<RotTitleRef>[Construction of Auditorium for Bodo Sahitya Sabha, Kamrup District][CS/SE(B-I)/148/2024-25/71-80 Dated 16th may 2025]</RotTitleRef>
+<RotOrganisationChain>Public Works Building and NH Department||Chief Engineer-Building - PWBNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SGsKJkGHM%2BqRoVWu0fGrD0Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>49.</RotSNo>
+<RotTenderId>2025_PWBNH_44471_1</RotTenderId>
+<RotTitleRef>[Construction of two rooms (Stick Room and Therapy Room) at Sishu Greh at RK Mission Road, Birubari, Guwahati, Assam][SE/BII/SISHU_GREH/BIRUBARI]</RotTitleRef>
+<RotOrganisationChain>Public Works Building and NH Department||Chief Engineer-Building - PWBNH||SE-Guwahati Circle-2 - PWBNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ST8vb8mv%2BXJlm%2BfjThj%2FDgA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>50.</RotSNo>
+<RotTenderId>2025_PWBNH_43329_1</RotTenderId>
+<RotTitleRef>[Construction of Maranjana Primary Health Centre at Maranjana Sub-Health Centre Campus in Kamrup District][EE/NKTBD/Moranjana_PHC]</RotTitleRef>
+<RotOrganisationChain>Public Works Building and NH Department||Chief Engineer-Building - PWBNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sjqav0cEAYXzVelF0U7iMaw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>51.</RotSNo>
+<RotTenderId>2025_PWBNH_43252_1</RotTenderId>
+<RotTitleRef>[Proposal for accord of Administrative Approval for the works of repair and renovation of existing buildings of offices of DEEO DIS BEEO of Districts Dhemaji Dibrugarh Sonitpur Cachar Karimganj and Tinsukia under the DEE Assam during FY 2024 25][TECH/NDC/CS-06/2024-25/1746]</RotTitleRef>
+<RotOrganisationChain>Public Works Building and NH Department||Chief Engineer-Building - PWBNH||SE-Dibrugarh Circle-PWBNH||EE-Naharkatia and Duliajan Territorial Bldg Div</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SzTGzwt%2F%2FHLJmAhdtdd3DRQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>52.</RotSNo>
+<RotTenderId>2025_PWBNH_43199_1</RotTenderId>
+<RotTitleRef>[Construction of Temporary Barrack in Cachar District with providing Electrification with CCTV Camera at Digarkhal Check Gate ][SBC/CS/2024-25/15/237]</RotTitleRef>
+<RotOrganisationChain>Public Works Building and NH Department||Chief Engineer-Building - PWBNH||SE-Silchar Circle - PWBNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SCVeUPdbNgbNQKPR9LHPr0w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>53.</RotSNo>
+<RotTenderId>2025_PWBNH_42696_1</RotTenderId>
+<RotTitleRef>[Construction of Brick Drain alongwith Earth filling etc. at Female ward compound at the Transit camp Matia, Goalpara, Assam.][TW-1/GBLD/2023-24/2354-63, Dt. 07-02-2025]</RotTitleRef>
+<RotOrganisationChain>Public Works Building and NH Department||Chief Engineer-Building - PWBNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1rYIZOzxA9b%2Fvx6lY4DETQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>54.</RotSNo>
+<RotTenderId>2025_PWBNH_42055_5</RotTenderId>
+<RotTitleRef>[Construction of Co-District Office (RCC G Plus 4) at Goalpara West, Goalpara District, Assam][CE/TB-VII/86/2024/6  Dated Guwahati the 6th Jan 2025]</RotTitleRef>
+<RotOrganisationChain>Public Works Building and NH Department||Chief Engineer-Building - PWBNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S7mS8mcpEHfKbTD5XWjRKxQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>55.</RotSNo>
+<RotTenderId>2025_PNRD_43773_1</RotTenderId>
+<RotTitleRef>[Hiring Technical Support Agency to provide advisory, management and technical support for implementation of Digital Finance initiatives under ASRLM][ASRLM/DF/TSA/5955/2024-25/02]</RotTitleRef>
+<RotOrganisationChain>Principal Secretary- P and RD- Assam Secretariat||Assam State Rural Livelihoods Mission Society</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SRmqcgreevGo4Pb9odMJQIw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>56.</RotSNo>
+<RotTenderId>2025_PNRD_43321_1</RotTenderId>
+<RotTitleRef>[RFP for Skill Gap Study][ASRLMDDUGKY59592024-250186]</RotTitleRef>
+<RotOrganisationChain>Principal Secretary- P and RD- Assam Secretariat||Assam State Rural Livelihoods Mission Society</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S6DbjlHQGagZjqhOmELV85A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>57.</RotSNo>
+<RotTenderId>2025_PHED_43405_1</RotTenderId>
+<RotTitleRef>[Additional Water Supply Pipeline to Kamarkuchi village from the distribution network of Chandrapur and Dimoria Block Kamrup (M) for the year 2024-25][SEPH/GC/TB-152/Vol-XII/2024-25]</RotTitleRef>
+<RotOrganisationChain>Public Health Engineering Department||Chief Engineer PHE(P)-Assam-PHED||Lower Assam Zone-Guwahati-PHED||Guwahati Circle-Guwahati-PHED</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SQhosJ%2FhYUU41oXJhc9RdJA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>58.</RotSNo>
+<RotTenderId>2025_PHED_42687_1</RotTenderId>
+<RotTitleRef>[Construction of Piped Water Supply Scheme at Khakilamari ward no.10 under the Scheme 15th Tied Grant ][SEPH/GC/TB-152/Vol-IX/2024-25]</RotTitleRef>
+<RotOrganisationChain>Public Health Engineering Department||Chief Engineer PHE(P)-Assam-PHED||Lower Assam Zone-Guwahati-PHED||Guwahati Circle-Guwahati-PHED</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1F%2BWjIR4kNmBMgfgHXZn2Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>59.</RotSNo>
+<RotTenderId>2025_PHED_42407_1</RotTenderId>
+<RotTitleRef>[Hatigaon Sewali Path PWSS][SEPH/GC/TB-152/Vol-VI/2024-25]</RotTitleRef>
+<RotOrganisationChain>Public Health Engineering Department||Chief Engineer PHE(P)-Assam-PHED||Lower Assam Zone-Guwahati-PHED||Guwahati Circle-Guwahati-PHED</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S7sBwF6Tm5UgUQ0QUlqQUCA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>60.</RotSNo>
+<RotTenderId>2025_PHED_41908_1</RotTenderId>
+<RotTitleRef>[Construction of 2.5 L litres capacity Under Ground Reservior at Foothill Boosting Station under G.U and AEC WSS][SEPH/GC/TB-152/Vol-III/2024-25]</RotTitleRef>
+<RotOrganisationChain>Public Health Engineering Department||Chief Engineer PHE(P)-Assam-PHED||Lower Assam Zone-Guwahati-PHED||Guwahati Circle-Guwahati-PHED</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S43F0MM9IKJyBPrr9KiPFcQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>61.</RotSNo>
+<RotTenderId>2025_PCCF_44190_1</RotTenderId>
+<RotTitleRef>[Eco Tourism Development at Urpad Beel][NITNo.131, dtd. 30-04-2025]</RotTitleRef>
+<RotOrganisationChain>Pr. Chief Conservator of Forest and Head of Forest Force||Chief Conservator of Forestes (T) (Lower Assam Zone)||Central Assam Circle||Goalpara Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SyzfdYMZUQaX2Dt8RAvVvMQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>62.</RotSNo>
+<RotTenderId>2025_PCCF_42290_1</RotTenderId>
+<RotTitleRef>[Construction of Chain-link fencing with RCC post at Mirigaon][FSET/B/D-07/Tender/2025/3950 Dated 21/01/2025]</RotTitleRef>
+<RotOrganisationChain>Pr. Chief Conservator of Forest and Head of Forest Force||Chief Conservator of Forests (Upper Assam Zone)||Northern Assam Circle, Tezpur||Sonitpur East Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIC4r4ydzk%2BZ2bscUmj0L9w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>63.</RotSNo>
+<RotTenderId>2025_PCCF_42275_1</RotTenderId>
+<RotTitleRef>[Construction of chain-link fencing with RCC posts at Koilajuli][FSET/B/D-07/Tender/2025/3925 Date 20/01/25]</RotTitleRef>
+<RotOrganisationChain>Pr. Chief Conservator of Forest and Head of Forest Force||Chief Conservator of Forests (Upper Assam Zone)||Northern Assam Circle, Tezpur||Sonitpur East Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SKlhjBLz1F9tRvxB8iAP6Yg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>64.</RotSNo>
+<RotTenderId>2025_PCCF_42260_4</RotTenderId>
+<RotTitleRef>[Maintenance of Saraighat GGGC Nursery Amingaon][B/SFG/GGGC(SOPD)/Tender/1994]</RotTitleRef>
+<RotOrganisationChain>Pr. Chief Conservator of Forest and Head of Forest Force||Chief Conservator of Forests Social Forestry||Central Southern Assam Social Forestry Circle||Guwahati Social Forestry Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SgeSgEJApUjmK6AEw8%2FKppw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>65.</RotSNo>
+<RotTenderId>2025_PCCF_42260_1</RotTenderId>
+<RotTitleRef>[ Maintenance of Sonapur GGGC Nursery Lalmati][B/SFG/GGGC(SOPD)/Tender/1994]</RotTitleRef>
+<RotOrganisationChain>Pr. Chief Conservator of Forest and Head of Forest Force||Chief Conservator of Forests Social Forestry||Central Southern Assam Social Forestry Circle||Guwahati Social Forestry Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=St6uIJ8br6lkYDqaV5uVJpQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>66.</RotSNo>
+<RotTenderId>2025_PCCF_41976_1</RotTenderId>
+<RotTitleRef>[Erection of fencing 75 ha. at Matia Pahar][B/GLP/DFO (T)/Erection of fencing/CAMPA/2024-25]</RotTitleRef>
+<RotOrganisationChain>Pr. Chief Conservator of Forest and Head of Forest Force||Chief Conservator of Forestes (T) (Lower Assam Zone)||Central Assam Circle||Goalpara Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2FUXhuRP6rLcNl%2FIkQz%2BZnA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>67.</RotSNo>
+<RotTenderId>2025_NHM_42078_1</RotTenderId>
+<RotTitleRef>[Construction of Integrated Public Health Laboratory at RNB SDCH, Gossaigaon in Kokrajhar District under PM ABHIM for FY 2023-24 under NHM, Assam  ][NHM-32049/21/2024-Cons-NHM/]</RotTitleRef>
+<RotOrganisationChain>National Health Mission||State Programme Management Unit - NHM</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SihMbrK7me%2F0nA1SBSzvErA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>68.</RotSNo>
+<RotTenderId>2025_NHM_41994_19</RotTenderId>
+<RotTitleRef>[Repairing Renovation of 314 nos. Sub Centres to upgrade them as Ayushman Arogya Mandir at various places of Assam, GROUP 18, 5 Nos. of scheme in Sibsagar District.][I/873752/2024]</RotTitleRef>
+<RotOrganisationChain>National Health Mission||State Programme Management Unit - NHM</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SAa57fMhBpjOoCxSalDhRew%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>69.</RotSNo>
+<RotTenderId>2025_NHM_41994_18</RotTenderId>
+<RotTitleRef>[Repairing Renovation of 314 nos. Sub Centres to upgrade them as Ayushman Arogya Mandir at various places of Assam, GROUP 17, 4 Nos. of scheme  in Sibsagar District.][I/873752/2024]</RotTitleRef>
+<RotOrganisationChain>National Health Mission||State Programme Management Unit - NHM</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SLZ33DeYqxYc6owF3aInbsw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>70.</RotSNo>
+<RotTenderId>2025_NHM_41994_15</RotTenderId>
+<RotTitleRef>[Repairing Renovation of 314 nos. Sub Centres to upgrade them as Ayushman Arogya Mandir at various places of Assam, GROUP 14, 4 Nos. of scheme in Nagaon District.][I/873752/2024]</RotTitleRef>
+<RotOrganisationChain>National Health Mission||State Programme Management Unit - NHM</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SfuZnJO6e89F8A%2BtFolTyMw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>71.</RotSNo>
+<RotTenderId>2025_MDRDE_42469_1</RotTenderId>
+<RotTitleRef>[TO PROCURE THE SERVICES OF TRAVEL AGENCY(S) FOR HIRING PASSENGER VEHICLES THROUGH TWO YEARS RATE CONTRACT.][AHIDMS/ECF-601218/22 ]</RotTitleRef>
+<RotOrganisationChain>Medical Education and Research Department- Externally Aided Project||Assam Health Infrastructure Development and Management Society</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SHJTETql66709xGig6fu9dw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>72.</RotSNo>
+<RotTenderId>2025_ID_42931_1</RotTenderId>
+<RotTitleRef>[Solar Powered MDTWS_2 Points_under Hajo LAC under SOPD-G for the year 2024-25_Hajo Jalukbari Division_Irr_Amingaon][SEKCI/NIT-1/2024-25/44  Date_18/02/2025]</RotTitleRef>
+<RotOrganisationChain>Irrigation Department||Chief Engineer(Minor Irrigation)-Irrigation Dept||Kamrup Circle</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SZPBn2YWAwqUfjbBs4mxXcQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>73.</RotSNo>
+<RotTenderId>2025_ID_42899_1</RotTenderId>
+<RotTitleRef>[Installation of Solar Shallow Tube Well Schemes (5 pts.) at][GWDI/W-223/e-tender/2019/274 Date 18-02-2025]</RotTitleRef>
+<RotOrganisationChain>Irrigation Department||Chief Engineer(Minor Irrigation)-Irrigation Dept||Kamrup Circle||Guwahati West Palashbari Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXi1U6ZbxgdJnAGib%2BXRBbA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>74.</RotSNo>
+<RotTenderId>2025_HFWD_44646_1</RotTenderId>
+<RotTitleRef>[Tender for Supply of Drugs for SNCU at Nagaon Medical College Nagaon, Assam][NagaonMC/38/2025/2928]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare Department||Directorate of Medical Education-HFWD||Nagaon Medical College and Hospital-HFWD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S3vNQjFeIg8UHb9TNJnbVsg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>75.</RotSNo>
+<RotTenderId>2025_HFWD_43919_1</RotTenderId>
+<RotTitleRef>[Issued for selection of an agency for conducting field investigation and verification under Ayushman Bharat Pradhan Mantri Jan Arogya Yojana and Ayushman Asom Mukhya Mantri Jan Arogya Yojana in the State of Assam][RefNo.631059 ]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare Department||Atal Amrit Abhiyan Society</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Spmf%2B8CNdtLNJfH9Vrt9qtQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>76.</RotSNo>
+<RotTenderId>2025_HFWD_43702_1</RotTenderId>
+<RotTitleRef>[SUPPLY OF BLOOD BANK REFRIGERATOR][AMSC-EQUI0PROC/77/2024-EQUP PRO-AMSC/5a ECF 571174]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare Department||Assam Medical Services Corporation Limited</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sicly%2FslnqjX3p8SlqINR5g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>77.</RotSNo>
+<RotTenderId>2025_HFWD_43445_1</RotTenderId>
+<RotTitleRef>[Supply of Stationary items for the departments of TMCH][TMCH/Statio./Pt.../04/13/465, dt. 12/03/2025]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare Department||Directorate of Medical Education-HFWD||Tezpur Medical College and Hospital-HFWD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2BzKjtdkXWH9AW77kDTGzrQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>78.</RotSNo>
+<RotTenderId>2025_HFWD_43304_1</RotTenderId>
+<RotTitleRef>[SUPPLY OF BINOCULAR MICROSCOPE][AMSC-EQUI0PROC/77/2024-EQUP PRO-AMSC/11a ECF571174]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare Department||Assam Medical Services Corporation Limited</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S3Z2bn5T0H0sqTfK87eJ5Yg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>79.</RotSNo>
+<RotTenderId>2025_HFWD_43303_1</RotTenderId>
+<RotTitleRef>[SUPPLY OF DONOR COUCH][AMSC-EQUI0PROC/77/2024-EQUP PRO-AMSC/12aECF 571174]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare Department||Assam Medical Services Corporation Limited</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S655bCmgob%2BNfoDyLQ7OHqg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>80.</RotSNo>
+<RotTenderId>2025_HFWD_43291_1</RotTenderId>
+<RotTitleRef>[SUPPLY OF BLOOD MIXTURE and BLOOD COLLECTION MONITOR][AMSC-EQUI0PROC/77/2024-EQUP PRO-AMSC/17aECF571174]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare Department||Assam Medical Services Corporation Limited</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SQCeQomSbyOmflZ8hFtlphQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>81.</RotSNo>
+<RotTenderId>2025_HFWD_43290_1</RotTenderId>
+<RotTitleRef>[SUPPLY OF CENTRIFUGE MACHINE][AMSC-EQUI0PROC/77/2024-EQUP PRO-AMSC/19aECF 571174]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare Department||Assam Medical Services Corporation Limited</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SAkepopYSt8Sh8pXzOksabw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>82.</RotSNo>
+<RotTenderId>2025_HFWD_43289_1</RotTenderId>
+<RotTitleRef>[SUPPLY OF PLATELET INCUBATOR CUM AGITATOR][AMSC-EQUI0PROC/77/2024-EQUP PRO-AMSC/21aECF571174]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare Department||Assam Medical Services Corporation Limited</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SWm7v5EiOsB7tO2R1l0MG7w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>83.</RotSNo>
+<RotTenderId>2025_HFWD_43288_1</RotTenderId>
+<RotTitleRef>[SUPPLY OF WATER BATH  PLASMA THAWING ][AMSC-EQUI0PROC/77/2024-EQUP PRO-AMSC/24a ECF 571174]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare Department||Assam Medical Services Corporation Limited</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SC50Lv5GdL9NdbCheduI1TA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>84.</RotSNo>
+<RotTenderId>2025_HFWD_43286_1</RotTenderId>
+<RotTitleRef>[SUPPLY OF REFRIGERATED WATER BATH CRYO BATH ][AMSC-EQUI0PROC/77/2024-EQUP PRO-AMSC/26a ECF 571174]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare Department||Assam Medical Services Corporation Limited</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SeI9UDXOr92cmU%2FdTG1dsFA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+

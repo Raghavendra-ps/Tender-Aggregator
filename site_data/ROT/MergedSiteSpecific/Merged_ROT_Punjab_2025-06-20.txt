@@ -1,0 +1,338 @@
+--- TENDER START ---
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_WSS_138819_1</RotTenderId>
+<RotTitleRef>[PRO INS NEW 150 MM ID 200 MTR DEEP STRAIGHT TUBEWELL AT VILLAGE KOKRI HERAN][2025/05/TB/kokriheran]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Moga</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SqBKvpPv3U8pHLQiKCzcr5g%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WSS_138819_1_20250620_105041_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WSS_138819_1_20250620_105041_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_WSS_138793_1</RotTenderId>
+<RotTitleRef>[PROVIDING INSTALLING STRAIGHT TW SIZE OF 250 MM DIA AND 92 MTRS DEPTH AT VILLAGE TAKHANWADH MH BLOCK MOGA 1 DIST MOGA][2025_WSS_131584_1]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Moga</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ShQVGUhth891IV0XmNWaqHg%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WSS_138793_1_20250620_105041_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WSS_138793_1_20250620_105041_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_WSS_138464_1</RotTenderId>
+<RotTitleRef>[Rural Water Supply Scheme for village Burj Cheema Block Dhuri Distt Sangrur Under NABARD RIDF XXX][2/WSSD/MALERKOTLA/EE/2025-26]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Malerkotla</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SApY%2FlfE3N4dAoszmRyXxdw%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WSS_138464_1_20250620_105042_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WSS_138464_1_20250620_105042_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_WSS_138430_1</RotTenderId>
+<RotTitleRef>[Augmentation of Water Supply Scheme Village Bishanpur, Block Kapurthala, Distt. Kapurthala. (Under head NABARD XXX)][2025-26/NABARDXXX/Bishanpur]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Kapurthala</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SW%2BO8f6Vp0TBFBhLdRuqnqA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WSS_138430_1_20250620_105042_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WSS_138430_1_20250620_105042_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_WSS_138334_1</RotTenderId>
+<RotTitleRef>[AUGMENTATION OF WATER SUPPLY SCHEME FOR VILLAGE BHOJOWALI IN BLOCK DHURI OF DISTT SANGRUR UNDER NABARD RIDF XXX][1/WSSD/MALERKOTLA-EE/2025-26]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Malerkotla</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sa88ooB5cZXbfqip%2Fu5mg4w%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WSS_138334_1_20250620_105042_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WSS_138334_1_20250620_105042_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_WSS_132360_1</RotTenderId>
+<RotTitleRef>[Construction of Plastic Waster Management Unit at village Rurki, Block Sirhind, District Fatehgarh Sahib][Plastic Waste]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Fatehgarh Sahib</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sd6VdcbajhWJv%2Ft2oW7%2Bv3Q%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WSS_132360_1_20250620_105042_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WSS_132360_1_20250620_105042_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_WSS_132263_1</RotTenderId>
+<RotTitleRef>[Govt ITI Ghanour][Govt ITI Ghanour]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Rajpura</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIAEfgOqVjEPxJUoJgf6%2BjQ%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WSS_132263_1_20250620_105042_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WSS_132263_1_20250620_105042_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_WR_140623_1</RotTenderId>
+<RotTitleRef>[Advance E-tenders are invited for the Repair and Rewinding of Submersible Motor pump of T/wells under 37 No twell scheme of Tubewell Construction Sub Division No. 4,Shri Anandpur Sahib of Block of Distt. Ropar ][23/2025/BDC-1/Ropar]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Punjab Water Resources Management and Development Corporation||DE - T/W Construction Division - Ropar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SbL4d5TFC%2BzXLtnykg8dXFA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_140623_1_20250620_105042_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_140623_1_20250620_105042_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_WR_140617_1</RotTenderId>
+<RotTitleRef>[Advance E-tenders are invited for the Repair and Rewinding of Submersible Motor pump of T/wells under 52 no and 13 no out of 19 no twell scheme of Tubewell Construction Sub Division No. 2, Nurpur Bedi of Block and Distt. Ropar ][22/2025/BDC-1/Ropar]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Punjab Water Resources Management and Development Corporation||DE - T/W Construction Division - Ropar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SCXlNS44TcTsL4FiiHyMBZQ%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_140617_1_20250620_105043_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_140617_1_20250620_105043_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_WR_140043_1</RotTenderId>
+<RotTitleRef>[Material required for Running and Maintenance of Twells of various blocks under Gurdaspur and Madhopur PWRMDC Division Pathankot][NIT15/2025]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Punjab Water Resources Management and Development Corporation||DE - Tubewell Division - Pathankot</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SdXkFfpjYMiJcWVrQWibJ2g%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_140043_1_20250620_105043_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_140043_1_20250620_105043_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>11.</RotSNo>
+<RotTenderId>2025_WR_139889_1</RotTenderId>
+<RotTitleRef>[Material required for Running and Maintenance of Twells of various blocks under Gurdaspur and Madhopur PWRMDC Division Pathankot][NIT14/2025]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Punjab Water Resources Management and Development Corporation||DE - Tubewell Division - Pathankot</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SHcSq1TYkh6vMqrvw%2BL4ovQ%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139889_1_20250620_105050_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139889_1_20250620_105050_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>12.</RotSNo>
+<RotTenderId>2025_WR_139881_3</RotTenderId>
+<RotTitleRef>[Clearing obstructions created by sarkanda, weed, jala, booti etc. in various drains/bein falling in Distt. Kapurthala and Jalandhar under jurisdiction of Drainage Sub Division no.3,Kapurthala , Bist Doab Drainage Sub Division, Jalandhar and Head Quar][E-Tender/PWRD/2025-26/03]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Jalandhar Drg Div - Jalandhar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sdw6KE06k4VCEvNBALIPj%2BA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139881_3_20250620_105050_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139881_3_20250620_105050_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>13.</RotSNo>
+<RotTenderId>2025_WR_139881_2</RotTenderId>
+<RotTitleRef>[Clearance of Booti, Weed, Jala, Sarkanda, Etc. from U/S and D/S side of different bridges of West bein in between reach RD 0-237000 in distt Kapurthala.][E-Tender/PWRD/2025-26/03]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Jalandhar Drg Div - Jalandhar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SZzVlP7B6%2Fs%2BxKXLgq966tw%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139881_2_20250620_105051_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139881_2_20250620_105051_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>14.</RotSNo>
+<RotTenderId>2025_WR_139881_1</RotTenderId>
+<RotTitleRef>[Clearance of booti, weed, Jala Sarkanda, etc from Wadala drain in between reach RD0- (-)2000 and RD 0-19200 in District kapurthala.][E-Tender/PWRD/2025-26/03]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Jalandhar Drg Div - Jalandhar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SiVTQKgBAofpR%2FOWDDo8%2BYQ%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139881_1_20250620_105051_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139881_1_20250620_105051_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>15.</RotSNo>
+<RotTenderId>2025_WR_139686_1</RotTenderId>
+<RotTitleRef>[Estimate for providing new Gate and Gearing system on Head Regulator of Gohir Minor offtaking fromRD39954/R of Sarih Disty.][BDD/BDC/2025-26/3]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Canal - Bist Doab Canal Div - Jalandhar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1gW9AjAxRWkaLB%2Fr%2FLf03Q%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139686_1_20250620_105051_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139686_1_20250620_105051_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>16.</RotSNo>
+<RotTenderId>2025_WR_139679_1</RotTenderId>
+<RotTitleRef>[Clearance of canal waterway in between RD 5700 to 11300 and Cross Drainage works at RD 40200 and RD 79530 of Bist Doab Canal][BDD/BDC/2025-26/3 ]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Canal - Bist Doab Canal Div - Jalandhar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SkzNW4Wxh%2F4VmStlHhcNDyA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139679_1_20250620_105051_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139679_1_20250620_105051_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>17.</RotSNo>
+<RotTenderId>2025_WR_139211_1</RotTenderId>
+<RotTitleRef>[Resectioning of Lehragaga Ditch Drain Rd 4000-0 before the flood season of 2025 to save nearby abadies and agriculturable land in distt. Sangrur.][8/2025-26]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Drg Construction Div - Sangrur</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S7XxG9Zs2e59MtUC86fmFGA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139211_1_20250620_105051_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139211_1_20250620_105051_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>18.</RotSNo>
+<RotTenderId>2025_WR_139198_7</RotTenderId>
+<RotTitleRef>[Estimate for clearance of sarkanda, weed, jala, booty etc. form wet drain by machenary from bed of Kurar Drain in between RD 67000-121000 (Partial) before the flood season of 2025 to save nearby abadies and agricultural land of village Mehal Kalan, M][6/2025-26]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Drg Construction Div - Sangrur</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S35XURReBwEW%2BLa%2FEAGBc%2BQ%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139198_7_20250620_105051_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139198_7_20250620_105051_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>19.</RotSNo>
+<RotTenderId>2025_WR_139178_1</RotTenderId>
+<RotTitleRef>[Estimate for clearance of Sarkanda, Weed, Jala, Booty, etc. from wet Drain by machinery from the bed of Upper Lissara Nallah in between RD 264000-286000 (Partial) before the flood season of 2025 to save nearby abadies and agriculture land of Village ][4/2025-26]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Drg Construction Div - Sangrur</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SKhHZ1BucrAWoaPsW9JIJyA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139178_1_20250620_105052_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139178_1_20250620_105052_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>20.</RotSNo>
+<RotTenderId>2025_WR_139126_2</RotTenderId>
+<RotTitleRef>[Estimate for clearance of sarkanda, weed, jala, booti and deela etc. from HMT Drain RD 0-87000 outfalling in Hudiara Nallah system for the year 2025-26.][DNIT NO.05 dt.23-04-2025 HMT Drain RD 0-87000]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Amritsar Drg Div - Amritsar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SoCSMQNSC%2FfwpQ5jWEXsmTA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139126_2_20250620_105052_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139126_2_20250620_105052_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>21.</RotSNo>
+<RotTenderId>2025_WR_139122_2</RotTenderId>
+<RotTitleRef>[Estimate for clearance of sarkanda, weed, jala, booti and deela etc. from Talwandi Bharat Drain RD 0-62000 outfalling in Hudiara Nallah system for the year 2025-26][DNIT NO.05 dt.23-04-2025 Talwandi Bharat Drain RD 0-62000 ]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Amritsar Drg Div - Amritsar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ScjhfPaUGOcbY3dHPvmDe7Q%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139122_2_20250620_105059_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139122_2_20250620_105059_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>22.</RotSNo>
+<RotTenderId>2025_WR_139121_2</RotTenderId>
+<RotTitleRef>[Estimate for clearance of sarkanda, weed, jala, booti and deela etc. from Tung Dhab Drain RD 0-48800 outfalling in Hudiara Nalllah for the year 2025-26.][DNIT NO.05 dt.23-04-2025 Wadala Viram Drain RD 0-89000 ]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Amritsar Drg Div - Amritsar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SVr09IYYr%2Bx1B9n8pr5%2FeJg%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139121_2_20250620_105059_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139121_2_20250620_105059_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>23.</RotSNo>
+<RotTenderId>2025_WR_139118_2</RotTenderId>
+<RotTitleRef>[Estimate for clearance of sarkanda, weed, jala, booti and deela etc. from Gumtala Drain RD 0-56000 outfalling in Hudiara Nallah system for the year 2025-26.][DNIT NO.05 dt.23-04-2025 Gumtala Drain RD 0-56000]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Amritsar Drg Div - Amritsar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBoCt3RmchBmGAUY868HqIA%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139118_2_20250620_105100_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139118_2_20250620_105100_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>24.</RotSNo>
+<RotTenderId>2025_WR_139115_2</RotTenderId>
+<RotTitleRef>[Estimate for clearance of sarkanda, weed, jala, booti and deela etc. from Tung Dhab Drain RD 0-48800 outfalling in Hudiara Nalllah for the year 2025-26.][DNIT NO.05 dt.23-04-2025 Tung Dhab Drain RD 0-48800]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Amritsar Drg Div - Amritsar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S3jEcnHd%2FPt92DFu1Y7f18Q%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139115_2_20250620_105100_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139115_2_20250620_105100_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>25.</RotSNo>
+<RotTenderId>2025_WR_139111_2</RotTenderId>
+<RotTitleRef>[Estimate for clearance of sarkanda, weed, jala, booti and deela etc. from Jasraur Link Drain RD 0-16500 outfalling in Budhi Nallah including below Pucca Structure for the year 2025-26.][DNIT NO.04 dt.23-04-2025 Jasraur Link Drain RD 0-16500 outfalling in Budhi Nallah including below Pu]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Amritsar Drg Div - Amritsar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2F3EC1gxL5CPrVhRDk1fROw%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139111_2_20250620_105100_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139111_2_20250620_105100_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+
+--- TENDER START ---
+<RotSNo>26.</RotSNo>
+<RotTenderId>2025_WR_139109_2</RotTenderId>
+<RotTitleRef>[Internal clearance of Boharwali Link Drain RD 0-13500 out falling in Wadala Viram Drain at RD 45000][DNIT NO.04 dt.23-04-2025 Boharwali Link Drain RD 0-13500 out falling in Wadala Viram Drain at RD 450]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources||Department of Water Resources||Drainage - Amritsar Drg Div - Amritsar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<SourceSiteKey>Punjab</SourceSiteKey>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIcJiwy8AlwYr0AskK0KNJw%3D%3D</RotStatusDetailPageLink>
+<RotStageSummaryFileStatus>downloaded</RotStageSummaryFileStatus>
+<RotStageSummaryFilePath>Punjab/ROT_2025_WR_139109_2_20250620_105100_StageSummary.html</RotStageSummaryFilePath>
+<RotStageSummaryFilename>ROT_2025_WR_139109_2_20250620_105100_StageSummary.html</RotStageSummaryFilename>
+--- TENDER END ---
+

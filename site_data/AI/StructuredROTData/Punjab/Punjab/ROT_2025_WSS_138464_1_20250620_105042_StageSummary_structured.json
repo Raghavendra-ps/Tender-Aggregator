@@ -1,0 +1,99 @@
+{
+  "original_filename": "ROT_2025_WSS_138464_1_20250620_105042_StageSummary.html",
+  "source_site_key": "Punjab",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "Water Supply and sanitation||Department of Water Supply and Sanitation||Division Kapurthala",
+    "Tender ID": "2025_WSS_138430_1",
+    "Tender Ref No": "2025-26/NABARDXXX/Bishanpur",
+    "Tender Title": "Augmentation of Water Supply Scheme Village Bishanpur, Block Kapurthala, Distt. Kapurthala. (Under head NABARD XXX)",
+    "Work Category (Raw Text)": "Augmentation of Water Supply Scheme Village Bishanpur, Block Kapurthala, Distt. Kapurthala. (Under head NABARD XXX)",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {
+    "financial_bid_opening_date_actual": "26-May-2025 11:00 AM"
+  },
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "637365",
+      "Bidder_Name": "amanbir singh govt. contractor tarntaran",
+      "Submitted_Date": "23-Apr-2025 03:06 PM",
+      "Status": "Accepted-Finance",
+      "Remarks": "Being L1",
+      "Status_Updated_On": "12-Jun-2025 01:29 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "637049",
+      "Bidder_Name": "Suresh Kumar Jain",
+      "Submitted_Date": "24-Apr-2025 09:20 AM",
+      "Status": "Accepted-Finance",
+      "Remarks": "Highly quoted",
+      "Status_Updated_On": "12-Jun-2025 01:29 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "637049",
+      "Bidder_Name": "Suresh Kumar Jain",
+      "Value": "61,99,837.00",
+      "Value_Numeric": 6199837.0,
+      "Rank": "L2"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "637365",
+      "Bidder_Name": "amanbir singh govt. contractor tarntaran",
+      "Value": "61,28,027.00",
+      "Value_Numeric": 6128027.0,
+      "Rank": "L1"
+    }
+  ],
+  "other_sections_kv": {
+    "Technical Bid Opening Summary": {
+      "Summary": "2 bids are received and send for technical evaluation",
+      "Updated By": "Gurpreet Singh Virdi",
+      "Updated On": "24-Apr-2025 04:14 PM",
+      "Document": "None"
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "Er. Gurpreet Singh, Er. Navjot Singh Virdi, Smt. Navjit Kaur",
+      "Updated By": "Gaurav Mehra",
+      "Updated On": "22-May-2025 03:27 PM",
+      "Financial Bid Opening Date": "26-May-2025 11:00 AM",
+      "Document": {
+        "text": "techsummary_279637.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=S7rTl23ZPME4rcj0QFJw6Sw%3D%3D",
+        "size": "9643.22 KB"
+      }
+    },
+    "Finance Bid Opening Summary": {
+      "Summary": "Two bids have been received and send for financial evaluation",
+      "Updated By": "Gaurav Mehra",
+      "Updated On": "26-May-2025 11:31 AM",
+      "Document": "None",
+      "BOQ Comparative Chart": {
+        "text": "BOQ Comparative Chart",
+        "link": "/nicgep/app?component=BOQ&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SW%2BO8f6Vp0TBFBhLdRuqnqA%3D%3D",
+        "size": null
+      }
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "Er. Gurpreet Singh, Er. Navjot Singh Virdi, Smt. Navjit Kaur",
+      "Updated By": "Harjit Singh",
+      "Updated on": "12-Jun-2025 01:29 PM",
+      "Document": {
+        "text": "finsummary_279637.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SwiAND5oulz4rAvJPcQIaqQ%3D%3D",
+        "size": "19331.72 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

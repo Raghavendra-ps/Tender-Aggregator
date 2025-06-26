@@ -70,3 +70,664 @@
 09:52:44 [INFO] (Dashboard) Jinja2 configured.
 10:02:43 [INFO] (Dashboard) Jinja2 configured with new templates path.
 10:02:43 [INFO] (Dashboard) Jinja2 configured.
+10:50:28 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Punjab', Status='5'
+10:50:28 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250620105028104933/status.txt
+10:50:28 [INFO] (Dashboard) Dashboard: Created run directory '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250620105028104933' and status file for Run ID: rot_worker_Punjab_20250620105028104933
+10:50:28 [INFO] (Dashboard) Dashboard: Passing TENFIN_DASHBOARD_HOST_PORT='localhost:8082' to ROT worker environment.
+10:50:28 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /usr/bin/python3 /root/Tender-Aggregator/headless_rot_worker.py --site_key Punjab --run_id rot_worker_Punjab_20250620105028104933 --site_url https://eproc.punjab.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://eproc.punjab.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 100, "detail_concurrency": 2, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+10:50:28 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Punjab (PID: 4607). Run ID: rot_worker_Punjab_20250620105028104933
+10:50:39 [INFO] (Dashboard) Dashboard: Received CAPTCHA answer for run_id 'rot_worker_Punjab_20250620105028104933': 'YUC3aH'
+10:50:39 [INFO] (Dashboard) Dashboard: Status updated to 'CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250620105028104933/status.txt
+10:50:39 [INFO] (Dashboard) Dashboard: Wrote answer to '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250620105028104933/answer.txt' for run_id 'rot_worker_Punjab_20250620105028104933'.
+10:59:11 [INFO] (Dashboard) Jinja2 configured with new templates path.
+10:59:11 [INFO] (Dashboard) Jinja2 configured.
+10:59:55 [INFO] (Dashboard) Settings saved successfully to /root/Tender-Aggregator/settings.json
+10:59:55 [INFO] (Dashboard) Global scraper (REG+ROT) params saved.
+11:00:03 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Goa', Status='5'
+11:00:03 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Goa_20250620110003188189/status.txt
+11:00:03 [INFO] (Dashboard) Dashboard: Created run directory '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Goa_20250620110003188189' and status file for Run ID: rot_worker_Goa_20250620110003188189
+11:00:03 [INFO] (Dashboard) Dashboard: Passing TENFIN_DASHBOARD_HOST_PORT='localhost:8082' to ROT worker environment.
+11:00:03 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /usr/bin/python3 /root/Tender-Aggregator/headless_rot_worker.py --site_key Goa --run_id rot_worker_Goa_20250620110003188189 --site_url https://eprocure.goa.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://eprocure.goa.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 100, "detail_concurrency": 10, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+11:00:03 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Goa (PID: 31887). Run ID: rot_worker_Goa_20250620110003188189
+11:00:13 [INFO] (Dashboard) Dashboard: Received CAPTCHA answer for run_id 'rot_worker_Goa_20250620110003188189': 'X7B7kc'
+11:00:13 [INFO] (Dashboard) Dashboard: Status updated to 'CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Goa_20250620110003188189/status.txt
+11:00:13 [INFO] (Dashboard) Dashboard: Wrote answer to '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Goa_20250620110003188189/answer.txt' for run_id 'rot_worker_Goa_20250620110003188189'.
+11:00:30 [INFO] (Dashboard) Log download request: Type='rot', PathParam='Goa/worker_rot_worker_Goa_20250620110003188189_2025-06-20.log'
+11:00:30 [INFO] (Dashboard) Serving log download: /root/Tender-Aggregator/LOGS/rot_worker/Goa/worker_rot_worker_Goa_20250620110003188189_2025-06-20.log as worker_rot_worker_Goa_20250620110003188189_2025-06-20.log
+11:03:46 [INFO] (Dashboard) Settings saved successfully to /root/Tender-Aggregator/settings.json
+11:03:46 [INFO] (Dashboard) Global scraper (REG+ROT) params saved.
+11:03:54 [INFO] (Dashboard) Jinja2 configured with new templates path.
+11:03:54 [INFO] (Dashboard) Jinja2 configured.
+11:03:59 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Goa', Status='5'
+11:03:59 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Goa_20250620110359130364/status.txt
+11:03:59 [INFO] (Dashboard) Dashboard: Created run directory '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Goa_20250620110359130364' and status file for Run ID: rot_worker_Goa_20250620110359130364
+11:03:59 [INFO] (Dashboard) Dashboard: Passing TENFIN_DASHBOARD_HOST_PORT='localhost:8082' to ROT worker environment.
+11:03:59 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /usr/bin/python3 /root/Tender-Aggregator/headless_rot_worker.py --site_key Goa --run_id rot_worker_Goa_20250620110359130364 --site_url https://eprocure.goa.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://eprocure.goa.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 1, "detail_concurrency": 10, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+11:03:59 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Goa (PID: 36163). Run ID: rot_worker_Goa_20250620110359130364
+11:04:10 [INFO] (Dashboard) Dashboard: Received CAPTCHA answer for run_id 'rot_worker_Goa_20250620110359130364': 'eR4K6E'
+11:04:10 [INFO] (Dashboard) Dashboard: Status updated to 'CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Goa_20250620110359130364/status.txt
+11:04:10 [INFO] (Dashboard) Dashboard: Wrote answer to '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Goa_20250620110359130364/answer.txt' for run_id 'rot_worker_Goa_20250620110359130364'.
+11:04:12 [INFO] (Dashboard) Dashboard: Received request from a worker to trigger ROT data consolidation.
+11:04:12 [INFO] (Dashboard) --- DASHBOARD GLOBAL MERGE (ROT): Starting Merge of All Site-Specific Files ---
+11:04:12 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Input directory: /root/Tender-Aggregator/site_data/ROT/MergedSiteSpecific
+11:04:12 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Output directory: /root/Tender-Aggregator/site_data/ROT/FinalGlobalMerged
+11:04:12 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Found 4 site-specific ROT files for consolidation.
+11:04:12 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Punjab_2025-06-18.txt
+11:04:12 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Ladakh_2025-06-18.txt
+11:04:12 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Punjab_2025-06-20.txt
+11:04:12 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): Processing site-specific file: Merged_ROT_Goa_2025-06-20.txt
+11:04:12 [INFO] (Dashboard) DASHBOARD GLOBAL MERGE (ROT): ✅ Merged 116 unique ROT tender blocks to: /root/Tender-Aggregator/site_data/ROT/FinalGlobalMerged/Final_ROT_Tender_List_2025-06-20_110412.txt
+11:04:12 [INFO] (Dashboard) ROT data consolidation triggered by worker completed. 116 blocks merged to Final_ROT_Tender_List_2025-06-20_110412.txt.
+11:05:13 [INFO] (Dashboard) Filter 'Goa' (ROT) using source 'Final_ROT_Tender_List_2025-06-20_110412.txt' completed. Output: /root/Tender-Aggregator/site_data/ROT/FilteredResults/Goa_Results/Filtered_Tenders.json
+11:05:19 [INFO] (Dashboard) Request for parsed ROT summary: SiteKey='Goa', Filename='ROT_2025_WRD_22509_1_20250620_110030_StageSummary.html'
+11:05:19 [INFO] (Dashboard) [ROTParse-ROT_2025_WRD_22509_1_20250620_110030_StageSummary] Starting parsing of: ROT_2025_WRD_22509_1_20250620_110030_StageSummary.html
+11:05:19 [WARNING] (Dashboard) [ROTParse-ROT_2025_WRD_22509_1_20250620_110030_StageSummary] Could not find parent table for section_head: 'Financial Evaluation Bid List'. Skipping section.
+11:05:19 [INFO] (Dashboard) [ROTParse-ROT_2025_WRD_22509_1_20250620_110030_StageSummary] Parsing complete. Page Title: 'Goa', Sections: 4, MainInfo Keys: 4
+11:05:19 [INFO] (Dashboard) Rendering parsed ROT summary for: /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Goa/ROT_2025_WRD_22509_1_20250620_110030_StageSummary.html
+15:31:49 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:31:50 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:31:53 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:31:57 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:00 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:04 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:07 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:11 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:14 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:18 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:21 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:25 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:28 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:32 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:35 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:39 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:42 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:46 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:49 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:53 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:54 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:32:58 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:01 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:05 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:08 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:12 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:15 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:19 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:22 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:26 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:29 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:33 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:36 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:40 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:43 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:47 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:50 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:54 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:57 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:57 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:33:59 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:33:59 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:37:35 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:37:35 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:40:54 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:40:54 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:56:58 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:56:58 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:56:59 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:56:59 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:59:56 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:59:56 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+16:02:48 [INFO] (Dashboard) Manual 'Run Scraper Now' (regular) triggered via dashboard.
+16:02:48 [INFO] (Dashboard) Executing command in background: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/site_controller.py --type regular
+16:02:48 [INFO] (Dashboard) Launched site_controller.py (PID: 45455). Check logs.
+16:18:37 [INFO] (Dashboard) Manual 'Run Scraper Now' (regular) triggered via dashboard.
+16:18:37 [INFO] (Dashboard) Executing command in background: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/site_controller.py --type regular
+16:18:37 [INFO] (Dashboard) Launched site_controller.py (PID: 45895). Check logs.
+12:36:20 [INFO] (Dashboard) Jinja2 configured with custom filters.
+12:36:20 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+12:50:57 [INFO] (Dashboard) Jinja2 configured with custom filters.
+12:50:57 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+12:51:42 [ERROR] (Dashboard) Error during database search: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Tender.full_details_json has an attribute 'astext'
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 1506, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'astext'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/attributes.py", line 472, in __getattr__
+    return getattr(self.comparator, key)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/util/langhelpers.py", line 1413, in __getattr__
+    return self._fallback_getattr(key)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/properties.py", line 474, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 1508, in __getattr__
+    raise AttributeError(
+    ...<6 lines>...
+    ) from err
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'astext'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 623, in post_search_results
+    search_clauses.append(Tender.full_details_json.astext().ilike(search_pattern))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/attributes.py", line 474, in __getattr__
+    raise AttributeError(
+    ...<8 lines>...
+    ) from err
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Tender.full_details_json has an attribute 'astext'
+13:15:07 [INFO] (Dashboard) Jinja2 configured with custom filters.
+13:15:07 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+13:15:22 [ERROR] (Dashboard) Failed during homepage/search query: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Tender.full_details_json has an attribute 'astext'
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 1506, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'astext'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/attributes.py", line 472, in __getattr__
+    return getattr(self.comparator, key)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/util/langhelpers.py", line 1413, in __getattr__
+    return self._fallback_getattr(key)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/properties.py", line 474, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 1508, in __getattr__
+    raise AttributeError(
+    ...<6 lines>...
+    ) from err
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'astext'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 173, in homepage
+    search_clauses.append(Tender.full_details_json.astext().ilike(search_pattern))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/attributes.py", line 474, in __getattr__
+    raise AttributeError(
+    ...<8 lines>...
+    ) from err
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Tender.full_details_json has an attribute 'astext'
+13:15:54 [ERROR] (Dashboard) Failed during homepage/search query: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Tender.full_details_json has an attribute 'astext'
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 1506, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'astext'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/attributes.py", line 472, in __getattr__
+    return getattr(self.comparator, key)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/util/langhelpers.py", line 1413, in __getattr__
+    return self._fallback_getattr(key)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/properties.py", line 474, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 1508, in __getattr__
+    raise AttributeError(
+    ...<6 lines>...
+    ) from err
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'astext'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 173, in homepage
+    search_clauses.append(Tender.full_details_json.astext().ilike(search_pattern))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/attributes.py", line 474, in __getattr__
+    raise AttributeError(
+    ...<8 lines>...
+    ) from err
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Tender.full_details_json has an attribute 'astext'
+13:20:41 [INFO] (Dashboard) Jinja2 configured with custom filters.
+13:20:41 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+14:03:05 [INFO] (Dashboard) Jinja2 configured with custom filters.
+14:03:05 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+14:04:10 [INFO] (Dashboard) Jinja2 configured with custom filters.
+14:04:10 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+14:04:46 [INFO] (Dashboard) Jinja2 configured with custom filters.
+14:04:46 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:10:04 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:10:04 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:11:27 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:11:27 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:12:48 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:12:48 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:20:29 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:20:29 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:20:46 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:20:46 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:21:40 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:21:40 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:24:48 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:24:48 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:27:40 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:27:40 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:27:42 [ERROR] (Dashboard) Failed to launch worker for site 'Chandigarh'. Error: name 'get_rot_site_config' is not defined
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 521, in initiate_rot_worker_endpoint
+    rot_site_urls = get_rot_site_config(site_key)
+                    ^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_rot_site_config' is not defined
+15:27:51 [ERROR] (Dashboard) Failed to launch worker for site 'Chandigarh'. Error: name 'get_rot_site_config' is not defined
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 521, in initiate_rot_worker_endpoint
+    rot_site_urls = get_rot_site_config(site_key)
+                    ^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_rot_site_config' is not defined
+15:29:17 [ERROR] (Dashboard) Failed to launch worker for site 'Chandigarh'. Error: name 'get_rot_site_config' is not defined
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 521, in initiate_rot_worker_endpoint
+    @app.post("/submit-captcha-answer/{run_id}", name="submit_captcha_answer")
+                            ^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_rot_site_config' is not defined
+15:29:24 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:29:24 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:29:26 [INFO] (Dashboard) Launched background ROT Worker for Chandigarh (PID: 181686). Run ID: rot_worker_Chandigarh_20250624152926760381
+15:35:03 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:35:03 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:35:17 [INFO] (Dashboard) Manual 'Run Scraper Now' (regular) triggered via dashboard.
+15:35:17 [INFO] (Dashboard) Launched site_controller.py (PID: 181958). Check logs.
+15:35:28 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:35:28 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:40:01 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:40:01 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:44:32 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:44:32 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:44:44 [INFO] (Dashboard) Launched background ROT Worker for Chandigarh (PID: 182617). Run ID: rot_worker_Chandigarh_20250624154444388303
+15:45:12 [INFO] (Dashboard) Launched background ROT Worker for Himachal Pradesh (PID: 182705). Run ID: rot_worker_HimachalPradesh_20250624154512398023
+15:46:55 [INFO] (Dashboard) Launched background ROT Worker for Himachal Pradesh (PID: 182821). Run ID: rot_worker_HimachalPradesh_20250624154655910174
+15:51:13 [INFO] (Dashboard) Launched background ROT Worker for Himachal Pradesh (PID: 182926). Run ID: rot_worker_HimachalPradesh_20250624155113106811
+15:54:34 [INFO] (Dashboard) Jinja2 configured with custom filters.
+15:54:34 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+15:54:45 [INFO] (Dashboard) Launched ROT Worker for CPPP (PID: 183045). Run ID: rot_worker_CPPP_20250624155445066991
+16:06:50 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:06:50 [INFO] (Dashboard) Jinja2 configured.
+16:06:53 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:06:53 [INFO] (Dashboard) Jinja2 configured.
+16:09:06 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Assam', Status='5'
+16:09:06 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Assam_20250624160906441399/status.txt
+16:09:06 [INFO] (Dashboard) Dashboard: Created run directory '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Assam_20250624160906441399' and status file for Run ID: rot_worker_Assam_20250624160906441399
+16:09:06 [INFO] (Dashboard) Dashboard: Passing TENFIN_DASHBOARD_HOST_PORT='localhost:8082' to ROT worker environment.
+16:09:06 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/headless_rot_worker.py --site_key Assam --run_id rot_worker_Assam_20250624160906441399 --site_url https://assamtenders.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://assamtenders.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 50, "detail_concurrency": 2, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+16:09:06 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Assam (PID: 184241). Run ID: rot_worker_Assam_20250624160906441399
+16:09:16 [INFO] (Dashboard) Dashboard: Received CAPTCHA answer for run_id 'rot_worker_Assam_20250624160906441399': 'Yt5Yf2'
+16:09:16 [INFO] (Dashboard) Dashboard: Status updated to 'CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Assam_20250624160906441399/status.txt
+16:09:16 [INFO] (Dashboard) Dashboard: Wrote answer to '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Assam_20250624160906441399/answer.txt' for run_id 'rot_worker_Assam_20250624160906441399'.
+16:11:53 [INFO] (Dashboard) Settings saved successfully to /root/Tender-Aggregator/settings.json
+16:11:53 [INFO] (Dashboard) Global scraper (REG+ROT) params saved.
+16:12:07 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:12:07 [INFO] (Dashboard) Jinja2 configured.
+16:12:08 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Daman Diu', Status='5'
+16:12:08 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Daman_Diu_20250624161208594115/status.txt
+16:12:08 [INFO] (Dashboard) Dashboard: Created run directory '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Daman_Diu_20250624161208594115' and status file for Run ID: rot_worker_Daman_Diu_20250624161208594115
+16:12:08 [INFO] (Dashboard) Dashboard: Passing TENFIN_DASHBOARD_HOST_PORT='localhost:8082' to ROT worker environment.
+16:12:08 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/headless_rot_worker.py --site_key Daman Diu --run_id rot_worker_Daman_Diu_20250624161208594115 --site_url https://ddtenders.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://ddtenders.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 1, "detail_concurrency": 10, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+16:12:08 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Daman Diu (PID: 185665). Run ID: rot_worker_Daman_Diu_20250624161208594115
+16:12:16 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Daman Diu', Status='5'
+16:12:16 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Daman_Diu_20250624161216456074/status.txt
+16:12:16 [INFO] (Dashboard) Dashboard: Created run directory '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Daman_Diu_20250624161216456074' and status file for Run ID: rot_worker_Daman_Diu_20250624161216456074
+16:12:16 [INFO] (Dashboard) Dashboard: Passing TENFIN_DASHBOARD_HOST_PORT='localhost:8082' to ROT worker environment.
+16:12:16 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/headless_rot_worker.py --site_key Daman Diu --run_id rot_worker_Daman_Diu_20250624161216456074 --site_url https://ddtenders.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://ddtenders.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 1, "detail_concurrency": 10, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+16:12:16 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Daman Diu (PID: 185748). Run ID: rot_worker_Daman_Diu_20250624161216456074
+16:12:26 [INFO] (Dashboard) Dashboard: Received CAPTCHA answer for run_id 'rot_worker_Daman_Diu_20250624161216456074': 'sr4dFz'
+16:12:26 [INFO] (Dashboard) Dashboard: Status updated to 'CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Daman_Diu_20250624161216456074/status.txt
+16:12:26 [INFO] (Dashboard) Dashboard: Wrote answer to '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Daman_Diu_20250624161216456074/answer.txt' for run_id 'rot_worker_Daman_Diu_20250624161216456074'.
+16:16:32 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:16:32 [INFO] (Dashboard) Jinja2 configured.
+16:16:53 [INFO] (Dashboard) Manual 'Run Scraper Now' (regular) triggered via dashboard.
+16:16:53 [INFO] (Dashboard) Executing command in background: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/site_controller.py --type regular
+16:16:53 [INFO] (Dashboard) Launched site_controller.py (Type: regular) BG (PID: 186007). Check logs.
+16:17:06 [INFO] (Dashboard) Settings saved successfully to /root/Tender-Aggregator/settings.json
+16:17:06 [INFO] (Dashboard) Global scraper (REG+ROT) params saved.
+16:17:11 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:17:11 [INFO] (Dashboard) Jinja2 configured.
+16:17:13 [INFO] (Dashboard) Manual 'Run Scraper Now' (regular) triggered via dashboard.
+16:17:13 [INFO] (Dashboard) Executing command in background: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/site_controller.py --type regular
+16:17:13 [INFO] (Dashboard) Launched site_controller.py (Type: regular) BG (PID: 186982). Check logs.
+16:21:37 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:21:37 [INFO] (Dashboard) Jinja2 configured.
+16:23:24 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:23:24 [INFO] (Dashboard) Jinja2 configured.
+16:24:00 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:24:00 [INFO] (Dashboard) Jinja2 configured.
+16:26:23 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:26:23 [INFO] (Dashboard) Jinja2 configured.
+16:28:20 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:28:20 [INFO] (Dashboard) Jinja2 configured.
+16:29:58 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:29:58 [INFO] (Dashboard) Jinja2 configured.
+16:37:56 [INFO] (Dashboard) Jinja2 configured with new templates path.
+16:37:56 [INFO] (Dashboard) Jinja2 configured.
+17:05:57 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+17:06:13 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+17:06:41 [INFO] (Dashboard) Launched ROT Worker for Rajasthan. Run ID: rot_worker_Rajasthan_20250624170641446304
+17:11:33 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+17:14:00 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+17:16:39 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+17:23:37 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+17:31:38 [INFO] (Dashboard) Launched ROT Worker for CPPP. Run ID: rot_worker_CPPP_20250624173138503109
+17:35:33 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+17:35:47 [INFO] (Dashboard) Launched ROT Worker for Assam. Run ID: rot_worker_Assam_20250624173547644644
+17:39:51 [INFO] (Dashboard) Dashboard starting up. Initializing database...
+17:40:00 [INFO] (Dashboard) Launched ROT Worker for Dadra Nagar Haveli. Run ID: rot_worker_DadraNagarHaveli_20250624174000714010
+17:44:12 [INFO] (Dashboard) Launched ROT Worker for Madhya Pradesh. Run ID: rot_worker_MadhyaPradesh_20250624174412371051
+17:47:29 [INFO] (Dashboard) Launched ROT Worker for Delhi. Run ID: rot_worker_Delhi_20250624174729387745
+09:51:46 [INFO] (Dashboard) Launched ROT Worker for Haryana. Run ID: rot_worker_Haryana_20250626095146454918
+10:00:07 [INFO] (Dashboard) Launched ROT Worker for Jammu Kashmir. Run ID: rot_worker_JammuKashmir_20250626100007836064
+10:00:09 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: FETCHING_CAPTCHA | Captcha File Exists: False
+10:00:11 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:14 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:16 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:18 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:20 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:22 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:24 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:26 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:28 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:30 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:31 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:34 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:36 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:38 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:39 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:42 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:44 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:46 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:48 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:50 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:52 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:54 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:56 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:00:58 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:00 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:02 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:05 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:07 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:09 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:11 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:13 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:15 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:17 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:19 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:22 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:24 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:26 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:28 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:30 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:32 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:34 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:36 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:38 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:40 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:42 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:44 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:46 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:48 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:49 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:51 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:53 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:55 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:57 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:01:59 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:01 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:03 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:06 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:08 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:10 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:12 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:14 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:16 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:18 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:20 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:22 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:24 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:26 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:28 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:30 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:32 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:34 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:36 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:38 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:40 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:42 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:44 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:46 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:48 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:50 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:52 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:54 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:56 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:02:58 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:03:00 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:03:02 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:03:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:04:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:05:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:05:51 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:05:51 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:05:53 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:05:55 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:05:57 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:05:59 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:06:01 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:06:03 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:06:05 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_JammuKashmir_20250626100007836064 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:17:12 [INFO] (Dashboard) Launched ROT Worker for Uttarakhand. Run ID: rot_worker_Uttarakhand_20250626101712888589
+10:17:14 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: FETCHING_CAPTCHA | Captcha File Exists: False
+10:17:17 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:19 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:21 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:23 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:25 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:27 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:29 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:31 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:33 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:35 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:36 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:38 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:40 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:43 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:45 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:47 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:49 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:51 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:53 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:55 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:57 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:17:59 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:01 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:03 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:05 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:07 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:09 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:11 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:13 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:15 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:17 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:19 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:21 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:23 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:25 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:27 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:29 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:31 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:33 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:35 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:37 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:39 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:18:41 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:19:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:20:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:21:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:22:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:23:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:24:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:24:31 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:24:32 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Uttarakhand_20250626101712888589 | Status: TIMEOUT_CAPTCHA_INPUT | Captcha File Exists: True
+10:24:37 [INFO] (Dashboard) Launched ROT Worker for CPPP. Run ID: rot_worker_CPPP_20250626102437483157
+10:24:39 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: FETCHING_CAPTCHA | Captcha File Exists: False
+10:24:41 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:24:43 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:24:45 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:24:48 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:24:50 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:24:52 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:24:54 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:24:56 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:24:58 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:00 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:02 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:06 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:08 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:10 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:12 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:14 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:16 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:18 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:20 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:22 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:24 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:26 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:30 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:32 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:34 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:36 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:38 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:40 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:42 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:44 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:25:46 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:04 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:09 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_CPPP_20250626102437483157 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:14 [INFO] (Dashboard) Launched ROT Worker for Tripura. Run ID: rot_worker_Tripura_20250626102614689630
+10:26:16 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: FETCHING_CAPTCHA | Captcha File Exists: False
+10:26:18 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:21 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:23 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:25 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:26 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:29 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:31 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:33 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:35 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:37 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:39 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:41 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:43 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:45 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:47 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:49 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:51 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:53 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:55 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:57 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:26:59 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:01 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:03 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:05 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:07 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:09 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:11 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:13 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:15 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:17 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:19 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:21 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:23 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:25 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:27 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:29 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:31 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:33 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:35 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:37 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:39 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:41 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:43 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:45 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:46 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:49 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:51 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:53 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:55 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:57 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:27:59 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:01 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:03 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:05 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:07 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:09 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:11 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:13 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:15 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:17 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:19 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:20 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:23 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:25 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:27 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:29 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:31 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:33 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:35 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:37 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:39 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:41 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:43 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:45 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:47 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:49 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:51 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:53 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:55 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:57 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:28:59 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:01 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:03 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:05 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:07 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:09 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:11 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:13 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:15 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:17 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:19 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:21 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Tripura_20250626102614689630 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:29:50 [INFO] (Dashboard) Jinja2 configured with new templates path.
+10:29:50 [INFO] (Dashboard) Jinja2 configured.
+10:30:01 [INFO] (Dashboard) Dashboard: Initiating ROT Worker for Site='Daman Diu', Status='5'
+10:30:01 [INFO] (Dashboard) Dashboard: Status updated to 'INITIATED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Daman_Diu_20250626103001476765/status.txt
+10:30:01 [INFO] (Dashboard) Dashboard: Created run directory '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Daman_Diu_20250626103001476765' and status file for Run ID: rot_worker_Daman_Diu_20250626103001476765
+10:30:01 [INFO] (Dashboard) Dashboard: Passing TENFIN_DASHBOARD_HOST_PORT='localhost:8082' to ROT worker environment.
+10:30:01 [INFO] (Dashboard) Dashboard: Launching ROT Worker command: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/headless_rot_worker.py --site_key Daman Diu --run_id rot_worker_Daman_Diu_20250626103001476765 --site_url https://ddtenders.gov.in/nicgep/app?page=WebTenderStatusLists&service=page --base_url https://ddtenders.gov.in/nicgep/app/ --tender_status 5 --settings_json {"max_list_pages": 1, "detail_concurrency": 10, "pagination_wait": 7000, "page_load_timeout": 75000, "detail_page_timeout": 60000, "popup_page_timeout": 60000, "element_timeout": 20000, "post_submit_timeout": 30000}
+10:30:01 [INFO] (Dashboard) Dashboard: Launched background ROT Worker for Daman Diu (PID: 258962). Run ID: rot_worker_Daman_Diu_20250626103001476765
+10:30:11 [INFO] (Dashboard) Dashboard: Received CAPTCHA answer for run_id 'rot_worker_Daman_Diu_20250626103001476765': 'Lf8dkC'
+10:30:11 [INFO] (Dashboard) Dashboard: Status updated to 'CAPTCHA_ANSWER_SUBMITTED_BY_DASHBOARD' in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Daman_Diu_20250626103001476765/status.txt
+10:30:11 [INFO] (Dashboard) Dashboard: Wrote answer to '/root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Daman_Diu_20250626103001476765/answer.txt' for run_id 'rot_worker_Daman_Diu_20250626103001476765'.
+10:33:33 [INFO] (Dashboard) Launched ROT Worker for Himachal Pradesh. Run ID: rot_worker_HimachalPradesh_20250626103333213918
+10:33:35 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: FETCHING_CAPTCHA | Captcha File Exists: False
+10:33:37 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:33:39 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:33:41 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:33:43 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:33:45 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:33:47 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:33:49 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:33:51 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:33:53 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:33:55 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:33:57 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:33:59 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+10:34:01 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_HimachalPradesh_20250626103333213918 | Status: WAITING_CAPTCHA | Captcha File Exists: True

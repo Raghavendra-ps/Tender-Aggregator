@@ -1,0 +1,107 @@
+{
+  "original_filename": "ROT_2025_WR_138855_1_20250620_105101_StageSummary.html",
+  "source_site_key": "Punjab",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "Department of Water Resources||Department of Water Resources||Canal - Canal Div - Ropar",
+    "Tender ID": "2025_WR_138855_1",
+    "Tender Ref No": "13/22A/2025-26",
+    "Tender Title": "Estimate for Laying underground pipeline for watercourse at RD  3516/R of Khanpur Distributary",
+    "Work Category (Raw Text)": "Estimate for Laying underground pipeline for watercourse at RD  3516/R of Khanpur Distributary",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {
+    "financial_bid_opening_date_actual": "08-May-2025 12:20 PM"
+  },
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "640320",
+      "Bidder_Name": "HARBANS SINGH GOVT CONTRACTOR",
+      "Submitted_Date": "06-May-2025 11:39 AM",
+      "Status": "Accepted-Finance",
+      "Remarks": "high",
+      "Status_Updated_On": "04-Jun-2025 03:43 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "640060",
+      "Bidder_Name": "M/S NIRMAL SINGH",
+      "Submitted_Date": "06-May-2025 11:29 AM",
+      "Status": "Accepted-Finance",
+      "Remarks": "low",
+      "Status_Updated_On": "04-Jun-2025 03:43 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "640060",
+      "Bidder_Name": "M/S NIRMAL SINGH",
+      "Value": "50,39,567.03",
+      "Value_Numeric": 5039567.03,
+      "Rank": "L1"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "640320",
+      "Bidder_Name": "HARBANS SINGH GOVT CONTRACTOR",
+      "Value": "51,32,279.40",
+      "Value_Numeric": 5132279.4,
+      "Rank": "L2"
+    }
+  ],
+  "other_sections_kv": {
+    "Technical Bid Opening Summary": {
+      "Summary": "Technical Bid opened, minutes attached",
+      "Updated By": "Damandeep Singh Gill",
+      "Updated On": "08-May-2025 11:06 AM",
+      "Document": {
+        "text": "technical_280825.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_2&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SNo2zORcIzM0XvCr%2B71NQVlHnFjScMyYOATsMVoog%2BAg%3D",
+        "size": null
+      }
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "Technical committee report attached",
+      "Updated By": "Damandeep Singh Gill",
+      "Updated On": "08-May-2025 12:10 PM",
+      "Financial Bid Opening Date": "08-May-2025 12:20 PM",
+      "Document": {
+        "text": "techsummary_280825.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SaotOzLHmWNNITGXeXH0b0Q%3D%3D",
+        "size": "640.12 KB"
+      }
+    },
+    "Finance Bid Opening Summary": {
+      "Summary": "Financial bid opened , minutes attached",
+      "Updated By": "Damandeep Singh Gill",
+      "Updated On": "08-May-2025 12:26 PM",
+      "Document": {
+        "text": "finance_280825.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_8&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SXGC25bedZ2PYwAUhNoJWW%2BLavrhQx%2FHXlDiyH4b%2B538%3D",
+        "size": null
+      },
+      "BOQ Comparative Chart": {
+        "text": "BOQ Comparative Chart",
+        "link": "/nicgep/app?component=BOQ&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SsQO%2F3W9QqOXr2kVhjgw%2FRQ%3D%3D",
+        "size": null
+      }
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "Financial committee report attached",
+      "Updated By": "Damandeep Singh Gill",
+      "Updated on": "04-Jun-2025 03:43 PM",
+      "Document": {
+        "text": "finsummary_280825.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SKy55%2F77fg%2FbINshkgRgjNw%3D%3D",
+        "size": "210.68 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

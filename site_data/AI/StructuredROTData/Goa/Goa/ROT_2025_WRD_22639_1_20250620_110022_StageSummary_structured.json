@@ -1,0 +1,124 @@
+{
+  "original_filename": "ROT_2025_WRD_22639_1_20250620_110022_StageSummary.html",
+  "source_site_key": "Goa",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "WATER RESOURCE DEPARTMENT||CIRCLE IV||DIVISION XIV",
+    "Tender ID": "2025_WRD_22615_1",
+    "Tender Ref No": "WRD/WDXIV/TECH/F3/25-26/2/4",
+    "Tender Title": "Providing  G.I. Chain link fencing for inspection path of Minor M2 Canal of S.I.P. At Ch. 1.586 kms in Village Xeldem of Quepem Taluka",
+    "Work Category (Raw Text)": "Providing  G.I. Chain link fencing for inspection path of Minor M2 Canal of S.I.P. At Ch. 1.586 kms in Village Xeldem of Quepem Taluka",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {
+    "financial_bid_opening_date_actual": "26-May-2025 04:20 PM"
+  },
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "48577",
+      "Bidder_Name": "M.P ENGINEERS/JENNIFER COLACO VALES",
+      "Submitted_Date": "21-May-2025 07:42 PM",
+      "Status": "Rejected-Finance",
+      "Remarks": "Second Lowest bidder",
+      "Status_Updated_On": "12-Jun-2025 04:40 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "48616",
+      "Bidder_Name": "M/S UNIQUE CONSTRUCTIONS",
+      "Submitted_Date": "22-May-2025 12:56 PM",
+      "Status": "Accepted-Finance",
+      "Remarks": "Lowest bidder",
+      "Status_Updated_On": "12-Jun-2025 04:40 PM"
+    },
+    {
+      "SNo": "3",
+      "Bid_Number": "48621",
+      "Bidder_Name": "Shanta Kulkarni",
+      "Submitted_Date": "22-May-2025 01:47 PM",
+      "Status": "Rejected-Finance",
+      "Remarks": "Third Lowest bidder",
+      "Status_Updated_On": "12-Jun-2025 04:40 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "48577",
+      "Bidder_Name": "M.P ENGINEERS/JENNIFER COLACO VALES",
+      "Value": "1400070.000",
+      "Value_Numeric": 1400070.0,
+      "Rank": "L2"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "48616",
+      "Bidder_Name": "M/S UNIQUE CONSTRUCTIONS",
+      "Value": "1138748.970",
+      "Value_Numeric": 1138748.97,
+      "Rank": "L1"
+    },
+    {
+      "SNo": "3",
+      "Bid_Number": "48621",
+      "Bidder_Name": "Shanta Kulkarni",
+      "Value": "1508040.000",
+      "Value_Numeric": 1508040.0,
+      "Rank": "L3"
+    }
+  ],
+  "other_sections_kv": {
+    "Technical Bid Opening Summary": {
+      "Summary": "3 bids are received and sent for technical evaluation",
+      "Updated By": "Ajay M Kudchadker",
+      "Updated On": "23-May-2025 12:42 PM",
+      "Document": {
+        "text": "technical_23036.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_2&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SKsYDtG5FjbJB22rcl65VUpcmvqgVeFDgFiwcGIugOZ8%3D",
+        "size": null
+      }
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Ajay M Kudchadker",
+      "Updated On": "26-May-2025 04:18 PM",
+      "Financial Bid Opening Date": "26-May-2025 04:20 PM",
+      "Document": {
+        "text": "techsummary_23036.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SFy%2BzsXL2v0mqoUgDj%2BmS1Q%3D%3D",
+        "size": "198.70 KB"
+      }
+    },
+    "Finance Bid Opening Summary": {
+      "Summary": "3 bids are received and sent for financial evaluation",
+      "Updated By": "Ajay M Kudchadker",
+      "Updated On": "26-May-2025 04:36 PM",
+      "Document": {
+        "text": "finance_23036.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_8&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SFRAd68uATrxbt103Y2PQx%2F8ZDk2YT8UksAZa86NoPbw%3D",
+        "size": null
+      },
+      "BOQ Comparative Chart": {
+        "text": "BOQ Comparative Chart",
+        "link": "/nicgep/app?component=BOQ&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SCBY9VCxZ7nB8e3QOzYIktQ%3D%3D",
+        "size": null
+      }
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Ajay M Kudchadker",
+      "Updated on": "12-Jun-2025 04:40 PM",
+      "Document": {
+        "text": "finsummary_23036.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=S%2FvzvAoay0seWi9WATzIU5g%3D%3D",
+        "size": "1219.51 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

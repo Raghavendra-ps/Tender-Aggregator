@@ -1,0 +1,99 @@
+{
+  "original_filename": "ROT_2025_WR_138617_4_20250620_105109_StageSummary.html",
+  "source_site_key": "Punjab",
+  "document_header": {},
+  "main_tender_info": {
+    "Organisation Chain": "Department of Water Resources||Department of Water Resources||Canal - Fazilka Canal and Ground Water Div - Fzr",
+    "Tender ID": "2025_WR_138617_33",
+    "Tender Ref No": "001/FazilkaCanal/2025-26 dated 11/04/2025",
+    "Tender Title": "Estimate for clearing internal section(Weed,jalla,silt,jungle and Grass) of Nizamwah disty from RD 58685-99125.",
+    "Work Category (Raw Text)": "Estimate for clearing internal section(Weed,jalla,silt,jungle and Grass) of Nizamwah disty from RD 58685-99125.",
+    "Work Category (Classified)": "NEEDS_CLASSIFICATION"
+  },
+  "key_financials": {},
+  "critical_dates": {
+    "financial_bid_opening_date_actual": "27-May-2025 09:45 AM"
+  },
+  "location_info": {},
+  "bids_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "646138",
+      "Bidder_Name": "The Basti Jia Bagga Cooperative L and C Society Ltd.",
+      "Submitted_Date": "26-May-2025 12:02 PM",
+      "Status": "Accepted-Finance",
+      "Remarks": "L1",
+      "Status_Updated_On": "10-Jun-2025 04:44 PM"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "645924",
+      "Bidder_Name": "THE SHIVA LABOUR AND CONSTRUCTION COOP SOCIETY LTD",
+      "Submitted_Date": "26-May-2025 11:31 AM",
+      "Status": "Accepted-Finance",
+      "Remarks": "L2",
+      "Status_Updated_On": "10-Jun-2025 04:44 PM"
+    }
+  ],
+  "financial_evaluation_bid_list_data": [
+    {
+      "SNo": "1",
+      "Bid_Number": "645924",
+      "Bidder_Name": "THE SHIVA LABOUR AND CONSTRUCTION COOP SOCIETY LTD",
+      "Value": "4,06,601.00",
+      "Value_Numeric": 406601.0,
+      "Rank": "2"
+    },
+    {
+      "SNo": "2",
+      "Bid_Number": "646138",
+      "Bidder_Name": "The Basti Jia Bagga Cooperative L and C Society Ltd.",
+      "Value": "3,72,219.00",
+      "Value_Numeric": 372219.0,
+      "Rank": "1"
+    }
+  ],
+  "other_sections_kv": {
+    "Technical Bid Opening Summary": {
+      "Summary": "ok",
+      "Updated By": "Varinder Kumar",
+      "Updated On": "26-May-2025 05:12 PM",
+      "Document": "None"
+    },
+    "Technical Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Vivek Makkar",
+      "Updated On": "27-May-2025 09:43 AM",
+      "Financial Bid Opening Date": "27-May-2025 09:45 AM",
+      "Document": {
+        "text": "techsummary_285616.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_4&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=S0fsLDMJkjrNx3qb1sH6hEw%3D%3D",
+        "size": "544.16 KB"
+      }
+    },
+    "Finance Bid Opening Summary": {
+      "Summary": "ok",
+      "Updated By": "Varinder Kumar",
+      "Updated On": "27-May-2025 09:49 AM",
+      "Document": "None",
+      "BOQ Comparative Chart": {
+        "text": "BOQ Comparative Chart",
+        "link": "/nicgep/app?component=BOQ&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SqBRqRVxi2eBn0CraXojooQ%3D%3D",
+        "size": null
+      }
+    },
+    "Finance Evaluation Summary Details": {
+      "Committee Chairperson/Co-ordinator Type": "Internal",
+      "Committee Members": "None",
+      "Updated By": "Vivek Makkar",
+      "Updated on": "10-Jun-2025 04:44 PM",
+      "Document": {
+        "text": "finsummary_285616.pdf",
+        "link": "/nicgep/app?component=%24DirectLink_10&page=FrontEndViewBidSummaryDetailsPrint&service=direct&session=T&sp=SpkVs5Qzc0F3R9x0KHhOgoA%3D%3D",
+        "size": "551.72 KB"
+      }
+    }
+  },
+  "other_sections_table": {}
+}

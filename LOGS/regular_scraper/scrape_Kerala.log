@@ -1,0 +1,109 @@
+16:17:20 [INFO] (Scraper-REG-Kerala) 🚀 Starting DB-integrated scrape run for site: Kerala...
+16:17:21 [INFO] (Scraper-REG-Kerala) 📄 Fetching List Page 1 (Attempt 1/4)
+16:17:22 [INFO] (Scraper-REG-Kerala)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+16:17:22 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SdnEppi9zQbqgYt2O9bKYgA%3D%3D
+16:17:22 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SCJbTLsdjN3Fi%2Brlu0N5%2B2A%3D%3D
+16:17:23 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRShZ7%2FPWWVb0wFDhlBrJWw%3D%3D
+16:17:23 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SFVZaqBwDD1yoHzThFE17vQ%3D%3D
+16:17:24 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S8VaOT%2Bm9N6xvFkNQT2qi8g%3D%3D
+16:17:24 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S5MO9OWG4mWhAhPq7T78zIw%3D%3D
+16:17:24 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SUR%2BMFqJ5xTcoW4Gqjywneg%3D%3D
+16:17:24 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S2piV4ynSVJfdiq%2FINWKp7g%3D%3D
+16:17:25 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SxwQ7lLxIM2iZL3TRXFavNA%3D%3D
+16:17:25 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SwARa8s9V7Kszimt8w9ttHA%3D%3D
+16:17:25 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S4OZqsjxXxZbOJs3GEEZ6jA%3D%3D
+16:17:25 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SGL%2BE%2Bg7Yulm8Mx75JzlT3w%3D%3D
+16:17:26 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SkHbIird2lz4zXVzyem%2BCGA%3D%3D
+16:17:26 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SuRquxTviccMPq44KlynHwA%3D%3D
+16:17:26 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRyDFUPb4cMCfTVU9Bw9Keg%3D%3D
+16:17:27 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SCQjMBdw%2BwPr9Xcfrl%2BPU8g%3D%3D
+16:17:27 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SEoj01SLl%2FVczSDRRZmNGQA%3D%3D
+16:17:27 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SxzHDkrRAxZSMy06ca7FIPg%3D%3D
+16:17:28 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SKt4DfompaWko9AIrOWXdAg%3D%3D
+16:17:28 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S4GhDXpjavwx9ecZWcNKfZQ%3D%3D
+16:17:28 [INFO] (Scraper-REG-Kerala)   ✅ List Page 1 processed successfully (20 items).
+16:17:28 [INFO] (Scraper-REG-Kerala) Scrape run for site Kerala finished. Saved: 20, Failed to save: 0.
+16:17:28 [INFO] (Scraper-REG-Kerala) 🏁 Scrape run for site Kerala completed. Duration: 0:00:07.645019.
+16:21:04 [INFO] (Scraper-REG-Kerala) 🚀 Starting DB-integrated scrape run for site: Kerala...
+16:21:05 [INFO] (Scraper-REG-Kerala) 📄 Fetching List Page 1 (Attempt 1/4)
+16:21:06 [INFO] (Scraper-REG-Kerala)   ⏯️ Gathering 19 detail scrape tasks for page 1.
+16:21:06 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SCQjMBdw%2BwPr9Xcfrl%2BPU8g%3D%3D
+16:21:06 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SCJbTLsdjN3Fi%2Brlu0N5%2B2A%3D%3D
+16:21:07 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SUR%2BMFqJ5xTcoW4Gqjywneg%3D%3D
+16:21:07 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SwARa8s9V7Kszimt8w9ttHA%3D%3D
+16:21:07 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SFVZaqBwDD1yoHzThFE17vQ%3D%3D
+16:21:07 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SdnEppi9zQbqgYt2O9bKYgA%3D%3D
+16:21:08 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SFNU6Pc46RPXxieoXiTGJkw%3D%3D
+16:21:08 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SKt4DfompaWko9AIrOWXdAg%3D%3D
+16:21:08 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SuRquxTviccMPq44KlynHwA%3D%3D
+16:21:09 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S8VaOT%2Bm9N6xvFkNQT2qi8g%3D%3D
+16:21:09 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S2piV4ynSVJfdiq%2FINWKp7g%3D%3D
+16:21:09 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S4OZqsjxXxZbOJs3GEEZ6jA%3D%3D
+16:21:10 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SEoj01SLl%2FVczSDRRZmNGQA%3D%3D
+16:21:10 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SxwQ7lLxIM2iZL3TRXFavNA%3D%3D
+16:21:10 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRShZ7%2FPWWVb0wFDhlBrJWw%3D%3D
+16:21:10 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S5MO9OWG4mWhAhPq7T78zIw%3D%3D
+16:21:11 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sl%2BEEwa9HvuHWSjquCvq4qA%3D%3D
+16:21:11 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SGL%2BE%2Bg7Yulm8Mx75JzlT3w%3D%3D
+16:21:11 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S%2Fj03nh2bF1SU%2FllzBBrEqg%3D%3D
+16:21:12 [INFO] (Scraper-REG-Kerala)   ✅ List Page 1 processed successfully (19 items).
+16:21:12 [INFO] (Scraper-REG-Kerala) Scrape run for site Kerala finished. Saved: 19, Failed to save: 0.
+16:21:12 [INFO] (Scraper-REG-Kerala) 🏁 Scrape run for site Kerala completed. Duration: 0:00:07.440447.
+16:26:02 [INFO] (Scraper-REG-Kerala) 🚀 Starting DB-integrated scrape run for site: Kerala...
+16:26:09 [INFO] (Scraper-REG-Kerala) 🏁 Scrape run for site Kerala completed. Duration: 0:00:07.377515.
+16:26:48 [INFO] (Scraper-REG-Kerala) 🚀 Starting DB-integrated scrape run for site: Kerala...
+16:26:55 [INFO] (Scraper-REG-Kerala) 🏁 Scrape run for site Kerala completed. Duration: 0:00:07.362793.
+16:28:05 [INFO] (Scraper-REG-Kerala) 🚀 Starting DB-integrated scrape run for site: Kerala...
+16:28:13 [INFO] (Scraper-REG-Kerala) 🏁 Scrape run for site Kerala completed. Duration: 0:00:07.592460.
+16:29:33 [INFO] (Scraper-REG-Kerala) 🚀 Starting DB-integrated scrape run for site: Kerala...
+16:29:33 [INFO] (Scraper-REG-Kerala) 📄 Fetching List Page 1 (Attempt 1/4)
+16:29:35 [INFO] (Scraper-REG-Kerala)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+16:29:35 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SCQjMBdw%2BwPr9Xcfrl%2BPU8g%3D%3D
+16:29:35 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SCJbTLsdjN3Fi%2Brlu0N5%2B2A%3D%3D
+16:29:36 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SGL%2BE%2Bg7Yulm8Mx75JzlT3w%3D%3D
+16:29:36 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SEoj01SLl%2FVczSDRRZmNGQA%3D%3D
+16:29:36 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SFVZaqBwDD1yoHzThFE17vQ%3D%3D
+16:29:36 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SFNU6Pc46RPXxieoXiTGJkw%3D%3D
+16:29:37 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S2piV4ynSVJfdiq%2FINWKp7g%3D%3D
+16:29:37 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S5MO9OWG4mWhAhPq7T78zIw%3D%3D
+16:29:37 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRShZ7%2FPWWVb0wFDhlBrJWw%3D%3D
+16:29:37 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SdnEppi9zQbqgYt2O9bKYgA%3D%3D
+16:29:38 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SKt4DfompaWko9AIrOWXdAg%3D%3D
+16:29:38 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SxwQ7lLxIM2iZL3TRXFavNA%3D%3D
+16:29:38 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SUR%2BMFqJ5xTcoW4Gqjywneg%3D%3D
+16:29:39 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SwARa8s9V7Kszimt8w9ttHA%3D%3D
+16:29:39 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S4OZqsjxXxZbOJs3GEEZ6jA%3D%3D
+16:29:39 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sb4oDDWXO1%2B%2BWZ%2B5TXAYChw%3D%3D
+16:29:39 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S8VaOT%2Bm9N6xvFkNQT2qi8g%3D%3D
+16:29:40 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SuRquxTviccMPq44KlynHwA%3D%3D
+16:29:40 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SdEmNTfsi04mtZJFCS8vmsA%3D%3D
+16:29:40 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SqaO7KUry0j1FN2uZThiVHQ%3D%3D
+16:29:40 [INFO] (Scraper-REG-Kerala)   ✅ List Page 1 processed successfully (20 items).
+16:29:40 [INFO] (Scraper-REG-Kerala) Scrape run for site Kerala finished. Saved: 20, Failed to save: 0.
+16:29:40 [INFO] (Scraper-REG-Kerala) 🏁 Scrape run for site Kerala completed. Duration: 0:00:07.214305.
+16:37:31 [INFO] (Scraper-REG-Kerala) 🚀 Starting DB-integrated scrape run for site: Kerala...
+16:37:31 [INFO] (Scraper-REG-Kerala) 📄 Fetching List Page 1 (Attempt 1/4)
+16:37:32 [INFO] (Scraper-REG-Kerala)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+16:37:33 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SF1pmE7NsAE7CEwhacwQG8w%3D%3D
+16:37:33 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=StVV8zo%2FRsUcGSYd1MJK%2B3g%3D%3D
+16:37:33 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SGGbQ9rHkTzQC3hewqkVOsQ%3D%3D
+16:37:33 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sjg1AQiv5o2PJkuow2bEYHw%3D%3D
+16:37:34 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SCJbTLsdjN3Fi%2Brlu0N5%2B2A%3D%3D
+16:37:34 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S5MO9OWG4mWhAhPq7T78zIw%3D%3D
+16:37:35 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SKt4DfompaWko9AIrOWXdAg%3D%3D
+16:37:35 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SFVZaqBwDD1yoHzThFE17vQ%3D%3D
+16:37:35 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SuRquxTviccMPq44KlynHwA%3D%3D
+16:37:35 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SCQjMBdw%2BwPr9Xcfrl%2BPU8g%3D%3D
+16:37:36 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S4OZqsjxXxZbOJs3GEEZ6jA%3D%3D
+16:37:36 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SwARa8s9V7Kszimt8w9ttHA%3D%3D
+16:37:36 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SEoj01SLl%2FVczSDRRZmNGQA%3D%3D
+16:37:36 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SFNU6Pc46RPXxieoXiTGJkw%3D%3D
+16:37:37 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRShZ7%2FPWWVb0wFDhlBrJWw%3D%3D
+16:37:37 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SdnEppi9zQbqgYt2O9bKYgA%3D%3D
+16:37:37 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SUR%2BMFqJ5xTcoW4Gqjywneg%3D%3D
+16:37:37 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S8VaOT%2Bm9N6xvFkNQT2qi8g%3D%3D
+16:37:38 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S2piV4ynSVJfdiq%2FINWKp7g%3D%3D
+16:37:38 [INFO] (Scraper-REG-Kerala)     ➡️  Scraping Detail Page: https://etenders.kerala.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SxwQ7lLxIM2iZL3TRXFavNA%3D%3D
+16:37:38 [INFO] (Scraper-REG-Kerala)   ✅ List Page 1 processed successfully (20 items).
+16:37:38 [INFO] (Scraper-REG-Kerala) Scrape run for site Kerala finished. Saved: 20, Failed to save: 0.
+16:37:39 [INFO] (Scraper-REG-Kerala) 🏁 Scrape run for site Kerala completed. Duration: 0:00:07.555319.
