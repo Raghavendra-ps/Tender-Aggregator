@@ -17,6 +17,7 @@ from fastapi.templating import Jinja2Templates
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from pydantic import BaseModel
 import httpx
+from database import SessionLocal, Tender, TenderResult, CompanyProfile, EligibilityCheck, Bidder, CanonicalBidder, init_db
 
 # --- Database Imports (FIXED) ---
 from database import SessionLocal, Tender, TenderResult, CompanyProfile, init_db
@@ -555,3 +556,83 @@ async def get_eligibility_check_status(tender_pk_id: int, db: Session = Depends(
         "status": check.status,
         "result": check.analysis_result_json if check.status == "complete" else None
     }
+
+# --- NEW: Eligibility Worker Interactive Endpoints ---
+
+@app.get("/eligibility/get-status/{run_id}")
+async def get_eligibility_worker_status(run_id: str):
+    clean_run_id = _clean_path_component(run_id)
+    run_dir = ELIGIBILITY_WORKER_RUNS_DIR / clean_run_id
+    
+    if not run_dir.is_dir():
+        return JSONResponse(status_code=404, content={"status": "error", "message": "Run ID not found."})
+
+    status_file = run_dir / "status.json"
+    if not status_file.is_file():
+        return {"status": "starting"}
+    
+    try:
+        status_data = json.loads(status_file.read_text(encoding='utf-8'))
+        
+        # If the worker is waiting for the captcha, add the image data to the response
+        if status_data.get("status") == "WAITING_CAPTCHA":
+            b64_file = run_dir / "captcha.b64"
+            if b64_file.is_file():
+                status_data["image_data"] = f"data:image/png;base64,{b64_file.read_text(encoding='utf-8')}"
+        
+        return status_data
+    except Exception as e:
+        logger.error(f"Error reading status for run_id {run_id}: {e}")
+        return JSONResponse(status_code=500, content={"status": "error", "message": str(e)})
+
+@app.post("/eligibility/submit-answer/{run_id}")
+async def submit_eligibility_captcha_answer(run_id: str, captcha_text: str = Form(...)):
+    clean_run_id = _clean_path_component(run_id)
+    run_dir = ELIGIBILITY_WORKER_RUNS_DIR / clean_run_id
+    if not run_dir.is_dir():
+        return JSONResponse(status_code=404, content={"message": "Run ID not found."})
+    
+    try:
+        (run_dir / "answer.txt").write_text(captcha_text, encoding='utf-8')
+        return JSONResponse(content={"message": "CAPTCHA answer submitted successfully."})
+    except Exception as e:
+        logger.error(f"Failed to write answer file for run_id {run_id}: {e}")
+        raise HTTPException(status_code=500, detail="Failed to save CAPTCHA answer.")
+
+# === NEW: Competitor Management Routes ===
+
+@app.get("/competitors", name="competitor_management_page", response_class=HTMLResponse)
+async def competitor_management_page(request: Request, db: Session = Depends(get_db)):
+    # Fetch bidders that are not yet assigned to a canonical master
+    bidders = db.query(Bidder).filter(Bidder.canonical_id == None).order_by(Bidder.bidder_name).all()
+    msg = request.query_params.get('msg')
+    return templates.TemplateResponse("competitor_management.html", {
+        "request": request,
+        "bidders": bidders,
+        "msg": msg
+    })
+
+@app.post("/competitors/merge", name="merge_bidders")
+async def merge_bidders(primary_bidder_id: int = Form(...), alias_ids: list[int] = Form(...), db: Session = Depends(get_db)):
+    primary_bidder = db.query(Bidder).filter(Bidder.id == primary_bidder_id).first()
+    if not primary_bidder:
+        raise HTTPException(status_code=404, detail="Primary bidder not found.")
+
+    # Create a new canonical record based on the primary bidder
+    canonical_bidder = CanonicalBidder(canonical_name=primary_bidder.bidder_name)
+    db.add(canonical_bidder)
+    db.flush() # To get the ID of the new canonical record
+
+    # Assign the primary bidder and all selected aliases to this new canonical record
+    bidders_to_merge = db.query(Bidder).filter(Bidder.id.in_(alias_ids)).all()
+    for bidder in bidders_to_merge:
+        bidder.canonical_id = canonical_bidder.id
+    
+    primary_bidder.canonical_id = canonical_bidder.id # Don't forget the primary one!
+    
+    db.commit()
+
+    return RedirectResponse(
+        url=app.url_path_for('competitor_management_page') + "?msg=Bidders+merged+successfully!",
+        status_code=status.HTTP_303_SEE_OTHER
+    )

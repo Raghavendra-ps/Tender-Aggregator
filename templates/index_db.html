@@ -49,24 +49,12 @@
         .actions-cell { display: flex; gap: 8px; }
         #scrape-status { font-weight: 600; color: var(--color-accent); animation: pulse 2s infinite; }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
-
-        /* --- NEW CSS FOR ELIGIBILITY ACCENTS --- */
-        .tender-table td.title-cell {
-            position: relative;
-            padding-left: 20px; /* Make space for the accent bar */
-        }
-        .eligibility-accent {
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 8px; /* Width of the color bar */
-            background-color: transparent; /* Default */
-        }
-        .eligibility-accent.score-red { background-color: #ef4444; } /* Red */
-        .eligibility-accent.score-orange { background-color: #f97316; } /* Orange */
-        .eligibility-accent.score-yellow { background-color: #facc15; } /* Yellow */
-        .eligibility-accent.score-green { background-color: #22c55e; } /* Green */
+        .eligibility-accent { position: absolute; left: 0; top: 0; bottom: 0; width: 8px; background-color: transparent; }
+        .eligibility-accent.score-red { background-color: #ef4444; }
+        .eligibility-accent.score-orange { background-color: #f97316; }
+        .eligibility-accent.score-yellow { background-color: #facc15; }
+        .eligibility-accent.score-green { background-color: #22c55e; }
+        .title-cell { position: relative; padding-left: 20px; }
     </style>
 </head>
 <body>
@@ -77,6 +65,7 @@
         <div class="header-subtitle">Tender Management System</div>
       </div>
       <div class="header-actions">
+        <!-- MODIFIED: Button added here -->
         <a href="{{ url_for('company_profile_page') }}" class="btn btn-secondary">Company Profile</a>
         <a href="{{ url_for('settings_page') }}" class="btn btn-secondary">Settings</a>
         <a href="{{ url_for('rot_manual_scrape_page') }}" class="btn btn-secondary">ROT Scrape</a>

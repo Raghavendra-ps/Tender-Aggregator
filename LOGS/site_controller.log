@@ -746,3 +746,18 @@ Total Site Controller Duration: 0:00:07.759759
 2025-06-27 15:46:47 [INFO] (SiteController) Scrape lock file removed.
 2025-06-27 15:46:47 [INFO] (SiteController) Total Site Controller Duration: 0:01:43.643967
 2025-06-27 15:46:47 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-27 16:59:23 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-27 16:59:23 [INFO] (SiteController) Scrape lock file created.
+2025-06-27 16:59:23 [INFO] (SiteController) Loaded 1 enabled sites for scraping.
+2025-06-27 16:59:23 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-27 16:59:23 [INFO] (SiteController) Sites to be processed: ['Haryana']
+2025-06-27 16:59:23 [INFO] (SiteController) 
+>>> Starting scrape for site: Haryana <<<
+2025-06-27 16:59:51 [INFO] (SiteController) >>> Finished scrape for site: Haryana successfully. <<<
+2025-06-27 16:59:51 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-27 16:59:51 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 1, Sites Failed: 0
+2025-06-27 16:59:51 [INFO] (SiteController) Scrape lock file removed.
+2025-06-27 16:59:51 [INFO] (SiteController) Total Site Controller Duration: 0:00:27.072083
+2025-06-27 16:59:51 [INFO] (SiteController) ===== Site Controller Finished =====

@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker, relationship, declarative_base
 from sqlalchemy.sql import func
 from pathlib import Path
 import logging
-
+from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime, Float, ForeignKey, JSON, Boolean
 # --- Setup basic logging for database interactions ---
 db_logger = logging.getLogger("database_module")
 if not db_logger.hasHandlers():
@@ -189,6 +189,44 @@ class EligibilityCheck(Base):
     # in a hot-reload scenario, it should just use the existing one.
     __table_args__ = {'extend_existing': True}
     # --- END FIX ---
+
+class CanonicalBidder(Base):
+    __tablename__ = "canonical_bidders"
+
+    id = Column(Integer, primary_key=True, index=True)
+    canonical_name = Column(String, unique=True, index=True, nullable=False)
+    notes = Column(Text, nullable=True)
+    aliases = relationship("Bidder", back_populates="canonical_bidder")
+
+    # --- FIX: Add table args for hot-reloading ---
+    __table_args__ = {'extend_existing': True}
+
+    def __repr__(self):
+        return f"<CanonicalBidder(name='{self.canonical_name}')>"
+
+
+class Bidder(Base):
+    __tablename__ = "bidders"
+    
+    id = Column(Integer, primary_key=True, index=True)
+    bidder_name = Column(String, unique=True, index=True, nullable=False)
+    
+    # Foreign Key to the canonical bidder
+    canonical_id = Column(Integer, ForeignKey("canonical_bidders.id"), nullable=True)
+    
+    # Relationship to link back to the master record
+    canonical_bidder = relationship("CanonicalBidder", back_populates="aliases")
+
+    first_seen_on_site = Column(String, nullable=True)
+    notes = Column(Text, nullable=True)
+    
+    bids = relationship("TenderBid", back_populates="bidder", cascade="all, delete-orphan")
+
+    # --- FIX: Add table args for hot-reloading ---
+    __table_args__ = {'extend_existing': True}
+
+    def __repr__(self):
+        return f"<Bidder(id={self.id}, name='{self.bidder_name}')>"
 
 # --- Standalone Execution ---
 if __name__ == "__main__":

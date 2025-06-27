@@ -1,11 +1,11 @@
 {
   "global_scraper_settings": {
     "scrape_py_limits": {
-      "max_list_pages": 10,
+      "max_list_pages": 1,
       "retries": 3
     },
     "concurrency": {
-      "list_pages": 1,
+      "list_pages": 10,
       "detail_pages": 2
     },
     "timeouts": {
@@ -59,7 +59,7 @@
     "Assam": {
       "base_url": "https://assamtenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://assamtenders.gov.in/nicgep/app",
-      "enabled": true
+      "enabled": false
     },
     "Chandigarh": {
       "base_url": "https://etenders.chd.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
@@ -89,7 +89,7 @@
     "Haryana": {
       "base_url": "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",
       "domain": "https://etenders.hry.nic.in/nicgep/app",
-      "enabled": false
+      "enabled": true
     },
     "Himachal Pradesh": {
       "base_url": "https://hptenders.gov.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp={}",

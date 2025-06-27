@@ -137,6 +137,9 @@ async def update_db_status(tender_pk_id: int, status: str, result: Optional[dict
         db.close()
 
 # --- Main Worker Logic ---
+
+# In eligibility_worker.py
+
 async def run_eligibility_check(run_id: str, tender_pk_id: int, tender_url: str):
     setup_worker_logging(run_id)
     run_dir = ELIGIBILITY_WORKER_RUNS_DIR / run_id
@@ -174,12 +177,14 @@ async def run_eligibility_check(run_id: str, tender_pk_id: int, tender_url: str)
             await handle_popups_and_timeouts(page)
 
             captcha_image_element = page.locator("#captchaImage")
-            # --- FIX: Check for the captcha image to verify we are on the correct page ---
+            
+            # --- THIS IS THE FIX ---
+            # Instead of checking the URL, we robustly check for the CAPTCHA image's visibility.
             if not await captcha_image_element.is_visible(timeout=10000):
-                raise Exception(f"Landed on page '{page.url}' but it does not contain a CAPTCHA image.")
+                raise Exception(f"Landed on page '{page.url}' but it does not contain the expected CAPTCHA image.")
+            # --- END OF FIX ---
 
             logger.info("On CAPTCHA page. Saving CAPTCHA for user.")
-            await captcha_image_element.wait_for(state="visible", timeout=30000)
             captcha_b64_bytes = await captcha_image_element.screenshot(type='png')
             (run_dir / 'captcha.b64').write_text(base64.b64encode(captcha_b64_bytes).decode('utf-8'))
             update_status(run_dir, "WAITING_CAPTCHA")
@@ -210,16 +215,16 @@ async def run_eligibility_check(run_id: str, tender_pk_id: int, tender_url: str)
 
         except Exception as e:
             logger.error(f"An error occurred during download phase: {e}", exc_info=True)
-            # --- FIX: Use the correct variable name `run_dir` ---
             if page and not page.is_closed():
-                await page.screenshot(path=run_dir / "error_screenshot.png")
-                logger.error(f"Saved error screenshot to: {run_dir / 'error_screenshot.png'}")
+                error_screenshot_path = run_dir / "error_screenshot.png"
+                await page.screenshot(path=error_screenshot_path)
+                logger.error(f"Saved error screenshot to: {error_screenshot_path}")
             await update_db_status(tender_pk_id, "failed", {"error": str(e)})
             if context: await context.close()
             if browser: await browser.close()
             return
         
-        # --- Post-download processing ---
+        # --- Post-download processing (no changes needed here) ---
         try:
             update_status(run_dir, "processing", "Download complete. Extracting files...")
             with zipfile.ZipFile(download_path, 'r') as zip_ref:
@@ -281,7 +286,6 @@ async def run_eligibility_check(run_id: str, tender_pk_id: int, tender_url: str)
              update_status(run_dir, "failed", str(e))
              await update_db_status(tender_pk_id, "failed", {"error": str(e)})
         finally:
-            # --- FIX: Correct cleanup logic ---
             if context:
                 try: await context.close()
                 except Exception: pass
@@ -289,7 +293,6 @@ async def run_eligibility_check(run_id: str, tender_pk_id: int, tender_url: str)
                 try: await browser.close()
                 except Exception: pass
             logger.info("Eligibility check worker finished.")
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Eligibility Check Worker for a single tender.")

@@ -1524,3 +1524,10 @@ FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_chec
 16:29:58 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627162958
 16:32:50 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627163250
 16:37:07 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627163707
+16:42:19 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627164219
+16:45:32 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627164532
+16:48:20 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627164820
+16:49:00 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627164900
+16:53:17 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627165317
+16:55:33 [INFO] (Dashboard) Launching eligibility worker for Tender PK 5. Run ID: eligibility_5_20250627165533
+17:00:10 [INFO] (Dashboard) Launching eligibility worker for Tender PK 10. Run ID: eligibility_10_20250627170010

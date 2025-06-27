@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitor Management - TenFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        /* (Using similar styles to settings.html) */
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #0f172a; margin: 0; padding: 2rem; }
+        .container { max-width: 1200px; margin: auto; background: white; padding: 2rem; }
+        h2, h3 { color: #0f172a; border-bottom: 2px solid #0f172a; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .btn { display: inline-block; padding: 0.5rem 1rem; background: #1e293b; color: white; text-decoration: none; border: none; cursor: pointer; }
+        .btn-success { background-color: #16a34a; }
+        .form-group { margin-bottom: 1rem; }
+        label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
+        select, input[type="text"] { width: 100%; padding: 0.5rem; border: 1px solid #e2e8f0; }
+        .bidder-list { columns: 3; list-style: none; padding: 0; }
+        .bidder-list li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Competitor Management</h2>
+        
+        {% if msg %}
+            <p style="background: #dcfce7; color: #166534; padding: 1rem; margin-bottom: 1rem;">{{ msg }}</p>
+        {% endif %}
+
+        <form action="{{ url_for('merge_bidders') }}" method="post">
+            <h3>Merge Duplicate Bidders</h3>
+            <div class="form-group">
+                <label for="primary_bidder_id">Select Primary (Canonical) Bidder:</label>
+                <select name="primary_bidder_id" id="primary_bidder_id" required>
+                    <option value="">-- Choose a primary name --</option>
+                    {% for bidder in bidders %}
+                    <option value="{{ bidder.id }}">{{ bidder.bidder_name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Select Aliases to Merge into Primary:</label>
+                <ul class="bidder-list">
+                    {% for bidder in bidders %}
+                    <li>
+                        <input type="checkbox" name="alias_ids" value="{{ bidder.id }}" id="alias_{{ bidder.id }}">
+                        <label for="alias_{{ bidder.id }}">{{ bidder.bidder_name }}</label>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <button type="submit" class="btn btn-success">Merge Selected Bidders</button>
+        </form>
+    </div>
+</body>
+</html>
