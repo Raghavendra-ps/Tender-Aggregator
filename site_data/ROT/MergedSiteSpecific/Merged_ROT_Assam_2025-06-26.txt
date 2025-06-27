@@ -1,0 +1,110 @@
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_WREAP_42413_1</RotTenderId>
+<RotTitleRef>[W9-LBS Additional high priority underwater riverbank protection works  (Section 1) and above water riverbank protection works (Section 2) in Lakhimpur (Dhakuwakhana,  Bonpuroi), Biswanath and Sonitpur Districts, LOT 2][WRD/ADB/OCB-Works/07]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources-Externally Aided Project||WRD-ADB Funded Procurements</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwXBy8Y7aexlJ2RQAYYnOAA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_WREAP_42411_1</RotTenderId>
+<RotTitleRef>[W9-LBS Additional high priority underwater riverbank protection works  (Section 1) and above water riverbank protection works (Section 2) in Lakhimpur (Dhakuwakhana,  Bonpuroi), Biswanath and Sonitpur Districts, LOT 1][WRD/ADB/OCB-Works/07]</RotTitleRef>
+<RotOrganisationChain>Department of Water Resources-Externally Aided Project||WRD-ADB Funded Procurements</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sbsg9jng%2BD2dtVoirTEjk%2FA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_WPTBC_43280_1</RotTenderId>
+<RotTitleRef>[Submission for Administrative approval of Rs. 27.71826 lakhs for Construction of Drainage system and Paver Block Parking at Directorate of  Women and Child Development, Assam under SOPD-G][PTDC/Engg/2024-25/293]</RotTitleRef>
+<RotOrganisationChain>Welfare of Plain Tribes and Backward Classes||Director - WPT and BC</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SJhCLRVC3oykjAu4Hk%2BHbgg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_WPTBC_42805_1</RotTenderId>
+<RotTitleRef>[Administrative Approval for an amount of Rs. 1, 16,03,400.00 only for Construction of Grade III Quarters at Dhemaji Polytechnic under SOPD-G during the year 2024-25][PTDC/Engg/2024-25/283]</RotTitleRef>
+<RotOrganisationChain>Welfare of Plain Tribes and Backward Classes||Director - WPT and BC</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SS5NmHwHo90yeOZ9%2FNczMrA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_UDD_43538_1</RotTenderId>
+<RotTitleRef>[  IMPROVEMENT OF STAFF QUARTER BUILDING FIRST AND SECOND FLOOR AT PALASHBARI MUNICIPAL MARKET][PMBIII/140/Staff Qrtr./24/714-724]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Directorate of Municipality Administration - UDD||Palashbari Municipal Board</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SZbVdkfoMzNgUEmOUB2SDhA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_UDD_42680_1</RotTenderId>
+<RotTitleRef>[Construction of Vehicle Shed in the plot of Lumding Municipal Board  at Pub Lumding Veterinary Hospital road in Ward no-11,under 15th FC untied 1st installment for the year 2020-21][LMB.81/15th Fc(1st instl)/2020-21/NIT/2024-25/861  dated -13/02/2025]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Directorate of Municipality Administration - UDD||Lumding Municipal Board</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sm8lznyd%2FU26Lmo0sWbYhVA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_UDD_42678_1</RotTenderId>
+<RotTitleRef>[Construction of Market Complex 1st Floor Phase-II in the plot of Lumding Municipal Board at Veterinary Hospital road in Ward no-11,under 14th FC 1st installment for the year 2018-19][LMB.79/14th Fc(1st instl)/2018-19/NIT/2024-25/860]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Directorate of Municipality Administration - UDD||Lumding Municipal Board</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SNNeVZ1xSX75LpY9EMPKLxg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_UDD_42626_1</RotTenderId>
+<RotTitleRef>[6 MLD STP cum FSTP at Dibrugarh under AMRUT 2][AS/AMRUT-2.0/23/2023/1152/D]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Mission Directorate AMRUT Assam||City Mission Office Guwahati</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SEvbRLVhnw5z6R%2FeolnJQ7Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_UDD_42621_1</RotTenderId>
+<RotTitleRef>[2 MLD STP cum FSTP  MBBR Technology at Silchar Meherpur under AMRUT 2][AS/AMRUT-2.0/23/2023/1152/S]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Mission Directorate AMRUT Assam||City Mission Office Guwahati</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SS3GcVD0DSv4IG67v5VFvcA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_UDD_42404_1</RotTenderId>
+<RotTitleRef>[Supply of Truck mounted road sweeping machine (Including Registration, Insurance and others charges for running on road.)][BRMB/PW/C/15FCT/48/24-25/2529]</RotTitleRef>
+<RotOrganisationChain>Urban Development Department||Directorate of Municipality Administration - UDD||Barpeta Road Municipal Board</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://assamtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Szg2OtSVTeLvdjuTVyBjyVw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Assam</SourceSiteKey>
+--- TENDER END ---
+

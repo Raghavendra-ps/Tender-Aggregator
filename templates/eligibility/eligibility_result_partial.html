@@ -1,0 +1,97 @@
+<!-- This partial template renders the AI analysis result -->
+<style>
+    .eligibility-result-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .summary-card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        padding: 20px;
+    }
+    .summary-card h5 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-size: 1.1rem;
+        color: #1e293b;
+    }
+    .clause-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.85rem;
+    }
+    .clause-table th, .clause-table td {
+        border: 1px solid #e2e8f0;
+        padding: 10px;
+        text-align: left;
+        vertical-align: top;
+    }
+    .clause-table th {
+        background-color: #f1f5f9;
+        font-weight: 600;
+    }
+    .conclusion-met { color: #166534; font-weight: 600; }
+    .conclusion-not-met { color: #991b1b; font-weight: 600; }
+    .conclusion-review { color: #9a3412; font-weight: 600; }
+    .raw-response {
+        white-space: pre-wrap;
+        background-color: #1e293b;
+        color: #e2e8f0;
+        padding: 16px;
+        border-radius: 4px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.8rem;
+    }
+</style>
+
+<div class="eligibility-result-grid">
+    {% if result.final_summary %}
+    <div class="summary-card">
+        <h5>AI Summary</h5>
+        <p>{{ result.final_summary }}</p>
+    </div>
+    {% endif %}
+
+    {% if result.clause_analysis %}
+    <div>
+        <h5>Clause-by-Clause Analysis</h5>
+        <table class="clause-table">
+            <thead>
+                <tr>
+                    <th>Clause/Requirement</th>
+                    <th>Your Profile Match</th>
+                    <th>Conclusion</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in result.clause_analysis %}
+                <tr>
+                    <td><strong>{{ item.clause | default('N/A') }}</strong><br>{{ item.requirement | default('--') }}</td>
+                    <td>{{ item.company_profile_match | default('--') }}</td>
+                    <td>
+                        {% set conclusion = item.conclusion | lower %}
+                        {% if 'met' in conclusion and 'not' not in conclusion %}
+                            <span class="conclusion-met">{{ item.conclusion }}</span>
+                        {% elif 'not met' in conclusion %}
+                            <span class="conclusion-not-met">{{ item.conclusion }}</span>
+                        {% else %}
+                            <span class="conclusion-review">{{ item.conclusion }}</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% elif result.raw_response %}
+        <div class="summary-card">
+            <h5>AI Raw Response</h5>
+            <pre class="raw-response">{{ result.raw_response }}</pre>
+        </div>
+    {% else %}
+        <div class="summary-card">
+            <p>The AI response could not be parsed into a structured format. Please check the worker logs for details.</p>
+        </div>
+    {% endif %}
+</div>

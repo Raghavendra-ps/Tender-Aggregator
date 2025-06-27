@@ -824,3 +824,703 @@ NameError: name 'get_rot_site_config' is not defined
 15:24:09 [WARNING] (Dashboard) Stale scrape lock file found on startup. Removing it.
 15:28:25 [WARNING] (Dashboard) Stale scrape lock file found on startup. Removing it.
 15:29:35 [WARNING] (Dashboard) Stale scrape lock file found on startup. Removing it.
+16:46:19 [INFO] (Dashboard) Launched ROT Worker for Assam. Run ID: rot_worker_Assam_20250626164619027394
+16:46:21 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Assam_20250626164619027394 | Status: FETCHING_CAPTCHA | Captcha File Exists: False
+16:46:23 [INFO] (Dashboard) [CAPTCHA STATUS] Run ID: rot_worker_Assam_20250626164619027394 | Status: WAITING_CAPTCHA | Captcha File Exists: True
+13:21:33 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627132133
+13:24:33 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627132433
+15:19:33 [INFO] (Dashboard) Launching eligibility worker for Tender PK 7. Run ID: eligibility_7_20250627151933
+15:24:17 [INFO] (Dashboard) Launching eligibility worker for Tender PK 7. Run ID: eligibility_7_20250627152417
+15:44:47 [ERROR] (Dashboard) DB Error on homepage: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: eligibility_checks.eligibility_score
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 154, in homepage
+    results = query.order_by(desc(Tender.published_date)).limit(200).all()
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+15:44:49 [ERROR] (Dashboard) DB Error on homepage: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: eligibility_checks.eligibility_score
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 154, in homepage
+    results = query.order_by(desc(Tender.published_date)).limit(200).all()
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+15:44:50 [ERROR] (Dashboard) DB Error on homepage: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: eligibility_checks.eligibility_score
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 154, in homepage
+    results = query.order_by(desc(Tender.published_date)).limit(200).all()
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+15:44:51 [ERROR] (Dashboard) DB Error on homepage: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: eligibility_checks.eligibility_score
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 154, in homepage
+    results = query.order_by(desc(Tender.published_date)).limit(200).all()
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+15:44:51 [ERROR] (Dashboard) DB Error on homepage: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: eligibility_checks.eligibility_score
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 154, in homepage
+    results = query.order_by(desc(Tender.published_date)).limit(200).all()
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+15:44:52 [ERROR] (Dashboard) DB Error on homepage: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: eligibility_checks.eligibility_score
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/dashboard.py", line 154, in homepage
+    results = query.order_by(desc(Tender.published_date)).limit(200).all()
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ~~~~~~~~~~^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/query.py", line 2857, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+        params,
+        ^^^^^^^
+        execution_options={"_sa_orm_load_options": self.load_options},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/sqlalchemy/engine/default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: eligibility_checks.eligibility_score
+[SQL: SELECT tenders.id AS tenders_id, tenders.tender_id AS tenders_tender_id, tenders.source_site AS tenders_source_site, tenders.tender_title AS tenders_tender_title, tenders.organisation_chain AS tenders_organisation_chain, tenders.tender_value_numeric AS tenders_tender_value_numeric, tenders.emd_amount_numeric AS tenders_emd_amount_numeric, tenders.published_date AS tenders_published_date, tenders.closing_date AS tenders_closing_date, tenders.opening_date AS tenders_opening_date, tenders.location AS tenders_location, tenders.pincode AS tenders_pincode, tenders.status AS tenders_status, tenders.full_details_json AS tenders_full_details_json, tenders.created_at AS tenders_created_at, tenders.updated_at AS tenders_updated_at, eligibility_checks.eligibility_score AS eligibility_checks_eligibility_score 
+FROM tenders LEFT OUTER JOIN eligibility_checks ON tenders.id = eligibility_checks.tender_id_fk ORDER BY tenders.published_date DESC
+ LIMIT ? OFFSET ?]
+[parameters: (200, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+15:45:20 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627154520
+15:53:10 [INFO] (Dashboard) Creating new company profile.
+15:53:17 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627155317
+16:02:31 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627160231
+16:02:55 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627160255
+16:04:25 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627160425
+16:05:59 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627160559
+16:07:20 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627160720
+16:20:24 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627162024
+16:21:49 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627162149
+16:22:39 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627162239
+16:24:18 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627162418
+16:29:58 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627162958
+16:32:50 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627163250
+16:37:07 [INFO] (Dashboard) Launching eligibility worker for Tender PK 1. Run ID: eligibility_1_20250627163707

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - TenFin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Using similar styles to settings.html for consistency */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; }
+        :root {
+            --color-primary: #000000; --color-secondary: #1a1a1a; --color-accent: #2563eb;
+            --color-surface: #ffffff; --color-surface-alt: #f8fafc; --color-border: #e2e8f0;
+            --color-text: #0f172a; --color-text-muted: #64748b; --color-success: #059669;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--color-surface-alt); color: var(--color-text); line-height: 1.5; }
+        .container { max-width: 900px; margin: 0 auto; padding: 48px 32px; background: var(--color-surface); min-height: 100vh; }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: var(--color-primary); text-transform: uppercase; margin-bottom: 48px; text-align: center; border-bottom: 2px solid var(--color-primary); padding-bottom: 24px; }
+        fieldset { border: 1px solid var(--color-border); padding: 32px; margin-bottom: 32px; }
+        legend { font-weight: 700; font-size: 1.125rem; padding: 0 16px; color: var(--color-primary); text-transform: uppercase; }
+        .form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-bottom: 24px; }
+        .form-group { display: flex; flex-direction: column; }
+        label { display: block; margin-bottom: 8px; font-size: 0.875rem; font-weight: 600; color: var(--color-text); text-transform: uppercase; }
+        .input, textarea { width: 100%; border: 1px solid var(--color-border); background: var(--color-surface); padding: 12px 16px; font-size: 0.875rem; color: var(--color-text); border-radius: 0; font-family: inherit; }
+        .input:focus, textarea:focus { outline: 2px solid var(--color-accent); outline-offset: -2px; border-color: var(--color-accent); }
+        textarea { min-height: 120px; resize: vertical; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border: 1px solid transparent; font-family: inherit; font-size: 0.875rem; font-weight: 600; text-decoration: none; color: var(--color-surface); background: var(--color-primary); cursor: pointer; text-transform: uppercase; }
+        .btn-success { background: var(--color-success); }
+        .container { max-width: none; width: 100%; margin: 0 auto; padding: 48px 32px; background: var(--color-surface); min-height: 100vh; }
+        .btn-secondary { background: transparent; color: var(--color-primary); border-color: var(--color-border); }
+        .form-actions { margin-top: 32px; display: flex; gap: 16px; justify-content: flex-end; }
+        .status-message { padding: 16px; margin-bottom: 24px; border-left: 4px solid; font-weight: 500; }
+        .status-message.success { color: var(--color-success); border-color: var(--color-success); background: #ecfdf5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Company Profile for Eligibility</h2>
+        
+        {% if msg %}
+        <div class="status-message success">{{ msg }}</div>
+        {% endif %}
+
+        <form action="{{ url_for('save_company_profile') }}" method="post">
+            <fieldset>
+                <legend>Basic Information</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="company_name">Company Name</label>
+                        <input type="text" id="company_name" name="company_name" class="input" value="{{ profile.get('company_name', '') }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="registration_type">Registration Type</label>
+                        <input type="text" id="registration_type" name="registration_type" class="input" placeholder="e.g., Private Limited, LLP" value="{{ profile.get('registration_type', '') }}">
+                    </div>
+                </div>
+                <div class="form-row">
+                     <div class="form-group">
+                        <label for="years_in_business">Years in Business</label>
+                        <input type="number" id="years_in_business" name="years_in_business" class="input" value="{{ profile.get('years_in_business', '') }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="annual_turnover">Annual Turnover (in INR)</label>
+                        <input type="text" id="annual_turnover" name="annual_turnover" class="input" placeholder="e.g., 5,00,00,000" value="{{ profile.get('annual_turnover', '') }}">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience & Keywords</legend>
+                 <div class="form-group">
+                    <label for="core_business_keywords">Core Business Keywords (comma-separated)</label>
+                    <textarea id="core_business_keywords" name="core_business_keywords" class="input" placeholder="e.g., road construction, civil works, bridge, ERP implementation, software development">{{ profile.get('core_business_keywords', '') }}</textarea>
+                </div>
+                 <div class="form-group">
+                    <label for="past_projects_summary">Summary of Past Projects & Experience</label>
+                    <textarea id="past_projects_summary" name="past_projects_summary" class="input" placeholder="Describe key projects, their values, and outcomes. The AI will use this text for comparison.">{{ profile.get('past_projects_summary', '') }}</textarea>
+                </div>
+            </fieldset>
+
+             <fieldset>
+                <legend>Certifications & Credentials</legend>
+                 <div class="form-group">
+                    <label for="certifications">Certifications (comma-separated)</label>
+                    <input type="text" id="certifications" name="certifications" class="input" placeholder="e.g., ISO 9001:2015, CMMI Level 3" value="{{ profile.get('certifications', '') }}">
+                </div>
+            </fieldset>
+            
+            <div class="form-actions">
+                <a href="{{ url_for('homepage') }}" class="btn btn-secondary">Back to Dashboard</a>
+                <button type="submit" class="btn btn-success">Save Profile</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

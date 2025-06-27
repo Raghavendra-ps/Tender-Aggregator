@@ -1,0 +1,58 @@
+16:46:19 [INFO] (ROTWorker-Assam Run-027394) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Assam/worker_rot_worker_Assam_20250626164619027394_2025-06-26.log
+16:46:19 [INFO] (ROTWorker-Assam Run-027394) --- Starting Headless ROT Worker for Site: Assam, Run ID: rot_worker_Assam_20250626164619027394 ---
+16:46:19 [INFO] (ROTWorker-Assam Run-027394) --- Dates: From=None, To=None ---
+16:46:19 [INFO] (ROTWorker-Assam Run-027394) Worker status updated to: WORKER_STARTED
+16:46:19 [INFO] (ROTWorker-Assam Run-027394) Worker status updated to: FETCHING_CAPTCHA
+16:46:19 [INFO] (ROTWorker-Assam Run-027394) Selecting tender status '5'.
+16:46:22 [INFO] (ROTWorker-Assam Run-027394) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Assam_20250626164619027394/captcha.b64
+16:46:22 [INFO] (ROTWorker-Assam Run-027394) Worker status updated to: WAITING_CAPTCHA
+16:46:22 [INFO] (ROTWorker-Assam Run-027394) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Assam_20250626164619027394/answer.txt (max 300s)...
+16:46:30 [INFO] (ROTWorker-Assam Run-027394) CAPTCHA solution received.
+16:46:30 [INFO] (ROTWorker-Assam Run-027394) Worker status updated to: PROCESSING_WITH_CAPTCHA
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) Worker status updated to: SCRAPING_RESULTS
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) --- Processing List Page: 1/1 ---
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [ListPage1] Extracting table data...
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [ListPage1] Extracted 10 items.
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [ListPage1_2025_WREAP_42413_1] Final summary link found. Clicking...
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [ListPage1_2025_WREAP_42411_1] Final summary link found. Clicking...
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [2025_WREAP_42413_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WREAP_42413_1_20250626_164631_StageSummary.html
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [2025_WREAP_42413_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Assam/ROT_2025_WREAP_42413_1_20250626_164631_StageSummary.html --site-key Assam
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [2025_WREAP_42411_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WREAP_42411_1_20250626_164631_StageSummary.html
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [2025_WREAP_42411_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Assam/ROT_2025_WREAP_42411_1_20250626_164631_StageSummary.html --site-key Assam
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [2025_WREAP_42413_1 Popup] Successfully processed structured data for ROT_2025_WREAP_42413_1_20250626_164631_StageSummary.html.
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [2025_WREAP_42411_1 Popup] Successfully processed structured data for ROT_2025_WREAP_42411_1_20250626_164631_StageSummary.html.
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [ListPage1_2025_WPTBC_43280_1] Final summary link found. Clicking...
+16:46:31 [INFO] (ROTWorker-Assam Run-027394) [ListPage1_2025_WPTBC_42805_1] Final summary link found. Clicking...
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_WPTBC_43280_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WPTBC_43280_1_20250626_164632_StageSummary.html
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_WPTBC_43280_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Assam/ROT_2025_WPTBC_43280_1_20250626_164632_StageSummary.html --site-key Assam
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_WPTBC_42805_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WPTBC_42805_1_20250626_164632_StageSummary.html
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_WPTBC_42805_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Assam/ROT_2025_WPTBC_42805_1_20250626_164632_StageSummary.html --site-key Assam
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_WPTBC_43280_1 Popup] Successfully processed structured data for ROT_2025_WPTBC_43280_1_20250626_164632_StageSummary.html.
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_WPTBC_42805_1 Popup] Successfully processed structured data for ROT_2025_WPTBC_42805_1_20250626_164632_StageSummary.html.
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [ListPage1_2025_UDD_43538_1] Final summary link found. Clicking...
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [ListPage1_2025_UDD_42680_1] Final summary link found. Clicking...
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_43538_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDD_43538_1_20250626_164632_StageSummary.html
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_43538_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Assam/ROT_2025_UDD_43538_1_20250626_164632_StageSummary.html --site-key Assam
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42680_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDD_42680_1_20250626_164632_StageSummary.html
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42680_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Assam/ROT_2025_UDD_42680_1_20250626_164632_StageSummary.html --site-key Assam
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_43538_1 Popup] Successfully processed structured data for ROT_2025_UDD_43538_1_20250626_164632_StageSummary.html.
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42680_1 Popup] Successfully processed structured data for ROT_2025_UDD_42680_1_20250626_164632_StageSummary.html.
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [ListPage1_2025_UDD_42678_1] Final summary link found. Clicking...
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42678_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDD_42678_1_20250626_164632_StageSummary.html
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42678_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Assam/ROT_2025_UDD_42678_1_20250626_164632_StageSummary.html --site-key Assam
+16:46:32 [INFO] (ROTWorker-Assam Run-027394) [ListPage1_2025_UDD_42626_1] Final summary link found. Clicking...
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42678_1 Popup] Successfully processed structured data for ROT_2025_UDD_42678_1_20250626_164632_StageSummary.html.
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42626_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDD_42626_1_20250626_164633_StageSummary.html
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42626_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Assam/ROT_2025_UDD_42626_1_20250626_164633_StageSummary.html --site-key Assam
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [ListPage1_2025_UDD_42621_1] Final summary link found. Clicking...
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42626_1 Popup] Successfully processed structured data for ROT_2025_UDD_42626_1_20250626_164633_StageSummary.html.
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42621_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDD_42621_1_20250626_164633_StageSummary.html
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42621_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Assam/ROT_2025_UDD_42621_1_20250626_164633_StageSummary.html --site-key Assam
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [ListPage1_2025_UDD_42404_1] Final summary link found. Clicking...
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42621_1 Popup] Successfully processed structured data for ROT_2025_UDD_42621_1_20250626_164633_StageSummary.html.
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42404_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDD_42404_1_20250626_164633_StageSummary.html
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42404_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Assam/ROT_2025_UDD_42404_1_20250626_164633_StageSummary.html --site-key Assam
+16:46:33 [INFO] (ROTWorker-Assam Run-027394) [2025_UDD_42404_1 Popup] Successfully processed structured data for ROT_2025_UDD_42404_1_20250626_164633_StageSummary.html.
+16:46:40 [INFO] (ROTWorker-Assam Run-027394) Worker status updated to: FINISHED_SUCCESS
+16:46:40 [INFO] (ROTWorker-Assam Run-027394) Playwright resources closed.
+16:46:40 [INFO] (ROTWorker-Assam Run-027394) Worker for Assam terminated with status: FINISHED_SUCCESS

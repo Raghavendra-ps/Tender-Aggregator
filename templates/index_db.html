@@ -15,7 +15,7 @@
             --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
         }
         body { font-family: 'Inter', sans-serif; background: var(--color-surface-alt); color: var(--color-text); line-height: 1.5; }
-        .container { max-width: 1600px; margin: 0 auto; padding: 48px 32px; background: var(--color-surface); min-height: 100vh; }
+        .container { max-width: none; width: 100%; margin: 0 auto; padding: 48px 32px; background: var(--color-surface); min-height: 100vh; }
         .header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid var(--color-border); }
         .header h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: -0.02em; line-height: 0.9; color: var(--color-primary); text-transform: uppercase; }
         .header-subtitle { font-size: 0.875rem; font-weight: 500; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 8px; }
@@ -49,6 +49,24 @@
         .actions-cell { display: flex; gap: 8px; }
         #scrape-status { font-weight: 600; color: var(--color-accent); animation: pulse 2s infinite; }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+
+        /* --- NEW CSS FOR ELIGIBILITY ACCENTS --- */
+        .tender-table td.title-cell {
+            position: relative;
+            padding-left: 20px; /* Make space for the accent bar */
+        }
+        .eligibility-accent {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 8px; /* Width of the color bar */
+            background-color: transparent; /* Default */
+        }
+        .eligibility-accent.score-red { background-color: #ef4444; } /* Red */
+        .eligibility-accent.score-orange { background-color: #f97316; } /* Orange */
+        .eligibility-accent.score-yellow { background-color: #facc15; } /* Yellow */
+        .eligibility-accent.score-green { background-color: #22c55e; } /* Green */
     </style>
 </head>
 <body>
@@ -59,10 +77,10 @@
         <div class="header-subtitle">Tender Management System</div>
       </div>
       <div class="header-actions">
-        <!-- NEW: Status display area -->
-        <span id="scrape-status" style="display: none;">Scraping in progress...</span>
+        <a href="{{ url_for('company_profile_page') }}" class="btn btn-secondary">Company Profile</a>
         <a href="{{ url_for('settings_page') }}" class="btn btn-secondary">Settings</a>
         <a href="{{ url_for('rot_manual_scrape_page') }}" class="btn btn-secondary">ROT Scrape</a>
+        <span id="scrape-status" style="display: none;">Scraping in progress...</span>
         <button type="button" id="fetch-tenders-btn" class="btn">Fetch Tenders Now</button>
       </div>
     </header>
@@ -87,7 +105,7 @@
             {% endif %}
         </div>
         <div class="table-responsive-wrapper">
-            {% if tenders %}
+            {% if tenders_with_scores %}
             <table class="tender-table">
                 <thead>
                     <tr>
@@ -95,12 +113,23 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for tender in tenders %}
+                    {% for item in tenders_with_scores %}
+                    {% set tender = item.tender %}
+                    {% set score = item.eligibility_score %}
+                    {%
+                       set score_class = 'score-green' if score > 50 else
+                                         'score-yellow' if score > 25 else
+                                         'score-orange' if score >= 10 else
+                                         'score-red' if score >= 0 else ''
+                    %}
                     <tr>
                         <td>{{ tender.published_date | datetime('%Y-%m-%d') if tender.published_date else 'N/A' }}</td>
                         <td>{{ tender.tender_id }}</td>
                         <td>{{ tender.source_site }}</td>
-                        <td>{{ tender.tender_title | neat_format }}</td>
+                        <td class="title-cell">
+                            <div class="eligibility-accent {{ score_class }}"></div>
+                            {{ tender.tender_title | neat_format }}
+                        </td>
                         <td>{{ tender.organisation_chain | neat_format }}</td>
                         <td>
                             {% if tender.status == 'Result Announced' %}<span class="status-result">Result Announced</span>
@@ -139,8 +168,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 statusDisplay.style.display = 'inline';
                 fetchBtn.disabled = true;
                 if (!pollInterval) {
-                    // Start polling if not already
-                    pollInterval = setInterval(checkScrapeStatus, 5000); // Poll every 5 seconds
+                    pollInterval = setInterval(checkScrapeStatus, 5000);
                 }
             } else { // status is 'idle'
                 statusDisplay.style.display = 'none';
@@ -148,7 +176,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (pollInterval) {
                     clearInterval(pollInterval);
                     pollInterval = null;
-                    // Scrape finished, reload the page to show new data
                     window.location.reload();
                 }
             }
@@ -171,16 +198,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
         try {
             const response = await fetch("{{ url_for('run_scraper_now') }}", { method: 'POST' });
-            if (response.status === 409) { // Conflict - already running
+            if (response.status === 409) {
                 alert('A scrape is already in progress.');
-                checkScrapeStatus(); // Start polling to get updates
+                checkScrapeStatus();
                 return;
             }
             if (!response.ok) {
                 const errorData = await response.json();
                 throw new Error(errorData.message || 'Failed to start scrape.');
             }
-            // Scrape initiated successfully
             checkScrapeStatus(); 
         } catch (error) {
             alert('Error initiating scrape: ' + error.message);
@@ -188,7 +214,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Initial check when the page loads
     checkScrapeStatus();
 });
 </script>

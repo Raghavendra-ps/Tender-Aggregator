@@ -1,5 +1,3 @@
-# Tender-Aggregator-main/dashboard.py
-
 import os
 import re
 import io
@@ -12,7 +10,7 @@ import logging
 import subprocess
 import sys
 from urllib.parse import urlparse, urljoin
-
+from database import SessionLocal, Tender, TenderResult, CompanyProfile, EligibilityCheck, init_db
 from fastapi import FastAPI, Request, Form, HTTPException, status, Depends
 from fastapi.responses import HTMLResponse, RedirectResponse, FileResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
@@ -20,8 +18,8 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from pydantic import BaseModel
 import httpx
 
-# --- Database Imports ---
-from database import SessionLocal, Tender, TenderResult, init_db
+# --- Database Imports (FIXED) ---
+from database import SessionLocal, Tender, TenderResult, CompanyProfile, init_db
 from sqlalchemy.orm import Session
 from sqlalchemy import desc, func, or_
 
@@ -30,6 +28,8 @@ try:
     from headless_rot_worker import URL_SUFFIX_ROT
 except ImportError:
     URL_SUFFIX_ROT = "?page=WebTenderStatusLists&service=page"
+
+# In dashboard.py
 
 # --- Path and Config Constants ---
 PROJECT_ROOT = Path(__file__).parent.resolve()
@@ -41,10 +41,11 @@ SCHEDULER_SETUP_SCRIPT_PATH = PROJECT_ROOT / "scheduler_setup.py"
 SITE_DATA_ROOT = PROJECT_ROOT / "site_data"
 ROT_DETAIL_HTMLS_DIR = SITE_DATA_ROOT / "ROT" / "DetailHtmls"
 TEMP_DATA_DIR = SITE_DATA_ROOT / "TEMP"
-TEMP_WORKER_RUNS_DIR = TEMP_DATA_DIR / "WorkerRuns"
-# --- NEW: Path to the lock file ---
+TEMP_WORKER_RUNS_DIR = TEMP_DATA_DIR / "WorkerRuns" # For ROT worker
+# --- THIS IS THE FIX ---
+ELIGIBILITY_WORKER_RUNS_DIR = TEMP_DATA_DIR / "EligibilityRuns" # For Eligibility worker
+# --- END FIX ---
 SCRAPE_LOCK_FILE = PROJECT_ROOT / "scrape_in_progress.lock"
-
 
 # --- Logging Setup ---
 # (No changes needed in logging setup)
@@ -129,33 +130,74 @@ def get_rot_site_config(site_key: str) -> Optional[Dict[str, str]]:
     return None
 
 
+# --- NEW: Eligibility Worker Interactive Endpoints ---
+
+@app.get("/eligibility/get-status/{run_id}")
+async def get_eligibility_worker_status(run_id: str):
+    clean_run_id = _clean_path_component(run_id)
+    run_dir = ELIGIBILITY_WORKER_RUNS_DIR / clean_run_id
+    
+    if not run_dir.is_dir():
+        return JSONResponse(status_code=404, content={"status": "error", "message": "Run ID not found."})
+
+    status_file = run_dir / "status.json"
+    if not status_file.is_file():
+        return {"status": "starting"}
+    
+    try:
+        status_data = json.loads(status_file.read_text())
+        
+        if status_data.get("status") == "WAITING_CAPTCHA":
+            b64_file = run_dir / "captcha.b64"
+            if b64_file.is_file():
+                status_data["image_data"] = f"data:image/png;base64,{b64_file.read_text()}"
+        
+        return status_data
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"status": "error", "message": str(e)})
+
+@app.post("/eligibility/submit-answer/{run_id}")
+async def submit_eligibility_captcha_answer(run_id: str, captcha_text: str = Form(...)):
+    clean_run_id = _clean_path_component(run_id)
+    run_dir = ELIGIBILITY_WORKER_RUNS_DIR / clean_run_id
+    if not run_dir.is_dir():
+        return JSONResponse(status_code=404, content={"message": "Run ID not found."})
+    
+    (run_dir / "answer.txt").write_text(captcha_text)
+    return JSONResponse(content={"message": "CAPTCHA answer submitted."})
+
 # === MAIN UI & DATA ROUTES ===
 
 @app.get("/", response_class=HTMLResponse, name="homepage")
 async def homepage(request: Request, db: Session = Depends(get_db), keywords: Optional[str] = None, site_key: Optional[str] = None, start_date: Optional[str] = None, end_date: Optional[str] = None):
     if not templates: return HTMLResponse("Template engine error", 503)
     try:
-        query = db.query(Tender)
+        # --- NEW: Query both Tender and its optional EligibilityCheck ---
+        query = db.query(Tender, EligibilityCheck.eligibility_score).outerjoin(
+            EligibilityCheck, Tender.id == EligibilityCheck.tender_id_fk
+        )
+
         is_search = any([keywords, site_key, start_date, end_date])
         if is_search:
+            # (search logic remains the same)
             if keywords:
                 search_pattern = f"%{keywords}%"
-                search_clauses = [
-                    Tender.tender_title.ilike(search_pattern),
-                    Tender.organisation_chain.ilike(search_pattern),
-                    Tender.tender_id.ilike(search_pattern),
-                    Tender.full_details_json.op('->>')('$.work_description').ilike(search_pattern),
-                    Tender.full_details_json.op('->>')('$.tender_reference_number').ilike(search_pattern)
-                ]
+                search_clauses = [ Tender.tender_title.ilike(search_pattern), Tender.organisation_chain.ilike(search_pattern), Tender.tender_id.ilike(search_pattern), Tender.full_details_json.op('->>')('$.work_description').ilike(search_pattern), Tender.full_details_json.op('->>')('$.tender_reference_number').ilike(search_pattern) ]
                 query = query.filter(or_(*search_clauses))
-            if site_key: 
-                query = query.filter(Tender.source_site == site_key)
-            if start_date: 
-                query = query.filter(Tender.opening_date >= start_date)
-            if end_date: 
-                query = query.filter(Tender.opening_date < (datetime.datetime.strptime(end_date, "%Y-%m-%d") + datetime.timedelta(days=1)))
+            if site_key: query = query.filter(Tender.source_site == site_key)
+            if start_date: query = query.filter(Tender.opening_date >= start_date)
+            if end_date: query = query.filter(Tender.opening_date < (datetime.datetime.strptime(end_date, "%Y-%m-%d") + datetime.timedelta(days=1)))
         
-        tenders = query.order_by(desc(Tender.published_date)).limit(200).all()
+        results = query.order_by(desc(Tender.published_date)).limit(200).all()
+        
+        # --- NEW: Process the query results ---
+        tenders_with_scores = []
+        for tender, score in results:
+            tenders_with_scores.append({
+                "tender": tender,
+                "eligibility_score": score if score is not None else -1
+            })
+
         total_tenders = db.query(func.count(Tender.id)).scalar()
         sites_in_db = [s[0] for s in db.query(Tender.source_site).distinct().order_by(Tender.source_site).all() if s[0]]
     except Exception as e:
@@ -163,9 +205,12 @@ async def homepage(request: Request, db: Session = Depends(get_db), keywords: Op
         return templates.TemplateResponse("error.html", {"request": request, "error": "Database query failed."})
     
     return templates.TemplateResponse("index_db.html", {
-        "request": request, "tenders": tenders, 
-        "total_tenders": total_tenders, "tenders_shown": len(tenders), 
-        "available_sites": sites_in_db, "is_search": is_search, 
+        "request": request, 
+        "tenders_with_scores": tenders_with_scores, # Pass new structure to template
+        "total_tenders": total_tenders, 
+        "tenders_shown": len(tenders_with_scores), 
+        "available_sites": sites_in_db, 
+        "is_search": is_search, 
         "query_keywords": keywords, "query_site": site_key, 
         "query_start_date": start_date, "query_end_date": end_date
     })
@@ -175,7 +220,14 @@ async def view_tender_detail(request: Request, tender_pk_id: int, db: Session = 
     if not templates: raise HTTPException(503, "Template engine error")
     tender = db.query(Tender).filter(Tender.id == tender_pk_id).first()
     if not tender: raise HTTPException(404, "Tender not found in database.")
-    return templates.TemplateResponse("tender_detail.html", {"request": request, "tender": tender.full_details_json or {}})
+    
+    # The 'tender' context variable is the full dictionary from the JSON column.
+    # We also pass the primary key ID itself for use in the template.
+    return templates.TemplateResponse("tender_detail.html", {
+        "request": request, 
+        "tender": tender.full_details_json or {},
+        "tender_pk_id": tender_pk_id 
+    })
 
 @app.get("/result/{tender_pk_id}", name="view_tender_result", response_class=HTMLResponse)
 async def view_tender_result(request: Request, tender_pk_id: int, db: Session = Depends(get_db)):
@@ -244,14 +296,6 @@ async def get_scrape_status():
     else:
         return {"status": "idle"}
 
-
-# (The rest of the file remains the same...)
-@app.post("/save-retention-settings", name="save_retention_settings")
-async def save_retention_settings(enable_retention: bool = Form(False), retention_days: int = Form(30)):
-    settings = load_settings(); settings.setdefault("retention", {})["enabled"] = enable_retention; settings["retention"]["days"] = retention_days
-    if save_settings(settings): return RedirectResponse(url=app.url_path_for('settings_page') + "?msg=retention_settings_saved", status_code=303)
-    return RedirectResponse(url=app.url_path_for('settings_page') + "?error=retention_save_failed", status_code=303)
-
 @app.post("/save-scraper-parameters", name="save_scraper_parameters")
 async def save_scraper_parameters(request: Request):
     form = await request.form(); s = load_settings(); gss = s.setdefault("global_scraper_settings", {})
@@ -292,16 +336,6 @@ async def apply_schedule():
     res=subprocess.run([sys.executable, str(SCHEDULER_SETUP_SCRIPT_PATH)], cwd=PROJECT_ROOT)
     if res.returncode==0: return RedirectResponse(url=app.url_path_for('settings_page') + "?msg=schedule_applied_successfully", status_code=303)
     return RedirectResponse(url=app.url_path_for('settings_page') + "?error=schedule_apply_failed", status_code=303)
-
-@app.post("/run-cleanup", name="run_cleanup_task")
-async def run_cleanup_task(db: Session = Depends(get_db)):
-    settings=load_settings()
-    if not settings.get("retention", {}).get("enabled", False): return RedirectResponse(url=app.url_path_for('settings_page') + "?msg=cleanup_disabled", status_code=303)
-    try:
-        days=int(settings.get("retention",{}).get("days",30)); cutoff=datetime.datetime.now(datetime.timezone.utc)-datetime.timedelta(days=days)
-        deleted=db.query(Tender).filter(Tender.created_at<cutoff).delete(); db.commit()
-        return RedirectResponse(url=app.url_path_for('settings_page') + f"?msg=cleanup_finished_deleted_{deleted}", status_code=303)
-    except Exception: db.rollback(); return RedirectResponse(app.url_path_for('settings_page') + "?error=cleanup_failed", status_code=303)
 
 @app.post("/rot/initiate-rot-worker/{site_key}", name="initiate_rot_worker")
 async def initiate_rot_worker_endpoint(
@@ -370,3 +404,154 @@ async def submit_captcha_answer_route(run_id: str, captcha_text: str = Form(...)
     (run_dir / "answer.txt").write_text(captcha_text)
     (run_dir / "status.txt").write_text("CAPTCHA_ANSWER_SUBMITTED")
     return JSONResponse({"message": "CAPTCHA answer submitted."})
+
+# === Company Profile Routes ===
+
+@app.get("/company-profile", name="company_profile_page", response_class=HTMLResponse)
+async def company_profile_page(request: Request, db: Session = Depends(get_db)):
+    profile_record = db.query(CompanyProfile).filter(CompanyProfile.profile_name == "Default Profile").first()
+    profile_data = {}
+    msg = request.query_params.get('msg')
+    
+    if profile_record:
+        profile_data = profile_record.profile_data
+
+    return templates.TemplateResponse("company_profile.html", {
+        "request": request,
+        "profile": profile_data,
+        "msg": msg
+    })
+
+@app.post("/company-profile", name="save_company_profile")
+async def save_company_profile(request: Request, db: Session = Depends(get_db)):
+    form_data = await request.form()
+    # Convert form data to a dictionary
+    profile_dict = {key: value for key, value in form_data.items()}
+
+    profile_record = db.query(CompanyProfile).filter(CompanyProfile.profile_name == "Default Profile").first()
+
+    if profile_record:
+        # Update existing profile
+        profile_record.profile_data = profile_dict
+        logger.info("Updating existing company profile.")
+    else:
+        # Create a new profile
+        profile_record = CompanyProfile(
+            profile_name="Default Profile",
+            profile_data=profile_dict
+        )
+        db.add(profile_record)
+        logger.info("Creating new company profile.")
+    
+    db.commit()
+
+    return RedirectResponse(
+        url=app.url_path_for('company_profile_page') + "?msg=Profile+saved+successfully!",
+        status_code=status.HTTP_303_SEE_OTHER
+    )
+
+class EligibilityRequest(BaseModel):
+    tender_url: str
+
+@app.get("/tender/{tender_pk_id}", name="view_tender_detail", response_class=HTMLResponse)
+async def view_tender_detail(request: Request, tender_pk_id: int, db: Session = Depends(get_db)):
+    if not templates: raise HTTPException(503, "Template engine error")
+    tender = db.query(Tender).filter(Tender.id == tender_pk_id).first()
+    if not tender: raise HTTPException(404, "Tender not found in database.")
+    # Add tender_pk_id to the context dictionary
+    return templates.TemplateResponse("tender_detail.html", {
+        "request": request, 
+        "tender": tender.full_details_json or {},
+        "tender_pk_id": tender_pk_id 
+    })
+
+@app.post("/eligibility/start-check/{tender_pk_id}", name="start_eligibility_check")
+async def start_eligibility_check(tender_pk_id: int, request_body: EligibilityRequest):
+    worker_script = PROJECT_ROOT / "eligibility_worker.py"
+    if not worker_script.is_file():
+        raise HTTPException(status_code=500, detail="Eligibility worker script not found.")
+
+    run_id = f"eligibility_{tender_pk_id}_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}"
+    
+    command = [
+        sys.executable,
+        str(worker_script),
+        "--run_id", run_id,
+        "--tender_pk_id", str(tender_pk_id),
+        "--tender_url", request_body.tender_url,
+    ]
+    
+    logger.info(f"Launching eligibility worker for Tender PK {tender_pk_id}. Run ID: {run_id}")
+    subprocess.Popen(command, cwd=PROJECT_ROOT)
+
+    return JSONResponse(
+        status_code=202, 
+        content={"message": f"Eligibility check initiated for Tender {tender_pk_id}. This is a background process."}
+    )
+
+# === NEW: AI Proxy and Eligibility Status Routes ===
+class AIPrompt(BaseModel):
+    prompt: str
+
+@app.post("/ai/proxy-chat", name="proxy_ai_chat")
+async def proxy_ai_chat(prompt_data: AIPrompt):
+    """
+    A secure proxy to communicate with an AI model.
+    The worker sends a prompt here, and this endpoint adds the API key.
+    """
+    # In a real app, get this from environment variables or a secure vault
+    AI_API_KEY = os.environ.get("AI_API_KEY", "YOUR_AI_API_KEY_HERE")
+    AI_API_URL = "https://api.openai.com/v1/chat/completions" # Example for OpenAI
+
+    if not AI_API_KEY or AI_API_KEY == "YOUR_AI_API_KEY_HERE":
+        logger.error("AI_API_KEY is not configured on the server.")
+        # Return a simulated successful response for testing without a key
+        return JSONResponse(
+            status_code=200,
+            content={
+                "choices": [{
+                    "message": {
+                        "role": "assistant",
+                        "content": "SIMULATED AI RESPONSE:\n\n**Eligibility Analysis:**\n- **Clause 1 (Turnover):** Met.\n- **Clause 2 (Experience):** Met.\n- **Clause 3 (Certifications):** Needs Manual Review.\n\n**Conclusion:** The company appears to be eligible, but manual review of certifications is required."
+                    }
+                }]
+            }
+        )
+
+    headers = {
+        "Authorization": f"Bearer {AI_API_KEY}",
+        "Content-Type": "application/json"
+    }
+    payload = {
+        "model": "gpt-3.5-turbo", # Or your preferred model
+        "messages": [
+            {"role": "system", "content": "You are an expert assistant specializing in analyzing government tender documents."},
+            {"role": "user", "content": prompt_data.prompt}
+        ]
+    }
+
+    try:
+        async with httpx.AsyncClient() as client:
+            response = await client.post(AI_API_URL, json=payload, headers=headers, timeout=120.0)
+            response.raise_for_status()
+            return response.json()
+    except httpx.HTTPStatusError as e:
+        logger.error(f"AI API request failed: {e.response.status_code} - {e.response.text}")
+        raise HTTPException(status_code=e.response.status_code, detail=f"AI service error: {e.response.text}")
+    except Exception as e:
+        logger.error(f"Error in AI proxy: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error during AI proxy request.")
+
+@app.get("/eligibility/get-check-status/{tender_pk_id}", name="get_eligibility_check_status")
+async def get_eligibility_check_status(tender_pk_id: int, db: Session = Depends(get_db)):
+    """
+    Pollable endpoint for the frontend to check the status of an eligibility check.
+    """
+    check = db.query(EligibilityCheck).filter(EligibilityCheck.tender_id_fk == tender_pk_id).first()
+    if not check:
+        return {"status": "not_started"}
+    
+    return {
+        "status": check.status,
+        "result": check.analysis_result_json if check.status == "complete" else None
+    }

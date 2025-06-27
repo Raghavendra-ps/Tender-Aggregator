@@ -154,6 +154,42 @@ def init_db():
         db_logger.critical(f"Failed to create database tables: {e}", exc_info=True)
         return False
 
+# Added these below
+
+class CompanyProfile(Base):
+    __tablename__ = "company_profile"
+
+    id = Column(Integer, primary_key=True, index=True)
+    profile_name = Column(String, unique=True, default="Default Profile")
+    
+    # The entire profile will be stored as a single JSON object.
+    # This is flexible and allows you to add/remove fields easily without changing the DB schema.
+    profile_data = Column(JSON, nullable=False)
+
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), onupdate=func.now())
+
+    def __repr__(self):
+        return f"<CompanyProfile(name='{self.profile_name}')>"
+
+class EligibilityCheck(Base):
+    __tablename__ = "eligibility_checks"
+    
+    id = Column(Integer, primary_key=True, index=True)
+    tender_id_fk = Column(Integer, ForeignKey("tenders.id"), nullable=False, unique=True)
+    status = Column(String, default="pending") # pending, processing, complete, failed
+    eligibility_score = Column(Integer, default=-1)
+    analysis_result_json = Column(JSON, nullable=True)
+    checked_at = Column(DateTime(timezone=True), server_default=func.now())
+    
+    tender = relationship("Tender")
+
+    # --- THIS IS THE FIX ---
+    # This tells SQLAlchemy that if it encounters this table definition again
+    # in a hot-reload scenario, it should just use the existing one.
+    __table_args__ = {'extend_existing': True}
+    # --- END FIX ---
+
 # --- Standalone Execution ---
 if __name__ == "__main__":
     print("Running database initialization directly...")

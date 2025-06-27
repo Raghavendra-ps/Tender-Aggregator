@@ -611,3 +611,138 @@ Total Site Controller Duration: 0:00:07.759759
 2025-06-26 15:32:48 [INFO] (SiteController) Scrape lock file removed.
 2025-06-26 15:32:48 [INFO] (SiteController) Total Site Controller Duration: 0:01:07.452858
 2025-06-26 15:32:48 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-26 15:42:43 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-26 15:42:43 [INFO] (SiteController) Scrape lock file created.
+2025-06-26 15:42:43 [INFO] (SiteController) Loaded 1 enabled sites for scraping.
+2025-06-26 15:42:43 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-26 15:42:43 [INFO] (SiteController) Sites to be processed: ['Assam']
+2025-06-26 15:42:43 [INFO] (SiteController) 
+>>> Starting scrape for site: Assam <<<
+2025-06-26 15:43:05 [INFO] (SiteController) >>> Finished scrape for site: Assam successfully. <<<
+2025-06-26 15:43:05 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-26 15:43:05 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 1, Sites Failed: 0
+2025-06-26 15:43:05 [INFO] (SiteController) Scrape lock file removed.
+2025-06-26 15:43:05 [INFO] (SiteController) Total Site Controller Duration: 0:00:22.474961
+2025-06-26 15:43:05 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-26 15:46:49 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-26 15:46:49 [INFO] (SiteController) Scrape lock file created.
+2025-06-26 15:46:49 [INFO] (SiteController) Loaded 1 enabled sites for scraping.
+2025-06-26 15:46:49 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-26 15:46:49 [INFO] (SiteController) Sites to be processed: ['Assam']
+2025-06-26 15:46:49 [INFO] (SiteController) 
+>>> Starting scrape for site: Assam <<<
+2025-06-26 15:46:51 [INFO] (SiteController) >>> Finished scrape for site: Assam successfully. <<<
+2025-06-26 15:46:51 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-26 15:46:51 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 1, Sites Failed: 0
+2025-06-26 15:46:51 [INFO] (SiteController) Scrape lock file removed.
+2025-06-26 15:46:51 [INFO] (SiteController) Total Site Controller Duration: 0:00:02.027495
+2025-06-26 15:46:51 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-26 15:48:44 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-26 15:48:44 [INFO] (SiteController) Scrape lock file created.
+2025-06-26 15:48:44 [INFO] (SiteController) Loaded 1 enabled sites for scraping.
+2025-06-26 15:48:44 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-26 15:48:44 [INFO] (SiteController) Sites to be processed: ['Assam']
+2025-06-26 15:48:44 [INFO] (SiteController) 
+>>> Starting scrape for site: Assam <<<
+2025-06-26 15:48:46 [INFO] (SiteController) >>> Finished scrape for site: Assam successfully. <<<
+2025-06-26 15:48:46 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-26 15:48:46 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 1, Sites Failed: 0
+2025-06-26 15:48:46 [INFO] (SiteController) Scrape lock file removed.
+2025-06-26 15:48:46 [INFO] (SiteController) Total Site Controller Duration: 0:00:01.552972
+2025-06-26 15:48:46 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-26 15:57:34 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-26 15:57:34 [INFO] (SiteController) Scrape lock file created.
+2025-06-26 15:57:34 [INFO] (SiteController) Loaded 1 enabled sites for scraping.
+2025-06-26 15:57:34 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-26 15:57:34 [INFO] (SiteController) Sites to be processed: ['Assam']
+2025-06-26 15:57:34 [INFO] (SiteController) 
+>>> Starting scrape for site: Assam <<<
+2025-06-26 15:59:22 [INFO] (SiteController) >>> Finished scrape for site: Assam successfully. <<<
+2025-06-26 15:59:22 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-26 15:59:22 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 1, Sites Failed: 0
+2025-06-26 15:59:22 [INFO] (SiteController) Scrape lock file removed.
+2025-06-26 15:59:22 [INFO] (SiteController) Total Site Controller Duration: 0:01:47.764286
+2025-06-26 15:59:22 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-26 16:07:30 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-26 16:07:30 [INFO] (SiteController) Scrape lock file created.
+2025-06-26 16:07:30 [INFO] (SiteController) Loaded 1 enabled sites for scraping.
+2025-06-26 16:07:30 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-26 16:07:30 [INFO] (SiteController) Sites to be processed: ['Assam']
+2025-06-26 16:07:30 [INFO] (SiteController) 
+>>> Starting scrape for site: Assam <<<
+2025-06-26 16:09:12 [INFO] (SiteController) >>> Finished scrape for site: Assam successfully. <<<
+2025-06-26 16:09:12 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-26 16:09:12 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 1, Sites Failed: 0
+2025-06-26 16:09:12 [INFO] (SiteController) Scrape lock file removed.
+2025-06-26 16:09:12 [INFO] (SiteController) Total Site Controller Duration: 0:01:41.497946
+2025-06-26 16:09:12 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-26 16:11:15 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-26 16:11:15 [INFO] (SiteController) Scrape lock file created.
+2025-06-26 16:11:15 [INFO] (SiteController) Loaded 1 enabled sites for scraping.
+2025-06-26 16:11:15 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-26 16:11:15 [INFO] (SiteController) Sites to be processed: ['Assam']
+2025-06-26 16:11:15 [INFO] (SiteController) 
+>>> Starting scrape for site: Assam <<<
+2025-06-26 16:13:03 [INFO] (SiteController) >>> Finished scrape for site: Assam successfully. <<<
+2025-06-26 16:13:03 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-26 16:13:03 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 1, Sites Failed: 0
+2025-06-26 16:13:03 [INFO] (SiteController) Scrape lock file removed.
+2025-06-26 16:13:03 [INFO] (SiteController) Total Site Controller Duration: 0:01:47.328542
+2025-06-26 16:13:03 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-26 16:21:27 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-26 16:21:27 [INFO] (SiteController) Scrape lock file created.
+2025-06-26 16:21:27 [INFO] (SiteController) Loaded 1 enabled sites for scraping.
+2025-06-26 16:21:27 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-26 16:21:27 [INFO] (SiteController) Sites to be processed: ['Assam']
+2025-06-26 16:21:27 [INFO] (SiteController) 
+>>> Starting scrape for site: Assam <<<
+2025-06-26 16:23:13 [INFO] (SiteController) >>> Finished scrape for site: Assam successfully. <<<
+2025-06-26 16:23:13 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-26 16:23:13 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 1, Sites Failed: 0
+2025-06-26 16:23:13 [INFO] (SiteController) Scrape lock file removed.
+2025-06-26 16:23:13 [INFO] (SiteController) Total Site Controller Duration: 0:01:46.275016
+2025-06-26 16:23:13 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-27 11:52:33 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-27 11:52:33 [INFO] (SiteController) Scrape lock file created.
+2025-06-27 11:52:33 [INFO] (SiteController) Loaded 1 enabled sites for scraping.
+2025-06-27 11:52:33 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-27 11:52:33 [INFO] (SiteController) Sites to be processed: ['Assam']
+2025-06-27 11:52:33 [INFO] (SiteController) 
+>>> Starting scrape for site: Assam <<<
+2025-06-27 11:54:20 [INFO] (SiteController) >>> Finished scrape for site: Assam successfully. <<<
+2025-06-27 11:54:20 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-27 11:54:20 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 1, Sites Failed: 0
+2025-06-27 11:54:20 [INFO] (SiteController) Scrape lock file removed.
+2025-06-27 11:54:20 [INFO] (SiteController) Total Site Controller Duration: 0:01:46.183895
+2025-06-27 11:54:20 [INFO] (SiteController) ===== Site Controller Finished =====
+2025-06-27 15:45:03 [INFO] (SiteController) ===== Site Controller Initializing =====
+2025-06-27 15:45:03 [INFO] (SiteController) Scrape lock file created.
+2025-06-27 15:45:03 [INFO] (SiteController) Loaded 1 enabled sites for scraping.
+2025-06-27 15:45:03 [INFO] (SiteController) 
+===== Orchestrating REGULAR Tender Scrape into Database =====
+2025-06-27 15:45:03 [INFO] (SiteController) Sites to be processed: ['Assam']
+2025-06-27 15:45:03 [INFO] (SiteController) 
+>>> Starting scrape for site: Assam <<<
+2025-06-27 15:46:47 [INFO] (SiteController) >>> Finished scrape for site: Assam successfully. <<<
+2025-06-27 15:46:47 [INFO] (SiteController) 
+--------------------------------------------------
+2025-06-27 15:46:47 [INFO] (SiteController) REGULAR SCRAPE SUMMARY: Sites Succeeded: 1, Sites Failed: 0
+2025-06-27 15:46:47 [INFO] (SiteController) Scrape lock file removed.
+2025-06-27 15:46:47 [INFO] (SiteController) Total Site Controller Duration: 0:01:43.643967
+2025-06-27 15:46:47 [INFO] (SiteController) ===== Site Controller Finished =====
