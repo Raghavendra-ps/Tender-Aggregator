@@ -1,0 +1,58 @@
+13:16:18 [INFO] (ROTWorker-Ladakh Run-980267) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Ladakh/worker_rot_worker_Ladakh_20250630131617980267_2025-06-30.log
+13:16:18 [INFO] (ROTWorker-Ladakh Run-980267) --- Starting Headless ROT Worker for Site: Ladakh, Run ID: rot_worker_Ladakh_20250630131617980267 ---
+13:16:18 [INFO] (ROTWorker-Ladakh Run-980267) --- Dates: From=None, To=None ---
+13:16:18 [INFO] (ROTWorker-Ladakh Run-980267) Worker status updated to: WORKER_STARTED
+13:16:18 [INFO] (ROTWorker-Ladakh Run-980267) Worker status updated to: FETCHING_CAPTCHA
+13:16:18 [INFO] (ROTWorker-Ladakh Run-980267) Selecting tender status '5'.
+13:16:21 [INFO] (ROTWorker-Ladakh Run-980267) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Ladakh_20250630131617980267/captcha.b64
+13:16:21 [INFO] (ROTWorker-Ladakh Run-980267) Worker status updated to: WAITING_CAPTCHA
+13:16:21 [INFO] (ROTWorker-Ladakh Run-980267) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Ladakh_20250630131617980267/answer.txt (max 300s)...
+13:16:27 [INFO] (ROTWorker-Ladakh Run-980267) CAPTCHA solution received.
+13:16:27 [INFO] (ROTWorker-Ladakh Run-980267) Worker status updated to: PROCESSING_WITH_CAPTCHA
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) Worker status updated to: SCRAPING_RESULTS
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) --- Processing List Page: 1/1 ---
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1] Extracting table data...
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1] Extracted 10 items.
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1_2025_RDD_16507_1] Final summary link found. Clicking...
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1_2025_STE_15956_1] Final summary link found. Clicking...
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16507_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_RDD_16507_1_20250630_131628_StageSummary.html
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16507_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16507_1_20250630_131628_StageSummary.html --site-key Ladakh
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [2025_STE_15956_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_STE_15956_1_20250630_131628_StageSummary.html
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [2025_STE_15956_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_STE_15956_1_20250630_131628_StageSummary.html --site-key Ladakh
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16507_1 Popup] Successfully processed structured data for ROT_2025_RDD_16507_1_20250630_131628_StageSummary.html.
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [2025_STE_15956_1 Popup] Successfully processed structured data for ROT_2025_STE_15956_1_20250630_131628_StageSummary.html.
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1_2025_RDD_16457_1] Final summary link found. Clicking...
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1_2025_RDD_16436_2] Final summary link found. Clicking...
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16457_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_RDD_16457_1_20250630_131628_StageSummary.html
+13:16:28 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16457_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16457_1_20250630_131628_StageSummary.html --site-key Ladakh
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16436_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_RDD_16436_2_20250630_131629_StageSummary.html
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16436_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16436_2_20250630_131629_StageSummary.html --site-key Ladakh
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16457_1 Popup] Successfully processed structured data for ROT_2025_RDD_16457_1_20250630_131628_StageSummary.html.
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16436_2 Popup] Successfully processed structured data for ROT_2025_RDD_16436_2_20250630_131629_StageSummary.html.
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1_2025_RDD_16345_1] Final summary link found. Clicking...
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1_2025_RDD_16340_2] Final summary link found. Clicking...
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16345_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_RDD_16345_1_20250630_131629_StageSummary.html
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16345_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16345_1_20250630_131629_StageSummary.html --site-key Ladakh
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16340_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_RDD_16340_2_20250630_131629_StageSummary.html
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16340_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16340_2_20250630_131629_StageSummary.html --site-key Ladakh
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16345_1 Popup] Successfully processed structured data for ROT_2025_RDD_16345_1_20250630_131629_StageSummary.html.
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16340_2 Popup] Successfully processed structured data for ROT_2025_RDD_16340_2_20250630_131629_StageSummary.html.
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1_2025_RDD_16326_1] Final summary link found. Clicking...
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1_2025_RDD_16297_2] Final summary link found. Clicking...
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16326_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_RDD_16326_1_20250630_131629_StageSummary.html
+13:16:29 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16326_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16326_1_20250630_131629_StageSummary.html --site-key Ladakh
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16297_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_RDD_16297_2_20250630_131630_StageSummary.html
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16297_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16297_2_20250630_131630_StageSummary.html --site-key Ladakh
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16326_1 Popup] Successfully processed structured data for ROT_2025_RDD_16326_1_20250630_131629_StageSummary.html.
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16297_2 Popup] Successfully processed structured data for ROT_2025_RDD_16297_2_20250630_131630_StageSummary.html.
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1_2025_RDD_16212_3] Final summary link found. Clicking...
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [ListPage1_2025_RDD_16200_1] Final summary link found. Clicking...
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16212_3 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_RDD_16212_3_20250630_131630_StageSummary.html
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16212_3 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16212_3_20250630_131630_StageSummary.html --site-key Ladakh
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16200_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_RDD_16200_1_20250630_131630_StageSummary.html
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16200_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Ladakh/ROT_2025_RDD_16200_1_20250630_131630_StageSummary.html --site-key Ladakh
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16212_3 Popup] Successfully processed structured data for ROT_2025_RDD_16212_3_20250630_131630_StageSummary.html.
+13:16:30 [INFO] (ROTWorker-Ladakh Run-980267) [2025_RDD_16200_1 Popup] Successfully processed structured data for ROT_2025_RDD_16200_1_20250630_131630_StageSummary.html.
+13:16:37 [INFO] (ROTWorker-Ladakh Run-980267) Worker status updated to: FINISHED_SUCCESS
+13:16:37 [INFO] (ROTWorker-Ladakh Run-980267) Playwright resources closed.
+13:16:37 [INFO] (ROTWorker-Ladakh Run-980267) Worker for Ladakh terminated with status: FINISHED_SUCCESS

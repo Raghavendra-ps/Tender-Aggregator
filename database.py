@@ -1,12 +1,12 @@
 # Tender-Aggregator-main/database.py
 
 import os
-from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime, Float, ForeignKey, JSON
+from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime, Float, ForeignKey, JSON, Boolean
 from sqlalchemy.orm import sessionmaker, relationship, declarative_base
 from sqlalchemy.sql import func
 from pathlib import Path
 import logging
-from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime, Float, ForeignKey, JSON, Boolean
+import bcrypt
 # --- Setup basic logging for database interactions ---
 db_logger = logging.getLogger("database_module")
 if not db_logger.hasHandlers():
@@ -30,7 +30,6 @@ SQLALCHEMY_DATABASE_URL = f"sqlite:///{DATABASE_FILE_PATH}"
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, 
     connect_args={"check_same_thread": False}, # Required for SQLite
-    # echo=True # Uncomment for debugging SQL queries
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
@@ -63,7 +62,7 @@ class Tender(Base):
     pincode = Column(String, nullable=True)
     
     # Status and Linking
-    status = Column(String, default="Live", index=True) # e.g., "Live", "Result Announced", "Cancelled"
+    status = Column(String, default="Live", index=True)
     
     # Full data dump
     full_details_json = Column(JSON, nullable=True)
@@ -72,9 +71,10 @@ class Tender(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
     
-    # Relationship to TenderResult
+    # Relationships
     result = relationship("TenderResult", back_populates="tender", uselist=False, cascade="all, delete-orphan")
     bids = relationship("TenderBid", back_populates="tender", cascade="all, delete-orphan")
+    eligibility_check = relationship("EligibilityCheck", back_populates="tender", uselist=False, cascade="all, delete-orphan")
 
     def __repr__(self):
         return f"<Tender(tender_id='{self.tender_id}', source_site='{self.source_site}', status='{self.status}')>"
@@ -93,19 +93,40 @@ class TenderResult(Base):
     
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     
-    # Relationship back to Tender
     tender = relationship("Tender", back_populates="result")
 
     def __repr__(self):
-        return f"<TenderResult(tender_id='{self.tender.tender_id}', final_stage='{self.final_stage}')>"
+        return f"<TenderResult(tender.tender_id='{self.tender.tender_id if self.tender else 'N/A'}', final_stage='{self.final_stage}')>"
 
 
+class CanonicalBidder(Base):
+    __tablename__ = "canonical_bidders"
+    __table_args__ = {'extend_existing': True} # Keep this for hot-reloading
+
+    id = Column(Integer, primary_key=True, index=True)
+    canonical_name = Column(String, unique=True, index=True, nullable=False)
+    notes = Column(Text, nullable=True)
+    
+    aliases = relationship("Bidder", back_populates="canonical_bidder")
+
+    def __repr__(self):
+        return f"<CanonicalBidder(name='{self.canonical_name}')>"
+
+
+# --- CORRECTED BIDDER CLASS ---
 class Bidder(Base):
     __tablename__ = "bidders"
-    
+    __table_args__ = {'extend_existing': True} # Keep this for hot-reloading
+
     id = Column(Integer, primary_key=True, index=True)
     bidder_name = Column(String, unique=True, index=True, nullable=False)
     
+    # Foreign Key to the canonical bidder
+    canonical_id = Column(Integer, ForeignKey("canonical_bidders.id"), nullable=True)
+    
+    # Relationship to link back to the master record
+    canonical_bidder = relationship("CanonicalBidder", back_populates="aliases")
+
     # Optional fields for future use
     first_seen_on_site = Column(String, nullable=True)
     notes = Column(Text, nullable=True)
@@ -115,7 +136,35 @@ class Bidder(Base):
 
     def __repr__(self):
         return f"<Bidder(id={self.id}, name='{self.bidder_name}')>"
+# --- END CORRECTION ---
 
+# In Tender-Aggregator-main/database.py
+import bcrypt # Add this import at the top
+
+# ... (other model definitions) ...
+
+class User(Base):
+    __tablename__ = "users"
+
+    id = Column(Integer, primary_key=True, index=True)
+    username = Column(String, unique=True, index=True, nullable=False)
+    hashed_password = Column(String, nullable=False)
+    role = Column(String, default="user", nullable=False) # 'user' or 'admin'
+    is_active = Column(Boolean, default=True)
+
+    def set_password(self, password: str):
+        # Hash the password with a salt
+        pwd_bytes = password.encode('utf-8')
+        salt = bcrypt.gensalt()
+        self.hashed_password = bcrypt.hashpw(pwd_bytes, salt).decode('utf-8')
+
+    def check_password(self, password: str) -> bool:
+        # Check a plaintext password against the stored hash
+        password_bytes = password.encode('utf-8')
+        hashed_password_bytes = self.hashed_password.encode('utf-8')
+        return bcrypt.checkpw(password_bytes, hashed_password_bytes)
+
+# Don't forget to add 'bcrypt' to your requirements.txt
 
 class TenderBid(Base):
     __tablename__ = "tender_bids"
@@ -124,8 +173,8 @@ class TenderBid(Base):
     tender_id_fk = Column(Integer, ForeignKey("tenders.id"), nullable=False)
     bidder_id_fk = Column(Integer, ForeignKey("bidders.id"), nullable=False)
     
-    bid_status = Column(String, nullable=True) # e.g., "Accepted-Finance", "Rejected-Technical"
-    bid_rank = Column(String, nullable=True) # e.g., "L1", "L2"
+    bid_status = Column(String, nullable=True)
+    bid_rank = Column(String, nullable=True)
     bid_value = Column(Float, nullable=True)
     
     # Relationships
@@ -133,7 +182,33 @@ class TenderBid(Base):
     bidder = relationship("Bidder", back_populates="bids")
     
     def __repr__(self):
-        return f"<TenderBid(tender_id='{self.tender.tender_id}', bidder='{self.bidder.bidder_name}', rank='{self.bid_rank}')>"
+        return f"<TenderBid(tender_id='{self.tender.tender_id if self.tender else 'N/A'}', bidder='{self.bidder.bidder_name if self.bidder else 'N/A'}', rank='{self.bid_rank}')>"
+
+
+class CompanyProfile(Base):
+    __tablename__ = "company_profile"
+
+    id = Column(Integer, primary_key=True, index=True)
+    profile_name = Column(String, unique=True, default="Default Profile")
+    profile_data = Column(JSON, nullable=False)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), onupdate=func.now())
+
+    def __repr__(self):
+        return f"<CompanyProfile(name='{self.profile_name}')>"
+
+class EligibilityCheck(Base):
+    __tablename__ = "eligibility_checks"
+    __table_args__ = {'extend_existing': True}
+
+    id = Column(Integer, primary_key=True, index=True)
+    tender_id_fk = Column(Integer, ForeignKey("tenders.id"), nullable=False, unique=True)
+    status = Column(String, default="pending") # pending, processing, complete, failed
+    eligibility_score = Column(Integer, default=-1)
+    analysis_result_json = Column(JSON, nullable=True)
+    checked_at = Column(DateTime(timezone=True), server_default=func.now())
+    
+    tender = relationship("Tender", back_populates="eligibility_check")
 
 
 def init_db():
@@ -153,80 +228,6 @@ def init_db():
     except Exception as e:
         db_logger.critical(f"Failed to create database tables: {e}", exc_info=True)
         return False
-
-# Added these below
-
-class CompanyProfile(Base):
-    __tablename__ = "company_profile"
-
-    id = Column(Integer, primary_key=True, index=True)
-    profile_name = Column(String, unique=True, default="Default Profile")
-    
-    # The entire profile will be stored as a single JSON object.
-    # This is flexible and allows you to add/remove fields easily without changing the DB schema.
-    profile_data = Column(JSON, nullable=False)
-
-    created_at = Column(DateTime(timezone=True), server_default=func.now())
-    updated_at = Column(DateTime(timezone=True), onupdate=func.now())
-
-    def __repr__(self):
-        return f"<CompanyProfile(name='{self.profile_name}')>"
-
-class EligibilityCheck(Base):
-    __tablename__ = "eligibility_checks"
-    
-    id = Column(Integer, primary_key=True, index=True)
-    tender_id_fk = Column(Integer, ForeignKey("tenders.id"), nullable=False, unique=True)
-    status = Column(String, default="pending") # pending, processing, complete, failed
-    eligibility_score = Column(Integer, default=-1)
-    analysis_result_json = Column(JSON, nullable=True)
-    checked_at = Column(DateTime(timezone=True), server_default=func.now())
-    
-    tender = relationship("Tender")
-
-    # --- THIS IS THE FIX ---
-    # This tells SQLAlchemy that if it encounters this table definition again
-    # in a hot-reload scenario, it should just use the existing one.
-    __table_args__ = {'extend_existing': True}
-    # --- END FIX ---
-
-class CanonicalBidder(Base):
-    __tablename__ = "canonical_bidders"
-
-    id = Column(Integer, primary_key=True, index=True)
-    canonical_name = Column(String, unique=True, index=True, nullable=False)
-    notes = Column(Text, nullable=True)
-    aliases = relationship("Bidder", back_populates="canonical_bidder")
-
-    # --- FIX: Add table args for hot-reloading ---
-    __table_args__ = {'extend_existing': True}
-
-    def __repr__(self):
-        return f"<CanonicalBidder(name='{self.canonical_name}')>"
-
-
-class Bidder(Base):
-    __tablename__ = "bidders"
-    
-    id = Column(Integer, primary_key=True, index=True)
-    bidder_name = Column(String, unique=True, index=True, nullable=False)
-    
-    # Foreign Key to the canonical bidder
-    canonical_id = Column(Integer, ForeignKey("canonical_bidders.id"), nullable=True)
-    
-    # Relationship to link back to the master record
-    canonical_bidder = relationship("CanonicalBidder", back_populates="aliases")
-
-    first_seen_on_site = Column(String, nullable=True)
-    notes = Column(Text, nullable=True)
-    
-    bids = relationship("TenderBid", back_populates="bidder", cascade="all, delete-orphan")
-
-    # --- FIX: Add table args for hot-reloading ---
-    __table_args__ = {'extend_existing': True}
-
-    def __repr__(self):
-        return f"<Bidder(id={self.id}, name='{self.bidder_name}')>"
 
 # --- Standalone Execution ---
 if __name__ == "__main__":

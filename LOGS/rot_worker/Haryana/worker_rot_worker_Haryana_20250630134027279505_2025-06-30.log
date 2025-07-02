@@ -1,0 +1,5 @@
+13:40:27 [INFO] (ROTWorker-Haryana Run-279505) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Haryana/worker_rot_worker_Haryana_20250630134027279505_2025-06-30.log
+13:40:27 [INFO] (ROTWorker-Haryana Run-279505) --- Starting Headless ROT Worker for Site: Haryana, Run ID: rot_worker_Haryana_20250630134027279505 ---
+13:40:27 [INFO] (ROTWorker-Haryana Run-279505) --- Dates: From=None, To=None ---
+13:40:27 [INFO] (ROTWorker-Haryana Run-279505) Worker status updated to: WORKER_STARTED
+13:40:27 [INFO] (ROTWorker-Haryana Run-279505) Worker status updated to: FETCHING_CAPTCHA

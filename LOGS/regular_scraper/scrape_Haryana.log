@@ -48,3 +48,251 @@
 16:59:50 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
 16:59:51 [INFO] (Scraper-REG-Haryana) Scrape run for site Haryana finished. Saved: 20, Failed to save: 0.
 16:59:51 [INFO] (Scraper-REG-Haryana) 🏁 Scrape run for site Haryana completed. Duration: 0:00:27.071549.
+13:34:34 [INFO] (Scraper-REG-Haryana) 🚀 Starting DB-integrated scrape run for site: Haryana...
+13:34:35 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 1 (Attempt 1/4)
+13:34:35 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Navigating to main site homepage first...
+13:35:06 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Navigating to target list page URL...
+13:35:19 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Navigation complete. Getting page content...
+13:35:19 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Content received and saved to DEBUG file. Parsing with BeautifulSoup...
+13:35:19 [INFO] (Scraper-REG-Haryana)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+13:35:20 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SG1mCo%2F2q3Cke7GRdpzN9UQ%3D%3D
+13:35:20 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=ScGagy8tpYvxkN5G5dEZQYw%3D%3D
+13:35:33 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SOQHryiQ8MwalTrE2i0J5Kg%3D%3D
+13:35:36 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=StmAAfiqglDsbg7maRGClZw%3D%3D
+13:35:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S9ryYBMCOX1Zm6CzcBM86XQ%3D%3D
+13:35:57 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=ShMOC%2F2fTQ5Qd1M41irEAbw%3D%3D
+13:36:26 [INFO] (Scraper-REG-Haryana) 🚀 Starting DB-integrated scrape run for site: Haryana...
+13:36:27 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 1 (Attempt 1/4)
+13:36:27 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Navigating to main site homepage first...
+13:36:59 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Navigating to target list page URL...
+13:37:11 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Navigation complete. Getting page content...
+13:37:11 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Content received and saved to DEBUG file. Parsing with BeautifulSoup...
+13:37:11 [INFO] (Scraper-REG-Haryana)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SUA8lWRo04bAX7XE5V9EjrQ%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=STsof27cyq1UtDiSfAQ3y7Q%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SB8CM0aYgQv0E8o1C9npRLA%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SG1mCo%2F2q3Cke7GRdpzN9UQ%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S6h4%2Fzhl5SHTzb22US1I5RA%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SOQHryiQ8MwalTrE2i0J5Kg%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sx5W2%2Bszklh7IUiJ53brehg%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SKg4q3BqTpdOXaIFMtLZWHQ%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=ShMOC%2F2fTQ5Qd1M41irEAbw%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SFROH4To2gitpdc5hoHnslw%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SmcNUYAsqvBqDFlRTS3OKwQ%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SloXXGuOg%2B6t3OsW388aOKQ%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=STTpBPjlmn6WRStIaJlrAxw%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=ScGagy8tpYvxkN5G5dEZQYw%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SEiVmBV6DgGD%2BQRERVOg7sw%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=StSwwkHhdwao2A3B8SOolSw%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S9ryYBMCOX1Zm6CzcBM86XQ%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S0QYnnNItb6C3%2BDnAMKROeQ%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=StmAAfiqglDsbg7maRGClZw%3D%3D
+13:37:12 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S1Ips%2B8OsRCSsZacC8%2BLr3g%3D%3D
+13:37:57 [ERROR] (Scraper-REG-Haryana)   ❌ MASTER TIMEOUT on List Page 1, attempt 1/4. The operation took too long.
+13:38:00 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 1 (Attempt 2/4)
+13:38:00 [DEBUG] (Scraper-REG-Haryana)   P1:A2 - Navigating to main site homepage first...
+13:38:26 [DEBUG] (Scraper-REG-Haryana)   P1:A2 - Navigating to target list page URL...
+13:38:44 [DEBUG] (Scraper-REG-Haryana)   P1:A2 - Navigation complete. Getting page content...
+13:38:44 [DEBUG] (Scraper-REG-Haryana)   P1:A2 - Content received and saved to DEBUG file. Parsing with BeautifulSoup...
+13:38:44 [INFO] (Scraper-REG-Haryana)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+13:38:44 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SUA8lWRo04bAX7XE5V9EjrQ%3D%3D
+13:38:44 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SOQHryiQ8MwalTrE2i0J5Kg%3D%3D
+13:38:44 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SG1mCo%2F2q3Cke7GRdpzN9UQ%3D%3D
+13:38:44 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S0QYnnNItb6C3%2BDnAMKROeQ%3D%3D
+13:38:44 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SmcNUYAsqvBqDFlRTS3OKwQ%3D%3D
+13:38:44 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sx5W2%2Bszklh7IUiJ53brehg%3D%3D
+13:38:44 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S6MgPokZsvXacvH7YOHo4Zw%3D%3D
+13:38:44 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S6h4%2Fzhl5SHTzb22US1I5RA%3D%3D
+13:38:44 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=STTpBPjlmn6WRStIaJlrAxw%3D%3D
+13:38:44 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SolQLu%2B5YpkyxrEshdpowtA%3D%3D
+13:38:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=ScGagy8tpYvxkN5G5dEZQYw%3D%3D
+13:38:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=StmAAfiqglDsbg7maRGClZw%3D%3D
+13:38:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=ShMOC%2F2fTQ5Qd1M41irEAbw%3D%3D
+13:38:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SB8CM0aYgQv0E8o1C9npRLA%3D%3D
+13:38:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SfcSwyrQ2aV3ry0p5mxquAw%3D%3D
+13:38:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SloXXGuOg%2B6t3OsW388aOKQ%3D%3D
+13:38:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SHrSd%2FuchbkpZUQZMgGYgjA%3D%3D
+13:38:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S1Ips%2B8OsRCSsZacC8%2BLr3g%3D%3D
+13:38:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S9ryYBMCOX1Zm6CzcBM86XQ%3D%3D
+13:38:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SEiVmBV6DgGD%2BQRERVOg7sw%3D%3D
+13:39:30 [ERROR] (Scraper-REG-Haryana)   ❌ MASTER TIMEOUT on List Page 1, attempt 2/4. The operation took too long.
+13:39:36 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 1 (Attempt 3/4)
+13:39:36 [DEBUG] (Scraper-REG-Haryana)   P1:A3 - Navigating to main site homepage first...
+14:20:36 [INFO] (Scraper-REG-Haryana) 🚀 Starting DB-integrated scrape run for site: Haryana...
+14:20:38 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 1 (Attempt 1/4)
+14:20:38 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Navigating to main site homepage first...
+14:21:00 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Navigating to target list page URL...
+14:21:13 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Navigation complete. Getting page content...
+14:21:13 [DEBUG] (Scraper-REG-Haryana)   P1:A1 - Content received and saved to DEBUG file. Parsing with BeautifulSoup...
+14:21:13 [INFO] (Scraper-REG-Haryana)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+14:21:13 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRGSITUJZmdDs8yU5bCe1nw%3D%3D
+14:21:14 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SLD6k6kuJt9bYCM4hhkEFsQ%3D%3D
+14:21:31 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SH6%2B1%2Fs4tfh7Y2D9O58jpVA%3D%3D
+14:21:43 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S%2BrBjDZImuA6Jw3jWFcZj2Q%3D%3D
+14:21:53 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S5p7U5QmE9fi6VgP0MPiTnQ%3D%3D
+14:21:56 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S03YmQ64fovW8OAGfgRlSRg%3D%3D
+14:22:08 [ERROR] (Scraper-REG-Haryana)   ❌ MASTER TIMEOUT on List Page 1, attempt 1/4. The operation took too long.
+14:22:11 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 1 (Attempt 2/4)
+14:22:11 [DEBUG] (Scraper-REG-Haryana)   P1:A2 - Navigating to main site homepage first...
+14:22:36 [DEBUG] (Scraper-REG-Haryana)   P1:A2 - Navigating to target list page URL...
+14:22:53 [DEBUG] (Scraper-REG-Haryana)   P1:A2 - Navigation complete. Getting page content...
+14:22:53 [DEBUG] (Scraper-REG-Haryana)   P1:A2 - Content received and saved to DEBUG file. Parsing with BeautifulSoup...
+14:22:53 [INFO] (Scraper-REG-Haryana)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+14:22:53 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SH6%2B1%2Fs4tfh7Y2D9O58jpVA%3D%3D
+14:22:54 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRGSITUJZmdDs8yU5bCe1nw%3D%3D
+14:23:08 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SfTilAN%2BQLSXOaS3xoyWFUQ%3D%3D
+14:23:14 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S5p7U5QmE9fi6VgP0MPiTnQ%3D%3D
+14:23:24 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S03YmQ64fovW8OAGfgRlSRg%3D%3D
+14:23:25 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SLD6k6kuJt9bYCM4hhkEFsQ%3D%3D
+14:23:41 [ERROR] (Scraper-REG-Haryana)   ❌ MASTER TIMEOUT on List Page 1, attempt 2/4. The operation took too long.
+14:23:47 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 1 (Attempt 3/4)
+14:23:47 [DEBUG] (Scraper-REG-Haryana)   P1:A3 - Navigating to main site homepage first...
+14:24:10 [DEBUG] (Scraper-REG-Haryana)   P1:A3 - Navigating to target list page URL...
+14:24:25 [DEBUG] (Scraper-REG-Haryana)   P1:A3 - Navigation complete. Getting page content...
+14:24:25 [DEBUG] (Scraper-REG-Haryana)   P1:A3 - Content received and saved to DEBUG file. Parsing with BeautifulSoup...
+14:24:25 [INFO] (Scraper-REG-Haryana)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+14:24:25 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S%2BrBjDZImuA6Jw3jWFcZj2Q%3D%3D
+14:24:26 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRGSITUJZmdDs8yU5bCe1nw%3D%3D
+14:24:41 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SfTilAN%2BQLSXOaS3xoyWFUQ%3D%3D
+14:24:44 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S03YmQ64fovW8OAGfgRlSRg%3D%3D
+14:24:50 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S5p7U5QmE9fi6VgP0MPiTnQ%3D%3D
+14:24:56 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SH6%2B1%2Fs4tfh7Y2D9O58jpVA%3D%3D
+14:25:02 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SLD6k6kuJt9bYCM4hhkEFsQ%3D%3D
+14:25:14 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=ScGagy8tpYvxkN5G5dEZQYw%3D%3D
+14:25:17 [ERROR] (Scraper-REG-Haryana)   ❌ MASTER TIMEOUT on List Page 1, attempt 3/4. The operation took too long.
+14:25:29 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 1 (Attempt 4/4)
+14:25:29 [DEBUG] (Scraper-REG-Haryana)   P1:A4 - Navigating to main site homepage first...
+14:25:47 [DEBUG] (Scraper-REG-Haryana)   P1:A4 - Navigating to target list page URL...
+14:25:55 [DEBUG] (Scraper-REG-Haryana)   P1:A4 - Navigation complete. Getting page content...
+14:25:55 [DEBUG] (Scraper-REG-Haryana)   P1:A4 - Content received and saved to DEBUG file. Parsing with BeautifulSoup...
+14:25:55 [INFO] (Scraper-REG-Haryana)   ⏯️ Gathering 20 detail scrape tasks for page 1.
+14:25:56 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S5p7U5QmE9fi6VgP0MPiTnQ%3D%3D
+14:25:56 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRGSITUJZmdDs8yU5bCe1nw%3D%3D
+14:26:14 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SLD6k6kuJt9bYCM4hhkEFsQ%3D%3D
+14:26:15 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S03YmQ64fovW8OAGfgRlSRg%3D%3D
+14:26:29 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SfTilAN%2BQLSXOaS3xoyWFUQ%3D%3D
+14:26:32 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S%2BrBjDZImuA6Jw3jWFcZj2Q%3D%3D
+14:26:38 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SH6%2B1%2Fs4tfh7Y2D9O58jpVA%3D%3D
+14:26:49 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SG1mCo%2F2q3Cke7GRdpzN9UQ%3D%3D
+14:27:00 [ERROR] (Scraper-REG-Haryana)   ❌ MASTER TIMEOUT on List Page 1, attempt 4/4. The operation took too long.
+14:27:00 [ERROR] (Scraper-REG-Haryana)   ❌ Failed to process List Page 1 after all attempts.
+14:27:00 [INFO] (Scraper-REG-Haryana) Scrape run for site Haryana finished. Saved: 0, Failed to save: 0.
+14:27:00 [INFO] (Scraper-REG-Haryana) 🏁 Scrape run for site Haryana completed. Duration: 0:06:23.667038.
+15:07:43 [INFO] (Scraper-REG-Haryana) 🚀 Starting DB-integrated scrape run for site: Haryana...
+15:07:43 [CRITICAL] (Scraper-REG-Haryana) 💥 CRITICAL ERROR during scrape run for site Haryana: 'coroutine' object does not support the asynchronous context manager protocol
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/scrape.py", line 387, in run_scrape_for_one_site
+    await fetch_all_pages_for_site_and_save_to_db(p, site_key, site_base_url, site_domain, max_pages, list_concurrency, detail_concurrency, page_timeout, detail_timeout, retry_limit)
+  File "/root/Tender-Aggregator/scrape.py", line 297, in fetch_all_pages_for_site_and_save_to_db
+    async with playwright_instance.chromium.launch(headless=True) as browser:
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+TypeError: 'coroutine' object does not support the asynchronous context manager protocol
+15:07:43 [INFO] (Scraper-REG-Haryana) 🏁 Scrape run for site Haryana completed. Duration: 0:00:00.149768.
+15:11:14 [INFO] (Scraper-REG-Haryana) 🚀 Starting DB-integrated scrape run for site: Haryana...
+15:11:14 [INFO] (Scraper-REG-Haryana) Navigating to homepage first to handle initial popups...
+15:11:33 [INFO] (Scraper-REG-Haryana)   No initial popup found, proceeding.
+15:11:33 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 1 (Attempt 1/4)
+15:11:55 [INFO] (Scraper-REG-Haryana)   ✅ Page 1 list scrape successful with 20 items.
+15:11:55 [INFO] (Scraper-REG-Haryana) List page scraping complete. Found 20 items. Now scraping detail pages...
+15:11:56 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S8G3iPcYWLoZ8ojG9dtlVUw%3D%3D
+15:11:56 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SZLe8kYy%2B8LktGWAR7R1Q2g%3D%3D
+15:12:09 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S00rjAUGYOgzG3osBwjIt7g%3D%3D
+15:12:10 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SgVitkQIShwj0Et7aeqHtzA%3D%3D
+15:12:21 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S%2F0J6LXx1ff0gyl3pKb4LBg%3D%3D
+15:12:28 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SLMCbfT5HG4UCumhvqu1SVQ%3D%3D
+15:12:31 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SCeWW8NZjBNQ9KYPnYzizTg%3D%3D
+15:12:45 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SQ9AvqQgq9MvNOgGLRwGruQ%3D%3D
+15:12:46 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SFhsYieVGQja5%2FnnNZ9EJGQ%3D%3D
+15:13:00 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S9UV25BWMuRnAWIfm50kcaw%3D%3D
+15:13:01 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=StUppIIxvbmOYWkujJkAA9Q%3D%3D
+15:13:14 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SRGSITUJZmdDs8yU5bCe1nw%3D%3D
+15:13:17 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S%2BrBjDZImuA6Jw3jWFcZj2Q%3D%3D
+15:13:28 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SLD6k6kuJt9bYCM4hhkEFsQ%3D%3D
+15:13:29 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S03YmQ64fovW8OAGfgRlSRg%3D%3D
+15:13:40 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SH6%2B1%2Fs4tfh7Y2D9O58jpVA%3D%3D
+15:13:42 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S5p7U5QmE9fi6VgP0MPiTnQ%3D%3D
+15:13:53 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SfTilAN%2BQLSXOaS3xoyWFUQ%3D%3D
+15:13:59 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SOQHryiQ8MwalTrE2i0J5Kg%3D%3D
+15:14:06 [INFO] (Scraper-REG-Haryana)     ➡️  Scraping Detail Page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=ScGagy8tpYvxkN5G5dEZQYw%3D%3D
+15:14:16 [INFO] (Scraper-REG-Haryana) Detail page scraping complete. Saving 20 tenders to database...
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [DEBUG] (Scraper-REG-Haryana) Could not parse amount: 'N/A' to float.
+15:14:16 [INFO] (Scraper-REG-Haryana) Playwright resources for site Haryana closed.
+15:14:16 [INFO] (Scraper-REG-Haryana) 🏁 Scrape run for site Haryana completed. Duration: 0:03:01.887724.
+15:18:05 [INFO] (Scraper-REG-Haryana) 🚀 Starting DB-integrated scrape run for site: Haryana...
+15:18:05 [INFO] (Scraper-REG-Haryana) Navigating to homepage first to handle initial popups...
+15:18:05 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 3 (Attempt 1/4)
+15:18:05 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 10 (Attempt 1/4)
+15:18:05 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 7 (Attempt 1/4)
+15:18:05 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 2 (Attempt 1/4)
+15:18:05 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 6 (Attempt 1/4)
+15:18:05 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 9 (Attempt 1/4)
+15:18:05 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 8 (Attempt 1/4)
+15:18:05 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 5 (Attempt 1/4)
+15:18:05 [INFO] (Scraper-REG-Haryana) 📄 Fetching List Page 4 (Attempt 1/4)
+15:18:13 [WARNING] (Scraper-REG-Haryana)   ⚠️ Page 10: Content loaded but no tender rows found. Assuming end of results.
+15:18:13 [INFO] (Scraper-REG-Haryana) Stopping list page fetching due to 'No Records' signal.
+15:18:13 [ERROR] (Scraper-REG-Haryana)   ❌ Error on Page 6, attempt 1: TargetClosedError - Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp=6", waiting until "domcontentloaded"
+
+15:18:13 [ERROR] (Scraper-REG-Haryana)   ❌ Error on Page 7, attempt 1: TargetClosedError - Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp=7", waiting until "domcontentloaded"
+
+15:18:13 [ERROR] (Scraper-REG-Haryana)   ❌ Error on Page 8, attempt 1: TargetClosedError - Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp=8", waiting until "domcontentloaded"
+
+15:18:13 [ERROR] (Scraper-REG-Haryana)   ❌ Error on Page 9, attempt 1: TargetClosedError - Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp=9", waiting until "domcontentloaded"
+
+15:18:13 [ERROR] (Scraper-REG-Haryana)   ❌ Error on Page 4, attempt 1: TargetClosedError - Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp=4", waiting until "domcontentloaded"
+
+15:18:13 [ERROR] (Scraper-REG-Haryana)   ❌ Error on Page 5, attempt 1: TargetClosedError - Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp=5", waiting until "domcontentloaded"
+
+15:18:13 [ERROR] (Scraper-REG-Haryana)   ❌ Error on Page 1, attempt 1: TargetClosedError - Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://etenders.hry.nic.in/nicgep/app", waiting until "domcontentloaded"
+
+15:18:13 [ERROR] (Scraper-REG-Haryana)   ❌ Error on Page 2, attempt 1: TargetClosedError - Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp=2", waiting until "domcontentloaded"
+
+15:18:13 [ERROR] (Scraper-REG-Haryana)   ❌ Error on Page 3, attempt 1: TargetClosedError - Page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://etenders.hry.nic.in/nicgep/app?component=%24TablePages.linkPage&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=AFrontEndAdvancedSearchResult%2Ctable&sp=3", waiting until "domcontentloaded"
+
+15:18:13 [INFO] (Scraper-REG-Haryana) Playwright resources for site Haryana closed.
+15:18:13 [CRITICAL] (Scraper-REG-Haryana) 💥 CRITICAL ERROR during scrape run for site Haryana: 'coroutine' object has no attribute 'done'
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/scrape.py", line 383, in run_scrape_for_one_site
+    await fetch_all_pages_for_site_and_save_to_db(p, site_key, site_base_url, site_domain, max_pages, list_concurrency, detail_concurrency, page_timeout, detail_timeout, retry_limit)
+  File "/root/Tender-Aggregator/scrape.py", line 321, in fetch_all_pages_for_site_and_save_to_db
+    if not task.done(): task.cancel()
+           ^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'done'
+15:18:13 [INFO] (Scraper-REG-Haryana) 🏁 Scrape run for site Haryana completed. Duration: 0:00:08.872809.

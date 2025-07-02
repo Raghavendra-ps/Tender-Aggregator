@@ -1,0 +1,110 @@
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_UTDNH_7557_1</RotTenderId>
+<RotTitleRef>[Providing 02 Nos. of Cloud Servers for Revenue Department for 12 months][02 Nos. of Cloud Servers]</RotTitleRef>
+<RotOrganisationChain>UT Administration of Dadra and Nagar Haveli||Mamlatdar Office - UTDNH||Off. of Mamlatdar/Off. of Sub Registrar-UTDNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://dnhtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ScqTuxxws3Ig%2BFiWme5KmXg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Dadra Nagar Haveli</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_UTDNH_7483_1</RotTenderId>
+<RotTitleRef>[Supply of Buffalo Meat at Lion Safari, Vasona.][7-2/736-FD/WL/2023/Part-IX]</RotTitleRef>
+<RotOrganisationChain>UT Administration of Dadra and Nagar Haveli||Forest Department - UTDNH||Territotial Division - UTDNH||Office of  Deputy Conservator of Forests (T)-UTDNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://dnhtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sf4nhaS0HAHqx1KysVqQdxQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Dadra Nagar Haveli</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>3.</RotSNo>
+<RotTenderId>2024_UTDNH_7398_1</RotTenderId>
+<RotTitleRef>[Providing and Laying Precast RCC drain from  Athal bridge to Athal T junction Silvassa.][E-Tender Notice No. 20 of 2024-25]</RotTitleRef>
+<RotOrganisationChain>UT Administration of Dadra and Nagar Haveli||Public Works Department - UTDNH||O/o Executive Engineer - UTDNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://dnhtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIr2Swckx6tPebkRM7C74sw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Dadra Nagar Haveli</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>4.</RotSNo>
+<RotTenderId>2024_UTDNH_7392_1</RotTenderId>
+<RotTitleRef>[Additional work of Up gradation and Strengthening Khanvel junction to Khedpa upto Maharashtra Border CH.19 plus 400 to 40.470 Khanvel junction to Dudhani junction CH.19 plus 400 to 35 plus 022 2nd call][E-Tender Notice No. 19 of 2024-25]</RotTitleRef>
+<RotOrganisationChain>UT Administration of Dadra and Nagar Haveli||Public Works Department - UTDNH||O/o Executive Engineer - UTDNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://dnhtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SYzKrBTYg0xshnCPu6GmbPA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Dadra Nagar Haveli</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>5.</RotSNo>
+<RotTenderId>2024_UTDNH_7324_1</RotTenderId>
+<RotTitleRef>[Selection of Consultant Services for Development of Lion Safari, Vasona, NEC Vasona, Dapada-Satmaliya (DNH WLS) and Butterfly Park, Khanvel, Wildlife Division, DNH, Forest Department DNH and DD.][7-2/868-FD/WL/2024]</RotTitleRef>
+<RotOrganisationChain>UT Administration of Dadra and Nagar Haveli||Forest Department - UTDNH||Territotial Division - UTDNH||Office of  Deputy Conservator of Forests (T)-UTDNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://dnhtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SRXRMIXDqkfPNk6LadZlMDQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Dadra Nagar Haveli</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>6.</RotSNo>
+<RotTenderId>2024_UTDNH_7240_1</RotTenderId>
+<RotTitleRef>[Repairing and Patch work on Ring Road Silvassa, DNH.][E-Tender Notice No. 12 of 2024-25]</RotTitleRef>
+<RotOrganisationChain>UT Administration of Dadra and Nagar Haveli||Public Works Department - UTDNH||O/o Executive Engineer - UTDNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://dnhtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SrPlXLbkaHl5cFf3tMg%2FDYA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Dadra Nagar Haveli</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>7.</RotSNo>
+<RotTenderId>2024_UTDNH_7223_1</RotTenderId>
+<RotTitleRef>[Shifting of Electrical Utilities of various Village Panchayat Roads in DNH.][E-Tender Notice No. 10 of 2024-25]</RotTitleRef>
+<RotOrganisationChain>UT Administration of Dadra and Nagar Haveli||Public Works Department - UTDNH||O/o Executive Engineer - UTDNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://dnhtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBJg4BWHjjdTzwSXFXyk%2FJA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Dadra Nagar Haveli</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>8.</RotSNo>
+<RotTenderId>2024_UTDNH_7199_2</RotTenderId>
+<RotTitleRef>[outsourcing of Relationship Managers][DIC/5(538)/IFC/2024/693]</RotTitleRef>
+<RotOrganisationChain>UT Administration of Dadra and Nagar Haveli||Industry - UTDNH||G.M District Industries Centre DNH-Silvassa-UTDNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://dnhtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SPCLS%2F6iDR3CjB3WrGvHXAA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Dadra Nagar Haveli</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>9.</RotSNo>
+<RotTenderId>2024_UTDNH_7180_1</RotTenderId>
+<RotTitleRef>[Repair and Maintenance Works of 14 mtr. Steel Ferry  Boat at Dhudani Jetty in Dadra and Nagar Haveli for the Forest Department, DNH and DD ][RFO/SR/KHN/2024/344]</RotTitleRef>
+<RotOrganisationChain>UT Administration of Dadra and Nagar Haveli||Forest Department - UTDNH||Territotial Division - UTDNH||Office of  Deputy Conservator of Forests (T)-UTDNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://dnhtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SkmbVlAcskD612hkRgfpTmg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Dadra Nagar Haveli</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>10.</RotSNo>
+<RotTenderId>2024_UTDNH_7172_1</RotTenderId>
+<RotTitleRef>[Rate Contract of Outsourcing of Security Guard for Nakshtravan and City Forests, Territorial Division of the Forest Department, Dadra and Nagar Haveli and Daman and Diu (2nd Call)][4-2/497/FD/GNL/2024]</RotTitleRef>
+<RotOrganisationChain>UT Administration of Dadra and Nagar Haveli||Forest Department - UTDNH||Territotial Division - UTDNH||Office of  Deputy Conservator of Forests (T)-UTDNH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://dnhtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SsibzrJMpxY48cshHiXeLqA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Dadra Nagar Haveli</SourceSiteKey>
+--- TENDER END ---
+

@@ -1,0 +1,34 @@
+{# This template contains ONLY the table rows #}
+{% for item in tenders_with_scores %}
+{% set tender = item.tender %}
+{% set score = item.eligibility_score %}
+{%
+    set score_class = 'score-green' if score > 50 else
+                      'score-yellow' if score > 25 else
+                      'score-orange' if score >= 10 else
+                      'score-red' if score >= 0 else ''
+%}
+<tr class="{{ 'rot-row' if tender.status == 'Result Announced' }}">
+    <td>{{ tender.published_date | datetime('%Y-%m-%d') if tender.published_date else 'N/A' }}</td>
+    <td>{{ tender.tender_id }}</td>
+    <td>{{ tender.source_site }}</td>
+    <td class="title-cell">
+        <div class="eligibility-accent {{ score_class }}"></div>
+        {{ tender.tender_title | neat_format }}
+    </td>
+    <td>{{ tender.organisation_chain | neat_format }}</td>
+    <td>
+        {% if tender.status == 'Result Announced' %}
+            <span class="status-result">Result Announced</span>
+        {% else %}
+            <span class="status-live">Live</span>
+        {% endif %}
+    </td>
+    <td class="actions-cell">
+        <a href="{{ url_for('view_tender_detail', tender_pk_id=tender.id) }}" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.75rem;">Details</a>
+        {% if tender.status == 'Result Announced' %}
+            <a href="{{ url_for('view_tender_result', tender_pk_id=tender.id) }}" class="btn btn-success" style="padding: 6px 12px; font-size: 0.75rem;">Result</a>
+        {% endif %}
+    </td>
+</tr>
+{% endfor %}

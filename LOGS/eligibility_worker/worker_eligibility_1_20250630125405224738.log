@@ -1,0 +1,10 @@
+12:54:05 [INFO] (EligWorker-224738) Eligibility worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/eligibility_worker/worker_eligibility_1_20250630125405224738.log
+12:54:05 [INFO] (EligWorker-224738) Updated DB eligibility check for tender 1: status='processing', score=-1.
+12:54:05 [INFO] (EligWorker-224738) Status updated to: processing (Worker started, preparing browser...)
+12:54:05 [INFO] (EligWorker-224738) Navigating to homepage 'https://etenders.hry.nic.in/' to establish session.
+12:54:09 [INFO] (EligWorker-224738) Navigating to tender detail page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=St%2F7DdBmHe6xk9WLEKo41sg%3D%3D
+12:54:21 [INFO] (EligWorker-224738) Looking for 'Download as Zip' link...
+12:54:42 [INFO] (EligWorker-224738) Navigated to CAPTCHA/download page. Current URL: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_8&page=FrontEndTenderDetails&service=direct&session=T
+12:54:42 [INFO] (EligWorker-224738) On CAPTCHA page. Saving CAPTCHA for user.
+12:54:48 [INFO] (EligWorker-224738) Status updated to: WAITING_CAPTCHA
+12:54:48 [INFO] (EligWorker-224738) Waiting for CAPTCHA solution in /root/Tender-Aggregator/TEMP/EligibilityRuns/eligibility_1_20250630125405224738/answer.txt (max 300s)...

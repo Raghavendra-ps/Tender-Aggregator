@@ -1,0 +1,445 @@
+14:18:37 [INFO] (ROTWorker-Manipur Run-293231) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Manipur/worker_rot_worker_Manipur_20250630141837293231_2025-06-30.log
+14:18:37 [INFO] (ROTWorker-Manipur Run-293231) --- Starting Headless ROT Worker for Site: Manipur, Run ID: rot_worker_Manipur_20250630141837293231 ---
+14:18:37 [INFO] (ROTWorker-Manipur Run-293231) --- Dates: From=None, To=None ---
+14:18:37 [INFO] (ROTWorker-Manipur Run-293231) Worker status updated to: WORKER_STARTED
+14:18:37 [INFO] (ROTWorker-Manipur Run-293231) Worker status updated to: FETCHING_CAPTCHA
+14:18:38 [INFO] (ROTWorker-Manipur Run-293231) Selecting tender status '5'.
+14:18:41 [INFO] (ROTWorker-Manipur Run-293231) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Manipur_20250630141837293231/captcha.b64
+14:18:41 [INFO] (ROTWorker-Manipur Run-293231) Worker status updated to: WAITING_CAPTCHA
+14:18:41 [INFO] (ROTWorker-Manipur Run-293231) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Manipur_20250630141837293231/answer.txt (max 300s)...
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) CAPTCHA solution received.
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) Worker status updated to: PROCESSING_WITH_CAPTCHA
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) Worker status updated to: SCRAPING_RESULTS
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) --- Processing List Page: 1/10 ---
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1] Extracting table data...
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1] Extracted 10 items.
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1_2025_HFW_2582_1] Final summary link found. Clicking...
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1_2025_PWDM1_2664_1] Final summary link found. Clicking...
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) [2025_HFW_2582_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HFW_2582_1_20250630_141850_StageSummary.html
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) [2025_HFW_2582_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2025_HFW_2582_1_20250630_141850_StageSummary.html --site-key Manipur
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) [2025_PWDM1_2664_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWDM1_2664_1_20250630_141850_StageSummary.html
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) [2025_PWDM1_2664_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2025_PWDM1_2664_1_20250630_141850_StageSummary.html --site-key Manipur
+14:18:50 [INFO] (ROTWorker-Manipur Run-293231) [2025_HFW_2582_1 Popup] Successfully processed structured data for ROT_2025_HFW_2582_1_20250630_141850_StageSummary.html.
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2025_PWDM1_2664_1 Popup] Successfully processed structured data for ROT_2025_PWDM1_2664_1_20250630_141850_StageSummary.html.
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1_2024_TPD_2322_1] Final summary link found. Clicking...
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1_2024_HFW_2469_1] Final summary link found. Clicking...
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2024_TPD_2322_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2024_TPD_2322_1_20250630_141851_StageSummary.html
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2024_TPD_2322_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2024_TPD_2322_1_20250630_141851_StageSummary.html --site-key Manipur
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2024_HFW_2469_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2024_HFW_2469_1_20250630_141851_StageSummary.html
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2024_HFW_2469_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2024_HFW_2469_1_20250630_141851_StageSummary.html --site-key Manipur
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2024_TPD_2322_1 Popup] Successfully processed structured data for ROT_2024_TPD_2322_1_20250630_141851_StageSummary.html.
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2024_HFW_2469_1 Popup] Successfully processed structured data for ROT_2024_HFW_2469_1_20250630_141851_StageSummary.html.
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1_2023_TAH_2209_1] Final summary link found. Clicking...
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1_2023_TAH_2208_1] Final summary link found. Clicking...
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2023_TAH_2209_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2023_TAH_2209_1_20250630_141851_StageSummary.html
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2023_TAH_2209_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2023_TAH_2209_1_20250630_141851_StageSummary.html --site-key Manipur
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2023_TAH_2208_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2023_TAH_2208_1_20250630_141851_StageSummary.html
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2023_TAH_2208_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2023_TAH_2208_1_20250630_141851_StageSummary.html --site-key Manipur
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2023_TAH_2209_1 Popup] Successfully processed structured data for ROT_2023_TAH_2209_1_20250630_141851_StageSummary.html.
+14:18:51 [INFO] (ROTWorker-Manipur Run-293231) [2023_TAH_2208_1 Popup] Successfully processed structured data for ROT_2023_TAH_2208_1_20250630_141851_StageSummary.html.
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1_2023_TAH_2207_1] Final summary link found. Clicking...
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1_2023_PWDM1_2204_2] Final summary link found. Clicking...
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_TAH_2207_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2023_TAH_2207_1_20250630_141852_StageSummary.html
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_TAH_2207_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2023_TAH_2207_1_20250630_141852_StageSummary.html --site-key Manipur
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_PWDM1_2204_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2023_PWDM1_2204_2_20250630_141852_StageSummary.html
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_PWDM1_2204_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2023_PWDM1_2204_2_20250630_141852_StageSummary.html --site-key Manipur
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_TAH_2207_1 Popup] Successfully processed structured data for ROT_2023_TAH_2207_1_20250630_141852_StageSummary.html.
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_PWDM1_2204_2 Popup] Successfully processed structured data for ROT_2023_PWDM1_2204_2_20250630_141852_StageSummary.html.
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1_2023_MSPDC_2225_1] Final summary link found. Clicking...
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [ListPage1_2023_HFW_2236_1] Final summary link found. Clicking...
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_MSPDC_2225_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2023_MSPDC_2225_1_20250630_141852_StageSummary.html
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_MSPDC_2225_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2023_MSPDC_2225_1_20250630_141852_StageSummary.html --site-key Manipur
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_HFW_2236_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2023_HFW_2236_1_20250630_141852_StageSummary.html
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_HFW_2236_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2023_HFW_2236_1_20250630_141852_StageSummary.html --site-key Manipur
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_MSPDC_2225_1 Popup] Successfully processed structured data for ROT_2023_MSPDC_2225_1_20250630_141852_StageSummary.html.
+14:18:52 [INFO] (ROTWorker-Manipur Run-293231) [2023_HFW_2236_1 Popup] Successfully processed structured data for ROT_2023_HFW_2236_1_20250630_141852_StageSummary.html.
+14:18:59 [INFO] (ROTWorker-Manipur Run-293231) --- Processing List Page: 2/10 ---
+14:18:59 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2] Extracting table data...
+14:18:59 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2] Extracted 10 items.
+14:18:59 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2_2023_HFW_2180_1] Final summary link found. Clicking...
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2_2022_MSPDC_1971_1] Final summary link found. Clicking...
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2023_HFW_2180_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2023_HFW_2180_1_20250630_141900_StageSummary.html
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2023_HFW_2180_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2023_HFW_2180_1_20250630_141900_StageSummary.html --site-key Manipur
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2022_MSPDC_1971_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2022_MSPDC_1971_1_20250630_141900_StageSummary.html
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2022_MSPDC_1971_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2022_MSPDC_1971_1_20250630_141900_StageSummary.html --site-key Manipur
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2023_HFW_2180_1 Popup] Successfully processed structured data for ROT_2023_HFW_2180_1_20250630_141900_StageSummary.html.
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2022_MSPDC_1971_1 Popup] Successfully processed structured data for ROT_2022_MSPDC_1971_1_20250630_141900_StageSummary.html.
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2_2022_MSPDC_1894_1] Final summary link found. Clicking...
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2_2022_MSPDC_1874_1] Final summary link found. Clicking...
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2022_MSPDC_1874_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2022_MSPDC_1874_1_20250630_141900_StageSummary.html
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2022_MSPDC_1874_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2022_MSPDC_1874_1_20250630_141900_StageSummary.html --site-key Manipur
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2022_MSPDC_1894_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2022_MSPDC_1894_1_20250630_141900_StageSummary.html
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2022_MSPDC_1894_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2022_MSPDC_1894_1_20250630_141900_StageSummary.html --site-key Manipur
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2022_MSPDC_1874_1 Popup] Successfully processed structured data for ROT_2022_MSPDC_1874_1_20250630_141900_StageSummary.html.
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [2022_MSPDC_1894_1 Popup] Successfully processed structured data for ROT_2022_MSPDC_1894_1_20250630_141900_StageSummary.html.
+14:19:00 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2_2022_MAHUD_1930_1] Final summary link found. Clicking...
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2_2022_HCM_1836_1] Final summary link found. Clicking...
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_MAHUD_1930_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2022_MAHUD_1930_1_20250630_141901_StageSummary.html
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_MAHUD_1930_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2022_MAHUD_1930_1_20250630_141901_StageSummary.html --site-key Manipur
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_HCM_1836_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2022_HCM_1836_1_20250630_141901_StageSummary.html
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_HCM_1836_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2022_HCM_1836_1_20250630_141901_StageSummary.html --site-key Manipur
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_MAHUD_1930_1 Popup] Successfully processed structured data for ROT_2022_MAHUD_1930_1_20250630_141901_StageSummary.html.
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_HCM_1836_1 Popup] Successfully processed structured data for ROT_2022_HCM_1836_1_20250630_141901_StageSummary.html.
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2_2022_DMA_1958_1] Final summary link found. Clicking...
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2_2022_DMA_1957_1] Final summary link found. Clicking...
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1958_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2022_DMA_1958_1_20250630_141901_StageSummary.html
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1958_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2022_DMA_1958_1_20250630_141901_StageSummary.html --site-key Manipur
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1957_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2022_DMA_1957_1_20250630_141901_StageSummary.html
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1957_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2022_DMA_1957_1_20250630_141901_StageSummary.html --site-key Manipur
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1958_1 Popup] Successfully processed structured data for ROT_2022_DMA_1958_1_20250630_141901_StageSummary.html.
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1957_1 Popup] Successfully processed structured data for ROT_2022_DMA_1957_1_20250630_141901_StageSummary.html.
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2_2022_DMA_1956_1] Final summary link found. Clicking...
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [ListPage2_2022_DMA_1955_1] Final summary link found. Clicking...
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1956_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2022_DMA_1956_1_20250630_141901_StageSummary.html
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1956_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2022_DMA_1956_1_20250630_141901_StageSummary.html --site-key Manipur
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1955_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2022_DMA_1955_1_20250630_141901_StageSummary.html
+14:19:01 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1955_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2022_DMA_1955_1_20250630_141901_StageSummary.html --site-key Manipur
+14:19:02 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1956_1 Popup] Successfully processed structured data for ROT_2022_DMA_1956_1_20250630_141901_StageSummary.html.
+14:19:02 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1955_1 Popup] Successfully processed structured data for ROT_2022_DMA_1955_1_20250630_141901_StageSummary.html.
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) --- Processing List Page: 3/10 ---
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3] Extracting table data...
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3] Extracted 10 items.
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3_2022_DMA_1954_1] Final summary link found. Clicking...
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3_2022_DMA_1953_1] Final summary link found. Clicking...
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1954_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2022_DMA_1954_1_20250630_141909_StageSummary.html
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1954_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2022_DMA_1954_1_20250630_141909_StageSummary.html --site-key Manipur
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1953_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2022_DMA_1953_1_20250630_141909_StageSummary.html
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1953_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2022_DMA_1953_1_20250630_141909_StageSummary.html --site-key Manipur
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1954_1 Popup] Successfully processed structured data for ROT_2022_DMA_1954_1_20250630_141909_StageSummary.html.
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [2022_DMA_1953_1 Popup] Successfully processed structured data for ROT_2022_DMA_1953_1_20250630_141909_StageSummary.html.
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3_2021_MPHCL_1320_1] Final summary link found. Clicking...
+14:19:09 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3_2021_MANID_1600_1] Final summary link found. Clicking...
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MPHCL_1320_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_MPHCL_1320_1_20250630_141910_StageSummary.html
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MPHCL_1320_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_MPHCL_1320_1_20250630_141910_StageSummary.html --site-key Manipur
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1600_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_MANID_1600_1_20250630_141910_StageSummary.html
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1600_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_MANID_1600_1_20250630_141910_StageSummary.html --site-key Manipur
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MPHCL_1320_1 Popup] Successfully processed structured data for ROT_2021_MPHCL_1320_1_20250630_141910_StageSummary.html.
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1600_1 Popup] Successfully processed structured data for ROT_2021_MANID_1600_1_20250630_141910_StageSummary.html.
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3_2021_MANID_1350_1] Final summary link found. Clicking...
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3_2021_MANID_1283_1] Final summary link found. Clicking...
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1350_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_MANID_1350_1_20250630_141910_StageSummary.html
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1350_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_MANID_1350_1_20250630_141910_StageSummary.html --site-key Manipur
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1283_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_MANID_1283_1_20250630_141910_StageSummary.html
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1283_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_MANID_1283_1_20250630_141910_StageSummary.html --site-key Manipur
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1350_1 Popup] Successfully processed structured data for ROT_2021_MANID_1350_1_20250630_141910_StageSummary.html.
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1283_1 Popup] Successfully processed structured data for ROT_2021_MANID_1283_1_20250630_141910_StageSummary.html.
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3_2021_MANID_1282_1] Final summary link found. Clicking...
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3_2021_MANID_1281_1] Final summary link found. Clicking...
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1282_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_MANID_1282_1_20250630_141910_StageSummary.html
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1282_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_MANID_1282_1_20250630_141910_StageSummary.html --site-key Manipur
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1281_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_MANID_1281_1_20250630_141910_StageSummary.html
+14:19:10 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1281_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_MANID_1281_1_20250630_141910_StageSummary.html --site-key Manipur
+14:19:11 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1282_1 Popup] Successfully processed structured data for ROT_2021_MANID_1282_1_20250630_141910_StageSummary.html.
+14:19:11 [INFO] (ROTWorker-Manipur Run-293231) [2021_MANID_1281_1 Popup] Successfully processed structured data for ROT_2021_MANID_1281_1_20250630_141910_StageSummary.html.
+14:19:11 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3_2021_LDA_1428_1] Final summary link found. Clicking...
+14:19:11 [INFO] (ROTWorker-Manipur Run-293231) [ListPage3_2021_LDA_1427_1] Final summary link found. Clicking...
+14:19:11 [INFO] (ROTWorker-Manipur Run-293231) [2021_LDA_1428_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_LDA_1428_1_20250630_141911_StageSummary.html
+14:19:11 [INFO] (ROTWorker-Manipur Run-293231) [2021_LDA_1428_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_LDA_1428_1_20250630_141911_StageSummary.html --site-key Manipur
+14:19:11 [INFO] (ROTWorker-Manipur Run-293231) [2021_LDA_1427_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_LDA_1427_1_20250630_141911_StageSummary.html
+14:19:11 [INFO] (ROTWorker-Manipur Run-293231) [2021_LDA_1427_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_LDA_1427_1_20250630_141911_StageSummary.html --site-key Manipur
+14:19:11 [INFO] (ROTWorker-Manipur Run-293231) [2021_LDA_1428_1 Popup] Successfully processed structured data for ROT_2021_LDA_1428_1_20250630_141911_StageSummary.html.
+14:19:11 [INFO] (ROTWorker-Manipur Run-293231) [2021_LDA_1427_1 Popup] Successfully processed structured data for ROT_2021_LDA_1427_1_20250630_141911_StageSummary.html.
+14:19:18 [INFO] (ROTWorker-Manipur Run-293231) --- Processing List Page: 4/10 ---
+14:19:18 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4] Extracting table data...
+14:19:18 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4] Extracted 10 items.
+14:19:18 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4_2021_DMA_1517_1] Final summary link found. Clicking...
+14:19:18 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4_2021_DMA_1565_1] Final summary link found. Clicking...
+14:19:18 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1517_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1517_1_20250630_141918_StageSummary.html
+14:19:18 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1517_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1517_1_20250630_141918_StageSummary.html --site-key Manipur
+14:19:18 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1565_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1565_1_20250630_141918_StageSummary.html
+14:19:18 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1565_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1565_1_20250630_141918_StageSummary.html --site-key Manipur
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1517_1 Popup] Successfully processed structured data for ROT_2021_DMA_1517_1_20250630_141918_StageSummary.html.
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1565_1 Popup] Successfully processed structured data for ROT_2021_DMA_1565_1_20250630_141918_StageSummary.html.
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4_2021_DMA_1514_1] Final summary link found. Clicking...
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4_2021_DMA_1516_1] Final summary link found. Clicking...
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1516_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1516_1_20250630_141919_StageSummary.html
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1516_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1516_1_20250630_141919_StageSummary.html --site-key Manipur
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1514_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1514_1_20250630_141919_StageSummary.html
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1514_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1514_1_20250630_141919_StageSummary.html --site-key Manipur
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1516_1 Popup] Successfully processed structured data for ROT_2021_DMA_1516_1_20250630_141919_StageSummary.html.
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1514_1 Popup] Successfully processed structured data for ROT_2021_DMA_1514_1_20250630_141919_StageSummary.html.
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4_2021_DMA_1513_1] Final summary link found. Clicking...
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4_2021_DMA_1512_1] Final summary link found. Clicking...
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1513_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1513_1_20250630_141919_StageSummary.html
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1513_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1513_1_20250630_141919_StageSummary.html --site-key Manipur
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1512_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1512_1_20250630_141919_StageSummary.html
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1512_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1512_1_20250630_141919_StageSummary.html --site-key Manipur
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1513_1 Popup] Successfully processed structured data for ROT_2021_DMA_1513_1_20250630_141919_StageSummary.html.
+14:19:19 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1512_1 Popup] Successfully processed structured data for ROT_2021_DMA_1512_1_20250630_141919_StageSummary.html.
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4_2021_DMA_1500_1] Final summary link found. Clicking...
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4_2021_DMA_1493_1] Final summary link found. Clicking...
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1500_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1500_1_20250630_141920_StageSummary.html
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1500_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1500_1_20250630_141920_StageSummary.html --site-key Manipur
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1493_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1493_1_20250630_141920_StageSummary.html
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1493_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1493_1_20250630_141920_StageSummary.html --site-key Manipur
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1500_1 Popup] Successfully processed structured data for ROT_2021_DMA_1500_1_20250630_141920_StageSummary.html.
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1493_1 Popup] Successfully processed structured data for ROT_2021_DMA_1493_1_20250630_141920_StageSummary.html.
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4_2021_DMA_1492_1] Final summary link found. Clicking...
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [ListPage4_2021_DMA_1491_1] Final summary link found. Clicking...
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1492_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1492_1_20250630_141920_StageSummary.html
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1492_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1492_1_20250630_141920_StageSummary.html --site-key Manipur
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1491_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1491_1_20250630_141920_StageSummary.html
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1491_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1491_1_20250630_141920_StageSummary.html --site-key Manipur
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1492_1 Popup] Successfully processed structured data for ROT_2021_DMA_1492_1_20250630_141920_StageSummary.html.
+14:19:20 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1491_1 Popup] Successfully processed structured data for ROT_2021_DMA_1491_1_20250630_141920_StageSummary.html.
+14:19:27 [INFO] (ROTWorker-Manipur Run-293231) --- Processing List Page: 5/10 ---
+14:19:27 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5] Extracting table data...
+14:19:27 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5] Extracted 10 items.
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5_2021_DMA_1489_1] Final summary link found. Clicking...
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5_2021_DMA_1490_1] Final summary link found. Clicking...
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1489_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1489_1_20250630_141928_StageSummary.html
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1489_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1489_1_20250630_141928_StageSummary.html --site-key Manipur
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1490_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1490_1_20250630_141928_StageSummary.html
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1490_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1490_1_20250630_141928_StageSummary.html --site-key Manipur
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1489_1 Popup] Successfully processed structured data for ROT_2021_DMA_1489_1_20250630_141928_StageSummary.html.
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1490_1 Popup] Successfully processed structured data for ROT_2021_DMA_1490_1_20250630_141928_StageSummary.html.
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5_2021_DMA_1487_1] Final summary link found. Clicking...
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5_2021_DMA_1488_1] Final summary link found. Clicking...
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1488_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1488_1_20250630_141928_StageSummary.html
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1488_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1488_1_20250630_141928_StageSummary.html --site-key Manipur
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1487_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1487_1_20250630_141928_StageSummary.html
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1487_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1487_1_20250630_141928_StageSummary.html --site-key Manipur
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1488_1 Popup] Successfully processed structured data for ROT_2021_DMA_1488_1_20250630_141928_StageSummary.html.
+14:19:28 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1487_1 Popup] Successfully processed structured data for ROT_2021_DMA_1487_1_20250630_141928_StageSummary.html.
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5_2021_DMA_1485_1] Final summary link found. Clicking...
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5_2021_DMA_1486_1] Final summary link found. Clicking...
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1486_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1486_1_20250630_141929_StageSummary.html
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1486_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1486_1_20250630_141929_StageSummary.html --site-key Manipur
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1485_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1485_1_20250630_141929_StageSummary.html
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1485_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1485_1_20250630_141929_StageSummary.html --site-key Manipur
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1486_1 Popup] Successfully processed structured data for ROT_2021_DMA_1486_1_20250630_141929_StageSummary.html.
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1485_1 Popup] Successfully processed structured data for ROT_2021_DMA_1485_1_20250630_141929_StageSummary.html.
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5_2021_DMA_1483_1] Final summary link found. Clicking...
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5_2021_DMA_1484_1] Final summary link found. Clicking...
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1483_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1483_1_20250630_141929_StageSummary.html
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1483_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1483_1_20250630_141929_StageSummary.html --site-key Manipur
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1484_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1484_1_20250630_141929_StageSummary.html
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1484_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1484_1_20250630_141929_StageSummary.html --site-key Manipur
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1483_1 Popup] Successfully processed structured data for ROT_2021_DMA_1483_1_20250630_141929_StageSummary.html.
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1484_1 Popup] Successfully processed structured data for ROT_2021_DMA_1484_1_20250630_141929_StageSummary.html.
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5_2021_DMA_1482_1] Final summary link found. Clicking...
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [ListPage5_2021_DMA_1481_1] Final summary link found. Clicking...
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1482_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1482_1_20250630_141929_StageSummary.html
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1482_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1482_1_20250630_141929_StageSummary.html --site-key Manipur
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1481_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1481_1_20250630_141929_StageSummary.html
+14:19:29 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1481_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1481_1_20250630_141929_StageSummary.html --site-key Manipur
+14:19:30 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1482_1 Popup] Successfully processed structured data for ROT_2021_DMA_1482_1_20250630_141929_StageSummary.html.
+14:19:30 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1481_1 Popup] Successfully processed structured data for ROT_2021_DMA_1481_1_20250630_141929_StageSummary.html.
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) --- Processing List Page: 6/10 ---
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6] Extracting table data...
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6] Extracted 10 items.
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6_2021_DMA_1479_1] Final summary link found. Clicking...
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6_2021_DMA_1480_1] Final summary link found. Clicking...
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1479_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1479_1_20250630_141937_StageSummary.html
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1479_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1479_1_20250630_141937_StageSummary.html --site-key Manipur
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1480_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1480_1_20250630_141937_StageSummary.html
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1480_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1480_1_20250630_141937_StageSummary.html --site-key Manipur
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1479_1 Popup] Successfully processed structured data for ROT_2021_DMA_1479_1_20250630_141937_StageSummary.html.
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1480_1 Popup] Successfully processed structured data for ROT_2021_DMA_1480_1_20250630_141937_StageSummary.html.
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6_2021_DMA_1477_1] Final summary link found. Clicking...
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6_2021_DMA_1478_1] Final summary link found. Clicking...
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1477_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1477_1_20250630_141937_StageSummary.html
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1477_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1477_1_20250630_141937_StageSummary.html --site-key Manipur
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1478_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1478_1_20250630_141937_StageSummary.html
+14:19:37 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1478_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1478_1_20250630_141937_StageSummary.html --site-key Manipur
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1477_1 Popup] Successfully processed structured data for ROT_2021_DMA_1477_1_20250630_141937_StageSummary.html.
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1478_1 Popup] Successfully processed structured data for ROT_2021_DMA_1478_1_20250630_141937_StageSummary.html.
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6_2021_DMA_1476_1] Final summary link found. Clicking...
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6_2021_DMA_1475_1] Final summary link found. Clicking...
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1476_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1476_1_20250630_141938_StageSummary.html
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1476_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1476_1_20250630_141938_StageSummary.html --site-key Manipur
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1475_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1475_1_20250630_141938_StageSummary.html
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1475_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1475_1_20250630_141938_StageSummary.html --site-key Manipur
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1476_1 Popup] Successfully processed structured data for ROT_2021_DMA_1476_1_20250630_141938_StageSummary.html.
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1475_1 Popup] Successfully processed structured data for ROT_2021_DMA_1475_1_20250630_141938_StageSummary.html.
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6_2021_DMA_1474_1] Final summary link found. Clicking...
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6_2021_DMA_1473_1] Final summary link found. Clicking...
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1474_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1474_1_20250630_141938_StageSummary.html
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1474_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1474_1_20250630_141938_StageSummary.html --site-key Manipur
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1473_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1473_1_20250630_141938_StageSummary.html
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1473_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1473_1_20250630_141938_StageSummary.html --site-key Manipur
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1474_1 Popup] Successfully processed structured data for ROT_2021_DMA_1474_1_20250630_141938_StageSummary.html.
+14:19:38 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1473_1 Popup] Successfully processed structured data for ROT_2021_DMA_1473_1_20250630_141938_StageSummary.html.
+14:19:39 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6_2021_DMA_1471_1] Final summary link found. Clicking...
+14:19:39 [INFO] (ROTWorker-Manipur Run-293231) [ListPage6_2021_DMA_1472_1] Final summary link found. Clicking...
+14:19:39 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1472_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1472_1_20250630_141939_StageSummary.html
+14:19:39 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1472_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1472_1_20250630_141939_StageSummary.html --site-key Manipur
+14:19:39 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1471_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1471_1_20250630_141939_StageSummary.html
+14:19:39 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1471_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1471_1_20250630_141939_StageSummary.html --site-key Manipur
+14:19:39 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1472_1 Popup] Successfully processed structured data for ROT_2021_DMA_1472_1_20250630_141939_StageSummary.html.
+14:19:39 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1471_1 Popup] Successfully processed structured data for ROT_2021_DMA_1471_1_20250630_141939_StageSummary.html.
+14:19:46 [INFO] (ROTWorker-Manipur Run-293231) --- Processing List Page: 7/10 ---
+14:19:46 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7] Extracting table data...
+14:19:46 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7] Extracted 10 items.
+14:19:46 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7_2021_DMA_1434_1] Final summary link found. Clicking...
+14:19:46 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7_2021_DMA_1420_1] Final summary link found. Clicking...
+14:19:46 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1434_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1434_1_20250630_141946_StageSummary.html
+14:19:46 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1434_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1434_1_20250630_141946_StageSummary.html --site-key Manipur
+14:19:46 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1420_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1420_1_20250630_141946_StageSummary.html
+14:19:46 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1420_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1420_1_20250630_141946_StageSummary.html --site-key Manipur
+14:19:46 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1434_1 Popup] Successfully processed structured data for ROT_2021_DMA_1434_1_20250630_141946_StageSummary.html.
+14:19:46 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1420_1 Popup] Successfully processed structured data for ROT_2021_DMA_1420_1_20250630_141946_StageSummary.html.
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7_2021_DMA_1419_1] Final summary link found. Clicking...
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7_2021_DMA_1418_1] Final summary link found. Clicking...
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1419_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1419_1_20250630_141947_StageSummary.html
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1419_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1419_1_20250630_141947_StageSummary.html --site-key Manipur
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1418_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1418_1_20250630_141947_StageSummary.html
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1418_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1418_1_20250630_141947_StageSummary.html --site-key Manipur
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1419_1 Popup] Successfully processed structured data for ROT_2021_DMA_1419_1_20250630_141947_StageSummary.html.
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1418_1 Popup] Successfully processed structured data for ROT_2021_DMA_1418_1_20250630_141947_StageSummary.html.
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7_2021_DMA_1417_1] Final summary link found. Clicking...
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7_2021_DMA_1416_1] Final summary link found. Clicking...
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1417_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1417_1_20250630_141947_StageSummary.html
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1417_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1417_1_20250630_141947_StageSummary.html --site-key Manipur
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1416_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1416_1_20250630_141947_StageSummary.html
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1416_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1416_1_20250630_141947_StageSummary.html --site-key Manipur
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1417_1 Popup] Successfully processed structured data for ROT_2021_DMA_1417_1_20250630_141947_StageSummary.html.
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1416_1 Popup] Successfully processed structured data for ROT_2021_DMA_1416_1_20250630_141947_StageSummary.html.
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7_2021_DMA_1415_1] Final summary link found. Clicking...
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7_2021_DMA_1414_1] Final summary link found. Clicking...
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1415_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1415_1_20250630_141947_StageSummary.html
+14:19:47 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1415_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1415_1_20250630_141947_StageSummary.html --site-key Manipur
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1414_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1414_1_20250630_141948_StageSummary.html
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1414_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1414_1_20250630_141948_StageSummary.html --site-key Manipur
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1415_1 Popup] Successfully processed structured data for ROT_2021_DMA_1415_1_20250630_141947_StageSummary.html.
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1414_1 Popup] Successfully processed structured data for ROT_2021_DMA_1414_1_20250630_141948_StageSummary.html.
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7_2021_DMA_1413_1] Final summary link found. Clicking...
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [ListPage7_2021_DMA_1412_1] Final summary link found. Clicking...
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1413_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1413_1_20250630_141948_StageSummary.html
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1413_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1413_1_20250630_141948_StageSummary.html --site-key Manipur
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1412_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1412_1_20250630_141948_StageSummary.html
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1412_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1412_1_20250630_141948_StageSummary.html --site-key Manipur
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1413_1 Popup] Successfully processed structured data for ROT_2021_DMA_1413_1_20250630_141948_StageSummary.html.
+14:19:48 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1412_1 Popup] Successfully processed structured data for ROT_2021_DMA_1412_1_20250630_141948_StageSummary.html.
+14:19:55 [INFO] (ROTWorker-Manipur Run-293231) --- Processing List Page: 8/10 ---
+14:19:55 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8] Extracting table data...
+14:19:55 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8] Extracted 10 items.
+14:19:55 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8_2021_DMA_1410_1] Final summary link found. Clicking...
+14:19:55 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8_2021_DMA_1411_1] Final summary link found. Clicking...
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1410_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1410_1_20250630_141956_StageSummary.html
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1410_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1410_1_20250630_141956_StageSummary.html --site-key Manipur
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1411_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1411_1_20250630_141956_StageSummary.html
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1411_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1411_1_20250630_141956_StageSummary.html --site-key Manipur
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1410_1 Popup] Successfully processed structured data for ROT_2021_DMA_1410_1_20250630_141956_StageSummary.html.
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1411_1 Popup] Successfully processed structured data for ROT_2021_DMA_1411_1_20250630_141956_StageSummary.html.
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8_2021_DMA_1409_1] Final summary link found. Clicking...
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8_2021_DMA_1408_1] Final summary link found. Clicking...
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1409_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1409_1_20250630_141956_StageSummary.html
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1409_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1409_1_20250630_141956_StageSummary.html --site-key Manipur
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1408_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1408_1_20250630_141956_StageSummary.html
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1408_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1408_1_20250630_141956_StageSummary.html --site-key Manipur
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1409_1 Popup] Successfully processed structured data for ROT_2021_DMA_1409_1_20250630_141956_StageSummary.html.
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1408_1 Popup] Successfully processed structured data for ROT_2021_DMA_1408_1_20250630_141956_StageSummary.html.
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8_2021_DMA_1407_1] Final summary link found. Clicking...
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8_2021_DMA_1406_1] Final summary link found. Clicking...
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1407_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1407_1_20250630_141956_StageSummary.html
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1407_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1407_1_20250630_141956_StageSummary.html --site-key Manipur
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1406_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1406_1_20250630_141956_StageSummary.html
+14:19:56 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1406_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1406_1_20250630_141956_StageSummary.html --site-key Manipur
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1407_1 Popup] Successfully processed structured data for ROT_2021_DMA_1407_1_20250630_141956_StageSummary.html.
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1406_1 Popup] Successfully processed structured data for ROT_2021_DMA_1406_1_20250630_141956_StageSummary.html.
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8_2021_DMA_1405_1] Final summary link found. Clicking...
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8_2021_DMA_1404_1] Final summary link found. Clicking...
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1405_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1405_1_20250630_141957_StageSummary.html
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1405_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1405_1_20250630_141957_StageSummary.html --site-key Manipur
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1404_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1404_1_20250630_141957_StageSummary.html
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1404_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1404_1_20250630_141957_StageSummary.html --site-key Manipur
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1405_1 Popup] Successfully processed structured data for ROT_2021_DMA_1405_1_20250630_141957_StageSummary.html.
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1404_1 Popup] Successfully processed structured data for ROT_2021_DMA_1404_1_20250630_141957_StageSummary.html.
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8_2021_DMA_1403_1] Final summary link found. Clicking...
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [ListPage8_2021_DMA_1402_1] Final summary link found. Clicking...
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1403_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1403_1_20250630_141957_StageSummary.html
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1403_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1403_1_20250630_141957_StageSummary.html --site-key Manipur
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1402_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1402_1_20250630_141957_StageSummary.html
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1402_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1402_1_20250630_141957_StageSummary.html --site-key Manipur
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1403_1 Popup] Successfully processed structured data for ROT_2021_DMA_1403_1_20250630_141957_StageSummary.html.
+14:19:57 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1402_1 Popup] Successfully processed structured data for ROT_2021_DMA_1402_1_20250630_141957_StageSummary.html.
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) --- Processing List Page: 9/10 ---
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9] Extracting table data...
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9] Extracted 10 items.
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9_2021_DMA_1400_1] Final summary link found. Clicking...
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9_2021_DMA_1401_1] Final summary link found. Clicking...
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1400_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1400_1_20250630_142005_StageSummary.html
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1400_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1400_1_20250630_142005_StageSummary.html --site-key Manipur
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1401_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1401_1_20250630_142005_StageSummary.html
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1401_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1401_1_20250630_142005_StageSummary.html --site-key Manipur
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1400_1 Popup] Successfully processed structured data for ROT_2021_DMA_1400_1_20250630_142005_StageSummary.html.
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1401_1 Popup] Successfully processed structured data for ROT_2021_DMA_1401_1_20250630_142005_StageSummary.html.
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9_2021_DMA_1399_1] Final summary link found. Clicking...
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9_2021_DMA_1398_1] Final summary link found. Clicking...
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1399_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1399_1_20250630_142005_StageSummary.html
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1399_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1399_1_20250630_142005_StageSummary.html --site-key Manipur
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1398_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1398_1_20250630_142005_StageSummary.html
+14:20:05 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1398_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1398_1_20250630_142005_StageSummary.html --site-key Manipur
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1399_1 Popup] Successfully processed structured data for ROT_2021_DMA_1399_1_20250630_142005_StageSummary.html.
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1398_1 Popup] Successfully processed structured data for ROT_2021_DMA_1398_1_20250630_142005_StageSummary.html.
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9_2021_DMA_1397_1] Final summary link found. Clicking...
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9_2021_DMA_1396_1] Final summary link found. Clicking...
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1397_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1397_1_20250630_142006_StageSummary.html
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1397_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1397_1_20250630_142006_StageSummary.html --site-key Manipur
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1396_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1396_1_20250630_142006_StageSummary.html
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1396_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1396_1_20250630_142006_StageSummary.html --site-key Manipur
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1397_1 Popup] Successfully processed structured data for ROT_2021_DMA_1397_1_20250630_142006_StageSummary.html.
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1396_1 Popup] Successfully processed structured data for ROT_2021_DMA_1396_1_20250630_142006_StageSummary.html.
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9_2021_DMA_1395_1] Final summary link found. Clicking...
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9_2021_DMA_1394_1] Final summary link found. Clicking...
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1395_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1395_1_20250630_142006_StageSummary.html
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1395_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1395_1_20250630_142006_StageSummary.html --site-key Manipur
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1394_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1394_1_20250630_142006_StageSummary.html
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1394_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1394_1_20250630_142006_StageSummary.html --site-key Manipur
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1395_1 Popup] Successfully processed structured data for ROT_2021_DMA_1395_1_20250630_142006_StageSummary.html.
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1394_1 Popup] Successfully processed structured data for ROT_2021_DMA_1394_1_20250630_142006_StageSummary.html.
+14:20:06 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9_2021_DMA_1393_1] Final summary link found. Clicking...
+14:20:07 [INFO] (ROTWorker-Manipur Run-293231) [ListPage9_2021_DMA_1392_1] Final summary link found. Clicking...
+14:20:07 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1393_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1393_1_20250630_142007_StageSummary.html
+14:20:07 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1393_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1393_1_20250630_142007_StageSummary.html --site-key Manipur
+14:20:07 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1392_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1392_1_20250630_142007_StageSummary.html
+14:20:07 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1392_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1392_1_20250630_142007_StageSummary.html --site-key Manipur
+14:20:07 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1393_1 Popup] Successfully processed structured data for ROT_2021_DMA_1393_1_20250630_142007_StageSummary.html.
+14:20:07 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1392_1 Popup] Successfully processed structured data for ROT_2021_DMA_1392_1_20250630_142007_StageSummary.html.
+14:20:14 [INFO] (ROTWorker-Manipur Run-293231) --- Processing List Page: 10/10 ---
+14:20:14 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10] Extracting table data...
+14:20:14 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10] Extracted 10 items.
+14:20:14 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10_2021_DMA_1390_1] Final summary link found. Clicking...
+14:20:14 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10_2021_DMA_1391_1] Final summary link found. Clicking...
+14:20:14 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1391_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1391_1_20250630_142014_StageSummary.html
+14:20:14 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1391_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1391_1_20250630_142014_StageSummary.html --site-key Manipur
+14:20:14 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1390_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1390_1_20250630_142014_StageSummary.html
+14:20:14 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1390_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1390_1_20250630_142014_StageSummary.html --site-key Manipur
+14:20:14 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1391_1 Popup] Successfully processed structured data for ROT_2021_DMA_1391_1_20250630_142014_StageSummary.html.
+14:20:14 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1390_1 Popup] Successfully processed structured data for ROT_2021_DMA_1390_1_20250630_142014_StageSummary.html.
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10_2021_DMA_1389_1] Final summary link found. Clicking...
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10_2021_DMA_1388_1] Final summary link found. Clicking...
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1389_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1389_1_20250630_142015_StageSummary.html
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1389_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1389_1_20250630_142015_StageSummary.html --site-key Manipur
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1388_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1388_1_20250630_142015_StageSummary.html
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1388_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1388_1_20250630_142015_StageSummary.html --site-key Manipur
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1389_1 Popup] Successfully processed structured data for ROT_2021_DMA_1389_1_20250630_142015_StageSummary.html.
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1388_1 Popup] Successfully processed structured data for ROT_2021_DMA_1388_1_20250630_142015_StageSummary.html.
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10_2021_DMA_1386_1] Final summary link found. Clicking...
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10_2021_DMA_1387_1] Final summary link found. Clicking...
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1387_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1387_1_20250630_142015_StageSummary.html
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1387_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1387_1_20250630_142015_StageSummary.html --site-key Manipur
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1386_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1386_1_20250630_142015_StageSummary.html
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1386_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1386_1_20250630_142015_StageSummary.html --site-key Manipur
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1387_1 Popup] Successfully processed structured data for ROT_2021_DMA_1387_1_20250630_142015_StageSummary.html.
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1386_1 Popup] Successfully processed structured data for ROT_2021_DMA_1386_1_20250630_142015_StageSummary.html.
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10_2021_DMA_1385_1] Final summary link found. Clicking...
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10_2021_DMA_1384_1] Final summary link found. Clicking...
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1385_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1385_1_20250630_142015_StageSummary.html
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1385_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1385_1_20250630_142015_StageSummary.html --site-key Manipur
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1384_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1384_1_20250630_142015_StageSummary.html
+14:20:15 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1384_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1384_1_20250630_142015_StageSummary.html --site-key Manipur
+14:20:16 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1385_1 Popup] Successfully processed structured data for ROT_2021_DMA_1385_1_20250630_142015_StageSummary.html.
+14:20:16 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1384_1 Popup] Successfully processed structured data for ROT_2021_DMA_1384_1_20250630_142015_StageSummary.html.
+14:20:16 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10_2021_DMA_1383_1] Final summary link found. Clicking...
+14:20:16 [INFO] (ROTWorker-Manipur Run-293231) [ListPage10_2021_DMA_1372_1] Final summary link found. Clicking...
+14:20:16 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1383_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1383_1_20250630_142016_StageSummary.html
+14:20:16 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1383_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1383_1_20250630_142016_StageSummary.html --site-key Manipur
+14:20:16 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1372_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2021_DMA_1372_1_20250630_142016_StageSummary.html
+14:20:16 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1372_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Manipur/ROT_2021_DMA_1372_1_20250630_142016_StageSummary.html --site-key Manipur
+14:20:16 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1383_1 Popup] Successfully processed structured data for ROT_2021_DMA_1383_1_20250630_142016_StageSummary.html.
+14:20:16 [INFO] (ROTWorker-Manipur Run-293231) [2021_DMA_1372_1 Popup] Successfully processed structured data for ROT_2021_DMA_1372_1_20250630_142016_StageSummary.html.
+14:20:23 [INFO] (ROTWorker-Manipur Run-293231) Worker status updated to: FINISHED_SUCCESS
+14:20:23 [INFO] (ROTWorker-Manipur Run-293231) Playwright resources closed.
+14:20:23 [INFO] (ROTWorker-Manipur Run-293231) Worker for Manipur terminated with status: FINISHED_SUCCESS

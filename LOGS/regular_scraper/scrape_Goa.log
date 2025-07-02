@@ -236,3 +236,28 @@
 15:30:53 [INFO] (Scraper-REG-Goa)   ✅ List Page 10 processed successfully (20 items).
 15:30:53 [INFO] (Scraper-REG-Goa) Scrape run for site Goa finished. Saved: 200, Failed to save: 0.
 15:30:53 [INFO] (Scraper-REG-Goa) 🏁 Scrape run for site Goa completed. Duration: 0:01:02.955438.
+16:23:10 [INFO] (Scraper-REG-Goa) 🚀 Starting DB-integrated scrape run for site: Goa...
+16:23:10 [INFO] (Scraper-REG-Goa) Performing initial homepage visit to handle popups...
+16:23:17 [INFO] (Scraper-REG-Goa)   No initial popup found, or it closed quickly.
+16:23:17 [INFO] (Scraper-REG-Goa) 📄 Fetching List Page 1 (Attempt 1)...
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SQRXM2uUFVk9fIijvnEUOkw%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SsNfDiEgA4epCSZ1OiCd9Tg%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Sowmk5YMHXDydbocyXUnq6Q%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SZ85t2XmTVQrtwMG%2F%2BEXooQ%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SVQx8zsLuYgPHUicw3ig%2Few%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SYgZK944cu28snRWJ%2BnipOw%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SCgs2HLbQhGOk%2F2FN25M03w%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=Ssp24UhQhNtzY%2FR2bwRXJLQ%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SXZzxXbWKgQftkNMfgrVN2w%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S3jOGXttwDXjqmd%2FAZSrQcQ%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SnIbJ4SN3j1fEVaoJyPFCdA%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S1oJBOFOFsNxq0XgPOh%2FB2Q%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SiOnytEnbv3cu%2BqEeplTRtg%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SKE5QZMCfQ4cxyRIEBHbcQQ%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SZ%2FdE20jWanBbs%2FFBmOYsqw%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SkWI3FMeP5PXRm5vtC9VZaA%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S3lqgo1CjMw1NLSplP4rGiw%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SwPV6mKteuSNRWguRfqpnDw%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=SgRo3PmgqKdqvPcs89EeaHw%3D%3D
+16:23:18 [DEBUG] (Scraper-REG-Goa)     ➡️  Scraping Detail Page: https://eprocure.goa.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S7YMi00cs%2F4GL6qWynapORw%3D%3D
+16:23:18 [INFO] (Scraper-REG-Goa) 🏁 Scrape run for site Goa completed. Duration: 0:00:08.690824.

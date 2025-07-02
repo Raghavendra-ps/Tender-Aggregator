@@ -1,0 +1,445 @@
+15:28:14 [INFO] (ROTWorker-Chandigarh Run-595422) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Chandigarh/worker_rot_worker_Chandigarh_20250630152814595422_2025-06-30.log
+15:28:14 [INFO] (ROTWorker-Chandigarh Run-595422) --- Starting Headless ROT Worker for Site: Chandigarh, Run ID: rot_worker_Chandigarh_20250630152814595422 ---
+15:28:14 [INFO] (ROTWorker-Chandigarh Run-595422) --- Dates: From=None, To=None ---
+15:28:14 [INFO] (ROTWorker-Chandigarh Run-595422) Worker status updated to: WORKER_STARTED
+15:28:14 [INFO] (ROTWorker-Chandigarh Run-595422) Worker status updated to: FETCHING_CAPTCHA
+15:28:15 [INFO] (ROTWorker-Chandigarh Run-595422) Selecting tender status '5'.
+15:28:18 [INFO] (ROTWorker-Chandigarh Run-595422) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Chandigarh_20250630152814595422/captcha.b64
+15:28:18 [INFO] (ROTWorker-Chandigarh Run-595422) Worker status updated to: WAITING_CAPTCHA
+15:28:18 [INFO] (ROTWorker-Chandigarh Run-595422) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Chandigarh_20250630152814595422/answer.txt (max 300s)...
+15:28:25 [INFO] (ROTWorker-Chandigarh Run-595422) CAPTCHA solution received.
+15:28:25 [INFO] (ROTWorker-Chandigarh Run-595422) Worker status updated to: PROCESSING_WITH_CAPTCHA
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) Worker status updated to: SCRAPING_RESULTS
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) --- Processing List Page: 1/10 ---
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1] Extracting table data...
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1] Extracted 10 items.
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1_2025_PU_84485_1] Final summary link found. Clicking...
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1_2025_PEC_85308_1] Final summary link found. Clicking...
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_PEC_85308_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PEC_85308_1_20250630_152826_StageSummary.html
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_PEC_85308_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_PEC_85308_1_20250630_152826_StageSummary.html --site-key Chandigarh
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_PU_84485_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PU_84485_1_20250630_152826_StageSummary.html
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_PU_84485_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_PU_84485_1_20250630_152826_StageSummary.html --site-key Chandigarh
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_PEC_85308_1 Popup] Successfully processed structured data for ROT_2025_PEC_85308_1_20250630_152826_StageSummary.html.
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_PU_84485_1 Popup] Successfully processed structured data for ROT_2025_PU_84485_1_20250630_152826_StageSummary.html.
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1_2025_PEC_84144_1] Final summary link found. Clicking...
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1_2025_MCC_86904_1] Final summary link found. Clicking...
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_PEC_84144_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PEC_84144_1_20250630_152826_StageSummary.html
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_PEC_84144_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_PEC_84144_1_20250630_152826_StageSummary.html --site-key Chandigarh
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86904_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86904_1_20250630_152826_StageSummary.html
+15:28:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86904_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86904_1_20250630_152826_StageSummary.html --site-key Chandigarh
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_PEC_84144_1 Popup] Successfully processed structured data for ROT_2025_PEC_84144_1_20250630_152826_StageSummary.html.
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86904_1 Popup] Successfully processed structured data for ROT_2025_MCC_86904_1_20250630_152826_StageSummary.html.
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1_2025_MCC_86839_1] Final summary link found. Clicking...
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1_2025_MCC_86813_2] Final summary link found. Clicking...
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86839_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86839_1_20250630_152827_StageSummary.html
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86839_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86839_1_20250630_152827_StageSummary.html --site-key Chandigarh
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86813_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86813_2_20250630_152827_StageSummary.html
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86813_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86813_2_20250630_152827_StageSummary.html --site-key Chandigarh
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86839_1 Popup] Successfully processed structured data for ROT_2025_MCC_86839_1_20250630_152827_StageSummary.html.
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86813_2 Popup] Successfully processed structured data for ROT_2025_MCC_86813_2_20250630_152827_StageSummary.html.
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1_2025_MCC_86619_2] Final summary link found. Clicking...
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1_2025_MCC_86526_1] Final summary link found. Clicking...
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86619_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86619_2_20250630_152827_StageSummary.html
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86619_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86619_2_20250630_152827_StageSummary.html --site-key Chandigarh
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86526_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86526_1_20250630_152827_StageSummary.html
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86526_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86526_1_20250630_152827_StageSummary.html --site-key Chandigarh
+15:28:27 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86619_2 Popup] Successfully processed structured data for ROT_2025_MCC_86619_2_20250630_152827_StageSummary.html.
+15:28:28 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86526_1 Popup] Successfully processed structured data for ROT_2025_MCC_86526_1_20250630_152827_StageSummary.html.
+15:28:28 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1_2025_MCC_86334_3] Final summary link found. Clicking...
+15:28:28 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage1_2025_MCC_86298_1] Final summary link found. Clicking...
+15:28:28 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86334_3 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86334_3_20250630_152828_StageSummary.html
+15:28:28 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86334_3 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86334_3_20250630_152828_StageSummary.html --site-key Chandigarh
+15:28:28 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86298_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86298_1_20250630_152828_StageSummary.html
+15:28:28 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86298_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86298_1_20250630_152828_StageSummary.html --site-key Chandigarh
+15:28:28 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86334_3 Popup] Successfully processed structured data for ROT_2025_MCC_86334_3_20250630_152828_StageSummary.html.
+15:28:28 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86298_1 Popup] Successfully processed structured data for ROT_2025_MCC_86298_1_20250630_152828_StageSummary.html.
+15:28:35 [INFO] (ROTWorker-Chandigarh Run-595422) --- Processing List Page: 2/10 ---
+15:28:35 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2] Extracting table data...
+15:28:35 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2] Extracted 10 items.
+15:28:35 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2_2025_MCC_86243_1] Final summary link found. Clicking...
+15:28:35 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2_2025_MCC_86036_1] Final summary link found. Clicking...
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86243_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86243_1_20250630_152836_StageSummary.html
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86243_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86243_1_20250630_152836_StageSummary.html --site-key Chandigarh
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86036_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86036_1_20250630_152836_StageSummary.html
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86036_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86036_1_20250630_152836_StageSummary.html --site-key Chandigarh
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86243_1 Popup] Successfully processed structured data for ROT_2025_MCC_86243_1_20250630_152836_StageSummary.html.
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86036_1 Popup] Successfully processed structured data for ROT_2025_MCC_86036_1_20250630_152836_StageSummary.html.
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2_2025_MCC_86034_1] Final summary link found. Clicking...
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2_2025_MCC_86031_1] Final summary link found. Clicking...
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86034_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86034_1_20250630_152836_StageSummary.html
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86034_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86034_1_20250630_152836_StageSummary.html --site-key Chandigarh
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86031_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86031_1_20250630_152836_StageSummary.html
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86031_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86031_1_20250630_152836_StageSummary.html --site-key Chandigarh
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86034_1 Popup] Successfully processed structured data for ROT_2025_MCC_86034_1_20250630_152836_StageSummary.html.
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86031_1 Popup] Successfully processed structured data for ROT_2025_MCC_86031_1_20250630_152836_StageSummary.html.
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2_2025_MCC_86029_1] Final summary link found. Clicking...
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2_2025_MCC_85947_1] Final summary link found. Clicking...
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86029_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_86029_1_20250630_152836_StageSummary.html
+15:28:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86029_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_86029_1_20250630_152836_StageSummary.html --site-key Chandigarh
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85947_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_85947_1_20250630_152837_StageSummary.html
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85947_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_85947_1_20250630_152837_StageSummary.html --site-key Chandigarh
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_86029_1 Popup] Successfully processed structured data for ROT_2025_MCC_86029_1_20250630_152836_StageSummary.html.
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85947_1 Popup] Successfully processed structured data for ROT_2025_MCC_85947_1_20250630_152837_StageSummary.html.
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2_2025_MCC_85855_1] Final summary link found. Clicking...
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2_2025_MCC_85483_1] Final summary link found. Clicking...
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85855_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_85855_1_20250630_152837_StageSummary.html
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85855_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_85855_1_20250630_152837_StageSummary.html --site-key Chandigarh
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85483_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_85483_1_20250630_152837_StageSummary.html
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85483_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_85483_1_20250630_152837_StageSummary.html --site-key Chandigarh
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85855_1 Popup] Successfully processed structured data for ROT_2025_MCC_85855_1_20250630_152837_StageSummary.html.
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85483_1 Popup] Successfully processed structured data for ROT_2025_MCC_85483_1_20250630_152837_StageSummary.html.
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2_2025_MCC_85482_1] Final summary link found. Clicking...
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage2_2025_MCC_85481_1] Final summary link found. Clicking...
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85482_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_85482_1_20250630_152837_StageSummary.html
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85482_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_85482_1_20250630_152837_StageSummary.html --site-key Chandigarh
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85481_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_85481_1_20250630_152837_StageSummary.html
+15:28:37 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85481_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_85481_1_20250630_152837_StageSummary.html --site-key Chandigarh
+15:28:38 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85482_1 Popup] Successfully processed structured data for ROT_2025_MCC_85482_1_20250630_152837_StageSummary.html.
+15:28:38 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85481_1 Popup] Successfully processed structured data for ROT_2025_MCC_85481_1_20250630_152837_StageSummary.html.
+15:28:45 [INFO] (ROTWorker-Chandigarh Run-595422) --- Processing List Page: 3/10 ---
+15:28:45 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3] Extracting table data...
+15:28:45 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3] Extracted 10 items.
+15:28:45 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3_2025_MCC_85415_2] Final summary link found. Clicking...
+15:28:45 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3_2025_MCC_85087_1] Final summary link found. Clicking...
+15:28:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85415_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_85415_2_20250630_152845_StageSummary.html
+15:28:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85415_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_85415_2_20250630_152845_StageSummary.html --site-key Chandigarh
+15:28:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85087_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_85087_1_20250630_152845_StageSummary.html
+15:28:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85087_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_85087_1_20250630_152845_StageSummary.html --site-key Chandigarh
+15:28:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85415_2 Popup] Successfully processed structured data for ROT_2025_MCC_85415_2_20250630_152845_StageSummary.html.
+15:28:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85087_1 Popup] Successfully processed structured data for ROT_2025_MCC_85087_1_20250630_152845_StageSummary.html.
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3_2025_MCC_85085_1] Final summary link found. Clicking...
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3_2025_MCC_85024_1] Final summary link found. Clicking...
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85085_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_85085_1_20250630_152846_StageSummary.html
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85085_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_85085_1_20250630_152846_StageSummary.html --site-key Chandigarh
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85024_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_85024_1_20250630_152846_StageSummary.html
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85024_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_85024_1_20250630_152846_StageSummary.html --site-key Chandigarh
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85085_1 Popup] Successfully processed structured data for ROT_2025_MCC_85085_1_20250630_152846_StageSummary.html.
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85024_1 Popup] Successfully processed structured data for ROT_2025_MCC_85024_1_20250630_152846_StageSummary.html.
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3_2025_MCC_85023_1] Final summary link found. Clicking...
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3_2025_MCC_84947_1] Final summary link found. Clicking...
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85023_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_85023_1_20250630_152846_StageSummary.html
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85023_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_85023_1_20250630_152846_StageSummary.html --site-key Chandigarh
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_84947_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_84947_1_20250630_152846_StageSummary.html
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_84947_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_84947_1_20250630_152846_StageSummary.html --site-key Chandigarh
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_85023_1 Popup] Successfully processed structured data for ROT_2025_MCC_85023_1_20250630_152846_StageSummary.html.
+15:28:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_84947_1 Popup] Successfully processed structured data for ROT_2025_MCC_84947_1_20250630_152846_StageSummary.html.
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3_2025_MCC_84514_1] Final summary link found. Clicking...
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3_2025_MCC_84127_1] Final summary link found. Clicking...
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_84514_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_84514_1_20250630_152847_StageSummary.html
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_84514_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_84514_1_20250630_152847_StageSummary.html --site-key Chandigarh
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_84127_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_MCC_84127_1_20250630_152847_StageSummary.html
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_84127_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_MCC_84127_1_20250630_152847_StageSummary.html --site-key Chandigarh
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_84514_1 Popup] Successfully processed structured data for ROT_2025_MCC_84514_1_20250630_152847_StageSummary.html.
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_MCC_84127_1 Popup] Successfully processed structured data for ROT_2025_MCC_84127_1_20250630_152847_StageSummary.html.
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3_2025_CHD_87015_1] Final summary link found. Clicking...
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage3_2025_CHD_87014_1] Final summary link found. Clicking...
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87015_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_87015_1_20250630_152847_StageSummary.html
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87015_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_87015_1_20250630_152847_StageSummary.html --site-key Chandigarh
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87014_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_87014_1_20250630_152847_StageSummary.html
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87014_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_87014_1_20250630_152847_StageSummary.html --site-key Chandigarh
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87015_1 Popup] Successfully processed structured data for ROT_2025_CHD_87015_1_20250630_152847_StageSummary.html.
+15:28:47 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87014_1 Popup] Successfully processed structured data for ROT_2025_CHD_87014_1_20250630_152847_StageSummary.html.
+15:28:54 [INFO] (ROTWorker-Chandigarh Run-595422) --- Processing List Page: 4/10 ---
+15:28:54 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4] Extracting table data...
+15:28:54 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4] Extracted 10 items.
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4_2025_CHD_87010_1] Final summary link found. Clicking...
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4_2025_CHD_87013_1] Final summary link found. Clicking...
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87010_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_87010_1_20250630_152855_StageSummary.html
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87010_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_87010_1_20250630_152855_StageSummary.html --site-key Chandigarh
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87013_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_87013_1_20250630_152855_StageSummary.html
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87013_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_87013_1_20250630_152855_StageSummary.html --site-key Chandigarh
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87010_1 Popup] Successfully processed structured data for ROT_2025_CHD_87010_1_20250630_152855_StageSummary.html.
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87013_1 Popup] Successfully processed structured data for ROT_2025_CHD_87013_1_20250630_152855_StageSummary.html.
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4_2025_CHD_87006_1] Final summary link found. Clicking...
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4_2025_CHD_87007_1] Final summary link found. Clicking...
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87006_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_87006_1_20250630_152855_StageSummary.html
+15:28:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87006_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_87006_1_20250630_152855_StageSummary.html --site-key Chandigarh
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87007_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_87007_1_20250630_152856_StageSummary.html
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87007_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_87007_1_20250630_152856_StageSummary.html --site-key Chandigarh
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87006_1 Popup] Successfully processed structured data for ROT_2025_CHD_87006_1_20250630_152855_StageSummary.html.
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87007_1 Popup] Successfully processed structured data for ROT_2025_CHD_87007_1_20250630_152856_StageSummary.html.
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4_2025_CHD_87001_1] Final summary link found. Clicking...
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87001_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_87001_1_20250630_152856_StageSummary.html
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87001_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_87001_1_20250630_152856_StageSummary.html --site-key Chandigarh
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4_2025_CHD_86995_1] Final summary link found. Clicking...
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86995_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86995_1_20250630_152856_StageSummary.html
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86995_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86995_1_20250630_152856_StageSummary.html --site-key Chandigarh
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_87001_1 Popup] Successfully processed structured data for ROT_2025_CHD_87001_1_20250630_152856_StageSummary.html.
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86995_1 Popup] Successfully processed structured data for ROT_2025_CHD_86995_1_20250630_152856_StageSummary.html.
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4_2025_CHD_86994_1] Final summary link found. Clicking...
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86994_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86994_1_20250630_152856_StageSummary.html
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86994_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86994_1_20250630_152856_StageSummary.html --site-key Chandigarh
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4_2025_CHD_86987_1] Final summary link found. Clicking...
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86987_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86987_1_20250630_152856_StageSummary.html
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86987_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86987_1_20250630_152856_StageSummary.html --site-key Chandigarh
+15:28:56 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86994_1 Popup] Successfully processed structured data for ROT_2025_CHD_86994_1_20250630_152856_StageSummary.html.
+15:28:57 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86987_1 Popup] Successfully processed structured data for ROT_2025_CHD_86987_1_20250630_152856_StageSummary.html.
+15:28:57 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4_2025_CHD_86986_1] Final summary link found. Clicking...
+15:28:57 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage4_2025_CHD_86984_1] Final summary link found. Clicking...
+15:28:57 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86986_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86986_1_20250630_152857_StageSummary.html
+15:28:57 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86986_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86986_1_20250630_152857_StageSummary.html --site-key Chandigarh
+15:28:57 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86984_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86984_1_20250630_152857_StageSummary.html
+15:28:57 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86984_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86984_1_20250630_152857_StageSummary.html --site-key Chandigarh
+15:28:57 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86986_1 Popup] Successfully processed structured data for ROT_2025_CHD_86986_1_20250630_152857_StageSummary.html.
+15:28:57 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86984_1 Popup] Successfully processed structured data for ROT_2025_CHD_86984_1_20250630_152857_StageSummary.html.
+15:29:04 [INFO] (ROTWorker-Chandigarh Run-595422) --- Processing List Page: 5/10 ---
+15:29:04 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5] Extracting table data...
+15:29:04 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5] Extracted 10 items.
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5_2025_CHD_86983_1] Final summary link found. Clicking...
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5_2025_CHD_86967_1] Final summary link found. Clicking...
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86983_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86983_1_20250630_152905_StageSummary.html
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86983_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86983_1_20250630_152905_StageSummary.html --site-key Chandigarh
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86967_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86967_1_20250630_152905_StageSummary.html
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86967_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86967_1_20250630_152905_StageSummary.html --site-key Chandigarh
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86983_1 Popup] Successfully processed structured data for ROT_2025_CHD_86983_1_20250630_152905_StageSummary.html.
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86967_1 Popup] Successfully processed structured data for ROT_2025_CHD_86967_1_20250630_152905_StageSummary.html.
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5_2025_CHD_86965_1] Final summary link found. Clicking...
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5_2025_CHD_86964_1] Final summary link found. Clicking...
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86965_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86965_1_20250630_152905_StageSummary.html
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86965_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86965_1_20250630_152905_StageSummary.html --site-key Chandigarh
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86964_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86964_1_20250630_152905_StageSummary.html
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86964_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86964_1_20250630_152905_StageSummary.html --site-key Chandigarh
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86965_1 Popup] Successfully processed structured data for ROT_2025_CHD_86965_1_20250630_152905_StageSummary.html.
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86964_1 Popup] Successfully processed structured data for ROT_2025_CHD_86964_1_20250630_152905_StageSummary.html.
+15:29:05 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5_2025_CHD_86959_1] Final summary link found. Clicking...
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5_2025_CHD_86957_1] Final summary link found. Clicking...
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86959_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86959_1_20250630_152906_StageSummary.html
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86959_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86959_1_20250630_152906_StageSummary.html --site-key Chandigarh
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86957_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86957_1_20250630_152906_StageSummary.html
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86957_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86957_1_20250630_152906_StageSummary.html --site-key Chandigarh
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86959_1 Popup] Successfully processed structured data for ROT_2025_CHD_86959_1_20250630_152906_StageSummary.html.
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86957_1 Popup] Successfully processed structured data for ROT_2025_CHD_86957_1_20250630_152906_StageSummary.html.
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5_2025_CHD_86955_1] Final summary link found. Clicking...
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5_2025_CHD_86951_1] Final summary link found. Clicking...
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86955_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86955_1_20250630_152906_StageSummary.html
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86955_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86955_1_20250630_152906_StageSummary.html --site-key Chandigarh
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86951_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86951_1_20250630_152906_StageSummary.html
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86951_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86951_1_20250630_152906_StageSummary.html --site-key Chandigarh
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86955_1 Popup] Successfully processed structured data for ROT_2025_CHD_86955_1_20250630_152906_StageSummary.html.
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86951_1 Popup] Successfully processed structured data for ROT_2025_CHD_86951_1_20250630_152906_StageSummary.html.
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5_2025_CHD_86950_1] Final summary link found. Clicking...
+15:29:06 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage5_2025_CHD_86944_1] Final summary link found. Clicking...
+15:29:07 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86950_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86950_1_20250630_152907_StageSummary.html
+15:29:07 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86950_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86950_1_20250630_152907_StageSummary.html --site-key Chandigarh
+15:29:07 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86944_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86944_1_20250630_152907_StageSummary.html
+15:29:07 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86944_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86944_1_20250630_152907_StageSummary.html --site-key Chandigarh
+15:29:07 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86950_1 Popup] Successfully processed structured data for ROT_2025_CHD_86950_1_20250630_152907_StageSummary.html.
+15:29:07 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86944_1 Popup] Successfully processed structured data for ROT_2025_CHD_86944_1_20250630_152907_StageSummary.html.
+15:29:14 [INFO] (ROTWorker-Chandigarh Run-595422) --- Processing List Page: 6/10 ---
+15:29:14 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6] Extracting table data...
+15:29:14 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6] Extracted 10 items.
+15:29:14 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6_2025_CHD_86943_1] Final summary link found. Clicking...
+15:29:14 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6_2025_CHD_86936_1] Final summary link found. Clicking...
+15:29:14 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86943_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86943_1_20250630_152914_StageSummary.html
+15:29:14 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86943_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86943_1_20250630_152914_StageSummary.html --site-key Chandigarh
+15:29:14 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86936_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86936_1_20250630_152914_StageSummary.html
+15:29:14 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86936_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86936_1_20250630_152914_StageSummary.html --site-key Chandigarh
+15:29:14 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86943_1 Popup] Successfully processed structured data for ROT_2025_CHD_86943_1_20250630_152914_StageSummary.html.
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86936_1 Popup] Successfully processed structured data for ROT_2025_CHD_86936_1_20250630_152914_StageSummary.html.
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6_2025_CHD_86934_1] Final summary link found. Clicking...
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6_2025_CHD_86933_1] Final summary link found. Clicking...
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86934_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86934_1_20250630_152915_StageSummary.html
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86934_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86934_1_20250630_152915_StageSummary.html --site-key Chandigarh
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86933_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86933_1_20250630_152915_StageSummary.html
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86933_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86933_1_20250630_152915_StageSummary.html --site-key Chandigarh
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86934_1 Popup] Successfully processed structured data for ROT_2025_CHD_86934_1_20250630_152915_StageSummary.html.
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86933_1 Popup] Successfully processed structured data for ROT_2025_CHD_86933_1_20250630_152915_StageSummary.html.
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6_2025_CHD_86932_1] Final summary link found. Clicking...
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6_2025_CHD_86929_1] Final summary link found. Clicking...
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86932_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86932_1_20250630_152915_StageSummary.html
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86932_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86932_1_20250630_152915_StageSummary.html --site-key Chandigarh
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86929_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86929_1_20250630_152915_StageSummary.html
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86929_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86929_1_20250630_152915_StageSummary.html --site-key Chandigarh
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86932_1 Popup] Successfully processed structured data for ROT_2025_CHD_86932_1_20250630_152915_StageSummary.html.
+15:29:15 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86929_1 Popup] Successfully processed structured data for ROT_2025_CHD_86929_1_20250630_152915_StageSummary.html.
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6_2025_CHD_86927_1] Final summary link found. Clicking...
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6_2025_CHD_86926_1] Final summary link found. Clicking...
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86927_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86927_1_20250630_152916_StageSummary.html
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86927_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86927_1_20250630_152916_StageSummary.html --site-key Chandigarh
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86926_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86926_1_20250630_152916_StageSummary.html
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86926_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86926_1_20250630_152916_StageSummary.html --site-key Chandigarh
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86927_1 Popup] Successfully processed structured data for ROT_2025_CHD_86927_1_20250630_152916_StageSummary.html.
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86926_1 Popup] Successfully processed structured data for ROT_2025_CHD_86926_1_20250630_152916_StageSummary.html.
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6_2025_CHD_86925_1] Final summary link found. Clicking...
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage6_2025_CHD_86924_1] Final summary link found. Clicking...
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86925_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86925_1_20250630_152916_StageSummary.html
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86925_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86925_1_20250630_152916_StageSummary.html --site-key Chandigarh
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86924_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86924_1_20250630_152916_StageSummary.html
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86924_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86924_1_20250630_152916_StageSummary.html --site-key Chandigarh
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86925_1 Popup] Successfully processed structured data for ROT_2025_CHD_86925_1_20250630_152916_StageSummary.html.
+15:29:16 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86924_1 Popup] Successfully processed structured data for ROT_2025_CHD_86924_1_20250630_152916_StageSummary.html.
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) --- Processing List Page: 7/10 ---
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7] Extracting table data...
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7] Extracted 10 items.
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7_2025_CHD_86923_1] Final summary link found. Clicking...
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7_2025_CHD_86922_1] Final summary link found. Clicking...
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86922_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86922_1_20250630_152924_StageSummary.html
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86922_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86922_1_20250630_152924_StageSummary.html --site-key Chandigarh
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86923_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86923_1_20250630_152924_StageSummary.html
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86923_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86923_1_20250630_152924_StageSummary.html --site-key Chandigarh
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86922_1 Popup] Successfully processed structured data for ROT_2025_CHD_86922_1_20250630_152924_StageSummary.html.
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86923_1 Popup] Successfully processed structured data for ROT_2025_CHD_86923_1_20250630_152924_StageSummary.html.
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7_2025_CHD_86921_1] Final summary link found. Clicking...
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7_2025_CHD_86920_1] Final summary link found. Clicking...
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86921_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86921_1_20250630_152924_StageSummary.html
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86921_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86921_1_20250630_152924_StageSummary.html --site-key Chandigarh
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86920_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86920_1_20250630_152924_StageSummary.html
+15:29:24 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86920_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86920_1_20250630_152924_StageSummary.html --site-key Chandigarh
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86921_1 Popup] Successfully processed structured data for ROT_2025_CHD_86921_1_20250630_152924_StageSummary.html.
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86920_1 Popup] Successfully processed structured data for ROT_2025_CHD_86920_1_20250630_152924_StageSummary.html.
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7_2025_CHD_86919_1] Final summary link found. Clicking...
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7_2025_CHD_86913_1] Final summary link found. Clicking...
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86919_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86919_1_20250630_152925_StageSummary.html
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86919_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86919_1_20250630_152925_StageSummary.html --site-key Chandigarh
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86913_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86913_1_20250630_152925_StageSummary.html
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86913_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86913_1_20250630_152925_StageSummary.html --site-key Chandigarh
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86919_1 Popup] Successfully processed structured data for ROT_2025_CHD_86919_1_20250630_152925_StageSummary.html.
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86913_1 Popup] Successfully processed structured data for ROT_2025_CHD_86913_1_20250630_152925_StageSummary.html.
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7_2025_CHD_86910_1] Final summary link found. Clicking...
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7_2025_CHD_86907_1] Final summary link found. Clicking...
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86910_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86910_1_20250630_152925_StageSummary.html
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86910_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86910_1_20250630_152925_StageSummary.html --site-key Chandigarh
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86907_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86907_1_20250630_152925_StageSummary.html
+15:29:25 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86907_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86907_1_20250630_152925_StageSummary.html --site-key Chandigarh
+15:29:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86910_1 Popup] Successfully processed structured data for ROT_2025_CHD_86910_1_20250630_152925_StageSummary.html.
+15:29:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86907_1 Popup] Successfully processed structured data for ROT_2025_CHD_86907_1_20250630_152925_StageSummary.html.
+15:29:26 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7_2025_CHD_86905_1] Final summary link found. Clicking...
+15:29:26 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage7_2025_CHD_86903_1] Final summary link found. Clicking...
+15:29:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86905_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86905_1_20250630_152926_StageSummary.html
+15:29:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86905_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86905_1_20250630_152926_StageSummary.html --site-key Chandigarh
+15:29:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86903_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86903_1_20250630_152926_StageSummary.html
+15:29:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86903_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86903_1_20250630_152926_StageSummary.html --site-key Chandigarh
+15:29:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86905_1 Popup] Successfully processed structured data for ROT_2025_CHD_86905_1_20250630_152926_StageSummary.html.
+15:29:26 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86903_1 Popup] Successfully processed structured data for ROT_2025_CHD_86903_1_20250630_152926_StageSummary.html.
+15:29:33 [INFO] (ROTWorker-Chandigarh Run-595422) --- Processing List Page: 8/10 ---
+15:29:33 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8] Extracting table data...
+15:29:33 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8] Extracted 10 items.
+15:29:33 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8_2025_CHD_86885_1] Final summary link found. Clicking...
+15:29:33 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8_2025_CHD_86884_1] Final summary link found. Clicking...
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86885_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86885_1_20250630_152934_StageSummary.html
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86885_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86885_1_20250630_152934_StageSummary.html --site-key Chandigarh
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86884_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86884_1_20250630_152934_StageSummary.html
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86884_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86884_1_20250630_152934_StageSummary.html --site-key Chandigarh
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86885_1 Popup] Successfully processed structured data for ROT_2025_CHD_86885_1_20250630_152934_StageSummary.html.
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86884_1 Popup] Successfully processed structured data for ROT_2025_CHD_86884_1_20250630_152934_StageSummary.html.
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8_2025_CHD_86875_1] Final summary link found. Clicking...
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8_2025_CHD_86873_1] Final summary link found. Clicking...
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86875_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86875_1_20250630_152934_StageSummary.html
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86875_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86875_1_20250630_152934_StageSummary.html --site-key Chandigarh
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86873_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86873_1_20250630_152934_StageSummary.html
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86873_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86873_1_20250630_152934_StageSummary.html --site-key Chandigarh
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86875_1 Popup] Successfully processed structured data for ROT_2025_CHD_86875_1_20250630_152934_StageSummary.html.
+15:29:34 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86873_1 Popup] Successfully processed structured data for ROT_2025_CHD_86873_1_20250630_152934_StageSummary.html.
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8_2025_CHD_86871_1] Final summary link found. Clicking...
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8_2025_CHD_86870_1] Final summary link found. Clicking...
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86870_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86870_1_20250630_152935_StageSummary.html
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86870_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86870_1_20250630_152935_StageSummary.html --site-key Chandigarh
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86871_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86871_1_20250630_152935_StageSummary.html
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86871_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86871_1_20250630_152935_StageSummary.html --site-key Chandigarh
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86870_1 Popup] Successfully processed structured data for ROT_2025_CHD_86870_1_20250630_152935_StageSummary.html.
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86871_1 Popup] Successfully processed structured data for ROT_2025_CHD_86871_1_20250630_152935_StageSummary.html.
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8_2025_CHD_86868_1] Final summary link found. Clicking...
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8_2025_CHD_86865_1] Final summary link found. Clicking...
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86868_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86868_1_20250630_152935_StageSummary.html
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86868_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86868_1_20250630_152935_StageSummary.html --site-key Chandigarh
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86865_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86865_1_20250630_152935_StageSummary.html
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86865_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86865_1_20250630_152935_StageSummary.html --site-key Chandigarh
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86868_1 Popup] Successfully processed structured data for ROT_2025_CHD_86868_1_20250630_152935_StageSummary.html.
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86865_1 Popup] Successfully processed structured data for ROT_2025_CHD_86865_1_20250630_152935_StageSummary.html.
+15:29:35 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8_2025_CHD_86862_1] Final summary link found. Clicking...
+15:29:36 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage8_2025_CHD_86859_1] Final summary link found. Clicking...
+15:29:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86862_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86862_1_20250630_152936_StageSummary.html
+15:29:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86862_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86862_1_20250630_152936_StageSummary.html --site-key Chandigarh
+15:29:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86859_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86859_1_20250630_152936_StageSummary.html
+15:29:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86859_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86859_1_20250630_152936_StageSummary.html --site-key Chandigarh
+15:29:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86862_1 Popup] Successfully processed structured data for ROT_2025_CHD_86862_1_20250630_152936_StageSummary.html.
+15:29:36 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86859_1 Popup] Successfully processed structured data for ROT_2025_CHD_86859_1_20250630_152936_StageSummary.html.
+15:29:43 [INFO] (ROTWorker-Chandigarh Run-595422) --- Processing List Page: 9/10 ---
+15:29:43 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9] Extracting table data...
+15:29:43 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9] Extracted 10 items.
+15:29:43 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9_2025_CHD_86853_1] Final summary link found. Clicking...
+15:29:43 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9_2025_CHD_86858_1] Final summary link found. Clicking...
+15:29:43 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86853_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86853_1_20250630_152943_StageSummary.html
+15:29:43 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86853_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86853_1_20250630_152943_StageSummary.html --site-key Chandigarh
+15:29:43 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86858_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86858_1_20250630_152943_StageSummary.html
+15:29:43 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86858_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86858_1_20250630_152943_StageSummary.html --site-key Chandigarh
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86853_1 Popup] Successfully processed structured data for ROT_2025_CHD_86853_1_20250630_152943_StageSummary.html.
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86858_1 Popup] Successfully processed structured data for ROT_2025_CHD_86858_1_20250630_152943_StageSummary.html.
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9_2025_CHD_86849_1] Final summary link found. Clicking...
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9_2025_CHD_86844_1] Final summary link found. Clicking...
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86849_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86849_1_20250630_152944_StageSummary.html
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86849_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86849_1_20250630_152944_StageSummary.html --site-key Chandigarh
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86844_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86844_1_20250630_152944_StageSummary.html
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86844_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86844_1_20250630_152944_StageSummary.html --site-key Chandigarh
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86849_1 Popup] Successfully processed structured data for ROT_2025_CHD_86849_1_20250630_152944_StageSummary.html.
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86844_1 Popup] Successfully processed structured data for ROT_2025_CHD_86844_1_20250630_152944_StageSummary.html.
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9_2025_CHD_86842_1] Final summary link found. Clicking...
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9_2025_CHD_86840_1] Final summary link found. Clicking...
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86842_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86842_1_20250630_152944_StageSummary.html
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86842_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86842_1_20250630_152944_StageSummary.html --site-key Chandigarh
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86840_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86840_1_20250630_152944_StageSummary.html
+15:29:44 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86840_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86840_1_20250630_152944_StageSummary.html --site-key Chandigarh
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86842_1 Popup] Successfully processed structured data for ROT_2025_CHD_86842_1_20250630_152944_StageSummary.html.
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86840_1 Popup] Successfully processed structured data for ROT_2025_CHD_86840_1_20250630_152944_StageSummary.html.
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9_2025_CHD_86838_1] Final summary link found. Clicking...
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9_2025_CHD_86837_1] Final summary link found. Clicking...
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86838_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86838_1_20250630_152945_StageSummary.html
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86838_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86838_1_20250630_152945_StageSummary.html --site-key Chandigarh
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86837_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86837_1_20250630_152945_StageSummary.html
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86837_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86837_1_20250630_152945_StageSummary.html --site-key Chandigarh
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86838_1 Popup] Successfully processed structured data for ROT_2025_CHD_86838_1_20250630_152945_StageSummary.html.
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86837_1 Popup] Successfully processed structured data for ROT_2025_CHD_86837_1_20250630_152945_StageSummary.html.
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9_2025_CHD_86829_1] Final summary link found. Clicking...
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage9_2025_CHD_86828_1] Final summary link found. Clicking...
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86829_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86829_1_20250630_152945_StageSummary.html
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86829_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86829_1_20250630_152945_StageSummary.html --site-key Chandigarh
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86828_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86828_1_20250630_152945_StageSummary.html
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86828_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86828_1_20250630_152945_StageSummary.html --site-key Chandigarh
+15:29:45 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86829_1 Popup] Successfully processed structured data for ROT_2025_CHD_86829_1_20250630_152945_StageSummary.html.
+15:29:46 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86828_1 Popup] Successfully processed structured data for ROT_2025_CHD_86828_1_20250630_152945_StageSummary.html.
+15:29:53 [INFO] (ROTWorker-Chandigarh Run-595422) --- Processing List Page: 10/10 ---
+15:29:53 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10] Extracting table data...
+15:29:53 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10] Extracted 10 items.
+15:29:53 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10_2025_CHD_86823_1] Final summary link found. Clicking...
+15:29:53 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10_2025_CHD_86827_1] Final summary link found. Clicking...
+15:29:53 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86823_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86823_1_20250630_152953_StageSummary.html
+15:29:53 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86823_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86823_1_20250630_152953_StageSummary.html --site-key Chandigarh
+15:29:53 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86827_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86827_1_20250630_152953_StageSummary.html
+15:29:53 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86827_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86827_1_20250630_152953_StageSummary.html --site-key Chandigarh
+15:29:53 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86823_1 Popup] Successfully processed structured data for ROT_2025_CHD_86823_1_20250630_152953_StageSummary.html.
+15:29:53 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86827_1 Popup] Successfully processed structured data for ROT_2025_CHD_86827_1_20250630_152953_StageSummary.html.
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10_2025_CHD_86822_1] Final summary link found. Clicking...
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10_2025_CHD_86815_1] Final summary link found. Clicking...
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86822_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86822_1_20250630_152954_StageSummary.html
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86822_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86822_1_20250630_152954_StageSummary.html --site-key Chandigarh
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86815_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86815_1_20250630_152954_StageSummary.html
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86815_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86815_1_20250630_152954_StageSummary.html --site-key Chandigarh
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86822_1 Popup] Successfully processed structured data for ROT_2025_CHD_86822_1_20250630_152954_StageSummary.html.
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86815_1 Popup] Successfully processed structured data for ROT_2025_CHD_86815_1_20250630_152954_StageSummary.html.
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10_2025_CHD_86814_2] Final summary link found. Clicking...
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10_2025_CHD_86812_1] Final summary link found. Clicking...
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86814_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86814_2_20250630_152954_StageSummary.html
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86814_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86814_2_20250630_152954_StageSummary.html --site-key Chandigarh
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86812_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86812_1_20250630_152954_StageSummary.html
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86812_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86812_1_20250630_152954_StageSummary.html --site-key Chandigarh
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86814_2 Popup] Successfully processed structured data for ROT_2025_CHD_86814_2_20250630_152954_StageSummary.html.
+15:29:54 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86812_1 Popup] Successfully processed structured data for ROT_2025_CHD_86812_1_20250630_152954_StageSummary.html.
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10_2025_CHD_86806_1] Final summary link found. Clicking...
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10_2025_CHD_86805_1] Final summary link found. Clicking...
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86806_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86806_1_20250630_152955_StageSummary.html
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86806_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86806_1_20250630_152955_StageSummary.html --site-key Chandigarh
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86805_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86805_1_20250630_152955_StageSummary.html
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86805_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86805_1_20250630_152955_StageSummary.html --site-key Chandigarh
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86806_1 Popup] Successfully processed structured data for ROT_2025_CHD_86806_1_20250630_152955_StageSummary.html.
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86805_1 Popup] Successfully processed structured data for ROT_2025_CHD_86805_1_20250630_152955_StageSummary.html.
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10_2025_CHD_86800_1] Final summary link found. Clicking...
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [ListPage10_2025_CHD_86798_1] Final summary link found. Clicking...
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86800_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86800_1_20250630_152955_StageSummary.html
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86800_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86800_1_20250630_152955_StageSummary.html --site-key Chandigarh
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86798_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_CHD_86798_1_20250630_152955_StageSummary.html
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86798_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Chandigarh/ROT_2025_CHD_86798_1_20250630_152955_StageSummary.html --site-key Chandigarh
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86800_1 Popup] Successfully processed structured data for ROT_2025_CHD_86800_1_20250630_152955_StageSummary.html.
+15:29:55 [INFO] (ROTWorker-Chandigarh Run-595422) [2025_CHD_86798_1 Popup] Successfully processed structured data for ROT_2025_CHD_86798_1_20250630_152955_StageSummary.html.
+15:30:03 [INFO] (ROTWorker-Chandigarh Run-595422) Worker status updated to: FINISHED_SUCCESS
+15:30:03 [INFO] (ROTWorker-Chandigarh Run-595422) Playwright resources closed.
+15:30:03 [INFO] (ROTWorker-Chandigarh Run-595422) Worker for Chandigarh terminated with status: FINISHED_SUCCESS

@@ -1,0 +1,19 @@
+12:14:25 [INFO] (EligWorker-916724) Eligibility worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/eligibility_worker/worker_eligibility_1_20250630121424916724.log
+12:14:25 [INFO] (EligWorker-916724) Updated DB eligibility check for tender 1: status='processing', score=-1.
+12:14:25 [INFO] (EligWorker-916724) Status updated to: processing (Worker started, preparing browser...)
+12:14:25 [INFO] (EligWorker-916724) Navigating to homepage 'https://etenders.hry.nic.in/' to establish session.
+12:14:33 [INFO] (EligWorker-916724) Navigating to tender detail page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=St%2F7DdBmHe6xk9WLEKo41sg%3D%3D
+12:14:49 [INFO] (EligWorker-916724) Looking for 'Download as Zip' link...
+12:15:09 [INFO] (EligWorker-916724) Navigated to CAPTCHA/download page. Current URL: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_8&page=FrontEndTenderDetails&service=direct&session=T
+12:15:38 [INFO] (EligWorker-916724) On CAPTCHA page. Saving CAPTCHA for user.
+12:15:38 [INFO] (EligWorker-916724) Status updated to: WAITING_CAPTCHA
+12:15:38 [INFO] (EligWorker-916724) Waiting for CAPTCHA solution in /root/Tender-Aggregator/TEMP/EligibilityRuns/eligibility_1_20250630121424916724/answer.txt (max 300s)...
+12:20:38 [WARNING] (EligWorker-916724) Timeout waiting for CAPTCHA solution.
+12:20:38 [ERROR] (EligWorker-916724) An error occurred during download phase: Failed to get CAPTCHA solution from user.
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/eligibility_worker.py", line 214, in run_eligibility_check
+    raise Exception("Failed to get CAPTCHA solution from user.")
+Exception: Failed to get CAPTCHA solution from user.
+12:20:38 [ERROR] (EligWorker-916724) Saved error screenshot to: /root/Tender-Aggregator/TEMP/EligibilityRuns/eligibility_1_20250630121424916724/error_screenshot.png
+12:20:38 [INFO] (EligWorker-916724) Updated DB eligibility check for tender 1: status='failed', score=-1.
+12:20:38 [INFO] (EligWorker-916724) Status updated to: failed (Worker failed: Exception)

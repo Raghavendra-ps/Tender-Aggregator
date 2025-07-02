@@ -200,12 +200,79 @@
         }
         .source-site-highlight { font-weight: 700; color: var(--color-primary); }
         
+        /* Analysis Results Table */
         .analysis-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.85rem; }
         .analysis-table th, .analysis-table td { border: 1px solid var(--color-border); padding: 8px 12px; text-align: left; vertical-align: top; }
         .analysis-table th { background-color: var(--color-surface-alt); font-weight: 600; }
         .analysis-table .status-met { background-color: #dcfce7; color: #166534; font-weight: 600; }
         .analysis-table .status-not-met { background-color: #fee2e2; color: #991b1b; font-weight: 600; }
         .analysis-table .status-review { background-color: #fefce8; color: #854d0e; font-weight: 600; }
+        
+        /* --- CAPTCHA MODAL STYLES --- */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; 
+            z-index: 1050;
+            left: 0; top: 0; width: 100%; height: 100%;
+            overflow: auto; 
+            background-color: rgba(15, 23, 42, 0.7);
+            /* Use flex to center the modal content */
+            align-items: center; 
+            justify-content: center;
+        }
+        .modal-content {
+            background: var(--color-surface);
+            padding: 32px;
+            border: 1px solid var(--color-border);
+            width: 90%; 
+            max-width: 500px;
+            position: relative;
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .modal-header {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            padding-bottom: 16px; 
+            border-bottom: 1px solid var(--color-border);
+            margin-bottom: 24px;
+        }
+        .modal-header h4 {
+            margin: 0; 
+            font-size: 1.25rem; 
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+        .close-button {
+            color: var(--color-text-muted); 
+            font-size: 28px;
+            font-weight: bold; 
+            line-height: 1; 
+            cursor: pointer;
+        }
+        #captcha-image-display {
+            display: block; 
+            margin: 16px auto; 
+            border: 1px solid var(--color-border);
+            max-width: 200px; 
+            height: auto; 
+            min-height: 70px; 
+            background: var(--color-surface-alt);
+        }
+        .modal-actions {
+            margin-top: 24px; 
+            display: flex; 
+            gap: 16px; 
+            justify-content: flex-end;
+        }
+        .input {
+            width: 100%;
+            border: 1px solid var(--color-border);
+            background: var(--color-surface);
+            padding: 10px 12px;
+            font-size: 0.875rem;
+            border-radius: 0;
+        }
 
         @media (max-width: 1024px) { 
             .details-grid { grid-template-columns: repeat(2, 1fr); }
@@ -247,7 +314,9 @@
                 </div>
             </div>
             
-            <div id="eligibility-status-area" style="display: none; margin-bottom: 24px; padding: 16px; border-left: 4px solid; font-weight: 500;"></div>
+            <div id="eligibility-status-area" style="display: none; margin-bottom: 24px;"></div>
+            
+            <div id="eligibility-result-area" style="display: none; margin-bottom: 24px;"></div>
 
             <div class="tender-main-title">
                 {{ na(tender.get('work_title', tender.get('primary_title'))) | neat_format }}
@@ -271,8 +340,6 @@
                     {% endif %}
                 </div>
 
-                <!-- (The other detail sections remain here, using the 'na' macro) -->
-
                 <!-- Section 2: Contract & Type -->
                 <div class="detail-section">
                     <h3>Contract & Type Details</h3>
@@ -288,9 +355,9 @@
                 <!-- Section 3: Critical Dates -->
                 <div class="detail-section">
                     <h3>Critical Dates</h3>
-                    <div class="detail-field"><strong>Published Date:</strong> <span class="value-text">{{ na(tender.get('published_date')) }}</span></div>
-                    <div class="detail-field"><strong>Bid Submission End (Closing):</strong> <span class="value-text">{{ na(tender.get('bid_submission_end_date')) }}</span></div>
-                    <div class="detail-field"><strong>Bid Opening Date:</strong> <span class="value-text">{{ na(tender.get('detail_bid_opening_date')) }}</span></div>
+                    <div class="detail-field"><strong>Published Date:</strong> <span class="value-text">{{ na(tender.get('published_date', tender.get('epublished_date_str'))) }}</span></div>
+                    <div class="detail-field"><strong>Bid Submission End (Closing):</strong> <span class="value-text">{{ na(tender.get('bid_submission_end_date', tender.get('closing_date_str'))) }}</span></div>
+                    <div class="detail-field"><strong>Bid Opening Date:</strong> <span class="value-text">{{ na(tender.get('detail_bid_opening_date', tender.get('opening_date_str'))) }}</span></div>
                 </div>
 
                 <!-- Section 4: Fee Details -->
@@ -386,88 +453,140 @@
             </div>
         </div>
     </div>
+
+    <!-- ===== CAPTCHA MODAL HTML ===== -->
+    <div id="eligibilityCaptchaModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>CAPTCHA Verification Required</h4>
+                <span class="close-button" id="closeEligibilityCaptchaModalBtn">×</span>
+            </div>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted);">The worker needs you to solve this CAPTCHA to download the tender documents.</p>
+            <img id="captcha-image-display" src="" alt="Loading CAPTCHA...">
+            <div>
+                <label for="captcha-solution" style="font-weight: 600;">Enter CAPTCHA Solution:</label>
+                <input type="text" id="captcha-solution" class="input" placeholder="Enter text from image" style="margin-top: 8px;">
+            </div>
+            <div class="modal-actions">
+                <button type="button" class="btn btn-secondary" id="cancelEligibilityCaptchaBtn">Cancel</button>
+                <button type="button" id="submitEligibilityCaptchaBtn" class="btn btn-info">Submit & Download</button>
+            </div>
+        </div>
+    </div>
+    <!-- ===== END OF MODAL HTML ===== -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const checkBtn = document.getElementById('checkEligibilityBtn');
     const statusArea = document.getElementById('eligibility-status-area');
+    const resultArea = document.getElementById('eligibility-result-area');
     
     const modal = document.getElementById('eligibilityCaptchaModal');
     const captchaImage = document.getElementById('captcha-image-display');
     const captchaInput = document.getElementById('captcha-solution');
     const submitCaptchaBtn = document.getElementById('submitEligibilityCaptchaBtn');
+    const closeCaptchaBtn = document.getElementById('closeEligibilityCaptchaModalBtn');
+    const cancelCaptchaBtn = document.getElementById('cancelEligibilityCaptchaBtn');
 
     let pollInterval = null;
     let currentEligibilityRunId = null;
 
     function renderAnalysisResult(result) {
-        if (!result) { statusArea.innerHTML = '<p><strong>Analysis Result:</strong> Error - Received empty result.</p>'; return; }
-        let html = '<h3>Eligibility Analysis</h3>';
-        if (result.final_summary) { html += `<p><strong>AI Summary:</strong> ${result.final_summary}</p>`; }
-        if (result.clause_analysis && Array.isArray(result.clause_analysis)) {
-            html += '<table class="analysis-table">';
-            html += '<thead><tr><th>Clause</th><th>Requirement</th><th>Company Profile Match</th><th>Conclusion</th></tr></thead>';
-            html += '<tbody>';
+        if (!result) { 
+            resultArea.innerHTML = '<p><strong>Analysis Result:</strong> Error - Received empty result.</p>'; 
+            resultArea.style.display = 'block';
+            return;
+        }
+
+        // --- CORRECTED LOGIC ---
+        // We build the result HTML directly here. No need to fetch another template.
+        let analysisHtml = '<h3>Eligibility Analysis</h3>';
+
+        if (result.final_summary) {
+            analysisHtml += `<div class="detail-section" style="background-color: #f1f5f9; border-left: 4px solid var(--color-accent);"><p><strong>AI Summary:</strong> ${result.final_summary}</p></div>`;
+        }
+
+        if (result.clause_analysis && Array.isArray(result.clause_analysis) && result.clause_analysis.length > 0) {
+            analysisHtml += '<div class="detail-section"><table class="analysis-table"><thead><tr><th>Clause/Requirement</th><th>Your Profile Match</th><th>Conclusion</th></tr></thead><tbody>';
             result.clause_analysis.forEach(item => {
                 let conclusionClass = '';
-                if (item.conclusion === 'Met') conclusionClass = 'status-met';
-                else if (item.conclusion === 'Not Met') conclusionClass = 'status-not-met';
-                else if (item.conclusion === 'Needs Manual Review') conclusionClass = 'status-review';
-                html += `<tr><td>${item.clause || '--'}</td><td>${item.requirement || '--'}</td><td>${item.company_profile_match || '--'}</td><td class="${conclusionClass}">${item.conclusion || '--'}</td></tr>`;
+                const conclusionText = String(item.conclusion || '').toLowerCase();
+                if (conclusionText.includes('not met')) {
+                    conclusionClass = 'status-not-met';
+                } else if (conclusionText.includes('met')) {
+                    conclusionClass = 'status-met';
+                } else {
+                    conclusionClass = 'status-review';
+                }
+                analysisHtml += `<tr><td><strong>${item.clause || 'N/A'}</strong><br>${item.requirement || '--'}</td><td>${item.company_profile_match || '--'}</td><td class="${conclusionClass}">${item.conclusion || '--'}</td></tr>`;
             });
-            html += '</tbody></table>';
-        } else if (result.raw_response) { html += `<h4>Raw AI Response:</h4><pre>${result.raw_response}</pre>`; }
-        else if (result.error) { html += `<p><strong>Analysis Failed:</strong> ${result.error}</p>`; }
-        statusArea.innerHTML = html;
-        statusArea.style.display = 'block';
-        statusArea.style.backgroundColor = '#f8fafc'; statusArea.style.borderColor = '#e2e8f0';
+            analysisHtml += '</tbody></table></div>';
+        } else if (result.raw_response) {
+            analysisHtml += `<div class="detail-section"><h5>AI Raw Response</h5><pre class="description-text" style="background-color: #334155; color: #e2e8f0; font-family: 'JetBrains Mono', monospace;">${result.raw_response}</pre></div>`;
+        } else if (result.error) {
+            analysisHtml += `<p style="color: var(--color-error);"><strong>Analysis Failed:</strong> ${result.error}</p>`;
+        }
+        
+        resultArea.innerHTML = analysisHtml;
+        resultArea.style.display = 'block';
+        statusArea.style.display = 'none';
     }
 
     function showStatusMessage(message, style = 'info') {
+        resultArea.style.display = 'none';
         statusArea.style.display = 'block';
+        let borderColor, bgColor, textColor;
         if (style === 'info') {
-            statusArea.style.backgroundColor = '#eff6ff'; statusArea.style.borderColor = '#3b82f6'; statusArea.style.color = '#1e40af';
+            borderColor = '#3b82f6'; bgColor = '#eff6ff'; textColor = '#1e40af';
         } else if (style === 'error') {
-            statusArea.style.backgroundColor = '#fee2e2'; statusArea.style.borderColor = '#ef4444'; statusArea.style.color = '#991b1b';
+            borderColor = '#ef4444'; bgColor = '#fee2e2'; textColor = '#991b1b';
         }
+        statusArea.style.backgroundColor = bgColor;
+        statusArea.style.borderColor = borderColor;
+        statusArea.style.color = textColor;
         statusArea.style.padding = '16px';
         statusArea.style.borderLeft = '4px solid';
         statusArea.innerHTML = `<p>${message}</p>`;
     }
 
     function openCaptchaModal(imageData) {
+        if (!modal) return;
         captchaImage.src = imageData;
         captchaInput.value = '';
         submitCaptchaBtn.disabled = false;
         submitCaptchaBtn.textContent = 'Submit & Download';
-        modal.style.display = 'block';
+        modal.style.display = 'flex';
         captchaInput.focus();
     }
 
     function closeEligibilityCaptchaModal() {
         if(modal) modal.style.display = 'none';
-        stopPolling();
-        checkBtn.disabled = false;
-        checkBtn.textContent = 'Check Eligibility';
-        showStatusMessage('Eligibility check cancelled by user.', 'info');
     }
-    
-    function stopPolling() {
+
+    function stopPolling(userCancelled = false) {
         if (pollInterval) {
             clearInterval(pollInterval);
             pollInterval = null;
         }
+        if (userCancelled) {
+            showStatusMessage('Eligibility check cancelled by user.', 'info');
+        }
+        checkBtn.disabled = false;
+        checkBtn.textContent = 'Check Eligibility';
     }
-
+    
     async function pollForStatus() {
         if (!currentEligibilityRunId) return;
 
         try {
             const response = await fetch(`/eligibility/get-status/${currentEligibilityRunId}`);
+            if (response.status === 404) {
+                console.warn(`Status check for ${currentEligibilityRunId} returned 404. Worker might be initializing. Retrying...`);
+                return;
+            }
             if (!response.ok) {
                 stopPolling();
-                showStatusMessage(`Error checking status: Server returned ${response.status}.`, 'error');
-                checkBtn.disabled = false;
-                checkBtn.textContent = 'Retry Eligibility Check';
+                const errorData = await response.json().catch(() => ({}));
+                showStatusMessage(`Error checking status: ${errorData.message || response.statusText}`, 'error');
                 return;
             }
             
@@ -479,16 +598,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 openCaptchaModal(data.image_data);
             } else if (data.status === 'complete') {
                 stopPolling();
-                renderAnalysisResult(data.result);
+                // --- CORRECTED LOGIC ---
+                // The result is in status.json now, so we can render it directly.
+                renderAnalysisResult(data.analysis_result_json);
                 checkBtn.disabled = false;
                 checkBtn.textContent = 'Re-check Eligibility';
             } else if (data.status === 'failed') {
                 stopPolling();
-                renderAnalysisResult(data.result || { error: data.message });
+                renderAnalysisResult(data.analysis_result_json || { error: data.message });
                 checkBtn.disabled = false;
                 checkBtn.textContent = 'Retry Eligibility Check';
             } else {
-                showStatusMessage(`Status: ${data.message || data.status.replace('_', ' ')}...`, 'info');
+                showStatusMessage(`Status: ${data.message || data.status.replace(/_/g, ' ')}...`, 'info');
             }
         } catch (error) {
             console.error('Polling error:', error);
@@ -502,8 +623,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const tenderId = this.dataset.tenderPkId;
             const tenderUrl = this.dataset.tenderUrl;
 
-            if (!tenderUrl || tenderUrl === 'N/A') {
-                alert("Error: Original tender link is missing.");
+            if (!tenderUrl || tenderUrl === 'N/A' || tenderUrl === '--') {
+                alert("Error: Original tender link is missing from the data and is required for eligibility check.");
                 return;
             }
             if (!confirm('This will start a background process to download and analyze tender documents. Proceed?')) {
@@ -513,24 +634,23 @@ document.addEventListener('DOMContentLoaded', function() {
             this.disabled = true;
             this.textContent = 'Initiating...';
             showStatusMessage('Initiating eligibility check worker...', 'info');
-            stopPolling(); // Clear any previous polling intervals
+            stopPolling();
 
             try {
                 const response = await fetch(`/eligibility/start-check/${tenderId}`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ tender_url: tenderUrl })
+                    body: JSON.stringify({ "tender_url": tenderUrl })
                 });
 
                 const result = await response.json();
                 if (!response.ok) { throw new Error(result.detail || 'Failed to start worker.'); }
-                
+                if (!result.run_id) { throw new Error('Backend did not return a run_id.'); }
                 currentEligibilityRunId = result.run_id;
+
                 showStatusMessage(result.message + ' Polling for status...', 'info');
                 
-                // Start polling
                 pollInterval = setInterval(pollForStatus, 3000);
-
             } catch (error) {
                 showStatusMessage(`Error: ${error.message}`, 'error');
                 this.disabled = false;
@@ -543,10 +663,8 @@ document.addEventListener('DOMContentLoaded', function() {
         submitCaptchaBtn.addEventListener('click', async function() {
             const solution = captchaInput.value.trim();
             if (!solution) { alert('Please enter the CAPTCHA text.'); return; }
-            
             this.disabled = true;
             this.textContent = 'Submitting...';
-            
             try {
                 const response = await fetch(`/eligibility/submit-answer/${currentEligibilityRunId}`, {
                     method: 'POST',
@@ -554,10 +672,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     body: new URLSearchParams({ captcha_text: solution })
                 });
                 if (!response.ok) { throw new Error('Failed to submit CAPTCHA to server.'); }
-
-                modal.style.display = 'none';
-                showStatusMessage('CAPTCHA submitted. Worker is now processing documents. Polling for final result...', 'info');
-                startPolling(currentEligibilityRunId); // Resume polling
+                closeEligibilityCaptchaModal();
+                showStatusMessage('CAPTCHA submitted. Worker is processing. Polling for status...', 'info');
+                pollInterval = setInterval(pollForStatus, 3000);
             } catch (error) {
                 alert(error.message);
                 this.disabled = false;
@@ -566,9 +683,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    const cancelAndClose = () => {
+        closeEligibilityCaptchaModal();
+        stopPolling(true);
+    };
+
+    if(closeCaptchaBtn) closeCaptchaBtn.addEventListener('click', cancelAndClose);
+    if(cancelCaptchaBtn) cancelCaptchaBtn.addEventListener('click', cancelAndClose);
+
     window.onclick = function(event) {
         if (event.target == modal) {
-            closeEligibilityCaptchaModal();
+            cancelAndClose();
         }
     }
 });

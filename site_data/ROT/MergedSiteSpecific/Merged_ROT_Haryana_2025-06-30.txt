@@ -1,0 +1,220 @@
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_HRY_453833_1</RotTenderId>
+<RotTitleRef>[Door To Door Collection, Segregation of Municipal Solid Waste MSW From Each Establishment and Transportation to the MRF Centres Transfer Stations Processing Site in MC Jhajjar For Three Months ][21/June/2025]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Urban Local Bodies||MC Jhajjar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBV1zUk%2FKL97kezFKjH85lw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_HRY_453412_1</RotTenderId>
+<RotTitleRef>[Desilting/cleaning of blocked sewer line of various sizes i.e. 250mm and 300mm by bucket type Sewer Cleaning Machine in Hassanpur Parnala and all other works contingent thereto. (Recall)][202585274F3B 3D19 41D0 AD2A 2BA4E335C836593PUH]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Engineer- in- Chief PHED Panchkula||Jhajjar Circle||Bahadurgarh PHED</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SO1uk3KGLKYby3raxGLesaA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_HRY_453352_1</RotTenderId>
+<RotTitleRef>[Renovation of Yuva club bui...][2025DA718D07 ED73 4117 929E 2A421C28988A2160DEV]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Panchayati Raj Haryana||XEN Panchayati Raj Rohtak||SDO Panchayati Raj Rohtak</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SiLHau2Ixh46n7Bj0SEGRXg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_HRY_453291_1</RotTenderId>
+<RotTitleRef>[CONSTRUCTION OF AMBEDKAR BHAWAN][20254921DCC1 0D15 4B1D 9A40 DA8F0E3791782040DEV]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Panchayati Raj Haryana||XEN Panchayati Raj Rohtak||SDO Panchayati Raj Sampla</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SiQwJ8%2Bw%2FywNdaRN3vSrEpA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_HRY_453218_1</RotTenderId>
+<RotTitleRef>[CONSTRUCTION OF DIRTY WATER NALA AT G.P JAKHOKHAR BLOCK PUNHANA DISTT.NUH (H.R)][2025B6B406A2 A4BE 45D7 ACB9 A7FAE31568ED2028DEV]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Panchayati Raj Haryana||XEN Panchayati Raj Nuh Mewat||SDO Panchayati Raj Punhana</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SQUS%2BivyLxoAX0d6RH8AzGw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_HRY_453152_1</RotTenderId>
+<RotTitleRef>[Boring and Installation of water harvesting system in ward no 15 in MC Fatehabad.][2025FDD5CF48 0F2D 4773 A3FE 472DD286908F272ULB]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Urban Local Bodies||MC Fatehabad</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SA7Y%2FPqAq%2FaiS5yRUrxuarQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_HRY_453147_1</RotTenderId>
+<RotTitleRef>[Boring and Installation of water harvesting system in ward no 16 in MC Fatehabad.][2025BF862C58 931D 4446 BE36 02F41C3B689A272ULB]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Urban Local Bodies||MC Fatehabad</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SzVhru6a3dLAHZOGxMNkNEw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_HRY_453141_1</RotTenderId>
+<RotTitleRef>[Construction of CC street H/o Sharda Madam to H/o Sanjay Sharma in Ward No.13 M.C Fatehabad.][20252BD29686 0BD6 4CC9 AAF4 07FDC0DB25E3272ULB]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Urban Local Bodies||MC Fatehabad</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S3PPpPr%2F7YzfbLNcDzLvBkg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_HRY_453016_1</RotTenderId>
+<RotTitleRef>[Construction of Boundary Wall of Heritage Park in Ward no. 2 In M.C Fatehabad][2025D96FF32B 5B7C 4462 94B4 52DA135BEAAE272ULB]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Urban Local Bodies||MC Fatehabad</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBQTn8dDX%2BfQaerT1sYIKig%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_HRY_453012_1</RotTenderId>
+<RotTitleRef>[Special repair of streets in ward no.15 MC Fatehabad.][2025B284068A BAF2 4068 A869 1261F440558F272ULB]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Urban Local Bodies||MC Fatehabad</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SolkksqFvmKXFtKsNd7FwCQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>11.</RotSNo>
+<RotTenderId>2025_HRY_452746_1</RotTenderId>
+<RotTitleRef>[CONST. OF FIELD RASTA FROM ...][2025F7538D4E A260 4B93 A46A 6718ACDDFDA41998DEV]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Panchayati Raj Haryana||XEN Panchayati Raj Sonepat||SDE Panchayati Raj Sonipat</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXTk3frtI4tbUfCQMq9QBvA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>12.</RotSNo>
+<RotTenderId>2025_HRY_452729_1</RotTenderId>
+<RotTitleRef>[Annual Maintenance of pontoon Bridge over Yamuna River near village Gurwari in Palwal Distt. for the year 2025-26 (Dismantling and Launching) (Without GST)][202589E15A96 B34A 424A 9B17 471812C365F8624BAR]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Engineer-in-Chief PW(B and R) Department||SE Gurugram||EE Palwal</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S3ImY4s7lp5PMdTlC9bdb%2Bw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>13.</RotSNo>
+<RotTenderId>2025_HRY_452727_1</RotTenderId>
+<RotTitleRef>[Annual Maintenance of Pontoon Bridge over Yamuna River at Hassanpur in Palwal Distt. for the year 2025-26 (Dismantling and Launching) (Without GST)][20252B2219F3 7632 4332 9D69 0D5D07B754A7624BAR]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Engineer-in-Chief PW(B and R) Department||SE Gurugram||EE Palwal</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SmSMqeEuhKYhDoM%2BvKBjEFw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>14.</RotSNo>
+<RotTenderId>2025_HRY_452722_1</RotTenderId>
+<RotTitleRef>[Annual Maintenance of Pontoon Bridge Over Yamuna River near village Thantri in Palwal Distt. for the year 2025-26 (Dismantling and Launching) (Without GST)][2025F7E671F3 D11F 470D 8AB7 5E6B7CC8573B624BAR]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Engineer-in-Chief PW(B and R) Department||SE Gurugram||EE Palwal</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S4dCZN2CtD6GlPpie%2BvtVBA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>15.</RotSNo>
+<RotTenderId>2025_HRY_452454_1</RotTenderId>
+<RotTitleRef>[Hiring of 12 nos. tractor trolley with 3 nos labour and 2 nos. JCB for lifting of waste from  MC Manesar villages.][Tender]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Urban Local Bodies||MC Manesar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SS0WeS26ZZhhDj7FWCEaZSA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>16.</RotSNo>
+<RotTenderId>2025_HRY_452442_1</RotTenderId>
+<RotTitleRef>[CONST OF SC CHOUPAL(DHANAK)...][20259D134DC7 8D5D 4B2E A860 11E59F7A63091998DEV]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Panchayati Raj Haryana||XEN Panchayati Raj Sonepat||SDE Panchayati Raj Sonipat</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIKrTwhu9P3TB3%2F4NERvXlQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>17.</RotSNo>
+<RotTenderId>2025_HRY_452367_1</RotTenderId>
+<RotTitleRef>[Construction of Hall in Stadium at village Dayalpur Block Ballangarh Distt. Faridabad][202520424DCA 4DC0 40B0 B9E5 42E65283025A2009DEV]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Panchayati Raj Haryana||XEN Panchayati Raj Faridabad||SDO Panchayati Raj Ballabgarh</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Siq8lk6zefTIsfszmHy9I5w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>18.</RotSNo>
+<RotTenderId>2025_HRY_452149_1</RotTenderId>
+<RotTitleRef>[Maints and repair of Mist Chambers at Seonthi][Maint and Repair of Mist Chambers at Seonthi]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||PCCF Office||CF Research Pinjore||DFO Seed Pinjore</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SItmmBufaiFx6k4qagbaKvw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>19.</RotSNo>
+<RotTenderId>2025_HRY_452096_1</RotTenderId>
+<RotTitleRef>[Const of B/Wall, Shed , Han...][2025BDDBFE6A BC4D 4305 8FD8 EFA132B234F8708DEV]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Panchayati Raj Haryana||XEN Panchayati Raj Yamunanagar</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SCze5DKNr1pD%2FRCVAt0mG3w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>20.</RotSNo>
+<RotTenderId>2025_HRY_452090_1</RotTenderId>
+<RotTitleRef>[VANGY-KHENTAWAS (B/WALL OF ...][2025D0AE97E9 9816 4E6F 88F7 69BDEBE252D4693DEV]</RotTitleRef>
+<RotOrganisationChain>Haryana Government||Panchayati Raj Haryana||XEN Panchayati Raj Gurugram</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ST0FkhUDwQDMhtbXXrKCrrg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Haryana</SourceSiteKey>
+--- TENDER END ---
+

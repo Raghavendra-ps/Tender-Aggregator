@@ -1,0 +1,58 @@
+11:50:13 [INFO] (ROTWorker-Goa Run-876887) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Goa/worker_rot_worker_Goa_20250630115013876887_2025-06-30.log
+11:50:13 [INFO] (ROTWorker-Goa Run-876887) --- Starting Headless ROT Worker for Site: Goa, Run ID: rot_worker_Goa_20250630115013876887 ---
+11:50:13 [INFO] (ROTWorker-Goa Run-876887) --- Dates: From=None, To=None ---
+11:50:13 [INFO] (ROTWorker-Goa Run-876887) Worker status updated to: WORKER_STARTED
+11:50:14 [INFO] (ROTWorker-Goa Run-876887) Worker status updated to: FETCHING_CAPTCHA
+11:50:14 [INFO] (ROTWorker-Goa Run-876887) Selecting tender status '5'.
+11:50:17 [INFO] (ROTWorker-Goa Run-876887) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Goa_20250630115013876887/captcha.b64
+11:50:17 [INFO] (ROTWorker-Goa Run-876887) Worker status updated to: WAITING_CAPTCHA
+11:50:17 [INFO] (ROTWorker-Goa Run-876887) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Goa_20250630115013876887/answer.txt (max 300s)...
+11:50:24 [INFO] (ROTWorker-Goa Run-876887) CAPTCHA solution received.
+11:50:24 [INFO] (ROTWorker-Goa Run-876887) Worker status updated to: PROCESSING_WITH_CAPTCHA
+11:50:24 [INFO] (ROTWorker-Goa Run-876887) Worker status updated to: SCRAPING_RESULTS
+11:50:24 [INFO] (ROTWorker-Goa Run-876887) --- Processing List Page: 1/1 ---
+11:50:24 [INFO] (ROTWorker-Goa Run-876887) [ListPage1] Extracting table data...
+11:50:24 [INFO] (ROTWorker-Goa Run-876887) [ListPage1] Extracted 10 items.
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [ListPage1_2025_ZP_21196_1] Final summary link found. Clicking...
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [ListPage1_2025_ZP_21192_1] Final summary link found. Clicking...
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21196_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZP_21196_1_20250630_115025_StageSummary.html
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21196_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Goa/ROT_2025_ZP_21196_1_20250630_115025_StageSummary.html --site-key Goa
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21192_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZP_21192_1_20250630_115025_StageSummary.html
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21192_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Goa/ROT_2025_ZP_21192_1_20250630_115025_StageSummary.html --site-key Goa
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21196_1 Popup] Successfully processed structured data for ROT_2025_ZP_21196_1_20250630_115025_StageSummary.html.
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21192_1 Popup] Successfully processed structured data for ROT_2025_ZP_21192_1_20250630_115025_StageSummary.html.
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [ListPage1_2025_ZP_21182_1] Final summary link found. Clicking...
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [ListPage1_2025_ZP_21178_1] Final summary link found. Clicking...
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21182_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZP_21182_1_20250630_115025_StageSummary.html
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21182_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Goa/ROT_2025_ZP_21182_1_20250630_115025_StageSummary.html --site-key Goa
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21178_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZP_21178_1_20250630_115025_StageSummary.html
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21178_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Goa/ROT_2025_ZP_21178_1_20250630_115025_StageSummary.html --site-key Goa
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21182_1 Popup] Successfully processed structured data for ROT_2025_ZP_21182_1_20250630_115025_StageSummary.html.
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_21178_1 Popup] Successfully processed structured data for ROT_2025_ZP_21178_1_20250630_115025_StageSummary.html.
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [ListPage1_2025_ZP_20036_1] Final summary link found. Clicking...
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [ListPage1_2025_ZP_19992_1] Final summary link found. Clicking...
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_20036_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZP_20036_1_20250630_115025_StageSummary.html
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_20036_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Goa/ROT_2025_ZP_20036_1_20250630_115025_StageSummary.html --site-key Goa
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19992_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZP_19992_1_20250630_115025_StageSummary.html
+11:50:25 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19992_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Goa/ROT_2025_ZP_19992_1_20250630_115025_StageSummary.html --site-key Goa
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_20036_1 Popup] Successfully processed structured data for ROT_2025_ZP_20036_1_20250630_115025_StageSummary.html.
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19992_1 Popup] Successfully processed structured data for ROT_2025_ZP_19992_1_20250630_115025_StageSummary.html.
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [ListPage1_2025_ZP_19988_1] Final summary link found. Clicking...
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19988_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZP_19988_1_20250630_115026_StageSummary.html
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19988_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Goa/ROT_2025_ZP_19988_1_20250630_115026_StageSummary.html --site-key Goa
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [ListPage1_2025_ZP_19980_1] Final summary link found. Clicking...
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19980_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZP_19980_1_20250630_115026_StageSummary.html
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19980_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Goa/ROT_2025_ZP_19980_1_20250630_115026_StageSummary.html --site-key Goa
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19988_1 Popup] Successfully processed structured data for ROT_2025_ZP_19988_1_20250630_115026_StageSummary.html.
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [ListPage1_2025_ZP_19957_1] Final summary link found. Clicking...
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19980_1 Popup] Successfully processed structured data for ROT_2025_ZP_19980_1_20250630_115026_StageSummary.html.
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19957_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZP_19957_1_20250630_115026_StageSummary.html
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19957_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Goa/ROT_2025_ZP_19957_1_20250630_115026_StageSummary.html --site-key Goa
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [ListPage1_2025_ZP_19950_1] Final summary link found. Clicking...
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19950_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_ZP_19950_1_20250630_115026_StageSummary.html
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19950_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Goa/ROT_2025_ZP_19950_1_20250630_115026_StageSummary.html --site-key Goa
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19957_1 Popup] Successfully processed structured data for ROT_2025_ZP_19957_1_20250630_115026_StageSummary.html.
+11:50:26 [INFO] (ROTWorker-Goa Run-876887) [2025_ZP_19950_1 Popup] Successfully processed structured data for ROT_2025_ZP_19950_1_20250630_115026_StageSummary.html.
+11:50:34 [INFO] (ROTWorker-Goa Run-876887) Worker status updated to: FINISHED_SUCCESS
+11:50:34 [INFO] (ROTWorker-Goa Run-876887) Playwright resources closed.
+11:50:34 [INFO] (ROTWorker-Goa Run-876887) Worker for Goa terminated with status: FINISHED_SUCCESS

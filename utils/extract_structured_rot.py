@@ -266,33 +266,29 @@ def get_or_create_bidder(db: Session, bidder_name: str) -> Bidder:
         db.flush() # Flush to get the ID for relationships
     return bidder
 
+
 def save_rot_data_to_db(db: Session, structured_data: Dict[str, Any], site_key: str):
-    """Saves the structured ROT data into the database, updating relevant tables."""
     main_info = structured_data.get("main_tender_info", {})
     tender_id_str = main_info.get("Tender ID")
-    
     if not tender_id_str:
         logger.error("No 'Tender ID' found in parsed data. Cannot save to database.")
         return
 
-    # Find the main tender record
     tender = db.query(Tender).filter(Tender.tender_id == tender_id_str).first()
     
     if not tender:
-        # This is an edge case: we have the result but not the original tender notice.
-        # We create a placeholder Tender record.
-        db_logger.warning(f"No existing tender found for ID '{tender_id_str}'. Creating placeholder record.")
+        db_logger.warning(f"No existing tender for ID '{tender_id_str}'. Creating placeholder.")
         tender = Tender(
             tender_id=tender_id_str,
             source_site=site_key,
-            tender_title=main_info.get("Tender Title"),
+            tender_title=main_info.get("Tender Title") or "Title not found in summary",
             organisation_chain=main_info.get("Organisation Chain"),
-            status="Result Announced (Placeholder)"
+            status="Result Announced" # Correct status
         )
         db.add(tender)
-        db.flush() # Ensure the tender object gets its primary key 'id'
+        db.flush()
     else:
-        # Update the status of the existing tender record
+        # --- THIS IS THE CRITICAL FIX ---
         tender.status = "Result Announced"
         db_logger.info(f"Updating tender '{tender_id_str}' status to 'Result Announced'.")
 
@@ -302,63 +298,40 @@ def save_rot_data_to_db(db: Session, structured_data: Dict[str, Any], site_key: 
         tender_result = TenderResult(tender=tender)
         db.add(tender_result)
     
-    tender_result.final_stage = next((s for s in structured_data.get("other_sections_kv", {}) if "evaluation summary" in s.lower()), "Unknown")
+    # The rest of the function remains the same, as it correctly populates
+    # the TenderResult, Bidder, and TenderBid tables.
+    final_stage_title = next((s for s in structured_data.get("other_sections_kv", {}) if "evaluation summary" in s.lower()), "Unknown")
+    tender_result.final_stage = final_stage_title
     tender_result.full_summary_json = structured_data
     
-    # Process Bidders and Bids
-    # We combine both bid lists as they refer to the same set of bidders
     bids_list = structured_data.get("bids_list_data", [])
     fin_eval_list = structured_data.get("financial_evaluation_bid_list_data", [])
 
-    # Create a dictionary to merge bid info by bidder name
     merged_bids = {}
     for bid in bids_list:
         bidder_name = bid.get("Bidder_Name")
         if bidder_name:
-            merged_bids[bidder_name] = {
-                "status": bid.get("Status"),
-                "remarks": bid.get("Remarks")
-            }
+            merged_bids[bidder_name] = { "status": bid.get("Status"), "remarks": bid.get("Remarks") }
             
     for fin_bid in fin_eval_list:
         bidder_name = fin_bid.get("Bidder_Name")
         if bidder_name:
-            if bidder_name not in merged_bids:
-                merged_bids[bidder_name] = {}
-            merged_bids[bidder_name].update({
-                "rank": fin_bid.get("Rank"),
-                "value": fin_bid.get("Value_Numeric")
-            })
+            if bidder_name not in merged_bids: merged_bids[bidder_name] = {}
+            merged_bids[bidder_name].update({ "rank": fin_bid.get("Rank"), "value": fin_bid.get("Value_Numeric") })
 
-    # Now, iterate through the merged bid data and create DB records
     for bidder_name, bid_details in merged_bids.items():
         bidder_record = get_or_create_bidder(db, bidder_name)
-        
-        # Check if a bid for this tender and bidder already exists to avoid duplicates
-        existing_bid = db.query(TenderBid).filter(
-            TenderBid.tender_id_fk == tender.id,
-            TenderBid.bidder_id_fk == bidder_record.id
-        ).first()
+        existing_bid = db.query(TenderBid).filter(TenderBid.tender_id_fk == tender.id, TenderBid.bidder_id_fk == bidder_record.id).first()
 
         if existing_bid:
-            # Update existing bid
             existing_bid.bid_status = bid_details.get("status")
             existing_bid.bid_rank = bid_details.get("rank")
             existing_bid.bid_value = bid_details.get("value")
             db_logger.debug(f"Updating existing bid for tender '{tender_id_str}' and bidder '{bidder_name}'.")
         else:
-            # Create new bid
-            new_bid = TenderBid(
-                tender=tender,
-                bidder=bidder_record,
-                bid_status=bid_details.get("status"),
-                bid_rank=bid_details.get("rank"),
-                bid_value=bid_details.get("value")
-            )
+            new_bid = TenderBid(tender=tender, bidder=bidder_record, bid_status=bid_details.get("status"), bid_rank=bid_details.get("rank"), bid_value=bid_details.get("value"))
             db.add(new_bid)
             db_logger.debug(f"Creating new bid for tender '{tender_id_str}' and bidder '{bidder_name}'.")
-
-# --- MODIFIED: Main execution logic ---
 
 def main(html_file_path: Path, site_key: str):
     """

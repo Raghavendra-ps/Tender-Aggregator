@@ -1,0 +1,36 @@
+16:41:58 [INFO] (ROTWorker-Haryana Run-301746) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Haryana/worker_rot_worker_Haryana_20250630164158301746_2025-06-30.log
+16:41:58 [INFO] (ROTWorker-Haryana Run-301746) --- Starting Headless ROT Worker for Site: Haryana, Run ID: rot_worker_Haryana_20250630164158301746 ---
+16:41:58 [INFO] (ROTWorker-Haryana Run-301746) --- Dates: From=None, To=None ---
+16:42:06 [INFO] (ROTWorker-Haryana Run-301746) Selecting tender status '5'.
+16:42:15 [INFO] (ROTWorker-Haryana Run-301746) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Haryana_20250630164158301746/captcha.b64
+16:42:15 [INFO] (ROTWorker-Haryana Run-301746) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Haryana_20250630164158301746/answer.txt (max 300s)...
+16:42:26 [INFO] (ROTWorker-Haryana Run-301746) CAPTCHA solution received.
+16:42:57 [CRITICAL] (ROTWorker-Haryana Run-301746) Major error in ROT worker: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#tabList, .error_message, .errormsg, #msgDiv") to be visible
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/headless_rot_worker.py", line 300, in run_headless_rot_scrape_orchestration
+    await page.wait_for_selector(f"{RESULTS_TABLE_SELECTOR}, {ERROR_MESSAGE_SELECTORS}", state="visible", timeout=post_submit_timeout_ws)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/async_api/_generated.py", line 8180, in wait_for_selector
+    await self._impl_obj.wait_for_selector(
+        selector=selector, timeout=timeout, state=state, strict=strict
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_page.py", line 425, in wait_for_selector
+    return await self._main_frame.wait_for_selector(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_frame.py", line 323, in wait_for_selector
+    await self._channel.send("waitForSelector", locals_to_params(locals()))
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#tabList, .error_message, .errormsg, #msgDiv") to be visible
+
+16:42:57 [INFO] (ROTWorker-Haryana Run-301746) Playwright resources closed.
+16:42:57 [INFO] (ROTWorker-Haryana Run-301746) Worker for Haryana terminated with status: ERROR_UNHANDLED_TimeoutError

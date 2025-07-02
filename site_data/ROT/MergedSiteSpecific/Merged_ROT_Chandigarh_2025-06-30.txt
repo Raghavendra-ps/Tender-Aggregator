@@ -1,0 +1,1100 @@
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_PU_84485_1</RotTenderId>
+<RotTitleRef>[Providing and fixing chain link fencing around cricket ground complex in P.U. Campus, Sector-14, Chandigarh.][01/ST]</RotTitleRef>
+<RotOrganisationChain>Panjab University||Construction/Maintenance</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SQWeOef9BBl2bEHErfSXwrw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_PEC_85308_1</RotTenderId>
+<RotTitleRef>[Purchase of TURNITIN software services  for 1Year subscription AS PER SCHEDULE OF REQUIREMENT Section III][PEC/CPC/03/2025]</RotTitleRef>
+<RotOrganisationChain>PEC University of Technology</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SS4UKpU3dtBXB4L5EMfq6lw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_PEC_84144_1</RotTenderId>
+<RotTitleRef>[Outsourcing of Mess Services at Shivalik Hostel - 2025][PEC/DSA/MESSTENDER/25/1]</RotTitleRef>
+<RotOrganisationChain>PEC University of Technology</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=So8PlJyUGMmI%2BSy4VWyo8Hw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_MCC_86904_1</RotTenderId>
+<RotTitleRef>[INSTALLATION OF CCTV CAMERAS AT MODERN HOUSING COMPLEX, WARD NO. 6, CHANDIGARH. (WORK NO. 44 18th LS).][ 28/E/MCC/2025  ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=StdN5ezPmY1Ld67D8DWijbw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_MCC_86839_1</RotTenderId>
+<RotTitleRef>[ANNUAL MAINTENANCE CONTRACT OF CCTV and UPS INSTALLED AT MC BUILDING, SEC-17, CHANDIGARH FOR THE YEAR 2025-26][24/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SG7mnQX%2BeskywTVqFQqGu%2BQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_MCC_86813_2</RotTenderId>
+<RotTitleRef>[REPAIR and MTC. OF PEDESTALS OF VARIOUS SIZES IN VARIOUS WARDS OF CHANDIGARH][23/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SYJTVZCJrwQTB5LlMl8DtQA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_MCC_86619_2</RotTenderId>
+<RotTitleRef>[PROVIDING LIGHTS IN SPORTS GROUND AT MILK COLONY DHANAS, CHANDIGARH, UNDER MPLADS. (WORK NO. 138 17th LS).][22/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIkD%2FuJfRSofU3lFsKQIb3g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_MCC_86526_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Cameras in Ward No. 16, Sector-25, Chandigarh. (Work No. 42 18th LS).][21/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SiAH0RqacT0uBdzyka0Jxww%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_MCC_86334_3</RotTenderId>
+<RotTitleRef>[Special Repair and maintenance of House No. 803, Ground Floor, Water works Colony Sector 32, Chandigarh.][2025/R2/05-01]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Road Division - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SU4JeUvYLhFH2udKj9uzj4w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_MCC_86298_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Cameras in Ward No. 35, Sector 49D, Chandigarh (Work No. 45 18th L.S)][20/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SaUUXAMmrZTH71ZnnaPoTsA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>11.</RotSNo>
+<RotTenderId>2025_MCC_86243_1</RotTenderId>
+<RotTitleRef>[Providing and Applying Wall Painting/Mural Painting at Various Locations Under Road Division No.3, M.C., Chandigarh.][2025_MCC_R3_008]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Road Division - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SHT3DLolOsueMjeK0aXi35A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>12.</RotSNo>
+<RotTenderId>2025_MCC_86036_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Cameras in Village Khuda Alisher, Ward No.1, Chandigarh (Work No. 25 18th LS).][19/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SxqP1GKNtDbNQ1fm8RLQc0A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>13.</RotSNo>
+<RotTenderId>2025_MCC_86034_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Cameras in Village Kaimbwala, Ward No.1, Chandigarh (Work No. 16 18th LS).][18/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S7jn4U0q3hBqt30ZNmHs0OQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>14.</RotSNo>
+<RotTenderId>2025_MCC_86031_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Cameras in Village Khuda Lahora, Ward No.1, Chandigarh (Work No. 26 18th LS).][17/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Su7D21qFxKhymme658LlXNw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>15.</RotSNo>
+<RotTenderId>2025_MCC_86029_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Cameras in Village Khuda Jassu, Ward No.1, Chandigarh (Work No. 27 18th LS).][16/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SqL7bQkCxOd32x1BkWZf%2BRg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>16.</RotSNo>
+<RotTenderId>2025_MCC_85947_1</RotTenderId>
+<RotTitleRef>[Cleaning of Back Service Lane upto Sweeping Level, Removal of Grass and Various Segregated Municipal Solid Waste to Designated Plants in Chandigarh. (Under Roads Division No.2, i.e. Sectors 20, 27, 28, 29 , 30 M.C. Chandigarh][2025/R2/04-02]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Road Division - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SJMkrdhcTHI%2BP%2BlFsiLhnzA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>17.</RotSNo>
+<RotTenderId>2025_MCC_85855_1</RotTenderId>
+<RotTitleRef>[Repair/Restoration of  Road Cut for laying Electricity cable in Sector 28, Chandigarh][2025/R2/04-01]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Road Division - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SDOTvuwwVTKA%2Fe810D7jDrQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>18.</RotSNo>
+<RotTenderId>2025_MCC_85483_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Camera in  Bapudham Colony, Sector-26, ward No. 3, Chandigarh. (work No.  24 18th LS)][15/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S6e8xusj6XYHVk2K0DECgBQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>19.</RotSNo>
+<RotTenderId>2025_MCC_85482_1</RotTenderId>
+<RotTitleRef>[INSTALLATION OF CCTV CAMERAS IN VIKAS NAGAR AND MAULIJAGRAN COMPLEX, WARD NO.7,CHANDIGARH. (WORK NO.28 18TH L.S.).][14/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S0MS1vsE9X%2FYQk8DC9cv0wQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>20.</RotSNo>
+<RotTenderId>2025_MCC_85481_1</RotTenderId>
+<RotTitleRef>[INSTALLATION OF CCTV CAMERAS IN VILL. MAULI JAGRAN, WARD NO. 8 ,UT CHANDIGARH. (Work No.32 18th L.S.)][13/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sv%2BaFFGbhnvSe%2BuRfwzlBew%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>21.</RotSNo>
+<RotTenderId>2025_MCC_85415_2</RotTenderId>
+<RotTitleRef>[STRENGTHENING OF SEWERAGE SYSTEM BY PROVIDING AND LAYING OF 200mm 8 INCH ID SEWER PIPE LINE NEAR H.No. 107-125 SEC-45 CHD BEHIND SHRI GURUDWARA SAHIB SEC-46 AND NEAR H.No. 524-686 SEC-46 CHD. CH. TO CAPITAL HEAD SEWERAGE STP.][MCPH4/2025/09]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Public Health Division - IV</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SPGEWGW%2BdBSpDnwWu1gimaA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>22.</RotSNo>
+<RotTenderId>2025_MCC_85087_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Cameras in ward No. 30 (Sector-41, Buterla and Badheri ), Chandigarh. (Work No.  1 18th LS)][11/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SUtOp3M3pAJCOxj0s1tLJEA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>23.</RotSNo>
+<RotTenderId>2025_MCC_85085_1</RotTenderId>
+<RotTitleRef>[Installation of Flood lights inside and around of sector 40C, market Ward no.25 Chandigarh (Work No. 34 18th LS).][10/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBJknKr%2FmCIOTF%2F8OAGxRDA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>24.</RotSNo>
+<RotTenderId>2025_MCC_85024_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Camera in Ramdarbar colony, ward No.26 Chandigarh. (Work No. 31 18th L.S)][09/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SDxKB3fAqg%2BQ8B6fSiKSdYA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>25.</RotSNo>
+<RotTenderId>2025_MCC_85023_1</RotTenderId>
+<RotTitleRef>[Installation of CCTV Camera on Outskirt of Sector 45 Ward No.34 Chandigarh (Work No. 30 18th L.S)][08/E/MCC/2025 ]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=StStuzXo%2FOK2GCICbl6KTjQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>26.</RotSNo>
+<RotTenderId>2025_MCC_84947_1</RotTenderId>
+<RotTitleRef>[Providing and Fixing of  Open Air Gym Equipments in the main][MCC/H-2/02/2025]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Horticulture Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SYR96XhENKZM4BCRbGID%2B2A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>27.</RotSNo>
+<RotTenderId>2025_MCC_84514_1</RotTenderId>
+<RotTitleRef>[Providing and Fixing of material for stage main gate, logo with flowers and bouquets during 53rd  Rose Festival 2025 under Art and Culture.  ][MCC/H-1/1/2025]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Horticulture Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SRBcxwoGfL8eKGJFx8Atx1g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>28.</RotSNo>
+<RotTenderId>2025_MCC_84127_1</RotTenderId>
+<RotTitleRef>[Providing Electrical Work in False Ceiling and Wall Paneling in Yoga Room, Table Tennis Room, Gym, Reading Room and Corridor and other Minor Work in Community Centre, Sector- 46, Chandigarh.][02/E/MCC/2025]</RotTitleRef>
+<RotOrganisationChain>Municipal Corporation||Engineering-MCC||Electrical Division</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SpymsWlAkqlUWLoNlfXqCOA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>29.</RotSNo>
+<RotTenderId>2025_CHD_87015_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 632, 636, 638 TYPE 12 SECTOR 7 CHANDIGARH. ][CP3/2025/2167242	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SAhHH2lQ2BRtWgRDXtDoj8w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>30.</RotSNo>
+<RotTenderId>2025_CHD_87014_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 519 TYPE III SECTOR 7 CHANDIGARH. ][CP3/2025/2167242		]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIWlxao9g17fe0Gkg8L4RCg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>31.</RotSNo>
+<RotTenderId>2025_CHD_87013_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF CORRIDOR IN FRONT OF O/O DEPUTY COMMISSIONER AND COURT ROOM OF DEPUTY COMMISSIONER, U.T. CHANDIGARH. ][CP3/2025/2167242	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2B%2FvTlyzV1sRswxzXbWNYkA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>32.</RotSNo>
+<RotTenderId>2025_CHD_87010_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 2305 B (TYPE II) SECTOR 19 CHANDIGARH. (TOTAL 01 HOUSE)][CP3/2025/2167242	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SCAnMVfO4b6xFybwLrX8hzg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>33.</RotSNo>
+<RotTenderId>2025_CHD_87007_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF ALLOTTED HOUSE NO. 529, 554, 564, 569, 573, 575, 577, 644, 3265, 3299, 3305, 3314, 3399 AND 3574 (TYPE XIII) SECTOR 22 CHANDIGARH. ][CP3/2025/2167242	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SAPi95NIaYp%2BM9os49oxxiA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>34.</RotSNo>
+<RotTenderId>2025_CHD_87006_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 476 (TYPE X JD) SECTOR 22 CHANDIGARH. ][CP3/2025/2167242]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SvvJBoBBdUt2vnMkik7jJEQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>35.</RotSNo>
+<RotTenderId>2025_CHD_87001_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF DOCTOR RESIDENCES (DNB HOUSES) AT 7TH FLOOR MULTI STOREY BUILDING IN GMSH SECTOR-16, CHANDIGARH][CP3/2025/2167231	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SJUfsZMlPeJOuGgyjxukzQQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>36.</RotSNo>
+<RotTenderId>2025_CHD_86995_1</RotTenderId>
+<RotTitleRef>[Cleaning of existing road gullies, manholes and allied system for proper storm water drainage from Punjab Raj Bhawan and Haryana Raj Bhawan, CCET Sector 26 and U.T. Guest House Sector 6 Chandigarh (period for 03 months) (Ch. to 2215 (N.P) Urban Water][PH3/2025/256]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SdG5ANRCd0JxRVb9PNzS08A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>37.</RotSNo>
+<RotTenderId>2025_CHD_86994_1</RotTenderId>
+<RotTitleRef>[Cleaning of existing road gully and M.H. at various Non Residential Buildings i.e. CLTA, Skating Ring, Govt. Model Sr. Secondary School, Sector 10, Children Traffic Park-23, Yoga Centre-23, Bal Bhawan-23, Working Women Hostel, GMSS Sector 22A, GMSS S][PH3/2025/255]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SLpzTIxKOPmOaJhxCGTMaPA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>38.</RotSNo>
+<RotTenderId>2025_CHD_86987_1</RotTenderId>
+<RotTitleRef>[PROVIDING REWIRING AND REPLACEMENT OF OLD FITTING AND FAN WITH UP GRADATION OF EXISTING MAIN BOARDS IN NATURAL SCIENCE AND HISTORY MUSEUM SEC10 CHD REPLACEMENT OF DEFECTIVE ICTPN WITH MCCB AND EXHAUST FAN  FRESH AIR FAN CEILING FAN ETC.IN GMSH SEC16 ][E1/TN-145]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBVuji0rTuwR7bz%2B1cEhFkg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>39.</RotSNo>
+<RotTenderId>2025_CHD_86986_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NOS. 1065, 1108, 1547, 1550, 1567, 1616  (OCCUPIED HOUSES) (TYPE XII JB) SECTOR-23, CHANDIGARH (TOTAL 06 NOS. HOUSES) (IBM SCHEME NO. W4 2025 24599).][E1/TN-144]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SPon0yorh8b4MmrB3CNjxxQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>40.</RotSNo>
+<RotTenderId>2025_CHD_86984_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 1071, 1098, 1150, 1577, 1666 (OCCUPIED HOUSES) AND ROOF TREATMENT OF HOUSE NO. 1067 (OCCUPIED HOUSE) (TYPE XII JB) SECTOR-23, CHANDIGARH (TOTAL 06 NOS. HOUSES) (IBM SCHEME NO. W4 2025 24551).][E1/TN-142]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwH8SqA9U1jGsYsD0AGEthw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>41.</RotSNo>
+<RotTenderId>2025_CHD_86983_1</RotTenderId>
+<RotTitleRef>[Setting up of PAO Cell on 6th Floor and Ground Floor  at Chandigarh Secretariat Building, Sector 9-D, Chandigarh (Civil Works). ][EECP5/2025/2089864 dated 19.06.2025]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - I||CP - V</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sq5kod0Ucw9isxumtJ%2Fn6RA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>42.</RotSNo>
+<RotTenderId>2025_CHD_86967_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 1473, 1427, 1446, 236, 287, 288, 280, 44, 1193, 1242, 1400 (OCCUPIED HOUSE) (TYPE-XII JD) SECTOR-23, CHANDIGARH (11 NOS HOUSES)][CP3/2025/2165307	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S58w317DthJmcSUZYVoG9YQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>43.</RotSNo>
+<RotTenderId>2025_CHD_86965_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF VACANT HOUSE NO. 1479 (TYPE XII JD) (01 NO. HOUSES) SECTOR 23 CHANDIGARH. ][CP3/2025/2163263	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SVasRX1APSxWuD%2FFFX5MX%2Fw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>44.</RotSNo>
+<RotTenderId>2025_CHD_86964_1</RotTenderId>
+<RotTitleRef>[SR TO RB TYPE VI HOUSES SECTOR 16 CHANDIGARH. ][CP3/2025/2163266	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SqlIYS4URkAsV%2B61DxJP4jg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>45.</RotSNo>
+<RotTenderId>2025_CHD_86959_1</RotTenderId>
+<RotTitleRef>[SR TO RB UNDER MAINTENANCE BOOTH SECTOR 19 CHANDIGARH. ][CP3/2025/2163266	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SW%2FksL1jgAW0rZiFO1jXRXQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>46.</RotSNo>
+<RotTenderId>2025_CHD_86957_1</RotTenderId>
+<RotTitleRef>[SR TO RB UNDER MTC. BOOTH SECTOR 16 CHANDIGARH. ][CP3/2025/2163266	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SeLeLKkD1%2BhK1PJYikth0HQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>47.</RotSNo>
+<RotTenderId>2025_CHD_86955_1</RotTenderId>
+<RotTitleRef>[Widening of Road under Chandigarh Administration from HLB Khudda Lahora to Nayagaon under C12 Sub Division][CP2Road2164938]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - II</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Smo1asvD%2FxanSp7rBAiJA7w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>48.</RotSNo>
+<RotTenderId>2025_CHD_86951_1</RotTenderId>
+<RotTitleRef>[AR TO RB UNDER MAINTENANCE BOOTH SECTOR 7 CHANDIGARH. ][CP3/2025/2162282	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SdyKd%2Fta2baFtMREHRyzhFg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>49.</RotSNo>
+<RotTenderId>2025_CHD_86950_1</RotTenderId>
+<RotTitleRef>[AR TO RB TYPE 8 SECTOR 7 CHANDIGARH][CP3/2025/2162282]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SzxGtQGSu%2F1nycEliUlvf5g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>50.</RotSNo>
+<RotTenderId>2025_CHD_86944_1</RotTenderId>
+<RotTitleRef>[AR TO RB TYPE 7 SECTOR 7 CHANDIGARH][CP3/2025/2162282	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S3E%2BkqbVJjYhA%2BssSTpuXuQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>51.</RotSNo>
+<RotTenderId>2025_CHD_86943_1</RotTenderId>
+<RotTitleRef>[AR TO RB IN SECTOR 5 CHANDIGARH. ][CP3/2025/2162282	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Swl%2BekLtWPQ60BNMlKWnfxA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>52.</RotSNo>
+<RotTenderId>2025_CHD_86936_1</RotTenderId>
+<RotTitleRef>[Mtc of EI in residential building under UT Chandigarh. (Renovation of house no.1018 (Type 8), Sec-11, UT Chandigarh. ][E3/47W/43]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SFWdd3TUETRkb6u9Mz0TXjA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>53.</RotSNo>
+<RotTenderId>2025_CHD_86934_1</RotTenderId>
+<RotTitleRef>[Replacement of 02 Nos. water coolers and purifier at Football Ground Sector 17 Chandigarh. (Ch. to 2215 (N.P) NRB)][PH3/2025/252]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SGHiK2%2FzE3kCLSLqBhcmIvQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>54.</RotSNo>
+<RotTenderId>2025_CHD_86933_1</RotTenderId>
+<RotTitleRef>[ANNUAL REPAIR AND SPECIAL REPAIR FOR RB TYPE VIII HOUSES SECTOR 18 CHANDIGARH (WOOD WORK AND OTHER MISC. WORKS)][CP3/2025/2162282]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SU%2FTEC8g%2FvdWmsrcj5f1eOw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>55.</RotSNo>
+<RotTenderId>2025_CHD_86932_1</RotTenderId>
+<RotTitleRef>[AR AND SR TO RB TYPE 10 AND OTHER SECTOR 7 CHANDIGARH. ][CP3/2025/2164091	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SuEd8mqkwHi9mGwfCAZZ44A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>56.</RotSNo>
+<RotTenderId>2025_CHD_86929_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF ALLOTTED HOUSE NO. 529, 554, 564, 569, 573, 575, 577, 644, 3265, 3299,3 305, 3314, 3399 AND 3574 (TYPE XIII), SECTOR 22, CHANDIGARH (TOTAL 14 NOS. HOUSES) (IBM SCHEME NO. W4/2025/24631).][E1/TN-137]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SlDPzDjEVCQjoaIwwBv%2FAgg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>57.</RotSNo>
+<RotTenderId>2025_CHD_86927_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 2214, 2215, 2217 TO 2220, 2222 TO 2232, 2235 TO 2238, 2048, 2137, 2429 (OCCUPIED HOUSE) (TYPE-XIII) SECTOR-23, CHANDIGARH (24 NO HOUSES).][CP3/2025/2163402	]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SeUU9i%2BRO6bxCkWa%2Fsb%2B53Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>58.</RotSNo>
+<RotTenderId>2025_CHD_86926_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO.  402  433  455  461  3740  3741  3752  3793 AND 3795 (TYPE X), SECTOR 22, CHANDIGARH (TOTAL 09 NOS. HOUSES) (IBM SCHEME NO. W4  2025  24584) (E.I WORK).][E1/TN-136]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SLzFd4AcgbBDbLF%2FaWf4PFg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>59.</RotSNo>
+<RotTenderId>2025_CHD_86925_1</RotTenderId>
+<RotTitleRef>[Repair and rewinding of Submersible motor pump and other allied work at Lake Sports Complex, Sector 1, U.T., Chandigarh. (Ch. to Annual Operation and maintenance of PHS water supply and sanitation at Lake Sports Complex Sector 1, Chandigarh Ch. to 42][PH3/2025/251]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwKlC5j2cocUNXPL4aec5mw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>60.</RotSNo>
+<RotTenderId>2025_CHD_86924_1</RotTenderId>
+<RotTitleRef>[Renovation of House No. 1094, 1099A, 1137A, (Vacant) and 2968, 1021A (Occupied) (Type 11 (Old/III(New) (Total 05 Nos. Houses) Sector 20, Chandigarh (IBM Scheme No. W4/2025/24483)][PH3/2025/250]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S3l%2BAmfavj%2BooW3b1LNGQyQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>61.</RotSNo>
+<RotTenderId>2025_CHD_86923_1</RotTenderId>
+<RotTitleRef>[Renovation of occupied House No. 1155,1182, 1183,1185,1187, 1188 and 1157 (Vacant) (Type 13 (Old/New) (07 Nos. Houses) Sector 20, Chandigarh (IBM Scheme No. W4/20258/24511)][PH3/2025/249]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2FvH2nY%2FwJHxHX7lfFWZajw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>62.</RotSNo>
+<RotTenderId>2025_CHD_86922_1</RotTenderId>
+<RotTitleRef>[Renovation of Vacant House No. 1208A, 2497A, 2519A, 2637A, 2869, 2911A, 2442A, 2650, 2747, 2133, 2133A, 1202A, 1201, 1186A, 1181A, 2659, 2866A, 2515A, 1161A, 2883A, 2909, 2628A, 2437A (Type 13)               (Old/I/New) (23 Nos. Houses) Sector 20, Ch][PH3/2025/248]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SgCLDFlQrZi6IU3izeTvpQQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>63.</RotSNo>
+<RotTenderId>2025_CHD_86921_1</RotTenderId>
+<RotTitleRef>[Repair and mtc. of PHS of Sports Complex Sector 7, Lake Club and various NRB Building under SDE W/S Sub Division No. 2, Chandigarh (Ch. to 2215 (N.P) NRB)][PH3/2025/247]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SVzueN2pUQ2ZsFjr4N0LpwQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>64.</RotSNo>
+<RotTenderId>2025_CHD_86920_1</RotTenderId>
+<RotTitleRef>[PROVIDING ANNUAL MAINTENANCE OF CCTV CAMERA IN VARIOUS LOCATIONS IN CHANDIGARH. LAWN TENNIS ASSOCIATOIN, SECTOR -10, CHANDIGARH. ][E1/TN-140]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIOL%2Fkvc5oN5XcS71siFm1Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>65.</RotSNo>
+<RotTenderId>2025_CHD_86919_1</RotTenderId>
+<RotTitleRef>[REPLACEMENT OF DEFECTIVE FITTINGS AND ALLIED ACCESSORIES DUE TO ITF WORLD TENNIS TOUR JUNIORS TOURNAMENT AT CLTA COMPLEX, SECTOR-10, CHANDIGARH. ][E1/TN-139]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SRBjliqqVcHxPH0Y0qOnQsw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>66.</RotSNo>
+<RotTenderId>2025_CHD_86913_1</RotTenderId>
+<RotTitleRef>[MTC OF E.I IN NRB AT CHANDIGARH (REPLACEMENT OF DEFECTED LED BOLLARDS AND FLOOD LIGHTS IN PRESS CHOWK SECTOR 18 CHANDIGARH).][E1/TN-138]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S13%2FS63S%2Far9sizuIzAW5CA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>67.</RotSNo>
+<RotTenderId>2025_CHD_86910_1</RotTenderId>
+<RotTitleRef>[Special Repair/ Annual Repair and Maintenance of Punjab and Haryana High Court Building under C-9 Sub Division, Chandigarh (Repair and maintenance of various work in new Bar Complex and Bar Library During Summer Vacation. 2025).][CP6/2025/2004-15/c9tender]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - VI</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2F8%2BDDwN1%2FZ%2BKLGDpZzOYZg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>68.</RotSNo>
+<RotTenderId>2025_CHD_86907_1</RotTenderId>
+<RotTitleRef>[Special Repair /Annual Repair and Maintenance of Punjab and Haryana Civil Secretariat Building under C-9 Sub Division Chandigarh (Various mtc. work in Punjab and Haryana Civil Sectt.)][CP6/2025/2004-15/c9tender]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - VI</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SV6nrx%2BX55nBtMiM443Mxsw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>69.</RotSNo>
+<RotTenderId>2025_CHD_86905_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 68 TYPE 4 DM SECTOR 7 CHANDIGARH. ][CP3/2025/2160043]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SqphZU3vAIT3qCknMc0693Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>70.</RotSNo>
+<RotTenderId>2025_CHD_86903_1</RotTenderId>
+<RotTitleRef>[Repair and maintenance of tubewell and booster and other allied works at I.T. Park and I.R.B. Sarangpur U.T., Chandigarh. ][PH8/2025/2160184/97]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - VIII</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SGzfymI2gu1bWS01vUjl9lw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>71.</RotSNo>
+<RotTenderId>2025_CHD_86885_1</RotTenderId>
+<RotTitleRef>[Repair and Maintenance of existing road gullies and repair of the surface of UGR and other allied work at Chandigarh Armed Police Complex, Dhanas, U.T., Chandigarh. ][PH8/2025/2158122/96]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - VIII</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SmJC4XHuACoBmsSequTfpBQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>72.</RotSNo>
+<RotTenderId>2025_CHD_86884_1</RotTenderId>
+<RotTitleRef>[Providing Public Health Fixture Against the Broken Missing and Repair and Maintenance the Rusted GI Pipe and Other Allied Works in the R B Sector-26 fall under the jurisdiction of the SDE Ws Sub Division No.12 Mtc. Booth Sector-26 U.T., Chd.][PH8/2025/2158099/95]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - VIII</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S8MCIiA3G3SI48rGWIrYcPg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>73.</RotSNo>
+<RotTenderId>2025_CHD_86875_1</RotTenderId>
+<RotTitleRef>[COVERED VERANDAH OUTSIDE COURT ROOM NO. 1 IN ORDER TO SAVE THE ADVOCATES, LITIGANTS, GENERAL PUBLIC AND EMPLOYEES OF THE HONBLE PUNJAB AND HARYANA HIGH COURT, CHANDIGARH.][CP6/2025/1970-1981/verandha]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - VI</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S7ISL6MkTLrsRlH6BlQuDJA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>74.</RotSNo>
+<RotTenderId>2025_CHD_86873_1</RotTenderId>
+<RotTitleRef>[PROVIDING AUDIO AND VIDEO CONFERENCING SYSTEM IN COMMITTEE, 1ST FLOOR, DC OFFICE, SECTOR-17, CHANDIGARH.][E1/TN-135]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SZkrDPLr%2FdjWq4OCcI%2F0Kkg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>75.</RotSNo>
+<RotTenderId>2025_CHD_86871_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF TRANSIT FLAT HOUSE NO.1416 AND 1416C IN SECTOR 19, CHANDIGARH.][CP3/2025/2157348]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SFy9BlpatczArJl%2B8JveEFw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>76.</RotSNo>
+<RotTenderId>2025_CHD_86870_1</RotTenderId>
+<RotTitleRef>[AR AND SR TO RB OF TRANSIT FLATS IN SECTOR 19, CHANDIGARH. (NEW ALLOTMENT)][CP3/2025/2157342]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SR%2Bpft3euwkWdfwcKwe3ZSA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>77.</RotSNo>
+<RotTenderId>2025_CHD_86868_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 300, TYPE-7, SECTOR 16, CHANDIGARH.][CP3/2025/2156064]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S5fqR%2FxoKeE0QgJAnIrVzlQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>78.</RotSNo>
+<RotTenderId>2025_CHD_86865_1</RotTenderId>
+<RotTitleRef>[Mtc. Of E.I. in residential building under UT Chandigarh. (Renovation of house No.1025 (Type 8), Sector 11, UT, Chandigarh.][E3/47W/40]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SxvkpatafN5eRuG%2B12FQsYg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>79.</RotSNo>
+<RotTenderId>2025_CHD_86862_1</RotTenderId>
+<RotTitleRef>[PROVIDING CEILING FANS AND FLOOD LIGHT FITTINGS DUE TO THEFT AT VARIOUS TOWERS, POLICE COMPLEX, DHANAS, CHANDIGARH.][E1/TN-131]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SYU5FM2sMGwbulN0tio%2BDdw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>80.</RotSNo>
+<RotTenderId>2025_CHD_86859_1</RotTenderId>
+<RotTitleRef>[CONSTRUCTION OF ADDITIONAL TOILET (GROUND FLOOR) OF ALLOTED   HOUSE NO. 229, 273 ,294 ,295, 296, 3872,3874,3915, 3933, 3934 AND VACANT HOUSE  3803, 3806 AND 3879   (TYPE X) SECTOR 22, CHANDIGARH (TOTAL 13   HOUSES). ][CP3/2025/2055230]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SZlah%2FYXTqoQFeiVtPOyTew%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>81.</RotSNo>
+<RotTenderId>2025_CHD_86858_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO-282, 296, 299,3780, 3784, 3804, 3805, 3924, 3925 AND 3964 (TYPE-X) SECTOR-22, CHANDIGARH (TOTAL  10 NOS)][CP3/2025/2055230]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SrCDa3hkP1bml6xG50OMZcg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>82.</RotSNo>
+<RotTenderId>2025_CHD_86853_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 177   (TYPE XII),  SECTOR-22, CHANDIGARH (IBM SCHEME NO. W4/ 2025  24552).][E1/TN-129]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXZcCPapZo%2BB4p%2Bq8qPPOkg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>83.</RotSNo>
+<RotTenderId>2025_CHD_86849_1</RotTenderId>
+<RotTitleRef>[CONSTRUCTION OF ADDITIONAL TOILET (GROUND FLOOR) OF HOUSE NO. 275, 300, 325, 3920 AND  3964, (TYPE X), SECTOR 22, CHANDIGARH (5 NOS. HOUSES) (IBM SCHEME NO. W4 2025 24288) (E.I WORK).][E1/TN-128]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SoUu49Z12%2Bihn6Wav%2FjQFTg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>84.</RotSNo>
+<RotTenderId>2025_CHD_86844_1</RotTenderId>
+<RotTitleRef>[PROVIDING WALL FANS AND EXHAUST FANS IN CHESS CENTRE, SPORTS COMPLEX, SECTOR8, CHANDIGARH.][E1/TN-126]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SE8CTl6hqjxk0HOfddCYnyQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>85.</RotSNo>
+<RotTenderId>2025_CHD_86842_1</RotTenderId>
+<RotTitleRef>[CONSTRUCTION OF ADDITIONAL TOILET (GROUND FLOOR) OF HOUSE NO. 229, 273, 294, 295, 296, 3872, 3874, 3915, 3933, 3934, AND VACANT HOUSE NO. 3803, 3806,AND 3879, (TYPE X), SECTOR 22, CHANDIGARH (TOTAL 13 NOS. HOUSES) (IBM SCHEME NO. W4 2025 24553) (E.I ][E1/TN-127]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SROuFf9xN1goncmA%2BBjWwdw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>86.</RotSNo>
+<RotTenderId>2025_CHD_86840_1</RotTenderId>
+<RotTitleRef>[SR TO RB UNDER MAINTENANCE BOOTH, SECTOR 16, CHANDIGARH. (JAFFERY WORK) ][CP3/2025/2055233]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SrxWy3l9u7TcdqO5Ddi5XRg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>87.</RotSNo>
+<RotTenderId>2025_CHD_86838_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 2585, (VACANT HOUSE) TYPE X, SECTOR 19, CHANDIGARH. (IBM SCHEME NO. W4/2025 24581) (E.I. WORK).][E1/TN-124]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SV3bd0%2F5jbyrdz%2Ft2CAiZpg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>88.</RotSNo>
+<RotTenderId>2025_CHD_86837_1</RotTenderId>
+<RotTitleRef>[SR TO RB JUDGE HOUSES UNDER MTC BOOTH SECTOR 3 AND 4, CHANDIGARH.][CP3/2025/2055235]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sq5De7jZcEd42a%2FI6Aakydw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>89.</RotSNo>
+<RotTenderId>2025_CHD_86829_1</RotTenderId>
+<RotTitleRef>[Renovation of House No. 2172 (Type X) Sector 19, Chandigarh (Total 01 Nos. Houses) (IBM Scheme No. W4/2025/24428)][PH3/2025/244]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SpFmnEtWG6c7G%2FVv%2FXhwFAg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>90.</RotSNo>
+<RotTenderId>2025_CHD_86828_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 533, 557, 608 TYPE-12, SECTOR 7 CHANDIGARH][CP3/2025/2154038]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Construction Circle - II||CP - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SmKvfYIL1mcHTiPMpQUi51A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>91.</RotSNo>
+<RotTenderId>2025_CHD_86827_1</RotTenderId>
+<RotTitleRef>[MTC. OF E.I. IN GOVT. NRB AT CHANDIGARH (ANNUAL MAINTENANCE OF CCTV SURVEILLANCE SYSTEM CAMERA IN HON BLE CHIEF JUSTICE RESIDENCES HOUSE NO.35, SECTOR 4, CHANDIGARH) (PERIOD 2025 2026)][E1/TN-123]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S90HfLEkwXSqA9GTpTTVsog%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>92.</RotSNo>
+<RotTenderId>2025_CHD_86823_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF BUDGET SECTION AND ADJOINING ROOMS OFFICE OF CHIEF ENGINNER, SECTOR  9, U.T., CHANDIGARH (E.I.WORK) (IBM SCHEME NO. W2  2025 24587).][E1/TN-120]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Se%2FPA6zEKfBXJK52hxz4gIg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>93.</RotSNo>
+<RotTenderId>2025_CHD_86822_1</RotTenderId>
+<RotTitleRef>[Mtc. Of E.I. Punjab Library Civil Sect. Building at Chandigarh. (Replacement of Temporary Arrange of A.C. Switchgear due to avoid Fire incident. (R/F Punjab Govt.)][E3/47W/36]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SFnoXbDP3tw8Xi2vhS1OfkQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>94.</RotSNo>
+<RotTenderId>2025_CHD_86815_1</RotTenderId>
+<RotTitleRef>[Providing installation testing and commissioning and handing over chilled water Hi-wall ACs with other allied works for Punjab and Haryana MLA Canteen and Haryana Cabin Opposition leader in Punjab and Haryana Vidhan Sabha in Sector-1, U.T, Chd. ][PH8/2025/2151615/94]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - VIII</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Si9E5hUypVVlPIlGmeM9gBQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>95.</RotSNo>
+<RotTenderId>2025_CHD_86814_2</RotTenderId>
+<RotTitleRef>[Upgradation of Parade Ground in Police Line, Sector-26 i.e., Road Gully, and shifting the TT Water Line, and TT Water Chamber and make the Sprinkler System at Police Line, Sector-26, U.T, Chandigarh.][PH8/2025/2151634/93]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - VIII</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIyuu2QFQQMpHO3Ly6W9%2BuQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>96.</RotSNo>
+<RotTenderId>2025_CHD_86812_1</RotTenderId>
+<RotTitleRef>[Public Health Services in the newly constructed General and Officers toilets blocks of RTC Parade Ground in Police Lines, Sector-26, U.T, Chandigarh. ][PH8/2025/2151691/92]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - VIII</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=StgMbcKRcNst4I2WoUC14Rg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>97.</RotSNo>
+<RotTenderId>2025_CHD_86806_1</RotTenderId>
+<RotTitleRef>[Renovation of House No. 282,296,299,3780, 3784,3804,3805,3924,3925 and 3964 (Type X) Sector 22, Chandigarh (Total 10 Nos. House) (IBM Scheme No. W4/2025/24431)][PH3/2025/243]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SJoPPANC2VOeZbQiN2u77Iw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>98.</RotSNo>
+<RotTenderId>2025_CHD_86805_1</RotTenderId>
+<RotTitleRef>[Renovation of House No. 1163,1538,1599, 1655 (Occupied Houses) (Type XII JB) Sector 23, Chandigarh (Total 04 Nos. House) (IBM Scheme No. W4/2025/24406)][PH3/2025/242]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Public Health Circle||PH Div - III</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SmY4RrxZBIhvh%2FtJCY64gww%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>99.</RotSNo>
+<RotTenderId>2025_CHD_86800_1</RotTenderId>
+<RotTitleRef>[RENOVATION OF HOUSE NO. 1332 (VACANT)OCCUPIED HOSUE NO. 1567, 1572, 1574 , TYPE 11 (OLD)  III (NEW), (04 NOS. HOUSES), SECTOR 20, CHANDIGARH (IBM SCHEME NO. W4  2025  24283).][E1/TN-119]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SDIboyi%2BlQ9BbTZtJa65zsQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>100.</RotSNo>
+<RotTenderId>2025_CHD_86798_1</RotTenderId>
+<RotTitleRef>[MTC OF EI IN RESIDENTIAL BUILDING AT U.T. CHANDIGARH. REPLACEMENT OF CTS WIRING WITH RESSES COPPER WIRING IN HOUSE NO. 2605A TYPE12 AND 2653 TYPE 13 (OLD) SECTOR 20, CHANDIGARH.][E1/TN-117]</RotTitleRef>
+<RotOrganisationChain>Chandigarh Administration||Engineering||Electrical Circle||Electrical Div - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.chd.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S0stPLNlDeCkHRB1dc6bzPw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Chandigarh</SourceSiteKey>
+--- TENDER END ---
+

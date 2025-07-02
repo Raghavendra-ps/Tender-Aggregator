@@ -1,0 +1,51 @@
+12:59:15 [INFO] (EligWorker-944425) Eligibility worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/eligibility_worker/worker_eligibility_1_20250630125914944425.log
+12:59:15 [INFO] (EligWorker-944425) Updated DB eligibility check for tender 1: status='processing', score=-1.
+12:59:15 [INFO] (EligWorker-944425) Status updated to: processing (Worker started, preparing browser...)
+12:59:15 [INFO] (EligWorker-944425) Navigating to homepage 'https://etenders.hry.nic.in/' to establish session.
+12:59:17 [INFO] (EligWorker-944425) Navigating to tender detail page: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=St%2F7DdBmHe6xk9WLEKo41sg%3D%3D
+12:59:44 [INFO] (EligWorker-944425) Looking for 'Download as Zip' link...
+13:00:05 [INFO] (EligWorker-944425) Navigated to CAPTCHA/download page. Current URL: https://etenders.hry.nic.in/nicgep/app?component=%24DirectLink_8&page=FrontEndTenderDetails&service=direct&session=T
+13:00:05 [INFO] (EligWorker-944425) On CAPTCHA page. Saving CAPTCHA for user.
+13:00:35 [ERROR] (EligWorker-944425) An error occurred during download phase: Locator.screenshot: Timeout 29998ms exceeded.
+Call log:
+  - taking element screenshot
+  - waiting for fonts to load...
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/eligibility_worker.py", line 208, in run_eligibility_check
+    captcha_b64_bytes = await captcha_image_element.screenshot(type='png')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/async_api/_generated.py", line 17208, in screenshot
+    await self._impl_obj.screenshot(
+    ...<11 lines>...
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_locator.py", line 537, in screenshot
+    return await self._with_element(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_locator.py", line 116, in _with_element
+    return await task(
+           ^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_element_handle.py", line 309, in screenshot
+    encoded_binary = await self._channel.send("screenshot", params)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.screenshot: Timeout 29998ms exceeded.
+Call log:
+  - taking element screenshot
+  - waiting for fonts to load...
+
+13:00:49 [ERROR] (EligWorker-944425) Saved error screenshot to: /root/Tender-Aggregator/TEMP/EligibilityRuns/eligibility_1_20250630125914944425/error_screenshot.png
+13:00:49 [INFO] (EligWorker-944425) Updated DB eligibility check for tender 1: status='failed', score=-1.
+13:00:49 [INFO] (EligWorker-944425) Status updated to: failed (Worker failed: TimeoutError)

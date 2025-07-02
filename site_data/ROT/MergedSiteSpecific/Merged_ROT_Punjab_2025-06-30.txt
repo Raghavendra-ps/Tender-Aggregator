@@ -1,0 +1,110 @@
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_WSS_139856_1</RotTenderId>
+<RotTitleRef>[Construction of Girls Toilet in Acadamic Block at Sainik School, Kapurthala (Under head Deposit work)][2025-26/SainikSchool]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Kapurthala</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S7MoOMfWa%2F4V3SFtj%2BvNTEA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Punjab</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_WSS_138819_1</RotTenderId>
+<RotTitleRef>[PRO INS NEW 150 MM ID 200 MTR DEEP STRAIGHT TUBEWELL AT VILLAGE KOKRI HERAN][2025/05/TB/kokriheran]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Moga</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SqBKvpPv3U8pHLQiKCzcr5g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Punjab</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_WSS_138793_1</RotTenderId>
+<RotTitleRef>[PROVIDING INSTALLING STRAIGHT TW SIZE OF 250 MM DIA AND 92 MTRS DEPTH AT VILLAGE TAKHANWADH MH BLOCK MOGA 1 DIST MOGA][2025_WSS_131584_1]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Moga</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ShQVGUhth891IV0XmNWaqHg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Punjab</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_WSS_138464_1</RotTenderId>
+<RotTitleRef>[Rural Water Supply Scheme for village Burj Cheema Block Dhuri Distt Sangrur Under NABARD RIDF XXX][2/WSSD/MALERKOTLA/EE/2025-26]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Malerkotla</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SApY%2FlfE3N4dAoszmRyXxdw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Punjab</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_WSS_138456_1</RotTenderId>
+<RotTitleRef>[AUGMENTATION OF WSS FOR VILLAGE DEWANGARH KAIMPER, BLOCK DIRBA, DISTRICT SANGRUR  ][WSSD/2025-26/1]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Sangrur</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SYz8L9u0RgVcZAssIVA3KeQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Punjab</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_WSS_138430_1</RotTenderId>
+<RotTitleRef>[Augmentation of Water Supply Scheme Village Bishanpur, Block Kapurthala, Distt. Kapurthala. (Under head NABARD XXX)][2025-26/NABARDXXX/Bishanpur]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Kapurthala</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SW%2BO8f6Vp0TBFBhLdRuqnqA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Punjab</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_WSS_138334_1</RotTenderId>
+<RotTitleRef>[AUGMENTATION OF WATER SUPPLY SCHEME FOR VILLAGE BHOJOWALI IN BLOCK DHURI OF DISTT SANGRUR UNDER NABARD RIDF XXX][1/WSSD/MALERKOTLA-EE/2025-26]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Malerkotla</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sa88ooB5cZXbfqip%2Fu5mg4w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Punjab</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_WSS_138196_1</RotTenderId>
+<RotTitleRef>[Section S537 Zone 1 (Internal Work)][Section S537 Zone 1 (Internal Work)]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Rajpura</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXp6l7VoyZ4DxI%2BuUxkDEbA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Punjab</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_WSS_137203_1</RotTenderId>
+<RotTitleRef>[Section S535 Zone 1 (Internal Work)][Section S535 Zone 1 (Internal Work)]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Rajpura</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S2PrNXUIq16b78Il6Lwja2w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Punjab</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_WSS_137202_1</RotTenderId>
+<RotTitleRef>[Section S534 Zone 1 (Internal Work)][Section S534 Zone 1 (Internal Work)]</RotTitleRef>
+<RotOrganisationChain>Water Supply and sanitation||Department of Water Supply and Sanitation||Division Rajpura</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eproc.punjab.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sy8GOBSAEXcHrTgl6DdG%2FdQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Punjab</SourceSiteKey>
+--- TENDER END ---
+

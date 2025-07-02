@@ -101,7 +101,7 @@ def clean_filename_rot(filename: str) -> str:
 def update_worker_status(run_dir: Path, status_message: str):
     try:
         (run_dir / "status.txt").write_text(status_message, encoding='utf-8')
-        if hasattr(logger, 'info'): logger.info(f"Worker status updated to: {status_message}")
+        if hasattr(logger, 'info'): logger.debug(f"Worker status updated to: {status_message}")
     except Exception as e:
         if hasattr(logger, 'error'): logger.error(f"Error writing worker status '{status_message}': {e}")
 
@@ -185,7 +185,7 @@ async def _handle_final_popup_content(popup_page: Page, site_key: str, tender_fi
                 stdout, stderr = await process.communicate()
                 if process.returncode == 0:
                     logger.info(f"{log_prefix_popup} Successfully processed structured data for {save_filename_html}.")
-                    if stdout and stdout.strip(): logger.debug(f"{log_prefix_popup} Extractor STDOUT: {stdout.decode(errors='replace').strip()}")
+                    if stdout and stdout.strip(): logger.info(f"{log_prefix_popup} Extractor STDOUT: {stdout.decode(errors='replace').strip()}")
                 else:
                     logger.error(f"{log_prefix_popup} Failed to process structured data for {save_filename_html}. RC: {process.returncode}")
                     if stderr and stderr.strip(): logger.error(f"{log_prefix_popup} Extractor STDERR: {stderr.decode(errors='replace').strip()}")

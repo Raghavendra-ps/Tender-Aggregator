@@ -17,3 +17,5 @@ pytesseract
 PyPDF2<3.0
 pdf2image
 poppler-utils
+passlib[bcrypt]
+python-jose[cryptography]

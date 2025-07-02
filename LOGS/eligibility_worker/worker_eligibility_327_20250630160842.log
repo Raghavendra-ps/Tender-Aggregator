@@ -1,0 +1,20 @@
+16:08:42 [INFO] (EligWorker-160842) Eligibility worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/eligibility_worker/worker_eligibility_327_20250630160842.log
+16:08:42 [INFO] (EligWorker-160842) Updated DB eligibility check for tender 327: status='processing', score=-1.
+16:08:42 [INFO] (EligWorker-160842) Status updated to: processing (Worker started, preparing browser...)
+16:08:43 [INFO] (EligWorker-160842) Navigating to homepage 'https://govtprocurement.delhi.gov.in/' to establish session.
+16:08:43 [INFO] (EligWorker-160842) Navigating to tender detail page: https://govtprocurement.delhi.gov.in/nicgep/app?component=%24DirectLink_0&page=FrontEndAdvancedSearchResult&service=direct&session=T&sp=S9%2F56jDYht1kjJcRGmogqDg%3D%3D
+16:08:43 [INFO] (EligWorker-160842) Looking for 'Download as Zip' link...
+16:08:43 [INFO] (EligWorker-160842) Navigated to CAPTCHA/download page. Current URL: https://govtprocurement.delhi.gov.in/nicgep/app?component=%24DirectLink_8&page=FrontEndTenderDetails&service=direct&session=T
+16:08:43 [INFO] (EligWorker-160842) On CAPTCHA page. Saving CAPTCHA for user.
+16:08:43 [INFO] (EligWorker-160842) Status updated to: WAITING_CAPTCHA
+16:08:43 [INFO] (EligWorker-160842) Waiting for CAPTCHA solution in /root/Tender-Aggregator/TEMP/EligibilityRuns/eligibility_327_20250630160842/answer.txt (max 300s)...
+16:13:44 [WARNING] (EligWorker-160842) Timeout waiting for CAPTCHA solution.
+16:13:44 [ERROR] (EligWorker-160842) An error occurred during download phase: Failed to get CAPTCHA solution from user.
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/eligibility_worker.py", line 214, in run_eligibility_check
+    logger.info(f"✅ Download successful on second attempt. Saved to: {download_path}")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: Failed to get CAPTCHA solution from user.
+16:13:44 [ERROR] (EligWorker-160842) Saved error screenshot to: /root/Tender-Aggregator/TEMP/EligibilityRuns/eligibility_327_20250630160842/error_screenshot.png
+16:13:44 [INFO] (EligWorker-160842) Updated DB eligibility check for tender 327: status='failed', score=-1.
+16:13:44 [INFO] (EligWorker-160842) Status updated to: failed (Worker failed: Exception)

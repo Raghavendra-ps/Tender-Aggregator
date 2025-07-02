@@ -1,0 +1,1100 @@
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_RGSSH_270140_1</RotTenderId>
+<RotTitleRef>[Tender for providing JAK (Jan Aushadhi Kendras) at Rajiv Gandhi Super Speciality Hospital (RGSSH) under Pradhan Mantri Bhartiya Janaushadhi Pariyojana (PMBJP) Scheme][F.14(51)/PS/Estate Cell/01/RGSSH/2024]</RotTitleRef>
+<RotOrganisationChain>Rajiv Gandhi Super Speciality Hospital</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S93WRuWBudCdKGG0dmg9gqA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_PWD_274305_1</RotTenderId>
+<RotTitleRef>[M/o diff. Hort. Work under Hort. Sub-Division H and J-III, HD-H and J, PWD Delhi during -2025-26. SH Providing of Tempo (Tata 407) for removal of garden rubbish / mulba and carriage way horticulture material from one place to another place ][18/DD(H)/HD H and J/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M21||EE/M214</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SosSePf%2Bu8EpUCKcMfKXEjA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_PWD_274302_1</RotTenderId>
+<RotTitleRef>[RMO of electrical and mechanical installations on PWD roads under M-253, Delhi Secretariat, New Delhi][29/EE(E)/PWD M-253/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M253</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SeHjIu8l0fbtBq7Wd6IepnQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_PWD_274300_1</RotTenderId>
+<RotTitleRef>[SH-Supply of plant and Removal of garden rubbish/malba and Spraying of Organic Insecticide various hospital in Hort. Sub-Division Health (H and J)-II.][17/DD(H)/HD H and J/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M21||EE/M214</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sq0zjbe81JV2tb%2Fzx1CxxOA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_PWD_274298_1</RotTenderId>
+<RotTitleRef>[M/o Garden area attached to Hort. Works at Karkardooma Courts Old Building, New Building a Juvenile Justice Board under Hort. Sub Division, (H and J)-II, HD- H and J, PWD, New Delhi dg .2025-26.  SH- Providing and Displaying of Summer and Rainy Seaso][16/DD(H)/HD H and J/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M21||EE/M214</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SeBP9nbiRBBO9VnSrFqLKhw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_PWD_274259_1</RotTenderId>
+<RotTitleRef>[Remodeling of culverts on Main Burari Road under Sub Division-1, Division C and ND-Road Delhi. (RECALL)][27/EE/C and ND-R/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M41||EE/M413</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SWH%2BCFF3t15Qe%2Bm6BhG8eSg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_PWD_274248_1</RotTenderId>
+<RotTitleRef>[RMO E and M Services at District Court at Sector - 10, Dwarka, New Delhi SH  Replacement of mechanical shutter][48/EE (E)/JED-02/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M252</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1k95S9ynw%2FXG1I2Go3BZaQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_PWD_274242_1</RotTenderId>
+<RotTitleRef>[Providing and arrangement of cut flower in Hon,ble Judges Chambers at District Court Rohini under Hort. Sub-Division Health (H And J)-II, HD-H and J, PWD,  New Delhi during 2025-2026.  ][15/DD(H)/HD-H and J/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M21||EE/M214</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SbKv%2BWqJHagSE64TcARkZyQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_PWD_274240_1</RotTenderId>
+<RotTitleRef>[M/o Hort. Work garden area attached to Different Courts under Hort. Sub-Division H and J-III, HD-H and J, PWD Delhi during 2025-26.  SH- Providing and Displaying of Summer and Rainy Seasonal potted plants][14/DD(H)/HD H and J/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M21||EE/M214</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S6WZ4dsfoj3MXTGOHXc02tQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_PWD_274238_1</RotTenderId>
+<RotTitleRef>[Prov iding and insta llation of De skt op co mp uter Al l in on e M ac and Mi cros oft off ice and Ant ivir us in S ecretar iate of fice co mpu ter P WD, New Delhi][19/EE/J C D -1/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M43||EE/M431</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXV1awIwFfQ2wI%2B7kTpIDFg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>11.</RotSNo>
+<RotTenderId>2025_PWD_274234_1</RotTenderId>
+<RotTitleRef>[M/o Garden area attached to Institute of Human Behaviour of Allied Sciences (IHBAS) Hospital, under Hort. Sub-Division (H and J)-II, HD (H and J),  PWD, New Delhi during 2025-2026.  SH- Complete Maintenance of garden features.][13 /DD(H)/HD-H and J/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M21||EE/M214</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SaLhxNmgwrutDcKNn5fnbqQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>12.</RotSNo>
+<RotTenderId>2025_PWD_274226_1</RotTenderId>
+<RotTitleRef>[RMO Electrical and Mechanical services at Delhi Sachivalaya, New Delhi during 2025-26][25/EE(E)/PWD M-253/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M253</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SObfCw%2FXFu%2BifE7Czu7XurQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>13.</RotSNo>
+<RotTenderId>2025_PWD_274209_1</RotTenderId>
+<RotTitleRef>[Upgradation and Renovation of Bhamashah Park under sub-division NB-14, I.T.I. Jahangirpuri, Delhi-110033, during 2025-26. (SH PF Red sand stone, granite and other misc. civil works)][25/EE/NBD/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M32||EE/M322</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SiWtwp1VKzWXOxngB4Oyovg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>14.</RotSNo>
+<RotTenderId>2025_PWD_274182_1</RotTenderId>
+<RotTitleRef>[AR and Mo 96 DA flats Mayur vihar Ph II and 405 DA Flats Kalyanvas New Delhi during 2025 26 SH Cleaning of underground and overhead RCC PVC water storage tank][09/EE/EBMD-M 221/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M22||EE/M221</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SoQZsFFmcJSdI3SD2%2FrKKVA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>15.</RotSNo>
+<RotTenderId>2025_PWD_274181_1</RotTenderId>
+<RotTitleRef>[A/R and M/O various roads under PWD Division South Road-1/ Sub Division SR-14 during 2025-26 and 2026-2027. (SH- Minor repair of footpath, repair of drain and other miscellaneous works).][20/EE/PWD/RMD/SR-I/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M44||EE/M441</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Snmbjs7Q5qS6M0jhI0lEOXg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>16.</RotSNo>
+<RotTenderId>2025_PWD_274174_1</RotTenderId>
+<RotTitleRef>[A R and M O to Delhi Government Health Services Headquarter Karkardooma Delhi dg 2025 26 SH P F Signages and misc Civil Work][15/EE/BPD B-221(N)/CHMD(East)/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B22||EE/B221(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SN2W2dxt5XiVTqpX%2FrfYVfw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>17.</RotSNo>
+<RotTenderId>2025_PWD_274173_1</RotTenderId>
+<RotTitleRef>[RMO E and M services at GNEC ND SH Renovation of OT Block including providing Split type Air Condition and EandM work at newly provided OT at GNEC ND][02/AEEHC-4/HMED(C)/PWD/2025-26 Recall]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B24||EE/B244(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SGACmH7lz2%2BN6DgBA16Eygw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>18.</RotSNo>
+<RotTenderId>2025_PWD_274155_1</RotTenderId>
+<RotTitleRef>[Delhi PWD Roads under PWD M-South Division during 2024-25 ][38/EE(E)/South /Elect. Divn.,/PWD/ 2025-26/3rd call]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M45||EE/M453</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1KPkd9UkQPhjpDvpCoCuTw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>19.</RotSNo>
+<RotTenderId>2025_PWD_274154_1</RotTenderId>
+<RotTitleRef>[Conversion of DGD to Ayushman Arogya Mandir under NHM/PM-ABHIM in r/o DGD Rohini Sec-4 DGD Rohini Sec-18 DGD shalimar Bagh Seed PUHC Inder Enclave, Nithari Vill and balance work of DGDs Mangolpuri and Sultanpuri and AAMC Burari Takia Chowk, Delhi.][13/EE/HPD(North)/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B23||EE/B233</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Smk0uHjbIyEA8WeN31dVzxw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>20.</RotSNo>
+<RotTenderId>2025_PWD_274153_1</RotTenderId>
+<RotTitleRef>[AR MO to various residential building at Sewa Kutir Kingsway Camp Delhi dg 2025 26 SH Finishing work and other misc civil works][26/EE/CBMD-M323/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M32||EE/M323</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SX9ChW4D2q%2FLkCBw1MWNlhw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>21.</RotSNo>
+<RotTenderId>2025_PWD_274124_1</RotTenderId>
+<RotTitleRef>[Comprehensive Maintenance of Sub-Ways and Foot over Bridges (FOBs) under East Maintenance Circle including operation and maintenance of lifts, security and housekeeping of all components (Civil and Electrical) of FOBs and Sub Ways for 2025-26 ....][05/SE/EAST/CIRCLE/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M21||EE/M212</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SCaugoGigr7ymK%2Fq0zNR%2Fvg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>22.</RotSNo>
+<RotTenderId>2025_PWD_274122_1</RotTenderId>
+<RotTitleRef>[RMO Electrical and Mechanical Services at Delhi Vidhan Sabha, Old Sectt., Delhi. (SH- Redressing of wires/cables with DLP PVC adaptable Trunking at different locations and energy saving fans  in various office of Vidhan Sabha).][33/2025-26/EMD M-351/EE(E)]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M35||EE/M351</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SHmi5mJjrxX5flcQ4CHKhFA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>23.</RotSNo>
+<RotTenderId>2025_PWD_274109_1</RotTenderId>
+<RotTitleRef>[A/R and M/O Delhi Govt. Officers Flats at G.K.-1, New Delhi during 2025-26 (SH Providing and fixing Chequerred tile in courtyard area).][05/South-East(B)M/New Delhi/2025-26 (3rd Call)]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M42||EE/M421</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SyNJAzwCfl2t%2FXh%2FJFZ50Aw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>24.</RotSNo>
+<RotTenderId>2025_PWD_274107_1</RotTenderId>
+<RotTitleRef>[RMO UPS system installed at various locations in LNH SH. Comprehensive annual maintenance of  UPS system installed at  various location in LNH][31/EE(E)/HMED(C)/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B24||EE/B244(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S4%2B27NRwSo5L1uT1rGK6vJQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>25.</RotSNo>
+<RotTenderId>2025_PWD_274105_1</RotTenderId>
+<RotTitleRef>[A R and M O to Jag Pravesh Chandra Hospital Shastri Park Delhi Dg 2025 26 SH Replacement of damaged Shed G I profile sheet false Ceiling at OPD Registration Counter DOTS area and other Misc works][13/EE/BPD B-221(N)/CHMD(East)/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B22||EE/B221(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ScXhX3TWhs5UVeRCJQWIMWg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>26.</RotSNo>
+<RotTenderId>2025_PWD_274103_1</RotTenderId>
+<RotTitleRef>[Comprehensive maintenance and RMO of Digital Clock and Display System installed in District Court Complex, Saket, New Delhi.][120/EE(E)/JED-1/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SdaKgfQ3wiL4PxKnblsTF2A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>27.</RotSNo>
+<RotTenderId>2025_PWD_274096_1</RotTenderId>
+<RotTitleRef>[Road Restoration of various roads under Sub-Division WR-15 and 13, Division WR-1 (M-111), during 2025-26. (SH Road Restoration  work  due to road  Cut by  DJB/BSES/MCD without permission in Rajouri Garden Constituency and Tilak Nagar Constituency.][16/EE/PWD/WR-1/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M1-M11||EE/M111</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Spi1h5b67P4%2BoGDLuOKq%2Bmg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>28.</RotSNo>
+<RotTenderId>2025_PWD_274095_1</RotTenderId>
+<RotTitleRef>[RMO E and M service at District Court Sector-10, Dwarka, New Delhi SH - Repairing and replacement of Submersible pump set, Dewatering pump set and Monoblock pump sets.][46/EE(E)/JED-02/PWD/2025-26    ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M252</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sp%2BR72rkH3fkqHF6H3Ub0Lw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>29.</RotSNo>
+<RotTenderId>2025_PWD_274092_1</RotTenderId>
+<RotTitleRef>[RMO Specialized E and M Services installed at Delhi High Court, New Delhi.(SH SITC of Servo  Voltage Stabilizer at S Block of Delhi High Court, New Delhi)][123/EE(E)/JED-1/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SSkJxCWg8HEjYaCXy5rxvFQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>30.</RotSNo>
+<RotTenderId>2025_PWD_274090_1</RotTenderId>
+<RotTitleRef>[RMO of electrical and mechanical installations on PWD roads under M-253, Delhi Secretariat, New Delhi during 2025-26][24/EE(E)/PWD M-253/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M253</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SDrhis2uWqdc9rEPFsZ34aw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>31.</RotSNo>
+<RotTenderId>2025_PWD_274089_1</RotTenderId>
+<RotTitleRef>[AR and MO works to Delhi Govt. Residential Complex, D II Vasant Kunj, New Delhi during 2025 2026 (SH- Major repair and renovation work in Type V and Type VI Flats (Flats No. A-07, B-10, C-14) and Common area  at Delhi Govt. Residential Complex, D-II ][05EEPWDBUILDINGSOUTH2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M42||EE/M422</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S7No%2BmNIdKqwR%2F%2B9i6oaFiw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>32.</RotSNo>
+<RotTenderId>2025_PWD_274087_1</RotTenderId>
+<RotTitleRef>[A R and M O to various DGDs Polyclinics under Sub Div 5 of CHMD East Delhi dg 2025 26 SH Conversion of Polyclinic to Ayushman Arogya Mandir PHC Kanti Nagar Delhi Modified][14/EE/BPD B-221(N)/CHMD(East)/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B22||EE/B221(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S6C%2BgtMEkeRS6fvRJsGw1bg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>33.</RotSNo>
+<RotTenderId>2025_PWD_274085_1</RotTenderId>
+<RotTitleRef>[RMO Specialized Electrical and Mechanical services of Delhi High Court, New Delhi. (SH Repairing of roof curtain installed at the terrace of C block and other services at Hon ble Delhi high Court , New Delhi.)][117/EE(E)/JED-1/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SrwSiV30iyaWH1ZtXB7Wrww%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>34.</RotSNo>
+<RotTenderId>2025_PWD_274078_1</RotTenderId>
+<RotTitleRef>[RMO E and M Services installed at Karkardooma Court Complex Delhi. (SH Comprehensive Maintenance of VRF System installed in DLSA Karkardooma Court Complex.)][116/EE(E)/JED-1/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SKkLF%2BdJU5b8KFwhzfwHFzA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>35.</RotSNo>
+<RotTenderId>2025_PWD_274071_1</RotTenderId>
+<RotTitleRef>[A/R and M/O Thyagraj Sports Complex Thyagraj Nagar, New Delhi during 2025-26 (SH Providing awning in tennis court, repair of expansion joint using silicon and toughened work).][19/South-East(B)M/New Delhi/2025-26.]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M42||EE/M421</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SuNAY3yN3Epip3FXhuKrl2A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>36.</RotSNo>
+<RotTenderId>2025_PWD_274069_1</RotTenderId>
+<RotTitleRef>[RMO E and M Services installed at Karkardooma Court Complex, Delhi. (SH Replacement of various capacity pump set at karkardoma court complex.)][114/EE(E)/JED-1/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SlEO9BgfeGe8ycw5z9phJSg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>37.</RotSNo>
+<RotTenderId>2025_PWD_274067_1</RotTenderId>
+<RotTitleRef>[RMO Electrical and Mechanical services at DC(E) LM bund road Shastri Nagar Delhi during 2025-26][23/EE(E)/PWD M-253/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M253</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SsaIMME6DexSK%2FUC6l1ZAng%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>38.</RotSNo>
+<RotTenderId>2025_PWD_274066_1</RotTenderId>
+<RotTitleRef>[RMO Various E and M Services at 72 Nos. Delhi Govt. Officers Flat GK-1, New Delhi.][36/EE(E)/EMD South East/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M45||EE/M452</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2FIrKZJIpoYiLv3Th5dAI0A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>39.</RotSNo>
+<RotTenderId>2025_PWD_274059_1</RotTenderId>
+<RotTitleRef>[RMO SubStation including DG Sets Sub Station at MAMC ND.SH.Comprehensive Maintenance of C-Mos make Servo Voltage Stabilizers and online UPS at MAMC][25/EE(E)/HMED(C)/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B24||EE/B244(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SRKM1QWsHdT9pqnzaYc%2BnDg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>40.</RotSNo>
+<RotTenderId>2025_PWD_274057_1</RotTenderId>
+<RotTitleRef>[RMO Electrical and Mechanical Services at Delhi Vidhan Sabha, Old Sectt., Delhi. (SH- Installation of VRF/VRV i/c accessories alongwith EI work in Canteen and Library area).][32/2025-26/EMD M-351/EE(E)]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M35||EE/M351</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sl%2F0WTcNggWBP%2FkThZMN66Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>41.</RotSNo>
+<RotTenderId>2025_PWD_274054_1</RotTenderId>
+<RotTitleRef>[RMO UPS system Servo voltage stabilizer installed at LNH.ND.SH.Comprehensive maintenance of C-Mos make Servo Voltage Stabilizer installed at different location][24/EE(E)/HMED(C)/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B24||EE/B244(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SsUxT5oxTf9vx944440xleg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>42.</RotSNo>
+<RotTenderId>2025_PWD_274053_1</RotTenderId>
+<RotTitleRef>[RMO EandM Services at District Court Sector 10, Dwarka, New Delhi  SH- Repairing of 3 X 70 KVAR APFC Panels and Static 3 X 100 KVAR Panel][44/EE (E)/JED-02/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M252</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SzbYhoDT5qlKsnws%2FjP8fCA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>43.</RotSNo>
+<RotTenderId>2025_PWD_274052_1</RotTenderId>
+<RotTitleRef>[RMO AC Equipment installed at various location at L.N.H.ND.SH.Comprehensive Maintenance of vinitec make Automatic Voltage Stabilizer][23/EE(E)/HMED(C)/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B24||EE/B244(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SlR%2FbegtZoi5U6ucvK4%2FtTg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>44.</RotSNo>
+<RotTenderId>2025_PWD_274051_1</RotTenderId>
+<RotTitleRef>[Maintenance and Operations of Subway, Substation, Horticulture Pumps, Flyover Underdecks, Underpass, FOB and Related Electrical Installation, LT Panel Board, DG Set and Dewatering Pumps under PWD EMD South East, New Delhi][35/EE(E)/EMD South East/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M45||EE/M452</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SApWzjN8ywmqt%2FFLTvwhrMQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>45.</RotSNo>
+<RotTenderId>2025_PWD_274050_1</RotTenderId>
+<RotTitleRef>[RMO all E and M services installed at ITI Arab ki Sarai Nizamuddin New Delhi during the financial year 2025-26][34/EE(E)/EMD South East/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M45||EE/M452</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SYO43%2FusMUcARreY6bPIdNQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>46.</RotSNo>
+<RotTenderId>2025_PWD_274048_1</RotTenderId>
+<RotTitleRef>[Renovation of Electrical installation works in Boiler Sub Station and HVAC Plant room and providing WTAC in Ayurvedic and Homeopathy Pharmacy in BJRM Hospital Jahangirpuri Delhi][22/EE(E)HMED(N)/PWD/BSAH/2025 26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B24||EE/B243(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S6uxQxikoGYvXP0F6zQsPnw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>47.</RotSNo>
+<RotTenderId>2025_PWD_274045_1</RotTenderId>
+<RotTitleRef>[RMO Electrical and Mechanical Services at Dr BSA Hospital Rohini Delhi][21/EE(E)HMED(N)/PWD/BSAH/2025 26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B24||EE/B243(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SP%2BLG7iWXBHvRN29%2F6qzaEA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>48.</RotSNo>
+<RotTenderId>2025_PWD_274044_1</RotTenderId>
+<RotTitleRef>[RMO all E and M services installed at Kasturba Niketan Lajpat Nagar New Delhi][33/EE(E)/EMD South East/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M45||EE/M452</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SCGSBh1%2B2nQ7FfzjCxxd5Jw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>49.</RotSNo>
+<RotTenderId>2025_PWD_274043_1</RotTenderId>
+<RotTitleRef>[MOEI and Fans and RMO Pump Sets in ITI Staff Qtrs. and PWD staff qtrs, Fishery Qtr.  Okhla, 32Nos DDA Flats Sidharth Extn., 04Nos VRECs, NCC Okhla and various PWD  offices come under AE (E) EMSD -III, South East, Sunlight Colony New Delhi][32/EE(E)/EMD South East/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M45||EE/M452</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SeBjFd%2BFxjIFVq8IE4w8U2A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>50.</RotSNo>
+<RotTenderId>2025_PWD_274036_1</RotTenderId>
+<RotTitleRef>[ARMO Comprehensive Maintenance of Various EM Services at GBPH.ND.SH.Supplying and laying power cable from sub station no. 2 to Radiology Department][21/EE(E)/HMED(C)/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B24||EE/B244(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SalU7Jh5ET%2FkuIB79rEkx7g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>51.</RotSNo>
+<RotTenderId>2025_PWD_274033_1</RotTenderId>
+<RotTitleRef>[AR and MO works to Delhi Govt Residential Complex, D II Vasant Kunj, New Delhi during 2025 2026 (SH Change of tenancy of Type V (2 Nos Flats) and Type VI (1 No Flat) at Delhi Govt Residential Complex, D II Vasant Kunj, New Delhi).][04EEPWDBUILDINGSOUTH2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M42||EE/M422</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S9ZH%2FePhHfc9e3YrQLAczCA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>52.</RotSNo>
+<RotTenderId>2025_PWD_274029_1</RotTenderId>
+<RotTitleRef>[Major repair and balance work to Residential Buildings at Upper Bela road of T III  T IV Flats under Sub Divn M3231N during 2024 25 SH Renovation of kitchen PF cup Board Concertina coil PVC water Tanks Tank enclosers replacement of rus][24/EE/CBMD-M323/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M32||EE/M323</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SMs0Gun4HKRNu3nKZuTsdOw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>53.</RotSNo>
+<RotTenderId>2025_PWD_274019_1</RotTenderId>
+<RotTitleRef>[A/R and M/O to Deep Chand Bandhu Hospital Ashok Vihar Phase-IV, Delhi during 2025-26. (SH- Cleaning of existing rain water harvesting line/Recharge chamber and redevelopment of borewell).][10/EE/HMD(N)/PWD/2025-26 (Recall)]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M33||EE/M332(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2F51kXykcjMgRKqcf8%2Bfc2g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>54.</RotSNo>
+<RotTenderId>2025_PWD_274017_1</RotTenderId>
+<RotTitleRef>[Upgradation Renovation work of 17 5 and major repair work at 17 13 17 14 and its servant qtr  misc work at various Type V 17 Rajpur Road Civil Lines Delhi under Sub Division M3231N 16A Rajpur Road Delhi110054][23/EE/CBMD-M323/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M32||EE/M323</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SanAqKvQA01wQpXfyvTJ81A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>55.</RotSNo>
+<RotTenderId>2025_PWD_274014_1</RotTenderId>
+<RotTitleRef>[Replacement of damaged polycarbonate sheet at Thyagraj Sports Complex, Thyagraj Nagar, New Delhi during 2025-26.][18/South-East(B)M/New Delhi/2025-26.]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M42||EE/M421</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SawHwvpSdZa8WE7CrAvYrMQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>56.</RotSNo>
+<RotTenderId>2025_PWD_273994_1</RotTenderId>
+<RotTitleRef>[A/R and M/O to DSSSB building, Karkardooma, Delhi dg. 2025-26. (SH Renovation of chamber of Controller of Examination).][08/EE/KKD Court Divn/PWD/NIT/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M23||EE/M231</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Si8r2Qa6Bz%2FHkbLV08otLcg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>57.</RotSNo>
+<RotTenderId>2025_PWD_273992_1</RotTenderId>
+<RotTitleRef>[RMO Electrical and Mechanical Services at Delhi Vidhan Sabha, Delhi.][31/2025-26/EMD M-351/EE(E)]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M35||EE/M351</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S4Gr27xJKSKUwvZyoScDvig%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>58.</RotSNo>
+<RotTenderId>2025_PWD_273986_1</RotTenderId>
+<RotTitleRef>[Maintenance and Electrical consumption charges of street light on PWD Road under CND Division (SH- Providing service of Self-Propelled Vehicle Driven Pumps at various locations during Monsoon Season).][30/2025-26/EMD M-351/EE(E)]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M35||EE/M351</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S8h4HkKDxGbp6rXDnh%2BYXBQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>59.</RotSNo>
+<RotTenderId>2025_PWD_273984_1</RotTenderId>
+<RotTitleRef>[RMO Air Conditioning equipments in OPD, female ortho, x-ray, gynae maternity, admn. block, main OT, new casualty at LNH.ND.SH Providing maintenance of services of Computers in Division office and sub division office under HMED(C) ][12/EE(E)/HMED(C)/PWD25-26 Recall ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B24||EE/B244(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S2b%2B8xZLZEpU%2BY9odY5K35g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>60.</RotSNo>
+<RotTenderId>2025_PWD_273979_1</RotTenderId>
+<RotTitleRef>[RMO of Specialized EM works at Dr. N.C Joshi Memorial Hospital , Karol Bagh, ND.SH.SITC of 500 LPH  RO Plant and Water Cooler Near Emergency Ward at Dr. N.C Joshi Memorial Hospital Karol Bagh ND.][20/EE(E)/HMED(C)/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B24||EE/B244(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S6TulKMjIV8ho%2FPjlUoqKnQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>61.</RotSNo>
+<RotTenderId>2025_PWD_273960_1</RotTenderId>
+<RotTitleRef>[RMO E and M Services installed at Karkardooma Court Complex, Delhi. (SH Servicing / overhauling of LT ACB and HT VCB and transformers.)][113/EE(E)/JED-1/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SyJ8R6ccdjtlX%2BrEavVBzcg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>62.</RotSNo>
+<RotTenderId>2025_PWD_273956_1</RotTenderId>
+<RotTitleRef>[RMO Electrical and Mechanical Services at Residential flats / Bunglow at Rajpur Road, Civil Line, Delhi- 110054. (SH- EI works, automation system and installation of CCTV Cameras at various Bunglows/ qtrs).][29/2025-26/EMD M-351/EE(E)]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M35||EE/M351</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=STbb18grAUXQnkdX4hBQP3A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>63.</RotSNo>
+<RotTenderId>2025_PWD_273950_1</RotTenderId>
+<RotTitleRef>[MOEI and Fans, RMO Pump Sets, Street Compound lights, Lift,DG Set at Bhika Ji Cama Place, Fire Station under AE E Sub division -II,PWD Tihar Jail Complex, New Delhi dg.2025-2026 SH -AMC of Omega Make 13 Passenger Lift ][43/EE(E)/JED-02/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M252</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S79fReZkr9Edp8LI0RVoj5A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>64.</RotSNo>
+<RotTenderId>2025_PWD_273945_1</RotTenderId>
+<RotTitleRef>[RMO Specialized Electrical and Mechanical Services at Tis Hazari Court, Delhi. (SH Repairing of Signages in Tis Hazari Court Complex) ][112/EE(E)/JED-1/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sf%2FaXN7fGjge29td68VsURQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>65.</RotSNo>
+<RotTenderId>2025_PWD_273923_1</RotTenderId>
+<RotTitleRef>[A/R and M/O PWD Roads under Sub Division-2 and3 of Division C and ND- Roads during 2025-26. (SH - Providing 82 BHP to 85 BHP trolley mounted diesel engine pump set at various location for removing storm water during rainy season). ][28/EE/C and ND-R/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M41||EE/M413</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SyhNvQ1KGnzpafT21cwSxCA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>66.</RotSNo>
+<RotTenderId>2025_PWD_273921_1</RotTenderId>
+<RotTitleRef>[A/R and M/O TO VARIOUS ROADS UNDER PWD DIVISION NWR-1, DURING 2025-26. (SH PROVIDING SERVICES OF WATCH AND WARD FOR SUB DIVISION OFFICES AND STORE UNDER SUB DIVISION NWR-14][19/EE/NWR-1/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M31||EE/M311(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SozFkBK8E0hZSI0ZoSgPYgA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>67.</RotSNo>
+<RotTenderId>2025_PWD_273918_1</RotTenderId>
+<RotTitleRef>[Maintenance of Street Light Fittings Installed at Various PWD Roads under PWD EMD South East, New Delhi dg. 2025-26. (SH-Providing of Inspection Vehicle for Street Light Maintenance under PWD, South East, EMSD-I, New Delhi.)][19/EE (E)/AE(E)-I/EMD South East/PWD/2025-26.]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M45||EE/M452</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SfKOuJVLi0WrxdvFzdYqjfA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>68.</RotSNo>
+<RotTenderId>2025_PWD_273917_1</RotTenderId>
+<RotTitleRef>[A/R and M/O various roads under Sub Division SER-22 during 2025-26 (SH- Levelling of the passage infront of GGSSS Madanpur Khadar School)(School ID-1925404).][21/EE/SER-II/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M44||EE/M442</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SMn%2FEo1AW2H7tmx2cajCbZQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>69.</RotSNo>
+<RotTenderId>2025_PWD_273894_1</RotTenderId>
+<RotTitleRef>[Providing and Fixing M.S grating at outfall of various drains and Electrical Pump Houses and fixing poly carbonate sheet on subway under  Sub Division M - 2112, during 2025-26][08/2025-26/EE/SHAHDARA ROAD/PWD]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M21||EE/M211</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=StCQj0ZFCLvgrVIpaEPoWTA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>70.</RotSNo>
+<RotTenderId>2025_PWD_273891_1</RotTenderId>
+<RotTitleRef>[ARMO various electrical and mechanical services at District Court  Rohini, Delhi SH Providing of LED fixtures to replace burnt out fittings in Lawyers Chamber Building][32 (Recall) /EE(E)/JED-02/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M252</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBhAa6nYHyxjuR75XEwPYlQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>71.</RotSNo>
+<RotTenderId>2025_PWD_273887_1</RotTenderId>
+<RotTitleRef>[ARMO various Electrical and Mechanical Services at Fire Safety Management  Academy  sector 14 Rohini  Delhi  SH  Providing fire retardant electrical flooring in LT HT panel  and  transformer  rooms   ][28/EE(E)/JED-02/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M252</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SV%2BoJ161X8frlHVXp%2BSXlow%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>72.</RotSNo>
+<RotTenderId>2025_PWD_273884_1</RotTenderId>
+<RotTitleRef>[RMO and Electrical and Mechanical installation at DC East LM Bund Road Shastri Nagar Delhi ][DB/EE(E)/PWD M-253/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M253</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S3IeoeMbR%2Fuwt5XQ4r21WxA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>73.</RotSNo>
+<RotTenderId>2025_PWD_273880_1</RotTenderId>
+<RotTitleRef>[2025-26. (SH Making arrangement of water through stainless steel water tankers for District Court Complex, Dwarka).][24/EE/JCD-5/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE (J P) / SE (J P)||EE (JCD)-5</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sz3zwqQ%2B4CMAWrZKrIXMCeQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>74.</RotSNo>
+<RotTenderId>2025_PWD_273872_1</RotTenderId>
+<RotTitleRef>[Upgradation Renovation of Upper Bela Flat no 16 T III Tile Work Almirah work waterproofing and finishing work at Flat no 3 and 4 and replacement of shed at flat no 1 Upper Bela road Type IV Repair work in D II/5 Court Lane Raj Niwas Marg and other fl][20/EE/CBMD M-323/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M32||EE/M323</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S0o1ebi5D6yjH57YeaEreEg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>75.</RotSNo>
+<RotTenderId>2025_PWD_273868_1</RotTenderId>
+<RotTitleRef>[SITC of EI work with Fan, Fittings and Servicing of Existing Ceiling fan at Working Women Hostel Rohini Sector -22, New Delhi.][41/EE(E)/AE(E)-II/NWED/PWD/ 2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M35||EE/M353</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SNsz%2FBhOpkW0p%2BcoUFPImfg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>76.</RotSNo>
+<RotTenderId>2025_PWD_273866_1</RotTenderId>
+<RotTitleRef>[AR and MO of Various Jails  and Non Residential Building at Tihar jail Delhi.          SH   Repairing and servicing of electronic circuit card PCB servo Motor R.C          network in the existing Voltage stabilizer up to 50 KVA at Tihar Complex.][41/EE(E)/JED-02/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M252</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S6%2FmZ6YomolFz09pUctZTcA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>77.</RotSNo>
+<RotTenderId>2025_PWD_273865_1</RotTenderId>
+<RotTitleRef>[AR and MO of various Jails and non residential building under subdivision JED 02  Tihar Jail Complex. Delhi 64  SH  Replacement of  damaged 1500 LPH R.O Plant accessories at CJ-1 to CJ-9 Tihar jail  New Delhi][37/EE(E)/JED-02/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M252</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sds0N8MsVJ4y5So6ZRkl%2FWg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>78.</RotSNo>
+<RotTenderId>2025_PWD_273864_1</RotTenderId>
+<RotTitleRef>[Essential Upgradation Civil works in B,C, and D type flats due to new allotments DA Flats Timarpur Delhi][22/EE/CBMD M-323/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M32||EE/M323</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SbH9j7aHvNsllxR9j%2ByqwBw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>79.</RotSNo>
+<RotTenderId>2025_PWD_273862_1</RotTenderId>
+<RotTitleRef>[Electrical renovation work i/c providing fan, fittings and switchgears for 3 no  residential Quarter of Type-IV, KGIT Campus of DSEU (SH Renovation of electrical work in Quarter no 07, 09, 17).][45/EE(E)/NWED/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M35||EE/M353</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sus27cKhJHsHNhdZ%2F7TgaXw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>80.</RotSNo>
+<RotTenderId>2025_PWD_273853_1</RotTenderId>
+<RotTitleRef>[Setting up of Cafeteria facility at Ground Floor, Utility Block, Rouse Avenue District Court Complex, DDU Marg, New Delhi.][09/EE/JCD-2/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B12||EE/B123</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SI5MUpzBXxi%2BveXL9EYB%2F4A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>81.</RotSNo>
+<RotTenderId>2025_PWD_273838_1</RotTenderId>
+<RotTitleRef>[ARMO various Electrical Installations and Mechanical equipments at Forensic Science Laboratory, Madhuban Chowk, Sector-14, Rohini, Delhi. SH - Comprehensive maintenance of Perpetual make On-line UPS system][42/EE(E)/JED-02/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M252</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sf5f2DUuKWEYdYxQz64rSGg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>82.</RotSNo>
+<RotTenderId>2025_PWD_273837_1</RotTenderId>
+<RotTitleRef>[Renovation of Bar office and Canteen at Rouse Avenue DDU Marg, New Delhi. (SH Electrical works )  ][121/EE(E)/JED-1/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SEHteswQRC%2B0rffKus7V5Ug%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>83.</RotSNo>
+<RotTenderId>2025_PWD_273835_1</RotTenderId>
+<RotTitleRef>[SITC of 1000 LPH RO Plant including providing and fixing of Monoblock pump for lifting purified water at Laxmi bai college, Ashok vihar, Delhi][40(Revised)(Recall) /EE(E)/AE(E)-II/ NWED/PWD/ 2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M35||EE/M353</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SboqFPPezW8T76uiu8Arvyg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>84.</RotSNo>
+<RotTenderId>2025_PWD_273825_1</RotTenderId>
+<RotTitleRef>[Providing of cable and panel for pumps installed at Rajiv Gandhi Sports Complex at Singhu, Delhi-40][04/EE(E)/HEED(B141)/PWD/25-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B141</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SarcY563sGFLQqoecw8sILA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>85.</RotSNo>
+<RotTenderId>2025_PWD_273819_1</RotTenderId>
+<RotTitleRef>[A/R and M/O to various Roads under Sub. Div. East Road-IV of PWD Division East Road/(M-212) during 2025-26. (SH- Providing of security arrangements and sweeping/ cleaning arrangement at Division office, Sub Division East Road-IV).][06/EE/East Road (M-212)/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M21||EE/M212</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=St5QrZMoj0nZpBgSC8g%2BLLQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>86.</RotSNo>
+<RotTenderId>2025_PWD_273817_1</RotTenderId>
+<RotTitleRef>[Operation and Maintenance of Electrical and Mechanical Services in Rouse Avenue Courts Building, New Delhi ][108/EE(E)/JED-1/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SJwleNxqfMoRnGZlswdxSvw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>87.</RotSNo>
+<RotTenderId>2025_PWD_273816_1</RotTenderId>
+<RotTitleRef>[A/R and M/O various roads under PWD sub division-13, Division West Road-1 New Delhi during 2025-26.(SH Remodelling of drain at Lala Ganesh Dass Khatri Marg). ][15/EE/PWD/WR-1/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M1-M11||EE/M111</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SC5tYDXC3wtnt77f9fipgFA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>88.</RotSNo>
+<RotTenderId>2025_PWD_273812_1</RotTenderId>
+<RotTitleRef>[A/R and M/O Thyagraj Sports Complex at Thyagraj Nagar, New Delhi during 2025-26 (SH Renovation of Toilet block near Tennis Court and other misc. works).][16/South-East(B)M/New Delhi/2025-26 (2nd Call).]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M42||EE/M421</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SbGWXDk%2Fq3Vfdsdh5%2FNWpCA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>89.</RotSNo>
+<RotTenderId>2025_PWD_273809_1</RotTenderId>
+<RotTitleRef>[RMO E and M services at New Delhi District Court Complex at Rouse Avenue, DDU Marg, New Delhi. ][115/EE(E)/JED-1/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SHT8EtSLAeyTZ6UWCbl9c8w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>90.</RotSNo>
+<RotTenderId>2025_PWD_273808_1</RotTenderId>
+<RotTitleRef>[SR to NR Building at GTB Hospital Delhi dg 2025 26 SH Repair work in DDR and sister incharge room attached toilets in front of nursing station of ward block 20 27 ic repair work in shafts replacement of damaged missing pipes and fittings at GTB Hospi][12/EE/BPD B-221(N)/CHMD(East)/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B2-B22||EE/B221(N)</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SFOSUHZ0HrMxDHmerDf18GA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>91.</RotSNo>
+<RotTenderId>2025_PWD_273807_1</RotTenderId>
+<RotTitleRef>[Mo Hort. Works attached to Hort. Division North/PWD/New Delhi during 2025-26. SH Providing services of Data Entry Operator and Multi Tasking Staff MTS for Division and attached Sub Divisions.][02/DD/HD-NORTH/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M31||EE/M314</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SGXBLiYIOZTwQH2vrlT4TjA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>92.</RotSNo>
+<RotTenderId>2025_PWD_273806_1</RotTenderId>
+<RotTitleRef>[RMO E and  M Services at District court, Sec-10, Dwarka New Delhi . SH-  Repair and AMC of Water Cooler And RO purification Systems.][40/EE(E)/JED-02/PWD/2025-26    ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M25||EE/M252</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=So5Xi02j4dsoJPBpsS16AZQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>93.</RotSNo>
+<RotTenderId>2025_PWD_273802_1</RotTenderId>
+<RotTitleRef>[Maintenance and Repair District Court Dwarka, Sector- 10 and Delhi Judicial Academy Sector-14 Dwarka New Delhi SH Miscellaneous Preventive Work.][23/EE/JCD-5/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE (J P) / SE (J P)||EE (JCD)-5</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2F1%2F%2BPOipPN%2FjaBRewKxz1w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>94.</RotSNo>
+<RotTenderId>2025_PWD_273800_1</RotTenderId>
+<RotTitleRef>[A/R and M/O to various roads under PWD Division South Road-1/Sub Division SR-12 dg. 2025-26 (SH- Repair of Berm portion from Chainage 6000 to 6700 at Fatehpur Beri Village on SSN Marg).][19/EE/PWD/RMD/SR-I/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M44||EE/M441</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SrDL8RnY3fiXQ3Wku5q3SkQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>95.</RotSNo>
+<RotTenderId>2025_PWD_273794_1</RotTenderId>
+<RotTitleRef>[As per NIT][26/EE(E)/AE-II/EMD South East/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M4-M45||EE/M452</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SENDOh6MQLltt1GYq9uJm4g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>96.</RotSNo>
+<RotTenderId>2025_PWD_273792_1</RotTenderId>
+<RotTitleRef>[Mo Hort. Works attached to Hort. Division South/PWD/New Delhi during 2025-26. SH Providing services of Computer Operator, Clerical Staff (UDC and LDC, Messenger and sweeper for Division and attached Sub Divisions.][02/DD/HD-SOUTH/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M3-M31||EE/M314</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1bIaR5ebNhDvrmZ8Z3N6Rw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>97.</RotSNo>
+<RotTenderId>2025_PWD_273748_1</RotTenderId>
+<RotTitleRef>[RMO E and M services at New Delhi District Court Complex at Rouse Avenue DDU Marg, New Delhi. (SH Operation of Centralized Air Conditioning System) ][107/EE(E)/JED-1/PWD/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SKJlRF2DqdvVL8CFfh2G2Ig%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>98.</RotSNo>
+<RotTenderId>2025_PWD_273747_1</RotTenderId>
+<RotTitleRef>[EOR to Delhi Secretariat New Delhi 2025 26 SH Repair and Renovation work in   lift well no 4 5 6 and 7  in Delhi Secretariat][08/EE/EBMD-M 221/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/M2-M22||EE/M221</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S4KehNASXK%2FNHShApnjs3jA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>99.</RotSNo>
+<RotTenderId>2025_PWD_273732_1</RotTenderId>
+<RotTitleRef>[Replacement of indoor and outdoor coil for Voltas make PTAC Plant at Karkardooma Court Complex Delhi.][101/EE(E)/JED-I/PWD/2025-26 (Revised)]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B14||EE/B142</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Suw2S%2FqQzcHwup5ziKmoV%2Fw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>100.</RotSNo>
+<RotTenderId>2025_PWD_273731_1</RotTenderId>
+<RotTitleRef>[Renovation of Bar Office at 1st Floor Utility Block, Rouse Avenue Court Complex, New Delhi.][08/EE/JCD-2/PWD/2025-26]</RotTitleRef>
+<RotOrganisationChain>Public Works Department||CE/SE/B1-B12||EE/B123</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://govtprocurement.delhi.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SW1nDPuHNJAyeBz97F7NPdw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Delhi</SourceSiteKey>
+--- TENDER END ---
+

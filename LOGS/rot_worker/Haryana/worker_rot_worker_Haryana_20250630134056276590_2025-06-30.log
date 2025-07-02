@@ -1,0 +1,158 @@
+13:40:56 [INFO] (ROTWorker-Haryana Run-276590) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Haryana/worker_rot_worker_Haryana_20250630134056276590_2025-06-30.log
+13:40:56 [INFO] (ROTWorker-Haryana Run-276590) --- Starting Headless ROT Worker for Site: Haryana, Run ID: rot_worker_Haryana_20250630134056276590 ---
+13:40:56 [INFO] (ROTWorker-Haryana Run-276590) --- Dates: From=None, To=None ---
+13:40:56 [INFO] (ROTWorker-Haryana Run-276590) Worker status updated to: WORKER_STARTED
+13:40:56 [INFO] (ROTWorker-Haryana Run-276590) Worker status updated to: FETCHING_CAPTCHA
+13:41:09 [INFO] (ROTWorker-Haryana Run-276590) Selecting tender status '5'.
+13:41:23 [INFO] (ROTWorker-Haryana Run-276590) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Haryana_20250630134056276590/captcha.b64
+13:41:23 [INFO] (ROTWorker-Haryana Run-276590) Worker status updated to: WAITING_CAPTCHA
+13:41:23 [INFO] (ROTWorker-Haryana Run-276590) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Haryana_20250630134056276590/answer.txt (max 300s)...
+13:41:33 [INFO] (ROTWorker-Haryana Run-276590) CAPTCHA solution received.
+13:41:33 [INFO] (ROTWorker-Haryana Run-276590) Worker status updated to: PROCESSING_WITH_CAPTCHA
+13:41:50 [INFO] (ROTWorker-Haryana Run-276590) Worker status updated to: SCRAPING_RESULTS
+13:41:50 [INFO] (ROTWorker-Haryana Run-276590) --- Processing List Page: 1/10 ---
+13:41:50 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1] Extracting table data...
+13:41:50 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1] Extracted 10 items.
+13:42:01 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1_2025_HRY_453412_1] Final summary link found. Clicking...
+13:42:01 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1_2025_HRY_453833_1] Final summary link found. Clicking...
+13:42:09 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453833_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_453833_1_20250630_134209_StageSummary.html
+13:42:09 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453833_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_453833_1_20250630_134209_StageSummary.html --site-key Haryana
+13:42:10 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453833_1 Popup] Successfully processed structured data for ROT_2025_HRY_453833_1_20250630_134209_StageSummary.html.
+13:42:17 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453412_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_453412_1_20250630_134217_StageSummary.html
+13:42:17 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453412_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_453412_1_20250630_134217_StageSummary.html --site-key Haryana
+13:42:17 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453412_1 Popup] Successfully processed structured data for ROT_2025_HRY_453412_1_20250630_134217_StageSummary.html.
+13:42:31 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1_2025_HRY_453352_1] Final summary link found. Clicking...
+13:42:34 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453352_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_453352_1_20250630_134234_StageSummary.html
+13:42:34 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453352_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_453352_1_20250630_134234_StageSummary.html --site-key Haryana
+13:42:34 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453352_1 Popup] Successfully processed structured data for ROT_2025_HRY_453352_1_20250630_134234_StageSummary.html.
+13:42:41 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1_2025_HRY_453291_1] Final summary link found. Clicking...
+13:42:45 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453291_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_453291_1_20250630_134245_StageSummary.html
+13:42:45 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453291_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_453291_1_20250630_134245_StageSummary.html --site-key Haryana
+13:42:45 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453291_1 Popup] Successfully processed structured data for ROT_2025_HRY_453291_1_20250630_134245_StageSummary.html.
+13:42:49 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1_2025_HRY_453218_1] Final summary link found. Clicking...
+13:42:58 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1_2025_HRY_453152_1] Final summary link found. Clicking...
+13:43:01 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453218_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_453218_1_20250630_134301_StageSummary.html
+13:43:01 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453218_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_453218_1_20250630_134301_StageSummary.html --site-key Haryana
+13:43:01 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453218_1 Popup] Successfully processed structured data for ROT_2025_HRY_453218_1_20250630_134301_StageSummary.html.
+13:43:06 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453152_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_453152_1_20250630_134306_StageSummary.html
+13:43:06 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453152_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_453152_1_20250630_134306_StageSummary.html --site-key Haryana
+13:43:06 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453152_1 Popup] Successfully processed structured data for ROT_2025_HRY_453152_1_20250630_134306_StageSummary.html.
+13:43:13 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1_2025_HRY_453147_1] Final summary link found. Clicking...
+13:43:15 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453147_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_453147_1_20250630_134315_StageSummary.html
+13:43:15 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453147_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_453147_1_20250630_134315_StageSummary.html --site-key Haryana
+13:43:16 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453147_1 Popup] Successfully processed structured data for ROT_2025_HRY_453147_1_20250630_134315_StageSummary.html.
+13:43:24 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1_2025_HRY_453141_1] Final summary link found. Clicking...
+13:43:32 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1_2025_HRY_453016_1] Final summary link found. Clicking...
+13:43:34 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453141_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_453141_1_20250630_134334_StageSummary.html
+13:43:34 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453141_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_453141_1_20250630_134334_StageSummary.html --site-key Haryana
+13:43:34 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453141_1 Popup] Successfully processed structured data for ROT_2025_HRY_453141_1_20250630_134334_StageSummary.html.
+13:43:39 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453016_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_453016_1_20250630_134339_StageSummary.html
+13:43:39 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453016_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_453016_1_20250630_134339_StageSummary.html --site-key Haryana
+13:43:39 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453016_1 Popup] Successfully processed structured data for ROT_2025_HRY_453016_1_20250630_134339_StageSummary.html.
+13:43:42 [INFO] (ROTWorker-Haryana Run-276590) [ListPage1_2025_HRY_453012_1] Final summary link found. Clicking...
+13:43:47 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453012_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_453012_1_20250630_134347_StageSummary.html
+13:43:47 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453012_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_453012_1_20250630_134347_StageSummary.html --site-key Haryana
+13:43:47 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_453012_1 Popup] Successfully processed structured data for ROT_2025_HRY_453012_1_20250630_134347_StageSummary.html.
+13:43:55 [INFO] (ROTWorker-Haryana Run-276590) --- Processing List Page: 2/10 ---
+13:43:55 [INFO] (ROTWorker-Haryana Run-276590) [ListPage2] Extracting table data...
+13:43:57 [INFO] (ROTWorker-Haryana Run-276590) [ListPage2] Extracted 10 items.
+13:44:09 [INFO] (ROTWorker-Haryana Run-276590) [ListPage2_2025_HRY_452729_1] Final summary link found. Clicking...
+13:44:17 [INFO] (ROTWorker-Haryana Run-276590) [ListPage2_2025_HRY_452746_1] Final summary link found. Clicking...
+13:44:17 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452729_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_452729_1_20250630_134417_StageSummary.html
+13:44:17 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452729_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_452729_1_20250630_134417_StageSummary.html --site-key Haryana
+13:44:18 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452729_1 Popup] Successfully processed structured data for ROT_2025_HRY_452729_1_20250630_134417_StageSummary.html.
+13:44:26 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452746_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_452746_1_20250630_134426_StageSummary.html
+13:44:26 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452746_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_452746_1_20250630_134426_StageSummary.html --site-key Haryana
+13:44:26 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452746_1 Popup] Successfully processed structured data for ROT_2025_HRY_452746_1_20250630_134426_StageSummary.html.
+13:44:34 [INFO] (ROTWorker-Haryana Run-276590) [ListPage2_2025_HRY_452727_1] Final summary link found. Clicking...
+13:44:38 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452727_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_452727_1_20250630_134438_StageSummary.html
+13:44:38 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452727_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_452727_1_20250630_134438_StageSummary.html --site-key Haryana
+13:44:38 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452727_1 Popup] Successfully processed structured data for ROT_2025_HRY_452727_1_20250630_134438_StageSummary.html.
+13:44:46 [INFO] (ROTWorker-Haryana Run-276590) [ListPage2_2025_HRY_452722_1] Final summary link found. Clicking...
+13:44:54 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452722_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_452722_1_20250630_134454_StageSummary.html
+13:44:54 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452722_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_452722_1_20250630_134454_StageSummary.html --site-key Haryana
+13:44:54 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452722_1 Popup] Successfully processed structured data for ROT_2025_HRY_452722_1_20250630_134454_StageSummary.html.
+13:44:58 [INFO] (ROTWorker-Haryana Run-276590) [ListPage2_2025_HRY_452454_1] Final summary link found. Clicking...
+13:45:04 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452454_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_452454_1_20250630_134504_StageSummary.html
+13:45:04 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452454_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_452454_1_20250630_134504_StageSummary.html --site-key Haryana
+13:45:05 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452454_1 Popup] Successfully processed structured data for ROT_2025_HRY_452454_1_20250630_134504_StageSummary.html.
+13:45:07 [INFO] (ROTWorker-Haryana Run-276590) [ListPage2_2025_HRY_452442_1] Final summary link found. Clicking...
+13:45:17 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452442_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_452442_1_20250630_134517_StageSummary.html
+13:45:17 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452442_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_452442_1_20250630_134517_StageSummary.html --site-key Haryana
+13:45:17 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452442_1 Popup] Successfully processed structured data for ROT_2025_HRY_452442_1_20250630_134517_StageSummary.html.
+13:45:24 [INFO] (ROTWorker-Haryana Run-276590) [ListPage2_2025_HRY_452149_1] Final summary link found. Clicking...
+13:45:32 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452149_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_452149_1_20250630_134532_StageSummary.html
+13:45:32 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452149_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_452149_1_20250630_134532_StageSummary.html --site-key Haryana
+13:45:32 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452149_1 Popup] Successfully processed structured data for ROT_2025_HRY_452149_1_20250630_134532_StageSummary.html.
+13:46:20 [ERROR] (ROTWorker-Haryana Run-276590) [ListPage2_2025_HRY_452367_1] Error processing detail link 'https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Siq8lk6zefTIsfszmHy9I5w%3D%3D': Page.goto: Timeout 75000ms exceeded.
+Call log:
+  - navigating to "https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Siq8lk6zefTIsfszmHy9I5w%3D%3D", waiting until "domcontentloaded"
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/headless_rot_worker.py", line 208, in process_single_tender_detail_page
+    await detail_page.goto(detail_page_url, wait_until="domcontentloaded", timeout=detail_page_timeout)
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/async_api/_generated.py", line 8991, in goto
+    await self._impl_obj.goto(
+        url=url, timeout=timeout, waitUntil=wait_until, referer=referer
+    )
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_page.py", line 552, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_frame.py", line 145, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.goto: Timeout 75000ms exceeded.
+Call log:
+  - navigating to "https://etenders.hry.nic.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Siq8lk6zefTIsfszmHy9I5w%3D%3D", waiting until "domcontentloaded"
+
+13:46:21 [INFO] (ROTWorker-Haryana Run-276590) [ListPage2_2025_HRY_452096_1] Final summary link found. Clicking...
+13:46:24 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452096_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_452096_1_20250630_134624_StageSummary.html
+13:46:24 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452096_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_452096_1_20250630_134624_StageSummary.html --site-key Haryana
+13:46:24 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452096_1 Popup] Successfully processed structured data for ROT_2025_HRY_452096_1_20250630_134624_StageSummary.html.
+13:46:33 [INFO] (ROTWorker-Haryana Run-276590) [ListPage2_2025_HRY_452090_1] Final summary link found. Clicking...
+13:46:39 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452090_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_HRY_452090_1_20250630_134639_StageSummary.html
+13:46:39 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452090_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Haryana/ROT_2025_HRY_452090_1_20250630_134639_StageSummary.html --site-key Haryana
+13:46:39 [INFO] (ROTWorker-Haryana Run-276590) [2025_HRY_452090_1 Popup] Successfully processed structured data for ROT_2025_HRY_452090_1_20250630_134639_StageSummary.html.
+13:46:48 [INFO] (ROTWorker-Haryana Run-276590) --- Processing List Page: 3/10 ---
+13:46:48 [INFO] (ROTWorker-Haryana Run-276590) [ListPage3] Extracting table data...
+13:47:08 [ERROR] (ROTWorker-Haryana Run-276590) [ListPage3] Error extracting table data: Locator.inner_html: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("#tabList")
+Traceback (most recent call last):
+  File "/root/Tender-Aggregator/headless_rot_worker.py", line 227, in extract_table_data_from_current_list_page
+    results_table_html = await page.locator(RESULTS_TABLE_SELECTOR).inner_html(timeout=20000)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/async_api/_generated.py", line 16826, in inner_html
+    return mapping.from_maybe_impl(await self._impl_obj.inner_html(timeout=timeout))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_locator.py", line 442, in inner_html
+    return await self._frame.inner_html(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_frame.py", line 623, in inner_html
+    return await self._channel.send("innerHTML", locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/root/Tender-Aggregator/venv/lib64/python3.13/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.inner_html: Timeout 20000ms exceeded.
+Call log:
+  - waiting for locator("#tabList")
+
+13:47:08 [INFO] (ROTWorker-Haryana Run-276590) No items on list page 3.
+13:47:08 [INFO] (ROTWorker-Haryana Run-276590) Worker status updated to: FINISHED_SUCCESS
+13:47:08 [INFO] (ROTWorker-Haryana Run-276590) Playwright resources closed.
+13:47:08 [INFO] (ROTWorker-Haryana Run-276590) Worker for Haryana terminated with status: FINISHED_SUCCESS

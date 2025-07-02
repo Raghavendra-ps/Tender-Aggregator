@@ -1,0 +1,110 @@
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_ZP_21196_1</RotTenderId>
+<RotTitleRef>[Construction of road and drain from Prasahant Velip house to Sanjay Veip house to Godkem in V.P. Balli Adnem of Guirdolim Constituency][3/6/SGZP/2024-25/TN-169/L30]</RotTitleRef>
+<RotOrganisationChain>ZILLA PANCHAYATS||SOUTH GOA ZILLA PANCHAYAT||Technical Section</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eprocure.goa.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SHjbiR1McuO15bLrupRKRzg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Goa</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_ZP_21192_1</RotTenderId>
+<RotTitleRef>[Construction of roadside drainage from Darshan house to near Conceicao Rodrigues house at Chinchinim in V.P. Chinchinim of Velim Constituency][3/6/SGZP/2024-25/TN-169/L28]</RotTitleRef>
+<RotOrganisationChain>ZILLA PANCHAYATS||SOUTH GOA ZILLA PANCHAYAT||Technical Section</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eprocure.goa.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SnWm%2FwVDWxMMPTS1UGES0QQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Goa</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_ZP_21182_1</RotTenderId>
+<RotTitleRef>[Construction of shed near Mahadev Temple at Shivnagar in V.P. Xeldem of Xeldem Constituency][3/6/SGZP/2024-25/TN-169/L26]</RotTitleRef>
+<RotOrganisationChain>ZILLA PANCHAYATS||SOUTH GOA ZILLA PANCHAYAT||Technical Section</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eprocure.goa.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sip5%2F2Yg5ur3mjQ57YmroKA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Goa</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_ZP_21178_1</RotTenderId>
+<RotTitleRef>[Renovation of existing Crematorium at Odxeth Avedem in V.P. Avedem Cotombi Chaifi of Xeldem Constituency][3/6/SGZP/2024-25/TN-169/L25]</RotTitleRef>
+<RotOrganisationChain>ZILLA PANCHAYATS||SOUTH GOA ZILLA PANCHAYAT||Technical Section</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eprocure.goa.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Swx5%2F4sVYm9dVcgZHfMsLrQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Goa</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_ZP_20036_1</RotTenderId>
+<RotTitleRef>[Construction of shed and laying of pavers near Shri Khuti Mahamaya Devasthan at Cotombi Avadem in V.P. Avadem in Xeldem Constituency(XVth Finance Commission) ][3/6/SGZP/2024-25/TN-167/L35]</RotTitleRef>
+<RotOrganisationChain>ZILLA PANCHAYATS||SOUTH GOA ZILLA PANCHAYAT||Technical Section</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eprocure.goa.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SvpEZJidsO0mmvvIHV%2Fkg%2BA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Goa</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_ZP_19992_1</RotTenderId>
+<RotTitleRef>[Constuction of stage and shed for Government Primary School in V.P. Kirlapal Dabal of Sanvordem Constituency(XVth Finance Commission) ][3/6/SGZP/2024-25/TN-167/L18]</RotTitleRef>
+<RotOrganisationChain>ZILLA PANCHAYATS||SOUTH GOA ZILLA PANCHAYAT||Technical Section</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eprocure.goa.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SDtK%2BZmw3jm0rfyZ2L86rTw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Goa</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_ZP_19988_1</RotTenderId>
+<RotTitleRef>[Construction of Cremmatorium shed with pavers and sitting benches at Dabal in V.P. Kirlapal Dabal of Sanvordem Constituency(XVth Finance Commission) ][3/6/SGZP/2024-25/TN-167/L17]</RotTitleRef>
+<RotOrganisationChain>ZILLA PANCHAYATS||SOUTH GOA ZILLA PANCHAYAT||Technical Section</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eprocure.goa.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1RFE%2FVfKmAaUG2TWOcWx6Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Goa</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_ZP_19980_1</RotTenderId>
+<RotTitleRef>[Improvement and laying of chequered tiles to the pathway from Ghorvi Purush Temple to Mr. Arjun Velip house from Bhiso Velip house to Dharmu Velip house from Dahrnu Velip house to Mr. Pangal Velip house from Appa B Velip house to Mr. Bhiku B Velip ho][3/6/SGZP/2024-25/TN-167/L15]</RotTitleRef>
+<RotOrganisationChain>ZILLA PANCHAYATS||SOUTH GOA ZILLA PANCHAYAT||Technical Section</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eprocure.goa.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SYQ1QRK1qkxG%2FvOLfAOeRqg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Goa</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_ZP_19957_1</RotTenderId>
+<RotTitleRef>[Repair and beautification of mand at Voldev in V.P. Kalay of Sanvordem Constituency (Retender)][3/6/SGZP/2024-25/TN-167/L9]</RotTitleRef>
+<RotOrganisationChain>ZILLA PANCHAYATS||SOUTH GOA ZILLA PANCHAYAT||Technical Section</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eprocure.goa.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SWO9CqFAZy1jRxNsR7Xq0oA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Goa</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_ZP_19950_1</RotTenderId>
+<RotTitleRef>[Construction of road from main road to Prasad Naik house at Roidor in ward no. III in V.P. Quelossim in Cortalim Constituency][3/6/SGZP/2024-25/TN-167/L7]</RotTitleRef>
+<RotOrganisationChain>ZILLA PANCHAYATS||SOUTH GOA ZILLA PANCHAYAT||Technical Section</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://eprocure.goa.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SokPYQFHFl3gK62qzKPqR2g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Goa</SourceSiteKey>
+--- TENDER END ---
+

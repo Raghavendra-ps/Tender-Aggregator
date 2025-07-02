@@ -1,0 +1,6 @@
+11:49:20 [INFO] (ROTWorker-Haryana Run-869828) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Haryana/worker_rot_worker_Haryana_20250630114920869828_2025-06-30.log
+11:49:20 [INFO] (ROTWorker-Haryana Run-869828) --- Starting Headless ROT Worker for Site: Haryana, Run ID: rot_worker_Haryana_20250630114920869828 ---
+11:49:20 [INFO] (ROTWorker-Haryana Run-869828) --- Dates: From=None, To=None ---
+11:49:20 [INFO] (ROTWorker-Haryana Run-869828) Worker status updated to: WORKER_STARTED
+11:49:21 [INFO] (ROTWorker-Haryana Run-869828) Worker status updated to: FETCHING_CAPTCHA
+11:49:54 [INFO] (ROTWorker-Haryana Run-869828) Selecting tender status '5'.

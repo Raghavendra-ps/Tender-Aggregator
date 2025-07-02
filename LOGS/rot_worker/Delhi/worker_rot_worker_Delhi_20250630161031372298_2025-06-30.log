@@ -1,0 +1,439 @@
+16:10:31 [INFO] (ROTWorker-Delhi Run-372298) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Delhi/worker_rot_worker_Delhi_20250630161031372298_2025-06-30.log
+16:10:31 [INFO] (ROTWorker-Delhi Run-372298) --- Starting Headless ROT Worker for Site: Delhi, Run ID: rot_worker_Delhi_20250630161031372298 ---
+16:10:31 [INFO] (ROTWorker-Delhi Run-372298) --- Dates: From=None, To=None ---
+16:10:31 [INFO] (ROTWorker-Delhi Run-372298) Selecting tender status '5'.
+16:10:35 [INFO] (ROTWorker-Delhi Run-372298) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Delhi_20250630161031372298/captcha.b64
+16:10:35 [INFO] (ROTWorker-Delhi Run-372298) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Delhi_20250630161031372298/answer.txt (max 300s)...
+16:10:42 [INFO] (ROTWorker-Delhi Run-372298) CAPTCHA solution received.
+16:10:42 [INFO] (ROTWorker-Delhi Run-372298) --- Processing List Page: 1/10 ---
+16:10:42 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1] Extracting table data...
+16:10:42 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1] Extracted 10 items.
+16:10:42 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1_2025_RGSSH_270140_1] Final summary link found. Clicking...
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1_2025_PWD_274305_1] Final summary link found. Clicking...
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_RGSSH_270140_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_RGSSH_270140_1_20250630_161043_StageSummary.html
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_RGSSH_270140_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_RGSSH_270140_1_20250630_161043_StageSummary.html --site-key Delhi
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274305_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274305_1_20250630_161043_StageSummary.html
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274305_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274305_1_20250630_161043_StageSummary.html --site-key Delhi
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_RGSSH_270140_1 Popup] Successfully processed structured data for ROT_2025_RGSSH_270140_1_20250630_161043_StageSummary.html.
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274305_1 Popup] Successfully processed structured data for ROT_2025_PWD_274305_1_20250630_161043_StageSummary.html.
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1_2025_PWD_274302_1] Final summary link found. Clicking...
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1_2025_PWD_274300_1] Final summary link found. Clicking...
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274302_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274302_1_20250630_161043_StageSummary.html
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274302_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274302_1_20250630_161043_StageSummary.html --site-key Delhi
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274300_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274300_1_20250630_161043_StageSummary.html
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274300_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274300_1_20250630_161043_StageSummary.html --site-key Delhi
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274302_1 Popup] Successfully processed structured data for ROT_2025_PWD_274302_1_20250630_161043_StageSummary.html.
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274300_1 Popup] Successfully processed structured data for ROT_2025_PWD_274300_1_20250630_161043_StageSummary.html.
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1_2025_PWD_274298_1] Final summary link found. Clicking...
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1_2025_PWD_274259_1] Final summary link found. Clicking...
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274298_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274298_1_20250630_161043_StageSummary.html
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274298_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274298_1_20250630_161043_StageSummary.html --site-key Delhi
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274259_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274259_1_20250630_161043_StageSummary.html
+16:10:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274259_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274259_1_20250630_161043_StageSummary.html --site-key Delhi
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274298_1 Popup] Successfully processed structured data for ROT_2025_PWD_274298_1_20250630_161043_StageSummary.html.
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274259_1 Popup] Successfully processed structured data for ROT_2025_PWD_274259_1_20250630_161043_StageSummary.html.
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1_2025_PWD_274248_1] Final summary link found. Clicking...
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1_2025_PWD_274242_1] Final summary link found. Clicking...
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274248_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274248_1_20250630_161044_StageSummary.html
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274248_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274248_1_20250630_161044_StageSummary.html --site-key Delhi
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274242_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274242_1_20250630_161044_StageSummary.html
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274242_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274242_1_20250630_161044_StageSummary.html --site-key Delhi
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274248_1 Popup] Successfully processed structured data for ROT_2025_PWD_274248_1_20250630_161044_StageSummary.html.
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274242_1 Popup] Successfully processed structured data for ROT_2025_PWD_274242_1_20250630_161044_StageSummary.html.
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1_2025_PWD_274240_1] Final summary link found. Clicking...
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [ListPage1_2025_PWD_274238_1] Final summary link found. Clicking...
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274240_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274240_1_20250630_161044_StageSummary.html
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274240_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274240_1_20250630_161044_StageSummary.html --site-key Delhi
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274238_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274238_1_20250630_161044_StageSummary.html
+16:10:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274238_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274238_1_20250630_161044_StageSummary.html --site-key Delhi
+16:10:45 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274240_1 Popup] Successfully processed structured data for ROT_2025_PWD_274240_1_20250630_161044_StageSummary.html.
+16:10:45 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274238_1 Popup] Successfully processed structured data for ROT_2025_PWD_274238_1_20250630_161044_StageSummary.html.
+16:10:52 [INFO] (ROTWorker-Delhi Run-372298) --- Processing List Page: 2/10 ---
+16:10:52 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2] Extracting table data...
+16:10:52 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2] Extracted 10 items.
+16:10:52 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2_2025_PWD_274226_1] Final summary link found. Clicking...
+16:10:52 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2_2025_PWD_274234_1] Final summary link found. Clicking...
+16:10:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274226_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274226_1_20250630_161052_StageSummary.html
+16:10:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274226_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274226_1_20250630_161052_StageSummary.html --site-key Delhi
+16:10:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274234_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274234_1_20250630_161052_StageSummary.html
+16:10:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274234_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274234_1_20250630_161052_StageSummary.html --site-key Delhi
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274226_1 Popup] Successfully processed structured data for ROT_2025_PWD_274226_1_20250630_161052_StageSummary.html.
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274234_1 Popup] Successfully processed structured data for ROT_2025_PWD_274234_1_20250630_161052_StageSummary.html.
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2_2025_PWD_274182_1] Final summary link found. Clicking...
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2_2025_PWD_274209_1] Final summary link found. Clicking...
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274182_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274182_1_20250630_161053_StageSummary.html
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274182_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274182_1_20250630_161053_StageSummary.html --site-key Delhi
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274209_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274209_1_20250630_161053_StageSummary.html
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274209_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274209_1_20250630_161053_StageSummary.html --site-key Delhi
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274182_1 Popup] Successfully processed structured data for ROT_2025_PWD_274182_1_20250630_161053_StageSummary.html.
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274209_1 Popup] Successfully processed structured data for ROT_2025_PWD_274209_1_20250630_161053_StageSummary.html.
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2_2025_PWD_274181_1] Final summary link found. Clicking...
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2_2025_PWD_274174_1] Final summary link found. Clicking...
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274181_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274181_1_20250630_161053_StageSummary.html
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274181_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274181_1_20250630_161053_StageSummary.html --site-key Delhi
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274174_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274174_1_20250630_161053_StageSummary.html
+16:10:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274174_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274174_1_20250630_161053_StageSummary.html --site-key Delhi
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274181_1 Popup] Successfully processed structured data for ROT_2025_PWD_274181_1_20250630_161053_StageSummary.html.
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274174_1 Popup] Successfully processed structured data for ROT_2025_PWD_274174_1_20250630_161053_StageSummary.html.
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2_2025_PWD_274155_1] Final summary link found. Clicking...
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2_2025_PWD_274173_1] Final summary link found. Clicking...
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274173_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274173_1_20250630_161054_StageSummary.html
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274173_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274173_1_20250630_161054_StageSummary.html --site-key Delhi
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274155_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274155_1_20250630_161054_StageSummary.html
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274155_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274155_1_20250630_161054_StageSummary.html --site-key Delhi
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274173_1 Popup] Successfully processed structured data for ROT_2025_PWD_274173_1_20250630_161054_StageSummary.html.
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274155_1 Popup] Successfully processed structured data for ROT_2025_PWD_274155_1_20250630_161054_StageSummary.html.
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2_2025_PWD_274154_1] Final summary link found. Clicking...
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [ListPage2_2025_PWD_274153_1] Final summary link found. Clicking...
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274154_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274154_1_20250630_161054_StageSummary.html
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274154_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274154_1_20250630_161054_StageSummary.html --site-key Delhi
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274153_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274153_1_20250630_161054_StageSummary.html
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274153_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274153_1_20250630_161054_StageSummary.html --site-key Delhi
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274154_1 Popup] Successfully processed structured data for ROT_2025_PWD_274154_1_20250630_161054_StageSummary.html.
+16:10:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274153_1 Popup] Successfully processed structured data for ROT_2025_PWD_274153_1_20250630_161054_StageSummary.html.
+16:11:02 [INFO] (ROTWorker-Delhi Run-372298) --- Processing List Page: 3/10 ---
+16:11:02 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3] Extracting table data...
+16:11:02 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3] Extracted 10 items.
+16:11:02 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3_2025_PWD_274124_1] Final summary link found. Clicking...
+16:11:02 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3_2025_PWD_274122_1] Final summary link found. Clicking...
+16:11:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274124_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274124_1_20250630_161102_StageSummary.html
+16:11:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274124_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274124_1_20250630_161102_StageSummary.html --site-key Delhi
+16:11:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274122_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274122_1_20250630_161102_StageSummary.html
+16:11:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274122_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274122_1_20250630_161102_StageSummary.html --site-key Delhi
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274124_1 Popup] Successfully processed structured data for ROT_2025_PWD_274124_1_20250630_161102_StageSummary.html.
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274122_1 Popup] Successfully processed structured data for ROT_2025_PWD_274122_1_20250630_161102_StageSummary.html.
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3_2025_PWD_274109_1] Final summary link found. Clicking...
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3_2025_PWD_274107_1] Final summary link found. Clicking...
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274109_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274109_1_20250630_161103_StageSummary.html
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274109_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274109_1_20250630_161103_StageSummary.html --site-key Delhi
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274107_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274107_1_20250630_161103_StageSummary.html
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274107_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274107_1_20250630_161103_StageSummary.html --site-key Delhi
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274109_1 Popup] Successfully processed structured data for ROT_2025_PWD_274109_1_20250630_161103_StageSummary.html.
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274107_1 Popup] Successfully processed structured data for ROT_2025_PWD_274107_1_20250630_161103_StageSummary.html.
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3_2025_PWD_274105_1] Final summary link found. Clicking...
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3_2025_PWD_274103_1] Final summary link found. Clicking...
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274105_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274105_1_20250630_161103_StageSummary.html
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274105_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274105_1_20250630_161103_StageSummary.html --site-key Delhi
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274103_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274103_1_20250630_161103_StageSummary.html
+16:11:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274103_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274103_1_20250630_161103_StageSummary.html --site-key Delhi
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274105_1 Popup] Successfully processed structured data for ROT_2025_PWD_274105_1_20250630_161103_StageSummary.html.
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274103_1 Popup] Successfully processed structured data for ROT_2025_PWD_274103_1_20250630_161103_StageSummary.html.
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3_2025_PWD_274096_1] Final summary link found. Clicking...
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3_2025_PWD_274095_1] Final summary link found. Clicking...
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274096_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274096_1_20250630_161104_StageSummary.html
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274096_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274096_1_20250630_161104_StageSummary.html --site-key Delhi
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274095_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274095_1_20250630_161104_StageSummary.html
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274095_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274095_1_20250630_161104_StageSummary.html --site-key Delhi
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274096_1 Popup] Successfully processed structured data for ROT_2025_PWD_274096_1_20250630_161104_StageSummary.html.
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274095_1 Popup] Successfully processed structured data for ROT_2025_PWD_274095_1_20250630_161104_StageSummary.html.
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3_2025_PWD_274092_1] Final summary link found. Clicking...
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [ListPage3_2025_PWD_274090_1] Final summary link found. Clicking...
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274092_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274092_1_20250630_161104_StageSummary.html
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274092_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274092_1_20250630_161104_StageSummary.html --site-key Delhi
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274090_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274090_1_20250630_161104_StageSummary.html
+16:11:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274090_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274090_1_20250630_161104_StageSummary.html --site-key Delhi
+16:11:05 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274092_1 Popup] Successfully processed structured data for ROT_2025_PWD_274092_1_20250630_161104_StageSummary.html.
+16:11:05 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274090_1 Popup] Successfully processed structured data for ROT_2025_PWD_274090_1_20250630_161104_StageSummary.html.
+16:11:12 [INFO] (ROTWorker-Delhi Run-372298) --- Processing List Page: 4/10 ---
+16:11:12 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4] Extracting table data...
+16:11:12 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4] Extracted 10 items.
+16:11:12 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4_2025_PWD_274089_1] Final summary link found. Clicking...
+16:11:12 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4_2025_PWD_274087_1] Final summary link found. Clicking...
+16:11:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274089_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274089_1_20250630_161112_StageSummary.html
+16:11:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274089_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274089_1_20250630_161112_StageSummary.html --site-key Delhi
+16:11:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274087_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274087_1_20250630_161112_StageSummary.html
+16:11:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274087_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274087_1_20250630_161112_StageSummary.html --site-key Delhi
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274089_1 Popup] Successfully processed structured data for ROT_2025_PWD_274089_1_20250630_161112_StageSummary.html.
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274087_1 Popup] Successfully processed structured data for ROT_2025_PWD_274087_1_20250630_161112_StageSummary.html.
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4_2025_PWD_274085_1] Final summary link found. Clicking...
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4_2025_PWD_274078_1] Final summary link found. Clicking...
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274085_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274085_1_20250630_161113_StageSummary.html
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274085_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274085_1_20250630_161113_StageSummary.html --site-key Delhi
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274078_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274078_1_20250630_161113_StageSummary.html
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274078_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274078_1_20250630_161113_StageSummary.html --site-key Delhi
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274085_1 Popup] Successfully processed structured data for ROT_2025_PWD_274085_1_20250630_161113_StageSummary.html.
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274078_1 Popup] Successfully processed structured data for ROT_2025_PWD_274078_1_20250630_161113_StageSummary.html.
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4_2025_PWD_274071_1] Final summary link found. Clicking...
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4_2025_PWD_274069_1] Final summary link found. Clicking...
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274071_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274071_1_20250630_161113_StageSummary.html
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274071_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274071_1_20250630_161113_StageSummary.html --site-key Delhi
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274069_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274069_1_20250630_161113_StageSummary.html
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274069_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274069_1_20250630_161113_StageSummary.html --site-key Delhi
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274071_1 Popup] Successfully processed structured data for ROT_2025_PWD_274071_1_20250630_161113_StageSummary.html.
+16:11:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274069_1 Popup] Successfully processed structured data for ROT_2025_PWD_274069_1_20250630_161113_StageSummary.html.
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4_2025_PWD_274066_1] Final summary link found. Clicking...
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4_2025_PWD_274067_1] Final summary link found. Clicking...
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274067_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274067_1_20250630_161114_StageSummary.html
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274067_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274067_1_20250630_161114_StageSummary.html --site-key Delhi
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274066_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274066_1_20250630_161114_StageSummary.html
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274066_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274066_1_20250630_161114_StageSummary.html --site-key Delhi
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274067_1 Popup] Successfully processed structured data for ROT_2025_PWD_274067_1_20250630_161114_StageSummary.html.
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4_2025_PWD_274059_1] Final summary link found. Clicking...
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274066_1 Popup] Successfully processed structured data for ROT_2025_PWD_274066_1_20250630_161114_StageSummary.html.
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274059_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274059_1_20250630_161114_StageSummary.html
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274059_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274059_1_20250630_161114_StageSummary.html --site-key Delhi
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [ListPage4_2025_PWD_274057_1] Final summary link found. Clicking...
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274059_1 Popup] Successfully processed structured data for ROT_2025_PWD_274059_1_20250630_161114_StageSummary.html.
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274057_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274057_1_20250630_161114_StageSummary.html
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274057_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274057_1_20250630_161114_StageSummary.html --site-key Delhi
+16:11:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274057_1 Popup] Successfully processed structured data for ROT_2025_PWD_274057_1_20250630_161114_StageSummary.html.
+16:11:22 [INFO] (ROTWorker-Delhi Run-372298) --- Processing List Page: 5/10 ---
+16:11:22 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5] Extracting table data...
+16:11:22 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5] Extracted 10 items.
+16:11:22 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5_2025_PWD_274054_1] Final summary link found. Clicking...
+16:11:22 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5_2025_PWD_274053_1] Final summary link found. Clicking...
+16:11:22 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274054_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274054_1_20250630_161122_StageSummary.html
+16:11:22 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274054_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274054_1_20250630_161122_StageSummary.html --site-key Delhi
+16:11:22 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274053_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274053_1_20250630_161122_StageSummary.html
+16:11:22 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274053_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274053_1_20250630_161122_StageSummary.html --site-key Delhi
+16:11:22 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274054_1 Popup] Successfully processed structured data for ROT_2025_PWD_274054_1_20250630_161122_StageSummary.html.
+16:11:22 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274053_1 Popup] Successfully processed structured data for ROT_2025_PWD_274053_1_20250630_161122_StageSummary.html.
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5_2025_PWD_274052_1] Final summary link found. Clicking...
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5_2025_PWD_274051_1] Final summary link found. Clicking...
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274051_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274051_1_20250630_161123_StageSummary.html
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274051_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274051_1_20250630_161123_StageSummary.html --site-key Delhi
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274052_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274052_1_20250630_161123_StageSummary.html
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274052_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274052_1_20250630_161123_StageSummary.html --site-key Delhi
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274051_1 Popup] Successfully processed structured data for ROT_2025_PWD_274051_1_20250630_161123_StageSummary.html.
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274052_1 Popup] Successfully processed structured data for ROT_2025_PWD_274052_1_20250630_161123_StageSummary.html.
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5_2025_PWD_274050_1] Final summary link found. Clicking...
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5_2025_PWD_274048_1] Final summary link found. Clicking...
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274050_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274050_1_20250630_161123_StageSummary.html
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274050_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274050_1_20250630_161123_StageSummary.html --site-key Delhi
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274048_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274048_1_20250630_161123_StageSummary.html
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274048_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274048_1_20250630_161123_StageSummary.html --site-key Delhi
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274050_1 Popup] Successfully processed structured data for ROT_2025_PWD_274050_1_20250630_161123_StageSummary.html.
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274048_1 Popup] Successfully processed structured data for ROT_2025_PWD_274048_1_20250630_161123_StageSummary.html.
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5_2025_PWD_274045_1] Final summary link found. Clicking...
+16:11:23 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5_2025_PWD_274044_1] Final summary link found. Clicking...
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274045_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274045_1_20250630_161124_StageSummary.html
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274045_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274045_1_20250630_161124_StageSummary.html --site-key Delhi
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274044_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274044_1_20250630_161124_StageSummary.html
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274044_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274044_1_20250630_161124_StageSummary.html --site-key Delhi
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274045_1 Popup] Successfully processed structured data for ROT_2025_PWD_274045_1_20250630_161124_StageSummary.html.
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274044_1 Popup] Successfully processed structured data for ROT_2025_PWD_274044_1_20250630_161124_StageSummary.html.
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5_2025_PWD_274036_1] Final summary link found. Clicking...
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [ListPage5_2025_PWD_274043_1] Final summary link found. Clicking...
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274036_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274036_1_20250630_161124_StageSummary.html
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274036_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274036_1_20250630_161124_StageSummary.html --site-key Delhi
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274043_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274043_1_20250630_161124_StageSummary.html
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274043_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274043_1_20250630_161124_StageSummary.html --site-key Delhi
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274036_1 Popup] Successfully processed structured data for ROT_2025_PWD_274036_1_20250630_161124_StageSummary.html.
+16:11:24 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274043_1 Popup] Successfully processed structured data for ROT_2025_PWD_274043_1_20250630_161124_StageSummary.html.
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) --- Processing List Page: 6/10 ---
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6] Extracting table data...
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6] Extracted 10 items.
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6_2025_PWD_274033_1] Final summary link found. Clicking...
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6_2025_PWD_274029_1] Final summary link found. Clicking...
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274029_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274029_1_20250630_161132_StageSummary.html
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274029_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274029_1_20250630_161132_StageSummary.html --site-key Delhi
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274033_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274033_1_20250630_161132_StageSummary.html
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274033_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274033_1_20250630_161132_StageSummary.html --site-key Delhi
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274029_1 Popup] Successfully processed structured data for ROT_2025_PWD_274029_1_20250630_161132_StageSummary.html.
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274033_1 Popup] Successfully processed structured data for ROT_2025_PWD_274033_1_20250630_161132_StageSummary.html.
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6_2025_PWD_274017_1] Final summary link found. Clicking...
+16:11:32 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6_2025_PWD_274019_1] Final summary link found. Clicking...
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274019_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274019_1_20250630_161133_StageSummary.html
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274019_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274019_1_20250630_161133_StageSummary.html --site-key Delhi
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274017_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274017_1_20250630_161133_StageSummary.html
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274017_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274017_1_20250630_161133_StageSummary.html --site-key Delhi
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274019_1 Popup] Successfully processed structured data for ROT_2025_PWD_274019_1_20250630_161133_StageSummary.html.
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274017_1 Popup] Successfully processed structured data for ROT_2025_PWD_274017_1_20250630_161133_StageSummary.html.
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6_2025_PWD_274014_1] Final summary link found. Clicking...
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6_2025_PWD_273994_1] Final summary link found. Clicking...
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274014_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_274014_1_20250630_161133_StageSummary.html
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274014_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_274014_1_20250630_161133_StageSummary.html --site-key Delhi
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273994_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273994_1_20250630_161133_StageSummary.html
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273994_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273994_1_20250630_161133_StageSummary.html --site-key Delhi
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_274014_1 Popup] Successfully processed structured data for ROT_2025_PWD_274014_1_20250630_161133_StageSummary.html.
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273994_1 Popup] Successfully processed structured data for ROT_2025_PWD_273994_1_20250630_161133_StageSummary.html.
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6_2025_PWD_273992_1] Final summary link found. Clicking...
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6_2025_PWD_273986_1] Final summary link found. Clicking...
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273992_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273992_1_20250630_161133_StageSummary.html
+16:11:33 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273992_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273992_1_20250630_161133_StageSummary.html --site-key Delhi
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273986_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273986_1_20250630_161134_StageSummary.html
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273986_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273986_1_20250630_161134_StageSummary.html --site-key Delhi
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273992_1 Popup] Successfully processed structured data for ROT_2025_PWD_273992_1_20250630_161133_StageSummary.html.
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273986_1 Popup] Successfully processed structured data for ROT_2025_PWD_273986_1_20250630_161134_StageSummary.html.
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6_2025_PWD_273984_1] Final summary link found. Clicking...
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [ListPage6_2025_PWD_273979_1] Final summary link found. Clicking...
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273984_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273984_1_20250630_161134_StageSummary.html
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273984_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273984_1_20250630_161134_StageSummary.html --site-key Delhi
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273979_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273979_1_20250630_161134_StageSummary.html
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273979_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273979_1_20250630_161134_StageSummary.html --site-key Delhi
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273984_1 Popup] Successfully processed structured data for ROT_2025_PWD_273984_1_20250630_161134_StageSummary.html.
+16:11:34 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273979_1 Popup] Successfully processed structured data for ROT_2025_PWD_273979_1_20250630_161134_StageSummary.html.
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) --- Processing List Page: 7/10 ---
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7] Extracting table data...
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7] Extracted 10 items.
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7_2025_PWD_273956_1] Final summary link found. Clicking...
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7_2025_PWD_273960_1] Final summary link found. Clicking...
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273956_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273956_1_20250630_161142_StageSummary.html
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273956_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273956_1_20250630_161142_StageSummary.html --site-key Delhi
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273960_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273960_1_20250630_161142_StageSummary.html
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273960_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273960_1_20250630_161142_StageSummary.html --site-key Delhi
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273956_1 Popup] Successfully processed structured data for ROT_2025_PWD_273956_1_20250630_161142_StageSummary.html.
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273960_1 Popup] Successfully processed structured data for ROT_2025_PWD_273960_1_20250630_161142_StageSummary.html.
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7_2025_PWD_273950_1] Final summary link found. Clicking...
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7_2025_PWD_273945_1] Final summary link found. Clicking...
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273950_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273950_1_20250630_161142_StageSummary.html
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273950_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273950_1_20250630_161142_StageSummary.html --site-key Delhi
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273945_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273945_1_20250630_161142_StageSummary.html
+16:11:42 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273945_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273945_1_20250630_161142_StageSummary.html --site-key Delhi
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273950_1 Popup] Successfully processed structured data for ROT_2025_PWD_273950_1_20250630_161142_StageSummary.html.
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273945_1 Popup] Successfully processed structured data for ROT_2025_PWD_273945_1_20250630_161142_StageSummary.html.
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7_2025_PWD_273921_1] Final summary link found. Clicking...
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7_2025_PWD_273923_1] Final summary link found. Clicking...
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273921_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273921_1_20250630_161143_StageSummary.html
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273921_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273921_1_20250630_161143_StageSummary.html --site-key Delhi
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273923_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273923_1_20250630_161143_StageSummary.html
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273923_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273923_1_20250630_161143_StageSummary.html --site-key Delhi
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273921_1 Popup] Successfully processed structured data for ROT_2025_PWD_273921_1_20250630_161143_StageSummary.html.
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273923_1 Popup] Successfully processed structured data for ROT_2025_PWD_273923_1_20250630_161143_StageSummary.html.
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7_2025_PWD_273918_1] Final summary link found. Clicking...
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7_2025_PWD_273917_1] Final summary link found. Clicking...
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273918_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273918_1_20250630_161143_StageSummary.html
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273918_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273918_1_20250630_161143_StageSummary.html --site-key Delhi
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273917_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273917_1_20250630_161143_StageSummary.html
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273917_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273917_1_20250630_161143_StageSummary.html --site-key Delhi
+16:11:43 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273918_1 Popup] Successfully processed structured data for ROT_2025_PWD_273918_1_20250630_161143_StageSummary.html.
+16:11:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273917_1 Popup] Successfully processed structured data for ROT_2025_PWD_273917_1_20250630_161143_StageSummary.html.
+16:11:44 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7_2025_PWD_273894_1] Final summary link found. Clicking...
+16:11:44 [INFO] (ROTWorker-Delhi Run-372298) [ListPage7_2025_PWD_273891_1] Final summary link found. Clicking...
+16:11:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273894_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273894_1_20250630_161144_StageSummary.html
+16:11:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273894_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273894_1_20250630_161144_StageSummary.html --site-key Delhi
+16:11:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273891_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273891_1_20250630_161144_StageSummary.html
+16:11:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273891_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273891_1_20250630_161144_StageSummary.html --site-key Delhi
+16:11:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273894_1 Popup] Successfully processed structured data for ROT_2025_PWD_273894_1_20250630_161144_StageSummary.html.
+16:11:44 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273891_1 Popup] Successfully processed structured data for ROT_2025_PWD_273891_1_20250630_161144_StageSummary.html.
+16:11:51 [INFO] (ROTWorker-Delhi Run-372298) --- Processing List Page: 8/10 ---
+16:11:51 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8] Extracting table data...
+16:11:51 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8] Extracted 10 items.
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8_2025_PWD_273887_1] Final summary link found. Clicking...
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8_2025_PWD_273884_1] Final summary link found. Clicking...
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273887_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273887_1_20250630_161152_StageSummary.html
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273887_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273887_1_20250630_161152_StageSummary.html --site-key Delhi
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273884_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273884_1_20250630_161152_StageSummary.html
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273884_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273884_1_20250630_161152_StageSummary.html --site-key Delhi
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273887_1 Popup] Successfully processed structured data for ROT_2025_PWD_273887_1_20250630_161152_StageSummary.html.
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273884_1 Popup] Successfully processed structured data for ROT_2025_PWD_273884_1_20250630_161152_StageSummary.html.
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8_2025_PWD_273880_1] Final summary link found. Clicking...
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8_2025_PWD_273872_1] Final summary link found. Clicking...
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273872_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273872_1_20250630_161152_StageSummary.html
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273872_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273872_1_20250630_161152_StageSummary.html --site-key Delhi
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273880_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273880_1_20250630_161152_StageSummary.html
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273880_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273880_1_20250630_161152_StageSummary.html --site-key Delhi
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273872_1 Popup] Successfully processed structured data for ROT_2025_PWD_273872_1_20250630_161152_StageSummary.html.
+16:11:52 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273880_1 Popup] Successfully processed structured data for ROT_2025_PWD_273880_1_20250630_161152_StageSummary.html.
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8_2025_PWD_273866_1] Final summary link found. Clicking...
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8_2025_PWD_273868_1] Final summary link found. Clicking...
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273866_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273866_1_20250630_161153_StageSummary.html
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273866_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273866_1_20250630_161153_StageSummary.html --site-key Delhi
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273868_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273868_1_20250630_161153_StageSummary.html
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273868_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273868_1_20250630_161153_StageSummary.html --site-key Delhi
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273866_1 Popup] Successfully processed structured data for ROT_2025_PWD_273866_1_20250630_161153_StageSummary.html.
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273868_1 Popup] Successfully processed structured data for ROT_2025_PWD_273868_1_20250630_161153_StageSummary.html.
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8_2025_PWD_273865_1] Final summary link found. Clicking...
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8_2025_PWD_273864_1] Final summary link found. Clicking...
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273865_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273865_1_20250630_161153_StageSummary.html
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273865_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273865_1_20250630_161153_StageSummary.html --site-key Delhi
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273864_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273864_1_20250630_161153_StageSummary.html
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273864_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273864_1_20250630_161153_StageSummary.html --site-key Delhi
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273865_1 Popup] Successfully processed structured data for ROT_2025_PWD_273865_1_20250630_161153_StageSummary.html.
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273864_1 Popup] Successfully processed structured data for ROT_2025_PWD_273864_1_20250630_161153_StageSummary.html.
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8_2025_PWD_273862_1] Final summary link found. Clicking...
+16:11:53 [INFO] (ROTWorker-Delhi Run-372298) [ListPage8_2025_PWD_273853_1] Final summary link found. Clicking...
+16:11:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273862_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273862_1_20250630_161154_StageSummary.html
+16:11:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273862_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273862_1_20250630_161154_StageSummary.html --site-key Delhi
+16:11:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273853_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273853_1_20250630_161154_StageSummary.html
+16:11:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273853_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273853_1_20250630_161154_StageSummary.html --site-key Delhi
+16:11:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273862_1 Popup] Successfully processed structured data for ROT_2025_PWD_273862_1_20250630_161154_StageSummary.html.
+16:11:54 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273853_1 Popup] Successfully processed structured data for ROT_2025_PWD_273853_1_20250630_161154_StageSummary.html.
+16:12:01 [INFO] (ROTWorker-Delhi Run-372298) --- Processing List Page: 9/10 ---
+16:12:01 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9] Extracting table data...
+16:12:01 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9] Extracted 10 items.
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9_2025_PWD_273838_1] Final summary link found. Clicking...
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9_2025_PWD_273837_1] Final summary link found. Clicking...
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273838_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273838_1_20250630_161202_StageSummary.html
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273838_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273838_1_20250630_161202_StageSummary.html --site-key Delhi
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273837_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273837_1_20250630_161202_StageSummary.html
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273837_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273837_1_20250630_161202_StageSummary.html --site-key Delhi
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273838_1 Popup] Successfully processed structured data for ROT_2025_PWD_273838_1_20250630_161202_StageSummary.html.
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273837_1 Popup] Successfully processed structured data for ROT_2025_PWD_273837_1_20250630_161202_StageSummary.html.
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9_2025_PWD_273835_1] Final summary link found. Clicking...
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9_2025_PWD_273825_1] Final summary link found. Clicking...
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273835_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273835_1_20250630_161202_StageSummary.html
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273835_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273835_1_20250630_161202_StageSummary.html --site-key Delhi
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273825_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273825_1_20250630_161202_StageSummary.html
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273825_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273825_1_20250630_161202_StageSummary.html --site-key Delhi
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273835_1 Popup] Successfully processed structured data for ROT_2025_PWD_273835_1_20250630_161202_StageSummary.html.
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273825_1 Popup] Successfully processed structured data for ROT_2025_PWD_273825_1_20250630_161202_StageSummary.html.
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9_2025_PWD_273819_1] Final summary link found. Clicking...
+16:12:02 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9_2025_PWD_273817_1] Final summary link found. Clicking...
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273819_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273819_1_20250630_161203_StageSummary.html
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273819_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273819_1_20250630_161203_StageSummary.html --site-key Delhi
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273817_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273817_1_20250630_161203_StageSummary.html
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273817_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273817_1_20250630_161203_StageSummary.html --site-key Delhi
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273819_1 Popup] Successfully processed structured data for ROT_2025_PWD_273819_1_20250630_161203_StageSummary.html.
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273817_1 Popup] Successfully processed structured data for ROT_2025_PWD_273817_1_20250630_161203_StageSummary.html.
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9_2025_PWD_273816_1] Final summary link found. Clicking...
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9_2025_PWD_273812_1] Final summary link found. Clicking...
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273816_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273816_1_20250630_161203_StageSummary.html
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273816_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273816_1_20250630_161203_StageSummary.html --site-key Delhi
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273812_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273812_1_20250630_161203_StageSummary.html
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273812_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273812_1_20250630_161203_StageSummary.html --site-key Delhi
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273816_1 Popup] Successfully processed structured data for ROT_2025_PWD_273816_1_20250630_161203_StageSummary.html.
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9_2025_PWD_273809_1] Final summary link found. Clicking...
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273812_1 Popup] Successfully processed structured data for ROT_2025_PWD_273812_1_20250630_161203_StageSummary.html.
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273809_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273809_1_20250630_161203_StageSummary.html
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273809_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273809_1_20250630_161203_StageSummary.html --site-key Delhi
+16:12:03 [INFO] (ROTWorker-Delhi Run-372298) [ListPage9_2025_PWD_273808_1] Final summary link found. Clicking...
+16:12:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273808_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273808_1_20250630_161204_StageSummary.html
+16:12:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273808_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273808_1_20250630_161204_StageSummary.html --site-key Delhi
+16:12:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273809_1 Popup] Successfully processed structured data for ROT_2025_PWD_273809_1_20250630_161203_StageSummary.html.
+16:12:04 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273808_1 Popup] Successfully processed structured data for ROT_2025_PWD_273808_1_20250630_161204_StageSummary.html.
+16:12:11 [INFO] (ROTWorker-Delhi Run-372298) --- Processing List Page: 10/10 ---
+16:12:11 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10] Extracting table data...
+16:12:11 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10] Extracted 10 items.
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10_2025_PWD_273807_1] Final summary link found. Clicking...
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10_2025_PWD_273806_1] Final summary link found. Clicking...
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273807_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273807_1_20250630_161212_StageSummary.html
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273807_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273807_1_20250630_161212_StageSummary.html --site-key Delhi
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273806_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273806_1_20250630_161212_StageSummary.html
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273806_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273806_1_20250630_161212_StageSummary.html --site-key Delhi
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273807_1 Popup] Successfully processed structured data for ROT_2025_PWD_273807_1_20250630_161212_StageSummary.html.
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273806_1 Popup] Successfully processed structured data for ROT_2025_PWD_273806_1_20250630_161212_StageSummary.html.
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10_2025_PWD_273802_1] Final summary link found. Clicking...
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10_2025_PWD_273800_1] Final summary link found. Clicking...
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273802_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273802_1_20250630_161212_StageSummary.html
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273802_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273802_1_20250630_161212_StageSummary.html --site-key Delhi
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273800_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273800_1_20250630_161212_StageSummary.html
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273800_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273800_1_20250630_161212_StageSummary.html --site-key Delhi
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273802_1 Popup] Successfully processed structured data for ROT_2025_PWD_273802_1_20250630_161212_StageSummary.html.
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273800_1 Popup] Successfully processed structured data for ROT_2025_PWD_273800_1_20250630_161212_StageSummary.html.
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10_2025_PWD_273794_1] Final summary link found. Clicking...
+16:12:12 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10_2025_PWD_273792_1] Final summary link found. Clicking...
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273794_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273794_1_20250630_161213_StageSummary.html
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273794_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273794_1_20250630_161213_StageSummary.html --site-key Delhi
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273792_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273792_1_20250630_161213_StageSummary.html
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273792_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273792_1_20250630_161213_StageSummary.html --site-key Delhi
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273794_1 Popup] Successfully processed structured data for ROT_2025_PWD_273794_1_20250630_161213_StageSummary.html.
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273792_1 Popup] Successfully processed structured data for ROT_2025_PWD_273792_1_20250630_161213_StageSummary.html.
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10_2025_PWD_273748_1] Final summary link found. Clicking...
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10_2025_PWD_273747_1] Final summary link found. Clicking...
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273748_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273748_1_20250630_161213_StageSummary.html
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273748_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273748_1_20250630_161213_StageSummary.html --site-key Delhi
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273747_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273747_1_20250630_161213_StageSummary.html
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273747_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273747_1_20250630_161213_StageSummary.html --site-key Delhi
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273748_1 Popup] Successfully processed structured data for ROT_2025_PWD_273748_1_20250630_161213_StageSummary.html.
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273747_1 Popup] Successfully processed structured data for ROT_2025_PWD_273747_1_20250630_161213_StageSummary.html.
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10_2025_PWD_273732_1] Final summary link found. Clicking...
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [ListPage10_2025_PWD_273731_1] Final summary link found. Clicking...
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273732_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273732_1_20250630_161213_StageSummary.html
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273732_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273732_1_20250630_161213_StageSummary.html --site-key Delhi
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273731_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_PWD_273731_1_20250630_161213_StageSummary.html
+16:12:13 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273731_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Delhi/ROT_2025_PWD_273731_1_20250630_161213_StageSummary.html --site-key Delhi
+16:12:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273732_1 Popup] Successfully processed structured data for ROT_2025_PWD_273732_1_20250630_161213_StageSummary.html.
+16:12:14 [INFO] (ROTWorker-Delhi Run-372298) [2025_PWD_273731_1 Popup] Successfully processed structured data for ROT_2025_PWD_273731_1_20250630_161213_StageSummary.html.
+16:12:21 [INFO] (ROTWorker-Delhi Run-372298) Playwright resources closed.
+16:12:21 [INFO] (ROTWorker-Delhi Run-372298) Worker for Delhi terminated with status: FINISHED_SUCCESS

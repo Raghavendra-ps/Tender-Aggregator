@@ -1,0 +1,445 @@
+15:24:20 [INFO] (ROTWorker-Kerala Run-041866) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Kerala/worker_rot_worker_Kerala_20250630152420041866_2025-06-30.log
+15:24:20 [INFO] (ROTWorker-Kerala Run-041866) --- Starting Headless ROT Worker for Site: Kerala, Run ID: rot_worker_Kerala_20250630152420041866 ---
+15:24:20 [INFO] (ROTWorker-Kerala Run-041866) --- Dates: From=None, To=None ---
+15:24:20 [INFO] (ROTWorker-Kerala Run-041866) Worker status updated to: WORKER_STARTED
+15:24:20 [INFO] (ROTWorker-Kerala Run-041866) Worker status updated to: FETCHING_CAPTCHA
+15:24:20 [INFO] (ROTWorker-Kerala Run-041866) Selecting tender status '5'.
+15:24:24 [INFO] (ROTWorker-Kerala Run-041866) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Kerala_20250630152420041866/captcha.b64
+15:24:24 [INFO] (ROTWorker-Kerala Run-041866) Worker status updated to: WAITING_CAPTCHA
+15:24:24 [INFO] (ROTWorker-Kerala Run-041866) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Kerala_20250630152420041866/answer.txt (max 300s)...
+15:24:30 [INFO] (ROTWorker-Kerala Run-041866) CAPTCHA solution received.
+15:24:30 [INFO] (ROTWorker-Kerala Run-041866) Worker status updated to: PROCESSING_WITH_CAPTCHA
+15:24:30 [INFO] (ROTWorker-Kerala Run-041866) Worker status updated to: SCRAPING_RESULTS
+15:24:30 [INFO] (ROTWorker-Kerala Run-041866) --- Processing List Page: 1/10 ---
+15:24:30 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1] Extracting table data...
+15:24:30 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1] Extracted 10 items.
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1_2025_VFPCK_766473_1] Final summary link found. Clicking...
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1_2025_VMHS_725005_1] Final summary link found. Clicking...
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_VFPCK_766473_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_VFPCK_766473_1_20250630_152431_StageSummary.html
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_VFPCK_766473_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_VFPCK_766473_1_20250630_152431_StageSummary.html --site-key Kerala
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_VMHS_725005_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_VMHS_725005_1_20250630_152431_StageSummary.html
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_VMHS_725005_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_VMHS_725005_1_20250630_152431_StageSummary.html --site-key Kerala
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_VFPCK_766473_1 Popup] Successfully processed structured data for ROT_2025_VFPCK_766473_1_20250630_152431_StageSummary.html.
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_VMHS_725005_1 Popup] Successfully processed structured data for ROT_2025_VMHS_725005_1_20250630_152431_StageSummary.html.
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1_2025_VFPCK_721956_1] Final summary link found. Clicking...
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1_2025_UoC_766378_1] Final summary link found. Clicking...
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_VFPCK_721956_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_VFPCK_721956_1_20250630_152431_StageSummary.html
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_VFPCK_721956_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_VFPCK_721956_1_20250630_152431_StageSummary.html --site-key Kerala
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_766378_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_766378_1_20250630_152431_StageSummary.html
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_766378_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_766378_1_20250630_152431_StageSummary.html --site-key Kerala
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_VFPCK_721956_1 Popup] Successfully processed structured data for ROT_2025_VFPCK_721956_1_20250630_152431_StageSummary.html.
+15:24:31 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_766378_1 Popup] Successfully processed structured data for ROT_2025_UoC_766378_1_20250630_152431_StageSummary.html.
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1_2025_UoC_765561_1] Final summary link found. Clicking...
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1_2025_UoC_764675_1] Final summary link found. Clicking...
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_764675_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_764675_1_20250630_152432_StageSummary.html
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_764675_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_764675_1_20250630_152432_StageSummary.html --site-key Kerala
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_765561_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_765561_1_20250630_152432_StageSummary.html
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_765561_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_765561_1_20250630_152432_StageSummary.html --site-key Kerala
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_764675_1 Popup] Successfully processed structured data for ROT_2025_UoC_764675_1_20250630_152432_StageSummary.html.
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_765561_1 Popup] Successfully processed structured data for ROT_2025_UoC_765561_1_20250630_152432_StageSummary.html.
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1_2025_UoC_763739_1] Final summary link found. Clicking...
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1_2025_UoC_763738_1] Final summary link found. Clicking...
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_763739_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_763739_1_20250630_152432_StageSummary.html
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_763739_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_763739_1_20250630_152432_StageSummary.html --site-key Kerala
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_763738_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_763738_1_20250630_152432_StageSummary.html
+15:24:32 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_763738_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_763738_1_20250630_152432_StageSummary.html --site-key Kerala
+15:24:33 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_763739_1 Popup] Successfully processed structured data for ROT_2025_UoC_763739_1_20250630_152432_StageSummary.html.
+15:24:33 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_763738_1 Popup] Successfully processed structured data for ROT_2025_UoC_763738_1_20250630_152432_StageSummary.html.
+15:24:33 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1_2025_UoC_763236_1] Final summary link found. Clicking...
+15:24:33 [INFO] (ROTWorker-Kerala Run-041866) [ListPage1_2025_UoC_762665_1] Final summary link found. Clicking...
+15:24:33 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_763236_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_763236_1_20250630_152433_StageSummary.html
+15:24:33 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_763236_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_763236_1_20250630_152433_StageSummary.html --site-key Kerala
+15:24:33 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762665_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_762665_1_20250630_152433_StageSummary.html
+15:24:33 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762665_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_762665_1_20250630_152433_StageSummary.html --site-key Kerala
+15:24:33 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_763236_1 Popup] Successfully processed structured data for ROT_2025_UoC_763236_1_20250630_152433_StageSummary.html.
+15:24:33 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762665_1 Popup] Successfully processed structured data for ROT_2025_UoC_762665_1_20250630_152433_StageSummary.html.
+15:24:41 [INFO] (ROTWorker-Kerala Run-041866) --- Processing List Page: 2/10 ---
+15:24:41 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2] Extracting table data...
+15:24:41 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2] Extracted 10 items.
+15:24:41 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2_2025_UoC_762444_1] Final summary link found. Clicking...
+15:24:41 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2_2025_UoC_762417_1] Final summary link found. Clicking...
+15:24:41 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762444_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_762444_1_20250630_152441_StageSummary.html
+15:24:41 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762444_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_762444_1_20250630_152441_StageSummary.html --site-key Kerala
+15:24:41 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762417_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_762417_1_20250630_152441_StageSummary.html
+15:24:41 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762417_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_762417_1_20250630_152441_StageSummary.html --site-key Kerala
+15:24:41 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762444_1 Popup] Successfully processed structured data for ROT_2025_UoC_762444_1_20250630_152441_StageSummary.html.
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762417_1 Popup] Successfully processed structured data for ROT_2025_UoC_762417_1_20250630_152441_StageSummary.html.
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2_2025_UoC_762365_1] Final summary link found. Clicking...
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2_2025_UoC_762357_1] Final summary link found. Clicking...
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762365_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_762365_1_20250630_152442_StageSummary.html
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762365_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_762365_1_20250630_152442_StageSummary.html --site-key Kerala
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762357_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_762357_1_20250630_152442_StageSummary.html
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762357_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_762357_1_20250630_152442_StageSummary.html --site-key Kerala
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762365_1 Popup] Successfully processed structured data for ROT_2025_UoC_762365_1_20250630_152442_StageSummary.html.
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762357_1 Popup] Successfully processed structured data for ROT_2025_UoC_762357_1_20250630_152442_StageSummary.html.
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2_2025_UoC_762233_1] Final summary link found. Clicking...
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2_2025_UoC_762213_1] Final summary link found. Clicking...
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762233_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_762233_1_20250630_152442_StageSummary.html
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762233_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_762233_1_20250630_152442_StageSummary.html --site-key Kerala
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762213_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_762213_1_20250630_152442_StageSummary.html
+15:24:42 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762213_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_762213_1_20250630_152442_StageSummary.html --site-key Kerala
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762233_1 Popup] Successfully processed structured data for ROT_2025_UoC_762233_1_20250630_152442_StageSummary.html.
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762213_1 Popup] Successfully processed structured data for ROT_2025_UoC_762213_1_20250630_152442_StageSummary.html.
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2_2025_UoC_762018_1] Final summary link found. Clicking...
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2_2025_UoC_761991_1] Final summary link found. Clicking...
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762018_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_762018_1_20250630_152443_StageSummary.html
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762018_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_762018_1_20250630_152443_StageSummary.html --site-key Kerala
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761991_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_761991_1_20250630_152443_StageSummary.html
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761991_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_761991_1_20250630_152443_StageSummary.html --site-key Kerala
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_762018_1 Popup] Successfully processed structured data for ROT_2025_UoC_762018_1_20250630_152443_StageSummary.html.
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761991_1 Popup] Successfully processed structured data for ROT_2025_UoC_761991_1_20250630_152443_StageSummary.html.
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2_2025_UoC_761904_1] Final summary link found. Clicking...
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761904_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_761904_1_20250630_152443_StageSummary.html
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761904_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_761904_1_20250630_152443_StageSummary.html --site-key Kerala
+15:24:43 [INFO] (ROTWorker-Kerala Run-041866) [ListPage2_2025_UoC_761674_1] Final summary link found. Clicking...
+15:24:44 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761904_1 Popup] Successfully processed structured data for ROT_2025_UoC_761904_1_20250630_152443_StageSummary.html.
+15:24:44 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761674_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_761674_1_20250630_152444_StageSummary.html
+15:24:44 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761674_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_761674_1_20250630_152444_StageSummary.html --site-key Kerala
+15:24:44 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761674_1 Popup] Successfully processed structured data for ROT_2025_UoC_761674_1_20250630_152444_StageSummary.html.
+15:24:51 [INFO] (ROTWorker-Kerala Run-041866) --- Processing List Page: 3/10 ---
+15:24:51 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3] Extracting table data...
+15:24:51 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3] Extracted 10 items.
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3_2025_UoC_760721_1] Final summary link found. Clicking...
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3_2025_UoC_761464_1] Final summary link found. Clicking...
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_760721_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_760721_1_20250630_152452_StageSummary.html
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_760721_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_760721_1_20250630_152452_StageSummary.html --site-key Kerala
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761464_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_761464_1_20250630_152452_StageSummary.html
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761464_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_761464_1_20250630_152452_StageSummary.html --site-key Kerala
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_760721_1 Popup] Successfully processed structured data for ROT_2025_UoC_760721_1_20250630_152452_StageSummary.html.
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_761464_1 Popup] Successfully processed structured data for ROT_2025_UoC_761464_1_20250630_152452_StageSummary.html.
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3_2025_UoC_760489_1] Final summary link found. Clicking...
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3_2025_UoC_744993_1] Final summary link found. Clicking...
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_760489_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_760489_1_20250630_152452_StageSummary.html
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_760489_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_760489_1_20250630_152452_StageSummary.html --site-key Kerala
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_744993_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_744993_1_20250630_152452_StageSummary.html
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_744993_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_744993_1_20250630_152452_StageSummary.html --site-key Kerala
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_760489_1 Popup] Successfully processed structured data for ROT_2025_UoC_760489_1_20250630_152452_StageSummary.html.
+15:24:52 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_744993_1 Popup] Successfully processed structured data for ROT_2025_UoC_744993_1_20250630_152452_StageSummary.html.
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3_2025_UoC_735175_1] Final summary link found. Clicking...
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3_2025_UoC_744985_1] Final summary link found. Clicking...
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_744985_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_744985_1_20250630_152453_StageSummary.html
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_744985_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_744985_1_20250630_152453_StageSummary.html --site-key Kerala
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_735175_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_735175_1_20250630_152453_StageSummary.html
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_735175_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_735175_1_20250630_152453_StageSummary.html --site-key Kerala
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_744985_1 Popup] Successfully processed structured data for ROT_2025_UoC_744985_1_20250630_152453_StageSummary.html.
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_735175_1 Popup] Successfully processed structured data for ROT_2025_UoC_735175_1_20250630_152453_StageSummary.html.
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3_2025_UoC_725481_1] Final summary link found. Clicking...
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3_2025_UAD_749696_1] Final summary link found. Clicking...
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_725481_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UoC_725481_1_20250630_152453_StageSummary.html
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_725481_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UoC_725481_1_20250630_152453_StageSummary.html --site-key Kerala
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_749696_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UAD_749696_1_20250630_152453_StageSummary.html
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_749696_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UAD_749696_1_20250630_152453_StageSummary.html --site-key Kerala
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UoC_725481_1 Popup] Successfully processed structured data for ROT_2025_UoC_725481_1_20250630_152453_StageSummary.html.
+15:24:53 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_749696_1 Popup] Successfully processed structured data for ROT_2025_UAD_749696_1_20250630_152453_StageSummary.html.
+15:24:54 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3_2025_UAD_748886_1] Final summary link found. Clicking...
+15:24:54 [INFO] (ROTWorker-Kerala Run-041866) [ListPage3_2025_UAD_748305_1] Final summary link found. Clicking...
+15:24:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_748886_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UAD_748886_1_20250630_152454_StageSummary.html
+15:24:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_748886_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UAD_748886_1_20250630_152454_StageSummary.html --site-key Kerala
+15:24:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_748305_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UAD_748305_1_20250630_152454_StageSummary.html
+15:24:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_748305_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UAD_748305_1_20250630_152454_StageSummary.html --site-key Kerala
+15:24:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_748886_1 Popup] Successfully processed structured data for ROT_2025_UAD_748886_1_20250630_152454_StageSummary.html.
+15:24:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_748305_1 Popup] Successfully processed structured data for ROT_2025_UAD_748305_1_20250630_152454_StageSummary.html.
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) --- Processing List Page: 4/10 ---
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4] Extracting table data...
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4] Extracted 10 items.
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4_2025_UAD_743373_1] Final summary link found. Clicking...
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4_2025_UAD_731119_1] Final summary link found. Clicking...
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_743373_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UAD_743373_1_20250630_152502_StageSummary.html
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_743373_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UAD_743373_1_20250630_152502_StageSummary.html --site-key Kerala
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_731119_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UAD_731119_1_20250630_152502_StageSummary.html
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_731119_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UAD_731119_1_20250630_152502_StageSummary.html --site-key Kerala
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_743373_1 Popup] Successfully processed structured data for ROT_2025_UAD_743373_1_20250630_152502_StageSummary.html.
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_731119_1 Popup] Successfully processed structured data for ROT_2025_UAD_731119_1_20250630_152502_StageSummary.html.
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4_2025_UAD_730922_1] Final summary link found. Clicking...
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4_2025_UAD_730668_2] Final summary link found. Clicking...
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730922_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UAD_730922_1_20250630_152502_StageSummary.html
+15:25:02 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730922_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UAD_730922_1_20250630_152502_StageSummary.html --site-key Kerala
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730668_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UAD_730668_2_20250630_152503_StageSummary.html
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730668_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UAD_730668_2_20250630_152503_StageSummary.html --site-key Kerala
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730922_1 Popup] Successfully processed structured data for ROT_2025_UAD_730922_1_20250630_152502_StageSummary.html.
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730668_2 Popup] Successfully processed structured data for ROT_2025_UAD_730668_2_20250630_152503_StageSummary.html.
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4_2025_UAD_730382_2] Final summary link found. Clicking...
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4_2025_UAD_730216_1] Final summary link found. Clicking...
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730382_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UAD_730382_2_20250630_152503_StageSummary.html
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730382_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UAD_730382_2_20250630_152503_StageSummary.html --site-key Kerala
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730216_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UAD_730216_1_20250630_152503_StageSummary.html
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730216_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UAD_730216_1_20250630_152503_StageSummary.html --site-key Kerala
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730382_2 Popup] Successfully processed structured data for ROT_2025_UAD_730382_2_20250630_152503_StageSummary.html.
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_730216_1 Popup] Successfully processed structured data for ROT_2025_UAD_730216_1_20250630_152503_StageSummary.html.
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4_2025_UAD_726181_2] Final summary link found. Clicking...
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4_2025_TOUR_734401_1] Final summary link found. Clicking...
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_726181_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UAD_726181_2_20250630_152503_StageSummary.html
+15:25:03 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_726181_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_UAD_726181_2_20250630_152503_StageSummary.html --site-key Kerala
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TOUR_734401_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TOUR_734401_1_20250630_152504_StageSummary.html
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TOUR_734401_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TOUR_734401_1_20250630_152504_StageSummary.html --site-key Kerala
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_UAD_726181_2 Popup] Successfully processed structured data for ROT_2025_UAD_726181_2_20250630_152503_StageSummary.html.
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TOUR_734401_1 Popup] Successfully processed structured data for ROT_2025_TOUR_734401_1_20250630_152504_StageSummary.html.
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4_2025_TKCL_727179_1] Final summary link found. Clicking...
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [ListPage4_2025_TDB_770670_1] Final summary link found. Clicking...
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TKCL_727179_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TKCL_727179_1_20250630_152504_StageSummary.html
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TKCL_727179_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TKCL_727179_1_20250630_152504_StageSummary.html --site-key Kerala
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770670_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_770670_1_20250630_152504_StageSummary.html
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770670_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_770670_1_20250630_152504_StageSummary.html --site-key Kerala
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TKCL_727179_1 Popup] Successfully processed structured data for ROT_2025_TKCL_727179_1_20250630_152504_StageSummary.html.
+15:25:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770670_1 Popup] Successfully processed structured data for ROT_2025_TDB_770670_1_20250630_152504_StageSummary.html.
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) --- Processing List Page: 5/10 ---
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5] Extracting table data...
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5] Extracted 10 items.
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5_2025_TDB_770354_1] Final summary link found. Clicking...
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5_2025_TDB_770360_1] Final summary link found. Clicking...
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770354_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_770354_1_20250630_152512_StageSummary.html
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770354_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_770354_1_20250630_152512_StageSummary.html --site-key Kerala
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770360_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_770360_1_20250630_152512_StageSummary.html
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770360_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_770360_1_20250630_152512_StageSummary.html --site-key Kerala
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770354_1 Popup] Successfully processed structured data for ROT_2025_TDB_770354_1_20250630_152512_StageSummary.html.
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770360_1 Popup] Successfully processed structured data for ROT_2025_TDB_770360_1_20250630_152512_StageSummary.html.
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5_2025_TDB_770349_1] Final summary link found. Clicking...
+15:25:12 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5_2025_TDB_770345_1] Final summary link found. Clicking...
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770349_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_770349_1_20250630_152513_StageSummary.html
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770349_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_770349_1_20250630_152513_StageSummary.html --site-key Kerala
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770345_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_770345_1_20250630_152513_StageSummary.html
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770345_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_770345_1_20250630_152513_StageSummary.html --site-key Kerala
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770349_1 Popup] Successfully processed structured data for ROT_2025_TDB_770349_1_20250630_152513_StageSummary.html.
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_770345_1 Popup] Successfully processed structured data for ROT_2025_TDB_770345_1_20250630_152513_StageSummary.html.
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5_2025_TDB_768146_2] Final summary link found. Clicking...
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5_2025_TDB_768141_2] Final summary link found. Clicking...
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768146_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_768146_2_20250630_152513_StageSummary.html
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768146_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_768146_2_20250630_152513_StageSummary.html --site-key Kerala
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768141_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_768141_2_20250630_152513_StageSummary.html
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768141_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_768141_2_20250630_152513_StageSummary.html --site-key Kerala
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768146_2 Popup] Successfully processed structured data for ROT_2025_TDB_768146_2_20250630_152513_StageSummary.html.
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768141_2 Popup] Successfully processed structured data for ROT_2025_TDB_768141_2_20250630_152513_StageSummary.html.
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5_2025_TDB_768135_2] Final summary link found. Clicking...
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5_2025_TDB_768102_1] Final summary link found. Clicking...
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768135_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_768135_2_20250630_152513_StageSummary.html
+15:25:13 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768135_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_768135_2_20250630_152513_StageSummary.html --site-key Kerala
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768102_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_768102_1_20250630_152514_StageSummary.html
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768102_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_768102_1_20250630_152514_StageSummary.html --site-key Kerala
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768135_2 Popup] Successfully processed structured data for ROT_2025_TDB_768135_2_20250630_152513_StageSummary.html.
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768102_1 Popup] Successfully processed structured data for ROT_2025_TDB_768102_1_20250630_152514_StageSummary.html.
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5_2025_TDB_768078_1] Final summary link found. Clicking...
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [ListPage5_2025_TDB_768093_1] Final summary link found. Clicking...
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768078_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_768078_1_20250630_152514_StageSummary.html
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768078_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_768078_1_20250630_152514_StageSummary.html --site-key Kerala
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768093_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_768093_1_20250630_152514_StageSummary.html
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768093_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_768093_1_20250630_152514_StageSummary.html --site-key Kerala
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768078_1 Popup] Successfully processed structured data for ROT_2025_TDB_768078_1_20250630_152514_StageSummary.html.
+15:25:14 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768093_1 Popup] Successfully processed structured data for ROT_2025_TDB_768093_1_20250630_152514_StageSummary.html.
+15:25:22 [INFO] (ROTWorker-Kerala Run-041866) --- Processing List Page: 6/10 ---
+15:25:22 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6] Extracting table data...
+15:25:22 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6] Extracted 10 items.
+15:25:24 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6_2025_TDB_767178_2] Final summary link found. Clicking...
+15:25:24 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6_2025_TDB_768054_1] Final summary link found. Clicking...
+15:25:24 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767178_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_767178_2_20250630_152524_StageSummary.html
+15:25:24 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767178_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_767178_2_20250630_152524_StageSummary.html --site-key Kerala
+15:25:24 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768054_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_768054_1_20250630_152524_StageSummary.html
+15:25:24 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768054_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_768054_1_20250630_152524_StageSummary.html --site-key Kerala
+15:25:24 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767178_2 Popup] Successfully processed structured data for ROT_2025_TDB_767178_2_20250630_152524_StageSummary.html.
+15:25:24 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_768054_1 Popup] Successfully processed structured data for ROT_2025_TDB_768054_1_20250630_152524_StageSummary.html.
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6_2025_TDB_767035_2] Final summary link found. Clicking...
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6_2025_TDB_767074_1] Final summary link found. Clicking...
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767035_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_767035_2_20250630_152525_StageSummary.html
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767035_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_767035_2_20250630_152525_StageSummary.html --site-key Kerala
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767074_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_767074_1_20250630_152525_StageSummary.html
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767074_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_767074_1_20250630_152525_StageSummary.html --site-key Kerala
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767035_2 Popup] Successfully processed structured data for ROT_2025_TDB_767035_2_20250630_152525_StageSummary.html.
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767074_1 Popup] Successfully processed structured data for ROT_2025_TDB_767074_1_20250630_152525_StageSummary.html.
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6_2025_TDB_767033_1] Final summary link found. Clicking...
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6_2025_TDB_767015_1] Final summary link found. Clicking...
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767033_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_767033_1_20250630_152525_StageSummary.html
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767033_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_767033_1_20250630_152525_StageSummary.html --site-key Kerala
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767015_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_767015_1_20250630_152525_StageSummary.html
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767015_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_767015_1_20250630_152525_StageSummary.html --site-key Kerala
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767033_1 Popup] Successfully processed structured data for ROT_2025_TDB_767033_1_20250630_152525_StageSummary.html.
+15:25:25 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767015_1 Popup] Successfully processed structured data for ROT_2025_TDB_767015_1_20250630_152525_StageSummary.html.
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6_2025_TDB_767009_1] Final summary link found. Clicking...
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6_2025_TDB_767000_1] Final summary link found. Clicking...
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767009_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_767009_1_20250630_152526_StageSummary.html
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767009_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_767009_1_20250630_152526_StageSummary.html --site-key Kerala
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767000_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_767000_1_20250630_152526_StageSummary.html
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767000_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_767000_1_20250630_152526_StageSummary.html --site-key Kerala
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767009_1 Popup] Successfully processed structured data for ROT_2025_TDB_767009_1_20250630_152526_StageSummary.html.
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_767000_1 Popup] Successfully processed structured data for ROT_2025_TDB_767000_1_20250630_152526_StageSummary.html.
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6_2025_TDB_766999_1] Final summary link found. Clicking...
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [ListPage6_2025_TDB_763586_2] Final summary link found. Clicking...
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_766999_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_766999_1_20250630_152526_StageSummary.html
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_766999_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_766999_1_20250630_152526_StageSummary.html --site-key Kerala
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763586_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_763586_2_20250630_152526_StageSummary.html
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763586_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_763586_2_20250630_152526_StageSummary.html --site-key Kerala
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_766999_1 Popup] Successfully processed structured data for ROT_2025_TDB_766999_1_20250630_152526_StageSummary.html.
+15:25:26 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763586_2 Popup] Successfully processed structured data for ROT_2025_TDB_763586_2_20250630_152526_StageSummary.html.
+15:25:34 [INFO] (ROTWorker-Kerala Run-041866) --- Processing List Page: 7/10 ---
+15:25:34 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7] Extracting table data...
+15:25:34 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7] Extracted 10 items.
+15:25:34 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7_2025_TDB_763554_2] Final summary link found. Clicking...
+15:25:34 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763554_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_763554_2_20250630_152534_StageSummary.html
+15:25:34 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763554_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_763554_2_20250630_152534_StageSummary.html --site-key Kerala
+15:25:34 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7_2025_TDB_763580_2] Final summary link found. Clicking...
+15:25:34 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763580_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_763580_2_20250630_152534_StageSummary.html
+15:25:34 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763580_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_763580_2_20250630_152534_StageSummary.html --site-key Kerala
+15:25:34 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763554_2 Popup] Successfully processed structured data for ROT_2025_TDB_763554_2_20250630_152534_StageSummary.html.
+15:25:34 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763580_2 Popup] Successfully processed structured data for ROT_2025_TDB_763580_2_20250630_152534_StageSummary.html.
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7_2025_TDB_763545_2] Final summary link found. Clicking...
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7_2025_TDB_763519_2] Final summary link found. Clicking...
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763545_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_763545_2_20250630_152535_StageSummary.html
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763545_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_763545_2_20250630_152535_StageSummary.html --site-key Kerala
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763519_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_763519_2_20250630_152535_StageSummary.html
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763519_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_763519_2_20250630_152535_StageSummary.html --site-key Kerala
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763545_2 Popup] Successfully processed structured data for ROT_2025_TDB_763545_2_20250630_152535_StageSummary.html.
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763519_2 Popup] Successfully processed structured data for ROT_2025_TDB_763519_2_20250630_152535_StageSummary.html.
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7_2025_TDB_763507_2] Final summary link found. Clicking...
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7_2025_TDB_763503_2] Final summary link found. Clicking...
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763507_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_763507_2_20250630_152535_StageSummary.html
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763507_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_763507_2_20250630_152535_StageSummary.html --site-key Kerala
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763503_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_763503_2_20250630_152535_StageSummary.html
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763503_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_763503_2_20250630_152535_StageSummary.html --site-key Kerala
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763507_2 Popup] Successfully processed structured data for ROT_2025_TDB_763507_2_20250630_152535_StageSummary.html.
+15:25:35 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763503_2 Popup] Successfully processed structured data for ROT_2025_TDB_763503_2_20250630_152535_StageSummary.html.
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7_2025_TDB_763468_2] Final summary link found. Clicking...
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7_2025_TDB_763442_2] Final summary link found. Clicking...
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763468_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_763468_2_20250630_152536_StageSummary.html
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763468_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_763468_2_20250630_152536_StageSummary.html --site-key Kerala
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763442_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_763442_2_20250630_152536_StageSummary.html
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763442_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_763442_2_20250630_152536_StageSummary.html --site-key Kerala
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763468_2 Popup] Successfully processed structured data for ROT_2025_TDB_763468_2_20250630_152536_StageSummary.html.
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763442_2 Popup] Successfully processed structured data for ROT_2025_TDB_763442_2_20250630_152536_StageSummary.html.
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7_2025_TDB_763427_1] Final summary link found. Clicking...
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [ListPage7_2025_TDB_762452_1] Final summary link found. Clicking...
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763427_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_763427_1_20250630_152536_StageSummary.html
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763427_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_763427_1_20250630_152536_StageSummary.html --site-key Kerala
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_762452_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_762452_1_20250630_152536_StageSummary.html
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_762452_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_762452_1_20250630_152536_StageSummary.html --site-key Kerala
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_763427_1 Popup] Successfully processed structured data for ROT_2025_TDB_763427_1_20250630_152536_StageSummary.html.
+15:25:36 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_762452_1 Popup] Successfully processed structured data for ROT_2025_TDB_762452_1_20250630_152536_StageSummary.html.
+15:25:44 [INFO] (ROTWorker-Kerala Run-041866) --- Processing List Page: 8/10 ---
+15:25:44 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8] Extracting table data...
+15:25:44 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8] Extracted 10 items.
+15:25:44 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8_2025_TDB_758322_2] Final summary link found. Clicking...
+15:25:44 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8_2025_TDB_758323_2] Final summary link found. Clicking...
+15:25:44 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758322_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_758322_2_20250630_152544_StageSummary.html
+15:25:44 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758322_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_758322_2_20250630_152544_StageSummary.html --site-key Kerala
+15:25:44 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758323_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_758323_2_20250630_152544_StageSummary.html
+15:25:44 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758323_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_758323_2_20250630_152544_StageSummary.html --site-key Kerala
+15:25:44 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758322_2 Popup] Successfully processed structured data for ROT_2025_TDB_758322_2_20250630_152544_StageSummary.html.
+15:25:44 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758323_2 Popup] Successfully processed structured data for ROT_2025_TDB_758323_2_20250630_152544_StageSummary.html.
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8_2025_TDB_758312_1] Final summary link found. Clicking...
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8_2025_TDB_758306_1] Final summary link found. Clicking...
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758312_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_758312_1_20250630_152545_StageSummary.html
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758312_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_758312_1_20250630_152545_StageSummary.html --site-key Kerala
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758306_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_758306_1_20250630_152545_StageSummary.html
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758306_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_758306_1_20250630_152545_StageSummary.html --site-key Kerala
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758312_1 Popup] Successfully processed structured data for ROT_2025_TDB_758312_1_20250630_152545_StageSummary.html.
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_758306_1 Popup] Successfully processed structured data for ROT_2025_TDB_758306_1_20250630_152545_StageSummary.html.
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8_2025_TDB_756297_1] Final summary link found. Clicking...
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_756297_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_756297_1_20250630_152545_StageSummary.html
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_756297_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_756297_1_20250630_152545_StageSummary.html --site-key Kerala
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8_2025_TDB_756310_1] Final summary link found. Clicking...
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_756310_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_756310_1_20250630_152545_StageSummary.html
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_756310_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_756310_1_20250630_152545_StageSummary.html --site-key Kerala
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_756297_1 Popup] Successfully processed structured data for ROT_2025_TDB_756297_1_20250630_152545_StageSummary.html.
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_756310_1 Popup] Successfully processed structured data for ROT_2025_TDB_756310_1_20250630_152545_StageSummary.html.
+15:25:45 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8_2025_TDB_756247_1] Final summary link found. Clicking...
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_756247_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_756247_1_20250630_152546_StageSummary.html
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_756247_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_756247_1_20250630_152546_StageSummary.html --site-key Kerala
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8_2025_TDB_753545_2] Final summary link found. Clicking...
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_753545_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_753545_2_20250630_152546_StageSummary.html
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_753545_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_753545_2_20250630_152546_StageSummary.html --site-key Kerala
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_756247_1 Popup] Successfully processed structured data for ROT_2025_TDB_756247_1_20250630_152546_StageSummary.html.
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_753545_2 Popup] Successfully processed structured data for ROT_2025_TDB_753545_2_20250630_152546_StageSummary.html.
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8_2025_TDB_748742_2] Final summary link found. Clicking...
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [ListPage8_2025_TDB_748738_2] Final summary link found. Clicking...
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_748742_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_748742_2_20250630_152546_StageSummary.html
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_748742_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_748742_2_20250630_152546_StageSummary.html --site-key Kerala
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_748738_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_748738_2_20250630_152546_StageSummary.html
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_748738_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_748738_2_20250630_152546_StageSummary.html --site-key Kerala
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_748742_2 Popup] Successfully processed structured data for ROT_2025_TDB_748742_2_20250630_152546_StageSummary.html.
+15:25:46 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_748738_2 Popup] Successfully processed structured data for ROT_2025_TDB_748738_2_20250630_152546_StageSummary.html.
+15:25:54 [INFO] (ROTWorker-Kerala Run-041866) --- Processing List Page: 9/10 ---
+15:25:54 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9] Extracting table data...
+15:25:54 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9] Extracted 10 items.
+15:25:54 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9_2025_TDB_746963_1] Final summary link found. Clicking...
+15:25:54 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9_2025_TDB_745342_1] Final summary link found. Clicking...
+15:25:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_746963_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_746963_1_20250630_152554_StageSummary.html
+15:25:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_746963_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_746963_1_20250630_152554_StageSummary.html --site-key Kerala
+15:25:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_745342_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_745342_1_20250630_152554_StageSummary.html
+15:25:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_745342_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_745342_1_20250630_152554_StageSummary.html --site-key Kerala
+15:25:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_746963_1 Popup] Successfully processed structured data for ROT_2025_TDB_746963_1_20250630_152554_StageSummary.html.
+15:25:54 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_745342_1 Popup] Successfully processed structured data for ROT_2025_TDB_745342_1_20250630_152554_StageSummary.html.
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9_2025_TDB_745328_1] Final summary link found. Clicking...
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9_2025_TDB_743671_2] Final summary link found. Clicking...
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_745328_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_745328_1_20250630_152555_StageSummary.html
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_745328_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_745328_1_20250630_152555_StageSummary.html --site-key Kerala
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_743671_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_743671_2_20250630_152555_StageSummary.html
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_743671_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_743671_2_20250630_152555_StageSummary.html --site-key Kerala
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_745328_1 Popup] Successfully processed structured data for ROT_2025_TDB_745328_1_20250630_152555_StageSummary.html.
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_743671_2 Popup] Successfully processed structured data for ROT_2025_TDB_743671_2_20250630_152555_StageSummary.html.
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9_2025_TDB_743040_1] Final summary link found. Clicking...
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9_2025_TDB_743024_1] Final summary link found. Clicking...
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_743040_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_743040_1_20250630_152555_StageSummary.html
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_743040_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_743040_1_20250630_152555_StageSummary.html --site-key Kerala
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_743024_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_743024_1_20250630_152555_StageSummary.html
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_743024_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_743024_1_20250630_152555_StageSummary.html --site-key Kerala
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_743040_1 Popup] Successfully processed structured data for ROT_2025_TDB_743040_1_20250630_152555_StageSummary.html.
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_743024_1 Popup] Successfully processed structured data for ROT_2025_TDB_743024_1_20250630_152555_StageSummary.html.
+15:25:55 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9_2025_TDB_742984_1] Final summary link found. Clicking...
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9_2025_TDB_737987_1] Final summary link found. Clicking...
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_742984_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_742984_1_20250630_152556_StageSummary.html
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_742984_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_742984_1_20250630_152556_StageSummary.html --site-key Kerala
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_737987_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_737987_1_20250630_152556_StageSummary.html
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_737987_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_737987_1_20250630_152556_StageSummary.html --site-key Kerala
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_742984_1 Popup] Successfully processed structured data for ROT_2025_TDB_742984_1_20250630_152556_StageSummary.html.
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9_2025_TDB_736048_2] Final summary link found. Clicking...
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_737987_1 Popup] Successfully processed structured data for ROT_2025_TDB_737987_1_20250630_152556_StageSummary.html.
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736048_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_736048_2_20250630_152556_StageSummary.html
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736048_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_736048_2_20250630_152556_StageSummary.html --site-key Kerala
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [ListPage9_2025_TDB_736047_2] Final summary link found. Clicking...
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736047_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_736047_2_20250630_152556_StageSummary.html
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736047_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_736047_2_20250630_152556_StageSummary.html --site-key Kerala
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736048_2 Popup] Successfully processed structured data for ROT_2025_TDB_736048_2_20250630_152556_StageSummary.html.
+15:25:56 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736047_2 Popup] Successfully processed structured data for ROT_2025_TDB_736047_2_20250630_152556_StageSummary.html.
+15:26:04 [INFO] (ROTWorker-Kerala Run-041866) --- Processing List Page: 10/10 ---
+15:26:04 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10] Extracting table data...
+15:26:04 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10] Extracted 10 items.
+15:26:04 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10_2025_TDB_736044_2] Final summary link found. Clicking...
+15:26:04 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10_2025_TDB_736046_1] Final summary link found. Clicking...
+15:26:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736044_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_736044_2_20250630_152604_StageSummary.html
+15:26:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736044_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_736044_2_20250630_152604_StageSummary.html --site-key Kerala
+15:26:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736046_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_736046_1_20250630_152604_StageSummary.html
+15:26:04 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736046_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_736046_1_20250630_152604_StageSummary.html --site-key Kerala
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736044_2 Popup] Successfully processed structured data for ROT_2025_TDB_736044_2_20250630_152604_StageSummary.html.
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736046_1 Popup] Successfully processed structured data for ROT_2025_TDB_736046_1_20250630_152604_StageSummary.html.
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10_2025_TDB_736040_2] Final summary link found. Clicking...
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10_2025_TDB_736033_1] Final summary link found. Clicking...
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736040_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_736040_2_20250630_152605_StageSummary.html
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736040_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_736040_2_20250630_152605_StageSummary.html --site-key Kerala
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736033_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_736033_1_20250630_152605_StageSummary.html
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736033_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_736033_1_20250630_152605_StageSummary.html --site-key Kerala
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736040_2 Popup] Successfully processed structured data for ROT_2025_TDB_736040_2_20250630_152605_StageSummary.html.
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_736033_1 Popup] Successfully processed structured data for ROT_2025_TDB_736033_1_20250630_152605_StageSummary.html.
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10_2025_TDB_734970_1] Final summary link found. Clicking...
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10_2025_TDB_734966_1] Final summary link found. Clicking...
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734970_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_734970_1_20250630_152605_StageSummary.html
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734970_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_734970_1_20250630_152605_StageSummary.html --site-key Kerala
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734966_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_734966_1_20250630_152605_StageSummary.html
+15:26:05 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734966_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_734966_1_20250630_152605_StageSummary.html --site-key Kerala
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734970_1 Popup] Successfully processed structured data for ROT_2025_TDB_734970_1_20250630_152605_StageSummary.html.
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734966_1 Popup] Successfully processed structured data for ROT_2025_TDB_734966_1_20250630_152605_StageSummary.html.
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10_2025_TDB_734964_1] Final summary link found. Clicking...
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734964_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_734964_1_20250630_152606_StageSummary.html
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734964_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_734964_1_20250630_152606_StageSummary.html --site-key Kerala
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10_2025_TDB_734787_1] Final summary link found. Clicking...
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734787_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_734787_1_20250630_152606_StageSummary.html
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734787_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_734787_1_20250630_152606_StageSummary.html --site-key Kerala
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734964_1 Popup] Successfully processed structured data for ROT_2025_TDB_734964_1_20250630_152606_StageSummary.html.
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734787_1 Popup] Successfully processed structured data for ROT_2025_TDB_734787_1_20250630_152606_StageSummary.html.
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10_2025_TDB_734761_1] Final summary link found. Clicking...
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [ListPage10_2025_TDB_732793_2] Final summary link found. Clicking...
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734761_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_734761_1_20250630_152606_StageSummary.html
+15:26:06 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734761_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_734761_1_20250630_152606_StageSummary.html --site-key Kerala
+15:26:07 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_732793_2 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_TDB_732793_2_20250630_152607_StageSummary.html
+15:26:07 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_732793_2 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Kerala/ROT_2025_TDB_732793_2_20250630_152607_StageSummary.html --site-key Kerala
+15:26:07 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_734761_1 Popup] Successfully processed structured data for ROT_2025_TDB_734761_1_20250630_152606_StageSummary.html.
+15:26:07 [INFO] (ROTWorker-Kerala Run-041866) [2025_TDB_732793_2 Popup] Successfully processed structured data for ROT_2025_TDB_732793_2_20250630_152607_StageSummary.html.
+15:26:14 [INFO] (ROTWorker-Kerala Run-041866) Worker status updated to: FINISHED_SUCCESS
+15:26:14 [INFO] (ROTWorker-Kerala Run-041866) Playwright resources closed.
+15:26:14 [INFO] (ROTWorker-Kerala Run-041866) Worker for Kerala terminated with status: FINISHED_SUCCESS

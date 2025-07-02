@@ -55,88 +55,78 @@
         .eligibility-accent.score-yellow { background-color: #facc15; }
         .eligibility-accent.score-green { background-color: #22c55e; }
         .title-cell { position: relative; padding-left: 20px; }
+        .rot-row { background-color: #f0fdf4 !important; border-left: 4px solid var(--color-success); }
+        .rot-row td:first-child { border-left: none; }
     </style>
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <div>
-        <h1><a href="{{ url_for('homepage') }}" style="text-decoration:none; color:inherit;">TenFin</a></h1>
-        <div class="header-subtitle">Tender Management System</div>
-      </div>
-      <div class="header-actions">
-        <!-- MODIFIED: Button added here -->
-        <a href="{{ url_for('company_profile_page') }}" class="btn btn-secondary">Company Profile</a>
-        <a href="{{ url_for('settings_page') }}" class="btn btn-secondary">Settings</a>
-        <a href="{{ url_for('rot_manual_scrape_page') }}" class="btn btn-secondary">ROT Scrape</a>
-        <span id="scrape-status" style="display: none;">Scraping in progress...</span>
-        <button type="button" id="fetch-tenders-btn" class="btn">Fetch Tenders Now</button>
-      </div>
+        <div>
+            <h1><a href="{{ url_for('homepage') }}" style="text-decoration:none; color:inherit;">TenFin</a></h1>
+            <div class="header-subtitle">Tender Management System</div>
+        </div>
+        <div class="header-actions">
+            {% if current_user %}<span>Welcome, {{ current_user.username }}!</span>{% endif %}
+            <a href="{{ url_for('settings_page') }}" class="btn btn-secondary">Settings</a>
+            <a href="{{ url_for('logout') }}" class="btn btn-secondary">Logout</a>
+            <span id="scrape-status" style="display: none;">Scraping in progress...</span>
+            <button type="button" id="fetch-tenders-btn" class="btn">Fetch Tenders Now</button>
+        </div>
     </header>
 
     <main>
-      <section class="search-section">
-        <form action="{{ url_for('homepage') }}" method="get" class="search-form">
-            <div class="form-group"><label for="keywords">Keywords</label><input type="text" name="keywords" id="keywords" class="input" placeholder="e.g., bridge, repair, software" value="{{ query_keywords or '' }}"></div>
-            <div class="form-group"><label for="site_key">Source Site</label><select name="site_key" id="site_key" class="input"><option value="">Any Site</option>{% for site in available_sites %}<option value="{{ site }}" {% if site == query_site %}selected{% endif %}>{{ site }}</option>{% endfor %}</select></div>
-            <div class="form-group"><label for="start_date">Opening Date From</label><input type="date" name="start_date" id="start_date" class="input" value="{{ query_start_date or '' }}"></div>
-            <div class="form-group"><label for="end_date">Opening Date To</label><input type="date" name="end_date" id="end_date" class="input" value="{{ query_end_date or '' }}"></div>
-            <div class="form-group"><button type="submit" class="btn btn-accent">Search</button></div>
-        </form>
-      </section>
-
       <section class="results-section">
         <div class="stats-bar">
-            {% if is_search %}
-                <div class="stats-item">Found <span class="stats-value">{{ tenders_shown }}</span> Matching Tenders</div>
-            {% else %}
-                <div class="stats-item">Displaying Latest <span class="stats-value">{{ tenders_shown }}</span> of <span class="stats-value">{{ total_tenders }}</span> Total Tenders</div>
-            {% endif %}
+          <div class="stats-item">Total Tenders in DB: <span class="stats-value">{{ total_tenders }}</span></div>
         </div>
+        
+        <h3 class="table-title" style="font-size: 1.25rem; font-weight: 600; margin: 32px 0 16px 0; padding-bottom: 8px; border-bottom: 2px solid var(--color-border);">Latest Activity</h3>
         <div class="table-responsive-wrapper">
-            {% if tenders_with_scores %}
             <table class="tender-table">
                 <thead>
                     <tr>
-                        <th>Published</th><th>Tender ID</th><th>Source</th><th>Title</th><th>Organisation Chain</th><th>Status</th><th>Actions</th>
+                        <th>Date</th><th>Tender ID</th><th>Source</th><th>Title</th><th>Organisation Chain</th><th>Status</th><th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {% for item in tenders_with_scores %}
-                    {% set tender = item.tender %}
-                    {% set score = item.eligibility_score %}
-                    {%
-                       set score_class = 'score-green' if score > 50 else
-                                         'score-yellow' if score > 25 else
-                                         'score-orange' if score >= 10 else
-                                         'score-red' if score >= 0 else ''
-                    %}
-                    <tr>
-                        <td>{{ tender.published_date | datetime('%Y-%m-%d') if tender.published_date else 'N/A' }}</td>
-                        <td>{{ tender.tender_id }}</td>
-                        <td>{{ tender.source_site }}</td>
-                        <td class="title-cell">
-                            <div class="eligibility-accent {{ score_class }}"></div>
-                            {{ tender.tender_title | neat_format }}
-                        </td>
-                        <td>{{ tender.organisation_chain | neat_format }}</td>
-                        <td>
-                            {% if tender.status == 'Result Announced' %}<span class="status-result">Result Announced</span>
-                            {% else %}<span class="status-live">Live</span>{% endif %}
-                        </td>
-                        <td class="actions-cell">
-                            <a href="{{ url_for('view_tender_detail', tender_pk_id=tender.id) }}" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.75rem;">Details</a>
-                            {% if tender.status == 'Result Announced' %}
-                                <a href="{{ url_for('view_tender_result', tender_pk_id=tender.id) }}" class="btn btn-success" style="padding: 6px 12px; font-size: 0.75rem;">Result</a>
+                    {% if combined_items %}
+                        {% for item in combined_items %}
+                            {% if item.type == 'live_tender' %}
+                                {% set tender = item.data %}
+                                <tr>
+                                    <td>{{ tender.published_date | datetime('%Y-%m-%d') if tender.published_date else 'N/A' }} <br><small>(Published)</small></td>
+                                    <td>{{ tender.tender_id }}</td>
+                                    <td>{{ tender.source_site }}</td>
+                                    <td>{{ tender.tender_title | neat_format }}</td>
+                                    <td>{{ tender.organisation_chain | neat_format }}</td>
+                                    <td><span class="status-live">Live</span></td>
+                                    <td class="actions-cell">
+                                        <a href="{{ url_for('view_tender_detail', tender_pk_id=tender.id) }}" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.75rem;">Details</a>
+                                    </td>
+                                </tr>
+                            {% elif item.type == 'tender_result' %}
+                                {% set result = item.data %}
+                                {% set tender = result.tender %}
+                                <tr class="rot-row">
+                                    <td>{{ result.created_at | datetime('%Y-%m-%d') if result.created_at else 'N/A' }} <br><small>(Result Scraped)</small></td>
+                                    <td>{{ tender.tender_id }}</td>
+                                    <td>{{ tender.source_site }}</td>
+                                    <td>{{ tender.tender_title | neat_format }}</td>
+                                    <td>{{ tender.organisation_chain | neat_format }}</td>
+                                    <td><span class="status-result">Result Announced</span></td>
+                                    <td class="actions-cell">
+                                        <a href="{{ url_for('view_tender_detail', tender_pk_id=tender.id) }}" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.75rem;">Original</a>
+                                        <a href="{{ url_for('view_tender_result', tender_pk_id=tender.id) }}" class="btn btn-success" style="padding: 6px 12px; font-size: 0.75rem;">Result</a>
+                                    </td>
+                                </tr>
                             {% endif %}
-                        </td>
-                    </tr>
-                    {% endfor %}
+                        {% endfor %}
+                    {% else %}
+                        <tr><td colspan="7" class="no-items">No tenders or results found in the database.</td></tr>
+                    {% endif %}
                 </tbody>
             </table>
-            {% else %}
-                <div class="no-items">{% if is_search %}No tenders found matching your criteria.{% else %}No tenders found in the database.{% endif %}</div>
-            {% endif %}
         </div>
       </section>
     </main>
@@ -146,7 +136,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const fetchBtn = document.getElementById('fetch-tenders-btn');
     const statusDisplay = document.getElementById('scrape-status');
-    let pollInterval;
+    let pollInterval = null;
 
     async function checkScrapeStatus() {
         try {
@@ -165,41 +155,40 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (pollInterval) {
                     clearInterval(pollInterval);
                     pollInterval = null;
-                    window.location.reload();
+                    console.log("Scrape finished. Reloading page.");
+                    window.location.reload(); 
                 }
             }
         } catch (error) {
             console.error('Error polling for scrape status:', error);
-            statusDisplay.textContent = 'Status check failed.';
-            statusDisplay.style.color = 'red';
+            if (pollInterval) clearInterval(pollInterval);
+            statusDisplay.style.display = 'none';
             fetchBtn.disabled = false;
-            if (pollInterval) {
-                clearInterval(pollInterval);
-                pollInterval = null;
-            }
         }
     }
 
     fetchBtn.addEventListener('click', async function() {
-        if (!confirm('Trigger REGULAR tender scrape? This may take several minutes.')) {
+        if (!confirm('Trigger REGULAR tender scrape? The page will reload automatically upon completion.')) {
             return;
         }
+        
+        this.disabled = true;
+        statusDisplay.textContent = 'Initiating scrape...';
+        statusDisplay.style.display = 'inline';
         
         try {
             const response = await fetch("{{ url_for('run_scraper_now') }}", { method: 'POST' });
             if (response.status === 409) {
                 alert('A scrape is already in progress.');
-                checkScrapeStatus();
-                return;
-            }
-            if (!response.ok) {
+            } else if (!response.ok) {
                 const errorData = await response.json();
                 throw new Error(errorData.message || 'Failed to start scrape.');
             }
             checkScrapeStatus(); 
         } catch (error) {
             alert('Error initiating scrape: ' + error.message);
-            console.error('Error initiating scrape:', error);
+            statusDisplay.style.display = 'none';
+            this.disabled = false;
         }
     });
 

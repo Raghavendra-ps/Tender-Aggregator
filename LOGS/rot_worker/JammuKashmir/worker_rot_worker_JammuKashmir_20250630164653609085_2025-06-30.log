@@ -1,0 +1,52 @@
+16:46:53 [INFO] (ROTWorker-Jammu Kashmir Run-609085) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/JammuKashmir/worker_rot_worker_JammuKashmir_20250630164653609085_2025-06-30.log
+16:46:53 [INFO] (ROTWorker-Jammu Kashmir Run-609085) --- Starting Headless ROT Worker for Site: Jammu Kashmir, Run ID: rot_worker_JammuKashmir_20250630164653609085 ---
+16:46:53 [INFO] (ROTWorker-Jammu Kashmir Run-609085) --- Dates: From=None, To=None ---
+16:46:54 [INFO] (ROTWorker-Jammu Kashmir Run-609085) Selecting tender status '5'.
+16:46:57 [INFO] (ROTWorker-Jammu Kashmir Run-609085) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_JammuKashmir_20250630164653609085/captcha.b64
+16:46:57 [INFO] (ROTWorker-Jammu Kashmir Run-609085) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_JammuKashmir_20250630164653609085/answer.txt (max 300s)...
+16:47:05 [INFO] (ROTWorker-Jammu Kashmir Run-609085) CAPTCHA solution received.
+16:47:05 [INFO] (ROTWorker-Jammu Kashmir Run-609085) --- Processing List Page: 1/1 ---
+16:47:05 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1] Extracting table data...
+16:47:05 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1] Extracted 10 items.
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1_2025_UDJK_278505_1] Final summary link found. Clicking...
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1_2025_UDJK_278185_1] Final summary link found. Clicking...
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_278505_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDJK_278505_1_20250630_164706_StageSummary.html
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_278505_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_278505_1_20250630_164706_StageSummary.html --site-key Jammu Kashmir
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_278185_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDJK_278185_1_20250630_164706_StageSummary.html
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_278185_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_278185_1_20250630_164706_StageSummary.html --site-key Jammu Kashmir
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_278505_1 Popup] Successfully processed structured data for ROT_2025_UDJK_278505_1_20250630_164706_StageSummary.html.
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_278185_1 Popup] Successfully processed structured data for ROT_2025_UDJK_278185_1_20250630_164706_StageSummary.html.
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1_2025_UDJK_277523_1] Final summary link found. Clicking...
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1_2025_UDJK_275570_1] Final summary link found. Clicking...
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_277523_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDJK_277523_1_20250630_164706_StageSummary.html
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_277523_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_277523_1_20250630_164706_StageSummary.html --site-key Jammu Kashmir
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_275570_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDJK_275570_1_20250630_164706_StageSummary.html
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_275570_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_275570_1_20250630_164706_StageSummary.html --site-key Jammu Kashmir
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_277523_1 Popup] Successfully processed structured data for ROT_2025_UDJK_277523_1_20250630_164706_StageSummary.html.
+16:47:06 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_275570_1 Popup] Successfully processed structured data for ROT_2025_UDJK_275570_1_20250630_164706_StageSummary.html.
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1_2025_UDJK_274892_1] Final summary link found. Clicking...
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1_2025_UDJK_274883_1] Final summary link found. Clicking...
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274892_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDJK_274892_1_20250630_164707_StageSummary.html
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274892_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274892_1_20250630_164707_StageSummary.html --site-key Jammu Kashmir
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274883_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDJK_274883_1_20250630_164707_StageSummary.html
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274883_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274883_1_20250630_164707_StageSummary.html --site-key Jammu Kashmir
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274892_1 Popup] Successfully processed structured data for ROT_2025_UDJK_274892_1_20250630_164707_StageSummary.html.
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274883_1 Popup] Successfully processed structured data for ROT_2025_UDJK_274883_1_20250630_164707_StageSummary.html.
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1_2025_UDJK_274873_1] Final summary link found. Clicking...
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1_2025_UDJK_274871_1] Final summary link found. Clicking...
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274873_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDJK_274873_1_20250630_164707_StageSummary.html
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274873_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274873_1_20250630_164707_StageSummary.html --site-key Jammu Kashmir
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274871_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDJK_274871_1_20250630_164707_StageSummary.html
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274871_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274871_1_20250630_164707_StageSummary.html --site-key Jammu Kashmir
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274873_1 Popup] Successfully processed structured data for ROT_2025_UDJK_274873_1_20250630_164707_StageSummary.html.
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274871_1 Popup] Successfully processed structured data for ROT_2025_UDJK_274871_1_20250630_164707_StageSummary.html.
+16:47:07 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1_2025_UDJK_274870_1] Final summary link found. Clicking...
+16:47:08 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [ListPage1_2025_UDJK_274581_1] Final summary link found. Clicking...
+16:47:08 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274870_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDJK_274870_1_20250630_164708_StageSummary.html
+16:47:08 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274870_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274870_1_20250630_164708_StageSummary.html --site-key Jammu Kashmir
+16:47:08 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274581_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_UDJK_274581_1_20250630_164708_StageSummary.html
+16:47:08 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274581_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/JammuKashmir/ROT_2025_UDJK_274581_1_20250630_164708_StageSummary.html --site-key Jammu Kashmir
+16:47:08 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274870_1 Popup] Successfully processed structured data for ROT_2025_UDJK_274870_1_20250630_164708_StageSummary.html.
+16:47:08 [INFO] (ROTWorker-Jammu Kashmir Run-609085) [2025_UDJK_274581_1 Popup] Successfully processed structured data for ROT_2025_UDJK_274581_1_20250630_164708_StageSummary.html.
+16:47:15 [INFO] (ROTWorker-Jammu Kashmir Run-609085) Playwright resources closed.
+16:47:15 [INFO] (ROTWorker-Jammu Kashmir Run-609085) Worker for Jammu Kashmir terminated with status: FINISHED_SUCCESS

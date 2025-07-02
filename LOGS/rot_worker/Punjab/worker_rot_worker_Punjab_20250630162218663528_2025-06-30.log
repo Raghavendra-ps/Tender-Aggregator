@@ -1,0 +1,52 @@
+16:22:18 [INFO] (ROTWorker-Punjab Run-663528) Worker logging initialized. Log file: /root/Tender-Aggregator/LOGS/rot_worker/Punjab/worker_rot_worker_Punjab_20250630162218663528_2025-06-30.log
+16:22:18 [INFO] (ROTWorker-Punjab Run-663528) --- Starting Headless ROT Worker for Site: Punjab, Run ID: rot_worker_Punjab_20250630162218663528 ---
+16:22:18 [INFO] (ROTWorker-Punjab Run-663528) --- Dates: From=None, To=None ---
+16:22:19 [INFO] (ROTWorker-Punjab Run-663528) Selecting tender status '5'.
+16:22:22 [INFO] (ROTWorker-Punjab Run-663528) CAPTCHA base64 data saved to: /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250630162218663528/captcha.b64
+16:22:22 [INFO] (ROTWorker-Punjab Run-663528) Waiting for CAPTCHA solution in /root/Tender-Aggregator/site_data/TEMP/WorkerRuns/rot_worker_Punjab_20250630162218663528/answer.txt (max 300s)...
+16:22:29 [INFO] (ROTWorker-Punjab Run-663528) CAPTCHA solution received.
+16:22:30 [INFO] (ROTWorker-Punjab Run-663528) --- Processing List Page: 1/1 ---
+16:22:30 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1] Extracting table data...
+16:22:30 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1] Extracted 10 items.
+16:22:30 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1_2025_WSS_138819_1] Final summary link found. Clicking...
+16:22:30 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1_2025_WSS_139856_1] Final summary link found. Clicking...
+16:22:30 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138819_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WSS_138819_1_20250630_162230_StageSummary.html
+16:22:30 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138819_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Punjab/ROT_2025_WSS_138819_1_20250630_162230_StageSummary.html --site-key Punjab
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_139856_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WSS_139856_1_20250630_162231_StageSummary.html
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_139856_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Punjab/ROT_2025_WSS_139856_1_20250630_162231_StageSummary.html --site-key Punjab
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138819_1 Popup] Successfully processed structured data for ROT_2025_WSS_138819_1_20250630_162230_StageSummary.html.
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_139856_1 Popup] Successfully processed structured data for ROT_2025_WSS_139856_1_20250630_162231_StageSummary.html.
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1_2025_WSS_138793_1] Final summary link found. Clicking...
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1_2025_WSS_138464_1] Final summary link found. Clicking...
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138793_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WSS_138793_1_20250630_162231_StageSummary.html
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138793_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Punjab/ROT_2025_WSS_138793_1_20250630_162231_StageSummary.html --site-key Punjab
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138464_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WSS_138464_1_20250630_162231_StageSummary.html
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138464_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Punjab/ROT_2025_WSS_138464_1_20250630_162231_StageSummary.html --site-key Punjab
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138793_1 Popup] Successfully processed structured data for ROT_2025_WSS_138793_1_20250630_162231_StageSummary.html.
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138464_1 Popup] Successfully processed structured data for ROT_2025_WSS_138464_1_20250630_162231_StageSummary.html.
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1_2025_WSS_138456_1] Final summary link found. Clicking...
+16:22:31 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1_2025_WSS_138430_1] Final summary link found. Clicking...
+16:22:32 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138456_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WSS_138456_1_20250630_162232_StageSummary.html
+16:22:32 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138456_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Punjab/ROT_2025_WSS_138456_1_20250630_162232_StageSummary.html --site-key Punjab
+16:22:32 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138430_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WSS_138430_1_20250630_162232_StageSummary.html
+16:22:32 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138430_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Punjab/ROT_2025_WSS_138430_1_20250630_162232_StageSummary.html --site-key Punjab
+16:22:32 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138456_1 Popup] Successfully processed structured data for ROT_2025_WSS_138456_1_20250630_162232_StageSummary.html.
+16:22:32 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138430_1 Popup] Successfully processed structured data for ROT_2025_WSS_138430_1_20250630_162232_StageSummary.html.
+16:22:32 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1_2025_WSS_138334_1] Final summary link found. Clicking...
+16:22:32 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1_2025_WSS_138196_1] Final summary link found. Clicking...
+16:22:32 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138334_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WSS_138334_1_20250630_162232_StageSummary.html
+16:22:32 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138334_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Punjab/ROT_2025_WSS_138334_1_20250630_162232_StageSummary.html --site-key Punjab
+16:22:32 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138334_1 Popup] Successfully processed structured data for ROT_2025_WSS_138334_1_20250630_162232_StageSummary.html.
+16:22:33 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138196_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WSS_138196_1_20250630_162233_StageSummary.html
+16:22:33 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138196_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Punjab/ROT_2025_WSS_138196_1_20250630_162233_StageSummary.html --site-key Punjab
+16:22:33 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1_2025_WSS_137203_1] Final summary link found. Clicking...
+16:22:33 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_138196_1 Popup] Successfully processed structured data for ROT_2025_WSS_138196_1_20250630_162233_StageSummary.html.
+16:22:33 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_137203_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WSS_137203_1_20250630_162233_StageSummary.html
+16:22:33 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_137203_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Punjab/ROT_2025_WSS_137203_1_20250630_162233_StageSummary.html --site-key Punjab
+16:22:33 [INFO] (ROTWorker-Punjab Run-663528) [ListPage1_2025_WSS_137202_1] Final summary link found. Clicking...
+16:22:33 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_137203_1 Popup] Successfully processed structured data for ROT_2025_WSS_137203_1_20250630_162233_StageSummary.html.
+16:22:33 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_137202_1 Popup] ✅ CLEANED & SAVED HTML: ROT_2025_WSS_137202_1_20250630_162233_StageSummary.html
+16:22:33 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_137202_1 Popup] Attempting to save structured data to DB: /root/Tender-Aggregator/venv/bin/python /root/Tender-Aggregator/utils/extract_structured_rot.py /root/Tender-Aggregator/site_data/ROT/DetailHtmls/Punjab/ROT_2025_WSS_137202_1_20250630_162233_StageSummary.html --site-key Punjab
+16:22:33 [INFO] (ROTWorker-Punjab Run-663528) [2025_WSS_137202_1 Popup] Successfully processed structured data for ROT_2025_WSS_137202_1_20250630_162233_StageSummary.html.
+16:22:41 [INFO] (ROTWorker-Punjab Run-663528) Playwright resources closed.
+16:22:41 [INFO] (ROTWorker-Punjab Run-663528) Worker for Punjab terminated with status: FINISHED_SUCCESS

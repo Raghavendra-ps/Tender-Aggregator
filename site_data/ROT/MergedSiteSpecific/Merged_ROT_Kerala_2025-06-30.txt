@@ -1,0 +1,1100 @@
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_VMHS_725005_1</RotTenderId>
+<RotTitleRef>[Security services in Vyttila hub][01/VMHS/A1/223/2024]</RotTitleRef>
+<RotOrganisationChain>Vyttila Mobility Hub Society</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SuVKjMqX0XcY3KLEpUF1DUQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_VFPCK_766473_1</RotTenderId>
+<RotTitleRef>[SUPPLY OF FRUIT PLANTS][VFPCK/IRG/FRUITPLANTS/25]</RotTitleRef>
+<RotOrganisationChain>Vegetable and Fruit Promotion Council Keralam||Headquarters Cochin</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SfCWUX75zYS024JwwCXfgig%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>3.</RotSNo>
+<RotTenderId>2025_VFPCK_721956_1</RotTenderId>
+<RotTitleRef>[ELECTRIFICATION OF MODERN BRANDED OUTLET AT KBK KAKKANAD][VFPCK/ENGG/ELECTRICAL/KAKKANAD]</RotTitleRef>
+<RotOrganisationChain>Vegetable and Fruit Promotion Council Keralam||Headquarters Cochin</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIgFqp%2F27p7mB88Yc7sKNzg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>4.</RotSNo>
+<RotTenderId>2025_UoC_766378_1</RotTenderId>
+<RotTitleRef>[Additional Electrification for Air conditioners to the Smart Class room of the Statistics Department under PM USHA Scheme][D3/81224/E-Tender No.4/2025-26 (Re-1)]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SfFVx6kl4Fc5bFjE%2BXLH0bg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>5.</RotSNo>
+<RotTenderId>2025_UoC_765561_1</RotTenderId>
+<RotTitleRef>[Providing new AUG Cable from Tagore Nikethan main MSB to SSB][D3/170815/E-Tender No.7/2025-26]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S8T8mAi5Kf6teLJXfau0G7A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>6.</RotSNo>
+<RotTenderId>2025_UoC_764675_1</RotTenderId>
+<RotTitleRef>[Extension and modification works for Library at Hindi Department under PM USHA Scheme (Retender)][D1/565/2025]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sig6Ufi93tFL%2B4zW7grHnBA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>7.</RotSNo>
+<RotTenderId>2025_UoC_763739_1</RotTenderId>
+<RotTitleRef>[Additional Electrification in connection with the false ceiling work at Room No.303 and 313 in the Life Science Department under PM USHA Scheme][D3/81224/2/E-Tender No.6/2025-26]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SP9wanoFSnlZjG08ff5qWuQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>8.</RotSNo>
+<RotTenderId>2025_UoC_763738_1</RotTenderId>
+<RotTitleRef>[Additional Electrification in connection with the false ceiling work at Life Science Department under PM USHA Scheme][D3/81224/1/E-Tender No.5/2025-26]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S2kxgfdn8pHFUTzffgwz%2BIg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>9.</RotSNo>
+<RotTenderId>2025_UoC_763236_1</RotTenderId>
+<RotTitleRef>[Modification works for various Rooms in Hindi Department (MERU Grant under PM USHA Scheme) (Retender)][D1/91/2025]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SlwbiiQ0Q%2BARZFv6z0hzp5A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>10.</RotSNo>
+<RotTenderId>2025_UoC_762665_1</RotTenderId>
+<RotTitleRef>[Modernization of Department of Statistics using MERU Grant under PM USHA Scheme (Re Tender)][D1/107/2025]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SjrywKrHkszOfJSZobCYA1Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>11.</RotSNo>
+<RotTenderId>2025_UoC_762444_1</RotTenderId>
+<RotTitleRef>[Construction of additional stair for Fire escape to the Controller of Examinations building at Pareeksha Bhavan using MERU Grant under PM USHA Scheme (Retender)][D1/1057/2023]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SPSZybeUtaqt29JqVXAO3oQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>12.</RotSNo>
+<RotTenderId>2025_UoC_762417_1</RotTenderId>
+<RotTitleRef>[Modernization of Department of Mathematics using MERU Grant under PM USHA Scheme (Retender)][D1/81/2025]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SCX3A1jBlAAyWcdZXqtvhcA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>13.</RotSNo>
+<RotTenderId>2025_UoC_762365_1</RotTenderId>
+<RotTitleRef>[Renovation of Seminar Hall and HODs toilet in Department of Commerce and Management Studies using MERU Grant under PM USHA Scheme (Re Tender)][D1/59/2025]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SbPDLVCATB2TOirr1yatW5A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>14.</RotSNo>
+<RotTenderId>2025_UoC_762357_1</RotTenderId>
+<RotTitleRef>[Establishment of a Next Generation Sequencing and Analysis Facility  Renovation works to Room No.303 and 313 at Life Sciences Department using MERU Grant under PM USHA Scheme (Re Tender)][D1/503/2025]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sq7MbFkbL6dB4Sunqnx9Osg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>15.</RotSNo>
+<RotTenderId>2025_UoC_762233_1</RotTenderId>
+<RotTitleRef>[Construction of toilet block for CCSIT Building at Dr.John Matthai Centre, Thrissur (Retender)][D1/1754/2024]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S6eMHrz1NviPPZqr7oXo0gg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>16.</RotSNo>
+<RotTenderId>2025_UoC_762213_1</RotTenderId>
+<RotTitleRef>[Renovation of Gents Toilet in Economics Department at Dr. John Matthai Centre, Thrissur (Retender)][D2/1499/2024]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SKGv4Q9ps7z1dOQdySwBPeA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>17.</RotSNo>
+<RotTenderId>2025_UoC_762018_1</RotTenderId>
+<RotTitleRef>[Providing multi wood panelling to the walls of Room No.106 and 109 of CSIF Building (Retender)][D1/1482/2024]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S2Z7BiFoCvKFVGZ8eTOHHjw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>18.</RotSNo>
+<RotTenderId>2025_UoC_761991_1</RotTenderId>
+<RotTitleRef>[Demolishing the existing damaged toilet in the room of DR Purchase and constructing a new attached toilet at the rear side of Purchase Wing (Retender)][D1/1417/2024]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SMlToz6T6hefyl1tVo1%2F%2Fvg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>19.</RotSNo>
+<RotTenderId>2025_UoC_761904_1</RotTenderId>
+<RotTitleRef>[Additional electrification at Political Science Department in connection with PM Usha Project][D3/83128/E-Tender No.3/2025-26]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SC6oTdNBhV3vAXvWuF5SizA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>20.</RotSNo>
+<RotTenderId>2025_UoC_761674_1</RotTenderId>
+<RotTitleRef>[Modification works of various rooms at Arabic Department using MERU grand under PM USHA scheme][D1/100/2025]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S2T5L8bGpzdtnNgFRmkT%2FKw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>21.</RotSNo>
+<RotTenderId>2025_UoC_761464_1</RotTenderId>
+<RotTitleRef>[Electrification of CH Chair first floor building][D3/195176/E-Tender No.1/2025-26 (Re-1)]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SVzM%2BLeGl36il%2F2cfyHRlUA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>22.</RotSNo>
+<RotTenderId>2025_UoC_760721_1</RotTenderId>
+<RotTitleRef>[Additional wiring for UPS to the Department of Philosophy in the University Campus (PM Usha Scheme)][D3/79595/E-Tender No.2/2025-26]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SeNucrWWtRPVv1ZaqUURlDw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>23.</RotSNo>
+<RotTenderId>2025_UoC_760489_1</RotTenderId>
+<RotTitleRef>[Development and Upgradation of Pareeksha Bhavan  Renovation of Exam Distance Education Block using MERU Grant under PM USHA Scheme][D1/58/2025]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2BqGo6RCPqy6C%2BsAIV5e7jA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>24.</RotSNo>
+<RotTenderId>2025_UoC_744993_1</RotTenderId>
+<RotTitleRef>[Electrical renovation work of EMS Chair Library Hall][D3/142897/E-Tender No.26/2024-25 (Re-1)]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwdmRyZFtpW4aMLxiwRW1pA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>25.</RotSNo>
+<RotTenderId>2025_UoC_744985_1</RotTenderId>
+<RotTitleRef>[Electrical modification of Seminar Hall and Computer Lab of Physics Department, University of Calicut][D3/195096/ E-Tender No.25/2024-25 (Re-1)]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sv%2FB%2FRO0YuRAnAq%2B0CopxYQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>26.</RotSNo>
+<RotTenderId>2025_UoC_735175_1</RotTenderId>
+<RotTitleRef>[Electrification of Web Offset Machine and stack room at Calicut University Press][D3/82751/ E-Tender No.24/2024-25 (RE-1)]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SeZWS7snmcw89FbxV3xn80A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>27.</RotSNo>
+<RotTenderId>2025_UoC_725481_1</RotTenderId>
+<RotTitleRef>[Additional LAN connection to the Computer Lab and Class rooms at Computer Science Department in the University Campus.][D3/105036/ E-Tender No.20/2024-25(Re-1)]</RotTitleRef>
+<RotOrganisationChain>University of Calicut</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SxCvb20gnPIbncJd%2FMa9scg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>28.</RotSNo>
+<RotTenderId>2025_UAD_749696_1</RotTenderId>
+<RotTitleRef>[ANNUAL PLAN-CHERTHALA MUNICIPALITY PRO NO 527/2024-25-Purchase of equipment for MCF][K-Smart-360034-2025]</RotTitleRef>
+<RotOrganisationChain>Directorate of Urban Affairs||Regional Joint Director Kollam||Secretary Cherthala Municipality</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SuyZtjhkWmB08HPmbEjC5KQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>29.</RotSNo>
+<RotTenderId>2025_UAD_748886_1</RotTenderId>
+<RotTitleRef>[Supply, Installation of Monitoring Application Integrated with 4000 Liters Suction Machine Along with Annual Maintenance for 5 Years in Cherthala Municipality][PH4/240299/25]</RotTitleRef>
+<RotOrganisationChain>Directorate of Urban Affairs||Regional Joint Director Kollam||Secretary Cherthala Municipality</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1DdO04NyilsaiP3z6uea3g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>30.</RotSNo>
+<RotTenderId>2025_UAD_748305_1</RotTenderId>
+<RotTitleRef>[Procurement of SS Twin Waste Bins][509795-2025]</RotTitleRef>
+<RotOrganisationChain>Directorate of Urban Affairs||Regional Joint Director Kollam||Secretary Kollam Municipal Corporation</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2FNRt8teY%2Bfg7%2Bxuee71%2BoQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>31.</RotSNo>
+<RotTenderId>2025_UAD_743373_1</RotTenderId>
+<RotTitleRef>[procurement of ring compost units][59201/25]</RotTitleRef>
+<RotOrganisationChain>Directorate of Urban Affairs||Regional Joint Director Kollam||Secretary Punalur Municipality</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SWKGppvRSF9ivYpx%2BscCt%2BQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>32.</RotSNo>
+<RotTenderId>2025_UAD_731119_1</RotTenderId>
+<RotTitleRef>[Purchase of Sanitation Equipments in Neyyattinkara Municipality][Project SO 187/25]</RotTitleRef>
+<RotOrganisationChain>Directorate of Urban Affairs||Regional Joint Director Kollam||Secretary Neyyattinkara Municipality</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwRSbRCsQLivEyuI5B3tgdA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>33.</RotSNo>
+<RotTenderId>2025_UAD_730922_1</RotTenderId>
+<RotTitleRef>[Supply, Installation and Annual Maintenance for 5 years of Septage Collection vehicle 4000L with sludge suction application in Neyyattinkara Municipality][376/25]</RotTitleRef>
+<RotOrganisationChain>Directorate of Urban Affairs||Regional Joint Director Kollam||Secretary Neyyattinkara Municipality</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SlDYztZSCsLZohFYx3eQfNg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>34.</RotSNo>
+<RotTenderId>2025_UAD_730668_2</RotTenderId>
+<RotTitleRef>[Thavilakutty chembora road concrete][2784303-2024 dt 17/12/24]</RotTitleRef>
+<RotOrganisationChain>Directorate of Urban Affairs||Regional Joint Director Kozhikode||SECRETARY IRITTY MUNICIPALITY</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SNs8UnoH%2F2oJL3CFcDfjhLQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>35.</RotSNo>
+<RotTenderId>2025_UAD_730382_2</RotTenderId>
+<RotTitleRef>[M G Collage Kulam Road Concrete][2784303-2024 dt 17/12/24]</RotTitleRef>
+<RotOrganisationChain>Directorate of Urban Affairs||Regional Joint Director Kozhikode||SECRETARY IRITTY MUNICIPALITY</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SmI5SldpG8zST80INNSdrIQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>36.</RotSNo>
+<RotTenderId>2025_UAD_730216_1</RotTenderId>
+<RotTitleRef>[H1/2704427][H1/2704427]</RotTitleRef>
+<RotOrganisationChain>Directorate of Urban Affairs||Regional Joint Director Kozhikode||Secretary Kondotty Municipality</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sp1t7WNoHURy%2BZqRFl%2BP1Pg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>37.</RotSNo>
+<RotTenderId>2025_UAD_726181_2</RotTenderId>
+<RotTitleRef>[Purchase of study aids for SC students-Retender][SO81/25]</RotTitleRef>
+<RotOrganisationChain>Directorate of Urban Affairs||Regional Joint Director Kozhikode||Secretary Ramanattukara Municipality</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sf0UzFvrCy6WPxlR4pleM1w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>38.</RotSNo>
+<RotTenderId>2025_TOUR_734401_1</RotTenderId>
+<RotTitleRef>[Selection of Information and Communication Technology Providing Agency][DOT_205_2024_RS1]</RotTitleRef>
+<RotOrganisationChain>Department of Tourism</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SKCvfg4lDgEa3BII9TTHXGg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>39.</RotSNo>
+<RotTenderId>2025_TKCL_727179_1</RotTenderId>
+<RotTitleRef>[SUPPLY OF SODIUM POLY ACRYLATE BASED DISPERSANT][51E/PS/712A/24-25]</RotTitleRef>
+<RotOrganisationChain>The Kerala Ceramics Ltd||TKCL Kollam||Commercial</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SVpLNLlUUSnC1%2BLdKME6a2w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>40.</RotSNo>
+<RotTenderId>2025_TDB_770670_1</RotTenderId>
+<RotTitleRef>[Varkala Devaswom in Varkala group-Providing pandal, barricade and other associated works in connection with Karkkidakavavu festival in 1200 ME- reg][EET/eT-47/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S8WM2gsBQ3R%2BwoT3s5iSDGA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>41.</RotSNo>
+<RotTenderId>2025_TDB_770360_1</RotTenderId>
+<RotTitleRef>[Navaikulam Devaswom in Varkala group-Urgent repairs and closing leakages to the old Devaswom Office building- reg][EET/eT-46/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S9PxvkIeRTgv10Vh%2Fwc3tDw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>42.</RotSNo>
+<RotTenderId>2025_TDB_770354_1</RotTenderId>
+<RotTitleRef>[Thiruvallam Devaswom in Trivandrum group -Putting up panthal, barricade and additional facilities and providing temporary bridges and ramp in connection with Karkkidakavavu festival in 1200 ME][EET/eT-42/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SUFHLcyNxQFLN4jd0t7c5yw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>43.</RotSNo>
+<RotTenderId>2025_TDB_770349_1</RotTenderId>
+<RotTitleRef>[Shanghumugham Devaswom in Trivandrum group - Providing up GI sheeted pandal and connected works in connection with karkkidakavavu festival in 1200 ME - reg][EET/eT-39/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2F036c08%2FIgjS35NT7JQ0bg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>44.</RotSNo>
+<RotTenderId>2025_TDB_770345_1</RotTenderId>
+<RotTitleRef>[Velinalloor Devaswom in Kottarakkara group- Providing temporary pandal infront of Belitharpanakkadavu, Devaswom Office and in between stage and nadapandal and associated works in connection with Karkkidakavavu festival in 1200ME -reg][EET/eT-38/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SJ3fgXZyvIJ6V%2BAmmExvI%2BQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>45.</RotSNo>
+<RotTenderId>2025_TDB_768146_2</RotTenderId>
+<RotTitleRef>[Thrikkotheswaram Devaswom in Punalur group - Certain needs in connection with Karkkidakavavu festival in 1200 ME - reg (RE-TENDER)][EET/eT-34/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SoGK7iuQasCl%2Fm%2BA3AHJixQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>46.</RotSNo>
+<RotTenderId>2025_TDB_768141_2</RotTenderId>
+<RotTitleRef>[Thrivikramangalam Devaswom in Trivandrum group-Putting up temporary pandal certain addidional works and other arrangements in connection with Karkkidakavavu festival in 1200 ME-reg (RE-TENDER)][EET/eT-33/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SgorBmt4Z5XGybi7oQQE8oQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>47.</RotSNo>
+<RotTenderId>2025_TDB_768135_2</RotTenderId>
+<RotTitleRef>[Shangumukham Devaswom in Trivandrum group - Urgent extra arrangements for ticket counter, Chukkuvellam and police officials in connection with Karkkidakavavu festival in 1200 ME-reg (RE-TENDER)][EET/eT-32/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S9nf15veNXH2LCuFCYPYy6Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>48.</RotSNo>
+<RotTenderId>2025_TDB_768102_1</RotTenderId>
+<RotTitleRef>[Kottenkulangara Devaswom in Kollam group-Constructing office and store-reg][EET/eT-29/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S4HXFRazZvr0tdOPGug0vTw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>49.</RotSNo>
+<RotTenderId>2025_TDB_768093_1</RotTenderId>
+<RotTitleRef>[KJMDBUPS Parippally in Kollam group-Constructing Assembly hall-reg][EET/eT-28/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sxbui8dJARtGnHmag2WSclA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>50.</RotSNo>
+<RotTenderId>2025_TDB_768078_1</RotTenderId>
+<RotTitleRef>[TDB-CBSE School Vettikkavala  in Kottarakkara group-Providing interlocking arrangements to the Kottaram building compound-reg][EET/eT-27/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SP85uZS35Oc4TcwGAMe2myQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>51.</RotSNo>
+<RotTenderId>2025_TDB_768054_1</RotTenderId>
+<RotTitleRef>[DBLPS Thirumullavaram in Kollam group-Providing floor tiles to the class rooms and providing temporary partition in school ground-reg][EET/eT-25/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sa%2FB4naE%2BVfLssxDkUHg3zA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>52.</RotSNo>
+<RotTenderId>2025_TDB_767178_2</RotTenderId>
+<RotTitleRef>[Thirumoozhikulam Devaswom in Paravoor Group - Providing closed circuit television CCTV system on hire basis in connection with Ramayanamasacharanam in 1200 ME][TDB/EEE/ET-36/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer Chengannur</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SVc30H9WjL8WXAOuEFi9W8Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>53.</RotSNo>
+<RotTenderId>2025_TDB_767074_1</RotTenderId>
+<RotTitleRef>[Aluva Mahadevar Devaswom in Paravoor Group Providing temporary light illumination and Public address system in connection with karkidakavavu bali 1200 ME][TDB/EEE/ET-25/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer Chengannur</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S9QMvfMR4uPgWQgk5S4hmMw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>54.</RotSNo>
+<RotTenderId>2025_TDB_767035_2</RotTenderId>
+<RotTitleRef>[Thirumoozhikulam Devaswom in Paravoor Group providing temporary light illumination and public address system in connection with Ramayanamasacharanam in 1200 ME][TDB/EEE/ET-24/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer Chengannur</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SJNjK5YWk66kn0CuFCk8LGg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>55.</RotSNo>
+<RotTenderId>2025_TDB_767033_1</RotTenderId>
+<RotTitleRef>[Sasthamkotta Devaswom  Ettumanoor group  Pucca Repair and Maintenance to the temple Structures][TDB/EEK/ET-27/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SW1C3tGmXCGM7Yh4UbzKeew%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>56.</RotSNo>
+<RotTenderId>2025_TDB_767015_1</RotTenderId>
+<RotTitleRef>[Marady Thirumadhuara Devaswom Thrikkariyoor group Raising the ground level and construction of entrance][TDB/EEK/ET-21/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SW2EbOAeTpQAeK9%2BNZ8WeDg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>57.</RotSNo>
+<RotTenderId>2025_TDB_767009_1</RotTenderId>
+<RotTitleRef>[Thirumoozhikkulam Devaswom in Paravur Group  Putting up Pandal in connection with Ramayanamasacharanam in 1200 ME][TDB/EEK/ET-17/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S5Pi%2Bims8BaDKPDLcsPDSaw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>58.</RotSNo>
+<RotTenderId>2025_TDB_767000_1</RotTenderId>
+<RotTitleRef>[Aluva Mahadevar Devaswom Paravur group Cleaning manappuram, Temple premises, bathing ghat and marking the position of balithara and supplying medicated drinking water in connection with Karkkidakavavu in 1200 ME][TDB/EEK/ET-14/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SMYJjAFOq%2BUD9Lp2rHsC1GA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>59.</RotSNo>
+<RotTenderId>2025_TDB_766999_1</RotTenderId>
+<RotTitleRef>[Aluva Mahadevar Devaswom Paravur group Putting up pandal and barricade in connection with Karkkidakavavu in 1200 ME][TDB/EEK/ET-13/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SfrqQGawTP%2BLT1SZIIPjYtw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>60.</RotSNo>
+<RotTenderId>2025_TDB_763586_2</RotTenderId>
+<RotTitleRef>[Thrikkapaleswaram Devaswom in Kottarakkara Group- Reconstructing store and thidappally for Devi temple-reg (RE-TENDER)][EET/eT-23/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SceuebsrlFJqsgCI%2F9lvbjg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>61.</RotSNo>
+<RotTenderId>2025_TDB_763580_2</RotTenderId>
+<RotTitleRef>[Mannady Devaswom in Kottarakkara group-Urgent repair works to Devaswom office building and thidappally-reg (RE-TENDER)       ][EET/eT-22/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SP1k%2Blwaj%2BY%2FeCV0CSPdk8w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>62.</RotSNo>
+<RotTenderId>2025_TDB_763554_2</RotTenderId>
+<RotTitleRef>[Valiyaudyadichapuram  Devaswom in Trivandrum group-Supply of furniture for Amenity Centre-reg (RE-TENDER)][EET/eT-20/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXyltcjwQmWadqVzmnZJQmA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>63.</RotSNo>
+<RotTenderId>2025_TDB_763545_2</RotTenderId>
+<RotTitleRef>[Kollam group -Supply of chairs to sadyalayam-reg (RE-TENDER)][EET/eT-19/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SAO57VNTNCzFyNMKUe2yYXw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>64.</RotSNo>
+<RotTenderId>2025_TDB_763519_2</RotTenderId>
+<RotTitleRef>[DBHS, Thrikkariyoor  Thrikkariyoor Group  Cleaning school ground premises in connection with the reopening for the academic year 2025-2026][TDB/EEK/ET-03/2025-26 ]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SDQBbj21SfzRqJbx6PWhk9g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>65.</RotSNo>
+<RotTenderId>2025_TDB_763507_2</RotTenderId>
+<RotTitleRef>[DBHS Thrikkariyoor  Thrikkariyoor group  Annual maintenance to the school building in connection with School re opening for the academic year 2025 2026][ TDB/EEK/ET-02/2025-26  ]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sybc8uEynm6XKhPt0NQK7lw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>66.</RotSNo>
+<RotTenderId>2025_TDB_763503_2</RotTenderId>
+<RotTitleRef>[Shanghumugham Devaswom in Trivandrum group-Supply of furniture to the sadyalayam (RE-TENDER)][EET/eT-18/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2BTd62QlpNyEkerCaweOEbw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>67.</RotSNo>
+<RotTenderId>2025_TDB_763468_2</RotTenderId>
+<RotTitleRef>[Poredom Devaswom in Kottarakkara Group - Extension of Pachakappura, Replacing old damaged roof of existing pachakappura and painting of Sadhyalayam-reg  (RE-TENDER)      ][EET/eT-16/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2FnWAyJv57Xpc4Y%2FsItv2HQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>68.</RotSNo>
+<RotTenderId>2025_TDB_763442_2</RotTenderId>
+<RotTitleRef>[Urgent repairs and maintenance to the Assistant Commissioner office, Trivandrum-reg(RE-TENDER)][EET/eT-15/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ShbAa8VMs%2FawRY3uQgjwLVg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>69.</RotSNo>
+<RotTenderId>2025_TDB_763427_1</RotTenderId>
+<RotTitleRef>[Asramam DBLP school in Kollam group- Annual Maintenance to the school building in the Academic year 2025-2026 -reg][EET/eT-09/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SOxxtA8QoOcyvRMJgUbqhIw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>70.</RotSNo>
+<RotTenderId>2025_TDB_762452_1</RotTenderId>
+<RotTitleRef>[SDP-Sabarimala- ENVTL- Supply and installation of new Chimney for the Incinerators at Sabarimala][SDP/01/ET-001/25-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Sabarimala Development Project</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwGr7NeDs%2FhHJ%2B7vBgXlrTA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>71.</RotSNo>
+<RotTenderId>2025_TDB_758323_2</RotTenderId>
+<RotTitleRef>[Aniyoor Devaswom in Ulloor Group- Providing Mild steel Crow net inside the Nalambalam -reg (RE-TENDER)][EET/eT-07/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBDlVmLCW6ywJVTrsMipsvw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>72.</RotSNo>
+<RotTenderId>2025_TDB_758322_2</RotTenderId>
+<RotTitleRef>[Parasuvaikal Major Sree Bhagavathy Devaswom in Neyyattinkara group- Constructing Auditorium- reg (RE-TENDER)][EET/eT-06/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S8ssXssQNUibXY1k0VJ8zrg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>73.</RotSNo>
+<RotTenderId>2025_TDB_758312_1</RotTenderId>
+<RotTitleRef>[Arangal Devaswom in Neyyattinkara -Providing and laying floor tiles to the auditorium-reg	][EET/eT-03/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SUxp814iMbeOwyMI3%2B6Rq7A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>74.</RotSNo>
+<RotTenderId>2025_TDB_758306_1</RotTenderId>
+<RotTitleRef>[PD Manikandeswaram Devaswom in Kottarakkara group - Repairs and Maintenance to the temple structures, providing temporary pandal, barricade, painting to side wall of temple pond and certain urgent necessary works in connection with festival in 1200ME][EET/eT-01/2025-26]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SjzsIIyUjQRj9C%2FN8GxASbQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>75.</RotSNo>
+<RotTenderId>2025_TDB_756310_1</RotTenderId>
+<RotTitleRef>[Kaipuzha Mekkavu devaswom-Ettumanoor group-Maintenance to the temple structure in connection with festival in 1200 ME][TDB/EEK/ET-291/2024-25 ]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sg1t7pTdagDOHDkFmQ3jJvg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>76.</RotSNo>
+<RotTenderId>2025_TDB_756297_1</RotTenderId>
+<RotTitleRef>[Sasthamkotta Devaswom-Ettumanoor group-Painting to the temple structure][TDB/EEK/ET-290/2024-25 ]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SScCwJ55OJTwgEhiBMzUf9Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>77.</RotSNo>
+<RotTenderId>2025_TDB_756247_1</RotTenderId>
+<RotTitleRef>[Elamakkudi Devaswom-Ettumanoor group-Maintenance to the temple structure in connection with festival in 1200ME][TDB/EEK/ET-286/2024-25 ]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sturs4v1NsD%2F0lTYtRt6Rtg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>78.</RotSNo>
+<RotTenderId>2025_TDB_753545_2</RotTenderId>
+<RotTitleRef>[Iringol Devaswom-Chiteeswaram Thrikkariyoor group-Constructing Toilet Block][TDB/EEK/ET-277/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S9Aq%2B7uerndtb83tijlNw7g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>79.</RotSNo>
+<RotTenderId>2025_TDB_748742_2</RotTenderId>
+<RotTitleRef>[Thirumullavaram Devaswom in Kollam Group-Constructing B type Toilet and separating it from the school compound  -reg (RETENDER)][EET/eT-143/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1MgzrpC13vvnhfB%2BGHuBrA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>80.</RotSNo>
+<RotTenderId>2025_TDB_748738_2</RotTenderId>
+<RotTitleRef>[Aruvikkara Devaswom in Ulloor group-Constructing Kalyanamandapam -reg (RETENDER)][EET/eT-142/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SWTKtKDYrLmoRojO2HW4Ubw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>81.</RotSNo>
+<RotTenderId>2025_TDB_746963_1</RotTenderId>
+<RotTitleRef>[Omalloor  Devaswom in Aranmula Group- Annual Maintenance  in  1200 ME.][EEM/ET-194/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Mavelikkara</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SvWY42ABWneJYhPKPZw3XdA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>82.</RotSNo>
+<RotTenderId>2025_TDB_745342_1</RotTenderId>
+<RotTitleRef>[Thiruvarppu devaswom- Kottayam group -Painting to the temple structures in connection with festival in 1200 ME][TDB/EEK/ET-273/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SCU2Rr%2B3H0uH%2B%2BCs05UFedA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>83.</RotSNo>
+<RotTenderId>2025_TDB_745328_1</RotTenderId>
+<RotTitleRef>[Cheruvally Devaswom in Mundakkayam Group Painting to the temple structure, Gopuram and putting up pandal in connection with festival in 1200 ME ][TDB/EEK/ET-267/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2BjKfxBVI2Cs%2B4rqr9SB1%2Fg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>84.</RotSNo>
+<RotTenderId>2025_TDB_743671_2</RotTenderId>
+<RotTitleRef>[Vellakkulangara Vellaramkunnu Devaswom in Kottarakkara group - Constructing Pradhakshinavazhi-reg (RETENDER)][EET/eT-135/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SoS3x%2FLxsXvEi2bZssJ02hw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>85.</RotSNo>
+<RotTenderId>2025_TDB_743040_1</RotTenderId>
+<RotTitleRef>[Kalikavu Devaswom- Ettumanoor group - Pucca maintenance to the Sadhyalayam][TDB/EEK/ET-250/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SrtmZ1Fk1reL8PND4Bs28eg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>86.</RotSNo>
+<RotTenderId>2025_TDB_743024_1</RotTenderId>
+<RotTitleRef>[Thirunnakkara Devaswom-Kottayam group -Maintenance to the temple structure and Sivasakthi auditorium and cleaning the brass covered vilakkazhy in connection with festival in 1200 M E      ][TDB/EEK/ET-241/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S8MgqSvlQPFCt9NfKtwIssA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>87.</RotSNo>
+<RotTenderId>2025_TDB_742984_1</RotTenderId>
+<RotTitleRef>[Thirunakkara Devaswom Kottayam Group Painting to the ornamental Gopuram in connection with festival in 1200 ME][TDB/EEK/ET-239/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ShSNplxz6eZ9rjH5fWIdHYQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>88.</RotSNo>
+<RotTenderId>2025_TDB_737987_1</RotTenderId>
+<RotTitleRef>[Ettumanoor Devaswom in Ettumanoor group  urgent repair and replacements of damaged electrical fittings to the kailas auditorium guest house and AC Office][TDB/EEE/ET-243/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer Chengannur</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SnQFgs0Li5xlKyPbmaVxWbw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>89.</RotSNo>
+<RotTenderId>2025_TDB_736048_2</RotTenderId>
+<RotTitleRef>[P.D Manikandeswaram Devaswom in Kottarakkara group - Providing GI roofing to the Valiyanadapandal infront of the Stage-reg (RETENDER)][EET/eT-130/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S9FHxbb8rNeLqHxLvZSFytA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>90.</RotSNo>
+<RotTenderId>2025_TDB_736047_2</RotTenderId>
+<RotTitleRef>[Kottarakkara Devaswom in Kottarakkara Group- Repairs and Maintenance to the Guest House-reg (RETENDER)][EET/eT-129/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXJHxgwxVB48VTGqTHIbOLA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>91.</RotSNo>
+<RotTenderId>2025_TDB_736046_1</RotTenderId>
+<RotTitleRef>[PD Pattazhy Devaswom in Kottarakkara Group-Providing temporary pandal in connection with Meenathiruvathira festival in 1200 ME-reg][EET/eT-128/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sdx4mBX%2B9wgotDIoC4iI3kg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>92.</RotSNo>
+<RotTenderId>2025_TDB_736044_2</RotTenderId>
+<RotTitleRef>[Mangodu Orippuram Devaswom  in Punalur Group- Constructing Sadyalayam-reg(RETENDER)][EET/eT-126/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S2GBBLv3p7OpLkkxkoPcIwg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>93.</RotSNo>
+<RotTenderId>2025_TDB_736040_2</RotTenderId>
+<RotTitleRef>[P.D  Manikanteswaram Devaswom in Kottarakkara group- Reconstructing North side of Compound wall and laying chequerred concrete tiles to the North side pathway near the Valiyanadapandal-reg (RETENDER)][EET/eT-122/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SNu9Nm5lPLez%2B76MN%2BFZU3Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>94.</RotSNo>
+<RotTenderId>2025_TDB_736033_1</RotTenderId>
+<RotTitleRef>[Sreevaraham Devaswom in Trivandrum group-Urgent repairs and maintenance to the dilapidated chuttambalam (South side and North side)-reg][EET/eT-117/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Thiruvananthapuram</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SlV2e1Ynv5dYLhl4IE85QvQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>95.</RotSNo>
+<RotTenderId>2025_TDB_734970_1</RotTenderId>
+<RotTitleRef>[Vaikom Devaswom - Vaikom group -Cleaning the Arattukulam temple pond][TDB/EEK/ET-237/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SYZsBgaTQvftm3a8XyxdRiQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>96.</RotSNo>
+<RotTenderId>2025_TDB_734966_1</RotTenderId>
+<RotTitleRef>[Thenganal Devaswom Maintenance -Changanasserry Group- Annual Maintenance To The Temple Structure In Connection With Festival In 1200 ME.][TDB/EEK/ET-234/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SNQqmBjk3cBoKq7SRJj%2BZHQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>97.</RotSNo>
+<RotTenderId>2025_TDB_734964_1</RotTenderId>
+<RotTitleRef>[Pattanakkadu Devaswom in Vaikom Group Pucca repair and Maintenance to the temple structure in connection with festival in 1200ME.][TDB/EEK/ET-232/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SuimLDkksDQAkrzbPt2ZBqg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>98.</RotSNo>
+<RotTenderId>2025_TDB_734787_1</RotTenderId>
+<RotTitleRef>[Aramala Devawom in Changanassery Group Painting to the temple structure in connection with Sivarathri festival in 1200 ME Reg.][TDB/EEK/ET-223/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S1bUAP%2B448X%2BZ%2FyZTFin0aw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>99.</RotSNo>
+<RotTenderId>2025_TDB_734761_1</RotTenderId>
+<RotTitleRef>[Kiliroor Devaswom-Kottayam Group-Construction of arattukadavu. Recast Estimate.][TDB/EEK/ET-222/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Executive Engineer,Kottayam</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S7aDpGeTqwWJ3fphnG61K0Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>100.</RotSNo>
+<RotTenderId>2025_TDB_732793_2</RotTenderId>
+<RotTitleRef>[Vallikkezhu Devaswom in Kollam Group-Re-constructing damaged compound wall in East side of temple compound.][EDT/eT-32/2024-25]</RotTitleRef>
+<RotOrganisationChain>Travancore Devaswom Board||Estate Division</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://etenders.kerala.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SRHP27qsB9SybDNJIIgbPDw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Kerala</SourceSiteKey>
+--- TENDER END ---
+

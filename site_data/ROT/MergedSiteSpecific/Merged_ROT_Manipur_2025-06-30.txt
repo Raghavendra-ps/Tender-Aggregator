@@ -1,0 +1,1100 @@
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>1.</RotSNo>
+<RotTenderId>2025_PWDM1_2664_1</RotTenderId>
+<RotTitleRef>[Construction of Rigid Pavement with interlocking paver blocks in Noney District HQ roads SH Improvement of road from NH 37 to Infrastructure Longmai II at Noney HQ][EE/ND/eTENDER/2024-25/01]</RotTitleRef>
+<RotOrganisationChain>PWD,Govt. of Manipur</RotOrganisationChain>
+<RotTenderStage>Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SQSiK7qCLvZfJDOQl7qcq4A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>2.</RotSNo>
+<RotTenderId>2025_HFW_2582_1</RotTenderId>
+<RotTitleRef>[Providing super speciality and assured speciality health care in remote and hill area of Manipur at SDH Jiribam District Manipur][e-tender/2024-25/123]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare||Engineering Cell Health and Family Welfare||Executive Engineer Valley - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sn%2BikqoNCDLs3IuW%2BvEvzQg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>3.</RotSNo>
+<RotTenderId>2024_TPD_2322_1</RotTenderId>
+<RotTitleRef>[Request for Proposal for Appointment of an Urban Planning Consultancy Firm/ HR Agency.][No.6/1/2024-TP]</RotTitleRef>
+<RotOrganisationChain>Town Planning Department</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SbkYiD0wQZhucsXOKsGdkRQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>4.</RotSNo>
+<RotTenderId>2024_HFW_2469_1</RotTenderId>
+<RotTitleRef>[STRENGTHENING OF DISTRICT HOSPITAL JIRIBAM][6/EE/VALLEY-1/Tender/112]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare||Engineering Cell Health and Family Welfare||Executive Engineer Valley - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SqoQtJZQ5u0GN6Ay%2FyEu8bQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>5.</RotSNo>
+<RotTenderId>2023_TAH_2209_1</RotTenderId>
+<RotTitleRef>[Construction of JNV Phase-B at South Tripura District, Tripura.][04/ MTDC/NVS/TENDER/2022-23]</RotTitleRef>
+<RotOrganisationChain>Directorate of Tribal Affairs and Hills||Manipur Tribal Development Corporation Ltd. - TAH||Imphal-MTDC - TAH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SQFfuXkkUYogy9c370Jc2xg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>6.</RotSNo>
+<RotTenderId>2023_TAH_2208_1</RotTenderId>
+<RotTitleRef>[Construction of JNV Phase-B at Sepahijhala District, Tripura.][03/MTDC/NVS/TENDER/2022-23]</RotTitleRef>
+<RotOrganisationChain>Directorate of Tribal Affairs and Hills||Manipur Tribal Development Corporation Ltd. - TAH||Imphal-MTDC - TAH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SMaYUit3DG%2FTH%2Bz9pVvnLFw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>7.</RotSNo>
+<RotTenderId>2023_TAH_2207_1</RotTenderId>
+<RotTitleRef>[Construction of Phase-A Left Over Works at JNV, Tuensang, Nagaland.][02/MTDC/NVS/TENDER/2022-23]</RotTitleRef>
+<RotOrganisationChain>Directorate of Tribal Affairs and Hills||Manipur Tribal Development Corporation Ltd. - TAH||Imphal-MTDC - TAH</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SLfCGsI4uC%2FUBInnsNx1IAg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>8.</RotSNo>
+<RotTenderId>2023_PWDM1_2204_2</RotTenderId>
+<RotTitleRef>[Improvement / Up-gradation of Road Connecting Tadubi to Chowainamei Khunou and Maopungdung , Senapati District, (Length-10.045 Km).][EPC/2023-24/1021 ]</RotTitleRef>
+<RotOrganisationChain>PWD,Govt. of Manipur||NH Circle||North East Council Div-II,NH Circle,PWD,Go of Mani</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBnx6eGHrS0LgNO%2FWbaHQDA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>9.</RotSNo>
+<RotTenderId>2023_MSPDC_2225_1</RotTenderId>
+<RotTitleRef>[Supply and Installation of End Point Security Antivirus Solution at Manipur State Power Distribution Company Limited with 5 years license along with maintenance and support.][1/7/2020-MSPDCL-IT/Anti-Virus/]</RotTitleRef>
+<RotOrganisationChain>Manipur State Power Distribution Company Limited||Managing Director - MSPDCL||Manager - MSPDCL</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXRPLn2LJg%2BStEDkVDRkRuw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>1</ListPageNum>
+<RotSNo>10.</RotSNo>
+<RotTenderId>2023_HFW_2236_1</RotTenderId>
+<RotTitleRef>[Renovation and development of I.N.A. Martyrs Memorial Complex under the commemoration of 125th Birth Anniversary of Netaji Subash Chandra Bose. S.H.Art Works .           ][2023_HFW_2023_71]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare||Engineering Cell Health and Family Welfare||Executive Engineer Valley - I</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SmZPPgE3lVviwVPPVUAHHWQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>11.</RotSNo>
+<RotTenderId>2023_HFW_2180_1</RotTenderId>
+<RotTitleRef>[Construction of  50 Bedded Critical Care Block at JNIMS under ECRP II, Porompat Imphal East, Manipur.][03/EE-V2/HANDFW/TENDER/2022-23]</RotTitleRef>
+<RotOrganisationChain>Health and Family Welfare||Engineering Cell Health and Family Welfare||Executive Engineer Valley - II</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SqK2ojk%2BY%2BOokstjJsCcyIg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>12.</RotSNo>
+<RotTenderId>2022_MSPDC_1971_1</RotTenderId>
+<RotTitleRef>[Consultancy Services for assisting and supporting in Project Management to MSPDCL under Revamped Reforms-Linked Results-Based Distribution Sector Scheme.][2/242(RDSS-PMA/INF-SM)/MSPDCL]</RotTitleRef>
+<RotOrganisationChain>Manipur State Power Distribution Company Limited||Managing Director - MSPDCL||Manager - MSPDCL</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SL691vGtFpS%2Bv8XXBplUw7w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>13.</RotSNo>
+<RotTenderId>2022_MSPDC_1894_1</RotTenderId>
+<RotTitleRef>[Empanelment of Vendors for Rooftop Solar Plant of various capacities under Phase-II of GCRTS Scheme.][2/212(RTS-II/MN/FY 22-23)/2022]</RotTitleRef>
+<RotOrganisationChain>Manipur State Power Distribution Company Limited||Managing Director - MSPDCL||Manager - MSPDCL</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sg3PnU70uK%2Bslb0nxS6BGcQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>14.</RotSNo>
+<RotTenderId>2022_MSPDC_1874_1</RotTenderId>
+<RotTitleRef>[Professional Services for preparation of True-up tariff petition and Multi Year Tariff Petition.][2/204(TUTP-MYTP)/2022-MSPDCL]</RotTitleRef>
+<RotOrganisationChain>Manipur State Power Distribution Company Limited||Managing Director - MSPDCL||Manager - MSPDCL</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwnAgP1doW%2F6UzLNyYWlkRg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>15.</RotSNo>
+<RotTenderId>2022_MAHUD_1930_1</RotTenderId>
+<RotTitleRef>[Development of 500TPD Capacity Legacy Waste Processing Plant and Processing at Lamdeng.][No. 3/35/2022-ISCL/NIT/05]</RotTitleRef>
+<RotOrganisationChain>Municipal Administration Housing and Urban Development||IMPHAL WEST - MAHUD</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBNRvO4kjRSvZuM6yK0ZwoA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>16.</RotSNo>
+<RotTenderId>2022_HCM_1836_1</RotTenderId>
+<RotTitleRef>[Procurement of VC Equipments][HCM/E-43/2016Estt/PtI/VolVIID]</RotTitleRef>
+<RotOrganisationChain>High Court of Manipur||Imphal - HCM</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sdm8a1TBfrbHp%2BBIDE71t8g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>17.</RotSNo>
+<RotTenderId>2022_DMA_1958_1</RotTenderId>
+<RotTitleRef>[Construction of Community Hall at Khuyathong, Imphal][MOBEDS-06/2022]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SArwSeNcXGMh82yJxIfaR2Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>18.</RotSNo>
+<RotTenderId>2022_DMA_1957_1</RotTenderId>
+<RotTitleRef>[Construction of Road at Moidangpok,Konthoujam][MOBEDS-05/2022]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sj5amjU5qSebZhNLfnbOaCA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>19.</RotSNo>
+<RotTenderId>2022_DMA_1956_1</RotTenderId>
+<RotTitleRef>[Construction of Drain and Improvement of tiles in Imphal City][MOBEDS-04/2022]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SaVayZBEXGm45ovt3UBdE6w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>2</ListPageNum>
+<RotSNo>20.</RotSNo>
+<RotTenderId>2022_DMA_1955_1</RotTenderId>
+<RotTitleRef>[Construction of Community hall at Sagolband][MOBEDS-03/2022]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SdttTRmPGxwBYk7Ic2ulQ3A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>21.</RotSNo>
+<RotTenderId>2022_DMA_1954_1</RotTenderId>
+<RotTitleRef>[Improvement of road in Imphal Area, Imphal West][MOBEDS-02/2022]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SlVClpitIq2LV%2Bf6hTq9bhA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>22.</RotSNo>
+<RotTenderId>2022_DMA_1953_1</RotTenderId>
+<RotTitleRef>[Construction of Sagolband United Club Building][MOBEDS-01/2022]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SudQIa067jNKIZ5x5AD6tkg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>23.</RotSNo>
+<RotTenderId>2021_MPHCL_1320_1</RotTenderId>
+<RotTitleRef>[Supply of 43 Grade OP Cement conforming to IS  269  2015 ][1/EE(STORE)/MPHC/2020-21]</RotTitleRef>
+<RotOrganisationChain>Manipur Police Housing Corporation Ltd||Chief Engineer - MPHCL</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S0zZWhwFhj%2FF7HVvdbpaY8g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>24.</RotSNo>
+<RotTenderId>2021_MANID_1600_1</RotTenderId>
+<RotTitleRef>[CONSTRUCTION OF TRAINING CENTRE FOR BUILDING AND OTHER CONSTRUCTION WORKERS WELFARE BOARD AT ITI COMPLEX, TAKYELPAT, IMPHAL WEST, MANIPUR.][MANIDCO/IDC/MBCWB/TC/2021/9]</RotTitleRef>
+<RotOrganisationChain>Manipur Industrial Development Cooperation||Imphal West - MANIDCO</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SCdTCtcDn8Kizc4uAvTjbRw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>25.</RotSNo>
+<RotTenderId>2021_MANID_1350_1</RotTenderId>
+<RotTitleRef>[CONSTRUCTION OF BARRACK ACCOMMODATION FOR SECURITY PERSONNELS AT ICP MOREH IN TENGNOUPAL DISTRICT IN THE STATE OF MANIPUR ON INDIA MYANMAR BORDER.][MANIDCO/IDC/LPAI/EE-III/21/01]</RotTitleRef>
+<RotOrganisationChain>Manipur Industrial Development Cooperation||Imphal West - MANIDCO</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SZi%2FoB%2FAcPacOMVZWvwN4yA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>26.</RotSNo>
+<RotTenderId>2021_MANID_1283_1</RotTenderId>
+<RotTitleRef>[PROVIDING AND LAYING OF  INTERNATIONAL SIZE SYNTHETIC EIGHT LANE ATHELETIC TRACK  OF 400m , APPROVED BY IAAF, INCLUDING CONSTRUCTION OF SUB BASE, DRAINAGE AT DASARATH DEV STATE SPORTS COMPLEX, BADHARGHAT, AGARTALA, WEST TRIPURA.][IDC/EE-III/AGT/2020-21/53]</RotTitleRef>
+<RotOrganisationChain>Manipur Industrial Development Cooperation||Imphal West - MANIDCO</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SwQyLsdeM89FYRTj5RWpQYQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>27.</RotSNo>
+<RotTenderId>2021_MANID_1282_1</RotTenderId>
+<RotTitleRef>[Construction of Swimming pool (Olympic size 50 mtr X 25 mtr X 6 feet) at Regional College of Physical Education (RCPE), Panisager, North Tripura . ][IDC/EE-III/AGT/2020-21/52]</RotTitleRef>
+<RotOrganisationChain>Manipur Industrial Development Cooperation||Imphal West - MANIDCO</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2Fh0yb0rqchZWJ0m1Cr1pXg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>28.</RotSNo>
+<RotTenderId>2021_MANID_1281_1</RotTenderId>
+<RotTitleRef>[CONSTRUCTION OF SYNTHETIC FOOTBALL FIELD ( Astro Turf ) WITH DRAINAGE, FENCING AND FOOTPATH AT KHOWAI GOVERNTMENT H/S (BOYS) SCHOOL PLAY GROUND, KHOWAI DISTRICT, TRIPURA.][IDC/EE-III/AGT/2020-21/51]</RotTitleRef>
+<RotOrganisationChain>Manipur Industrial Development Cooperation||Imphal West - MANIDCO</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sj%2FOkGLuztoBROowxGVbveg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>29.</RotSNo>
+<RotTenderId>2021_LDA_1428_1</RotTenderId>
+<RotTitleRef>[Aquatic Cleaning Equipment][PD/LDA/IWT-IMP/2019-2]</RotTitleRef>
+<RotOrganisationChain>Loktak Development Authority||Office of the Project Director - LDA</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Scg1sbLqNQvvu5hUbrnpoTA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>3</ListPageNum>
+<RotSNo>30.</RotSNo>
+<RotTenderId>2021_LDA_1427_1</RotTenderId>
+<RotTitleRef>[Supply of Aquatic Vegetation Cutter  ][PD/LDA/IWT-IMP/2019-1]</RotTitleRef>
+<RotOrganisationChain>Loktak Development Authority||Office of the Project Director - LDA</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SoHQP2O49k5iv3spsb1qYZQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>31.</RotSNo>
+<RotTenderId>2021_DMA_1565_1</RotTenderId>
+<RotTitleRef>[Water Supply Scheme at Raphei Valley, Lamlongei and P/L feeder line from the clear water main line of Mantripukhri Imphal East][MOBEDS-81/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SSSHXA69097ws97yuo2r8dQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>32.</RotSNo>
+<RotTenderId>2021_DMA_1517_1</RotTenderId>
+<RotTitleRef>[Construction of 50 Bedded Girls Hostel  at Moreh College, Tengnoupal District, Manipur ][MOBEDS-80/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S9LInnbhgdQwaMVS7fvTtHA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>33.</RotSNo>
+<RotTenderId>2021_DMA_1516_1</RotTenderId>
+<RotTitleRef>[Construction of 50 Bedded Boys Hostel at Moreh College, Tengnoupal District, Manipur ][MOBEDS-79/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SayOnrXLgK9wraFHRogMXLg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>34.</RotSNo>
+<RotTenderId>2021_DMA_1514_1</RotTenderId>
+<RotTitleRef>[Infrastructure Development of Pettigrew College at Ukhrul District (Sh- Construction of 100 Bedded Girls Hostel)][MOBEDS-77/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SjHzrmnc35lHeSNLi4VSWGA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>35.</RotSNo>
+<RotTenderId>2021_DMA_1513_1</RotTenderId>
+<RotTitleRef>[Infrastructure Development of Pettigrew College at Ukhrul District (Sh- Construction of 100 Bedded Boys Hostel)][MOBEDS-76/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sci3vxtZ49hz8LXnDEJxt0A%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>36.</RotSNo>
+<RotTenderId>2021_DMA_1512_1</RotTenderId>
+<RotTitleRef>[Infrastructure Development of Pettigrew College at Ukhrul District, Manipur (Sh- Construction of Academic Block and Main Gate)][MOBEDS-75/2021 ]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SPQPILSSp2y9TPCtG%2BgL7BA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>37.</RotSNo>
+<RotTenderId>2021_DMA_1500_1</RotTenderId>
+<RotTitleRef>[Construction of Sadbhavna Mandap at Churachandpur DHQ, Churachandpur District][MOBEDS-74/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SL9mtjrSXlq9VLkWFCVJZBw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>38.</RotSNo>
+<RotTenderId>2021_DMA_1493_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building  At  Ngampabung, Vangai, Pherzawl District. ][MOBEDS-20/2021/RT/01]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SKTUeHbyi2GoGn6hQ3P1aMg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>39.</RotSNo>
+<RotTenderId>2021_DMA_1492_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building  At Kangrang, Vangai, Pherzawl District. ][MOBEDS-19/2021/RT/01]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sx62DxFRaNOdMHMKT1%2BlMSQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>4</ListPageNum>
+<RotSNo>40.</RotSNo>
+<RotTenderId>2021_DMA_1491_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building  At  Buangmun, Vangai, Pherzawl District. ][MOBEDS-18/2021/RT/01]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SKesIwKNFVK%2FXOFNuPZsi3w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>41.</RotSNo>
+<RotTenderId>2021_DMA_1490_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Taiphu, Tipaimukh, Pherzawl District. ][ MOBEDS-17/2021/RT/01]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SnS0HnL3wZ6242xc6j0exRg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>42.</RotSNo>
+<RotTenderId>2021_DMA_1489_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Tinsuong, Tipaimukh, Pherzawl District.][MOBEDS-16/2021/RT/01]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SFo0JeBI73rQXjZBOs31K5g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>43.</RotSNo>
+<RotTenderId>2021_DMA_1488_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Parvachom, Tipaimukh, Pherzawl District][MOBEDS-15/2021/RT/01]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ScMSl66y4MZcuts0qI2iG5Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>44.</RotSNo>
+<RotTenderId>2021_DMA_1487_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Phunchongjang, Thanlon, Pherzawl District.][MOBEDS-14/2021/RT/01]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SP40XeCk9V%2Fuq7eB%2BuGV4Gw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>45.</RotSNo>
+<RotTenderId>2021_DMA_1486_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Milongmun, Thanlon, Pherzawl District.][MOBEDS-13/2021/RT/01]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S2gHLW2VUcYgw4dAvyMXEhw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>46.</RotSNo>
+<RotTenderId>2021_DMA_1485_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Hanship, Thanlon, Pherzawl District.][MOBEDS-12/2021/RT/01]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SzngVQgujNFCK1cQNjfPtEw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>47.</RotSNo>
+<RotTenderId>2021_DMA_1484_1</RotTenderId>
+<RotTitleRef>[Construction of 100 Bedded SC Girls Hostel at Latinkhal High School, Jiribam][MOBEDS-73/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SbNBE24sD2vdkF%2FwjQHxzZg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>48.</RotSNo>
+<RotTenderId>2021_DMA_1483_1</RotTenderId>
+<RotTitleRef>[Construction of 100 Bedded SC Girls Hostel at Kakching Higher Secondary School, Kakching, Thoubal District][MOBEDS-72/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S9Cc%2FoFyrT%2FOLhkinZ8NhmQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>49.</RotSNo>
+<RotTenderId>2021_DMA_1482_1</RotTenderId>
+<RotTitleRef>[Construction of 100 Bedded SC Boys Hostel at Manipur Technical University, Takyel, Imphal West District, Manipur][MOBEDS-71/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SjqQljISBmT98htxITxYsLg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>5</ListPageNum>
+<RotSNo>50.</RotSNo>
+<RotTenderId>2021_DMA_1481_1</RotTenderId>
+<RotTitleRef>[Construction of 100 Bedded SC Girls Hostel at Manipur Technical University, Khaidem, Takyel, Imphal West, Manipur][MOBEDS-70/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sn7wbBr%2FeSY9tImRMlijDTA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>51.</RotSNo>
+<RotTenderId>2021_DMA_1480_1</RotTenderId>
+<RotTitleRef>[Construction of 50-bedded Girls Hostel at KGBV, Mandeu, Tousem, Tamenglong District][MOBEDS-69/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S296AWJRZnbwul%2F0iMxgbtg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>52.</RotSNo>
+<RotTenderId>2021_DMA_1479_1</RotTenderId>
+<RotTitleRef>[Construction of 50-bedded Hostel at Jessami Hr.Sec.School, Ukhrul District][MOBEDS-68/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXnWb8%2Bwr5II3rFWDPQyC%2BA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>53.</RotSNo>
+<RotTenderId>2021_DMA_1478_1</RotTenderId>
+<RotTitleRef>[Construction of 50-bedded Girls Hostel at Paocham H/S, Chingai, Ukrhul District][MOBEDS-67/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SukuUTfzNwpRFXqQADkBtsg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>54.</RotSNo>
+<RotTenderId>2021_DMA_1477_1</RotTenderId>
+<RotTitleRef>[Construction of 50-bedded Girls Hostel at Purul Hr.Sec.School, Purul, Senapati District][MOBEDS-66/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S3Ikl8jRVidZwoYtJ9RRVqg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>55.</RotSNo>
+<RotTenderId>2021_DMA_1476_1</RotTenderId>
+<RotTitleRef>[Construction of 50-bedded Girls Hostel at Liyai Khullen H/S, Paomata, Senapati District][MOBEDS-65/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SSYajp7GhCG38c2QCWlUMzA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>56.</RotSNo>
+<RotTenderId>2021_DMA_1475_1</RotTenderId>
+<RotTitleRef>[Construction of 50-bedded Girls Hostel at Sardar Patel H/S, Mao Gate, Mao Maram, Senapati District][MOBEDS-64/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Szh4gWz0lRDMtRY1pTwrIzQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>57.</RotSNo>
+<RotTenderId>2021_DMA_1474_1</RotTenderId>
+<RotTitleRef>[Construction of 50-bedded Girls Hostel at Khangbarol UPS, Khengjoy, Chandel District][MOBEDS-63/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sx2syiO%2BgZ1er51uTYJMHvA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>58.</RotSNo>
+<RotTenderId>2021_DMA_1473_1</RotTenderId>
+<RotTitleRef>[Construction of 50-bedded of 50-bedded Boys Hostel at Liwachangnining HS, Chandel District][MOBEDS-62/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SFRz2rsdLsq9St2lQryqm%2FA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>59.</RotSNo>
+<RotTenderId>2021_DMA_1472_1</RotTenderId>
+<RotTitleRef>[Construction of 50-bedded Girls Hostel at Larong Govt. HS, Chandel District][MOBEDS-61/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SnXuF191hiLVBTGrXT6HFyQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>6</ListPageNum>
+<RotSNo>60.</RotSNo>
+<RotTenderId>2021_DMA_1471_1</RotTenderId>
+<RotTitleRef>[Construction of 50-bedded Boys Hostel at Khangbarol UPS, Khengjoy, Chandel District][MOBEDS-60/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SKU6O2FZH3VNK8ltK81I88Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>61.</RotSNo>
+<RotTenderId>2021_DMA_1434_1</RotTenderId>
+<RotTitleRef>[Construction of Science and Commerce Block at Tamenglong College with laboratory facilities, compound fencing][MOBEDS-59/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SDMZYT8za6sL6yTCrefykTQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>62.</RotSNo>
+<RotTenderId>2021_DMA_1420_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Allusingtam, Singngat, Churachandpur District][MOBEDS-58/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXqbJyQ32ik93n1XlrmSNSg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>63.</RotSNo>
+<RotTenderId>2021_DMA_1419_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at  G. Bualjang, Singngat, Churachandpur District][MOBEDS-57/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SkR5zFzjZWw20G%2FIJuqCdQw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>64.</RotSNo>
+<RotTenderId>2021_DMA_1418_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Songdo, Henglep, Churachandpur District][MOBEDS-56/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SKeJOZJl5l9EZVaCAkpKZdA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>65.</RotSNo>
+<RotTenderId>2021_DMA_1417_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Keirap-Khullen, Henglep, Churachandpur District][MOBEDS-55/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SXWVNP%2BklKFN1fR3KCW08xQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>66.</RotSNo>
+<RotTenderId>2021_DMA_1416_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Santing, Henglep, Churachandpur District][MOBEDS-54/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SkNr7F%2FR4tniERLM%2BsMopXQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>67.</RotSNo>
+<RotTenderId>2021_DMA_1415_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Tokpa Khunou, Henglep, Churachandpur District][MOBEDS-53/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S5NJeDTum%2Bj9kPs%2BvxIQirQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>68.</RotSNo>
+<RotTenderId>2021_DMA_1414_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Kwatha Khunou, Moreh, Tengnoupal District][MOBEDS-52/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SRC4ylXuPWLexSlhJFpuh4Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>69.</RotSNo>
+<RotTenderId>2021_DMA_1413_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Samanphai, Machi, Tengnoupal District][MOBEDS-51/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SMl7dftWLO6H2dl%2BoAnAy%2Fg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>7</ListPageNum>
+<RotSNo>70.</RotSNo>
+<RotTenderId>2021_DMA_1412_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Nungourok, Machi, Chandel District][MOBEDS-50/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S5ZT8EYPBnaKfo%2BCv0bEGgA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>71.</RotSNo>
+<RotTenderId>2021_DMA_1411_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Khubung Khullen, Chakpikarong, Chandel District][MOBEDS-49/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ScoVEo8c5DNdqiq%2BuUyuSyA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>72.</RotSNo>
+<RotTenderId>2021_DMA_1410_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at ILand, Saikul, Kangpokpi District][MOBEDS-48/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SU7HZnQodhq%2Fwgp9avcjzAg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>73.</RotSNo>
+<RotTenderId>2021_DMA_1409_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Thonglang Akutpa, Kangpokpi District.][MOBEDS-47/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SQIOeMI7qAxPqm88cgWh%2B2w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>74.</RotSNo>
+<RotTenderId>2021_DMA_1408_1</RotTenderId>
+<RotTitleRef>[Construction of PHSC building at Makui, Kangpokpi District][MOBEDS-46/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Si5x4mNGBAew1U3n2xBHdLA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>75.</RotSNo>
+<RotTenderId>2021_DMA_1407_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Chakumai, Mao Maram, Senapati District.][MOBEDS-45/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sl4tT971AGq6mP2eO3c02bw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>76.</RotSNo>
+<RotTenderId>2021_DMA_1406_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Rajaimei, Mao Maram, Senapati District][MOBEDS-44/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SX8QFP4xzuPdqnoC61nEOlQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>77.</RotSNo>
+<RotTenderId>2021_DMA_1405_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building  at Sadim, Mao Maram, Senapati District.][MOBEDS-43/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SYhCh%2BzVjTS2A1skMl304rw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>78.</RotSNo>
+<RotTenderId>2021_DMA_1404_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Thingra, Tamenglong Block, Noney District][MOBEDS-42/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Sx51IubcRZZXzkR7dVeyvcQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>79.</RotSNo>
+<RotTenderId>2021_DMA_1403_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Nagaching, Tamenglong Block, Noney District][MOBEDS-41/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Stg4R47cLYvxOeuSHllvNyQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>8</ListPageNum>
+<RotSNo>80.</RotSNo>
+<RotTenderId>2021_DMA_1402_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Rangkhung, Tamenglong Block, Noney District][MOBEDS-40/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SRTwdRmacumfjkpRlBLk35Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>81.</RotSNo>
+<RotTenderId>2021_DMA_1401_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Longpi, Nungba, Noney District][MOBEDS-39/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SDeK84mvWfGcROBwp3VqW3g%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>82.</RotSNo>
+<RotTenderId>2021_DMA_1400_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Khongshang, Nungba, Noney District.][MOBEDS-38/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBUwMnvCGAnhqHI2lDAYYCw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>83.</RotSNo>
+<RotTenderId>2021_DMA_1399_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Thangal, Khoupum, Noney District][MOBEDS-37/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SeZFGWtS4knpQF3aLNX8eeA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>84.</RotSNo>
+<RotTenderId>2021_DMA_1398_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Luwanglong, Khoupum, Noney District][MOBEDS-36/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Smyc8AF4YsbouCEHwmCShgQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>85.</RotSNo>
+<RotTenderId>2021_DMA_1397_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Ningthi, Kamjong District][MOBEDS-35/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S%2BnH8UkfnfPHdDK054TBP0Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>86.</RotSNo>
+<RotTenderId>2021_DMA_1396_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Tangkhul Hundung, Phungyar Block, Kamjong District][MOBEDS-34/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SpW9M8crPizswK%2B%2BRRsyoLg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>87.</RotSNo>
+<RotTenderId>2021_DMA_1395_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building  at Nambisa, Kamjong District.][MOBEDS-33/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SJV%2ByvUYApcjLHcp%2FjYmJRQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>88.</RotSNo>
+<RotTenderId>2021_DMA_1394_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Sahamphung, Kamjong District][MOBEDS-32/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SAt5H4LW7f3mREW88V0oi5w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>89.</RotSNo>
+<RotTenderId>2021_DMA_1393_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Ringui, Lungchong Maiphei, Ukhrul District.][MOBEDS-31/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SuLeb6dRq74HrTy2%2B%2BjPmDw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>9</ListPageNum>
+<RotSNo>90.</RotSNo>
+<RotTenderId>2021_DMA_1392_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Pushing, Chingai, Ukhrul District][MOBEDS-30/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SBjCuLfVL5b%2BygE1TBStg9Q%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>91.</RotSNo>
+<RotTenderId>2021_DMA_1391_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Ngainga, Chingai, Ukhrul District.][MOBEDS-29/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SrYUnHJ8tl6t1eC9XEBWwdQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>92.</RotSNo>
+<RotTenderId>2021_DMA_1390_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Tusom CV, Chingai, Ukhrul District][MOBEDS-28/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SsRjKVln6GZOUH0myrcMaug%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>93.</RotSNo>
+<RotTenderId>2021_DMA_1389_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building][MOBEDS-27/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SFJ1Y060kLMjHBRTVObL90w%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>94.</RotSNo>
+<RotTenderId>2021_DMA_1388_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Impa PHSC, Tousem, Tamenglong District.][MOBEDS-26/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SRiMj7fcISq%2F9SKmYMqhTdQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>95.</RotSNo>
+<RotTenderId>2021_DMA_1387_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Aben PHSC, Tamenglong Block, Tamenglong District.][MOBEDS-25/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=ShU%2BJ1Y%2BjzjuE5EWdtxHazA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>96.</RotSNo>
+<RotTenderId>2021_DMA_1386_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Kabonram PHSC, Tamenglong Block, Tamenglong District][MOBEDS-24/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SxdGwFbhgBHvbgtU41dEDsg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>97.</RotSNo>
+<RotTenderId>2021_DMA_1385_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Akhui PHSC, Tamenglong Block, Tamenglong District.][MOBEDS-23/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=Spfst%2BbbKP4oNDNlINBKUfg%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>98.</RotSNo>
+<RotTenderId>2021_DMA_1384_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building  at Puching PHSC, Tamenglong Block, Tamenglong District][MOBEDS-22/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SIRXLLFTx6wTfPO18vd28fA%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>99.</RotSNo>
+<RotTenderId>2021_DMA_1383_1</RotTenderId>
+<RotTitleRef>[Construction of  PHSC building at Nurathel PHSC, Tamei, Tamenglong District ][MOBEDS-21/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=SNa%2Bz44o41fgReHBlvhMygw%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
+--- TENDER START ---
+<ListPageNum>10</ListPageNum>
+<RotSNo>100.</RotSNo>
+<RotTenderId>2021_DMA_1372_1</RotTenderId>
+<RotTitleRef>[Construction/Improvement of road At][MOBEDS-11/2021]</RotTitleRef>
+<RotOrganisationChain>Directorate of Minority Affairs</RotOrganisationChain>
+<RotTenderStage>Financial Evaluation</RotTenderStage>
+<RotStatusDetailPageLink>https://manipurtenders.gov.in/nicgep/app?component=view&page=WebTenderStatusLists&service=direct&session=T&sp=S2Ww9GKXUdpSL%2BQTZCSYR%2FQ%3D%3D</RotStatusDetailPageLink>
+<SourceSiteKey>Manipur</SourceSiteKey>
+--- TENDER END ---
+
