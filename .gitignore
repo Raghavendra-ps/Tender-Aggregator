@@ -1,4 +1,6 @@
-logs/
+LOGS/
 __pycache__/
 logs_rot/
 venv/
+site_data/
+TEMP/EligibilityRuns/
